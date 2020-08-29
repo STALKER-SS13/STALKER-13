@@ -1,0 +1,52 @@
+"a" = (/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"b" = (/turf/open/stalker/floor/digable,/area/stalker/blowout/outdoor)
+"c" = (/turf/open/stalker/floor/water,/area/stalker/blowout/outdoor)
+"d" = (/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"e" = (/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk)
+"f" = (/turf/open/stalker/floor/digable,/area/stalker/buildings/backwater/skadovsk)
+"g" = (/obj/anomaly/electro,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"h" = (/obj/anomaly/holodec,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"i" = (/obj/anomaly/jarka,/turf/open/stalker/floor/digable,/area/stalker/blowout/outdoor)
+"j" = (/obj/anomaly/karusel,/turf/open/stalker/floor/water,/area/stalker/blowout/outdoor)
+"k" = (/obj/anomaly/puh,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"l" = (/obj/anomaly/tramplin,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"m" = (/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
+"n" = (/obj/rad/rad_high,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"o" = (/obj/rad/rad_low,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"p" = (/obj/rad/rad_medium,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"q" = (/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"r" = (/obj/structure/table/stalker/wood/bar100rentgen{dir = 4; icon_state = "table"; pixel_x = -6; tag = "icon-table (EAST)"},/turf/open/stalker/floor/digable,/area/stalker/blowout/outdoor)
+"s" = (/obj/structure/stalker/modification_table,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
+"t" = (/obj/structure/table/stalker/wood/bar,/obj/machinery/stalker/sidormat,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
+"u" = (/obj/structure/table/stalker/wood/bar,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
+"v" = (/obj/effect/step_trigger/teleporter{teleport_x = 3; teleport_y = 3; teleport_z = 1},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"w" = (/obj/machinery/party/turntable,/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk)
+"x" = (/obj/machinery/party/turntable,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
+
+(1,1,1) = {"
+aaaaaaaabaaccaabbaaaaaaaa
+adddddddbddccddbbddddddda
+adgddhddiddjcdkbbldddddda
+addeeeeefeecceeffeeeeedda
+addeeeeefeecceeffeeeeedda
+addeemmmbmmccmmbbmmmeedda
+addeemmmbmmccmmbbmmmeedda
+addeemmnbaaccaabbammeedda
+addeemmobaaccaabbammeedda
+addeemmpbqaccaabbammeedda
+addeemmabqaccqqbbammeedda
+addeemmabqaccqqbbammeedda
+addeemmabqaccqqrbammeedda
+addeesmabaaccqqrbammeedda
+addeetmabaaccqqrbammeedda
+addeeumabaaccaarbammeedda
+addeeumabaaccaarbammeedda
+addeeumvbaaccaabbammeedda
+addeemmmbmmccmmbbmmmeedda
+addewxmmbmmccmmbbmmmeedda
+addeeeeefeecceeffeeeeedda
+addeeeeefeecceeffeeeeedda
+adddddddbddccddbbddddddda
+adddddddbddccddbbddddddda
+aaaaaaaabaaccaabbaaaaaaaa
+"}

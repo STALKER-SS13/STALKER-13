@@ -77,7 +77,9 @@ require only minor tweaks.
 
 // must correspond to _basemap.dm for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
-    DECLARE_LEVEL("CentCom", ZTRAITS_CENTCOM),\
+    DECLARE_LEVEL("CentCom", ZTRAITS_CENTCOM), \
+    DECLARE_LEVEL("Under", list()), \
+    DECLARE_LEVEL("Zona", list()), \
 )
 
 // Camera lock flags

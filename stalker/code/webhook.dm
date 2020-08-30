@@ -39,7 +39,7 @@
 	webhook_send("status_update", query)
 
 /proc/webhook_send(var/method, var/data)
-	if(!CONFIG_GET(string/webhook_address) || !CONFIG_GET(string/webhook_key))
+	if(!config.entries_by_type || !CONFIG_GET(string/webhook_address) || !CONFIG_GET(string/webhook_key))
 		return
 	var/query = "[CONFIG_GET(string/webhook_address)]?key=[CONFIG_GET(string/webhook_key)]&method=[method]&data=[url_encode(json_encode(data))]"
 	spawn(-1)

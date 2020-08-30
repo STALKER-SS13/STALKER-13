@@ -91,7 +91,7 @@
 	maxbodytemp = 1500
 	environment_smash = 0
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/dog_tail = 1, /obj/item/reagent_containers/food/snacks/meat/slab = 3, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/dog_tail = 1)
 	//random_butcher_results = 1
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
@@ -141,7 +141,7 @@
 	robust_searching = 1
 	deathmessage = "The snork seizes up and falls limp!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/snork_leg = 1, /obj/item/reagent_containers/food/snacks/meat/slab = 3, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/snork_leg = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	ranged = 1
@@ -231,7 +231,7 @@
 	robust_searching = 1
 	deathmessage = "The flesh makes a death scream!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/flesh_eye = 1, /obj/item/reagent_containers/food/snacks/meat/slab = 3, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/flesh_eye = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
@@ -274,7 +274,7 @@
 	robust_searching = 1
 	deathmessage = "The boar makes a death scream!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/boar_leg = 1, /obj/item/reagent_containers/food/snacks/meat/slab = 3, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/boar_leg = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
@@ -322,7 +322,7 @@
 	robust_searching = 1
 	deathmessage = "The bloodsucker makes a death scream!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/bloodsucker = 1, /obj/item/stalker/loot/bloodsucker = 1, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/bloodsucker = 1, /obj/item/stalker/loot/bloodsucker = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "claw"
@@ -403,7 +403,7 @@
 	robust_searching = 1
 	deathmessage = "The pseudog makes a sinister howl!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/pseudo_tail = 1, /obj/item/reagent_containers/food/snacks/meat/slab = 3, /obj/nothing = 1)
+	butcher_results = list(/obj/item/stalker/loot/pseudo_tail = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "bite"

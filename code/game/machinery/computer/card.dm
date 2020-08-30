@@ -151,7 +151,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		dat += " || Confirm Identity: "
 		var/S
 		if(scan)
-			S = rhtml_encode(scan.name)
+			S = html_encode(scan.name)
 		else
 			S = "--------"
 		dat += "<a href='?src=[REF(src)];choice=scan'>[S]</a>"

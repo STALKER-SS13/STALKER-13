@@ -111,7 +111,7 @@
 /datum/world_topic/ahelp/Run(list/input)
 	var/r_ckey = ckey(input["ckey"])
 	var/s_admin = input["admin"]
-	var/msg = sanitize_russian(input["response"])
+	var/msg = sanitize(input["response"])
 	var/keywordparsedmsg = keywords_lookup(msg)
 	var/client/recipient = GLOB.directory[r_ckey]
 	if(!recipient)
@@ -131,7 +131,7 @@
 	log_admin_private("PM: IRC -> [r_ckey]: [sanitize(msg)]")
 	for(var/client/X in GLOB.admins)
 		to_chat(X, "<font color='blue'><B>PM: DISCORD([s_admin]) -&gt; [key_name(recipient, X, 0)]</B> [keywordparsedmsg]</font>")
-	webhook_send_ahelp("[sanitize_russian(input["admin"])] -> [ckey(input["ckey"])]", sanitize_russian(input["response"]))
+	webhook_send_ahelp("[sanitize(input["admin"])] -> [ckey(input["ckey"])]", sanitize(input["response"]))
 
 /datum/world_topic/status
     keyword = "status"

@@ -112,7 +112,7 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 
 /datum/chatOutput/proc/ehjax_send(client/C = owner, window = "browseroutput", data)
 	if(islist(data))
-		data = r_json_encode(data)
+		data = json_encode(data)
 	C << output("[data]", "[window]:ehjaxCallback")
 
 /datum/chatOutput/proc/sendMusic(music, pitch)
@@ -137,7 +137,7 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 	deets["clientData"]["ckey"] = owner.ckey
 	deets["clientData"]["ip"] = owner.address
 	deets["clientData"]["compid"] = owner.computer_id
-	var/data = r_json_encode(deets)
+	var/data = json_encode(deets)
 	ehjax_send(data = data)
 
 //Called by client, sent data to investigate (cookie history so far)
@@ -196,11 +196,11 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 	//Some macros remain in the string even after parsing and fuck up the eventual output
 	message = replacetext(message, "\improper", "")
 	message = replacetext(message, "\proper", "")
-	message = up2ph(message)
+	message = message
 	if(handle_whitespace)
 		message = replacetext(message, "\n", "<br>")
 		message = replacetext(message, "\t", "[GLOB.TAB][GLOB.TAB]")
-		message = up2ph(message)
+		message = message
 
 	if(islist(target))
 		// Do the double-encoding outside the loop to save nanoseconds

@@ -266,7 +266,7 @@ SUBSYSTEM_DEF(persistence)
 	var/list/file_data = list()
 	file_data["data"] = saved_modes
 	fdel(json_file)
-	WRITE_FILE(json_file, r_json_encode(file_data))
+	WRITE_FILE(json_file, json_encode(file_data))
 
 /datum/controller/subsystem/persistence/proc/CollectAntagReputation()
 	var/ANTAG_REP_MAXIMUM = CONFIG_GET(number/antag_rep_maximum)
@@ -280,5 +280,5 @@ SUBSYSTEM_DEF(persistence)
 	antag_rep_change = list()
 
 	fdel(FILE_ANTAG_REP)
-	text2file(r_json_encode(antag_rep), FILE_ANTAG_REP)
+	text2file(json_encode(antag_rep), FILE_ANTAG_REP)
 

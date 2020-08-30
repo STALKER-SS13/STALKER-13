@@ -41,6 +41,6 @@
 /proc/webhook_send(var/method, var/data)
 	if(!CONFIG_GET(string/webhook_address) || !CONFIG_GET(string/webhook_key))
 		return
-	var/query = "[CONFIG_GET(string/webhook_address)]?key=[CONFIG_GET(string/webhook_key)]&method=[method]&data=[url_encode(r_json_encode(data))]"
+	var/query = "[CONFIG_GET(string/webhook_address)]?key=[CONFIG_GET(string/webhook_key)]&method=[method]&data=[url_encode(json_encode(data))]"
 	spawn(-1)
 		world.Export(query)

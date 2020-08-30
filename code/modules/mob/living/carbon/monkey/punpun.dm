@@ -74,4 +74,4 @@
 		file_data["relic_hat"] = head ? head.type : null
 		file_data["relic_mask"] = wear_mask ? wear_mask.type : null
 	fdel(json_file)
-	WRITE_FILE(json_file, r_json_encode(file_data))
+	WRITE_FILE(json_file, json_encode(file_data))

@@ -494,7 +494,7 @@ GLOBAL_PROTECT(VVpixelmovement)
 				if (O.vv_edit_var(objectvar, L))
 					to_chat(src, "Your edit was rejected by the object.")
 					return
-			log_world("### ListVarEdit by [src]: [O.type] [objectvar]: REMOVED=[rhtml_encode("[original_var]")]")
+			log_world("### ListVarEdit by [src]: [O.type] [objectvar]: REMOVED=[html_encode("[original_var]")]")
 			log_admin("[key_name(src)] modified [original_name]'s [objectvar]: REMOVED=[original_var]")
 			message_admins("[key_name_admin(src)] modified [original_name]'s [objectvar]: REMOVED=[original_var]")
 			return
@@ -637,7 +637,7 @@ GLOBAL_PROTECT(VVpixelmovement)
 	vv_update_display(O, "varedited", VV_MSG_EDITED)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_VAR_EDIT, args)
 	log_world("### VarEdit by [key_name(src)]: [O.type] [variable]=[var_value] => [var_new]")
-	log_admin("[key_name(src)] modified [original_name]'s [variable] from [rhtml_encode("[var_value]")] to [rhtml_encode("[var_new]")]")
+	log_admin("[key_name(src)] modified [original_name]'s [variable] from [html_encode("[var_value]")] to [html_encode("[var_new]")]")
 	var/msg = "[key_name_admin(src)] modified [original_name]'s [variable] from [var_value] to [var_new]"
 	message_admins(msg)
 	admin_ticket_log(O, msg)

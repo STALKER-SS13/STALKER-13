@@ -124,7 +124,7 @@
 	var/list/jsonlist = D.serialize_list(options)
 	if(islist(jsonlist))
 		jsonlist["DATUM_TYPE"] = D.type
-	return r_json_encode(jsonlist)
+	return json_encode(jsonlist)
 
 /proc/json_deserialize_datum(list/jsonlist, list/options, target_type, strict_target_type = FALSE)
 	if(!islist(jsonlist))

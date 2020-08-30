@@ -152,7 +152,7 @@
 	else
 		json = list()
 	json[id] = serialize_json()
-	WRITE_FILE(jsonpath, r_json_encode(json))
+	WRITE_FILE(jsonpath, json_encode(json))
 
 /datum/picture/proc/Copy(greyscale = FALSE, cropx = 0, cropy = 0)
 	var/datum/picture/P = new

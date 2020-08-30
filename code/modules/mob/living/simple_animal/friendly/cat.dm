@@ -150,7 +150,7 @@
 				family[C.type] = 1
 	file_data["family"] = family
 	fdel(json_file)
-	WRITE_FILE(json_file, r_json_encode(file_data))
+	WRITE_FILE(json_file, json_encode(file_data))
 
 /mob/living/simple_animal/pet/cat/Runtime/proc/Deploy_The_Cats()
 	cats_deployed = 1

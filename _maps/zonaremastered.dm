@@ -1,7 +1,7 @@
 #define LOWMEMORYMODE
 //#include "map_files/generic/CentCom.dmm"
+#include "map_files/ZonaRemastered/backwater.dmm"
 #include "map_files/ZonaRemastered/under.dmm"
 //#include "map_files/ZonaRemastered/zona.dmm"
-#include "map_files/ZonaRemastered/backwater.dmm"
 
-//#define FORCE_MAP "_maps/zonaremastered.json"
+#define FORCE_MAP "_maps/zonaremastered.json"

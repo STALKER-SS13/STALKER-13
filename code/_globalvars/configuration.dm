@@ -4,7 +4,7 @@ GLOBAL_DATUM(revdata, /datum/getrev)
 
 GLOBAL_VAR(host)
 GLOBAL_VAR(station_name)
-GLOBAL_VAR_INIT(game_version, "S.T.A.L.K.E.R.: Remastered")
+GLOBAL_VAR_INIT(game_version, "S.T.A.L.K.E.R.: New Hope")
 GLOBAL_VAR_INIT(changelog_hash, "")
 GLOBAL_VAR_INIT(hub_visibility, FALSE)
 

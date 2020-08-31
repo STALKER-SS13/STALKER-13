@@ -484,7 +484,12 @@
 	name = "Tunnel"
 	icon_state = "tunnel"
 
-
+/area/stalker/cave
+	name = "пещера"
+	icon_state = "tunnel"
+	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	requires_power = 1
+	environment = 8
 
 /area/stalker/svalka
 	requires_power = 1

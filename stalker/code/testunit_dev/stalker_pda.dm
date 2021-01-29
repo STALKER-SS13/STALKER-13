@@ -298,10 +298,7 @@ var/global/global_lentahtml = ""
 		<div class=\"relative\" align=\"center\">"
 
 
-		if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
-			mainhtml += "ENTER THE PASSWORD"
-		else
-			mainhtml += "ВВЕДИТЕ ПАРОЛЬ"
+		mainhtml += "ENTER THE PASSWORD"
 
 		mainhtml +="\
 		</div>\
@@ -326,18 +323,11 @@ var/global/global_lentahtml = ""
 			<td valign=\"top\" align=\"left\">\
 			 <div align=\"right\"><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div><br>"
 
-			if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
-				mainhtml +="\
-				 <b>Name:</b> [owner.real_name]<br><br>\
-				 <b>Faction:</b> [eng_faction_s]<br><br>\
-				 <b>Rank:</b> [rating]<br><br>\
-				 <b>Reputation:</b> <font color=\"[rep_color_s]\">[eng_rep_name_s]</font>"
-			else
-				mainhtml +="\
-				 <b>Имя:</b> [owner.real_name]<br><br>\
-				 <b>Группировка:</b> [rus_faction_s]<br><br>\
-				 <b>Ранг:</b> [rating]<br><br>\
-				 <b>Репутация:</b> <font color=\"[rep_color_s]\">[rep_name_s]</font>"
+			mainhtml +="\
+			 <b>Name:</b> [owner.real_name]<br><br>\
+			 <b>Faction:</b> [eng_faction_s]<br><br>\
+			 <b>Rank:</b> [rating]<br><br>\
+			 <b>Reputation:</b> <font color=\"[rep_color_s]\">[eng_rep_name_s]</font>"
 
 
 			 mainhtml +="\
@@ -347,7 +337,7 @@ var/global/global_lentahtml = ""
 			\
 			<tr>\
 			<td colspan=\"2\" align=\"center\" id=\"table-bottom1\" height=60>\
-				| <a style=\"color:#c10000;\" href='byond://?src=\ref[src];choice=password_check'>В ДОСТУПЕ ОТКАЗАНО - ВВЕДИТЕ ПАРОЛЬ</a> |<br>\
+				| <a style=\"color:#c10000;\" href='byond://?src=\ref[src];choice=password_check'>WRONG PASSWORD!</a> |<br>\
 			<div align=\"center\"></div>\
 			</td>\
 			</tr>"
@@ -357,10 +347,7 @@ var/global/global_lentahtml = ""
 		//ПРОФИЛЬ
 
 				if(1)
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						navbarhtml ="| <a>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
-					else
-						navbarhtml ="| <a>Профиль</a> | <a href='byond://?src=\ref[src];choice=3'>Рейтинг</a> | <a href='byond://?src=\ref[src];choice=4'>Лента</a> |<br>"
+					navbarhtml ="| <a>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
 
 					mainhtml +="\
 					<body>\
@@ -368,12 +355,8 @@ var/global/global_lentahtml = ""
 					<table border=0 height=\"314\" width=\"455\">\
 						<tr>\
 							<td valign=\"top\" align=\"left\">"
-					if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
-						mainhtml +="\
-						<div align=\"right\"><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=load_cache'>\[LOAD CACHE\]</a><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=exit'>\[EXIT\]</a><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div>"
-					else
-						mainhtml +="\
-						<div align=\"right\"><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=exit'>\[ВЫХОД\]</a><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div>"
+					mainhtml +="\
+					<div align=\"right\"><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=load_cache'>\[LOAD CACHE\]</a><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=exit'>\[EXIT\]</a><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div>"
 
 					mainhtml +="\
 							</td>\
@@ -387,21 +370,12 @@ var/global/global_lentahtml = ""
 					<br>\
 					</td>\
 					<td>"
-					if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
-						mainhtml+="\
-					<b>Name:</b> [owner.real_name]<br>\
-					<b>Faction:</b> [eng_faction_s]<br>\
-					<b>Rank:</b> [eng_rank_name_s] ([rating])<br>\
-					<b>Reputation:</b> <font color=\"[rep_color_s]\">[eng_rep_name_s] ([reputation])</font><br>\
-					<b>Balance:</b> [num2text(money, 8)] RU<br>"
-
-					else
-						mainhtml+="\
-					<b>Имя:</b> [owner.real_name]<br>\
-					<b>Группировка:</b> [rus_faction_s]<br>\
-					<b>Ранг:</b> [rus_rank_name_s] ([rating])<br>\
-					<b>Репутация:</b> <font color=\"[rep_color_s]\">[rep_name_s] ([reputation])</font><br>\
-					<b>Баланс:</b> [num2text(money, 8)] RU<br>"
+					mainhtml+="\
+				<b>Name:</b> [owner.real_name]<br>\
+				<b>Faction:</b> [eng_faction_s]<br>\
+				<b>Rank:</b> [eng_rank_name_s] ([rating])<br>\
+				<b>Reputation:</b> <font color=\"[rep_color_s]\">[eng_rep_name_s] ([reputation])</font><br>\
+				<b>Balance:</b> [num2text(money, 8)] RU<br>"
 
 					mainhtml +="\
 					</td>\
@@ -413,11 +387,7 @@ var/global/global_lentahtml = ""
 		//ЭНЦИКЛОПЕДИЯ
 
 				if(2)
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
-					else
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Профиль</a> | <a href='byond://?src=\ref[src];choice=3'>Рейтинг</a> | <a href='byond://?src=\ref[src];choice=4'>Лента</a> |<br>"
-
+					navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
 					mainhtml +="\
 					<body>\
 						<table border=0 height=\"314\" width=\"455\">\
@@ -465,10 +435,7 @@ var/global/global_lentahtml = ""
 		//РЕЙТИНГ
 
 				if(3)
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
-					else
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Профиль</a> | <a>Рейтинг</a> | <a href='byond://?src=\ref[src];choice=4'>Лента</a> |<br>"
+					navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
 
 					mainhtml +="\
 					<body>\
@@ -477,12 +444,8 @@ var/global/global_lentahtml = ""
 						<tr>\
 							<td valign=\"top\" align=\"left\">\
 								<div align=\"right\"><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=rating_images'>\[IMAGES\]</a><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div>"
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						mainhtml +="\
-						<div align = \"center\" > | <a href='byond://?src=\ref[src];choice=refresh_rating'>Refresh stalker list</a> | </div>"
-					else
-						mainhtml +="\
-						<div align = \"center\" > | <a href='byond://?src=\ref[src];choice=refresh_rating'>Обновить список сталкеров</a> | </div>"
+					mainhtml +="\
+					<div align = \"center\" > | <a href='byond://?src=\ref[src];choice=refresh_rating'>Refresh stalker list</a> | </div>"
 					mainhtml +="\
 							</td>\
 						</tr>\
@@ -497,10 +460,7 @@ var/global/global_lentahtml = ""
 		//ЛЕНТА
 
 				if(4)
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a>Feed</a> |<br>"
-					else
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Профиль</a> | <a href='byond://?src=\ref[src];choice=3'>Рейтинг</a> | <a>Лента</a> |<br>"
+					navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a>Feed</a> |<br>"
 
 					mainhtml +="\
 					<body>\
@@ -509,12 +469,8 @@ var/global/global_lentahtml = ""
 					<tr>\
 					<td valign=\"top\" align=\"left\">\
 					<div align=\"right\"><a style=\"color:#c10000;\" align=\"center\" href='byond://?src=\ref[src];choice=lenta_images'>\[IMAGES\]</a><a href='byond://?src=\ref[src];choice=title'>\[-\]</a> <a href='byond://?src=\ref[src];choice=close'>\[X\]</a></div>"
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
 						mainhtml +="\
 						<div align = \"center\" > | <a href='byond://?src=\ref[src];choice=lenta_add'>Send feed message</a> | <a href='byond://?src=\ref[src];choice=lenta_faction_add'>Send faction message</a> | <a href='byond://?src=\ref[src];choice=lenta_sound'>Turn on/off sound</a> |</div>"
-					else
-						mainhtml +="\
-						<div align = \"center\" > | <a href='byond://?src=\ref[src];choice=lenta_add'>Написать в ленту</a> | <a href='byond://?src=\ref[src];choice=lenta_faction_add'>Написать группировке</a> | <a href='byond://?src=\ref[src];choice=lenta_sound'>Вкл/Выкл звук</a> |</div>"
 					mainhtml +="\
 					</td>\
 					</tr>\
@@ -529,10 +485,7 @@ var/global/global_lentahtml = ""
 		//КАРТА
 
 				if(5)
-					if(user.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
-					else
-						navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Профиль</a> | <a href='byond://?src=\ref[src];choice=3'>Рейтинг</a> | <a href='byond://?src=\ref[src];choice=4'>Лента</a> |<br>"
+					navbarhtml ="| <a href='byond://?src=\ref[src];choice=1'>Profile</a> | <a href='byond://?src=\ref[src];choice=3'>Rating</a> | <a href='byond://?src=\ref[src];choice=4'>Feed</a> |<br>"
 
 					mainhtml +="\
 					<body>\
@@ -764,10 +717,7 @@ var/global/global_lentahtml = ""
 		if("lenta_add")
 			var/t = message_input(H, "message", 250)
 			if(!t)
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='warning'>Enter the message!</span>")
-				else
-					to_chat(H, "<span class='warning'>Введите сообщение!</span>")
+				to_chat(H, "<span class='warning'>Enter the message!</span>")
 			else
 				if ( !(last_lenta && world.time < last_lenta + LENTA_MESSAGE_COOLDOWN) )
 					last_lenta = world.time
@@ -775,71 +725,43 @@ var/global/global_lentahtml = ""
 					add_lenta_message(src, sid, owner.real_name, eng_faction_s, t)
 
 				else
-					if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						to_chat(H, "<span class='warning'>You can't send messages in next [round((LENTA_MESSAGE_COOLDOWN + last_lenta - world.time)/10)] sec.</span>")
-					else
-						to_chat(H, "<span class='warning'>Вы сможете отправить следующее сообщение через: [round((LENTA_MESSAGE_COOLDOWN + last_lenta - world.time)/10)] сек.</span>")
+					to_chat(H, "<span class='warning'>You can't send messages in next [round((LENTA_MESSAGE_COOLDOWN + last_lenta - world.time)/10)] sec.</span>")
 
 		if("lenta_faction_add")
 			var/t = message_input(H, "message", 500)
 			if(!t)
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='warning'>Enter the message!</span>")
-				else
-					to_chat(H, "<span class='warning'>Введите сообщение!</span>")
+				to_chat(H, "<span class='warning'>Enter the message!</span>")
 			else
 				if ( !(last_faction_lenta && world.time < last_faction_lenta + LENTA_FACTION_MESSAGE_COOLDOWN) )
 					last_faction_lenta = world.time
 					add_faction_lenta_message(src, sid, owner.real_name, eng_faction_s, t)
 
 				else
-					if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-						to_chat(H, "<span class='warning'>You can't send messages in next [round((LENTA_FACTION_MESSAGE_COOLDOWN + last_faction_lenta - world.time)/10)] sec.</span>")
-					else
-						to_chat(H, "<span class='warning'>Вы сможете отправить следующее сообщение через: [round((LENTA_FACTION_MESSAGE_COOLDOWN + last_faction_lenta - world.time)/10)] сек.</span>")
+					to_chat(H, "<span class='warning'>You can't send messages in next [round((LENTA_FACTION_MESSAGE_COOLDOWN + last_faction_lenta - world.time)/10)] sec.</span>")
 
 		if("lenta_sound")
 			if(switches & FEED_SOUND)
 				switches &= ~FEED_SOUND
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Feed sound turned off.</span>")
-				else
-					to_chat(H, "<span class='notice'>Звук оповещения о сообщениях в ленте выключен.</span>")
+				to_chat(H, "<span class='notice'>Feed sound turned off.</span>")
 			else
 				switches |= FEED_SOUND
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Feed sound turned on.</span>")
-				else
-					to_chat(H, "<span class='notice'>Звук оповещения о сообщениях в ленте активирован.</span>")
-
+				to_chat(H, "<span class='notice'>Feed sound turned on.</span>")
 
 		if("lenta_images")
 			if(switches & FEED_IMAGES)
 				switches &= ~FEED_IMAGES
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Stalker avatars in the feed now will not be downloaded.</span>")
-				else
-					to_chat(H, "<span class='notice'>Аватары сталкеров в ленте теперь не будут скачиваться.</span>")
+				to_chat(H, "<span class='notice'>Stalker avatars in the feed now will not be downloaded.</span>")
 			else
 				switches |= FEED_IMAGES
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Stalker avatars in the feed now will be downloaded.</span>")
-				else
-					to_chat(H, "<span class='notice'>Аватары сталкеров в ленте теперь будут скачиваться.</span>")
+				to_chat(H, "<span class='notice'>Stalker avatars in the feed now will be downloaded.</span>")
 
 		if("rating_images")
 			if(switches & RATING_IMAGES)
 				switches &= ~RATING_IMAGES
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Stalker avatars in the rating now will not be downloaded.</span>")
-				else
-					to_chat(H, "<span class='notice'>Аватары сталкеров в рейтинге теперь не будут скачиваться.</span>")
+				to_chat(H, "<span class='notice'>Stalker avatars in the rating now will not be downloaded.</span>")
 			else
 				switches |= RATING_IMAGES
-				if(H.client.prefs.chat_toggles & CHAT_LANGUAGE)
-					to_chat(H, "<span class='notice'>Stalker avatars in the rating now will be downloaded.</span>")
-				else
-					to_chat(H, "<span class='notice'>Аватары сталкеров в рейтинге теперь будут скачиваться.</span>")
+				to_chat(H, "<span class='notice'>Stalker avatars in the rating now will be downloaded.</span>")
 
 		if("refresh_rating")
 			ratinghtml = ""
@@ -1258,72 +1180,41 @@ var/global/global_lentahtml = ""
 		var/r = R.fields["rating"]
 
 		var/eng_f = R.fields["faction_s"]
-		var/f = get_rus_faction(eng_f)
 
 		var/rep_color = get_rep_color(R.fields["reputation"])
-		var/rep = get_rep_name(R.fields["reputation"])
 		var/eng_rep = get_eng_rep_name(R.fields["reputation"])
 
-		var/rank_name = get_rus_rank_name(r)
 		var/eng_rank_name = get_eng_rank_name(r)
 
 		count++
 
-		if(usr.client.prefs.chat_toggles & CHAT_LANGUAGE)
-			ratinghtml += "<table style=\"margin-top: 0px; margin-bottom: 5px;\">\
-					<tr style=\"border: 1px solid black;\">\
-					\
-					<td width=64 height=64 align=\"top\">\
-					<img id=\"ratingbox\" height=64 width=64 src=photo_[sid_p]>\
-					</td>\
-					\
-					<td height=64 width=354 align=\"top\" style=\"text-align:left;vertical-align: top;\">\
-					\
-					<b>\[[count]\]</b> [n] ([eng_f])"
-			//Faction menu
-			if(degree >= 1)
-				if(!R.fields["degree"])
-					if(eng_faction_s == eng_f)
-						ratinghtml += "<a style=\"color:#c10000;\" href='byond://?src=\ref[src];remove=[sid_p]'>\[kick out\]</a>"
-					else
-						ratinghtml += "<a style=\"color:#7ac100;\" href='byond://?src=\ref[src];invite=[sid_p]'>\[invite\]</a>"
-				else
-					ratinghtml += "<b>\[LEADER\]</b>"
-			//////////////
-			ratinghtml +="<br><b>Rating</b> [eng_rank_name] ([r])<br>\
-					<b>Reputation:</b> <font color=\"[rep_color]\">[eng_rep]</font><br>\
-					\
-					</td>\
-					\
-					</tr>\
-					</table>"
-		else
-			ratinghtml += "<table style=\"margin-top: 0px; margin-bottom: 5px;\">\
-					<tr style=\"border: 1px solid black;\">\
-					\
-					<td width=64 height=64 align=\"top\">\
-					<img id=\"ratingbox\" height=64 width=64 src=photo_[sid_p]>\
-					</td>\
-					\
-					<td height=64 width=354 align=\"top\" style=\"text-align:left;vertical-align: top;\">\
-					\
-					<b>\[[count]\]</b> [n] ([f])"
-			//Faction menu
+		ratinghtml += "<table style=\"margin-top: 0px; margin-bottom: 5px;\">\
+				<tr style=\"border: 1px solid black;\">\
+				\
+				<td width=64 height=64 align=\"top\">\
+				<img id=\"ratingbox\" height=64 width=64 src=photo_[sid_p]>\
+				</td>\
+				\
+				<td height=64 width=354 align=\"top\" style=\"text-align:left;vertical-align: top;\">\
+				\
+				<b>\[[count]\]</b> [n] ([eng_f])"
+		//Faction menu
+		if(degree >= 1)
 			if(!R.fields["degree"])
 				if(eng_faction_s == eng_f)
-					ratinghtml += "<a style=\"color:#c10000;\" href='byond://?src=\ref[src];remove=[sid_p]'>\[исключить\]</a>"
+					ratinghtml += "<a style=\"color:#c10000;\" href='byond://?src=\ref[src];remove=[sid_p]'>\[kick out\]</a>"
 				else
-					ratinghtml += "<a style=\"color:#7ac100;\" href='byond://?src=\ref[src];invite=[sid_p]'>\[пригласить\]</a>"
+					ratinghtml += "<a style=\"color:#7ac100;\" href='byond://?src=\ref[src];invite=[sid_p]'>\[invite\]</a>"
 			else
-				ratinghtml += "<b>\[ЛИДЕР\]</b>"
-			//////////////
-			ratinghtml += "<br><b>Рейтинг:</b> [rank_name] ([r])<br>\
-					<b>Репутация:</b> <font color=\"[rep_color]\">[rep]</font><br>\
-					\
-					</td>\
-					\
-					</tr>\
-					</table>"
+				ratinghtml += "<b>\[LEADER\]</b>"
+		//////////////
+		ratinghtml +="<br><b>Rating</b> [eng_rank_name] ([r])<br>\
+				<b>Reputation:</b> <font color=\"[rep_color]\">[eng_rep]</font><br>\
+				\
+				</td>\
+				\
+				</tr>\
+				</table>"
 
 	return ratinghtml
 
@@ -1356,7 +1247,7 @@ var/global/global_lentahtml = ""
 		avatar.l_hand		= H.l_hand.type*/
 
 	if(avatar.uniform == null || avatar.shoes == null)
-		to_chat(H, "<span class='warning'>Вам нужно надеть свитер и ботинки перед тем, как делать фотографию!</span>")
+		to_chat(H, "<span class='warning'>You should wear sweater and boots, before you can make photo!</span>")
 	else
 		var/image = get_avatar(H, avatar)
 

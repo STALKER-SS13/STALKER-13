@@ -32,5 +32,5 @@
 	if(!SSticker.round_start_time || world.time >= SSticker.round_start_time + SKADOVSK_LOCKDOWN_TIMER)
 		return ..()
 	else
-		say("Шлюз откроется только через [round((SSticker.round_start_time + SKADOVSK_LOCKDOWN_TIMER - world.time)/300) + 1] мин. из-за действующего снаружи пси-излучения.")
+		say("The gateway will only open after [round((SSticker.round_start_time + SKADOVSK_LOCKDOWN_TIMER - world.time)/300) + 1] min. due to external psi radiation.")
 		return 0

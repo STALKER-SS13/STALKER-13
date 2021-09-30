@@ -3,4 +3,4 @@
         var/obj/item/vipcard/O = new()
         spawn(300)
             src.equip_to_slot(O, SLOT_IN_BACKPACK)
-            to_chat(src, "Ах, да. Вы же припрятали [O.name] у себя в сумке.")
+            to_chat(src, "Oh yes. You hid [O.name] in my bag.")

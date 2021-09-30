@@ -11,9 +11,9 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 
 /obj/anomaly
 	name = "Anomaly"
-	var/damage_amount = 0 				//Сколько дамажит
-	var/damage_type = DMG_TYPE_ENERGY	//Тип дамага
-	var/activated_icon_state = null 	//Спрайт при активации
+	var/damage_amount = 0 				//How much damage
+	var/damage_type = DMG_TYPE_ENERGY	//Damage type
+	var/activated_icon_state = null 	//Sprite upon activation
 	var/cooldown = 5
 	var/lasttime = 0
 	var/list/mob/living/trapped = new/list()
@@ -596,10 +596,10 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	name = "Anomaly"
 	icon = 'stalker/icons/anomalies.dmi'
 	icon_state = "rad_low"
-	var/damage_amount = 0 				//Сколько дамажит
-	var/damage_type = DMG_TYPE_RADIATION	//Тип дамага
-	var/activated_icon_state = null 	//Спрайт при активации
-	var/cooldown = 2.5					//Кулдаун
+	var/damage_amount = 0 				//How much damage
+	var/damage_type = DMG_TYPE_RADIATION	//Damage type
+	var/activated_icon_state = null 	//Sprite upon activation
+	var/cooldown = 2.5					//Cooldown
 	var/lasttime = 0
 	var/list/mob/living/carbon/human/trapped = new/list()
 	var/idle_luminosity = 0

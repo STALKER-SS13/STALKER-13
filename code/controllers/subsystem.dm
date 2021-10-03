@@ -160,7 +160,7 @@
 /datum/controller/subsystem/Initialize(start_timeofday)
 	initialized = TRUE
 	var/time = (REALTIMEOFDAY - start_timeofday) / 10
-	var/msg = "Загружено [name] за [time] секунд!"
+	var/msg = "Uploaded [name] for [time] seconds!"
 	var/msgc = "Init: [name] for [time] sec."
 	//to_chat(world, "<span class='boldannounce'>[msg]</span>")
 	message_admins("[msg]")

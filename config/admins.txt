@@ -4,5 +4,17 @@
 #Ranks will match to those with the same name in admin_ranks.txt, if a match isn't found the user won't be adminned.
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database.
 
-iWuna = Host
-DarkestWolf = Host
+
+Marrone = Host
+emoats18 = Host
+Szymon79 = Game Admim
+Basipek = Game Admin
+DawsonKeyes = Game Admin
+Gmyza = Game Admin
+WarFan1815 = Game Admin
+Stalkeros = Game Admin
+Tzula = Game Admin
+Virryi = Game Admin
+Szymon79 = Game Admin
+Gasmasked = Game Admin
+Phoaly = Game Admin

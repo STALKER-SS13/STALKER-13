@@ -253,9 +253,9 @@
 		ready = PLAYER_NOT_READY
 		return FALSE
 
-	var/this_is_like_playing_right = alert(src,"Вы действительно хотите стать призраком?","Spooky Stalker","Да","Нет")
+	var/this_is_like_playing_right = alert(src,"Do you really want to be a ghost?","Spooky Stalker","Yes","No")
 
-	if(QDELETED(src) || !src.client || this_is_like_playing_right != "Да")
+	if(QDELETED(src) || !src.client || this_is_like_playing_right != "Yes")
 		//ready = PLAYER_NOT_READY
 		//src << browse(null, "window=preferences_window") //closes the player setup window
 		new_player_panel()
@@ -267,7 +267,7 @@
 	observer.started_as_observer = TRUE
 	close_spawn_windows()
 	var/obj/effect/landmark/observer_start/O = locate(/obj/effect/landmark/observer_start) in GLOB.landmarks_list
-	to_chat(src, "<span class='notice'>Перемещаемся в зону...</span>")
+	to_chat(src, "<span class='notice'>Moving to the Zone...</span>")
 	if (O)
 		observer.forceMove(O.loc)
 	else
@@ -348,7 +348,7 @@
 					if(job.limit_per_player > GLOB.jobnamelatejoincount[usr.client.ckey + rank])
 						GLOB.jobnamelatejoincount[usr.client.ckey + rank]++
 					else
-						usr << "Лимит возрождений для вашей роли [rank] исчерпан."
+						usr << "Respawn limit for your role [rank] exhausted."
 						return
 
 	//var/arrivals_docked = TRUE
@@ -438,7 +438,7 @@
 
 
 /mob/dead/new_player/proc/LateChoices()
-	var/dat = "<div class='notice'>Длительность раунда: [DisplayTimeText(world.time - SSticker.round_start_time)]</div>"
+	var/dat = "<div class='notice'>Round Duration: [DisplayTimeText(world.time - SSticker.round_start_time)]</div>"
 	/*
 	if(SSshuttle.emergency)
 		switch(SSshuttle.emergency.mode)
@@ -468,7 +468,7 @@
 	//		else
 	//			dat += " [a.title]. </div>"
 
-	dat += "<div class='clearBoth'>Доступные роли:</div><br>"
+	dat += "<div class='clearBoth'>Available Roles:</div><br>"
 	dat += "<div class='jobs'><div class='jobsColumn'>"
 	var/job_count = 0
 	//for(var/datum/job/job in SSjob.occupations)
@@ -495,7 +495,7 @@
 	//src << browse(dat, "window=latechoices;size=300x640;can_close=1")
 
 	// Added the new browser window method
-	var/datum/browser/popup = new(src, "latechoices", "Выберите роль", 440, 500)
+	var/datum/browser/popup = new(src, "latechoices", "Choose a Role", 440, 500)
 	popup.add_stylesheet("playeroptions", 'html/browser/playeroptions.css')
 	popup.set_content(dat)
 	popup.open(FALSE) // FALSE is passed to open so that it doesn't use the onclose() proc

@@ -150,7 +150,14 @@
 		new /datum/data/turntable_soundtrack ("Blonde Redhead",		"For The Damaged Soda",				'stalker/sound/turntable/blonde.ogg',								2488),
 		new /datum/data/turntable_soundtrack ("Yakui The Maid",		"Chloramine",						'stalker/sound/turntable/ytm_chloramine.ogg',						2337),
 		new /datum/data/turntable_soundtrack ("Yakui The Maid",		"Calamity",							'stalker/sound/turntable/ytm_calamity.ogg',							2481),
-		new /datum/data/turntable_soundtrack ("Yakui The Maid x Ozoi The Maid",		"Unreleased",		'stalker/sound/turntable/ytmxotm_unr.ogg',							2444)
+		new /datum/data/turntable_soundtrack ("Yakui The Maid x Ozoi The Maid",		"Unreleased",		'stalker/sound/turntable/ytmxotm_unr.ogg',							2444),
+		new /datum/data/turntable_soundtrack ("Vladimir Vasilkov",	"Woodpeckers Dont Get Headaches",	'stalker/sound/turntable/woodpeckersdontgetheadaches.ogg',					1110),
+		new /datum/data/turntable_soundtrack ("Soyol Erdene",		"The First Snow",					'stalker/sound/turntable/soyolerdene_thefirstsnow.ogg',						1110),
+		new /datum/data/turntable_soundtrack ("Molchat Doma",		"Tancevat",							'stalker/sound/turntable/molchatdoma_tancevat.ogg',							1110),
+		new /datum/data/turntable_soundtrack ("England",			"No Other Way",						'stalker/sound/turntable/england_nootherway.ogg',							1110),
+		new /datum/data/turntable_soundtrack ("Space",				"Ballad for Space Lovers",			'stalker/sound/turntable/space_balladforspacelovers.ogg',					1110),
+		new /datum/data/turntable_soundtrack ("Venetian Snares",	"Black Sabbath",					'stalker/sound/turntable/Snares-BlackSabbath.ogg',							1110),
+		new /datum/data/turntable_soundtrack ("Glintshake",			"Steppe is the Place",				'stalker/sound/turntable/Glintshake_SteppeisthePlace.ogg',					1110)
 	)
 	anchored = 1
 	density = 1

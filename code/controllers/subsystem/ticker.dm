@@ -193,7 +193,7 @@ SUBSYSTEM_DEF(ticker)
 
 
 /datum/controller/subsystem/ticker/proc/setup()
-	to_chat(world, "<span class='boldannounce'>Запускаем мир...</span>")
+	to_chat(world, "<span class='boldannounce'>Launching the Zone...</span>")
 	var/init_start = world.timeofday
 		//Create and announce mode
 	var/list/datum/game_mode/runnable_modes
@@ -238,7 +238,7 @@ SUBSYSTEM_DEF(ticker)
 		if(!can_continue)
 			log_game("[mode.name] failed pre_setup, cause: [mode.setup_error]")
 			QDEL_NULL(mode)
-			to_chat(world, "<B>Что-то сломалось [GLOB.master_mode].</B> Откатываем таймер.")
+			to_chat(world, "<B>Something broke [GLOB.master_mode].</B> roll back the timer.")
 			SSjob.ResetOccupations()
 			return 0
 	else
@@ -276,7 +276,7 @@ SUBSYSTEM_DEF(ticker)
 	round_start_time = world.time
 	SSdbcore.SetRoundStart()
 
-	//to_chat(world, "<FONT color='blue'><B>Welcome to [station_name()], enjoy your stay!</B></FONT>")
+	to_chat(world, "<FONT color='red'><B>You encroach upon the Zone. Be wary, and keep your wits about you.</B></FONT>")
 	SEND_SOUND(world, sound('stalker/sound/start.ogg'))
 
 	current_state = GAME_STATE_PLAYING
@@ -583,10 +583,10 @@ SUBSYSTEM_DEF(ticker)
 
 	var/skip_delay = check_rights()
 	if(delay_end && !skip_delay)
-		to_chat(world, "<span class='boldannounce'>Раунд продолжается.</span>")
+		to_chat(world, "<span class='boldannounce'>The round continues.</span>")
 		return
 
-	to_chat(world, "<span class='boldannounce'>Перезагружаем мир...</span>")
+	to_chat(world, "<span class='boldannounce'>Reloading the Zone...</span>")
 
 	var/start_wait = world.time
 	UNTIL(round_end_sound_sent || (world.time - start_wait) > (delay * 2))	//don't wait forever
@@ -605,7 +605,7 @@ SUBSYSTEM_DEF(ticker)
 	else if(gamelogloc)
 		to_chat(world, "<span class='info'>Round logs can be located <a href=\"[gamelogloc]\">at this website!</a></span>")
 
-	log_game("<span class='boldannounce'>Перезагружаем мир...</span>")
+	log_game("<span class='boldannounce'>Reloading the Zone...</span>")
 
 	world.Reboot()
 
@@ -615,14 +615,12 @@ SUBSYSTEM_DEF(ticker)
 	update_everything_flag_in_db()
 	if(!round_end_sound)
 		round_end_sound = pick(\
-		'sound/roundend/newroundsexy.ogg',
-		'sound/roundend/apcdestroyed.ogg',
-		'sound/roundend/bangindonk.ogg',
-		'sound/roundend/leavingtg.ogg',
-		'sound/roundend/its_only_game.ogg',
-		'sound/roundend/yeehaw.ogg',
-		'sound/roundend/disappointed.ogg',
-		'sound/roundend/scrunglartiy.ogg'\
+		'sound/roundend/ahnucheekibreekiivdamke.ogg',
+		'sound/roundend/bylat.ogg',
+		'sound/roundend/getoutofherestalker.ogg',
+		'sound/roundend/markedonewhatthehell.ogg',
+		'sound/roundend/strelok.ogg',
+		'sound/roundend/themonolith.ogg',\
 		)
 
 	SEND_SOUND(world, sound(round_end_sound))

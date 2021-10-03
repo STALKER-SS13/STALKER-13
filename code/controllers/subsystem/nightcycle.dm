@@ -71,27 +71,27 @@ SUBSYSTEM_DEF(nightcycle)
 /datum/controller/subsystem/nightcycle/proc/updateLight(newTime)
 	switch (newTime)
 		if ("SUNRISE")
-			to_chat(world, "<b>6:00</b> - рассвет")
+			to_chat(world, "<b>6:00</b> - Dawn")
 			sunColour = "#ddd1b3"
 			//sunPower = 0.3
 		if ("MORNING")
-			to_chat(world, "<b>6:45</b> - наступает утро")
+			to_chat(world, "<b>6:45</b> - Morning comes")
 			sunColour = "#ddd2e6"
 			//sunPower = 0.5
 		if ("DAYTIME")
-			to_chat(world, "<b>11:45</b> - наступает день")
+			to_chat(world, "<b>11:45</b> - The day is coming")
 			sunColour = "#dddddd"
 			//sunPower = 0.75
 		if ("AFTERNOON")
-			to_chat(world, "<b>15:45</b> - вечереет")
+			to_chat(world, "<b>15:45</b> - Dusk")
 			sunColour = "#ddd2e6"
 			//sunPower = 0.5
 		if ("SUNSET")
-			to_chat(world, "<b>21:45</b> - закат")
+			to_chat(world, "<b>21:45</b> - Sunset")
 			sunColour = "#ddaaaa"
 			//sunPower = 0.3
 		if("NIGHTTIME")
-			to_chat(world, "<b>22:30</b> - наступает ночь")
+			to_chat(world, "<b>22:30</b> - The night is coming")
 			sunColour = "#00111a"
 			//sunPower = 0.15
 		if("BLOWOUT")

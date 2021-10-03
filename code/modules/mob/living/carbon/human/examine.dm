@@ -12,7 +12,7 @@
 	//	if(L.has_trait(TRAIT_PROSOPAGNOSIA))
 	//		obscure_name = TRUE
 
-	var/msg = "<span class='info'>*---------*\nЭто же <EM>[name]</EM>!\n"
+	var/msg = "<span class='info'>*---------*\n This is <EM>[name]</EM>!\n"
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
@@ -24,9 +24,9 @@
 		if(istype(w_uniform, /obj/item/clothing/under))
 			var/obj/item/clothing/under/U = w_uniform
 			if(U.attached_accessory)
-				accessory_msg += " с [icon2html(U.attached_accessory, user)] \a [U.attached_accessory]"
+				accessory_msg += " with [icon2html(U.attached_accessory, user)] \a [U.attached_accessory]"
 
-		msg += "На н[t_na] [w_uniform.get_examine_string(user)][accessory_msg].\n"
+		msg += "On[t_na] [w_uniform.get_examine_string(user)][accessory_msg].\n"
 	//head
 	if(head)
 		msg += "У н[t_ego] на голове [head.get_examine_string(user)].\n"
@@ -35,59 +35,59 @@
 		msg += "На н[t_na] [wear_suit.get_examine_string(user)].\n"
 		//suit/armor storage
 		if(s_store && !(SLOT_S_STORE in obscured))
-			msg += "Имеет [s_store.get_examine_string(user)] прикреплённый к [t_ego] [wear_suit.name].\n"
+			msg += "It has [s_store.get_examine_string(user)] attached to [t_ego] [wear_suit.name].\n"
 	//back
 	if(back)
-		msg += "На спине у н[t_ego] [back.get_examine_string(user)].\n"
+		msg += "on their back [t_ego] [back.get_examine_string(user)].\n"
 
 	//Hands
 	for(var/obj/item/I in held_items)
 		if(!(I.item_flags & ABSTRACT))
-			msg += "[ru_ego(TRUE)] [get_held_index_name(get_held_index_of_item(I))] держит [I.get_examine_string(user)].\n"
+			msg += "[ru_ego(TRUE)] [get_held_index_name(get_held_index_of_item(I))] keeps [I.get_examine_string(user)].\n"
 
 	GET_COMPONENT(FR, /datum/component/forensics)
 	//gloves
 	if(gloves && !(SLOT_GLOVES in obscured))
-		msg += "На руках у н[t_ego] [gloves.get_examine_string(user)].\n"
+		msg += "on the hands of [t_ego] [gloves.get_examine_string(user)].\n"
 	else if(FR && length(FR.blood_DNA))
 		var/hand_number = get_num_arms(FALSE)
 		if(hand_number)
-			msg += "<span class='warning'>[ru_ego(TRUE)] рук[hand_number > 1 ? "и" : "а"] в крови!</span>\n"
+			msg += "<span class='warning'>[ru_ego(TRUE)] hands [hand_number > 1 ? "and" : "a"] in blood!</span>\n"
 
 	//handcuffed?
 
 	//handcuffed?
 	if(handcuffed)
 		if(istype(handcuffed, /obj/item/restraints/handcuffs/cable))
-			msg += "<span class='warning'>[t_on] [icon2html(handcuffed, user)] связан!</span>\n"
+			msg += "<span class='warning'>[t_on] [icon2html(handcuffed, user)] bound!</span>\n"
 		else
-			msg += "<span class='warning'>[t_on] [icon2html(handcuffed, user)] в наручниках!</span>\n"
+			msg += "<span class='warning'>[t_on] [icon2html(handcuffed, user)] handcuffed!</span>\n"
 
 	//belt
 	if(belt)
-		msg += "На поясе у н[t_ego] [belt.get_examine_string(user)].\n"
+		msg += "on the belt[t_ego] [belt.get_examine_string(user)].\n"
 
 	//shoes
 	if(shoes && !(SLOT_SHOES in obscured))
-		msg += "На [t_ego] ногах надеты [shoes.get_examine_string(user)].\n"
+		msg += "they [t_ego] are wearing [shoes.get_examine_string(user)].\n"
 
 	//mask
 	if(wear_mask && !(SLOT_WEAR_MASK in obscured))
-		msg += "[t_on] имеет [wear_mask.get_examine_string(user)] на [t_ego] лице.\n"
+		msg += "[t_on] It has [wear_mask.get_examine_string(user)] on [t_ego] face.\n"
 
 	if(wear_neck && !(SLOT_NECK in obscured))
-		msg += "На шее у н[t_ego] [wear_neck.get_examine_string(user)].\n"
+		msg += "on the neck[t_ego] [wear_neck.get_examine_string(user)].\n"
 
 	//eyes
 	if(!(SLOT_GLASSES in obscured))
 		if(glasses)
-			msg += "На н[t_na] [glasses.get_examine_string(user)].\n"
+			msg += "On [t_na] [glasses.get_examine_string(user)].\n"
 		else if(eye_color == BLOODCULT_EYE && iscultist(src) && has_trait(CULT_EYES))
-			msg += "<span class='warning'><B>[ru_ego(TRUE)] глаза ярко-красные и они горят!</B></span>\n"
+			msg += "<span class='warning'><B>[ru_ego(TRUE)] the eyes are bright red and they burn!</B></span>\n"
 
 	//ears
 	if(ears && !(SLOT_EARS in obscured))
-		msg += "В ушах у н[t_ego] [ears.get_examine_string(user)].\n"
+		msg += "On their ears[t_ego] [ears.get_examine_string(user)].\n"
 
 	//ID
 	if(wear_id)

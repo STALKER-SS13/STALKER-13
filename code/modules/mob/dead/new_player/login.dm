@@ -14,11 +14,11 @@
 		to_chat(src, "<div class=\"motd\">[motd]</div>", handle_whitespace=FALSE)
 
 	if(GLOB.admin_notice)
-		to_chat(src, "<span class='notice'><b>Заметка:</b>\n \t [GLOB.admin_notice]</span>")
+		to_chat(src, "<span class='notice'><b>Notice:</b>\n \t [GLOB.admin_notice]</span>")
 
 	var/spc = CONFIG_GET(number/soft_popcap)
 	if(spc && living_player_count() >= spc)
-		to_chat(src, "<span class='notice'><b>Заметка:</b>\n \t [CONFIG_GET(string/soft_popcap_message)]</span>")
+		to_chat(src, "<span class='notice'><b>Notice:</b>\n \t [CONFIG_GET(string/soft_popcap_message)]</span>")
 
 	sight |= SEE_TURFS
 
@@ -29,7 +29,7 @@
 		var/tl = SSticker.GetTimeLeft()
 		var/postfix
 		if(tl > 0)
-			postfix = "через [DisplayTimeText(tl)]"
+			postfix = "across [DisplayTimeText(tl)]"
 		else
-			postfix = "скоро"
-		to_chat(src, "Настройте вашего персонажа и ожидайте. Мир запустится [postfix].")
+			postfix = "soon"
+		to_chat(src, "Customize your character and wait for the Zone to launch. [postfix].")

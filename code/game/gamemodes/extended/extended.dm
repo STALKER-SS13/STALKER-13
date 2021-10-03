@@ -6,7 +6,7 @@
 	required_players = 0
 
 	announce_span = "notice"
-	announce_text = "Мир запущен, приятной игры."
+	announce_text = "Welcome to the Zone. Be careful out there, stalker!"
 
 /datum/game_mode/extended/pre_setup()
 	return 1
@@ -27,4 +27,6 @@
 
 /datum/game_mode/extended/announced/send_intercept(report = 0)
 	//priority_announce("Thanks to the tireless efforts of our security and intelligence divisions, there are currently no credible threats to [station_name()]. All station construction projects have been authorized. Have a secure shift!", "Security Report", 'sound/ai/commandreport.ogg')
-	to_chat(world, "<B><font color='green'>Исходя из действующего пси-излучения выход из Скадовска будет открыт только через [round(SKADOVSK_LOCKDOWN_TIMER/1200)] минуты.</font></B>")
+	to_chat(world, "<B><font color='green'>Based on the current psi-radiation, the exit from Skadovsk will be open only after [round(SKADOVSK_LOCKDOWN_TIMER/1200)] minutes.</font></B>")
+
+

@@ -33,7 +33,7 @@
 
 /obj/item/attachment/scope/SUSAT
 	name = "SUSAT"
-	desc = "Оптический прицел фиксированной кратности (4 диоптрии). Чаще всего используется для ведения прицельного огня из лёгкого стрелкового оружия на средние и большие дистанции. Устанавливается на планку Пикатинни."
+	desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
 	eng_desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
 	icon = 'stalker/icons/weapon_mods.dmi'
 	icon_state = "susat"
@@ -52,7 +52,7 @@
 
 /obj/item/attachment/scope/PS/U1
 	name = "PSU-1"
-	desc = "Оптический прицел фиксированной кратности (2,7 диоптрии). Оптимизирован для боя на средних дистанциях, а также для использования в условиях городской застройки. Для установки на оружие используется стандартное в странах Варшавского договора крепление типа «ласточкин хвост»."
+	desc = "Fixed magnification optical sight (2.7 diopters). Optimized for mid-range combat as well as urban use. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used."
 	icon_state = "PSU1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				/obj/item/gun/ballistic/automatic/ak74,
@@ -63,7 +63,7 @@
 
 /obj/item/attachment/scope/PS/O1
 	name = "PSO-1"
-	desc = "Широко распространённый оптический прицел советского производства фиксированной кратности (5). Оснащён шкалой для определения дальности до цели. Для установки на оружие используется стандартное в странах Варшавского договора крепление типа «ласточкин хвост»."
+	desc = "A widespread Soviet-made fixed-magnification optical sight (5). Equipped with a scale for determining the range to the target. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used."
 	icon_state = "PSO1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				 /obj/item/gun/ballistic/automatic/ak74,
@@ -83,17 +83,17 @@
 
 /obj/item/attachment/scope/fnf2000
 	name = "FN-F2000 scope"
-	desc = "Прицел для винтовки FN-F2000."
+	desc = "Sight for the FN-F2000 rifle."
 	icon_state = "fnf2000-scope"
 	types = list(/obj/item/gun/ballistic/automatic/fnf2000)
 
 /obj/item/attachment/grenadelauncher
 	name = "grenade launcher"
-	desc = "Подствольный гранатомёт."
+	desc = "Underbarrel grenade launcher."
 	icon_state = ""
 	types = list()
 
 /obj/item/attachment/grenadelauncher/fnf2000
 	name = "fn-f2000 grenade launcher"
-	desc = "Подствольный гранатомёт для fn-f2000"
+	desc = "Underbarrel grenade launcher for FN-F2000"
 	icon_state = "fnf2000-gl"

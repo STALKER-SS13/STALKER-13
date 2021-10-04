@@ -3,12 +3,10 @@
 
 /obj/structure/bed/stalker/metal
 	name = "bed"
-	desc = "Metal frame of a bed. Not very convinient."
 	eng_desc = "Metal frame of a bed. Not very convinient."
 	icon_state = "krovat_e"
 
 /obj/structure/bed/stalker/metal/matras
-	desc = "Metal frame of a bed with a mattress upon it."
 	eng_desc = "Metal frame of a bed with a mattress upon it."
 	icon_state = "krovat"
 
@@ -20,7 +18,6 @@
 
 /obj/structure/stalker/matras
 	name = "matras"
-	desc = "Simple rolled mattress."
 	eng_desc = "Simple rolled mattress."
 	icon_state = "s_matras"
 	density = 0

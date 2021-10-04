@@ -620,7 +620,11 @@ SUBSYSTEM_DEF(ticker)
 		'sound/roundend/getoutofherestalker.ogg',
 		'sound/roundend/markedonewhatthehell.ogg',
 		'sound/roundend/strelok.ogg',
-		'sound/roundend/themonolith.ogg',\
+		'sound/roundend/dickmeasuring.ogg',
+		'sound/roundend/themonolith.ogg'
+		'sound/roundend/Ashot20RU.ogg',
+		'sound/roundend/SlavesGTYABH.ogg',
+		'sound/roundend/yargun.ogg',\
 		)
 
 	SEND_SOUND(world, sound(round_end_sound))

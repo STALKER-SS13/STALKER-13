@@ -116,12 +116,13 @@
 
 /obj/item/projectile/bullet/gauss
 	damage = 80
+	icon_state = "tungstenbolt"
 	armour_penetration = 95
 	range = 100
 	spread = 1
 
 /obj/item/projectile/bullet/fragment
-	name = "fragment"
+	name = "fragment
 	damage = 25
 	armour_penetration = 25
 	range = 6

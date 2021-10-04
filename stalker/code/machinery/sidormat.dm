@@ -8,70 +8,70 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		///////////////////////////////  Оружие  /////////////////////////////////////////
 	"Handguns" = list(
 		///////////////////////////// **Пистолеты** /////////////////////////////////////
-		new /datum/data/stalker_equipment("PMm",			"ПМм",				/obj/item/gun/ballistic/automatic/pistol/pm,				3000,	ROOKIE),
-		new /datum/data/stalker_equipment("TT",				"ТТ",				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE),
-		new /datum/data/stalker_equipment("Fort-12",		"Форт-12",			/obj/item/gun/ballistic/automatic/pistol/fort12,			6500,	ROOKIE),
-		new /datum/data/stalker_equipment("PB1s",			"ПБС1с",			/obj/item/gun/ballistic/automatic/pistol/pb1s,				4500,	ROOKIE),
-		new /datum/data/stalker_equipment("SIG-Sauer P220",	"П-220",			/obj/item/gun/ballistic/automatic/pistol/sip,				12500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Colt M1911",		"Кольт",			/obj/item/gun/ballistic/automatic/pistol/cora,				9000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Beretta 92FS",	"Беретта",			/obj/item/gun/ballistic/automatic/pistol/marta,				9000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("USP-match",		"ЮСП-матч",			/obj/item/gun/ballistic/automatic/pistol/usp_match, 		16000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Colt Anaconda",	"Кольт Анаконда",	/obj/item/gun/ballistic/revolver/anaconda,					25000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Desert Eagle",	"Дёзерт Игл",		/obj/item/gun/ballistic/automatic/pistol/desert,			30000,	EXPERIENCED)
+		new /datum/data/stalker_equipment("PMm",			"PMm",				/obj/item/gun/ballistic/automatic/pistol/pm,				3000,	ROOKIE),
+		new /datum/data/stalker_equipment("TT",				"TT",,				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE),
+		new /datum/data/stalker_equipment("Fort-12",		"Fort-12",			/obj/item/gun/ballistic/automatic/pistol/fort12,			6500,	ROOKIE),
+		new /datum/data/stalker_equipment("PB1s",			"PB1s",				/obj/item/gun/ballistic/automatic/pistol/pb1s,				4500,	ROOKIE),
+		new /datum/data/stalker_equipment("SIG-Sauer P220",	"SIG-Sauer P220",	/obj/item/gun/ballistic/automatic/pistol/sip,				12500,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Colt M1911",		"Colt M1911",		/obj/item/gun/ballistic/automatic/pistol/cora,				9000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Beretta 92FS",	"Beretta 92FS",		/obj/item/gun/ballistic/automatic/pistol/marta,				9000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("USP-match",		"USP-match",		/obj/item/gun/ballistic/automatic/pistol/usp_match, 		16000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Colt Anaconda",	"Colt Anaconda",	/obj/item/gun/ballistic/revolver/anaconda,					25000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Desert Eagle",	"Desert Eagle",		/obj/item/gun/ballistic/automatic/pistol/desert,			30000,	EXPERIENCED)
 		),
 
 	"Automatic Weapons" = list(
 		///////////////////////////// **Автоматы, ПП** /////////////////////////////////////
-		new /datum/data/stalker_equipment("Beretta M38",	"Беретта М38",		/obj/item/gun/ballistic/automatic/berettam38,				10000,	ROOKIE),
-		new /datum/data/stalker_equipment("Kiparis",		"Кипарис",			/obj/item/gun/ballistic/automatic/kiparis,					10000,	ROOKIE),
-		new /datum/data/stalker_equipment("PPSh",			"ППШ",				/obj/item/gun/ballistic/automatic/ppsh,						15000,	ROOKIE),
-		new /datum/data/stalker_equipment("MP-5",			"МП-5",				/obj/item/gun/ballistic/automatic/mp5,						18000,	ROOKIE),
-		new /datum/data/stalker_equipment("AK-74S",			"АК-74У",			/obj/item/gun/ballistic/automatic/aksu74 ,					24000,	ROOKIE),
-		new /datum/data/stalker_equipment("AK-74",			"АК-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	ROOKIE),
-		new /datum/data/stalker_equipment("AS-96",			"АС-96",			/obj/item/gun/ballistic/automatic/abakan,					40000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("LR-300",			"ЛР-300",			/obj/item/gun/ballistic/automatic/tpc301,					40000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("L85",			"Л85",				/obj/item/gun/ballistic/automatic/il86,						40000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Tunder OTs-14", 	"ОЦ-14 Гроза",		/obj/item/gun/ballistic/automatic/groza,					35000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("AS \"Val\"",		"АС \"Вал\"",		/obj/item/gun/ballistic/automatic/val,						50000,	VETERAN),
-		new /datum/data/stalker_equipment("SIG SG 550",		"СИГ СГ 550",		/obj/item/gun/ballistic/automatic/sigsg550,					50000,	VETERAN),
-		new /datum/data/stalker_equipment("FN F2000",		"ФН Ф2000",			/obj/item/gun/ballistic/automatic/fnf2000,					65000,	EXPERT),
-		new /datum/data/stalker_equipment("GP 37",			"ГП 37",			/obj/item/gun/ballistic/automatic/gp37,						75000,	EXPERT),
-		new /datum/data/stalker_equipment("FN F2000S",		"ФН Ф2000С",		/obj/item/gun/ballistic/automatic/fnf2000s,					100000,	EXPERT),
-		new /datum/data/stalker_equipment("PKM",			"ПКМ",				/obj/item/gun/ballistic/automatic/l6_saw/pkm,				200000,	EXPERT)
+		new /datum/data/stalker_equipment("Beretta M38",	"Beretta M38",		/obj/item/gun/ballistic/automatic/berettam38,				10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Kiparis",		"Kiparis",			/obj/item/gun/ballistic/automatic/kiparis,					10000,	ROOKIE),
+		new /datum/data/stalker_equipment("PPSh",			"PPSh",				/obj/item/gun/ballistic/automatic/ppsh,						15000,	ROOKIE),
+		new /datum/data/stalker_equipment("MP-5",			"MP-5",				/obj/item/gun/ballistic/automatic/mp5,						18000,	ROOKIE),
+		new /datum/data/stalker_equipment("AK-74S",			"AK-74S",			/obj/item/gun/ballistic/automatic/aksu74 ,					24000,	ROOKIE),
+		new /datum/data/stalker_equipment("AK-74",			"AK-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	ROOKIE),
+		new /datum/data/stalker_equipment("AS-96",			"AS-96",			/obj/item/gun/ballistic/automatic/abakan,					40000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("LR-300",			"LR-300",			/obj/item/gun/ballistic/automatic/tpc301,					40000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("L85",			"L85",				/obj/item/gun/ballistic/automatic/il86,						40000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Tunder OTs-14", 	"Tunder OTs-14",	/obj/item/gun/ballistic/automatic/groza,					35000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("AS \"Val\"",		"AS \"Val\"",		/obj/item/gun/ballistic/automatic/val,						50000,	VETERAN),
+		new /datum/data/stalker_equipment("SIG SG 550",		"SIG SG 550",		/obj/item/gun/ballistic/automatic/sigsg550,					50000,	VETERAN),
+		new /datum/data/stalker_equipment("FN F2000",		"FN F2000",			/obj/item/gun/ballistic/automatic/fnf2000,					65000,	EXPERT),
+		new /datum/data/stalker_equipment("GP 37",			"GP 37",			/obj/item/gun/ballistic/automatic/gp37,						75000,	EXPERT),
+		new /datum/data/stalker_equipment("FN F2000S",		"FN F2000S",		/obj/item/gun/ballistic/automatic/fnf2000s,					100000,	EXPERT),
+		new /datum/data/stalker_equipment("PKM",			"PKM",				/obj/item/gun/ballistic/automatic/l6_saw/pkm,				200000,	EXPERT)
 		),
 
 	"Shotguns" = list(
 		/////////////////////////////// **Дробовики** /////////////////////////////////////
-		new /datum/data/stalker_equipment("Sawn off",		"Обрез",			/obj/item/gun/ballistic/shotgun/bm16/sawnoff,				6000,	ROOKIE),
-		new /datum/data/stalker_equipment("BM-16",			"БМ-16",			/obj/item/gun/ballistic/shotgun/bm16,						10000,	ROOKIE),
-		new /datum/data/stalker_equipment("TOZ-34",			"ТОЗ-34", 			/obj/item/gun/ballistic/shotgun/bm16/toz34,					15000,	ROOKIE),
-		new /datum/data/stalker_equipment("Ithaca M37",		"Итака М37",		/obj/item/gun/ballistic/shotgun/ithaca,						20000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Wincheaster-1300","Винчестер-1300",	/obj/item/gun/ballistic/shotgun/chaser,						30000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("SPAS-12",		"СПАС-12",			/obj/item/gun/ballistic/shotgun/spsa,						50000,	VETERAN)
+		new /datum/data/stalker_equipment("Sawn off",		"Sawn off",			/obj/item/gun/ballistic/shotgun/bm16/sawnoff,				6000,	ROOKIE),
+		new /datum/data/stalker_equipment("BM-16",			"BM-16",			/obj/item/gun/ballistic/shotgun/bm16,						10000,	ROOKIE),
+		new /datum/data/stalker_equipment("TOZ-34",			"TOZ-34", 			/obj/item/gun/ballistic/shotgun/bm16/toz34,					15000,	ROOKIE),
+		new /datum/data/stalker_equipment("Ithaca M37",		"Ithaca M37",		/obj/item/gun/ballistic/shotgun/ithaca,						20000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Wincheaster-1300","Wincheaster-1300",/obj/item/gun/ballistic/shotgun/chaser,						30000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("SPAS-12",		"SPAS-12",			/obj/item/gun/ballistic/shotgun/spsa,						50000,	VETERAN)
 		),
 
 	"Rifles" = list(
 		/////////////////////////////// **Винтовки** /////////////////////////////////////
-		new /datum/data/stalker_equipment("Lee Enfield",	"Ли Энфилд",		/obj/item/gun/ballistic/shotgun/boltaction/enfield,			15000,	ROOKIE),
-		new /datum/data/stalker_equipment("Vintorez", 		"Винторез",			/obj/item/gun/ballistic/automatic/vintorez,					60000,	EXPERT)
+		new /datum/data/stalker_equipment("Lee Enfield",	"Lee Enfield",		/obj/item/gun/ballistic/shotgun/boltaction/enfield,			15000,	ROOKIE),
+		new /datum/data/stalker_equipment("Vintorez", 		"Vintorez",			/obj/item/gun/ballistic/automatic/vintorez,					60000,	EXPERT)
 		),
 
 	"Melee Weapons" = list(
 		/////////////////////////////// **Другое** /////////////////////////////////////
-		new /datum/data/stalker_equipment("Kitchen Knife",		"Кухонный нож",				/obj/item/kitchen/knife,												1500,	ROOKIE),
-		new /datum/data/stalker_equipment("Tourist Knife",		"Нож туриста",				/obj/item/kitchen/knife/tourist,										4000,	ROOKIE),
-		new /datum/data/stalker_equipment("Bayonet",			"Штык-нож",					/obj/item/kitchen/knife/bayonet,										7000,	ROOKIE),
-		new /datum/data/stalker_equipment("Butcher's Cleaver",	"Тесак м&#x44F;сника",		/obj/item/kitchen/knife/butcher,										10000,	ROOKIE),
-		new /datum/data/stalker_equipment("Frag Grenade",		"Осколочная Граната",		/obj/item/grenade/syndieminibomb/concussion/stalker/frag,				2500,	ROOKIE),
-		new /datum/data/stalker_equipment("Flash Grenade",		"Светошумовая Граната",		/obj/item/grenade/flashbang,											2000,	ROOKIE)
+		new /datum/data/stalker_equipment("Kitchen Knife",		"Kitchen Knife",			/obj/item/kitchen/knife,												1500,	ROOKIE),
+		new /datum/data/stalker_equipment("Tourist Knife",		"Tourist Knife",			/obj/item/kitchen/knife/tourist,										4000,	ROOKIE),
+		new /datum/data/stalker_equipment("Bayonet",			"Bayonet",					/obj/item/kitchen/knife/bayonet,										7000,	ROOKIE),
+		new /datum/data/stalker_equipment("Butcher's Cleaver",	"Butcher's Cleaver",		/obj/item/kitchen/knife/butcher,										10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Frag Grenade",		"Frag Grenade",				/obj/item/grenade/syndieminibomb/concussion/stalker/frag,				2500,	ROOKIE),
+		new /datum/data/stalker_equipment("Flash Grenade",		"Flash Grenade",			/obj/item/grenade/flashbang,											2000,	ROOKIE)
 		),
 
 	"Ammo Boxes" = list(
 		////////////////////////////////  Патроны  /////////////////////////////////////////
-		new /datum/data/stalker_equipment("9x18mm Box",				"Коробка 9х18мм",							/obj/item/ammo_box/stalker/b9x18,						2500,	ROOKIE,			sale_price =300),
-		new /datum/data/stalker_equipment("9x18mm AP Box",			"Коробка 9x18мм Бронебойные",				/obj/item/ammo_box/stalker/b9x18P,						3500,	EXPERIENCED,	sale_price =350),
-		new /datum/data/stalker_equipment("7.62x25mm Box",			"Коробка 7.62x25мм",						/obj/item/ammo_box/stalker/b762x25,						2500,	ROOKIE,			sale_price =400),
-		new /datum/data/stalker_equipment("9x19mm Box",				"Коробка 9x19мм",							/obj/item/ammo_box/stalker/b9x19,						3500,	ROOKIE,			sale_price =450),
+		new /datum/data/stalker_equipment("9x18mm Box",				"9x18mm Box",								/obj/item/ammo_box/stalker/b9x18,						2500,	ROOKIE,			sale_price =300),
+		new /datum/data/stalker_equipment("9x18mm AP Box",			"9x18mm AP Box",							/obj/item/ammo_box/stalker/b9x18P,						3500,	EXPERIENCED,	sale_price =350),
+		new /datum/data/stalker_equipment("7.62x25mm Box",			"7.62x25mm Box",							/obj/item/ammo_box/stalker/b762x25,						2500,	ROOKIE,			sale_price =400),
+		new /datum/data/stalker_equipment("9x19mm Box",				"9x19mm Box",								/obj/item/ammo_box/stalker/b9x19,						3500,	ROOKIE,			sale_price =450),
 		new /datum/data/stalker_equipment("9x19mm AP Box",			"Коробка 9x19мм Бронебойные",				/obj/item/ammo_box/stalker/b9x19P,						5750,	EXPERIENCED,	sale_price =500),
 		new /datum/data/stalker_equipment(".45 ACP Box",			"Коробка .45 ACP",							/obj/item/ammo_box/stalker/bacp45,						8000,	ROOKIE,			sale_price =550),
 		new /datum/data/stalker_equipment(".45 ACP Hydroshock Box",	"Коробка .45 ACP Hydroshock",				/obj/item/ammo_box/stalker/bacp45ap,					15000,	EXPERIENCED,	sale_price =600),

@@ -1,6 +1,7 @@
 /obj/item/clothing/suit/hooded/kozhanka/strazh/atelerd
 	name = "letniy kombinezon"
-	desc = "Производимый ремесленниками группировки «Свобода» усиленный комбинезон сталкера. Средний армейский бронежилет плюс накладные усиливающие циркониевые элементы дают неплохую защиту от автоматных пуль и осколков на различных дистанциях. Материал костюма состоит из двух слоёв: специально обработанной кожи и ткани с асбестовой нитью. Даёт некоторую защиту от различных аномальных воздействий и радиации."
+
+	desc = "Made by artisans of the group 'Freedom' reinforced overalls stalker. Medium army body armor plus overhead reinforcing zirconium elements give good protection against machine gun bullets and fragments at various distances. The costume material consists of two layers: specially treated leather and fabric with asbestos thread. Gives some protection from various anomalous influences and radiation."
 	armor = list(melee = 30, bullet = 30, laser = 30,burn = 30, bomb = 15, bio = 30, rad = 30, electro = 30)
 	hoodtype = /obj/item/clothing/head/winterhood/stalker/strazh/atelerd
 
@@ -9,7 +10,7 @@
 
 /obj/item/clothing/suit/hooded/kozhanka/white/monolith
 	name = "strange jacket"
-	desc = "Плотная кожаная куртка довольно интересной раскраски. Ткань усилена очень легкими кевларовыми пластинами, что обеспечивает слегка повышенную защиту, но не замедляет носителя. Неэффективна против аномальных и других воздействий."
+	desc = "The tight leather jacket is quite interesting coloring. The fabric is reinforced with very light Kevlar plates, which provides slightly increased protection, but does not slow down the carrier. Ineffective against abnormal and other influences."
 	icon_state = "kozhanka_mono_wh"
 	item_state = "labcoat"
 	hoodtype = /obj/item/clothing/head/winterhood/stalker/kozhanka_wh/monolith

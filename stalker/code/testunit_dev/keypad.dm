@@ -25,7 +25,7 @@
 	keypadhtml = "<html>\
 	<body><br>"
 	if(keycode == "")
-		keypadhtml += "<div align=center><table border=0><tr><td>\[ <b>Введите пароль</b> \]</td></tr></table><hr color=FF9900>"
+		keypadhtml += "<div align=center><table border=0><tr><td>\[ <b>Enter your password</b> \]</td></tr></table><hr color=FF9900>"
 	else
 		keypadhtml += "<div align=center><table border=0><tr><td>[keycode]</td></tr></table><hr color=FF9900>\
 	<form>"

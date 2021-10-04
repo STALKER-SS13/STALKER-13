@@ -3,36 +3,18 @@
 	icon = 'icons/stalker/sidorovich.dmi'
 	icon_state = "sidor"
 
-	var/successText = list("Неплохо! Хороший товар!",
-					"Молодец, я доволен!")
+	var/successText = list("Not bad! Good product!",
+					"Well done, I'm satisfied!")
 
-	var/failText = list("Ты бы ещё консервных банок насобирал.",
-					"Ты что пьяный?",
-					"Нахрена ты тягаешь эту хрень?")
+	var/failText = list("You'd still have cans to collect.",
+					"Are you drunk?"
+					"you pull that shit?")
 
-	var/buyText = list("купи",
-					"покупай",
-					"возьми",
-					"забирай",
-					"приволок",
-					"притащил")
+	var/buyText = list("buy", "buy", "take", "take away", "privolok", "dragged")
 
-	var/badLanguage = list("хуй",
-							"хуи",
-							"соси",
-							"хуесос",
-							"говно",
-							"говна",
-							"пидорас",
-							"пидор",
-							"еблан",
-							"гандон",
-							"уёбок",
-							"хуйло")
+	var/badLanguage = list("hui", "hui", "suck", "huesos", "shovno", "shit", "pidoras", "faggot",, "gandon", "uyebok", "huilo")
 
-	var/howMany = list("почём",
-						"сколько",
-						"почем")
+	var/howMany = list("how's going", "how much", "how much")
 
 	var/itemloc = null
 	var/itemloc2 = null
@@ -57,7 +39,7 @@
 
 /obj/sidor/proc/RecognizeSpeach(msg)
 	var/message = msg
-	if(!findtext(message, "Сидор"))
+	if(!findtext(message, "Sidor"))
 		return
 
 	for(var/T in buyText)
@@ -67,7 +49,7 @@
 
 	for(var/T in badLanguage)
 		if(findtext(message, lowertext(T)))
-			say("Ты берега не попутал, сталкер? Сам ты [T]!")
+			say("You're not confused, stalker? You 't]!")
 			return
 
 	var/list/weights = list()
@@ -89,7 +71,7 @@
 	if(bestWeight)
 		for(var/T in howMany)
 			if(findtext(message, lowertext(T)))
-				say("[GetCost(bestItem.itemtype)] рублей.")
+				say("[GetCost(bestItem.itemtype)] Rubles.")
 				return
 		BuyItem(bestItem)
 
@@ -220,7 +202,7 @@
 
 
 /obj/sidor/proc/NotEnoghMoney(have, need)
-	say("[pick(failText)] Или давай хабара ещё на [need - have] рублей, или добавь деньгами, или проваливай!")
+	say("[pick(failText)] Or give khabara more [need - have] rubles, or add money, or fail!")
 
 
 

@@ -10,25 +10,25 @@
     name = "Akm74/2"
     itemtype = /obj/item/weapon/gun/projectile/automatic/ak74
     cost = 14000
-    words = list("Калаш" = 5, "калаш" = 5, "ак74" = 5, "ak74" = 5, "автомат" = 5, " Автомат" = 5, "Калашникова" = 5, "Калашников" = 5, "калашникова" = 5, "Калашникова" = 10)
+    words = list("Kalash" = 5, "Kalash" = 5, "ak74" = 5, "ak74" = 5, "automatic" = 5, "Automatic" = 5, "Kalashnikov" = 5, "Kalashnikov" = 5, "Kalashnikov" = 5, "Kalashnikov" = 10)
 
 /sidoritem/aksu74
     name = "Akm74/2y"
     itemtype = /obj/item/weapon/gun/projectile/automatic/aksu74
     cost = 17000
-    words = list("укороченный" = 5, "Укороченный" = 5, "Калаш" = 5, "калаш" = 5, "ак74" = 5, "ak74" = 5, "автомат" = 5, " Автомат" = 5, "Калашникова" = 5, "Калашников" = 5, "калашникова" = 5, "Калашникова" = 10)
+    words = list("shortened" = 5, "Shortened" = 5, "Kalash" = 5, "Kalash" = 5, "ak74" = 5, "ak74" = 5, "automatic" = 5, "Automatic" = 5, "Kalashnikov" = 5, "Kalashnikov" = 5, "Kalashnikov" = 5, "Kalashnikov" = 10)
 
 /sidoritem/mp5
     name = "Viper"
     itemtype = /obj/item/weapon/gun/projectile/automatic/mp5
     cost = 12000
-    words = list("гадюку" = 5, "мп10" = 5, "mp10" = 5, "вайпер" = 5, "вайпера" = 5, "эмку" = 5, "эмочку" = 5, "Гадюка" = 10)
+    words = list("viper" = 5, "mp10" = 5, "mp10" = 5, "viper" = 5, "viper" = 5, "emku" = 5, "emochka" = 5, "Viper" = 10)
 
 /sidoritem/groza
     name = "Grom C14"
     itemtype = /obj/item/weapon/gun/projectile/automatic/groza
     cost = 32000
-    words = list("гром" = 5, "гроза" = 5, "грозу" = 5, "Гром" = 5, "гром" = 5, "С14" = 5, "C14" = 10)
+    words = list("thunder" = 5, "thunderstorm" = 5, "thunderstorm" = 5, "Thunder" = 5, "thunder" = 5, "C14" = 5, "C14" = 10)
 
 //Снайперские винтовки
 
@@ -36,13 +36,13 @@
     name = "Vintar VS"
     itemtype = /obj/item/weapon/gun/projectile/automatic/vintorez
     cost = 27000
-    words = list("винторез" = 5, "винтарь" = 5, "vintar" = 10)
+    words = list("vintorez" = 5, "vintar" = 5, "vintar" = 10)
 
 /sidoritem/val
     name = "Specgun VLA"
     itemtype = /obj/item/weapon/gun/projectile/automatic/val
     cost = 23000
-    words = list("вал" = 5, "спецавтомат вал" = 5, "вла" = 5, "спецавтомат вла" = 5, "specgun vla" = 5, "vla" = 5, "Вал" = 5, "Вла" = 10)
+    words = list("shaft" = 5, "spetsavtomat shaft" = 5, "vla" = 5, "spetsavtomat vla" = 5, "specgun vla" = 5, "vla" = 5, "Shaft" = 5, "Vla" = 10)
 
 //Дробовики
 
@@ -50,19 +50,19 @@
     name = "Doublebarrel"
     itemtype = /obj/item/weapon/gun/projectile/revolver/bm16
     cost = 12000
-    words = list("Двустволку" = 5, "двустволку" = 5, "ружье" = 5, "Ружье" = 10)
+    words = list("Double-barreled" = 5, "double-barreled" = 5, "gun" = 5, "Gun" = 10)
 
 /sidoritem/toz34
     name = "Tost-34"
     itemtype = /obj/item/weapon/gun/projectile/revolver/bm16/toz34
     cost = 15000
-    words = list("тост" = 5, "Тост" = 5, "34" = 10)
+    words = list("toast" = 5, "Toast" = 5, "34" = 10)
 
 /sidoritem/chaser
     name = "Chaser-13"
     itemtype = /obj/item/weapon/gun/projectile/shotgun/chaser
     cost = 20000
-    words = list("Чейзер" = 5, "чейзер" = 5, "13" = 10)
+    words = list("Chaser" = 5, "chaser" = 5, "13" = 10)
 
 //Пистолеты
 
@@ -70,43 +70,43 @@
     name = "PM"
     itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/pm
     cost = 2500
-    words = list("пм" = 5, "ПМ" = 5, "пистолет Макарова" = 5, "Пистолет Макарова" = 5, "пистолет макарова" = 10)
+    words = list("pm" = 5, "PM" = 5, "Makarov pistol" = 5, "Makarov pistol" = 5, "Makarov pistol" = 10)
 
 /sidoritem/sip
     name = "Sip-t M200"
     itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/sip
     cost = 7500
-    words = list("Сип" = 5, "сип" = 5, "Сип-т М200" = 15, "Сип-т" = 5, "сип-т м200" = 15, "сип-т" = 10)
+    words = list("Epa" = 5, "epa" = 5, "Epa-t M200" = 15, "Sip-t" = 5, "epa-t m200" = 15, "epa-t" = 10)
 
 /sidoritem/cora
     name = "Cora 919"
     itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/cora
     cost = 8000
-    words = list("Кора" = 5, "кора" = 5, "Кору" = 5, "кору" = 5, "Кора 919" = 5, "кора 919" = 5, "Кору 919" = 5, "кору 919" = 10)
+    words = list("Crust" = 5, "bark" = 5, "Koru" = 5, "bark" = 5, "Crust 919" = 5, "bark 919" = 5, "Crust 919" = 5, "bark 919" = 10)
 
 /sidoritem/marta
     name = "Marta"
     itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/marta
     cost = 10000
-    words = list("Марта" = 5, "марта" = 5, "Марту" = 5, "марту" = 10)
+    words = list("Marta" = 5, "Marta" = 5, "Marta" = 5, "March" = 10)
 
 /sidoritem/fort12
 	name = "Fora-12 Mk2"
 	itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/fort12
 	cost = 5000
-	words = list("Фору" = 5, "фору" = 5, "Фору 12" = 5, "фору 12" = 5, "Фору12" = 5, "фору12" = 5, "12 Мк2" = 5, "12 МК2" = 5, "12Мк2" = 5, "12МК2" = 10)
+	words = list("Fort" = 5, "fort" = 5, "Fort 12" = 5, "fort 12" = 5, "Fort12" = 5, "12 Mk2" = 5, "12 MK2" = 5, "12Mk2" = 5, "12Mk2" = 5, "12Mk2" = 10)
 
 /sidoritem/pb1s
 	name = "PB1s"
 	itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/pb1s
 	cost = 4000
-	words = list("ПБ1с" = 5, "пб1с" = 5, "Пб1с" = 5, "ПБ1С" = 5, "пБ1с" = 5, "пб1С" = 10)
+	words = list("PB1s" = 5, "pb1s" = 5, "Pb1s" = 5, "PB1C" = 5, "pB1s" = 5, "pb1C" = 10)
 
 /sidoritem/usp_match
 	name = "Usip"
 	itemtype = /obj/item/weapon/gun/projectile/automatic/pistol/usp_match
 	cost = 9000
-	words = list("Юсп" = 5, "юсп" = 5, "Юсип" = 5, "юсип" = 10)
+	words = list("Usp" = 5, "yusp" = 5, "Yusip" = 5, "yusip" = 10)
 
 //Шлемы
 
@@ -114,19 +114,19 @@
 	name = "Gasmask"
 	itemtype = /obj/item/clothing/mask/gas/stalker
 	cost = 3000
-	words = list("Противогаз" = 5, "противогаз" = 5)
+	words = list("Gas mask" = 5, "gas mask" = 5)
 
 /sidoritem/tacticalhelmet
 	name = "Tactical Helmet"
 	itemtype = /obj/item/clothing/head/tacticalhelmet
 	cost = 7000
-	words = list("Тактический шлем" = 5, "тактический шлем" = 5, "Тактический Шлем" = 10)
+	words = list("Tactical helmet" = 5, "tactical helmet" = 5, "Tactical Helmet" = 10)
 
 /sidoritem/spheram
 	name = "Sphera M12"
 	itemtype = /obj/item/clothing/head/spheram
 	cost = 9000
-	words = list("Сферу" = 5, "сферу" = 5, "Сфера" = 5, "сфера" = 5, "М12" = 5)
+	words = list("Sphere" = 5, "sphere" = 5, "Sphere" = 5, "sphere" = 5, "M12" = 5)
 
 //Легка&#255; брон&#255;
 
@@ -134,59 +134,58 @@
 	name = "Kozhanka"
 	itemtype = /obj/item/clothing/suit/hooded/kozhanka
 	cost = 6000
-	words = list("Кожанку" = 5, "кожанку" = 5, "Кожаную" = 5, "кожаную" = 5, "куртку" = 5, "Куртку" = 5, "Кожанка" = 5, "кожанка" = 5, "Кожана&#255;" = 5, "кожана&#255;" = 5, "куртка" = 5, "Куртка" = 5)
+	words = list("Kozhanka" = 5, "kozhanka" = 5, "Leather" = 5, "leather" = 5, "jacket" = 5, "Jacket" = 5, "kozhanka" = 5, "kozhanka" = 5, "Kozhanaÿ" = 5, "leatherÿ" = 5, "jacket" = 5, "Jacket" = 5)
 
 /sidoritem/kozhanka/white
 	itemtype = /obj/item/clothing/suit/hooded/kozhanka/white
-	words = list("Кожанку" = 5, "кожанку" = 5, "Белую" = 5, "белую" = 5, "Кожаную" = 5, "кожаную" = 5, "Куртку" = 5, "куртку" = 5, "Кожанка" = 5, "кожанка" = 5, "Бела&#255;" = 5, "бела&#255;" = 5, "Кожана&#255;" = 5, "кожана&#255;" = 5, "Куртка" = 5, "куртка" = 5)
+	words = list("Kozhanka" = 5, "kozhanka" = 5, "White" = 5, "white" = 5, "leather" = 5, "jacket" = 5, "jacket" = 5, "Kozhanka" = 5, "kozhanka" = 5, "kozhanka" = 5, "Belaÿ" = 5, "belaÿ" = 5, "Kozhanaÿ" = 5, "kozhanaÿ" = 5, "Jacket" = 5, "jacket" = 5)
 
 /sidoritem/kozhanka/banditka
 	itemtype = /obj/item/clothing/suit/hooded/kozhanka/banditka
-	words = list("Бандитку" = 5, "Бандитскую" = 5, "бандитскую" = 5, "кожаную" = 5, "Кожаную" = 5, "Куртку" = 5, "куртку" = 5, "Бандитка" = 5, "Бандитска&#255;" = 5, "бандитска&#255;" = 5, "кожана&#255;" = 5, "Кожана&#255;" = 5, "Куртка" = 5, "куртка" = 5)
+	words = list("Bandit" = 5, "Bandit" = 5, "bandit" = 5, "leather" = 5, "Leather" = 5, "Jacket" = 5, "jacket" = 5, "Bandit" = 5, "Bandit" & #255;" = 5, "banditryÿ" = 5, "leatherÿ" = 5, "Kozhanaÿ" = 5, "Jacket" = 5, "jacket" = 5, "jacket" = 5)
 
 /sidoritem/banditcoat
 	name = "Cloack"
 	itemtype = /obj/item/clothing/suit/hooded/kozhanka/banditka/coat
 	cost = 10000
-	words = list("Бандитский" = 5, "бандитский" = 5, "плащ" = 5, "Плащ" = 5)
+	words = list("Bandit" = 5, "bandit" = 5, "cloak" = 5, "Cloak" = 5)
 
 /sidoritem/kombez
 	name = "Zarya"
 	itemtype = /obj/item/clothing/suit/hooded/kombez
 	cost = 22000
-	words = list("Кобинезон" = 5, "комбинезон" = 5, "Сталкерский" = 5, "сталкерский" = 5, "Зар&#255;" = 5, "зар&#255;" = 5)
-
+	words = list("Jumpsuit" = 5, "jumpsuit" = 5, "Stalker" = 5, "Stalker" = 5, "Zarÿ" = 5)
 //Средн&#255;&#255; брон&#255;
 
 /sidoritem/ecolog
 	name = "SPP-99"
 	itemtype = /obj/item/clothing/suit/hooded/sealed/ecolog
 	cost = 85000
-	words = list("Эколога" = 5, "эколога" = 5, "Зеленый" = 5, "зеленый" = 5, "СПП" = 5, "СПП-99" = 5, "99" = 5, "Эколог" = 5, "эколог" = 10)
+	words = list("Ecologist" = 5, "ecologist" = 5, "Green" = 5, "green" = 5, "SPP" = 5, "SPP-99" = 5, "99" = 5, "Ecologist" = 5, "ecologist" = 10)
 
 /sidoritem/ecologm
 	name = "SPP-99M"
 	itemtype = /obj/item/clothing/suit/hooded/sealed/ecologm
 	cost = 100000
-	words = list("Эколога" = 5, "эколога" = 5, "Оранжевый" = 5, "оранжевый" = 5, "улучшенного" = 5, "Улучшенного" = 5, "СПП" = 5, "СПП-99М" = 15, "99М" = 5, "Улучшенный" = 5, "улучшенный" = 5, "Эколог" = 5, "эколог" = 10)
+	words = list("Ecologist" = 5, "ecologist" = 5, "Orange" = 5, "orange" = 5, "improved" = 5, "Improved" = 5, "SPP" = 5, "SPP-99M" = 15, "99M" = 5, "Improved" = 5, "Improved" = 5, "Ecologist" = 5, "ecologist" = 10)
 
 /sidoritem/seva
 	name = "Seva"
 	itemtype = /obj/item/clothing/suit/hooded/sealed/seva
 	cost = 80000
-	words = list("Севу" = 5, "севу" = 5, "Сева" = 5, "сева" = 5)
+	words = list("Seva" = 5, "seva" = 5, "Seva" = 5, "seva" = 5)
 
 /sidoritem/berill
 	name = "Berill 5M"
 	itemtype = /obj/item/clothing/suit/berill
 	cost = 40000
-	words = list("Берилл" = 5, "берилл" = 5, "Берил" = 5, "берил" = 5)
+	words = list("Beryl" = 5, "beryl" = 5, "Beryl" = 5, "beryl" = 5)
 
 /sidoritem/army
 	name = "Army Armor"
 	itemtype = /obj/item/clothing/suit/army
 	cost = 8000
-	words = list("Армейский" = 5, "армейский" = 5, "Бронежилет" = 5, "бронежилет" = 5)
+	words = list("Army" = 5, "army" = 5, "Bulletproof vest" = 5, "body armor" = 5)
 /*
 /sidoritem/psz9d
 	name = "PSZ 9D"
@@ -198,7 +197,7 @@
 	name = "Mercenary suit"
 	itemtype = /obj/item/clothing/suit/hooded/kombez/mercenary
 	cost = 19000
-	words = list("Костюм" = 5, "костюм" = 5, "Наемника" = 5, "наемника" = 5, "броню" = 5, "Броню" = 5)
+	words = list("Suit" = 5, "suit" = 5, "Mercenary" = 5, "mercenary" = 5, "armor" = 5, "Armor" = 5)
 /*
 /sidoritem/strazh
 	name = "Strazh Svobodi"
@@ -212,13 +211,13 @@
 	name = "Exoskelet"
 	itemtype = /obj/item/clothing/suit/hooded/sealed/exoskelet
 	cost = 120000
-	words = list("Экзоскелет" = 5, "экзосклет" = 5, "Экзу" = 5, "экзу" = 5)
+	words = list("Exoskeleton" = 5, "exoskeleton" = 5, "Exo" = 5, "exo" = 5)
 
 /sidoritem/psz9md
 	name = "PSZ-9MD"
 	itemtype = /obj/item/clothing/suit/hooded/sealed/psz9md
 	cost = 80000
-	words = list("ПСЗ" = 5, "9МД" = 5, "ПСЗ9МД" = 5, "псз" = 5, "9мд" = 5, "псз9мд" = 5, "Севу" = 5, "севу" = 5, "Долга" = 5, "долга" = 5)
+	words = list("PSZ" = 5, "9MD" = 5, "PSZ9MD" = 5, "PSZ" = 5, "9md" = 5, "PSZ9MD" = 5, "Seva" = 5, "Seva" = 5, "Debt" = 5, "debt" = 5)
 
 //Медикаменты
 
@@ -226,31 +225,31 @@
 	name = "Firstaid"
 	itemtype = /obj/item/weapon/reagent_containers/pill/stalker/aptechka/civilian
 	cost = 500
-	words = list("Аптечку" = 5, "аптечку" = 5, "Атпечка" = 5, "аптечка" = 5)
+	words = list("First aid kit" = 5, "first aid kit" = 5, "Atpechka" = 5, "first aid kit" = 5)
 
 /sidoritem/firstaid/army
 	name = "Army firstaid"
 	itemtype = /obj/item/weapon/reagent_containers/pill/stalker/aptechka/army
 	cost = 1000
-	words = list("Аптечку" = 5, "аптечку" = 5, "Армейскую" = 5, "армейскую" = 5, "Военную" = 5, "военную" = 5, "Военна&#255;" = 5, "военна&#255;" = 5, "Атпечка" = 5, "аптечка" = 5)
+	words = list("First aid kit" = 5, "first aid kit" = 5, "Army" = 5, "Army" = 5, "military" = 5, "Military" = 5, "Militaryÿ" = 5, "militaryÿ" = 5, "Atpechka" = 5, "first aid kit" = 5)
 
 /sidoritem/firstaid/science
 	name = "Science firstaid"
 	itemtype = /obj/item/weapon/reagent_containers/pill/stalker/aptechka/scientific
 	cost = 2000
-	words = list("Аптечку" = 5, "аптечку" = 5, "Научную" = 5, "научную" = 5, "Научна&#255;" = 5, "научна&#255;" = 5, "Атпечка" = 5, "аптечка" = 5)
+	words = list("First aid kit" = 5, "first aid kit" = 5, "Scientific" = 5, "Scientific" = 5, "Scientificÿ" = 5, "scientificÿ" = 5, "Atpechka" = 5, "first aid kit" = 5)
 
 /sidoritem/bint
 	name = "Bint"
 	itemtype = /obj/item/stack/medical/gauze/bint
 	cost = 100
-	words = list("Бинт" = 5, "бинт" = 5)
+	words = list("Bandage" = 5, "bint" = 5)
 
 /sidoritem/antirad
 	name = "Antirad"
 	itemtype = /obj/item/weapon/reagent_containers/hypospray/medipen/stalker/antirad
 	cost = 700
-	words = list("Антирад" = 5, "антирад" = 5)
+	words = list("Antirad" = 5, "antirad" = 5)
 
 //Еда
 
@@ -273,48 +272,48 @@
 	name = "Canned"
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva
 	cost = 200
-	words = list("Банку" = 5, "банку" = 5, "Консерв" = 5, "консерв" = 5, "Консервы" = 5, "консервы" = 5, "Завтрак" = 5, "завтрак" = 5, "Туриста" = 5, "туриста" = 5, "Банка" = 5, "банка" = 5)
+	words = list("Can" = 5, "can" = 5, "Canned" = 5, "canned" = 5, "Canned food" = 5, "Canned food" = 5, "Breakfast" = 5, "Breakfast" = 5, "Tourist" = 5, "Tourist" = 5, "Bank" = 5, "Bank" = 5)
 
 /sidoritem/konserva/shproti
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva/shproti
-	words = list("Банку" = 5, "банку" = 5, "Шпрот" = 5, "шпрот" = 5, "Шпроты" = 5, "шпроты" = 5, "Рижские" = 5, "рижские" = 5, "Рижских" = 5, "рижских" = 5, "Банка" = 5, "банка" = 5)
+	words = list("Banku" = 5, "banku" = 5, "Sprat" = 5, "sprat" = 5, "Sprats" = 5, "sprats" = 5, "Riga" = 5, "Riga" = 5, "Riga" = 5, "Riga" = 5, "Bank" = 5, "bank" = 5)
 
 /sidoritem/konserva/soup
 	name = "Canned Soup"
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva/soup
-	words = list("Банку" = 5, "банку" = 5, "Консервированного" = 5, "консервированного" = 5, "Супа" = 5, "супа" = 5, "Банка" = 5, "банка" = 5)
+	words = list("Jar" = 5, "can" = 5, "Canned" = 5, "canned" = 5, "Soup" = 5, "soup" = 5, "Can" = 5, "can" = 5)
 
 /sidoritem/konserva/bobi
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva/bobi
-	words = list("Банку" = 5, "банку" = 5, "Консервированных" = 5, "консервированных" = 5, "Бобов" = 5, "бобов" = 5, "Банка" = 5, "банка" = 5)
+	words = list("Can" = 5, "can" = 5, "Canned" = 5, "canned" = 5, "Beans" = 5, "Beans" = 5, "Bank" = 5, "can" = 5)
 
 /sidoritem/konserva/govyadina
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva/govyadina2
-	words = list("Банку" = 5, "банку" = 5, "Консерированной" = 5, "консервированной" = 5, "Гов&#255;дины" = 5, "гов&#255;дины" = 5, "Банка" = 5, "банка" = 5)
+	words = list("Bank" = 5, "bank" = 5, "Conserated" = 5, "canned" = 5, "Hovÿdiny" = 5, "hovÿdiny" = 5, "Bank" = 5, "bank" = 5)
 
 /sidoritem/kolbasa
 	name = "Sausage"
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa
 	cost = 100
-	words = list("Палку" = 5, "палку" = 5, "Колбасы" = 5, "колбасы" = 5, "Колбасу" = 5, "колбасу" = 10)
+	words = list("Stick" = 5, "stick" = 5, "Sausages" = 5, "sausages" = 5, "Sausage" = 5, "sausage" = 10)
 
 /sidoritem/hleb
 	name = "Bread"
 	itemtype = /obj/item/weapon/reagent_containers/food/snacks/stalker/baton
 	cost = 100
-	words = list("Батон" = 5, "батон" = 5, "Батона" = 5, "батона" = 5, "Хлеб" = 5, "хлеб" = 5, "Хлеба" = 5, "хлеба" = 5)
+	words = list("Baton" = 5, "loaf" = 5, "Batona" = 5, "loaf" = 5, "Bread" = 5, "Bread" = 5, "Bread" = 5, "bread" = 5)
 
 /sidoritem/vodka
 	name = "Kazaki"
 	itemtype = /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/kazaki
 	cost = 300
-	words = list("Бутылку" = 5, "бутылку" = 5, "Водки" = 5, "водки" = 5, "Вод&#255;ры" = 5, "вод&#255;ры" = 5 , "Казаки" = 5, "казаки" = 5, "Водка" = 5, "водка" = 10)
+	words = list("Bottle" = 5, "bottle" = 5, "Vodka" = 5, "vodka" = 5, "Waterÿry" = 5, "waterÿry" = 5, "Cossacks" = 5, "Cossacks" = 5, "Vodka" = 5, "vodka" = 10)
 
 /sidoritem/energetic
 	name = "NonStop"
 	itemtype = /obj/item/weapon/reagent_containers/food/drinks/soda_cans/energetic
 	cost = 200
-	words = list("Энергетик" = 5, "энергетик" = 5, "Энергетика" = 5, "энергетика" = 5, "NonStop" = 5, "nonstop" = 5)
+	words = list("Energetik" = 5, "energetik" = 5, "Energy" = 5, "NonStop" = 5, "nonstop" = 5)
 
 //Оружие ближнего бо&#255;
 
@@ -322,7 +321,7 @@
 	name = "Knife"
 	itemtype = /obj/item/weapon/kitchen/knife/tourist
 	cost = 600
-	words = list("Нож" = 5, "Ножик" = 10)
+	words = list("Knife" = 5, "Knife" = 10)
 
 //Амуници&#255;
 
@@ -330,109 +329,109 @@
 	name = "b545"
 	itemtype = /obj/item/ammo_box/stalker/b545
 	cost = 2000
-	words = list("Коробку" = 5, "коробку" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Калаша" = 5, "калаша" = 5, "П&#255;теркой" = 20, "п&#255;теркой" = 20, "П&#255;терки" = 20, "п&#255;терки" = 20, "5.45x39" = 5, "5.45х39" = 5)
+	words = list("Box" = 5, "box" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "Kalasha" = 5, "Kalasha" = 5, "Pÿgrater" = 20, "pÿgrater" = 20, "Pÿgraters" = 20, "pÿgraters" = 20, "5.45x39" = 5, "5.45x39" = 5)
 
 /sidoritem/b545ap
 	name = "b545ap"
 	itemtype = /obj/item/ammo_box/stalker/b545ap
 	cost = 3000
-	words = list("Коробку" = 5, "коробку" = 5, "Бронебойными" = 5, "бронебойными" = 5, "Бронебойных" = 5, "бронебойных" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Калаша" = 5, "калаша" = 5, "П&#255;теркой" = 20, "п&#255;теркой" = 20, "П&#255;терки" = 20, "п&#255;терки" = 20, "5.45x39" = 5, "5.45х39" = 5)
+	words = list("Box" = 5, "box" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "cartridge" = 5, "Kalasha" = 5, "Kalasha" = 5, "Pÿgrater" = 20, "pÿgrater" = 20, "Pÿgraters" = 20, "pÿgraters" = 20, "5.45x39" = 5, "5.45x39" = 5)
 
 /sidoritem/m545
 	name = "m545"
 	itemtype = /obj/item/ammo_box/magazine/stalker/m545
 	cost = 800
-	words = list("Магазин" = 5, "магазин" = 5, "Калашу" = 5, "калашу" = 5, "5.45x39" = 5, "5.45х39" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Kalasha" = 5, "kalashu" = 5, "5.45x39" = 5, "5.45x39" = 5)
 
 /sidoritem/b9x18
 	name = "b9x18"
 	itemtype = /obj/item/ammo_box/stalker/b9x18
 	cost = 1000
-	words = list("Коробку" = 5, "коробку" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "9x18" = 5, "9х18" = 5)
+	words = list("Box" = 5, "box" = 5, "cartridges" = 5, "Cartridges" = 5, "cartridge" = 5, "cartridge" = 5, "9x18" = 5, "9x18" = 5)
 
 /sidoritem/b9x18P
 	name = "b9x18P"
 	itemtype = /obj/item/ammo_box/stalker/b9x18P
 	cost = 1500
-	words = list("Коробку" = 5, "коробку" = 5, "Бронебойными" = 5, "бронебойными" = 5, "Бронебойных" = 5, "бронебойных" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "9x18" = 5, "9х18" = 5)
+	words = list("Box" = 5, "box" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "armor-piercing" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "cartridge" = 5, "9x18" = 5, "9x18" = 5)
 
 /sidoritem/m9x18
 	name = "m9x18"
 	itemtype = /obj/item/ammo_box/magazine/stalker/m9x18pm
 	cost = 200
-	words = list("Магазин" = 5, "магазин" = 5, "ПМу" = 5, "пму" = 5, "ПМа" = 5, "пма" = 5, "ПБ1с" = 5, "пб1с" = 5, "ПБ1С" = 5, "9x18" = 5, "9х18" = 5)
+	words = list("Shop" = 5, "shop" = 5, "PMU" = 5, "pmu" = 5, "PMA" = 5, "pma" = 5, "PB1s" = 5, "pb1s" = 5, "PB1S" = 5, "9x18" = 5, "9x18" = 5)
 
 /sidoritem/f9x18
 	name = "f9x18"
 	itemtype = /obj/item/ammo_box/magazine/stalker/m9x18fort
 	cost = 300
-	words = list("Магазин" = 5, "магазин" = 5, "Форе" = 5, "Фору" =5, "форе" = 5, "фору" = 5, "Форы" = 5, "форы" = 5, "9x18f" = 5, "9х18f" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Fore" = 5, "Fore" = 5, "handicap" = 5, "handicap" = 5, "handicaps" = 5, "handicaps" = 5, "9x18f" = 5, "9x18f" = 5)
 
 /sidoritem/b12x70
 	name = "b12x70"
 	itemtype = /obj/item/ammo_box/stalker/b12x70
 	cost = 400
-	words = list("Коробку" = 5, "коробку" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Дробовика" = 5, "дробовика" = 5, "12x70" = 5, "12х70" = 5)
+	words = list("Box" = 5, "box" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "Shotgun" = 5, "shotgun" = 5, "12x70" = 5, "12x70" = 5)
 
 /sidoritem/b12x70P
 	name = "b12x70P"
 	itemtype = /obj/item/ammo_box/stalker/b12x70P
 	cost = 500
-	words = list("Коробку" = 5, "коробку" = 5, "Бронебойными" = 5, "бронебойными" = 5, "Бронебойных" = 5, "бронебойных" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Дробовика" = 5, "дробовика" = 5, "12x70" = 5, "12х70" = 5)
+	words = list("Box" = 5, "box" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "Shotgun" = 5, "shotgun" = 5, "12x70" = 5, "12x70" = 5)
 
 /sidoritem/b12x70D
 	name = "b12x70D"
 	itemtype = /obj/item/ammo_box/stalker/b12x70D
 	cost = 800
-	words = list("Коробку" = 5, "коробку" = 5, "Дротиковыми" = 5, "дротиковыми" = 5, "Дротиковых" = 5, "дротиковых" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Дробовика" = 5, "дробовика" = 5, "12x70" = 5, "12х70" = 5)
+	words = list("Box" = 5, "box" = 5, "Dart" = 5, "dart" = 5, "Dart" = 5, "dart" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "Shotgun" = 5, "shotgun" = 5, "12x70" = 5, "12x70" = 5)
 
 /sidoritem/b9x19
 	name = "b9x19"
 	itemtype = /obj/item/ammo_box/stalker/b9x19
 	cost = 1200
-	words = list("Коробку" = 5, "коробку" = 5, "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Марте" = 5, "марте" = 5, "Марты" = 5, "марты" = 5, "Гадюке" = 5, "гадюке" = 5, "Гадюки" = 5, "гадюки" = 5, "мп5" = 5, "МП5" = 5, "9x19" = 5, "9х19" = 5)
+	words = list("Box" = 5, "box" = 5, "cartridges" = 5, "Cartridges" = 5, "Cartridge" = 5, "cartridge" = 5, "March" = 5, "Martha" = 5, "Marty" = 5, "Viper" = 5, "Viper" = 5, "Viper" = 5, "Vipers" = 5, "vipers" = 5, "mp5" = 5, "MP5" = 5, "9x19" = 5, "9x19" = 5)
 
 /sidoritem/b9x19P
 	name = "b9x19P"
 	itemtype = /obj/item/ammo_box/stalker/b9x19P
 	cost = 1700
-	words = list("Коробку" = 5, "коробку" = 5, "Бронебойными" = 5, "бронебойными" = 5, "Бронебойных" = 5, "бронебойных", "патронами" = 5, "Патронами" = 5, "Патрон" = 5, "патрон" = 5, "Марте" = 5, "марте" = 5, "Марты" = 5, "марты" = 5, "18x19" = 5, "18х19" = 5)
+	words = list("Box" = 5, "box" = 5, "Armor-piercing" = 5, "armor-piercing" = 5, "Armor-piercing" = 5, "armor-piercing", "cartridges" = 5, "Cartridge" = 5, "Cartridge" = 5, "cartridge" = 5, "Marte" = 5, "March" = 5, "March" = 5, "March" = 5, "18x19" = 5, "18x19" = 5)
 
 /sidoritem/p9x19
 	name = "p9x19"
 	itemtype = /obj/item/ammo_box/magazine/stalker/m9x19marta
 	cost = 200
-	words = list("Магазин" = 5, "магазин" = 5, "Марте" = 5, "марте" = 5, "Марты" = 5, "марты" = 5, "9x19" = 5, "9х19" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Marte" = 5, "March" = 5, "March" = 5, "March" = 5, "9x19" = 5, "9x19" = 5)
 
 /sidoritem/m9x19g
 	name = "m9x19g"
 	itemtype = /obj/item/ammo_box/magazine/stalker/m9x19mp5
 	cost = 500
-	words = list("Магазин" = 5, "магазин" = 5, "Гадюке" = 5, "гадюке" = 5, "Гадюки" = 5, "гадюки" = 5, "мп5" = 5, "МП5" = 5, "9x19" = 5, "9х19" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Viper" = 5, "viper" = 5, "Vipers" = 5, "vipers" = 5, "mp5" = 5, "MP5" = 5, "9x19" = 5, "9x19" = 5)
 
 /sidoritem/sc45
 	name = "sc45"
 	itemtype = /obj/item/ammo_box/magazine/stalker/sc45
 	cost = 300
-	words = list("Магазин" = 5, "магазин" = 5, "Коре" = 5, "коре" = 5, "Коры" = 5, "коры" = 5, "Сипу" = 5, "сипу" = 5, "Сипа" = 5, "сипа" = 5, "45" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Kore" = 5, "kore" = 5, "Kory" = 5, "kory" = 5, "Sipu" = 5, "sipu" = 5, "Sipa" = 5, "sipa" = 5, "45" = 5)
 
 /sidoritem/sp9x39vint
 	name = "sp9x39vint"
 	itemtype = /obj/item/ammo_box/magazine/stalker/sp9x39vint
 	cost = 700
-	words = list("Магазин" = 5, "магазин" = 5, "Винторезу" = 5, "винторезу" = 5, "Винтореза" = 5, "винтореза" = 5, "9x39" = 5, "9х39" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Vintorez" = 5, "screw cutter" = 5, "Vintorez" = 5, "vintorez" = 5, "9x39" = 5, "9x39" = 5)
 
 /sidoritem/sp9x39val
 	name = "sp9x39val"
 	itemtype = /obj/item/ammo_box/magazine/stalker/sp9x39val
 	cost = 1200
-	words = list("Магазин" = 5, "магазин" = 5, "Валу" = 5, "валу" = 5, "Вала" = 5, "вала" = 5, "Вла" = 5, "вла" = 5, "9x39" = 5, "9х39" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Valu" = 5, "shaft" = 5, "Shaft" = 5, "shaft" = 5, "Vla" = 5, "vla" = 5, "9x39" = 5, "9x39" = 5)
 
 /sidoritem/sp9x39groza
 	name = "sp9x39groza"
 	itemtype = /obj/item/ammo_box/magazine/stalker/sp9x39groza
 	cost = 1200
-	words = list("Магазин" = 5, "магазин" = 5, "Грозе" = 5, "грозе" = 5, "грозы" = 5, "Грозы" = 5, "Грома" = 5, "грома" = 5, "Грому" = 5, "грому" = 5, "9x39" = 5, "9х39" = 5)
+	words = list("Shop" = 5, "shop" = 5, "Groze" = 5, "groze" = 5, "thunderstorms" = 5, "Thunderstorms" = 5, "thunder" = 5, "thunder" = 5, "Thunder" = 5, "thunder" = 5, "9x39" = 5, "9x39" = 5)
 
 
 
@@ -499,52 +498,52 @@
 	name = "Guitar"
 	itemtype = /obj/item/device/instrument/guitar
 	cost = 3000
-	words = list("Гитару" = 5, "гитару" = 5, "Гитара" = 5, "гитара" = 5)
+	words = list("Guitar" = 5, "guitar" = 5, "Guitar" = 5, "guitar" = 5)
 
 /sidoritem/geiger
 	name = "Geiger Counter"
 	itemtype = /obj/item/device/geiger_counter
 	cost = 500
-	words = list("Счетчик" = 5, "счетчик" = 5, "Гейгера" = 5, "гейгера" = 5)
+	words = list("Counter" = 5, "counter" = 5, "Geiger" = 5, "Geiger" = 5)
 
 /sidoritem/shovel
 	name = "Shovel"
 	itemtype = /obj/item/weapon/shovel
 	cost = 1500
-	words = list("Лопату" = 5, "лопату" = 5, "Лопата" = 5, "лопата" = 5)
+	words = list("Shovel" = 5, "shovel" = 5, "Shovel" = 5, "shovel" = 5)
 
 /sidoritem/flashlight
 	name = "flashlight"
 	itemtype = /obj/item/device/flashlight/seclite
 	cost = 500
-	words = list("Фонарь" = 5, "фонарь" = 5, "Фонарик" = 5, "фонарик" = 5)
+	words = list("Lantern" = 5, "lantern" = 5, "Flashlight" = 5, "flashlight" = 5)
 
 /sidoritem/artifactbelt
 	name = "artbelt"
 	itemtype = /obj/item/weapon/storage/belt/stalker
 	cost = 500
-	words = list("По&#255;с" = 5, "по&#255;с" = 5, "Артефактов" = 5, "артефактов" = 5)
+	words = list("Belt" = 5, "belt" = 5, "Artifacts" = 5, "artifacts" = 5)
 
 /sidoritem/radio
 	name = "radio"
 	itemtype = /obj/item/device/radio
 	cost = 600
-	words = list("Радио" = 5, "радио" = 10)
+	words = list("Radio" = 5, "radio" = 10)
 
 /sidoritem/mathes
 	name = "match"
 	itemtype = /obj/item/weapon/storage/box/matches
 	cost = 50
-	words = list("Спички" = 5, "спички" = 5, "Спичек" = 5, "спичек" = 5)
+	words = list("Matches" = 5, "matches" = 5, "Matches" = 5, "matches" = 5)
 
 /sidoritem/cigars
 	name = "cigars"
 	itemtype = /obj/item/weapon/storage/fancy/cigarettes/cigpack/maxim
 	cost = 200
-	words = list("Сигареты" = 5, "сигареты" = 5, "Сигарет" = 5, "сигарет" = 5)
+	words = list("Cigarettes" = 5, "cigarettes" = 5, "Cigarettes" = 5, "cigarettes" = 5)
 
 /sidoritem/cigarsup
 	name = "cigars"
 	itemtype = /obj/item/weapon/storage/fancy/cigarettes/cigars
 	cost = 5000
-	words = list("Сигары" = 5, "сигары" = 5, "Сигар" = 5, "сигар" = 5)
+	words = list("Cigars" = 5, "cigars" = 5, "Cigars" = 5, "cigars" = 5)

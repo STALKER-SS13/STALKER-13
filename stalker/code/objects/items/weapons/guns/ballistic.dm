@@ -714,31 +714,32 @@
 
 ///////////////////////////// Прочие винтовки //////////////////////////////////////////
 
-/obj/item/gun/ballistic/automatic/gauss  // Гаусс-винтовка
+/obj/item/gun/ballistic/automatic/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"
-	desc = "Сверхточное высокотехнологичное оружие, известное как «изделие № 62», было разработано конструкторами секретных лабораторий внутри Зоны. Принцип его действия основан на разгоне пули системой электромагнитов; пуля при этом способна развивать сверхскорости, что обеспечивает колоссальную пробивную способность при почти полном отсутствии отдачи. Для обеспечения достаточной энергоёмкости аккумуляторов в последних используются частицы определённых артефактов."
-	icon_state = "gauss"
-	item_state = "gauss"
-	fire_sound = 'stalker/sound/weapons/gauss_shot.ogg'
-	mag_type = /obj/item/ammo_box/magazine/stalker/gauss
-	suppressed = 1
+	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
+	eng_desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
+	icon_state = "gaussrifle"
+	item_state = "gaussrifle"
+	colored = 0//"normal"
+	slot_flags = SLOT_BACK//|SLOT_BELT
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/gaussbattery
+	fire_sound = 'stalker/sound/weapons/gauss_shoot.ogg'
 	can_suppress = 0
 	can_unsuppress = 0
-	zoomable = 1
-	zoom_amt = 7
-	zoom_out_amt = 10
-	burst_size = 1
-	fire_delay = 3
-	durability = 150
-	slot_flags = ITEM_SLOT_BACK
-	force = 15
+	fire_delay = 200
 	pin = /obj/item/firing_pin
+	durability = 120
 	w_class = 4
-	spread = 1
-	recoil = 1
-	damagelose = 0.90
-	can_scope = 1
+	spread = 0
+	recoil = 0
+	randomspread = 0
+	damagelose = 0
+	distro = 15
+	zoomable = 1
+	zoom_amt = 8
+	zoom_out_amt = 10
 	weapon_weight = WEAPON_MEDIUM
-	draw_sound = 'stalker/sound/weapons/draw/generic_draw.ogg'
-	load_sound = 'stalker/sound/weapons/load/gauss_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+	load_sound = 'stalker/sound/weapons/gauss_reload.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'

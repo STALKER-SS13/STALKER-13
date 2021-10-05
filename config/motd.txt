@@ -1,6 +1,0 @@
-<!-- Most valid html will work in here, excluding images. -->
-
-<h1>Welcome to S.T.A.L.K.E.R. 13 - Welcome to the Zone!</h1>
-
-<i>This server is running a /stalker/station build.</i>
-<i>Join the Discord to read the rules: https://discord.gg/mGEfhjhH2k. Have fun!</i>

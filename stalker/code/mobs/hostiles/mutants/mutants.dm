@@ -50,13 +50,13 @@
 				H.dropItemToGround(H.back)
 				H.dropItemToGround(H.wear_id)
 			L.gib()
-			visible_message("<span class='danger'>[src] разрывает [L] на кусочки!</span>")
-			to_chat(src, "<span class='userdanger'>Вы пожираете [L] и востанавливаете себе здоровье!</span>")
+			visible_message("<span class='danger'>[src] Breaks [L] into pieces!</span>")
+			to_chat(src, "<span class='userdanger'>You devour [L] and regain your health!</span>")
 			src.revive()
 
 /mob/living/simple_animal/hostile/mutant/dog
 	name = "dog mutant"
-	desc = "Мутировавшая слепая дикая собака."
+	desc = "A mutated blind wild dog."
 	eng_desc = "This dog became blind because of the radiation, allowing him to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage.His tail is edible and so taking it would be a good idea to make a soup or sell it."
 	turns_per_move = 15
 	speed = 1
@@ -109,7 +109,7 @@
 
 /mob/living/simple_animal/hostile/mutant/snork
 	name = "snork"
-	desc = "Когда-то оно было человеком."
+	desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube.His lips have been shredded, probably by himself, and his skin has a greenish hue. He moves on all fours and his physique allows him to jump up to 10 meters.His nails are sharp and as sharp as claws. The glasses of his gas mask do not allow us to say whether he is blind or not."
 	eng_desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube.His lips have been shredded, probably by himself, and his skin has a greenish hue. He moves on all fours and his physique allows him to jump up to 10 meters.His nails are sharp and as sharp as claws. The glasses of his gas mask do not allow us to say whether he is blind or not."
 	turns_per_move = 15
 	speed = 3
@@ -200,7 +200,7 @@
 
 /mob/living/simple_animal/hostile/mutant/flesh
 	name = "flesh"
-	desc = "Мутировавшая свинья."
+	desc = "This abomination is a horribly mutated pig affected by radiation.His three eyes have lost all the vigor of life and his eyes are empty.Despite his large, heavy legs, he seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
 	eng_desc = "This abomination is a horribly mutated pig affected by radiation.His three eyes have lost all the vigor of life and his eyes are empty.Despite his large, heavy legs, he seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
 	turns_per_move = 15
 	speed = 5
@@ -242,7 +242,7 @@
 
 /mob/living/simple_animal/hostile/mutant/kaban
 	name = "boar"
-	desc = "Коренное население."
+	desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome.The smell coming from his mouth smells of carrion and grass.His posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him. His meat is sold at a good price to Skadovsk merchants."
 	eng_desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome.The smell coming from his mouth smells of carrion and grass.His posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him. His meat is sold at a good price to Skadovsk merchants."
 	turns_per_move = 15
 	speed = 5
@@ -292,7 +292,7 @@
 
 /mob/living/simple_animal/hostile/mutant/bloodsucker
 	name = "bloodsucker"
-	desc = "Твой худший ночной кошмар."
+	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to do.Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers.The guttural breathing of the mutant freezes your blood."
 	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to do.Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers.The guttural breathing of the mutant freezes your blood."
 	turns_per_move = 15
 	speed = 3
@@ -370,7 +370,7 @@
 
 /mob/living/simple_animal/hostile/mutant/pseudog
 	name = "psy-dog"
-	desc = "Лохматый пёс."
+	desc = "Shaggy dog."
 	eng_desc = "Shaggy dog."
 	turns_per_move = 15
 	speed = 3
@@ -413,7 +413,7 @@
 
 /mob/living/simple_animal/hostile/mutant/controller
 	name = "Controller"
-	desc = "Полуголый старый мужчина с деформированной головой."
+	desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties.He has barely any clothes besides torn rags displayed randomly on the chest.Looking at him sends chills down your spine."
 	eng_desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties.He has barely any clothes besides torn rags displayed randomly on the chest.Looking at him sends chills down your spine."
 	turns_per_move = 15
 	speed = 3

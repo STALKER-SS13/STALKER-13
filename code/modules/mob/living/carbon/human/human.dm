@@ -249,7 +249,7 @@
 
 	if(href_list["pockets"] && usr.canUseTopic(src, BE_CLOSE, NO_DEXTERY)) //TODO: Make it match (or intergrate it into) strippanel so you get 'item cannot fit here' warnings if mob_can_equip fails
 		if(get_area(src.loc).safezone || get_area(usr.loc).safezone)
-			to_chat(usr, "<span class='warning'>Вы не можете раздевать людей в этой зоне!</span>")
+			to_chat(usr, "<span class='warning'>You can't undress people in this area!</span>")
 			return
 
 		var/pocket_side = href_list["pockets"]
@@ -550,13 +550,13 @@
 												ending = "ы"
 											if(4)
 												ending = "ы"
-										to_chat(H, "<span class='warning'>Вы сможете изменить репутацию через [round((3000 + last_vote - world.time)/10)] секунд[ending].</span>")
+										to_chat(H, "<span class='warning'>You will be able to change your reputation through [round((3000 + last_vote - world.time)/10)] Seconds[ending].</span>")
 
 
 						if(href_list["addition_rep"])
 							if(R)
 								if(src.stat == "dead")
-									to_chat(H, "<span class='warning'>[src] мёртв.</span>")
+									to_chat(H, "<span class='warning'>[src] Dead.</span>")
 								else
 									if(!(last_vote && world.time < last_vote + 3000))
 										last_vote = world.time
@@ -574,10 +574,10 @@
 												ending = "ы"
 											if(4)
 												ending = "ы"
-										to_chat(H, "<span class='warning'>Вы сможете изменить репутацию через [round((3000 + last_vote - world.time)/10)] секунд[ending].</span>")
+										to_chat(H, "<span class='warning'>You will be able to change your reputation through [round((3000 + last_vote - world.time)/10)] Seconds[ending].</span>")
 
 					else
-						to_chat(H, "<span class='warning'>В ДОСТУПЕ К СИСТЕМЕ S.T.A.L.K.E.R. ОТКАЗАНО!</span>")
+						to_chat(H, "<span class='warning'>IN ACCESS TO THE SYSTEM S.T.A.L.K.E.R. DENIED!</span>")
 
 	..() //end of this massive fucking chain. TODO: make the hud chain not spooky.
 

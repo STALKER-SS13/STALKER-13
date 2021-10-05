@@ -5,7 +5,7 @@
 
 /turf/open/floor/plating/asteroid/snow/lite
 	name = "snow"
-	desc = "Выглядит холодным."
+	desc = "Looks cold."
 	icon = 'icons/turf/snow.dmi'
 	baseturfs = /turf/open/floor/plating/asteroid/snow
 	icon_state = "snow"
@@ -16,7 +16,7 @@
 	dug = 1
 
 /obj/structure/grille/stalker
-	desc = "Крепкий железный забор."
+	desc = "Strong iron fence."
 	name = "fence"
 	icon = 'stalker/icons/structure.dmi'
 	icon_state = "fence1"
@@ -56,21 +56,21 @@
 	return
 
 /obj/structure/grille/stalker/wood
-	desc = "Старый деревянный забор."
+	desc = "Old wooden fence."
 	icon_state = "zabor_horizontal1"
 	density = 1
 	opacity = 0
 
 /obj/structure/grille/stalker/beton
 	icon = 'stalker/icons/beton_zabor.dmi'
-	desc = "Слишком крепкий."
+	desc = "Too strong."
 	icon_state = "1"
 	density = 1
 	opacity = 0
 
 /obj/structure/grille/stalker/beton/green
 	icon = 'stalker/icons/green_zabor.dmi'
-	desc = "Зелённый забор. Лучше, чем серый."
+	desc = "Green fence. Better than gray."
 	icon_state = "1"
 
 obj/structure/grille/stalker/beton/CanPass(atom/movable/mover, turf/target, height=0)

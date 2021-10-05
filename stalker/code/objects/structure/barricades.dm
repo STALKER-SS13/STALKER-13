@@ -28,14 +28,14 @@
 
 /obj/structure/barricade/stalker/wood
 	name = "wooden barricade"
-	desc = "Забарикадированный досками проход."
+	desc = "A barricaded passage."
 	eng_desc = "Planks."
 	icon_state = "zabitiy_proxod"
 	debriss_type = /obj/structure/stalker/doski
 
 /obj/structure/barricade/stalker/box
 	name = "wooden box"
-	desc = "Заколоченный деревянный ящик. Кто знает, что может быть внутри."
+	desc = "Boarded up wooden box. Who knows what might be inside."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "yashik"
 	debriss_type = /obj/structure/stalker/doski/doski2
@@ -67,7 +67,7 @@
 /obj/structure/stalker/blocks
 	name = "blocks"
 	icon = 'stalker/icons/decor2.dmi'
-	desc = "Обычный бетонный блок."
+	desc = "Ordinary concrete block."
 	eng_desc = "Blocks."
 	density = 1
 	opacity = 1
@@ -154,7 +154,7 @@
 
 /obj/structure/stalker/blocks/vanish/pipe
 	name = "Pipe"
-	desc = "Громадная железобетонная труба."
+	desc = "Big pipe."
 	eng_desc = "Big pipe."
 	icon = 'stalker/icons/decor2.dmi'
 	icon_state = "truba1"
@@ -176,7 +176,7 @@
 
 /obj/structure/stalker/blocks/vanish/sandbags
 	name = "sandbags"
-	desc = "Обычная насыпь из мешков с песком"
+	desc = "Sangbags."
 	eng_desc = "Sangbags."
 	icon = 'stalker/icons/structure/sandbags.dmi'
 	icon_state = "solo"

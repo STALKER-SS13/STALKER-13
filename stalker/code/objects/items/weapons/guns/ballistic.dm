@@ -114,7 +114,11 @@
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/fort12/unique  // Фора12 - расширенный магазин
+<<<<<<< HEAD
 	desc = "An experimental prototype of the Fora pistol. One-of-a-kind."
+=======
+	desc = "Experimental prototype of the Fort pistol. A single copy."
+>>>>>>> 92f86dc28c94a95a38713e55f929c386832ff405
 	unique = 1
 	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18fort_u
 
@@ -175,7 +179,11 @@
 
 /obj/item/gun/ballistic/revolver/anaconda
 	name = "Colt Anaconda .44"
+<<<<<<< HEAD
 	desc = "this is a 44 caliber Magnum, the most lethal revolver ever, and it can blow your head off cleanly."
+=======
+	desc = "You feeling lucky today, gopnik?"
+>>>>>>> 92f86dc28c94a95a38713e55f929c386832ff405
 	eng_desc = "You feeling lucky today, gopnik?"
 	icon_state = "anaconda"
 	w_class = 3
@@ -603,7 +611,11 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/pkm/shottie
    name = "PTV M-777"
+<<<<<<< HEAD
    desc = "Petrovich's personal weapon. Shaped like a dickhead."
+=======
+   desc = "Petrovich's personal weapon. Huyarit is like a zalupa."
+>>>>>>> 92f86dc28c94a95a38713e55f929c386832ff405
    mag_type = /obj/item/ammo_box/magazine/stalker/pkm/shottie
 
 ///////////////////////////// Снайперские винтовки //////////////////////////////////////////
@@ -688,31 +700,32 @@
 
 ///////////////////////////// Прочие винтовки //////////////////////////////////////////
 
-/obj/item/gun/ballistic/automatic/gauss  // Гаусс-винтовка
+/obj/item/gun/ballistic/automatic/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"
-	eng_desc = "The ultra-precise high-tech weapon known as Item 62 was developed by the designers of secret laboratories within the Site. Its principle of operation is based on the acceleration of a bullet by a system of electromagnets; At the same time, the bullet is capable of developing super speeds, which provides colossal penetrating ability with almost complete absence of recoil. To ensure sufficient energy capacity of the batteries, the latter use particles of certain artifacts. "
-	icon_state = "gauss"
-	item_state = "gauss"
-	fire_sound = 'stalker/sound/weapons/gauss_shot.ogg'
-	mag_type = /obj/item/ammo_box/magazine/stalker/gauss
-	suppressed = 1
+	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
+	eng_desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
+	icon_state = "gaussrifle"
+	item_state = "gaussrifle"
+	colored = 0//"normal"
+	slot_flags = SLOT_BACK//|SLOT_BELT
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/gaussbattery
+	fire_sound = 'stalker/sound/weapons/gauss_shoot.ogg'
 	can_suppress = 0
 	can_unsuppress = 0
-	zoomable = 1
-	zoom_amt = 7
-	zoom_out_amt = 10
-	burst_size = 1
-	fire_delay = 3
-	durability = 150
-	slot_flags = ITEM_SLOT_BACK
-	force = 15
+	fire_delay = 200
 	pin = /obj/item/firing_pin
+	durability = 120
 	w_class = 4
-	spread = 1
-	recoil = 1
-	damagelose = 0.90
-	can_scope = 1
+	spread = 0
+	recoil = 0
+	randomspread = 0
+	damagelose = 0
+	distro = 15
+	zoomable = 1
+	zoom_amt = 8
+	zoom_out_amt = 10
 	weapon_weight = WEAPON_MEDIUM
-	draw_sound = 'stalker/sound/weapons/draw/generic_draw.ogg'
-	load_sound = 'stalker/sound/weapons/load/gauss_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+	load_sound = 'stalker/sound/weapons/gauss_reload.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'

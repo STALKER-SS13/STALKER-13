@@ -173,11 +173,58 @@
 	//МОДИФИКАЦИИ//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
+/obj/item/clothing/mask/gas/stalker/gp4
+	name = "gp-4 gas mask"
+	desc = "The Soviet GP-4 is another mask in the Soviet GP series. It was made to be issued to civilians due to the rising panic about the Cold War. This model is extremely common in the Zone and is favored by many stalkers due to its relative reliability and light weight."
+	eng_desc = "The Soviet GP-4 is another mask in the Soviet GP series. It was made to be issued to civilians due to the rising panic about the Cold War. This model is extremely common in the Zone and is favored by many stalkers due to its relative reliability and light weight."
+	icon_state = "gp4"
+	item_state = "gp4"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/mask/gas/stalker/gp5
+	name = "gp-5 gas mask"
+	desc = "A gas mask."
+	eng_desc = "A gas mask."
+	icon_state = "gp5"
+	item_state = "gp5"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
 /obj/item/clothing/mask/gas/stalker/mercenary
 	name = "gas mask"
 	eng_desc = "A regular plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. Widely used by mercenaries. Does not provide any physical protection."
 	icon_state = "mercenary_gasmask"
 	item_state = "mercenary_gasmask"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/mask/gas/stalker/respirator
+	name = "respirator"
+	desc = "An old respirator. Doesn't protect from much."
+	icon_state = "respirator"
+	item_state = "respirator"
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH

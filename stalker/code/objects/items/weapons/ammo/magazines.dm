@@ -180,10 +180,10 @@
 	max_ammo = 20
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/stalker/gauss
-	name = "Gauss Rifle magazine"
-	icon_state = "gauss"
-	ammo_type = /obj/item/ammo_casing/gauss
-	caliber = "gauss"
+/obj/item/ammo_box/magazine/stalker/gaussbattery
+	name = "gauss rifle battery"
+	icon_state = "gaussbattery"
+	ammo_type = /obj/item/ammo_casing/tungsten_slug
+	caliber = "2mm ferromagnetic tungsten slug"
 	max_ammo = 10
-	multiple_sprites = 2
+	multiple_sprites = 1

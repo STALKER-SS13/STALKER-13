@@ -23,7 +23,11 @@
 
 /obj/item/stalker/loot/pseudo_tail
 	name = "pseudo-dog tail"
+<<<<<<< HEAD
 	eng_desc = "The resistance of the skin of mutated dogs to chemical and electrical effects has long attracted the attention of scientists. Due to the absence of fatty deposits, the tails of dogs are most suitable for laboratory research."
+=======
+	eng_desc = "The resistance of the skin of mutated dogs to chemical and electrical effects has long attracted the attention of scientists. Due to the lack of fat deposits, the tails of dogs are most suitable for laboratory research."
+>>>>>>> 92f86dc28c94a95a38713e55f929c386832ff405
 	icon_state = "psevdopes"
 
 /obj/item/stalker/loot/bloodsucker

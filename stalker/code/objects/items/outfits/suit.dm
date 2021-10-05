@@ -16,9 +16,9 @@
 	var/rad = arm["rad"]
 	var/psy = arm["psy"]
 
-	msg += "<span class='info'><b>Защита:</b>\n"
-	msg += "Ближний: [melee] | Пули: [bullet] | Взрыв: [bomb]\n"
-	msg += "Огонь: [fire] | Радиация: [rad] | Пси: [psy]\n"
+	msg += "<span class='info'><b>Defense:</b>\n"
+	msg += "Melee: [melee] | Bullet: [bullet] | Explosion: [bomb]\n"
+	msg += "Fire: [fire] | Rad: [rad] | Psy: [psy]\n"
 	msg += "</span>"
 	to_chat(user, msg)
 
@@ -27,27 +27,27 @@
 	if(durability)
 		var/percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/clothing/mask/examine(mob/user)
 	..()
 	if(durability)
 		var/percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/clothing/suit/examine(mob/user)
 	..()
 	if(durability)
 		var/percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/clothing/update_icon()
 	..()

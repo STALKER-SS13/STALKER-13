@@ -114,7 +114,7 @@
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/fort12/unique  // Фора12 - расширенный магазин
-	desc = "Экспериментальный прототип пистолета Фора. Единичный экземпляр."
+	desc = "Experimental prototype of the Fort pistol. A single copy."
 	unique = 1
 	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18fort_u
 
@@ -175,7 +175,7 @@
 
 /obj/item/gun/ballistic/revolver/anaconda
 	name = "Colt Anaconda .44"
-	desc = "Я знаю, о чём ты сейчас думаешь. Выстрелил он шесть раз, или только пять? Честно говоря, в этой суматохе я и сам сбился со счёта. Но начнём с того, что это Магнум 44-го калибра, самый убойный револьвер на свете, и он может подчистую снести тебе башку. Теперь ты задаёшь себе один вопрос: Повезёт ли мне? Ну, повезёт ли, подонок?"
+	desc = "You feeling lucky today, gopnik?"
 	eng_desc = "You feeling lucky today, gopnik?"
 	icon_state = "anaconda"
 	w_class = 3
@@ -603,7 +603,7 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/pkm/shottie
    name = "PTV M-777"
-   desc = "Личное оружие Петровича. Хуярит как залупа."
+   desc = "Petrovich's personal weapon. Huyarit is like a zalupa."
    mag_type = /obj/item/ammo_box/magazine/stalker/pkm/shottie
 
 ///////////////////////////// Снайперские винтовки //////////////////////////////////////////
@@ -690,12 +690,6 @@
 
 /obj/item/gun/ballistic/automatic/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"
-	eng_desc = "The ultra-precise high-tech weapon known as Item 62 was developed by the designers of secret laboratories within the Site. Its principle of operation is based on the acceleration of a bullet by a system of electromagnets; At the same time, the bullet is capable of developing super speeds, which provides colossal penetrating ability with almost complete absence of recoil. To ensure sufficient energy capacity of the batteries, the latter use particles of certain artifacts. "
-	icon_state = "gauss"
-	item_state = "gauss"
-	fire_sound = 'stalker/sound/weapons/gauss_shot.ogg'
-	mag_type = /obj/item/ammo_box/magazine/stalker/gaussbattery
-	suppressed = 1
 	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
 	eng_desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
 	icon_state = "gaussrifle"

@@ -114,11 +114,14 @@
 	range = 80
 	spread = 2
 
-/obj/item/projectile/bullet/gauss
-	damage = 80
-	armour_penetration = 95
+/obj/item/projectile/bullet/tungsten_slug
+	damage = 75
+	name = "2mm tungsten slug"
+	icon_state = "tungstenbolt"
+	armour_penetration = 30
 	range = 100
-	spread = 1
+	spread = 0
+	movement_type = FLYING | UNSTOPPABLE
 
 /obj/item/projectile/bullet/fragment
 	name = "fragment"

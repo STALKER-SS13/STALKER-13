@@ -204,3 +204,60 @@
 obj/nothing/New()
 	qdel(src)
 */
+
+/obj/effect/spawner/lootdrop/stalker/pornmag
+	name = "porn mags"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/pornmagazine = 30,
+				/obj/item/trash/pornmagazine/two = 30,
+				/obj/item/trash/pornmagazine/three = 30,
+				/obj/item/trash/pornmagazine/four = 30,
+				/obj/item/trash/pornmagazine/five = 30,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/junk
+	name = "junk items"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/paintcan = 20,
+				/obj/item/trash/teapot = 20,
+				/obj/item/trash/pincers = 10,
+				/obj/item/trash/carkey = 20,
+				/obj/item/trash/crossnecklace = 15,
+				/obj/item/trash/oldvials = 5,
+				/obj/item/trash/steelwire = 10,
+				/obj/item/trash/steelwire1 = 10,
+				/obj/item/trash/wire = 10,
+				/obj/item/trash/duct_tape = 10,
+				/obj/item/trash/oldcircuitboard = 15,
+				/obj/item/trash/oldcircuitboard0 = 15,
+				/obj/item/c_tube = 25,
+				/obj/item/newspaper = 20,
+				/obj/item/trash/oldchembottle = 5,
+				/obj/nothing = 80)
+
+/obj/effect/spawner/lootdrop/stalker/flasks
+	name = "flasks"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/reagent_containers/food/drinks/flask/cylinder = 10,
+				/obj/item/reagent_containers/food/drinks/flask/face = 10,
+				/obj/item/reagent_containers/food/drinks/flask/russian = 10,
+				/obj/item/reagent_containers/food/drinks/flask = 10,
+				/obj/item/reagent_containers/food/drinks/flask/commie = 5,
+				/obj/nothing = 80)
+
+/obj/effect/spawner/lootdrop/stalker/books
+	name = "books"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/book/manual/allquietonthewesternfront = 10,
+				/obj/item/book/manual/roadsidepicnic = 10,
+				/obj/item/book/manual/solaris = 10,
+				/obj/item/book/manual/metro2033 = 10,
+				/obj/item/book/manual/crimeandpunishment = 10,
+				/obj/item/book/manual/theprophetpain = 10,
+				/obj/item/book/manual/theprophetdeath = 10,
+				/obj/item/book/manual/theprophetfriendship = 10,
+				/obj/nothing = 80)

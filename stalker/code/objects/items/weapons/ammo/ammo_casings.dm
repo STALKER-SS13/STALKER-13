@@ -96,7 +96,10 @@
     caliber = "7.62x51mm"
     projectile_type = /obj/item/projectile/bullet/bullet762x51
 
-/obj/item/ammo_casing/gauss
-    desc = "A gauss bullet casing."
-    caliber = "gauss"
-    projectile_type = /obj/item/projectile/bullet/gauss
+    projectile_type = /obj/item/projectile/bullet/bullet762x51
+
+/obj/item/ammo_casing/tungsten_slug
+    desc = "A 2mm ferromagnetic tungsten slug casing."
+    caliber = "2mm"
+    icon_state = "pshell"
+    projectile_type = /obj/item/projectile/bullet/tungsten_slug

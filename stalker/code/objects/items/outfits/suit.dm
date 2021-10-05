@@ -241,6 +241,30 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 30, "fire" = 10, "psy" = 0)
 	unique = 0
 
+/obj/item/clothing/suit/hooded/kozhanka/tancoat
+	name = "tan coat"
+	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it."
+	eng_desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it."
+	icon_state = "tancoat"
+	item_state = "tancoat_t"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	hoodtype = /obj/item/clothing/head/winterhood/stalker/tancoat
+	durability = 75
+	//МОДИФИКАЦИИ//
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/winterhood/stalker/tancoat
+	icon_state = "winterhood_tancoat"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
+
+
 /obj/item/clothing/suit/hooded/kombez
 	name = "sunrise"
 	eng_desc = "This DIY stalker bodysuit is a combination of a bodysuit of twin-layered rubberized cloth with plexiglass lining and built-in body armor. Despite the fact that the body armor is incapable of protecting the wearer from even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential. Comes with built-in artifact containers."
@@ -499,7 +523,7 @@
 	..()
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet
-	name = "exoskelet"
+	name = "Exoskeleton"
 	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskelet"
 	item_state = "syndicate-black"
@@ -525,6 +549,50 @@
 	AttachNVG()
 	//nvg = new /obj/item/nightvision(src)
 
+/obj/item/clothing/suit/hooded/sealed/exoskelet/duty
+	name = "Duty Exoskeleton"
+	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletd"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/duty
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/duty
+	name = "Duty Exoskeleton helmet"
+	icon_state = "exoskeletd_helmet"
+
+/obj/item/clothing/suit/hooded/sealed/exoskelet/freedom
+	name = "Freedom Exoskeleton"
+	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletf"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/freedom
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/freedom
+	name = "Freedom Exoskeleton helmet"
+	icon_state = "exoskeletf_helmet"
+
+/obj/item/clothing/suit/hooded/sealed/exoskelet/merc
+	name = "Merc Exoskeleton"
+	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletm"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/merc
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/merc
+	name = "Merc Exoskeleton helmet"
+	icon_state = "exoskeletm_helmet"
+
+/obj/item/clothing/suit/hooded/sealed/exoskelet/monolith
+	name = "Monolith Exoskeleton"
+	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletmo"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/monolith
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/monolith
+	name = "Monolith Exoskeleton helmet"
+	icon_state = "exoskeletmo_helmet"
+
 /obj/item/clothing/suit/army
 	name = "army armor"
 	eng_desc = "Standard army body armor issued to all military personnel guarding the perimeter of the Zone. Provides good protection against bullets and melee weapons, absolutely unsuitable for forays deep into the Zone, since it has almost no protection against the effects of anomalous fields."
@@ -538,9 +606,73 @@
 	flags_inv = HIDEJUMPSUIT
 	resistance_flags = UNACIDABLE
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 10, "energy" = 25, "bomb" = 10, "bio" = 0, "rad" = 20, "fire" = 25, "psy" = 0)
+
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+
 	durability = 125
 	//МОДИФИКАЦИИ//
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/suit/mil
+	name = "military vest"
+	eng_desc = "A poor protective vest contracted by government bureaucrats outsourcing to the lowest bidder. Provides adequate protection from small mutants. Although its overall combat protection is better than the leather jackets commonly found on the rookies of other factions, that really isn't saying much."
+	desc = "A poor protective outfit contracted by government bureaucrats outsourcing to the lowest bidder. Typically issued to helicopter pilots, tank drivers, rear-echelon personnel, conscripts and enlisted servicemen. Provides adequate protection from small mutants. Although its overall combat protection is better than the leather jackets commonly found on the rookies of other factions, that really isn't saying much."
+	icon_state = "milbodyarmor"
+	item_state = "milbodyarmor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	resistance_flags = UNACIDABLE
+	armor = list(melee = 30, bullet = 40, laser = 10,burn = 25, bomb = 10, bio = 0, rad = 15, electro = 25, psy = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	durability = 125
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/suit/ballistic
+	name = "ballistic vest"
+	desc = "Ballistic vest commonly used by the Merc faction. Its design is based on the vest used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof vests."
+	eng_desc = "Ballistic vest commonly used by the Merc faction. Its design is based on the vest used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof vests."
+	icon_state = "bodyarmor"
+	item_state = "bodyarmor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	armor = list(melee = 20, bullet = 45, laser = 10,burn = 15, bomb = 10, bio = 0, rad = 10, electro = 15, psy = 0)
+	durability = 150
+
+/obj/item/clothing/suit/civ
+	name = "flak jacket"
+	desc = "A dated flak jacket that will provide slight ballistic protection and is poor against damage from mutants and anomalies."
+	eng_desc = "A dated flak jacket that will provide slight ballistic protection and is poor against damage from mutants and anomalies."
+	icon_state = "flakjacket"
+	item_state = "flakjacket"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	armor = list(melee = 20, bullet = 30, laser = 10,burn = 10, bomb = 35, bio = 0, rad = 0, electro = 0, psy = 0)
+	durability = 150
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/suit/toggle/flight
+	name = "flight vest"
+	desc = "A regional flight jacket. features an added button-in/out liner for extra warmth, along with a cotton-fiber stretch coif. You'd have to wonder how exactly it got here into the zone other than previous disaster."
+	eng_desc = "A regional flight jacket. features an added button-in/out liner for extra warmth, along with a cotton-fiber stretch coif. You'd have to wonder how exactly it got here into the zone other than previous disaster."
+	icon_state = "flightvest"
+	item_state = "flightvest"
+	blood_overlay_type = "armor"
+	togglename = "buttons"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	armor = list(melee = 45, bullet = 30, laser = 10,burn = 10, bomb = 20, bio = 0, rad = 0, electro = 0, psy = 0)
+	durability = 150
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /*
@@ -615,6 +747,35 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	icon_state = "monolith_scientific_helmet"
 	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/hooded/sealed/merc
+	name = "merc ace suit"
+	desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. It comes with a built-in artifact transportation container."
+	eng_desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. It comes with a built-in artifact transportation container."
+	icon_state = "mercace"
+	item_state = "mercace"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/monolith
+	resistance_flags = FIRE_PROOF
+	durability = 200
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/winterhood/stalker/sealed/merc
+	name = "merc ace suit helmet"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
+	heat_protection = HEAD
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	icon_state = "mercace_helmet"
+	resistance_flags = FIRE_PROOF
+
 
 /obj/item/clothing/suit/skat
 	name = "SKAT-M9"
@@ -695,7 +856,7 @@
 	icon_state = "winterhood_mercenary"
 
 /obj/item/clothing/suit/hooded/kombez/veter
-	name = "wind of freedom"
+	name = "guardian of freedom"
 	eng_desc = "This lightweight stalker bodysuit is made by Freedom craftsmen. The suit's fabric is treated with Horizon, a special solution developed by the faction by trial and error to increase resistance to anomalies. Like the Sunrise suit, the Wind of Freedom comes with built-in body armor and artifact containers."
 	icon_state = "veter"
 	item_state = "syndicate-green"
@@ -715,10 +876,10 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_strazh"
 
-/obj/item/clothing/suit/strazh
-	name = "guardian of freedom"
+/obj/item/clothing/suit/hooded/strazh
+	name = "wind of freedom"
 	eng_desc = "This stalker bodysuit with reinforced body armor made by Freedom craftsmen represents a good compromise between combat and anomaly protection. The built-in body armor comprises armor plating and ten Kevlar layers, capable of stopping a pistol bullet. The suit uses the relatively expensive Sovereign compound for anomaly protection. Comes with an artifact container."
-	icon_state = "strazh"
+	icon_state = "wind_of_freedom"
 	item_state = "syndicate-green"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -728,9 +889,16 @@
 	flags_inv = HIDEJUMPSUIT
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 50, "bomb" = 40, "bio" = 50, "rad" = 40, "fire" = 50, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/strazh
 	durability = 150
 	//МОДИФИКАЦИИ//
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/hooded/stalker/strazh
+	armor = list("melee" = 25, "bullet" = 0, "laser" = 50, "energy" = 45, "bomb" = 0, "bio" = 20, "rad" = 40, "fire" = 45, "psy" = 0)
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	icon_state = "winterhood_wind_of_freedom"
 
 /obj/item/clothing/suit/assaultmerc
 	name = "mercenary heavy armor"
@@ -784,3 +952,25 @@
 	flags_inv = HIDEJUMPSUIT
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	durability = 150
+
+/obj/item/clothing/suit/hooded/kozhanka/ghillie
+	name = "ghillie suit"
+	desc = "A ghillie suit is a type of camouflage clothing designed to resemble the background environment such as foliage, snow or sand. Such suits rarely come into use in the Zone due to their general bulkiness and incredible uncomfortability, yet they're especially valued by sniper due to their ability to hide you among the grass."
+	eng_desc = "A ghillie suit is a type of camouflage clothing designed to resemble the background environment such as foliage, snow or sand. Such suits rarely come into use in the Zone due to their general bulkiness and incredible uncomfortability, yet they're especially valued by sniper due to their ability to hide you among the grass."
+	icon_state = "ghillie"
+	item_state = "ghillie"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	hoodtype = /obj/item/clothing/head/winterhood/stalker/ghillie
+	durability = 75
+	//МОДИФИКАЦИИ//
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/winterhood/stalker/ghillie
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
+	icon_state = "ghillie"

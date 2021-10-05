@@ -9,7 +9,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	"Handguns" = list(
 		///////////////////////////// **Пистолеты** /////////////////////////////////////
 		new /datum/data/stalker_equipment("PMm",			"PMm",				/obj/item/gun/ballistic/automatic/pistol/pm,				3000,	ROOKIE),
-		new /datum/data/stalker_equipment("TT",				"TT",,				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE),
+		new /datum/data/stalker_equipment("TT",				"TT",				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE),
 		new /datum/data/stalker_equipment("Fort-12",		"Fort-12",			/obj/item/gun/ballistic/automatic/pistol/fort12,			6500,	ROOKIE),
 		new /datum/data/stalker_equipment("PB1s",			"PB1s",				/obj/item/gun/ballistic/automatic/pistol/pb1s,				4500,	ROOKIE),
 		new /datum/data/stalker_equipment("SIG-Sauer P220",	"SIG-Sauer P220",	/obj/item/gun/ballistic/automatic/pistol/sip,				12500,	EXPERIENCED),
@@ -85,7 +85,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("5.56x45mm Box",			"5.56x45mm Box",							/obj/item/ammo_box/stalker/b55645,						12000,	ROOKIE,			sale_price =680),
 		new /datum/data/stalker_equipment("5.56x45mm AP Box",		"5.56x45mm AP Box",							/obj/item/ammo_box/stalker/b55645ap,					20000,	VETERAN,		sale_price =720),
 		new /datum/data/stalker_equipment("7.62x51 Box",			"7.62x51 Box",								/obj/item/ammo_box/stalker/b762x51,						10000,	ROOKIE,			sale_price =480),
-		new /datum/data/stalker_equipment("9x39 PAB-9 Box",			"9x39 PAB-9 Box",							/obj/item/ammo_box/stalker/b939,						30000,	EXPERIENCED,	sale_price =700),
+		new /datum/data/stalker_equipment("9x39 PAB-9 Box",			"9x39 PAB-9 Box",							/obj/item/ammo_box/stalker/b939,						30000,	EXPERIENCED,	sale_price =700)
 		),
 
 	"Ammo Magazines and Clips" = list(
@@ -106,7 +106,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("USP-match Magazine",						"USP-match Magazine",			/obj/item/ammo_box/magazine/stalker/usp45,				4500,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("Desert Eagle Magazine",					"Desert Eagle Magazine",		/obj/item/ammo_box/magazine/stalker/desert,				4000,	EXPERIENCED,	sale_price =500),
 		new /datum/data/stalker_equipment("PKM ammo belt box",						"PKM ammo belt box",			/obj/item/ammo_box/magazine/stalker/pkm,				40000,	EXPERIENCED,	sale_price =500),
-		new /datum/data/stalker_equipment("7.62x51 Clip",							"7.62x51 Clip",					/obj/item/ammo_box/stalker/cl762x51,					2000,	ROOKIE,		sale_price =500),
+		new /datum/data/stalker_equipment("7.62x51 Clip",							"7.62x51 Clip",					/obj/item/ammo_box/stalker/cl762x51,					2000,	ROOKIE,		sale_price =500)
 		),
 
 	"Suits" = list(
@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Ghillie Suit",				"Ghillie Suit",				/obj/item/clothing/suit/hooded/kozhanka/ghillie,			30000,		ROOKIE),
 		new /datum/data/stalker_equipment("Berill-5M",					"Berill-5M",				/obj/item/clothing/suit/berill,								50000,		EXPERIENCED,faction = "Military"),
 		new /datum/data/stalker_equipment("Guardian of Freedom",	   	"Guardian of Freedom",		/obj/item/clothing/suit/hooded/kombez/veter,				25000,		ROOKIE,		faction = "Freedom"),
-		new /datum/data/stalker_equipment("Wind of Freedom",			"Wind of Freedom",			/obj/item/clothing/suit/hooded/kombez/strazh,				40000,		EXPERIENCED,faction = "Freedom"),
+		new /datum/data/stalker_equipment("Wind of Freedom",			"Wind of Freedom",			/obj/item/clothing/head/hooded/stalker/strazh,				40000,		EXPERIENCED,faction = "Freedom"),
 		new /datum/data/stalker_equipment("PZ-1	",						"PZ-1",						/obj/item/clothing/suit/hooded/kombez/monolith,				25000,		ROOKIE,		faction = "Monolith", sale_price = 8000),
 		new /datum/data/stalker_equipment("Monolith Scientific Suit",	"Monolith Scientific Suit",	/obj/item/clothing/suit/hooded/sealed/monolith,				60000,		ROOKIE,		faction = "Monolith"),
 		new /datum/data/stalker_equipment("PS5-M",						"PS5-M",					/obj/item/clothing/suit/hooded/kombez/ps5m,					25000,		ROOKIE,		faction = "Duty"),
@@ -138,10 +138,10 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Loners"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Bandits"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Military"),
-		new	/datum/data/stalker_equipment("Merc Exoskeleton",			"Merc Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskeletm,			200000,		EXPERT,	faction = "Mercenaries"),
-		new	/datum/data/stalker_equipment("Duty Exoskeleton",			"Duty Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskeletd,			200000,		EXPERT,	faction = "Duty"),
-		new	/datum/data/stalker_equipment("Freedom Exoskeleton",		"Freedom Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskeletf,			200000,		EXPERT,	faction = "Freedom"),
-		new	/datum/data/stalker_equipment("Monolith Exoskeleton",		"Monolith Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskeletmo,			200000,		EXPERT,	faction = "Monolith")
+		new	/datum/data/stalker_equipment("Merc Exoskeleton",			"Merc Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/merc,		200000,		EXPERT,	faction = "Mercenaries"),
+		new	/datum/data/stalker_equipment("Duty Exoskeleton",			"Duty Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/duty,		200000,		EXPERT,	faction = "Duty"),
+		new	/datum/data/stalker_equipment("Freedom Exoskeleton",		"Freedom Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskelet/freedom,	200000,		EXPERT,	faction = "Freedom"),
+		new	/datum/data/stalker_equipment("Monolith Exoskeleton",		"Monolith Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskelet/monolith,	200000,		EXPERT,	faction = "Monolith")
 	),
 
 	// Headwear
@@ -162,7 +162,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		///////////////////////////////	Медикаменты	/////////////////////////////////////////
 		new /datum/data/stalker_equipment("Medkit",						"Medkit",							/obj/item/reagent_containers/pill/stalker/aptechka/civilian,		1500,	ROOKIE),
 		new /datum/data/stalker_equipment("Army medkit",				"Army medkit",						/obj/item/reagent_containers/pill/stalker/aptechka/army,			3500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit"					/obj/item/reagent_containers/pill/stalker/aptechka/scientific,		6000,	VETERAN),
+		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit",				/obj/item/reagent_containers/pill/stalker/aptechka/scientific,		6000,	VETERAN),
 		new /datum/data/stalker_equipment("Bandage",					"Bandage",							/obj/item/reagent_containers/pill/stalker/aptechka/bint,			750,	ROOKIE),
 		new /datum/data/stalker_equipment("Anti-rad",					"Anti-rad",							/obj/item/reagent_containers/hypospray/medipen/stalker/antirad,		3500,	ROOKIE),
 		new /datum/data/stalker_equipment("LSD Pills",					"LSD Pills",						/obj/item/storage/pill_bottle/lsd,									10000,	EXPERIENCED),
@@ -188,12 +188,12 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Cheap satchel",					"Cheap satchel",			/obj/item/storage/backpack/satchel/stalker/civilian,				2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Cheap backpack",					"Cheap backpack",			/obj/item/storage/backpack/stalker/civilian,						2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Tourist backpack",				"Tourist backpack",			/obj/item/storage/backpack/stalker/tourist,							10000,	ROOKIE, sale_price = 3000),
-		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					35000,	ROOKIE, sale_price = 10000),
+		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					35000,	ROOKIE, sale_price = 10000)
 		),
 
 	"Misc" = list(
 		/////////////////////////////////	Другое	/////////////////////////////////////////////
-		new /datum/data/stalker_equipment/stalker_pda("PDA",					"Radio",												/obj/item/stalker_pda,								4000,	ROOKIE),
+		new /datum/data/stalker_equipment/stalker_pda("PDA",					"PDA",													/obj/item/stalker_pda,								4000,	ROOKIE),
 		new /datum/data/stalker_equipment("Radio",								"Radio",												/obj/item/radio,									7000,	ROOKIE),
 		new /datum/data/stalker_equipment("Repair-kit for suits and helmets",	"Repair-kit for suits and helmets",						/obj/item/repair_kit/clothing,						10000,	ROOKIE),
 		new /datum/data/stalker_equipment("Repair-kit for guns",				"Repair-kit for guns",									/obj/item/repair_kit/gun,							4000,	ROOKIE),
@@ -218,7 +218,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	"Clothing" = list(
 		new /datum/data/stalker_equipment("Under",								"Under",												/obj/item/clothing/under/color/switer,						1000,	ROOKIE),
 		new /datum/data/stalker_equipment("Dark under",							"Dark under",											/obj/item/clothing/under/color/switer/dark,					1500,	ROOKIE),
-		new /datum/data/stalker_equipment("Telnyashka",							"Telnyashka"											/obj/item/clothing/under/color/switer/lolg,					1500,	ROOKIE),
+		new /datum/data/stalker_equipment("Telnyashka",							"Telnyashka",											/obj/item/clothing/under/color/switer/lolg,					1500,	ROOKIE),
 		new /datum/data/stalker_equipment("Tracksuit",							"Tracksuit",											/obj/item/clothing/under/color/switer/tracksuit,			1500,	ROOKIE),
 		new /datum/data/stalker_equipment("Worn out army boots",				"Worn out army boots",									/obj/item/clothing/shoes/jackboots/warm,					800,	ROOKIE),
 		new /datum/data/stalker_equipment("Fingerless gloves",					"Fingerless gloves",									/obj/item/clothing/gloves/fingerless,						600,	ROOKIE),
@@ -318,7 +318,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/rating = 0
 	var/switches = BUY_STUFF
 	var/real_assorment = list()
-	var/list/special_factions = list("Loners", "Bandits")
+	var/list/special_factions = list("Loners", "Bandits", "Duty", "Freedom", "Mercenaries", "Monolith")
 	var/path_ending = null
 	//Faction Locker
 	var/obj/item/assembly/control/door_device = null

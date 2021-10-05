@@ -4,7 +4,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva
 	name = "tourist delight"
-	desc = "Консервы \"Радость туриста\" с растащенного сталкерами армейского продовольстенного склада. Срок годности вроде бы не истёк."
+	desc = "Canned food. from the army food warehouse stolen by stalkers. The shelf life does not seem to have expired."
 	eng_desc = "These cans are supposed to be from the Army Warehouses ransacked by stalkers It is hard to say for sure what's in it because of no sticker present. But most likely its shelf life hasn't ended yet."
 	icon_state = "konserva"
 	w_class = 2
@@ -13,7 +13,7 @@
 	trash = /obj/item/trash/konserva
 	list_reagents = list("nutriment" = 13, "vitamin" = 2, "omnizine" = 0.5)
 	var/icon_state_opened = "konserva_open"
-	var/desc_opened = "Выглядит не очень аппетитно, но пахнет вроде бы нормально."
+	var/desc_opened = "It doesn't look very appetizing, but it smells okay."
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/attack_self(mob/user)
 	if(wrapped)
@@ -32,7 +32,7 @@
 
 /obj/item/trash/konserva
 	name = "empty can"
-	desc = "Обычный мусор."
+	desc = "Trash."
 	eng_desc = "Trash."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "konserva_empty"
@@ -41,25 +41,25 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti
 	name = "shproti"
-	desc = "Рижские шпроты."
+	desc = "Riga sprats."
 	eng_desc = "Rigan sprats."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "shproti0"
 	icon_state_opened = "shproti1"
 	list_reagents = list("nutriment" = 17, "vitamin" = 3, "omnizine" = 0.75)
 	trash = /obj/item/trash/konserva/shproti
-	desc_opened = "Открытая банка со шпротами. Выглядит аппетитно."
+	desc_opened = "An open can of sprats. Looks delicious."
 
 /obj/item/trash/konserva/shproti
 	name = "empty can"
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "shproti2"
-	desc = "Пустая банка из под шпрот."
+	desc = "Empty can."
 	eng_desc = "Empty can."
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/soup
 	name = "soup"
-	desc = "Готовый законсервированный суп по-домашнему."
+	desc = "Instead Soup home-made soup."
 	eng_desc = "Just-add-water homemade-like soup."
 	//weight = 0.7
 	icon = 'stalker/icons/food.dmi'

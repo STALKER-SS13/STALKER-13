@@ -460,7 +460,12 @@
 
 /obj/item/gun/ballistic/automatic/il86  // ИЛ86
 	name = "L85"
+<<<<<<< Updated upstream
 	eng_desc = "This rifle's considerable number of drawbacks caused most of these weapons to be modernized, with the retired stock making its way to the Zone via the black market. The rifle's main advantages are its built-in 4x scope, high single-shot accuracy and reliable upgrade technology. When the weapon is fired in bursts, its accuracy decreases significantly and the rifle's basic internal mechanisms become somewhat unreliable."
+=======
+	desc =" After this rifle was replaced by the British Army with the German GP37, it surfaced in large numbers on the black market, and then in the Zone. The main advantage of the IL86 is the Built-in 4x scope and high accuracy from the first shot. and the reliability of the main parts of the rifle is high enough. Most Effective when shooting in short bursts or single. "
+	eng_desc = "This rifle's considerable number of drawbacks caused most of these weapons to be modernized, with the retired stock making its way to the Zone via the black market. The rifle's main advantages are its built-in 4x scope, high single-shot accuracy and reliable upgrade technology. When the weapon is fired in bursts, its accuracy  significantly and the rifle's basic internal mechanisms become somewhat unreliable."
+>>>>>>> Stashed changes
 	icon_state = "il86"
 	item_state = "il86"
 	slot_flags = ITEM_SLOT_BACK

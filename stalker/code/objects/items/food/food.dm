@@ -92,7 +92,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/govyadina2
 	name = "tushenka"
-	desc = "Банка законсервированной говядины."
+	desc = "Can of stew."
 	eng_desc = "Can of stew."
 	//weight = 0.7
 	icon = 'stalker/icons/food.dmi'
@@ -100,7 +100,7 @@
 	icon_state_opened = "govyadina1"
 	list_reagents = list("nutriment" = 20, "vitamin" = 4, "omnizine" = 1)
 	trash = /obj/item/trash/konserva/govyadina
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = " This can of Stew Looks very appetizing."
 
 /obj/item/trash/konserva/govyadina
 	name = "empty can"
@@ -109,14 +109,14 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/fish
 	name = "fish"
-	desc = "Рыбные консервы 'Припять', видимо из местной реки"
+	desc = "A Pripyat Canned Fish This type of fish lives in the near river"
 	eng_desc = "Canned fish."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "fish0"
 	icon_state_opened = "fish1"
 	list_reagents = list("nutriment" = 17, "vitamin" = 3, "omnizine" = 0.75)
 	trash = /obj/item/trash/konserva/fish
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = "Even Though it's Smell is so strong it's Looks very appetizing."
 
 /obj/item/trash/konserva/fish
 	name = "empty can"
@@ -125,7 +125,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/snack/sirok
 	name = "cheese"
-	desc = "Пачка свежего плавленого сыра."
+	desc = "A Can of Spread Cheese"
 	eng_desc = "A can of cream cheese."
 	//weight = 0.1
 	icon = 'stalker/icons/food.dmi'
@@ -133,7 +133,7 @@
 	icon_state_opened = "sirok1"
 	list_reagents = list("nutriment" = 11, "vitamin" = 1, "omnizine" = 0.3)
 	trash = /obj/item/trash/konserva/sirok
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = "Looks very appetizing. And creamy"
 
 /obj/item/trash/konserva/sirok
 	name = "trash"
@@ -143,15 +143,15 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/snack/snikers
 	name = "snikers"
-	desc = "Популярный шоколадный батончик."
-	eng_desc = "Chocolate bar with nuts."
+	desc = ""Chocolate bar with nuts.
+	eng_desc = "Chocolate bar with nuts. YOU'RE YOU YOU WHEN YOU'RE HUNGRY"
 	//weight = 0.1
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "snikers"
 	icon_state_opened = "snikers1"
 	list_reagents = list("nutriment" = 8, "sugar" = 6, "omnizine" = 0.2)
 	trash = /obj/item/trash/konserva/snikers
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = "Looks very appetizing."
 
 /obj/item/trash/konserva/snikers
 	name = "trash"
@@ -161,7 +161,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/snack/chocolate
 	name = "Chocolate"
-	desc = "Небольшая плитка горького шоколада."
+	desc = "A small bar of dark chocolate."
 	eng_desc = "A bar of chocolate."
 	//weight = 0.1
 	icon = 'stalker/icons/food.dmi'
@@ -169,7 +169,7 @@
 	icon_state_opened = "Choco2"
 	list_reagents = list("nutriment" = 9, "sugar" = 1, "omnizine" = 0.1, "energetic" = 5)
 	trash = /obj/item/trash/konserva/chocolate
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = "Looks very appetizing."
 
 /obj/item/trash/konserva/chocolate
 	name = "trash"
@@ -179,9 +179,9 @@
 
 /obj/item/storage/box/MRE
 	name = "MRE"
-	desc = "Армейский ИРП рассчитанный на сутки."
-	eng_desc = "Ukrainian army MRE."
-	var/desc_opened = "Открытый Армейский ИРП рассчитанный на сутки."
+	desc = "Ukrainian army MRE."
+	eng_desc =
+	var/desc_opened = "Opened Ukrainian Army MRE designed for a day."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "box1"
 	var/icon_state_opened = "box3"
@@ -221,9 +221,9 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/galets
 	name = "Galets"
-	desc = "Галеты армейские, вкусные и питательные."
+	desc = "Army biscuits, delicious and nutritious."
 	eng_desc = "Tasty army biscuits."
-	desc_opened = "Выглядит очень аппетитно."
+	desc_opened = "Looks very appetizing."
 	icon_state = "GAL1"
 	icon_state_opened = "GAL2"
 	list_reagents = list("nutriment" = 10, "omnizine" = 0.1)
@@ -235,9 +235,9 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/kasha
 	name = "Kasha"
-	desc = "Готовая овсяная каша в вакуумной упаковке."
+	desc = "Vacuum packed ready-to-eat oatmeal."
 	eng_desc = "Oatmeal in vacuum package."
-	desc_opened = "Выглядит так себе, но на запах вроде ничего."
+	desc_opened = "Looks okay, but smells like nothing."
 	icon_state = "Kasha1"
 	icon_state_opened = "Kasha2"
 	list_reagents = list("nutriment" = 15, "omnizine" = 0.2)
@@ -249,9 +249,9 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva1
 	name = "Konserva"
-	desc = "Судя по этикетке, банка законсервированного мяса, но какого - не написано."
+	desc = "Canned spam."
 	eng_desc = "Canned spam."
-	desc_opened = "Выглядит не очень, но по запаху очень похоже на тушенку."
+	desc_opened = "It doesn't look very good, but it smells very much like stew."
 	icon_state = "TushenkaRed1"
 	icon_state_opened = "TushenkaRed2"
 	list_reagents = list("nutriment" = 17, "omnizine" = 0.2)
@@ -263,9 +263,9 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva2
 	name = "Konserva"
-	desc = "Судя по этикетке, банка законсервированного мяса c овощами, но какое мясо и какие овощи - не написано."
+	desc = "Canned chicken with vegetables."
 	eng_desc = "Canned chicken with vegetables."
-	desc_opened = "Выглядит не очень, но по запаху очень похоже на тушенку с чем-то еще."
+	desc_opened = "It doesn't look very good, but it smells very much like stew with chicken."
 	icon_state = "TushenkaGreen1"
 	icon_state_opened = "TushenkaGreen2"
 	list_reagents = list("nutriment" = 17, "omnizine" = 0.2)
@@ -277,9 +277,9 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva3
 	name = "Konserva"
-	desc = "Судя по этикетке, банка законсервированного мяса c зеленью, но какое мясо и какая зелень - не написано."
+	desc = "Judging by the label, a can of canned meat with herbs, but what kind of meat and what kind of greens is not written."
 	eng_desc = "Canned meat with vegetables."
-	desc_opened = "Выглядит не очень, но по запаху сильно отдает тушенкой, приправленной луком и чесноком"
+	desc_opened = "It doesn't look very good, but it smells strongly of stewed meat, seasoned with onions and garlic."
 	icon_state = "TushenkaBlue1"
 	icon_state_opened = "TushenkaBlue2"
 	list_reagents = list("nutriment" = 17, "omnizine" = 0.2, "vitamin" = 10)
@@ -291,7 +291,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/kolbasa
 	name = "kolbasa"
-	desc = "Часто за неимением лучшего эта колбаса - смесь курятины и соевого заменителя - завтрак, обед и ужин сталкера."
+	desc = "Made from a mixture of chicken and soya, the \"diet\" sausage is often, for lack of other options, a Stalker's breakfast, lunch and dinner in one."
 	eng_desc = "Made from a mixture of chicken and soya, the \"diet\" sausage is often, for lack of other options, a Stalker's breakfast, lunch and dinner in one."
 	icon_state = "kolbasa"
 	w_class = 2
@@ -299,7 +299,7 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/baton
 	name = "baton"
-	desc = "Неизвестно, кто умудряется печь батоны на территории Зоны, однако этот хлеб не заражен и вполне съедобен. Во всяком случае, никто из сталкеров пока не жаловался."
+	desc = "It is still a question who contrives to bake bread in the Zone or how they manage to carry it through the border but this bread is not radioactive and quite edible."w
 	eng_desc = "It is still a question who contrives to bake bread in the Zone or how they manage to carry it through the border but this bread is not radioactive and quite edible."
 	icon_state = "baton_stalker"
 	w_class = 2
@@ -307,14 +307,14 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/tomaty
 	name = "tomaty"
-	desc = "Маринованые томаты неизвестной давности. Пробовать на свой страх и риск."
+	desc = "Pickled tomatoes of unknown age. Try at your own risk."
 	icon_state = "tomaty"
 	w_class = 2
 	list_reagents = list("nutriment" = 16, "omnizine" = 5, "vitamin" = 10)
 
 /obj/item/reagent_containers/food/snacks/stalker/stew
 	name = "stew"
-	desc = "Куски мяса с овощами в миске. Выглядит не очень съедобно."
+	desc = "Chunks of meat and vegetables in a bowl. Doesn't look very edible."
 	icon_state = "stew"
 	w_class = 2
 	list_reagents = list("nutriment" = 20, "omnizine" = 1, "vitamin" = 5)

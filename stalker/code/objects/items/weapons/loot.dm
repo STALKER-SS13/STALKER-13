@@ -23,7 +23,7 @@
 
 /obj/item/stalker/loot/pseudo_tail
 	name = "pseudo-dog tail"
-	eng_desc = "Устойчивость кожи мутировавших собак к химическому и электрическому воздействию давно обратила на себя внимание учёных. Из-за отсутствия жировых отложений хвосты собак наиболее подходят для лабораторных исследований."
+	eng_desc = "The resistance of the skin of mutated dogs to chemical and electrical effects has long attracted the attention of scientists. Due to the absence of fatty deposits, the tails of dogs are most suitable for laboratory research."
 	icon_state = "psevdopes"
 
 /obj/item/stalker/loot/bloodsucker

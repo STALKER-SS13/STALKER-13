@@ -114,7 +114,7 @@
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/fort12/unique  // Фора12 - расширенный магазин
-	desc = "Экспериментальный прототип пистолета Фора. Единичный экземпляр."
+	desc = "An experimental prototype of the Fora pistol. One-of-a-kind."
 	unique = 1
 	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18fort_u
 
@@ -175,7 +175,7 @@
 
 /obj/item/gun/ballistic/revolver/anaconda
 	name = "Colt Anaconda .44"
-	desc = "Я знаю, о чём ты сейчас думаешь. Выстрелил он шесть раз, или только пять? Честно говоря, в этой суматохе я и сам сбился со счёта. Но начнём с того, что это Магнум 44-го калибра, самый убойный револьвер на свете, и он может подчистую снести тебе башку. Теперь ты задаёшь себе один вопрос: Повезёт ли мне? Ну, повезёт ли, подонок?"
+	desc = "this is a 44 caliber Magnum, the most lethal revolver ever, and it can blow your head off cleanly."
 	eng_desc = "You feeling lucky today, gopnik?"
 	icon_state = "anaconda"
 	w_class = 3
@@ -603,7 +603,7 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/pkm/shottie
    name = "PTV M-777"
-   desc = "Личное оружие Петровича. Хуярит как залупа."
+   desc = "Petrovich's personal weapon. Shaped like a dickhead."
    mag_type = /obj/item/ammo_box/magazine/stalker/pkm/shottie
 
 ///////////////////////////// Снайперские винтовки //////////////////////////////////////////

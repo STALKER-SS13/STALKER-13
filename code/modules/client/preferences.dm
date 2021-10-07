@@ -35,7 +35,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/toggles = TOGGLES_DEFAULT
 	var/db_flags
 	var/chat_toggles = TOGGLES_DEFAULT_CHAT
-	var/widescreen = TRUE
+	var/widescreen = FALSE
 	var/ghost_form = "ghost"
 	var/ghost_orbit = GHOST_ORBIT_CIRCLE
 	var/ghost_accs = GHOST_ACCS_DEFAULT_OPTION
@@ -463,7 +463,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>Main settings</h2>"
 			dat += "<div class='bflex'><b>UI Style:</b> <a href='?_src_=prefs;task=input;preference=ui'>[UI_style]</a></div>"
-			dat += "<div class='bflex'><b>Interface:</b> <a href='?_src_=prefs;preference=widescreen'>[(widescreen) ? "New" : "Old"]</a></div>"
+//			dat += "<div class='bflex'><b>Interface:</b> <a href='?_src_=prefs;preference=widescreen'>[(widescreen) ? "Do Not Use" : "Old"]</a></div>"
 			dat += "<div class='bflex'><b>tgui Monitors:</b> <a href='?_src_=prefs;preference=tgui_lock'>[(tgui_lock) ? "Primary" : "All"]</a></div>"
 			dat += "<div class='bflex'><b>tgui Style:</b> <a href='?_src_=prefs;preference=tgui_fancy'>[(tgui_fancy) ? "Fancy" : "No Frills"]</a></div>"
 			dat += "<br>"

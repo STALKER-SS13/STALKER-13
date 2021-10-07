@@ -1,28 +1,13 @@
 //Speech verbs.
-/mob/verb/say_typing_indicator()
-	set name = "Say"
-	set hidden = FALSE
-	set category = "IC"
-	display_typing_indicator()
-	var/message = input(usr, "", "say") as text|null
-	// If they don't type anything just drop the message.
-	clear_typing_indicator()		// clear it immediately!
-	if(!length(message))
-		return
-	return say_verb(message)
-
 /mob/verb/say_verb(message as text)
-	set name = "say_noindicator"
-	set hidden = TRUE
+	set name = "Say"
 	set category = "IC"
-	if(!length(message)) //If a null message somehow makes it through to this verb.
-		return
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
-		to_chat(usr, "<span class='danger'>Speech is currently admin-disableed.</span>")
+		to_chat(usr, "<span class='danger'>Разговоры отключены, приятного дня.</span>")
 		return
-	set_typing_indicator(FALSE)
 	if(message)
 		say(capitalize(message))
+
 
 /mob/verb/whisper_verb(message as text)
 	set name = "Whisper"
@@ -35,21 +20,8 @@
 /mob/proc/whisper(message, datum/language/language=null)
 	say(message, language) //only living mobs actually whisper, everything else just talks
 
-/mob/verb/me_typing_indicator()
-	set name = "Me"
-	set hidden = FALSE
-	set category = "IC"
-	display_typing_indicator()
-	var/message = input(usr, "", "me") as message|null
-	// If they don't type anything just drop the message.
-	clear_typing_indicator()		// clear it immediately!
-	if(!length(message))
-		return
-	return me_verb(message)
-
 /mob/verb/me_verb(message as text)
-	set name = "me_noindicator"
-	set hidden = TRUE
+	set name = "Me"
 	set category = "IC"
 
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems

@@ -279,9 +279,6 @@
 #define AI_CAMERA_LUMINOSITY	5
 #define AI_VOX // Comment out if you don't want VOX to be enabled and have players download the voice sounds.
 
-// Typing Indicator
-#define TYPING_INDICATOR_TIMEOUT 5 MINUTES
-
 // /obj/item/bodypart on_mob_life() retval flag
 #define BODYPART_LIFE_UPDATE_HEALTH (1<<0)
 

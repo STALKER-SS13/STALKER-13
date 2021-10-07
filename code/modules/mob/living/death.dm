@@ -90,6 +90,4 @@
 		var/datum/soullink/S = s
 		S.sharerDies(gibbed)
 
-	set_typing_indicator(FALSE)
-
 	return TRUE

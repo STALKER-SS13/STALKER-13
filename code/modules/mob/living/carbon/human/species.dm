@@ -75,8 +75,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/obj/item/organ/stomach/mutantstomach
 	var/override_float = FALSE
 
-	var/typing_indicator_state
-
 	//Bitflag that controls what in game ways can select this species as a spawnable source
 	//Think magic mirror and pride mirror, slime extract, ERT etc, see defines
 	//in __DEFINES/mobs.dm, defaults to NONE, so people actually have to think about it

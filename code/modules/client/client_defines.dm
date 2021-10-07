@@ -50,8 +50,8 @@
 	var/obj/screen/click_catcher/void
 
 	//These two vars are used to make a special mouse cursor, with a unique icon for clicking
-	var/mouse_up_icon = null
-	var/mouse_down_icon = null
+	var/mouse_up_icon = 'stalker/icons/cursors.dmi'
+	var/mouse_down_icon = 'stalker/icons/cursors.dmi'
 
 	var/ip_intel = "Disabled"
 
@@ -77,3 +77,5 @@
 	var/list/char_render_holders			//Should only be a key-value list of north/south/east/west = obj/screen.
 
 	var/country = null
+
+	mouse_pointer_icon = 'stalker/icons/cursors.dmi'

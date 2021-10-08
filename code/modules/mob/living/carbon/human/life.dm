@@ -137,7 +137,7 @@
 		for(var/obj/item/artifact/A in src.belt.contents)
 			A.Think(src)
 			for(var/armor_ in A.art_armor)
-				global_armor[armor_] = A.art_armor[armor_]
+				global_armor[armor_] += A.art_armor[armor_]
 
 	if(src.wear_suit && istype(src.wear_suit, /obj/item/clothing/suit))
 		var/obj/item/clothing/suit/S = src.wear_suit

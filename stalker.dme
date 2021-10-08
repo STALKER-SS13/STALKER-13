@@ -8,8 +8,6 @@
 // END_PREFERENCES
 // BEGIN_INCLUDE
 #include "_maps\zonaremastered.dm"
-#include "_maps\map_files\ZonaRemastered\backwater.dmm"
-#include "_maps\map_files\ZonaRemastered\under.dmm"
 #include "_REDEFINES\stalker.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"

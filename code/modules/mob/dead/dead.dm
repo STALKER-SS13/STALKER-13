@@ -54,15 +54,15 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 
 	var/time_remaining = SSticker.GetTimeLeft()
 	if(time_remaining > 0)
-		stat(null, "Времени до запуска: [round(time_remaining/10)]с")
+		stat(null, "Time until launch: [round(time_remaining/10)]с")
 	else if(time_remaining == -10)
-		stat(null, "Времени до запуска: ОТЛОЖЕНО")
+		stat(null, "Time until launch: DELAYED")
 	else
-		stat(null, "Времени до запуска: СКОРО")
+		stat(null, "Time until launch: SOON")
 
-	stat(null, "Игроки: [SSticker.totalPlayers]")
+	stat(null, "Players: [SSticker.totalPlayers]")
 	if(client.holder)
-		stat(null, "Готовы: [SSticker.totalPlayersReady]")
+		stat(null, "Ready: [SSticker.totalPlayersReady]")
 
 /mob/dead/proc/server_hop()
 	set category = "OOC"

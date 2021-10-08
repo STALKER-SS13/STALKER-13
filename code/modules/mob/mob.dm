@@ -74,7 +74,7 @@
 	to_chat(usr, t)
 
 /mob/proc/get_photo_description(obj/item/camera/camera)
-	return "... штука?"
+	return "... Thing?"
 
 /mob/proc/show_message(msg, type, alt_msg, alt_type)//Message, type of message (1 or 2), alternative message, alt message type (1 or 2)
 
@@ -102,7 +102,7 @@
 	// voice muffling
 	if(stat == UNCONSCIOUS)
 		if(type & 2) //audio
-			to_chat(src, "<I>... вы что-то слышите ...</I>")
+			to_chat(src, "<I>... You can hear something ...</I>")
 	else
 		to_chat(src, msg)
 
@@ -229,7 +229,7 @@
 			qdel(W)
 		else
 			if(!disable_warning)
-				to_chat(src, "<span class='warning'>Вы не можете это надеть!</span>")
+				to_chat(src, "<span class='warning'>You cant put it on!</span>")
 		return FALSE
 	equip_to_slot(W, slot, redraw_mob) //This proc should not ever fail.
 	return TRUE
@@ -307,7 +307,7 @@
 
 //mob verbs are faster than object verbs. See https://secure.byond.com/forum/?post=1326139&page=2#comment8198716 for why this isn't atom/verb/examine()
 /mob/verb/examinate(atom/A as mob|obj|turf in view()) //It used to be oview(12), but I can't really say why
-	set name = "Осмотреть"
+	set name = "Examine"
 	set category = "IC"
 
 	if(isturf(A) && !(sight & SEE_TURFS) && !(A in view(client ? client.view : world.view, src)))
@@ -315,7 +315,7 @@
 		return
 
 	if(is_blind(src))
-		to_chat(src, "<span class='notice'>Тут что-то есть, но вы не видите что.</span>")
+		to_chat(src, "<span class='notice'>You can see something here, but you are not sure what it is.</span>")
 		return
 
 	face_atom(A)
@@ -326,7 +326,7 @@
 //visible_message will handle invisibility properly
 //overridden here and in /mob/dead/observer for different point span classes and sanity checks
 /mob/verb/pointed(atom/A as mob|obj|turf in view())
-	set name = "Показать на..."
+	set name = "Point to"
 	set category = "Object"
 
 	if(!src || !isturf(src.loc) || !(A in view(src.loc)))
@@ -375,7 +375,7 @@
 			hud_used.rest_icon.update_icon(src)
 
 /mob/verb/mode()
-	set name = "Активировать предмет"
+	set name = "Activate item"
 	set category = "Object"
 	set src = usr
 
@@ -391,16 +391,16 @@
 		update_inv_hands()
 
 /mob/verb/memory()
-	set name = "Заметки"
+	set name = "Notes"
 	set category = "IC"
 	set desc = "View your character's notes memory."
 	if(mind)
 		mind.show_memory(src)
 	else
-		to_chat(src, "Вам некуда запоминать.")
+		to_chat(src, "You have nothing to remember.")
 
 /mob/verb/add_memory(msg as message)
-	set name = "Добавить заметку"
+	set name = "Add a note"
 	set category = "IC"
 
 	msg = copytext(msg, 1, MAX_MESSAGE_LEN)
@@ -409,15 +409,15 @@
 	if(mind)
 		mind.store_memory(msg)
 	else
-		to_chat(src, "Вам некуда запоминать.")
+		to_chat(src, "You have nothing to remember.")
 
 /mob/dead/observer/verb/abandon_mob()
-	set name = "Перерождение"
+	set name = "Respawn"
 	set category = "OOC"
 
 	log_game("[key_name(usr)] used abandon mob.")
 
-	to_chat(usr, "<span class='boldnotice'>Уважайте других игроков!</span>")
+	to_chat(usr, "<span class='boldnotice'>Be kind to other players!</span>")
 
 	if(!client)
 		log_game("[key_name(usr)] AM failed due to disconnect.")
@@ -440,26 +440,26 @@
 
 
 /mob/living/verb/abandon_mob()
-	set name = "Перерождение"
+	set name = "Respawn"
 	set category = "OOC"
 
 	if (CONFIG_GET(flag/norespawn))
 		return
 
 	if ((stat != DEAD || !( SSticker )))
-		to_chat(usr, "<span class='boldnotice'>Вам нужно умереть для этого!</span>")
+		to_chat(usr, "<span class='boldnotice'>You must die to do that!</span>")
 		return
 
 	if (timeofdeath + CONFIG_GET(number/respawn_timer) > world.time)
 		if(usr.client.prefs.chat_toggles & CHAT_LANGUAGE)
 			to_chat(usr, "<span class='boldnotice'>You will be able join the game in around [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] min.</span>")
 		else
-			to_chat(usr, "<span class='boldnotice'>Возможность переродиться будет доступна через [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] минуты.</span>")
+			to_chat(usr, "<span class='boldnotice'>You will be able to respawn in [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] Minutes.</span>")
 		return
 
 	log_game("[key_name(usr)] used abandon mob.")
 
-	to_chat(usr, "<span class='boldnotice'>Уважайте других игроков!</span>")
+	to_chat(usr, "<span class='boldnotice'>Be kind to other players!</span>")
 
 	if(!client)
 		log_game("[key_name(usr)] AM failed due to disconnect.")

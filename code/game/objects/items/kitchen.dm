@@ -60,7 +60,7 @@
 	name = "kitchen knife"
 	icon_state = "knife"
 	item_state = "knife"
-	desc = "A general purpose kitchen knife used by chefs all over the world. No particularly good at combat, but better than nothing."
+	desc = "A general purpose kitchen knife used by chefs all over the world. Not particularly good at combat, but better than nothing."
 	flags_1 = CONDUCT_1
 	force = 10
 	w_class = WEIGHT_CLASS_SMALL

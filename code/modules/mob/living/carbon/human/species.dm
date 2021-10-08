@@ -25,7 +25,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/toxic_food = TOXIC
 	var/list/no_equip = list()	// slots the race can't equip stuff to
 	var/nojumpsuit = 0	// this is sorta... weird. it basically lets you equip stuff that usually needs jumpsuits without one, like belts and pockets and ids
-	var/say_mod = "говорит"	// affects the speech message
+	var/say_mod = "Says"	// affects the speech message
 	var/list/default_features = list() // Default mutant bodyparts for this species. Don't forget to set one for every mutant bodypart you allow this species to have.
 	var/list/mutant_bodyparts = list() 	// Visible CURRENT bodyparts that are unique to a species. DO NOT USE THIS AS A LIST OF ALL POSSIBLE BODYPARTS AS IT WILL FUCK SHIT UP! Changes to this list for non-species specific bodyparts (ie cat ears and tails) should be assigned at organ level if possible. Layer hiding is handled by handle_mutant_bodyparts() below.
 	var/list/mutant_organs = list()		//Internal organs that are unique to this race.
@@ -1312,7 +1312,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
 					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				else
-					to_chat(M, "<span class='warning'>Вы не можете трогать людей в этой зоне!</span>")
+					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				return 0
 			grab(M, H, attacker_style)
 
@@ -1321,7 +1321,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
 					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				else
-					to_chat(M, "<span class='warning'>Вы не можете трогать людей в этой зоне!</span>")
+					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				return 0
 			harm(M, H, attacker_style)
 
@@ -1330,7 +1330,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
 					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				else
-					to_chat(M, "<span class='warning'>Вы не можете трогать людей в этой зоне!</span>")
+					to_chat(M, "<span class='warning'>You can't fight in the safezone!</span>")
 				return 0
 			disarm(M, H, attacker_style)
 

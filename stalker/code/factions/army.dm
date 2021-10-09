@@ -55,7 +55,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/army,/obj/item/flashlight/seclite)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/army,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	faction_s = "Army"
@@ -92,7 +92,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/army,/obj/item/flashlight/seclite)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/army,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	faction_s = "Army"

@@ -74,7 +74,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 
 /obj/item/proc/clothing_resistance_flag_examine_message(mob/user)
 	if(resistance_flags & INDESTRUCTIBLE)
-		to_chat(user, "[src] выглядит неубиваемой вещицей!")
+		to_chat(user, "[src] This looks indestructable!")
 		return
 	//if(resistance_flags & LAVA_PROOF)
 	//	to_chat(user, "[src] is made of an extremely heat-resistant material, it'd probably be able to withstand lava!")

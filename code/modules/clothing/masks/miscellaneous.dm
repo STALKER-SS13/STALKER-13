@@ -225,7 +225,7 @@
 
 /obj/item/clothing/mask/bandana
 	name = "botany bandana"
-	desc = "A fine bandana with nanotech lining and a hydroponics pattern."
+	desc = "A fine bandana with cotton lining and a hydroponics pattern."
 	w_class = WEIGHT_CLASS_TINY
 	flags_cover = MASKCOVERSMOUTH
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
@@ -264,32 +264,32 @@
 
 /obj/item/clothing/mask/bandana/red
 	name = "red bandana"
-	desc = "A fine red bandana with nanotech lining."
+	desc = "A fine red bandana with cotton lining."
 	icon_state = "bandred"
 
 /obj/item/clothing/mask/bandana/blue
 	name = "blue bandana"
-	desc = "A fine blue bandana with nanotech lining."
+	desc = "A fine blue bandana with cotton lining."
 	icon_state = "bandblue"
 
 /obj/item/clothing/mask/bandana/green
 	name = "green bandana"
-	desc = "A fine green bandana with nanotech lining."
+	desc = "A fine green bandana with cotton lining."
 	icon_state = "bandgreen"
 
 /obj/item/clothing/mask/bandana/gold
 	name = "gold bandana"
-	desc = "A fine gold bandana with nanotech lining."
+	desc = "A fine gold bandana with cotton lining."
 	icon_state = "bandgold"
 
 /obj/item/clothing/mask/bandana/black
 	name = "black bandana"
-	desc = "A fine black bandana with nanotech lining."
+	desc = "A fine black bandana with cotton lining."
 	icon_state = "bandblack"
 
 /obj/item/clothing/mask/bandana/skull
 	name = "skull bandana"
-	desc = "A fine black bandana with nanotech lining and a skull emblem."
+	desc = "A fine black bandana with cotton lining and a skull emblem."
 	icon_state = "bandskull"
 
 /obj/item/clothing/mask/bandana/durathread

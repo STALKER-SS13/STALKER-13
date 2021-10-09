@@ -80,7 +80,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern)
+	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
@@ -113,7 +113,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/restraints/legcuffs/bola,/obj/item/ammo_box/magazine/stalker/sc45 = 2)
+	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/restraints/legcuffs/bola,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
 	l_pocket = pick(
 	/obj/item/megaphone,
@@ -139,7 +139,8 @@ Assistant
 	back = /obj/item/storage/backpack/stalker/tourist
 	backpack_contents = list(/obj/item/stack/spacecash/c5000 = 40,
 						/obj/item/ammo_box/stalker/b12x70 = 2,
-						/obj/item/flashlight/seclite = 1)
+						/obj/item/flashlight/seclite = 1,
+						/obj/item/clothing/accessory/patch/bandits)
 	l_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti
 	r_pocket = /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
 

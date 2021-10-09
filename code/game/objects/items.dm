@@ -192,7 +192,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 /obj/item/examine(mob/user) //This might be spammy. Remove?
 	..()
 	var/size = weightclass2text(src.w_class)
-	to_chat(user, "Размер у этой штуки [size]." )
+	to_chat(user, "This item is [size] sized." )
 
 	if(!user.research_scanner)
 		return

@@ -128,7 +128,7 @@
 		to_chat(usr, "You turn the NVR switch[src] hoping to make out something in the darkness, but nothing comes of it. Should I wear it? ")
 		playsound(usr, 'stalker/sound/nv_start.ogg', 50, 1, -1)
 		//if (prob(5))
-		//	to_chat(usr, "<b>Тем самым приводя устройство в состояние бесполезной тряпки!</b>")
+		//	to_chat(usr, "<b>Thus, bringing the device into a state of useless rag!</b>")
 		//	playsound(usr, 'stalker/sound/nv_off.ogg', 50, 1, -1)
 		//	qdel(src)
 		return

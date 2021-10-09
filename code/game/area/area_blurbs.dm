@@ -18,7 +18,6 @@
 	if(!(L.ckey in blurbed_stated_to))
 		blurbed_stated_to += L.ckey
 		to_chat(L,("[narrate]"))
-	message_admins("Area blurb has been proced")
 
 
 /************
@@ -40,6 +39,6 @@ ty ilu - bear
 /////////////
 
 
-/area/stalker/blowout/outdoor
-	narrate = "Untamed wilderness and hostile wildlife roam freely past the colony gates amidst the traps and mines. Tread carefully, and keep your wits about you, you are not alone out here..."
+/area/stalker/blowout/outdoor/backwater
+	narrate = "You hear crickets chirping in the murky swamps covered in old ships, home to anomalies, mutants, and bandits alike. Careful, you're not alone out here..."
 

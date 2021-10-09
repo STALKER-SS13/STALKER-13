@@ -451,13 +451,14 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	set waitfor = FALSE
 	SEND_SIGNAL(src, COMSIG_AREA_ENTERED, M)
 	SEND_SIGNAL(M, COMSIG_ENTER_AREA, src) //The atom that enters the area
+
 	if(!isliving(M))
 		return
 
 	var/mob/living/L = M
 	if(!L.ckey)
 		return
-	message_admins("Area was been walked into")
+
 	play_ambience(L)
 	do_area_blurb(L)
 
@@ -465,7 +466,6 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 
 	// Ambience goes down here -- make sure to list each area separately for ease of adding things in later, thanks! Note: areas adjacent to each other should have the same sounds to prevent cutoff when possible.- LastyScratch
 /area/proc/play_ambience(var/mob/living/L)
-	message_admins("Ambience has been proced")
 
 	if(L.client && !L.client.ambience_playing && L.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
 		L.client.ambience_playing = 1

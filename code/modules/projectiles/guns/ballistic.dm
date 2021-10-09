@@ -101,7 +101,7 @@
 		if(usr.get_held_items_for_side("l") != src && usr.get_held_items_for_side("r") != src)
 			..()
 			return
-		to_chat(usr, "<span class='notice'>Вы сняли [A] с [src].</span>")
+		to_chat(usr, "<span class='notice'>You've removed [A] the [src].</span>")
 		playsound (src.loc, 'stalker/sound/weapons/detach_addon.ogg', 50, 1, 0)
 		azoom.Remove(usr)
 		usr.put_in_hands(S)
@@ -409,7 +409,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 /obj/item/gun/ballistic/attack_self(mob/living/user)
 	if(jam)
 		jam = 0
-		user << "<span class='notice'>Оружие снова в норме.</span>"
+		user << "<span class='notice'>Guns are back to normal.</span>"
 	if(!internal_magazine && magazine)
 		if(!magazine.ammo_count())
 			eject_magazine(user)

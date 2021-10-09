@@ -2,8 +2,8 @@
 	title = "Freedom Rookie"
 	faction_s = "Freedom"
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = -1
+	spawn_positions = -1
 	description = "Freedom are anarchists and daredevils who declare themselves fighters for a free access to the Zone and consequently find themselves in constant conflict with the army, military stalkers and the Duty faction. These so-called freedom warriors believe in sharing all information about the Zone with the rest of the world and challenge the state's monopoly over the Zone's secrets and wonders."
 	enforces = "Work with fellow Freedom faction members to patrol the Zone, save stalkers from death and help them get back on their feet, vanquish the grip of oppression from various militant factions which suffocate those within it, and establish good relationships with various factions such as the Bandits and Loners."
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without permission from leadership, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
@@ -12,7 +12,6 @@
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
-	limit_per_player = 4
 	outfit = /datum/outfit/freedomrookie
 
 /datum/outfit/job/freedomrookie
@@ -76,7 +75,7 @@
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without permission from leadership, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
 	supervisors = "Lieutenant"
 	selection_color = "#601919"
-	whitelist_only = 0
+	whitelist_only = 1
 	limit_per_player = 2
 	outfit = /datum/outfit/job/freedom_lieutenant
 	real_rank = "Lieutenant"

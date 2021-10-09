@@ -5,8 +5,8 @@ Assistant
 	title = "Duty Private"
 	faction_s = "Duty"
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = -1
+	spawn_positions = -1
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
 	enforces = "Neutralizing Bandits and mutants to make the Zone a safer place, save stalkers from death and help them get back on their feet, and communicate about the whereabouts of Freedom soldiers in the area."
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and start a fight with a neutral faction without asking up the chain of command."
@@ -15,7 +15,6 @@ Assistant
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
-	limit_per_player = 4
 	outfit = /datum/outfit/duty/
 
 /datum/outfit/dutyprivate  // For select_equipment
@@ -36,7 +35,6 @@ Assistant
 
 /datum/outfit/duty/pre_equip(mob/living/carbon/human/H)
 	..()
-	uniform = /obj/item/clothing/under/rank/security
 	head = pick(
 		/obj/item/clothing/head/beret,
 		/obj/item/clothing/head/ushanka,
@@ -53,7 +51,7 @@ Assistant
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/duty
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12/unique
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = pick(

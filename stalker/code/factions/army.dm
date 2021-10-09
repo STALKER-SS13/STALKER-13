@@ -16,7 +16,8 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
+	locked = 1
 	outfit = /datum/outfit/job/army
 
 /datum/job/army_eliteagro
@@ -75,7 +76,7 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
 	real_rank = "Lieutenant"
 
 /datum/outfit/job/militarycommander

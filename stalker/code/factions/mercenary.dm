@@ -4,8 +4,8 @@
 //	flag = ASSISTANT
 //	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = -1
+	spawn_positions = -1
 	description = "Mercenaries are experienced fighters from all walks of life who offer their services as hired soldiers. They are perhaps ex-military soldiers, ex-special forces operators, or possibly underground fighters such as elite resistance/guerrilla troops, a private military company or notorious terrorists of various nations who offer their services to the highest bidder. Because mercenaries have no established code of ethics to abide to, each mercenary group's sense of morality could be quite different from another."
 	enforces = "Maintain good relations with most factions so that you can take contracts from them, let everyone you are going after that 'its just business' and that you exclusively work for pay, only do things for others when they agree to transfer you roubles."
 	forbids = "Randomly go around trying to kill or rob stalkers or other faction members, disobey orders from the Mercenary Commander, and go off independently without communicating with your fellow mercenaries."
@@ -13,8 +13,8 @@
 	selection_color = "#2e708b"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
-	limit_per_player = 4
+	whitelist_only = 1
+	locked = 1
 	outfit = /datum/outfit/job/mercenary
 
 /datum/outfit/job/mercenary

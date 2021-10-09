@@ -129,3 +129,48 @@
 	armour_penetration = 25
 	range = 6
 	spread = 15
+
+
+/* Igiari's Old/Handmade Ammo - Bullet Projectiles
+
+Generally, the thought here is "the original but worse".
+For the first iteration, we're going to just see how they
+perform with halfed damage and penetration. No variants.
+
+*/
+
+/obj/item/projectile/bullet/bullet9x18/hm
+	damage = 9
+
+/obj/item/projectile/bullet/bullet545/hm
+	damage = 15
+
+/obj/item/projectile/bullet/bullet12x70/hm
+	damage = 9
+
+/obj/item/projectile/bullet/bullet9x19/hm
+	damage = 11
+
+/obj/item/projectile/bullet/bullet9x39/hm
+	damage = 11
+	armour_penetration = 20
+
+/obj/item/projectile/bullet/bulletacp45/hm
+	damage = 13
+
+/obj/item/projectile/bullet/bullet556x45/hm
+	damage = 13
+	armour_penetration = 7
+
+/obj/item/projectile/bullet/bulletmag44/hm
+	damage = 20
+
+/obj/item/projectile/bullet/bullet762x25/hm
+	damage = 8
+	armour_penetration = 7
+
+/obj/item/projectile/bullet/bullet762x54/hm
+	damage = 27
+
+/obj/item/projectile/bullet/bullet762x51/hm
+	damage = 26

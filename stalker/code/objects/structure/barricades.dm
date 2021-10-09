@@ -111,7 +111,7 @@
 /obj/structure/stalker/blocks/vanish
 	opacity = 0
 	pass_flags = LETPASSTHROW
-	var/proj_pass_rate = 50
+	var/proj_pass_rate = 40
 
 /obj/structure/stalker/blocks/vanish/block1
 	icon_state = "block2"

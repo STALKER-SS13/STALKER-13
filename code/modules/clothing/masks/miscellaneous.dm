@@ -69,17 +69,17 @@
 
 /obj/item/clothing/mask/pig
 	name = "pig mask"
-	desc = "A rubber pig mask with a builtin voice modulator."
+	desc = "A harrowing, smelly pig mask made of unknown materials."
 	icon_state = "pig"
 	item_state = "pig"
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = VOICEBOX_TOGGLABLE
+//	clothing_flags = VOICEBOX_TOGGLABLE
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/clothing/mask/pig/speechModification(message)
-	. = message
-	if(!CHECK_BITFIELD(clothing_flags, VOICEBOX_DISABLED))
-		. = pick("Oink!","Squeeeeeeee!","Oink Oink!")
+///obj/item/clothing/mask/pig/speechModification(message)
+//	. = message
+//	if(!CHECK_BITFIELD(clothing_flags, VOICEBOX_DISABLED))
+//		. = pick("Oink!","Squeeeeeeee!","Oink Oink!")
 
 /obj/item/clothing/mask/pig/cursed
 	name = "pig face"

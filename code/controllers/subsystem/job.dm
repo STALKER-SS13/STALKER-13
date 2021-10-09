@@ -440,8 +440,13 @@ SUBSYSTEM_DEF(job)
 				M = H
 
 		SSpersistence.antag_rep_change[M.client.ckey] += job.GetAntagRep()
+
+	to_chat(M, "<b>You awake as a [job.title] to yet another day in the Zone. <FONT color='purple'> You take in the frigid air and your despondents surroundings.</b>")
 	if(job)
-		to_chat(M, "<b>You [job.title], your rank [job.real_rank], your group [job.faction_s]</b>")
+		to_chat(M, "You are a member of the [job.faction_s] as a [job.title], you answer directly to [job.supervisors]. Special circumstances may change this.")
+		to_chat(M, "<FONT color='blue'><B>[job.description]</b>")
+		to_chat(M, "<FONT color='green'><b>As a member of the [job.faction_s], DO: [job.enforces]</b>")
+		to_chat(M, "<FONT color='red'><b>As a member of the [job.faction_s], DON'T: [job.forbids]</b>")
 		//to_chat(M, "<b>Как [job.title] вы слушаетесь лидера [job.faction_s].</b>")
 		//job.radio_help_message(M)
 		if(job.req_admin_notify)

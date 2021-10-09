@@ -108,7 +108,7 @@
 "cd" = (/obj/effect/turf_decal/stripes/full{icon_state = "border8"; pixel_x = 0; tag = "icon-border8"},/obj/effect/turf_decal/stripes/full{icon_state = "border4"; pixel_x = 0; tag = "icon-border4"},/obj/structure/bed/stalker/metal/matras{tag = "icon-krovat (EAST)"; icon_state = "krovat"; dir = 4},/turf/open/stalker/floor/plasteel/plita,/area/space)
 "ce" = (/obj/effect/turf_decal/stripes/full{icon_state = "border4"; pixel_x = -19; tag = "icon-border4"},/obj/effect/turf_decal/stripes/full{icon_state = "border8"; pixel_x = 28; tag = "icon-border8"},/obj/structure/bed/stalker/metal{tag = "icon-krovat_e (WEST)"; icon_state = "krovat_e"; dir = 8},/turf/open/stalker/floor/plasteel/plita,/area/space)
 "cf" = (/obj/structure/stalker/cacheable/yashik/yaskik_a,/turf/open/stalker/floor/plasteel/plita,/area/space)
-"cg" = (/obj/effect/spawner/lootdrop/stalker/mobspawner/snork_spawner,/turf/open/stalker/floor/gryaz/gryaz2,/area/space)
+"cg" = (/obj/effect/landmark/mobspawner/snork_spawner,/turf/open/stalker/floor/gryaz/gryaz2,/area/space)
 "ch" = (/turf/closed/mineral,/area/space)
 "ci" = (/obj/structure/chair/stalker/divan,/turf/open/stalker/floor/plasteel/plita,/area/space)
 "cj" = (/obj/structure/chair/stalker/divan/divan2,/turf/open/stalker/floor/plasteel/plita,/area/space)
@@ -181,7 +181,7 @@
 "dB" = (/obj/structure/stalker/okno/window2,/turf/closed/wall/stalker/bricks_white,/area/stalker/blowout/outdoor)
 "dU" = (/turf/closed/wall/stalker/beton,/area/stalker)
 "dV" = (/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker)
-"dX" = (/obj/effect/spawner/lootdrop/stalker/mobspawner/snork_spawner,/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor)
+"dX" = (/obj/effect/landmark/mobspawner/snork_spawner,/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor)
 
 (1,1,1) = {"
 abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab

@@ -4,7 +4,7 @@
 	icon = 'stalker/icons/weapons.dmi'
 	icon_state = "knife"
 	slot_flags = ITEM_SLOT_BELT
-	force = 25
+	force = 20
 	throwforce = 15
 	w_class = WEIGHT_CLASS_SMALL
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -18,7 +18,7 @@
 	icon = 'stalker/icons/weapons.dmi'
 	icon_state = "bayonet"
 	slot_flags = ITEM_SLOT_BELT
-	force = 37
+	force = 25
 	throwforce = 20
 	w_class = WEIGHT_CLASS_SMALL
 	hitsound = 'sound/weapons/bladeslice.ogg'

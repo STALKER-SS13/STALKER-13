@@ -38,7 +38,7 @@
 
 	if(M.stat || !in_range(M,src))
 		return
-	
+
 	if (recent_spin > world.time)
 		return
 	recent_spin = world.time + spin_delay
@@ -143,11 +143,11 @@
 	pin = /obj/item/firing_pin
 
 /obj/item/gun/ballistic/revolver/nagant
-	name = "\improper Nagant revolver"
+	name = "nagant m1895"
 	desc = "An old model of revolver that originated in Russia. Able to be suppressed. Uses 7.62x38mmR ammo."
 	icon_state = "nagant"
 	can_suppress = TRUE
-
+	w_class = 2
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 
 

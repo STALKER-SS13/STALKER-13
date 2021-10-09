@@ -305,7 +305,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	desc = "A sharp, concealable, spring-loaded knife."
 	flags_1 = CONDUCT_1
 	force = 3
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = 2
+	sharpness = IS_SHARP_ACCURATE
+	slot_flags = ITEM_SLOT_BELT
 	throwforce = 5
 	throw_speed = 3
 	throw_range = 6
@@ -320,7 +322,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, 1)
 	if(extended)
 		force = 20
-		w_class = WEIGHT_CLASS_NORMAL
+		w_class = 2
+		sharpness = IS_SHARP_ACCURATE
+		slot_flags = ITEM_SLOT_BELT
 		throwforce = 23
 		icon_state = "switchblade_ext"
 		attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
@@ -328,7 +332,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		sharpness = IS_SHARP
 	else
 		force = 3
-		w_class = WEIGHT_CLASS_SMALL
+		w_class = 2
+		slot_flags = ITEM_SLOT_BELT
 		throwforce = 5
 		icon_state = "switchblade"
 		attack_verb = list("stubbed", "poked")
@@ -515,12 +520,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 10
 	throwforce = 12
-	attack_verb = list("beat", "smacked")
+	attack_verb = list("beat", "smacked", "bonked", "bludgened", "battered")
 	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BELT
 	var/homerun_ready = 0
 	var/homerun_able = 0
 
-/obj/item/melee/baseball_bat/homerun
+obj/item/melee/baseball_bat/homerun
 	name = "home run bat"
 	desc = "This thing looks dangerous... Dangerously good at baseball, that is."
 	homerun_able = 1

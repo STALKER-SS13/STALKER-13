@@ -264,6 +264,38 @@
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
+/obj/item/clothing/suit/kozhanka
+	name = "jacket subtype made for the tourist clothings."
+	desc = "������&#255; ������&#255; ������&#255; ������, ����� �����. ������ ��������� �������������� � ���������� ������. ������������ ������ ���������� � ������ �����������."
+	eng_desc = "Common attire of the novice stalker. It wont save you from bullets or anomalies, but its still better than nothing."
+	icon_state = "kozhanka"
+	item_state = "det_suit"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	armor = list(melee = 10, bullet = 10, laser = 10,burn = 10, bomb = 10, bio = 10, rad = 10, electro = 10, psy = 0)
+	durability = 75
+	//�����������//
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/suit/kozhanka/tourist/jacket
+	name = "leather jacket"
+	eng_desc = "Common attire of the newly arrived. It wont save you from bullets or anomalies, but its still better than nothing. This one is some thick leather jacket."
+	icon_state = "tourist1"
+	item_state = "det_suit"
+
+/obj/item/clothing/suit/kozhanka/tourist/coat
+	name = "green winter coat"
+	eng_desc = "Common attire of the newly arrived. It wont save you from bullets or anomalies, but its still better than nothing. This one is some thick winter coat."
+	icon_state = "tourist2"
+	item_state = "det_suit"
+
+/obj/item/clothing/suit/kozhanka/tourist/gorka
+	name = "gorka jacket"
+	eng_desc = "Common attire of the newly arrived. It wont save you from bullets or anomalies, but its still better than nothing. This one is some thick winter coat."
+	icon_state = "tourist3"
+	item_state = "det_suit"
 
 /obj/item/clothing/suit/hooded/kombez
 	name = "sunrise"
@@ -282,8 +314,6 @@
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
-
-
 
 /obj/item/clothing/head/hooded/stalker/kombez
 	armor = list("melee" = 35, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)

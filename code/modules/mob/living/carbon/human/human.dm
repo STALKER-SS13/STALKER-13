@@ -12,6 +12,7 @@
 	verbs += /mob/living/proc/lay_down
 
 	icon_state = ""		//Remove the inherent human icon that is visible on the map editor. We're rendering ourselves limb by limb, having it still be there results in a bug where the basic human icon appears below as south in all directions and generally looks nasty.
+	pickDeathSound()
 
 	//initialize limbs first
 	create_bodyparts()
@@ -34,6 +35,17 @@
 
 	AddComponent(/datum/component/redirect, list(COMSIG_COMPONENT_CLEAN_ACT = CALLBACK(src, .proc/clean_blood)))
 
+/mob/living/carbon/human/proc/pickDeathSound()
+	var/deathsound_pick
+	if(prob(1))
+		deathsound_pick = 'sound/voice/human/wilhelm_scream.ogg'
+	else
+		deathsound_pick = pick('sound/voice/human/malescream_1.ogg',
+									'sound/voice/human/malescream_2.ogg',
+									'sound/voice/human/malescream_3.ogg',
+									'sound/voice/human/malescream_4.ogg',
+									'sound/voice/human/malescream_5.ogg')
+		deathsound = deathsound_pick
 
 /mob/living/carbon/human/ComponentInitialize()
 	. = ..()

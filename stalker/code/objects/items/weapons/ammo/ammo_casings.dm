@@ -169,6 +169,6 @@ Not sure what else to say. Again, no variants.
 	icon_state = "762hm-casing"
 
 /obj/item/ammo_casing/c762x51/hm
-    desc = "A 7.62x51 bullet casing. The casing is tarnished and cheap."
-    projectile_type = /obj/item/projectile/bullet/bullet762x51/hm
+	desc = "A 7.62x51 bullet casing. The casing is tarnished and cheap."
+	projectile_type = /obj/item/projectile/bullet/bullet762x51/hm
 	icon_state = "762hm-casing"

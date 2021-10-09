@@ -62,14 +62,14 @@
 	item_state = "knife"
 	desc = "A general purpose kitchen knife used by chefs all over the world. Not particularly good at combat, but better than nothing."
 	flags_1 = CONDUCT_1
-	force = 10
+	force = 15
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 10
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	throw_speed = 3
 	throw_range = 6
 	sharpness = IS_SHARP_ACCURATE
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 	materials = list(MAT_METAL=12000)
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = IS_SHARP_ACCURATE
@@ -110,11 +110,11 @@
 	item_state = "butch"
 	desc = "A great cleaver for butchering mutants. Also good at cutting stalkers!"
 	flags_1 = CONDUCT_1
-	force = 15
+	force = 20
 	throwforce = 10
 	hitsound = "sound/weapons/knifeswing.ogg"
 	sharpness = IS_SHARP_ACCURATE
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 	materials = list(MAT_METAL=18000)
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	w_class = WEIGHT_CLASS_NORMAL
@@ -192,10 +192,10 @@
 	icon_state = "huntingknife"
 	item_state = "knife"
 	desc = "A hunting knife that is typically used by stalkers and military personnel alike. It has a serrated edge which is fit for survival usage, and a bayonet lug on its hilt."
-	force = 35
+	force = 30
 	throwforce = 20
 	sharpness = IS_SHARP_ACCURATE
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 	hitsound = "sound/weapons/knifeswing.ogg"
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
 
@@ -204,10 +204,10 @@
 	icon_state = "m9knife"
 	item_state = "knife"
 	desc = "An M9 Phrobis III multipurpose knife and bayonet. Sports a 7-inch blade and is purpose-built to stab things, in your hands or on a gun. Really pointy."
-	force = 30
+	force = 35
 	throwforce = 20
 	armour_penetration = 35
 	sharpness = IS_SHARP_ACCURATE
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 	hitsound = "sound/weapons/knifeswing.ogg"
 	attack_verb = list("penetrated", "stabbed", "punctured", "impaled", "skewered", "pierced")

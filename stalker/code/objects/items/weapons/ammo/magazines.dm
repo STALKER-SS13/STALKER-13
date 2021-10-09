@@ -184,6 +184,6 @@
 	name = "gauss rifle battery"
 	icon_state = "gaussbattery"
 	ammo_type = /obj/item/ammo_casing/tungsten_slug
-	caliber = "2mm ferromagnetic tungsten slug"
+	caliber = "2mm"
 	max_ammo = 10
 	multiple_sprites = 1

@@ -201,6 +201,12 @@
 /obj/effect/landmark/latejoin/monolith_hegumen
 	name = "JoinLateMonolith Hegumen"
 
+/obj/effect/landmark/latejoin/ecologist
+	name = "JoinLateEcologist"
+
+/obj/effect/landmark/latejoin/chief_ecologist
+	name = "JoinLateChief Ecologist"
+
 /turf/open/floor/plasteel/stairs/stalker
 	icon = 'stalker/icons/floor.dmi'
 	icon_state = "ladder"

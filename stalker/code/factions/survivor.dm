@@ -94,7 +94,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/civilian)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/clothing/accessory/patch/loner)
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
@@ -145,7 +145,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/professional)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/storage/belt/holster,/obj/item/flashlight/flare = 3)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
 	l_pocket = pick(
 		/obj/item/storage/fancy/cigarettes/cigpack_robust,
 		/obj/item/storage/fancy/cigarettes/cigpack_midori,
@@ -219,19 +219,19 @@ Assistant
 		/obj/item/gun/ballistic/revolver/nagant,
 		/obj/item/gun/ballistic/automatic/pistol/pm)
 	r_hand = pick(
-	/obj/item/camera,
-	/obj/item/taperecorder,
-	/obj/item/clothing/accessory/pocketprotector/full ,
-	/obj/item/clipboard, /obj/item/twohanded/binoculars,
-	/obj/item/flashlight/pen, /obj/item/hand_labeler,
-	/obj/item/modular_computer/tablet/preset/cheap,
-	/obj/item/megaphone,
-	/obj/item/instrument/saxophone,
-	/obj/item/lighter,
-	/obj/item/soap/deluxe,
-	/obj/item/storage/bag/trash,
-	/obj/item/toy/eightball,
-	/obj/item/melee/flyswatter)
+		/obj/item/camera,
+		/obj/item/taperecorder,
+		/obj/item/clothing/accessory/pocketprotector/full ,
+		/obj/item/clipboard, /obj/item/twohanded/binoculars,
+		/obj/item/flashlight/pen, /obj/item/hand_labeler,
+		/obj/item/modular_computer/tablet/preset/cheap,
+		/obj/item/megaphone,
+		/obj/item/instrument/saxophone,
+		/obj/item/lighter,
+		/obj/item/soap/deluxe,
+		/obj/item/storage/bag/trash,
+		/obj/item/toy/eightball,
+		/obj/item/melee/flyswatter)
 
 /datum/outfit/tourist  // For select_equipment
 	name = "Tourist"

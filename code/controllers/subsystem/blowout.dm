@@ -31,7 +31,7 @@
 		if(C.client && (C.client.prefs.chat_toggles & CHAT_LANGUAGE))
 			to_chat(C, "<big><span class='warning'>You enter the zone controlled by [controlled_by]. [controlled_by] can kill you on sight if you are not allied.</warning></big>")
 		else
-			to_chat(C, "<big><span class='warning'>You are entering an area controlled by the faction. [get_rus_faction(controlled_by)]. Вы можете быть убиты, если не находитесь в дружеских отношениях с группировкой.</warning></big>")
+			to_chat(C, "<big><span class='warning'>You are entering an area controlled by the faction. [get_rus_faction(controlled_by)]. You are entering an area controlled by the faction..</warning></big>")
 
 	if(controlled_by)
 		C.inprivatezone = 1

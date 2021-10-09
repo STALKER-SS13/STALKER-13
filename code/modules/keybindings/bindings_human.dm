@@ -15,14 +15,14 @@
 					if(!thing)
 						equipped_belt.attack_hand(src)
 					else
-						to_chat(user, "<span class='notice'>Вы ничего не находите внутри.</span>")
+						to_chat(user, "<span class='notice'>You find nothing inside.</span>")
 					return
 				if(thing) // put thing in belt
 					if(!SEND_SIGNAL(equipped_belt, COMSIG_TRY_STORAGE_INSERT, thing, user.mob))
-						to_chat(user, "<span class='notice'>Внутри не осталось места.</span>")
+						to_chat(user, "<span class='notice'>There is no room left inside.</span>")
 					return
 				if(!equipped_belt.contents.len) // nothing to take out
-					to_chat(user, "<span class='notice'>Ваш пояс пуст.</span>")
+					to_chat(user, "<span class='notice'>Your belt is empty.</span>")
 					return
 				var/obj/item/stored = equipped_belt.contents[equipped_belt.contents.len]
 				if(!stored || stored.on_found(src))
@@ -35,7 +35,7 @@
 				var/obj/item/equipped_back = get_item_by_slot(SLOT_BACK)
 				if(!equipped_back) // We also let you equip a backpack like this
 					if(!thing)
-						to_chat(user, "<span class='notice'>У вас нет рюкзака.</span>")
+						to_chat(user, "<span class='notice'>You don't have a backpack.</span>")
 						return
 					if(equip_to_slot_if_possible(thing, SLOT_BACK))
 						update_inv_hands()
@@ -44,14 +44,14 @@
 					if(!thing)
 						equipped_back.attack_hand(src)
 					else
-						to_chat(user, "<span class='notice'>Внутри не осталось места.</span>")
+						to_chat(user, "<span class='notice'>There is no room left inside.</span>")
 					return
 				if(thing) // put thing in backpack
 					if(!SEND_SIGNAL(equipped_back, COMSIG_TRY_STORAGE_INSERT, thing, user.mob))
-						to_chat(user, "<span class='notice'>Внутри не осталось места.</span>")
+						to_chat(user, "<span class='notice'>There is no room left inside.</span>")
 					return
 				if(!equipped_back.contents.len) // nothing to take out
-					to_chat(user, "<span class='notice'>Ваш рюкзак пуст.</span>")
+					to_chat(user, "<span class='notice'>Your backpack is empty.</span>")
 					return
 				var/obj/item/stored = equipped_back.contents[equipped_back.contents.len]
 				if(!stored || stored.on_found(src))

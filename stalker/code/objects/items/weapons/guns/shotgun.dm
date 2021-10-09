@@ -13,7 +13,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/stalker/bm16
 	recoil = 1
 	durability = 150
-	sawn_desc = "Значительно компактней и легче новой двустволки, но эффективен только в ближнем бою. Один из самых распространённых видов оружия у новичков."
+	sawn_desc = "Much more compact and lighter than the new double-barreled gun, but effective only in close combat."
 	randomspread = 0
 	spread = 12
 	damagelose = 0.3

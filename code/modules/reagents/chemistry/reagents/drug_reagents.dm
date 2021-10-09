@@ -10,9 +10,9 @@
 		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[id]_high")
 
 /datum/reagent/drug/space_drugs
-	name = "Space drugs"
+	name = "LSD"
 	id = "space_drugs"
-	description = "An illegal chemical compound used as drug."
+	description = "Lysergic acid diethylamide, an odorless and colorless substance with a slightly bitter taste. Makes you feel euphoric and beyond your own perception."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 30
 
@@ -27,7 +27,7 @@
 	..()
 
 /datum/reagent/drug/space_drugs/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
+	to_chat(M, "<span class='userdanger'>You start tripping hard! You see fractals, patterns, shapes, and colors of all kinds!</span>")
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[id]_overdose", /datum/mood_event/overdose, name)
 
 /datum/reagent/drug/space_drugs/overdose_process(mob/living/M)

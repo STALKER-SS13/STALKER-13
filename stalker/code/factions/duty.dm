@@ -41,7 +41,7 @@ Assistant
 		/obj/item/clothing/head/beret,
 		/obj/item/clothing/head/ushanka,
 		/obj/item/clothing/head/beret/black)
-	uniform = /obj/item/clothing/under/color/darkgreen
+	uniform = /obj/item/clothing/under/color/maroon
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
 	mask = pick(
 		/obj/item/clothing/mask/gas/sechailer/swat,
@@ -52,10 +52,10 @@ Assistant
 	belt = /obj/item/kitchen/knife/bayonet
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	back = /obj/item/storage/backpack/ert/security
+	back = /obj/item/storage/backpack/duty
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12/unique
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/civilian)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,
@@ -123,7 +123,7 @@ Assistant
 /datum/outfit/job/duty_lieutenant/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/steel
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/color/maroon
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
 	mask = pick(
 		/obj/item/clothing/mask/gas/sechailer/swat,
@@ -134,12 +134,12 @@ Assistant
 	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	back = /obj/item/storage/backpack/ert/security
+	back = /obj/item/storage/backpack/duty
 	suit_store = pick(
 		/obj/item/gun/ballistic/automatic/pistol/desert,
 		/obj/item/gun/ballistic/revolver/anaconda)
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,

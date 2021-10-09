@@ -37,7 +37,8 @@
 		/obj/item/reagent_containers/pill/stalker/aptechka/army = 1,
 		/obj/item/ammo_box/magazine/stalker/m9x19marta = 1,
 		/obj/item/flashlight/seclite = 1,
-		/obj/item/restraints/handcuffs/cable/zipties)
+		/obj/item/restraints/handcuffs/cable/zipties,
+		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 //	suit_store = pick(/obj/item/gun/ballistic/automatic/mp5, /obj/item/gun/ballistic/shotgun/chaser)
@@ -111,7 +112,8 @@
 		/obj/item/reagent_containers/pill/stalker/aptechka/army = 1,
 		/obj/item/ammo_box/stalker/bmag44  = 1,
 		/obj/item/flashlight/seclite = 1,
-		/obj/item/restraints/handcuffs/cable/zipties)
+		/obj/item/restraints/handcuffs/cable/zipties,
+		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 //	suit_store = pick(/obj/item/gun/ballistic/automatic/mp5, /obj/item/gun/ballistic/shotgun/chaser)

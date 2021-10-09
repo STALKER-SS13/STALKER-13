@@ -74,7 +74,7 @@
 	var/can_scope = 0
 	var/draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 	var/damagelose = 0		 //1 урона за 1 тайл = 0.33 ед
-	var/distro = 0			 //зазор между дробью для дробовиков
+	var/distro = 0			 //gap between shotgun shot
 	var/durability = 100     //durability of a gun
 	var/jam = 0              //is weapon jammed or not
 	var/list/obj/item/attachment/addons = list()
@@ -96,7 +96,7 @@
 					explosion(src.loc,-2,-2,2,flame_range = 0)
 					qdel(src)
 					src = null
-					to_chat(user, "<span class='userdanger'>Оружие взорвалось прямо у вас в руках!</span>")
+					to_chat(user, "<span class='userdanger'>The weapon exploded right in your hands!</span>")
 					return
 				else
 					if(prob(40))
@@ -106,7 +106,7 @@
 				if(prob(10))
 					user.dropItemToGround(src)
 					shake_camera(user, 4, 2)
-					to_chat(user, "<span class='userdanger'Кажется самое время починить этот хлам или выбросить, пока он не выстрелил тебе в лицо.</span>")
+					to_chat(user, "<span class='userdanger'It seems like a good time to fix this stuff or throw it away before it shoots you in the face..</span>")
 					jam = 1
 				else
 					if(prob(20))
@@ -354,11 +354,11 @@
 				if(!chambered.fire_casing(target, user, params, distro, suppressed, zone_override, sprd, damagelose))
 					shoot_with_empty_chamber(user)
 					playsound(user, fire_sound, 50, 1)
-					to_chat(user, "<span class='warning'>Оружие заклинило. Его необходимо перезарядить.</span>")
+					to_chat(user, "<span class='warning'>The weapon is jammed. It needs to be recharged.</span>")
 					firing_burst = 0
 					return
 				else
-					to_chat(user, "<span class='warning'>Оружие заклинило. Его необходимо перезарядить.</span>")
+					to_chat(user, "<span class='warning'>The weapon is jammed. It needs to be recharged.</span>")
 	else
 		shoot_with_empty_chamber(user)
 		firing_burst = FALSE
@@ -413,11 +413,11 @@
 					if(!chambered.fire_casing(target, user, params, distro, suppressed, zone_override, sprd, damagelose))
 						shoot_with_empty_chamber(user)
 						playsound(user, fire_sound, 50, 1)
-						to_chat(user, "<span class='warning'>Оружие заклинило. Его необходимо перезарядить.</span>")
+						to_chat(user, "<span class='warning'>The weapon is jammed. It needs to be recharged.</span>")
 						firing_burst = 0
 						return
 					else
-						to_chat(user, "<span class='warning'>Оружие заклинило. Его необходимо перезарядить.</span>")
+						to_chat(user, "<span class='warning'>The weapon is jammed. It needs to be recharged.</span>")
 		else
 			shoot_with_empty_chamber(user)
 			return

@@ -1,6 +1,6 @@
 /obj/structure/closet/grave
 	name = "Grave"
-	desc = ""
+	desc = "A hole for dead stalkers... usually."
 	icon = 'stalker/icons/Prishtina/decor.dmi'
 	icon_state = "mogila"
 	anchored = 1

@@ -101,14 +101,14 @@ GLOBAL_LIST_EMPTY(cps)
 	var/mob/living/carbon/human/H = user
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	var/datum/data/record/sk = find_record("sid", H.sid, GLOB.data_core.stalkers)
 	var/obj/item/stalker_pda/KPK = H.wear_id
 
 	if(!sk || !KPK.owner)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		return
 
 	if(KPK.owner != H)
@@ -224,14 +224,14 @@ GLOBAL_LIST_EMPTY(cps)
 		return
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	var/datum/data/record/sk = find_record("sid", H.sid, GLOB.data_core.stalkers)
 	var/obj/item/stalker_pda/KPK = H.wear_id
 
 	if(!sk || !KPK.owner)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		return
 
 	if(KPK.owner != H)

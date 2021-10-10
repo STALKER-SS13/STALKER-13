@@ -2,8 +2,8 @@ var/id_ = 0
 
 /obj/structure/stalker/modification_table
 	name = "modification table"
-	desc = "Table so you could modify your own gear."
-	eng_desc = "Table so you could modificate your own gear."
+	desc = "A table that allows you to invest money and time into bettering your gear."
+	eng_desc = "A table that allows you to invest money and time into bettering your gear."
 	icon = 'stalker/icons/weapon_mods.dmi'
 	icon_state = "modification_table"
 	layer = 2.8
@@ -635,14 +635,14 @@ var/id_ = 0
 	var/mob/living/carbon/human/Hu = usr
 
 	if(!istype(Hu.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	var/datum/data/record/sk = find_record("sid", Hu.sid, GLOB.data_core.stalkers)
 	var/obj/item/stalker_pda/KPK = Hu.wear_id
 
 	if(!sk || !KPK.owner)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		return
 
 	if(KPK.owner != Hu)
@@ -767,7 +767,7 @@ var/id_ = 0
 	var/mob/living/carbon/human/H = usr
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		updateUsrDialog()
 		return
 

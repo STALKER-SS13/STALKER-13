@@ -10,7 +10,7 @@
 */
 /obj/item/clothing/head/steel
 	name = "SSh-68"
-	eng_desc = "SSh-68 Steel helmet made of old rusty steel.  Protects your head but won't hold lots of bullets. Ocassionally the brave venture into Psy-Anomalies with these."
+	eng_desc = "SSh-68 Steel helmet made of old rusty steel.  Protects your head but won't hold against a lot of bullets. Ocassionally, the brave venture into Psy-Anomalies with these."
 	icon_state = "steelhelmet"
 	item_state = "steelhelmet"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
@@ -74,7 +74,7 @@
 
 /obj/item/clothing/head/assaultmerc
 	name = "Mercenary helmet"
-	eng_desc = "Schutzhelm 04 made in Switzerland used by Mercenaries."
+	eng_desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City."
 	icon_state = "assaultmerc"
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
@@ -85,7 +85,7 @@
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
 /obj/item/clothing/head/gopcap
-	name = "Сap"
+	name = "cap"
 	eng_desc = "Put a fucking bullet in his forehead!"
 	icon_state = "gopcap"
 	item_state = "gopcap"
@@ -133,7 +133,7 @@
 
 /obj/item/clothing/head/petrovichhelmet
 	name = "SKOT-M777"
-	eng_desc = "aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. "
+	eng_desc = "An aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. "
 	icon_state = "helmet_skot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 50)

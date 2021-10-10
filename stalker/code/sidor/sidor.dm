@@ -8,7 +8,7 @@
 
 	var/failText = list("You'd still have cans to collect.",
 					"Are you drunk?"
-					"you pull that shit?")
+					"You pull that shit?")
 
 	var/buyText = list("buy", "buy", "take", "take away", "privolok", "dragged")
 

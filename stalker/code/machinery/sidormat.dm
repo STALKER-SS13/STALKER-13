@@ -227,14 +227,14 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 	"Detectors" = list(
 		/////////////////////////////////	Детекторы	///////////////////////////////////////////
-		new /datum/data/stalker_equipment("Blink", 		"Blink",					/obj/item/detector/blink,				8000,	ROOKIE,	sale_price =1000),
+		new /datum/data/stalker_equipment("Echo", 		"Echo",					/obj/item/detector/blink,				8000,	ROOKIE,	sale_price =1000),
 		new /datum/data/stalker_equipment("Bear",		"Bear",						/obj/item/detector/bear,				17000,	EXPERIENCED,	sale_price =4000),
 		new /datum/data/stalker_equipment("Veles",		"Veles",					/obj/item/detector/veles,				66000,	VETERAN,	sale_price =10000)
 		),
 
 	"Attachments" = list(
 		/////////////////////////////////	Аттачменты	///////////////////////////////////////////
-		new /datum/data/stalker_equipment("Universl suppressor",	"Universl suppressor",						/obj/item/attachment/suppressor,			4000,	ROOKIE,		sale_price =500),
+		new /datum/data/stalker_equipment("Universal suppressor",	"Universal suppressor",						/obj/item/attachment/suppressor,			4000,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("SUSAT",					"SUSAT",									/obj/item/attachment/scope/SUSAT,			10000,	EXPERIENCED,	sale_price =3000),
 		new /datum/data/stalker_equipment("PSU-1",					"PSU-1",									/obj/item/attachment/scope/PS/U1,			15000,	EXPERIENCED,	sale_price =5000),
 		new /datum/data/stalker_equipment("PSO-1",					"PSO-1",									/obj/item/attachment/scope/PS/O1,			30000,	EXPERIENCED,	sale_price =8000),
@@ -250,39 +250,39 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Cream cheese",					"Cream cheese",					/obj/item/reagent_containers/food/snacks/stalker/konserva/snack/sirok,		400,	ROOKIE),
 		new /datum/data/stalker_equipment("Chocolate bar",					"Chocolate bar",				/obj/item/reagent_containers/food/snacks/stalker/konserva/snack/chocolate,	600,	ROOKIE),
 		new /datum/data/stalker_equipment("Biscuits",						"Biscuits",						/obj/item/reagent_containers/food/snacks/stalker/konserva/galets,			400,	ROOKIE),
-		new /datum/data/stalker_equipment("Cerreal",						"Cerreal",						/obj/item/reagent_containers/food/snacks/stalker/konserva/kasha,			550,	ROOKIE),
+		new /datum/data/stalker_equipment("Cereal",						"Cereal",						/obj/item/reagent_containers/food/snacks/stalker/konserva/kasha,			550,	ROOKIE),
 		new /datum/data/stalker_equipment("Canned meat",					"Canned meat",					/obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva1,		700,	ROOKIE),
 		new /datum/data/stalker_equipment("Canned meat",					"Canned meat",					/obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva2,		700,	ROOKIE),
 		new /datum/data/stalker_equipment("Canned meat with vegetables",	"Canned meat with vegetables",	/obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva3,		850,	ROOKIE),
 		new /datum/data/stalker_equipment("Biscuits",						"Biscuits",						/obj/item/reagent_containers/food/snacks/stalker/konserva/galets,			400,	ROOKIE),
 		/////////////////////////////////	Лут с мутантов	///////////////////////////////////////////
-		new /datum/data/stalker_equipment("Песий хвост",					"Песий хвост",			/obj/item/stalker/loot/dog_tail,			1000,		ROOKIE, sale_price = 500),
-		new /datum/data/stalker_equipment("Плотий глаз",					"Плотий глаз",			/obj/item/stalker/loot/flesh_eye,			1800,		ROOKIE, sale_price = 650),
-		new /datum/data/stalker_equipment("Кабаний ног",					"Кабаний ног",			/obj/item/stalker/loot/boar_leg,			6000,		ROOKIE, sale_price = 800),
-		new /datum/data/stalker_equipment("Cноркий рук",					"Снорукий рук",			/obj/item/stalker/loot/snork_leg,			7000,		ROOKIE, sale_price = 1000),
-		new /datum/data/stalker_equipment("Кровососий щупалец",				"Кровососий щупалец",	/obj/item/stalker/loot/bloodsucker,			16000,		ROOKIE, sale_price = 2500),
-		new /datum/data/stalker_equipment("Псевдопесий хвост",				"Псевдопесий хвост",	/obj/item/stalker/loot/pseudo_tail,			8000,		ROOKIE, sale_price = 1500),
-		new /datum/data/stalker_equipment("Контроллерий мозг",				"Контроллерий мозг",	/obj/item/stalker/loot/controller_brain,	40000,		ROOKIE, sale_price = 10000),
+		new /datum/data/stalker_equipment("Dog Tail",					"Dog Tail",				/obj/item/stalker/loot/dog_tail,			1000,		ROOKIE, sale_price = 500),
+		new /datum/data/stalker_equipment("Flesh Eye",					"Flesh Eye",			/obj/item/stalker/loot/flesh_eye,			1800,		ROOKIE, sale_price = 650),
+		new /datum/data/stalker_equipment("Boar Hoof",					"Boar Hoof",			/obj/item/stalker/loot/boar_leg,			6000,		ROOKIE, sale_price = 800),
+		new /datum/data/stalker_equipment("Snork Leg",					"Snork Leg",			/obj/item/stalker/loot/snork_leg,			7000,		ROOKIE, sale_price = 1000),
+		new /datum/data/stalker_equipment("Bloodsucker Tendrils",		"Bloodsucker Tendrils",	/obj/item/stalker/loot/bloodsucker,			16000,		ROOKIE, sale_price = 2500),
+		new /datum/data/stalker_equipment("Pseudodog Tail",				"Pseudodog Tail",		/obj/item/stalker/loot/pseudo_tail,			8000,		ROOKIE, sale_price = 1500),
+		new /datum/data/stalker_equipment("Controller Brain",			"Controller Brain",	/obj/item/stalker/loot/controller_brain,	40000,		ROOKIE, sale_price = 10000),
 		/////////////////////////////////	Артефакты	///////////////////////////////////////////
-		new /datum/data/stalker_equipment("Медуза",				"Медуза",							/obj/item/artifact/meduza,					5000,	ROOKIE,	sale_price = 1500),
-		new /datum/data/stalker_equipment("Каменный цветок",	"Каменный цветок",					/obj/item/artifact/stoneflower,				10000,	ROOKIE,	sale_price = 2500),
-		new /datum/data/stalker_equipment("Ночная звезда",		"Ночная звезда",					/obj/item/artifact/nightstar,				30000,	ROOKIE,	sale_price = 13000),
-		new /datum/data/stalker_equipment("Душа",				"Душа",								/obj/item/artifact/soul,					80000,	ROOKIE,	sale_price = 25000),
+		new /datum/data/stalker_equipment("Jellyfish",			"Jellyfish",						/obj/item/artifact/meduza,					5000,	ROOKIE,	sale_price = 1500),
+		new /datum/data/stalker_equipment("Stone Flower",		"Stone Flower",						/obj/item/artifact/stoneflower,				10000,	ROOKIE,	sale_price = 2500),
+		new /datum/data/stalker_equipment("Night Star",			"Night Star",						/obj/item/artifact/nightstar,				30000,	ROOKIE,	sale_price = 13000),
+		new /datum/data/stalker_equipment("Soul",				"Soul",								/obj/item/artifact/soul,					80000,	ROOKIE,	sale_price = 25000),
 		///////////////////////////////////////////////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("Вспышка",			"Вспышка",							/obj/item/artifact/flash,					6000,	ROOKIE,	sale_price = 1300),
-		new /datum/data/stalker_equipment("Лунный свет",		"Лунный свет",						/obj/item/artifact/moonlight,				12000,	ROOKIE,	sale_price = 2700),
-		new /datum/data/stalker_equipment("Пустышка",			"Пустышка",							/obj/item/artifact/pustishka,				40000,	ROOKIE,	sale_price = 8000),
-		new /datum/data/stalker_equipment("Батарейка",			"Батарейка",						/obj/item/artifact/battery,					70000,	ROOKIE,	sale_price = 24000),
+		new /datum/data/stalker_equipment("Flash",				"Flash",							/obj/item/artifact/flash,					6000,	ROOKIE,	sale_price = 1300),
+		new /datum/data/stalker_equipment("Moonlight",			"Moonlight",						/obj/item/artifact/moonlight,				12000,	ROOKIE,	sale_price = 2700),
+		new /datum/data/stalker_equipment("Shell",				"Shell",							/obj/item/artifact/pustishka,				40000,	ROOKIE,	sale_price = 8000),
+		new /datum/data/stalker_equipment("Battery",			"Battery",							/obj/item/artifact/battery,					70000,	ROOKIE,	sale_price = 24000),
 		///////////////////////////////////////////////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("Капл&#x44F;",		"Капл&#x44F;",						/obj/item/artifact/droplet,					7000,	ROOKIE,	sale_price = 800),
-		new /datum/data/stalker_equipment("Огненный шар",		"Огненный шар",						/obj/item/artifact/fireball,				15000,	ROOKIE,	sale_price = 3500),
-		new /datum/data/stalker_equipment("Кристалл",			"Кристалл",							/obj/item/artifact/crystal,					60000,	ROOKIE,	sale_price = 15000),
-		new /datum/data/stalker_equipment("Мамины бусы",		"Мамины бусы",						/obj/item/artifact/maminibusi,				80000,	ROOKIE,	sale_price = 35000),
+		new /datum/data/stalker_equipment("Droplet",			"Droplet",							/obj/item/artifact/droplet,					7000,	ROOKIE,	sale_price = 800),
+		new /datum/data/stalker_equipment("Fireball",			"Fireball",							/obj/item/artifact/fireball,				15000,	ROOKIE,	sale_price = 3500),
+		new /datum/data/stalker_equipment("Crystal",			"Crystal",							/obj/item/artifact/crystal,					60000,	ROOKIE,	sale_price = 15000),
+		new /datum/data/stalker_equipment("\improper Mama's Beads",		"\improper Mama's Beads",	/obj/item/artifact/maminibusi,				80000,	ROOKIE,	sale_price = 35000),
 		///////////////////////////////////////////////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("Кровь Камн&#x44F;",	"Кровь Камн&#x44F;",				/obj/item/artifact/stone_blood,				4000,	ROOKIE,	sale_price = 2500),
-		new /datum/data/stalker_equipment("Пузырь",				"Пузырь",							/obj/item/artifact/bubble,					12000,	ROOKIE,	sale_price = 3600),
-		new /datum/data/stalker_equipment("Слюда",				"Слюда",							/obj/item/artifact/mica,					30000,	ROOKIE,	sale_price = 9500),
-		new /datum/data/stalker_equipment("Светл&#x44F;к",		"Светл&#x44F;к",					/obj/item/artifact/firefly,					60000,	ROOKIE,	sale_price = 25000),
+		new /datum/data/stalker_equipment("Stone Blood",		"Stone Blood",						/obj/item/artifact/stone_blood,				4000,	ROOKIE,	sale_price = 2500),
+		new /datum/data/stalker_equipment("Bubble",				"Bubble",							/obj/item/artifact/bubble,					12000,	ROOKIE,	sale_price = 3600),
+		new /datum/data/stalker_equipment("Mica",				"Mica",								/obj/item/artifact/mica,					30000,	ROOKIE,	sale_price = 9500),
+		new /datum/data/stalker_equipment("Firefly",			"Firefly",						/obj/item/artifact/firefly,					60000,	ROOKIE,	sale_price = 25000),
 		/////////////////////////////////	Мусор	//////////////////////////////////////////////
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva,					400,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/MREkonserva1,		200,	ROOKIE),
@@ -414,7 +414,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 /obj/machinery/stalker/sidormat/ui_interact(mob/living/carbon/human/H)
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	//find_record("sid", H.sid, data_core.stalkers)
@@ -422,7 +422,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/datum/data/record/sk = KPK.profile
 
 	if(!sk || !KPK.owner)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		return
 
 	if(KPK.owner != H)
@@ -440,9 +440,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 		dat +="<div class='statusDisplay'>"
 		dat += "Balance: [num2text(balance, 8)] RU<br>"
-		dat += "<br><br>INSTRUCTION: Put habar for sale on the <b>left</b> table.<br>" // Забирать деньги и купленные вещи - на <b>правом</b>.
+		dat += "<br><br>INSTRUCTION: Put loot for sale on the <b>left</b> table.<br>" // Забирать деньги и купленные вещи - на <b>правом</b>.
 		if(switches & BUY_STUFF)
-			dat +="<A href='?src=\ref[src];choice=take'><b>Sell habar</b></A><br>"
+			dat +="<A href='?src=\ref[src];choice=take'><b>Sell loot</b></A><br>"
 		if(door_device && sk.fields["degree"])
 			dat +="<A href='?src=\ref[src];basement_toggle=1'><b>Toggle basement door</b></A><br>"
 		dat += "</div>"
@@ -467,9 +467,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 		dat +="<div class='statusDisplay'>"
 		dat += "On account: [num2text(balance, 8)] RU<br>"
-		dat += "<br><br>INSTRUCTION: Khabar fold - on <b> Left </b> Table.<br>" //Забирать деньги и купленные вещи - на <b>правом</b>.
+		dat += "<br><br>INSTRUCTION: Place loot on <b> Left </b> Table.<br>" //Забирать деньги и купленные вещи - на <b>правом</b>.
 		if(switches & BUY_STUFF)
-			dat +="<A href='?src=\ref[src];choice=take'><b>Sell Khabar</b></A><br>"
+			dat +="<A href='?src=\ref[src];choice=take'><b>Sell Loot</b></A><br>"
 		if(door_device && sk.fields["degree"])
 			dat +="<A href='?src=\ref[src];basement_toggle=1'><b>Open/Close Vault</b></A><br>"
 		dat += "</div>"
@@ -510,7 +510,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/mob/living/carbon/human/H = usr
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		updateUsrDialog()
 		return
 
@@ -519,7 +519,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 
 	if(!sk)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		updateUsrDialog()
 		return
 
@@ -559,14 +559,14 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 /obj/machinery/stalker/sidormat/proc/SellItems()
 	var/mob/living/carbon/human/H = usr
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	var/datum/data/record/sk = find_record("sid", H.sid, GLOB.data_core.stalkers)
 	var/obj/item/stalker_pda/KPK = H.wear_id
 
 	if(!sk)
-		say("Activate your profile in KPK.")
+		say("Activate your profile in PDA.")
 		return
 
 	if(KPK.sid != H.sid)
@@ -577,7 +577,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/total_cost = GetOnTableCost(ontable)
 
 	if(total_cost < 100)
-		say("Habar was not sold.")
+		say("Loot was not sold.")
 
 	for(var/atom/movable/I in ontable)
 		if(I.loc != itemloc)

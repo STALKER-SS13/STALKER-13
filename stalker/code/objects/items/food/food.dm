@@ -33,14 +33,14 @@
 
 /obj/item/trash/konserva
 	name = "empty can"
-	desc = "Empty konserva. Trash!"
-	eng_desc = "Trash."
+	desc = "An empty delight can. Trash!"
+	eng_desc = "An empty delight can. Trash!"
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "konserva_empty"
 	w_class = 2
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti
-	name = "shproti"
+	name = "anchovies"
 	desc = "European sprats originating from the Latvian portcity of Riga. They've been preserved in a thick sunflower oil."
 	eng_desc = "European sprats originating from the Latvian portcity of Riga. They've been preserved in a thick sunflower oil."
 	icon_state = "shproti0"
@@ -53,8 +53,8 @@
 /obj/item/trash/konserva/shproti
 	name = "empty can"
 	icon_state = "shproti2"
-	desc = "Empty can of Sprats, trash."
-	eng_desc = "Empty can of Sprats."
+	desc = "An empty can that smells of fish. Trash!"
+	eng_desc = "An empty can that smells of fish. Trash!"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/soup
 	name = "Soup"
@@ -72,7 +72,7 @@
 	icon_state = "soup2"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/bobi
-	name = "bobi"
+	name = "Canned Meal (Bobi)"
 	desc = "A can of 'Bean Surprise'. A melody of cheap flavourless nibbles of meat and watery beans."
 	eng_desc = "A can of 'Bean Surprise'. A melody of cheap flavourless nibbles of meat and watery beans."
 	icon_state = "bobi0"
@@ -87,7 +87,7 @@
 	icon_state = "bobi2"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/govyadina2
-	name = "tushenka"
+	name = "Canned Meal (Stew)"
 	desc = "A can of beef-stew! An avidly loved staple of those who scour around old ruins in search for loot!"
 	eng_desc = "A can of beef-stew! An avidly loved staple of those who scour around old ruins in search for loot!"
 	//weight = 0.7
@@ -103,7 +103,7 @@
 	icon_state = "govyadina2"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/fish
-	name = "fish"
+	name = "Canned Meal (Fish)"
 	desc = "Canned fish. Simple, easy to digest and generally well-liked by most in the Zone."
 	eng_desc = "Canned fish. Simple, easy to digest and generally well-liked by most in the Zone."
 	icon_state = "fish0"
@@ -118,14 +118,14 @@
 	icon_state = "fish2"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/snack/sirok
-	name = "cheese"
-	desc = "A can of creamed cheese commonly seen in UAF mountaineer rations."
-	eng_desc = "A can of creamed cheese commonly seen in UAF mountaineer rations."
+	name = "Canned Snack (Cream Cheese)"
+	desc = "A can of creamed cheese commonly seen in UAF mountaineer rations. It... might be in date."
+	eng_desc = "A can of creamed cheese commonly seen in UAF mountaineer rations. It... might be in date."
 	icon_state = "sirok"
 	icon_state_opened = "sirok1"
 	list_reagents = list("nutriment" = 11, "vitamin" = 1, "omnizine" = 0.3)
 	trash = /obj/item/trash/konserva/sirok
-	desc_opened = "A can of creamed cheese commonly seen in UAF mountaineer rations. This one is opened."
+	desc_opened = "A can of creamed cheese commonly seen in UAF mountaineer rations. This one is opened and looks in date."
 	tastes = list("sweetened curd with a vanilla kick" = 1)
 
 /obj/item/trash/konserva/sirok
@@ -148,6 +148,8 @@
 	name = "trash"
 	//weight = 0.01
 	icon_state = "snikers2"
+	desc = "An empty Snickers wrapper. Trash!"
+	eng_desc = "An empty Snickers wrapper. Trash!"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/snack/chocolate
 	name = "Chocolate"
@@ -211,7 +213,7 @@
 	name = "Galets"
 	desc = "Dry crackers that'd chip the tooth of anyone thinking this was a buttery biscuit!"
 	eng_desc = "Dry crackers that'd chip the tooth of anyone thinking this was a buttery biscuit!"
-	desc_opened = "Dry crackers that'd chip the tooth of anyone thinking this was a buttery biscuit! This ones opened."
+	desc_opened = "Dry crackers that'd chip the tooth of anyone thinking this was a buttery biscuit! This one is opened."
 	icon_state = "GAL1"
 	icon_state_opened = "GAL2"
 	list_reagents = list("nutriment" = 10, "omnizine" = 0.1)
@@ -223,7 +225,7 @@
 	icon_state = "GAL3"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/kasha
-	name = "Kasha"
+	name = "Canned Meal (Porridge)"
 	desc = "Vacuum-sealed can of boiled buckwheat porridge. Isn't this traditionally baked?"
 	eng_desc = "Vacuum-sealed can of boiled buckwheat porridge. Isn't this traditionally baked?"
 	desc_opened = "Vacuum-sealed can of boiled buckwheat porridge. Isn't this traditionally baked? This one is opened."
@@ -238,7 +240,7 @@
 	icon_state = "Kasha3"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva1
-	name = "Konserva"
+	name = "Canned Meal (Pork)"
 	desc = "Canned pork, salt n' spices. Doesn't get much simpler or wholesome in the zone!"
 	eng_desc = "Canned pork, salt n' spices. Doesn't get much simpler or wholesome in the zone!"
 	desc_opened = "Canned pork, salt n' spices. Doesn't get much simpler or wholesome in the zone! This one is opened."
@@ -253,7 +255,7 @@
 	icon_state = "TushenkaRed3"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva2
-	name = "Konserva"
+	name = "Canned Meal (Chicken)"
 	desc = "Canned chicken with an assortment of vegetables. A hearty meal in The Zone."
 	eng_desc = "Canned chicken with an assortment of vegetables. A hearty meal in The Zone."
 	desc_opened = "Canned chicken with an assortment of vegetables. A hearty meal in The Zone. This one is opened."
@@ -268,7 +270,7 @@
 	icon_state = "TushenkaGreen3"
 
 /obj/item/reagent_containers/food/snacks/stalker/konserva/MREkonserva3
-	name = "Konserva"
+	name = "Canned Meal (Veggies)"
 	desc = "Canned meat with an assortment of vegetables. A healthy and substantial meal within The Zone!"
 	eng_desc = "Canned meat with an assortment of vegetables. A healthy and substantial meal within The Zone!"
 	desc_opened = "Canned meat with an assortment of vegetables. A healthy and substantial meal within The Zone! This one is opened."
@@ -283,7 +285,7 @@
 	icon_state = "TushenkaBlue3"
 
 /obj/item/reagent_containers/food/snacks/stalker/kolbasa
-	name = "kolbasa"
+	name = "Diet Sausage"
 	desc = "Made from a mixture of chicken and soya, the \"diet\" sausage is often, for lack of other options, a Stalker's breakfast, lunch and dinner in one."
 	eng_desc = "Made from a mixture of chicken and soya, the \"diet\" sausage is often, for lack of other options, a Stalker's breakfast, lunch and dinner in one."
 	icon_state = "kolbasa"
@@ -292,7 +294,7 @@
 	tastes = list("a distinct cardamom kick over a classic ukrainian sausage" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/baton
-	name = "baton"
+	name = "bread"
 	desc = "A loaf of bread of completely questionable origin. Nobody has complained of off-flavours or issues with it in all the years it has been apart of a Stalkers diet!"
 	eng_desc = "A loaf of bread of completely questionable origin. Nobody has complained of off-flavours or issues with it in all the years it has been apart of a Stalkers diet!"
 	icon_state = "baton_stalker"
@@ -301,7 +303,7 @@
 	tastes = list("dry but pleasant bread" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/tomaty
-	name = "tomaty"
+	name = "tomatoes"
 	desc = "Pickled tomatoes of unknown age. Try at your own peril."
 	eng_desc = "Pickled tomatoes of unknown age. Try at your own peril."
 	icon_state = "tomaty"

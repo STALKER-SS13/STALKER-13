@@ -1491,8 +1491,8 @@
 "CJ" = (/obj/structure/stalker/matras,/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/buildings/backwater/substation)
 "CK" = (/obj/structure/stalker/cacheable/radio,/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/buildings/backwater/substation)
 "Fu" = (/obj/effect/landmark/latejoin/freedom_lieutenant,/turf/open/stalker/floor/plasteel/plitka,/area/stalker/blowout/buildings/backwater/waste)
-"Of" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 014; teleport_y = 240; teleport_z = 3},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater)
-"Ys" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 014; teleport_y = 239; teleport_z = 3},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater)
+"Of" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 14; teleport_y = 240; teleport_z = 3},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater)
+"Ys" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 14; teleport_y = 239; teleport_z = 3},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaabacadadadadacabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababadadOfYsadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeafaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

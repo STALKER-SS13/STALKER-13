@@ -1,7 +1,7 @@
 /obj/machinery/campfire
 	name = "Campfire"
-	desc = "Barrel with a couple of logs inside it. If you light it you can heal by sitting near it."
-	eng_desc = "Barrel with a couple of logs inside it. If you light it you can heal by sitting near it."
+	desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
+	eng_desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
 	icon = 'stalker/icons/stalker.dmi'
 	icon_state = "campfire0"
 	anchored = 1
@@ -113,8 +113,8 @@ obj/machinery/campfire/process()
 				usr.visible_message("[usr] lit a fire.", "<span class='notice'>You lit a fire.</span>")
 				update_icon()
 				soundloop.start()
-				desc = "Campfire emites warm and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfire emites warm and calmness. You can heal by sitting in it's range."
+				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
+				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)
@@ -132,8 +132,8 @@ obj/machinery/campfire/process()
 				usr.visible_message("[usr] lit a fire.", "<span class='notice'>You lit a fire.</span>")
 				update_icon()
 				soundloop.start()
-				desc = "Campfire emites warm and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfire emites warm and calmness. You can heal by sitting in it's range."
+				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
+				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)

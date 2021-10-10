@@ -2,7 +2,7 @@ GLOBAL_LIST_EMPTY(KPKs)
 var/global/global_lentahtml = ""
 
 /obj/item/stalker_pda
-	name = "KPK"
+	name = "PDA"
 	desc = "A portable device, used to communicate with other stalkers."
 	icon = 'stalker/icons/device_new.dmi'
 	icon_state = "kpk_off"
@@ -23,7 +23,7 @@ var/global/global_lentahtml = ""
 	var/registered_name = null
 	var/sid = null
 	var/rotation = "front"
-	var/rus_faction_s = "Одиночки"
+	var/rus_faction_s = "Loners"
 	var/rating = 0
 	var/reputation = 0
 	var/money = 0
@@ -34,9 +34,9 @@ var/global/global_lentahtml = ""
 	var/password = null
 	var/hacked = 0
 	var/rep_color_s = "#ffe100"
-	var/rep_name_s = "Нейтральная"
+	var/rep_name_s = "Neutral"
 	var/eng_rep_name_s = "Neutral"
-	var/rus_rank_name_s = "Новичок"
+	var/rus_rank_name_s = "Rookie"
 	var/eng_rank_name_s = "Rookie"
 	var/eng_faction_s = "Loners"
 	var/degree = 0
@@ -717,7 +717,7 @@ var/global/global_lentahtml = ""
 		if("lenta_add")
 			var/t = message_input(H, "message", 250)
 			if(!t)
-				to_chat(H, "<span class='warning'>Enter the message!</span>")
+				to_chat(H, "<span class='warning'>Type a message!</span>")
 			else
 				if ( !(last_lenta && world.time < last_lenta + LENTA_MESSAGE_COOLDOWN) )
 					last_lenta = world.time
@@ -730,7 +730,7 @@ var/global/global_lentahtml = ""
 		if("lenta_faction_add")
 			var/t = message_input(H, "message", 500)
 			if(!t)
-				to_chat(H, "<span class='warning'>Enter the message!</span>")
+				to_chat(H, "<span class='warning'>Type a message!</span>")
 			else
 				if ( !(last_faction_lenta && world.time < last_faction_lenta + LENTA_FACTION_MESSAGE_COOLDOWN) )
 					last_faction_lenta = world.time
@@ -1002,7 +1002,7 @@ var/global/global_lentahtml = ""
 	if(href_list["changefaction"])
 
 		var/new_eng_faction_s =  SSjob.GetJob(href_list["changefaction"]).faction_s
-		var/confirm = alert(H, "Do you want to change your faction from [eng_faction_s] to [new_eng_faction_s]?", "KPK", "Yes", "No")
+		var/confirm = alert(H, "Do you want to change your faction from [eng_faction_s] to [new_eng_faction_s]?", "PDA", "Yes", "No")
 		if(confirm == "Yes")
 			var/datum/job/J =  SSjob.GetJob(href_list["changefaction"])
 
@@ -1247,7 +1247,7 @@ var/global/global_lentahtml = ""
 		avatar.l_hand		= H.l_hand.type*/
 
 	if(avatar.uniform == null || avatar.shoes == null)
-		to_chat(H, "<span class='warning'>You should wear sweater and boots, before you can make photo!</span>")
+		to_chat(H, "<span class='warning'>You should wear some clothes before taking a picture!</span>")
 	else
 		var/image = get_avatar(H, avatar)
 
@@ -1291,18 +1291,18 @@ var/global/global_lentahtml = ""
 	usr << browse_rsc(P1.picture.picture_image, "photo_front")
 
 /proc/get_rus_rank_name(var/rating)
-	var/rus_rank_name_s = "Новичок"
+	var/rus_rank_name_s = "Rookie"
 	switch(rating)
 		if(ZONE_LEGEND to INFINITY)
-			rus_rank_name_s = "Легенда Зоны"
+			rus_rank_name_s = "Legend"
 		if(EXPERT to ZONE_LEGEND)
-			rus_rank_name_s = "Мастер"
+			rus_rank_name_s = "Expert"
 		if(VETERAN to EXPERT)
-			rus_rank_name_s = "Ветеран"
+			rus_rank_name_s = "Veteran"
 		if(EXPERIENCED to VETERAN)
-			rus_rank_name_s = "Опытный"
+			rus_rank_name_s = "Experienced"
 		if(ROOKIE to EXPERT)
-			rus_rank_name_s = "Новичок"
+			rus_rank_name_s = "Rookie"
 	return rus_rank_name_s
 
 /proc/get_eng_rank_name(var/rating)
@@ -1321,20 +1321,20 @@ var/global/global_lentahtml = ""
 	return eng_rank_name_s
 
 /proc/get_rus_faction(var/eng_faction_s)
-	var/faction_s = "Одиночки"
+	var/faction_s = "Loners"
 	switch(eng_faction_s)
 		if("Bandits")
-			faction_s = "Бандиты"
+			faction_s = "Bandits"
 		if("Mercenaries")
-			faction_s = "Наёмники"
+			faction_s = "Mercenaries"
 		if("Duty")
-			faction_s = "Долг"
+			faction_s = "Duty"
 		if("Traders")
-			faction_s = "Торговцы"
+			faction_s = "Traders"
 		if("Freedom")
-			faction_s = "Свобода"
+			faction_s = "Freedom"
 		if("Monolith")
-			faction_s = "Монолит"
+			faction_s = "Monolith"
 	return faction_s
 
 /proc/get_faction_color(var/eng_faction_s)
@@ -1355,23 +1355,23 @@ var/global/global_lentahtml = ""
 	return factioncolor
 
 /proc/get_rep_name(var/rep)
-	var/rep_name_s = "Нейтральная"
+	var/rep_name_s = "Neutral"
 
 	switch(rep)
 		if(AMAZING to INFINITY)
-			rep_name_s = "Блатной"
+			rep_name_s = "Amazing"
 		if(VERYGOOD to AMAZING)
-			rep_name_s = "Очень хорошая"
+			rep_name_s = "Very Good"
 		if(GOOD to VERYGOOD)
-			rep_name_s = "Хорошая"
+			rep_name_s = "Good"
 		if(BAD to GOOD)
-			rep_name_s = "Нейтральная"
+			rep_name_s = "Neutral"
 		if(VERYBAD to BAD)
-			rep_name_s = "Плохая"
+			rep_name_s = "Bad"
 		if(DISGUSTING to VERYBAD)
-			rep_name_s = "Очень плохая"
+			rep_name_s = "Very Bad"
 		if(-INFINITY to DISGUSTING)
-			rep_name_s = "Чёрт"
+			rep_name_s = "Disgusting"
 
 	return rep_name_s
 
@@ -1380,7 +1380,7 @@ var/global/global_lentahtml = ""
 
 	switch(rep)
 		if(AMAZING to INFINITY)
-			eng_rep_name_s = "Jesus"
+			eng_rep_name_s = "Amazing"
 		if(VERYGOOD to AMAZING)
 			eng_rep_name_s = "Very Good"
 		if(GOOD to VERYGOOD)
@@ -1392,7 +1392,7 @@ var/global/global_lentahtml = ""
 		if(DISGUSTING to VERYBAD)
 			eng_rep_name_s = "Very Bad"
 		if(-INFINITY to DISGUSTING)
-			eng_rep_name_s = "Satan"
+			eng_rep_name_s = "Disgusting"
 
 	return eng_rep_name_s
 

@@ -12,7 +12,7 @@
 	icon_state = "plot"
 
 /obj/item/stalker/loot/boar_leg
-	name = "boar's hoof"
+	name = "boar hoof"
 	eng_desc = "The hoof of a wild boar is used by scientists for manufacturing of some medicines, the most widespread of which are anti radiation drugs."
 	icon_state = "kaban"
 
@@ -22,12 +22,12 @@
 	icon_state = "snork_leg"
 
 /obj/item/stalker/loot/pseudo_tail
-	name = "pseudo-dog tail"
+	name = "pseudodog tail"
 	eng_desc = "The resistance of the skin of mutated dogs to chemical and electrical effects has long attracted the attention of scientists. Due to the lack of fat deposits, the tails of dogs are most suitable for laboratory research."
 	icon_state = "psevdopes"
 
 /obj/item/stalker/loot/bloodsucker
-	name = "bloodsucker tentacles"
+	name = "bloodsucker tendrils"
 	eng_desc = "Bloodsucker's tentacles contain a special gland: it secretes an enzyme that dissolves the victim's skin and at the same time prevents blood from clotting. If scientists can determine the structure of the enzyme, it will help make a breakthrough in medicine. "
 	icon_state = "bloodsucker"
 

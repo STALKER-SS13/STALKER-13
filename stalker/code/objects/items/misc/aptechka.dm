@@ -23,7 +23,7 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "medkit"
 	icon_state = "aptechkar"
 	desc = "Universal medical kit. Allows you to cope with injuries of various types and degrees of complexity: wounds, burns, poisoning and others. Doesn't stop bleeding!"
-	eng_desc = "All-purpose single-use medkit. Allows to handle injuries of different types and degrees of complexity. Doesn't stop bleeding!"
+	eng_desc = "All-purpose single-use medkit. Allows to handle injuries of different types and degrees of complexity. This kit includes some basic bandages and gauze, along with some ointment for burns."
 	item_state = "aptechkar"
 	list_reagents = list("medicadone" = 6)
 
@@ -76,9 +76,9 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	return
 
 /obj/item/reagent_containers/pill/stalker/aptechka/bint
-	name = "bint"
-	desc = "Bandage. Helps stop bleeding."
-	eng_desc = "Bandage. Can stop your bleeding."
+	name = "bandage"
+	desc = "Stops your bleeding. Wrap it tight!"
+	eng_desc = "Stops your bleeding. Wrap it tight!"
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "bint"
 	list_reagents = list("medicadone" = 1)

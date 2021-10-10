@@ -54,7 +54,7 @@
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/job/monolith_hegumen
-	title = "Monolith Hegumen"
+	title = "Monolith Preacher"
 	faction_s = "Monolith"
 	faction = "Station"
 	total_positions = 2
@@ -69,7 +69,7 @@
 	real_rank = "Lieutenant"
 
 /datum/outfit/job/monolith_hegumen
-	name = "Monolith Hegumen"
+	name = "Monolith Preacher"
 	faction_s = "Monolith"
 
 /datum/outfit/job/monolith_hegumen/pre_equip(mob/living/carbon/human/H)

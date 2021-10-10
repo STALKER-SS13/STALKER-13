@@ -86,16 +86,6 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("5.56x45mm AP Box",			"5.56x45mm AP Box",							/obj/item/ammo_box/stalker/b55645ap,					20000,	VETERAN,		sale_price =720),
 		new /datum/data/stalker_equipment("7.62x51 Box",				"7.62x51 Box",								/obj/item/ammo_box/stalker/b762x51,						10000,	ROOKIE,			sale_price =480),
 		new /datum/data/stalker_equipment("9x39 PAB-9 Box",				"9x39 PAB-9 Box",							/obj/item/ammo_box/stalker/b939,						30000,	EXPERIENCED,	sale_price =700),
-		new /datum/data/stalker_equipment("9x18mm Box (Old)",			"9x18mm Box (Old)",							/obj/item/ammo_box/stalker/b9x18/hm,					1500,	ROOKIE,			sale_price =150),
-		new /datum/data/stalker_equipment("7.62x25mm Box (Old)",		"7.62x25mm Box (Old)",						/obj/item/ammo_box/stalker/b762x25/hm,					1500,	ROOKIE,			sale_price =200),
-		new /datum/data/stalker_equipment("9x19mm Box (Old)",			"9x19mm Box (Old)",							/obj/item/ammo_box/stalker/b9x19/hm,					2000,	ROOKIE,			sale_price =230),
-		new /datum/data/stalker_equipment(".45 ACP Box (Old)",			".45 ACP Box (Old)",						/obj/item/ammo_box/stalker/bacp45/hm,					4500,	ROOKIE,			sale_price =270),
-		new /datum/data/stalker_equipment(".44 Magnum Box (Old)",		".44 Magnum Box (Old)",						/obj/item/ammo_box/stalker/bmag44/hm,					8000,	EXPERIENCED,	sale_price =320),
-		new /datum/data/stalker_equipment("12x70 Buckshot Box (Old)",	"12x70 Buckshot Box (Old)",					/obj/item/ammo_box/stalker/b12x70/hm,					4500,	ROOKIE,			sale_price =250),
-		new /datum/data/stalker_equipment("5.45x39mm Box (Old)",		"5.45x39mm Box (Old)",						/obj/item/ammo_box/stalker/b545/hm,						6000,	ROOKIE,			sale_price =320),
-		new /datum/data/stalker_equipment("5.56x45mm Box (Old)",		"5.56x45mm Box (Old)",						/obj/item/ammo_box/stalker/b55645/hm,					7000,	ROOKIE,			sale_price =340),
-		new /datum/data/stalker_equipment("7.62x51 Box (Old)",			"7.62x51 Box (Old)",						/obj/item/ammo_box/stalker/b762x51/hm,					6000,	ROOKIE,			sale_price =240),
-		new /datum/data/stalker_equipment("9x39 PAB-9 Box (Old)",		"9x39 PAB-9 Box (Old)",						/obj/item/ammo_box/stalker/b939/hm,						18000,	EXPERIENCED,	sale_price =350)
 		),
 
 	"Ammo Magazines and Clips" = list(

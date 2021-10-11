@@ -17,7 +17,7 @@
 "aq" = (/obj/machinery/light/small,/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/ranger)
 "ar" = (/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/backwater/sawmill)
 "as" = (/turf/open/floor/plasteel/stairs/stalker{dir = 8; icon_state = "ladder"},/area/stalker/blowout/buildings/backwater/sawmill)
-"at" = (/obj/effect/step_trigger/teleporter{dir = 4; teleport_x = 49; teleport_y = 237; teleport_z = 1},/turf/open/floor/plasteel/stairs/stalker{dir = 8; icon_state = "ladder"},/area/stalker/blowout/buildings/backwater/sawmill)
+"at" = (/obj/effect/step_trigger/teleporter{dir = 4; teleport_x = 48; teleport_y = 238; teleport_z = 1},/turf/open/floor/plasteel/stairs/stalker{dir = 8; icon_state = "ladder"},/area/stalker/blowout/buildings/backwater/sawmill)
 "au" = (/obj/structure/chair/wood/normal,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/burntfarm)
 "av" = (/obj/structure/chair/wood/normal,/obj/structure/stalker/cacheable/cover{pixel_y = 32},/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/burntfarm)
 "aw" = (/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/burntfarm)

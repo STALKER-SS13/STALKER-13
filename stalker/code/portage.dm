@@ -187,7 +187,7 @@
 	name = "JoinLateMercenary Commander"
 
 /obj/effect/landmark/latejoin/freedom
-	name = "JoinLateFreedom"
+	name = "JoinLateFreedom Soldier"
 
 /obj/effect/landmark/latejoin/freedom_lieutenant
 	name = "JoinLateFreedom Lieutenant"

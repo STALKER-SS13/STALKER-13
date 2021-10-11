@@ -3,11 +3,11 @@
 	faction_s = "Ecologist"
 	faction = "Station"
 	total_positions = -1
-	//locked = 1
+	locked = 1
 	spawn_positions = -1
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
-	whitelist_only = 0
+	whitelist_only = 1
 	outfit = /datum/outfit/job/ecologist
 	real_rank = "Private"
 
@@ -65,7 +65,7 @@
 	locked = 1
 	spawn_positions = 1
 	selection_color = "#601919"
-	whitelist_only = 0
+	whitelist_only = 1
 	limit_per_player = 1
 	outfit = /datum/outfit/job/chief_ecologist
 	real_rank = "Captain"

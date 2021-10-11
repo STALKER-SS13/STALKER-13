@@ -2,7 +2,7 @@
 Assistant
 */
 /datum/job/duty
-	title = "Duty Private"
+	title = "Duty Soldier"
 	faction_s = "Duty"
 	faction = "Station"
 	total_positions = -1
@@ -15,10 +15,10 @@ Assistant
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
-	outfit = /datum/outfit/duty/
+	outfit = /datum/outfit/job/dutysoldier
 
-/datum/outfit/dutyprivate  // For select_equipment
-	name = "Duty Private"
+/datum/outfit/job/dutysoldier  // For select_equipment
+	name = "Duty Soldier"
 	faction_s = "Duty"
 	head = null
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
@@ -33,7 +33,7 @@ Assistant
 							/obj/item/ammo_box/magazine/stalker/m545 = 2,)
 	faction_s = "Duty"
 
-/datum/outfit/duty/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/dutysoldier/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = pick(
 		/obj/item/clothing/head/beret,
@@ -73,14 +73,13 @@ Assistant
 //	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
-	spawn_positions = -1
+	spawn_positions = 1
 	supervisors = ""
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/barman2
-	//faction_s = "Одиночки"
 
 /datum/outfit/job/barman2
 	name = "Barman"
@@ -101,16 +100,15 @@ Assistant
 	title = "Duty Lieutenant"
 	faction_s = "Duty"
 	faction = "Station"
-	total_positions = 2
-	//locked = 1
-	spawn_positions = 2
+	total_positions = 4
+	locked = 1
+	spawn_positions = 4
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
 	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, and command your soldiers to extinguish the presence of Freedom and Bandits in the area."
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and jeopordize the faction for an insignificant reason."
 	supervisors = "Major"
 	selection_color = "#601919"
-	whitelist_only = 0
-	limit_per_player = 2
+	whitelist_only = 1
 	outfit = /datum/outfit/job/duty_lieutenant
 	real_rank = "Lieutenant"
 

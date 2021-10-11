@@ -41,6 +41,7 @@ Assistant
 	title = "Old Stalker"
 	faction_s = "Loners"
 	faction = "Station"
+	locked = 1
 	total_positions = -1
 	spawn_positions = -1
 	description = "The Loners are those who aren't part of any faction and inhabit the Zone as nomadic, independent stalkers. Even though they are not a proper faction of their own as per se, they often look out for eachother and are friendly with eachother in order to cohabitate the Zone."
@@ -50,7 +51,7 @@ Assistant
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
 	outfit = /datum/outfit/job/oldstalker
 
 /*/datum/job/assistant/get_access()
@@ -246,3 +247,65 @@ Assistant
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/gun/ballistic/revolver/nagant
 	faction_s = "Tourists"
+
+/datum/job/trader
+	title = "Trader"
+	faction_s = "Loners"
+	locked = 1
+//	flag = ASSISTANT
+//	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = ""
+	selection_color = "#601919"
+	access = list()			//See /datum/job/assistant/get_access()
+	minimal_access = list()	//See /datum/job/assistant/get_access()
+	whitelist_only = 1
+	outfit = /datum/outfit/job/trader
+
+/datum/outfit/job/trader
+	name = "Trader"
+	faction_s = "Loners"
+
+/datum/outfit/job/trader/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = null
+	uniform = /obj/item/clothing/under/color/switer/dark
+	suit = /obj/item/clothing/suit/jacket/sidor
+	ears = null
+	belt = /obj/item/gun/ballistic/automatic/pistol/cora
+	id = /obj/item/stalker_pda
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	back = null
+
+/datum/job/barman
+	title = "Barman"
+	faction_s = "Loners"
+	locked = 1
+//	flag = ASSISTANT
+//	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = ""
+	selection_color = "#601919"
+	access = list()			//See /datum/job/assistant/get_access()
+	minimal_access = list()	//See /datum/job/assistant/get_access()
+	whitelist_only = 1
+	outfit = /datum/outfit/job/barman
+
+/datum/outfit/job/barman
+	name = "Barman"
+	faction_s = "Loners"
+
+/datum/outfit/job/barman/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = null
+	uniform = /obj/item/clothing/under/color/switer/dark
+	suit = /obj/item/clothing/suit/jacket/sidor
+	ears = null
+	belt = /obj/item/gun/ballistic/automatic/pistol/cora
+	id = /obj/item/stalker_pda
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	back = null

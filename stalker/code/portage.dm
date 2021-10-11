@@ -153,17 +153,14 @@
 /obj/effect/landmark/latejoin/bandit_barman
 	name = "JoinLateBandit Barman"
 
-/obj/effect/landmark/latejoin/bandit_pahan
-	name = "JoinLatePahan"
-
 /obj/effect/landmark/latejoin/army
-	name = "JoinLateArmy"
+	name = "JoinLateMilitary Soldier"
 
-/obj/effect/landmark/latejoin/army_eliteagro
-	name = "JoinLateEliteAgro"
+/obj/effect/landmark/latejoin/army_spetsnaz
+	name = "JoinLateMilitary Spetsnaz"
 
-/obj/effect/landmark/latejoin/petrovich
-	name = "JoinLatePetrovich"
+/obj/effect/landmark/latejoin/militarycommander
+	name = "JoinLateMilitary Commander"
 
 /obj/effect/landmark/latejoin/trader
 	name = "JoinLateTrader"

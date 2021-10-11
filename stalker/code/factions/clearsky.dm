@@ -14,8 +14,8 @@ Assistant
 	selection_color = "#64B2F7"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
-	//locked = 1
+	whitelist_only = 1
+	locked = 1
 	outfit = /datum/outfit/clearsky
 
 /datum/outfit/clearsky  // For select_equipment
@@ -51,13 +51,13 @@ Assistant
 	faction_s = "Clear Sky"
 	faction = "Station"
 	total_positions = 2
-	//locked = 1
+	locked = 1
 	spawn_positions = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Eliminating enimies of Clear Sky (Bandits and Monolith)."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction without asking up the chain of command."
 	selection_color = "#64B2F7"
-	whitelist_only = 0
+	whitelist_only = 1
 	limit_per_player = 2
 	outfit = /datum/outfit/job/clearsky_leader
 	real_rank = "Leader"

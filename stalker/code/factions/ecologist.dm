@@ -26,7 +26,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -47,7 +47,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -85,7 +85,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/large
+	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -106,7 +106,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/large
+	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off

@@ -5,6 +5,9 @@
 	total_positions = -1
 	locked = 1
 	spawn_positions = -1
+	description = "Ecologists are a group focusing on researching the Zone, in order to properly harness its potential for the good of mankind. They are largely pacifist when it comes to human conflict, and rely on other factions to offer protection when it comes to embarking on missions into the zone. Your job is to research the wonders of these strange lands and to report your discoveries, and coordinate with those around you to make it all happen."
+	enforces = "Stay aware of zone hostilities, stay pleasant and neutral to Zone politics, keep yourself safe and sound in mind, keep lab secure and useable, and write your reports so they can be peer reviewed."
+	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
 	whitelist_only = 1
@@ -23,7 +26,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	//belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -44,7 +47,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	//belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -82,7 +85,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	//belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/large
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off
@@ -103,7 +106,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
-	//belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/weapon/storage/belt/stalker/artifact_belt/large
 	back = /obj/item/storage/backpack/stalker/tourist
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/radio/off

@@ -25,3 +25,44 @@
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
 	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/throwing
+	name = "throwing knife"
+	eng_desc = "A small knife which is best thrown rather than applied manually."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "throwingknife"
+	slot_flags = ITEM_SLOT_BELT
+	force = 8
+	throwforce = 24
+	throw_speed = 4
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 75, "embedded_fall_chance" = 25)
+	w_class = WEIGHT_CLASS_SMALL
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("penetrated", "stabbed", "skewered", "pierced")
+	sharpness = IS_SHARP_ACCURATE
+
+/obj/item/melee/tireiron
+	name = "tire iron"
+	desc = "A rusty metal tire iron which can be used to beat mutants and stalkers. The end is bent an unusable."
+	icon_state = "tireiron"
+	item_state = "tireiron"
+	slot_flags = ITEM_SLOT_BELT
+	force = 20
+	throwforce = 15
+	w_class = WEIGHT_CLASS_SMALL
+	hitsound = 'sound/weapons/bluntswing.ogg'
+	attack_verb = list("attacked", "smacked", "beat", "bludgened")
+	sharpness = IS_BLUNT
+
+/obj/item/melee/pipe
+	name = "metal pipe"
+	eng_desc = "A rusty metal pipe which can be used to beat mutants and stalkers."
+	icon_state = "pipe"
+	item_state = "nullrod"
+	slot_flags = ITEM_SLOT_BELT
+	force = 20
+	throwforce = 15
+	w_class = WEIGHT_CLASS_SMALL
+	hitsound = 'sound/weapons/bluntswing.ogg'
+	attack_verb = list("attacked", "smacked", "beat", "bludgened")
+	sharpness = IS_BLUNT

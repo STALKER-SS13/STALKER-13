@@ -187,7 +187,7 @@
 	name = "JoinLateDuty Lieutenant"
 
 /obj/effect/landmark/latejoin/mercenary_sql
-	name = "JoinLateMercenary Sql"
+	name = "JoinLateMercenary Commander"
 
 /obj/effect/landmark/latejoin/freedom
 	name = "JoinLateFreedom"
@@ -206,6 +206,12 @@
 
 /obj/effect/landmark/latejoin/chief_ecologist
 	name = "JoinLateChief Ecologist"
+
+/obj/effect/landmark/latejoin/clearsky
+	name = "JoinLateClear Sky Soldier"
+
+/obj/effect/landmark/latejoin/clearsky_leader
+	name = "JoinLateClear Sky Leader"
 
 /turf/open/floor/plasteel/stairs/stalker
 	icon = 'stalker/icons/floor.dmi'

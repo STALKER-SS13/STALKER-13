@@ -102,7 +102,7 @@ Assistant
 	faction_s = "Duty"
 	faction = "Station"
 	total_positions = 2
-	locked = 1
+	//locked = 1
 	spawn_positions = 2
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
 	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, and command your soldiers to extinguish the presence of Freedom and Bandits in the area."

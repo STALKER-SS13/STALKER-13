@@ -158,6 +158,20 @@
 		else if(nvg.colour_matrix == NIGHTVISION_MATRIX_II)
 			modifications += "visor"
 */
+
+/obj/item/clothing/head/maska_1
+	name = "MASKA-1 SCH Helmet"
+	desc = "The Maska 1 helmet was in use by the Russian MVD until being largely replaced by the aluminum ZSh-1-2. Now it is more commonly seen being worn by Clear Sky stalkers."
+	eng_desc = "The Maska 1 helmet was in use by the Russian MVD until being largely replaced by the aluminum ZSh-1-2. Now it is more commonly seen being worn by Clear Sky stalkers."
+	icon_state = "maska_1"
+	item_state = "maska_1"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = UNACIDABLE
+	durability = 300
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 1)
+
 /obj/item/clothing/mask/gas/stalker
 	name = "gas mask"
 	eng_desc = "A regular plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. Widely used by rookies and veterans of all factions due to its universal functionality. Does not provide any physical protection."

@@ -266,7 +266,7 @@
 
 /obj/item/clothing/suit/kozhanka
 	name = "jacket subtype made for the tourist clothings."
-	desc = "������&#255; ������&#255; ������&#255; ������, ����� �����. ������ ��������� �������������� � ���������� ������. ������������ ������ ���������� � ������ �����������."
+	desc = "Common attire of the novice stalker. It wont save you from bullets or anomalies, but its still better than nothing."
 	eng_desc = "Common attire of the novice stalker. It wont save you from bullets or anomalies, but its still better than nothing."
 	icon_state = "kozhanka"
 	item_state = "det_suit"
@@ -321,6 +321,70 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_kombez"
 	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/suit/hooded/kozhanka/cs_hood
+	name = "clear sky coat"
+	desc = "A trenchcoat sporting clear sky camoflauge with light armor plates and shoulder pads strapped on it."
+	eng_desc = "A trenchcoat sporting clear sky camoflauge with light armor plates and shoulder pads strapped on it."
+	icon_state = "cs_hood"
+	item_state = "cs_hood_t"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	hoodtype = /obj/item/clothing/head/winterhood/stalker/cs_hood
+	durability = 75
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/winterhood/stalker/cs_hood
+	icon_state = "winterhood_cs"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/suit/hooded/cs_medium
+	name = "CS-3a body armor"
+	eng_desc = "This body armor was designed for conducting search operations in areas of low anomalous activity. Its higher quality materials result in greater durability."
+	icon_state = "cs_medium"
+	item_state = "syndicate-green"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/cs_medium
+	durability = 250
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/head/hooded/stalker/cs_medium
+	armor = list("melee" = 35, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	icon_state = "winterhood_cs_medium"
+	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/suit/cs_heavy
+	name = "CS-1 Body Armor"
+	eng_desc = "Standard equipment used by Clear Sky assault squads. This body armor is able to stop a pistol bullet."
+	icon_state = "cs_heavy"
+	item_state = "syndicate-green"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	durability = 200
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 	/*
 	Not sprited suits based off sunrise in here
@@ -545,6 +609,39 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	icon_state = "psz9md_helmet"
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/head/hooded/stalker/sealed/psz9md/Initialize()
+	AttachNVG()
+	//nvg = new /obj/item/nightvision(src)
+	..()
+
+/obj/item/clothing/suit/hooded/sealed/sin
+	name = "Sinner Suit"
+	eng_desc = "A strange sealed suit worn by Sin members."
+	icon_state = "sin"
+	item_state = "syndicate-black-red"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 75, "bomb" = 50, "bio" = 50, "rad" = 75, "fire" = 75, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/sin
+	resistance_flags = FIRE_PROOF
+	durability = 150
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 1, "accessory_slot" = 0)
+
+/obj/item/clothing/head/hooded/stalker/sealed/sin
+	name = "Sinner Suit Mask"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 65, "bomb" = 50, "bio" = 50, "rad" = 70, "fire" = 65, "psy" = 20)
+	heat_protection = HEAD
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	icon_state = "sin_helmet"
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/hooded/stalker/sealed/psz9md/Initialize()

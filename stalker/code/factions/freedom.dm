@@ -89,7 +89,6 @@
 	uniform = /obj/item/clothing/under/color/darkgreen
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	mask = pick(
-		/obj/item/clothing/mask/vape,
 		/obj/item/clothing/mask/cigarette/rollie/cannabis,
 		/obj/item/clothing/mask/gas,
 		/obj/item/clothing/mask/bandana/green)

@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/freedomrookie
 
 /datum/outfit/job/freedomrookie
-	name = "Freedom Rookie"
+	name = "Freedom Soldier"
 
 /datum/outfit/freedomrookie/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -35,9 +35,9 @@
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/cora
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911,/obj/item/ammo_box/magazine/m45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,
@@ -50,7 +50,7 @@
 	faction_s = "Freedom"
 
 /datum/outfit/freedomrookie  // For select_equipment
-	name = "Freedom Rookie"
+	name = "Freedom Soldier"
 	uniform = /obj/item/clothing/under/color/darkgreen
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	ears = null
@@ -58,9 +58,9 @@
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/cora
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911,/obj/item/ammo_box/magazine/m45 = 2)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2)
 	faction_s = "Freedom"
 
 /datum/job/freedom_lieutenant
@@ -89,6 +89,7 @@
 	uniform = /obj/item/clothing/under/color/darkgreen
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	mask = pick(
+		/obj/item/clothing/mask/cigarette/rollie/trippy,
 		/obj/item/clothing/mask/cigarette/rollie/cannabis,
 		/obj/item/clothing/mask/gas,
 		/obj/item/clothing/mask/bandana/green)

@@ -285,8 +285,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 			SSjob.latejoin_bandit += loc
 		if ("JoinLateBandit Barman")
 			SSjob.latejoin_bandit_barman += loc
-		if ("JoinLateMilitary Soldier" || "JoinLateMilitary Spetsnaz" || "JoinLateMilitary Commander")
+		if ("JoinLateMilitary Soldier")
 			SSjob.latejoin_army += loc
+		if ("JoinLateMilitary Spetsnaz")
+			SSjob.latejoin_army_spetsnaz+= loc
+		if ("JoinLateMilitary Commander")
+			SSjob.latejoin_militarycommander+= loc
 		if ("JoinLateBarman")
 			SSjob.latejoin_barman += loc
 		if ("JoinLateBarman2")
@@ -296,9 +300,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 		if ("JoinLateDuty")
 			SSjob.latejoin_duty += loc
 		if ("JoinLateDuty Lieutenant")
-			SSjob.latejoin_duty_lt += loc
-		if ("JoinLateFreedom Soldier" || "JoinLateFreedom Lieutenant")
+			SSjob.latejoin_duty_lieutenant += loc
+		if ("JoinLateFreedom Soldier")
 			SSjob.latejoin_freedom += loc
+		if ("JoinLateFreedom Lieutenant")
+			SSjob.latejoin_freedom_lieutenant += loc
 		if ("JoinLateMercenary")
 			SSjob.latejoin_mercenary += loc
 		if ("JoinLateMercenary Commander")

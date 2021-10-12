@@ -95,7 +95,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/civilian)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/clothing/accessory/patch/loner)
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
@@ -146,7 +146,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/professional)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
 	l_pocket = pick(
 		/obj/item/storage/fancy/cigarettes/cigpack_robust,
 		/obj/item/storage/fancy/cigarettes/cigpack_midori,
@@ -167,7 +167,7 @@ Assistant
 	belt = /obj/item/kitchen/knife/tourist
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/reagent_containers/pill/stalker/aptechka/civilian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1)
+	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1)
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva
@@ -211,7 +211,7 @@ Assistant
 		/obj/item/clothing/gloves/color/black,
 		/obj/item/clothing/gloves/fingerless)
 	shoes = SHOESPICK_TOURIST
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	back = pick(
 		/obj/item/storage/backpack/stalker/tourist,
 		/obj/item/storage/backpack/satchel/stalker/civilian,
@@ -243,7 +243,7 @@ Assistant
 	belt = /obj/item/kitchen/knife/tourist
 	gloves = /obj/item/clothing/gloves/color/brown
 	shoes = /obj/item/clothing/shoes/sandal
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/gun/ballistic/revolver/nagant
 	faction_s = "Tourists"

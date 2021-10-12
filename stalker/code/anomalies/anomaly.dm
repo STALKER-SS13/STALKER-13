@@ -300,12 +300,12 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	active_icon_state = "tramplin1"
 	damage_type = DMG_TYPE_GIB
 	active_invisibility = 0
-	inactive_invisibility = 101
-	loot = list(/obj/nothing = 80,
-				/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 5,
-				/obj/item/artifact/nightstar = 2,
-				/obj/item/artifact/soul = 1
+	inactive_invisibility = 0
+	loot = list(/obj/nothing = 76,
+				/obj/item/artifact/meduza = 10,
+				/obj/item/artifact/stoneflower = 8,
+				/obj/item/artifact/nightstar = 4,
+				/obj/item/artifact/soul = 2
 				)
 
 /obj/anomaly/karusel/Initialize()
@@ -335,11 +335,12 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	active_icon_state = "tramplin1"
 	damage_type = DMG_TYPE_GIB
 	active_invisibility = 0
-	inactive_invisibility = 101
+	inactive_invisibility = 0
 	loot = list(/obj/nothing = 80,
 				/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 6,
-				/obj/item/artifact/nightstar = 2
+				/obj/item/artifact/stoneflower = 5.5,
+				/obj/item/artifact/nightstar = 2,
+				/obj/item/artifact/soul = 0.5
 				)
 
 /obj/anomaly/jarka

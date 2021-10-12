@@ -23,14 +23,14 @@
 	icon_state = "table"
 	smooth = SMOOTH_FALSE
 
-/obj/structure/table/stalker/Crossed(atom/movable/AM)
+/obj/structure/table/stalker/wood/bar100rentgen/Crossed(atom/movable/AM)
 	if(isliving(AM))
 		// No climbing on the bar please
 		var/mob/living/M = AM
 		//var/throwtarget = get_edge_target_turf(src, 4)
-		M.Paralyze(400)
+		M.Paralyze(100)
 		//M.throw_at(throwtarget, 1, 1,src)
-		to_chat(M, "<span class='notice'>You're scared!</span>")
+		to_chat(M, "<span class='notice'>It's hard to climb on this table!</span>")
 	else
 		. = ..()
 

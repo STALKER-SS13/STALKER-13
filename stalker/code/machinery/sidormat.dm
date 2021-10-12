@@ -173,8 +173,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Happines Pills",				"Happines Pills",					/obj/item/storage/pill_bottle/happiness,							5000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Epinephrine Pills",			"Epinephrine Pills",				/obj/item/storage/pill_bottle/epinephrine,							5000,	ROOKIE),
 		new /datum/data/stalker_equipment("Cyanide Bottle",				"Cyanide Bottle",					/obj/item/reagent_containers/glass/bottle/cyanide,					20000,	ROOKIE),
-		new /datum/data/stalker_equipment("Toxin Bottle",				"Toxin Bottle",						/obj/item/reagent_containers/glass/bottle/toxin,					15000,	ROOKIE),
-		new /datum/data/stalker_equipment("Mutagen Bottle",				"Mutagen Bottle",					/obj/item/reagent_containers/glass/bottle/mutagen,					200000,	ROOKIE)
+		new /datum/data/stalker_equipment("Toxin Bottle",				"Toxin Bottle",						/obj/item/reagent_containers/glass/bottle/toxin,					15000,	ROOKIE)
 		),
 
 	"Food" = list(
@@ -216,7 +215,8 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("1000RUB",							"1000Rub",												/obj/item/stack/spacecash/c1000,					1000,	ROOKIE, sale_price =1000),
 		new /datum/data/stalker_equipment("5000RUB",							"5000Rub",												/obj/item/stack/spacecash/c5000,					5000,	ROOKIE, sale_price =5000),
 		new /datum/data/stalker_equipment("Bolts",								"Bolts",												/obj/item/stalker/bolts,							300,	ROOKIE),
-		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs,						500,	ROOKIE, faction = "Army")
+		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs,						500,	ROOKIE),
+		new /datum/data/stalker_equipment("Binoculars",							"Binoculars",											/obj/item/twohanded/binoculars,						2500,	EXPERIENCED)
 		),
 
 	"Clothing" = list(

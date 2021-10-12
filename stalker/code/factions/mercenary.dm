@@ -34,7 +34,7 @@
 		/obj/item/kitchen/knife/bayonet,
 		/obj/item/melee/classic_baton)
 	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/marta,
-		/obj/item/reagent_containers/pill/stalker/aptechka/army = 1,
+		/obj/item/storage/firstaid/stalker/military = 1,
 		/obj/item/ammo_box/magazine/stalker/m9x19marta = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
@@ -67,7 +67,7 @@
 	back = /obj/item/storage/backpack/stalker/civilian
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,
-							/obj/item/reagent_containers/pill/stalker/aptechka/army = 1,
+							/obj/item/storage/firstaid/stalker/military = 1,
 							/obj/item/gun/ballistic/automatic/pistol/sip = 1,
 							/obj/item/flashlight/seclite = 1)
 	l_pocket = /obj/item/reagent_containers/food/snacks/stalker/kolbasa
@@ -109,7 +109,7 @@
 		/obj/item/gun/ballistic/automatic/pistol/desert,
 		/obj/item/gun/ballistic/revolver/anaconda)
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/stalker/aptechka/army = 1,
+		/obj/item/storage/firstaid/stalker/military = 1,
 		/obj/item/ammo_box/stalker/bmag44  = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,

@@ -35,7 +35,7 @@ Assistant
 	belt = /obj/item/kitchen/knife/bayonet
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,
@@ -78,7 +78,7 @@ Assistant
 	back = /obj/item/storage/backpack/stalker/tourist
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,

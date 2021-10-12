@@ -93,7 +93,7 @@
 
 /obj/item/clothing/head/soft/jacknoircap
 	name = "Сap"
-	desc = "Who knows how the British made it to Chernobyl?"
+	eng_desc = "Who knows how the British made it to Chernobyl?"
 	icon_state = "jacknoirsoft"
 	item_color = "jacknoir"
 	item_state = "greysoft"
@@ -235,7 +235,7 @@
 
 /obj/item/clothing/mask/gas/stalker/respirator
 	name = "respirator"
-	desc = "An old respirator. Doesn't protect from much."
+	eng_desc = "An old respirator. Doesn't protect from much."
 	icon_state = "respirator"
 	item_state = "respirator"
 	gas_transfer_coefficient = 0.01

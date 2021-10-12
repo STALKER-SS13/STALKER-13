@@ -296,8 +296,8 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	sound = 'stalker/sound/anomalies/gravi_blowout1.ogg'
 	idle_luminosity = 0
 	activated_luminosity = 0
-	inactive_icon_state = "tramplin0"
-	active_icon_state = "tramplin1"
+	inactive_icon_state = "karusel0"
+	active_icon_state = "karusel1"
 	damage_type = DMG_TYPE_GIB
 	active_invisibility = 0
 	inactive_invisibility = 0

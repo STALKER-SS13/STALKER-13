@@ -717,3 +717,27 @@
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 	load_sound = 'stalker/sound/weapons/gauss_reload.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
+
+/obj/item/gun/ballistic/automatic/mac10  // MAC10
+	name = "MAC10 Ingram"
+	desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
+	eng_desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
+	icon_state = "mac10"
+	item_state = "mac10"
+	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
+	can_suppress = 1
+	burst_size = 4
+	burst_delay = 0.8
+	fire_delay = 0.8
+	slot_flags = ITEM_SLOT_BELT
+	durability = 80
+	w_class = 3
+	spread = 35
+	recoil = 0.8
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'

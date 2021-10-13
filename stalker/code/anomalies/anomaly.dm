@@ -58,30 +58,34 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 		var/turf/T = get_turf(src)
 		var/obj/item/artifact/O = new lootspawn(T)
 		O.invisibility = 100
-		if (z == 1)
-			if(O.level_s > 4)
-				SpawnArtifact()
-				return
-		if (z == 2)
-			switch(y)
-				if(766 to 1000)
-					if(O.level_s > 4)
-						SpawnArtifact()
-						return
 
-				if(511 to 765)
-					if(O.level_s > 3)
-						SpawnArtifact()
-						return
+		switch(z)
 
-				if(256 to 510)
-					if(O.level_s > 2)
-						SpawnArtifact()
-						return
-				if(0 to 255)
-					if(O.level_s > 2)
-						SpawnArtifact()
-						return
+			if(6)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(5)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(4)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(3)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(2)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
 		RandomMove(O)
 		GLOB.spawned_artifacts += O
 
@@ -239,7 +243,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 				L.apply_damage(40, BURN, null, 0)
 			else
 				L.apply_damage(20, BURN, null, 0)
-				//L.fire_act()
+				L.fire_act()
 	return
 
 /obj/anomaly/tramplin/DealDamage(var/mob/living/L)

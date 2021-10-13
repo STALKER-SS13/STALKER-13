@@ -211,6 +211,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Zippo lighter",						"Zippo lighter",										/obj/item/lighter,													5000,	ROOKIE),
 		new /datum/data/stalker_equipment("Cigarettes \"Maxim\"",				"Cigarettes \"Maxim\"",									/obj/item/storage/fancy/cigarettes/cigpack/maxim,					2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Cigars",								"Cigars",												/obj/item/storage/fancy/cigarettes/cigars,							10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Weed Rollie",						"Weed Rollie",											/obj/item/clothing/mask/cigarette/rollie/trippy,					1000,	ROOKIE,	faction = "Freedom"),
 		new /datum/data/stalker_equipment("100RUB",								"100Rub",												/obj/item/stack/spacecash/c100,										100,	ROOKIE, sale_price =100),
 		new /datum/data/stalker_equipment("500RUB",								"500Rub",												/obj/item/stack/spacecash/c500,										500,	ROOKIE, sale_price =500),
 		new /datum/data/stalker_equipment("1000RUB",							"1000Rub",												/obj/item/stack/spacecash/c1000,									1000,	ROOKIE, sale_price =1000),

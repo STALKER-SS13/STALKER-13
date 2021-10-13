@@ -254,12 +254,12 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
-	hoodtype = /obj/item/clothing/head/winterhood/stalker/tancoat
+	hoodtype = /obj/item/clothing/head/hooded/stalker/tancoat
 	durability = 75
 	//МОДИФИКАЦИИ//
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
-/obj/item/clothing/head/winterhood/stalker/tancoat
+/obj/item/clothing/head/hooded/stalker/tancoat
 	icon_state = "winterhood_tancoat"
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
@@ -335,11 +335,11 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
-	hoodtype = /obj/item/clothing/head/winterhood/stalker/cs_hood
+	hoodtype = /obj/item/clothing/head/hooded/stalker/cs_hood
 	durability = 75
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
-/obj/item/clothing/head/winterhood/stalker/cs_hood
+/obj/item/clothing/head/hooded/stalker/cs_hood
 	icon_state = "winterhood_cs"
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
@@ -1092,12 +1092,12 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
-	hoodtype = /obj/item/clothing/head/winterhood/stalker/ghillie
+	hoodtype = /obj/item/clothing/head/hooded/stalker/ghillie
 	durability = 75
 	//МОДИФИКАЦИИ//
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
-/obj/item/clothing/head/winterhood/stalker/ghillie
+/obj/item/clothing/head/hooded/stalker/ghillie
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	icon_state = "ghillie"

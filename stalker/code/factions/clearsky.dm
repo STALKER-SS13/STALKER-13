@@ -14,7 +14,7 @@ Assistant
 	selection_color = "#64B2F7"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/clearsky
 

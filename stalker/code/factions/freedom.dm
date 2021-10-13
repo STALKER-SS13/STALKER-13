@@ -23,7 +23,7 @@
 		/obj/item/grown/sunflower,
 		/obj/item/clothing/head/ushanka,
 		/obj/item/clothing/head/bearpelt)
-	uniform = /obj/item/clothing/under/color/darkgreen
+	uniform = /obj/item/clothing/under/color/switer
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/rollie/trippy,
@@ -51,7 +51,7 @@
 
 /datum/outfit/freedomrookie  // For select_equipment
 	name = "Freedom Soldier"
-	uniform = /obj/item/clothing/under/color/darkgreen
+	uniform = /obj/item/clothing/under/color/switer
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	ears = null
 	belt = /obj/item/kitchen/knife/tourist
@@ -86,7 +86,7 @@
 /datum/outfit/job/freedom_lieutenant/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/steel
-	uniform = /obj/item/clothing/under/color/darkgreen
+	uniform = /obj/item/clothing/under/color/switer
 	suit = /obj/item/clothing/suit/hooded/kombez/veter
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/rollie/trippy,

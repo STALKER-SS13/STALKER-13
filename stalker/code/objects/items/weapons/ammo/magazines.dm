@@ -189,7 +189,7 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_box/magazine/stalker/mac10
-	name = "SMG magazine (9x19mm)"
+	name = "MAC10 SMG magazine (9x19mm)"
 	icon_state = "mac10"
 	ammo_type = /obj/item/ammo_casing/c9x19
 	caliber = "9x19mm"

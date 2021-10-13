@@ -37,7 +37,7 @@
 	back = /obj/item/storage/backpack/stalker/civilian
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/cora
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,
@@ -102,7 +102,7 @@
 		/obj/item/gun/ballistic/automatic/pistol/desert,
 		/obj/item/gun/ballistic/revolver/anaconda)
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,

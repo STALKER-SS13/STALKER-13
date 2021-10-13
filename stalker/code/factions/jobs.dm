@@ -85,7 +85,7 @@ datum/job/stalker
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
-	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/outfit/stalker/palputin // For select_equipment
 	name = "Nedomonolith"
@@ -102,7 +102,7 @@ datum/job/stalker
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
-	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/job/stalker/jacknoir
 	title = "Machinist"

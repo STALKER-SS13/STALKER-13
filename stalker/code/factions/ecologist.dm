@@ -33,7 +33,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/reagent_containers/pill/stalker/aptechka/scientific = 1,
+							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
@@ -54,7 +54,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/reagent_containers/pill/stalker/aptechka/scientific = 1,
+							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
@@ -92,7 +92,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/reagent_containers/pill/stalker/aptechka/scientific = 1,
+							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
@@ -113,7 +113,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/reagent_containers/pill/stalker/aptechka/scientific = 1,
+							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)

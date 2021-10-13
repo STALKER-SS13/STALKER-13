@@ -1,6 +1,6 @@
 /obj/item/kitchen/knife/tourist
 	name = "tourist knife"
-	eng_desc = "Cheap knife but good enough for a tourist."
+	desc = "Cheap knife but good enough for a tourist."
 	icon = 'stalker/icons/weapons.dmi'
 	icon_state = "knife"
 	slot_flags = ITEM_SLOT_BELT
@@ -14,7 +14,7 @@
 
 /obj/item/kitchen/knife/bayonet
 	name = "bayonet"
-	eng_desc = "Dangerous, but bad at butchering mutants bayonet."
+	desc = "Dangerous, but bad at butchering mutants bayonet."
 	icon = 'stalker/icons/weapons.dmi'
 	icon_state = "bayonet"
 	slot_flags = ITEM_SLOT_BELT
@@ -28,7 +28,7 @@
 
 /obj/item/kitchen/knife/throwing
 	name = "throwing knife"
-	eng_desc = "A small knife which is best thrown rather than applied manually."
+	desc = "A small knife which is best thrown rather than applied manually."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "throwingknife"
 	slot_flags = ITEM_SLOT_BELT
@@ -56,7 +56,7 @@
 
 /obj/item/melee/pipe
 	name = "metal pipe"
-	eng_desc = "A rusty metal pipe which can be used to beat mutants and stalkers."
+	desc = "A rusty metal pipe which can be used to beat mutants and stalkers."
 	icon_state = "pipe"
 	item_state = "nullrod"
 	slot_flags = ITEM_SLOT_BELT

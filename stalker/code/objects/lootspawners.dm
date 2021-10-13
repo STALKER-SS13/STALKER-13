@@ -6,7 +6,7 @@
 
 	loot = list(
 				/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 20,
-				/obj/item/reagent_containers/pill/stalker/aptechka/civilian = 20,
+				/obj/item/storage/firstaid/stalker/civillian = 20,
 				/obj/item/gun/ballistic/automatic/pistol/pm = 5,
 				/obj/item/gun/ballistic/automatic/pistol/fort12 = 5,
 				/obj/item/gun/ballistic/automatic/pistol/pb1s = 5,
@@ -62,7 +62,7 @@
 	var/radius = 10 //Радиус разброса лута
 	var/cooldown = 10000 //Кол-во минут * 1000 кд шитспавна
 	var/list/spawned_loot = new()
-	loot = list(/obj/item/reagent_containers/pill/stalker/aptechka/bint = 75,
+	loot = list(/obj/item/stack/medical/gauze/bint = 75,
 				/obj/item/trash/can = 25)
 
 /obj/effect/spawner/lootdrop/stalker/weapon
@@ -152,9 +152,9 @@
 /obj/effect/spawner/lootdrop/stalker/medicine
 	name = "stalker medicine"
 	lootcount = 1
-	loot = list(/obj/item/reagent_containers/pill/stalker/aptechka/civilian = 30,
-				/obj/item/reagent_containers/pill/stalker/aptechka/army = 15,
-				/obj/item/reagent_containers/pill/stalker/aptechka/scientific = 5,
+	loot = list(/obj/item/storage/firstaid/stalker/civillian = 30,
+				/obj/item/storage/firstaid/stalker/military = 15,
+				/obj/item/storage/firstaid/stalker/scientific = 5,
 				/obj/nothing = 60)
 
 /obj/effect/spawner/lootdrop/stalker/food

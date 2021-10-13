@@ -727,9 +727,6 @@
 	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
 	can_suppress = 1
-	burst_size = 4
-	burst_delay = 0.8
-	fire_delay = 0.8
 	slot_flags = ITEM_SLOT_BELT
 	durability = 80
 	w_class = 3
@@ -737,7 +734,11 @@
 	recoil = 0.8
 	damagelose = 0.25
 	can_scope = 0
-	automatic = 1
+	fire_delay = 1
+
+	force = 15
+
+	burst_size = 3
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'

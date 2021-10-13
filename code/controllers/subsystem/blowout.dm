@@ -188,7 +188,7 @@ SUBSYSTEM_DEF(blowout)
 	for(var/obj/structure/stalker/cacheable/C in world)
 
 		C.internal_cache = null
-		C.cache_chance = rand(7, 12)
+		C.cache_chance = rand(3, 7)
 		C.RefreshContents()
 		CHECK_TICK
 

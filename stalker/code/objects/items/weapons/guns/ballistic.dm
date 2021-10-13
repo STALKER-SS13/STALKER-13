@@ -281,9 +281,9 @@
 	w_class = 4
 	spread = 6
 	recoil = 0.5
-	randomspread = 0
 	damagelose = 0.25
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 
@@ -306,6 +306,7 @@
 	recoil = 0.7
 	damagelose = 0.5
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
@@ -333,6 +334,7 @@
 	recoil = 0.2
 	damagelose = 0.4
 	can_scope = 1
+	automatic = 1
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
@@ -354,6 +356,7 @@
 	recoil = 0.15
 	damagelose = 0.25
 	can_scope = 0
+	automatic = 1
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
@@ -375,6 +378,7 @@
 	recoil = 0.25
 	damagelose = 0.5
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
@@ -397,6 +401,7 @@
 	recoil = 0.3
 	damagelose = 0.45
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
@@ -421,13 +426,14 @@
 	recoil = 0.4
 	damagelose = 0.2
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
 
 /obj/item/gun/ballistic/automatic/abakan  // Абакан
-	name = "An-94"
+	name = "AN-94"
 	eng_desc = "A modern assault rifle developed as a replacement for the ageing AK-74. The main difference is its high speed 2-round burst firing mode, which allows two bullets to be fired at exactly the same spot on a target up to 100 meters away. This significantly increases the likelihood of hitting the target in comparison to the 1 round firing mode, which considerably improves kill potential, stopping power and armor piercing capability."
 	icon_state = "abakan"
 	item_state = "abakan"
@@ -445,6 +451,7 @@
 	recoil = 0.4
 	damagelose = 0.2
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/abakan_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/abakan_load.ogg'
@@ -472,6 +479,7 @@
 	recoil = 0.4
 	damagelose = 0.1
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/l85_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
@@ -494,6 +502,7 @@
 	recoil = 0.3
 	damagelose = 0.2
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/fnf2000_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/fnf2000_load.ogg'
@@ -521,6 +530,7 @@
 	recoil = 0.35
 	damagelose = 0.1
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/l85_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
@@ -545,6 +555,7 @@
 	recoil = 0.35
 	damagelose = 0.15
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/fnf2000_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/fnf2000_load.ogg'
@@ -572,6 +583,7 @@
 	recoil = 0.35
 	damagelose = 0.15
 	can_scope = 0
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/fnf2000_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/fnf2000_load.ogg'
@@ -590,6 +602,7 @@
 	fire_sound = 'stalker/sound/weapons/pkm_shot.ogg'
 	can_suppress = 0
 	can_scope = 0
+	automatic = 1
 	burst_size = 5
 	fire_delay = 1.8
 	spread = 6
@@ -628,6 +641,7 @@
 	recoil = 0.3
 	damagelose = 0.1
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -681,6 +695,7 @@
 	recoil = 0.4
 	damagelose = 0.35
 	can_scope = 1
+	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/groza_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
@@ -727,6 +742,8 @@
 	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
 	can_suppress = 1
+	burst_size = 4
+	fire_delay = 0.8
 	slot_flags = ITEM_SLOT_BELT
 	durability = 80
 	w_class = 3

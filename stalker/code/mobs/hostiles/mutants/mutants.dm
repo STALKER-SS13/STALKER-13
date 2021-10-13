@@ -99,6 +99,13 @@
 	vision_range = 7
 	aggro_vision_range = 7
 
+/mob/living/simple_animal/hostile/mutant/dog/New()
+	..()
+	if(prob(50))
+		icon_state = "stalker_dog2"
+		icon_living = "stalker_dog2"
+		icon_dead = "stalker_dog2_dead"
+
 /mob/living/simple_animal/hostile/mutant/dog/AttackingTarget()
 	..()
 	if(istype(target, /mob/living/carbon))

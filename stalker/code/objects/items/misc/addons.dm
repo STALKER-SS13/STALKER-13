@@ -76,7 +76,7 @@
 	name = "rifle scope"
 	desc = "WWII rifle scope"
 	icon_state = "rifle"
-	types = list(/obj/item/gun/ballistic/shotgun/boltaction/enfield,
+	types = list(/obj/item/gun/ballistic/rifle/boltaction/enfield,
 				/obj/item/gun/ballistic/shotgun/bm16,
 				/obj/item/gun/ballistic/shotgun/bm16/toz34)
 	zoom_add = 6

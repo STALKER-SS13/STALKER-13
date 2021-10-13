@@ -510,7 +510,7 @@
 "jV" = (/obj/structure/stalker/blocks/vanish/pipe{dir = 8},/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/krug)
 "jW" = (/obj/structure/stalker/cacheable/yashik,/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/krug)
 "jX" = (/obj/structure/table/stalker,/obj/item/gun/ballistic/shotgun/ithaca,/turf/open/stalker/floor/plasteel/plitka,/area/stalker/buildings/backwater/krug)
-"jY" = (/obj/structure/table/stalker,/obj/item/gun/ballistic/shotgun/boltaction/enfield,/turf/open/stalker/floor/plasteel/plitka,/area/stalker/buildings/backwater/krug)
+"jY" = (/obj/structure/table/stalker,/obj/item/gun/ballistic/rifle/boltaction/enfield,/turf/open/stalker/floor/plasteel/plitka,/area/stalker/buildings/backwater/krug)
 "jZ" = (/obj/structure/table/stalker,/obj/item/clothing/suit/berill,/turf/open/stalker/floor/plasteel/plitka,/area/stalker/buildings/backwater/krug)
 "ka" = (/obj/effect/landmark/mobspawner/controller_spawner,/turf/open/stalker/floor/water,/area/stalker/buildings/backwater/krug)
 "kb" = (/obj/structure/barricade/stalker/wood{dir = 4},/turf/open/stalker/floor/water,/area/stalker/buildings/backwater/krug)

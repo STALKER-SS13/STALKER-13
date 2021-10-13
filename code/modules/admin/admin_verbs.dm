@@ -935,6 +935,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 /client/proc/StopBlowout()
 	set name = "Stop Blowout"
 	set category = "Stalker"
+	set background = 1
 
 	if(!SSblowout.isblowout)
 		to_chat(src, "<span class='warning'>There is no blowout going on.</span>")

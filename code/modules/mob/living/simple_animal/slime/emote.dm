@@ -24,7 +24,7 @@
 
 /datum/emote/slime/mood
 	key = "moodnone"
-	var/mood = null
+	var/mood = MOOD_LEVEL_HAPPY1
 
 /datum/emote/slime/mood/run_emote(mob/user, params)
 	. = ..()

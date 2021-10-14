@@ -190,9 +190,9 @@
 	if(durability)
 		percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/gun/equipped(mob/living/user, slot)
 	. = ..()

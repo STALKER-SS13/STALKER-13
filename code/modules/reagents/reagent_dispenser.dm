@@ -182,3 +182,11 @@
 	icon_state = "vat"
 	anchored = TRUE
 	reagent_id = "cooking_oil"
+
+/obj/structure/reagent_dispensers/compostbin
+	name = "compost bin"
+	desc = "An odiforous bin with a big hole at the top where refuse is thrown to decompose into fertilizer. There are flies which buzz around the top."
+	icon_state = "compostbin"
+	reagent_id = "compost"
+	anchored = TRUE
+	tank_volume = 10000

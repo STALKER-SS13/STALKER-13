@@ -6,6 +6,8 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Major"
+	enforces = "We thank you, oh Monolith, for revealing the cunning plans of your enemies to us. May your light shine down on the souls of the brave soldiers who gave their lives in service to your will. Onward warriors of the Monolith, avenge your fallen brothers, blessed as they are in their eternal union with the Monolith."
+	forbids = "Allowing the continued existance of all who oppose the holy monolith. (Every other faction but your own)"
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()

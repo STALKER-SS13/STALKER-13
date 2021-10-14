@@ -55,7 +55,7 @@
 
 /obj/machinery/party/turntable
 	name = "Jukebox"
-	desc = "A jukebox is a partially automated music-playing device, usually a coin-operated machine, that will play a patron's selection from self-contained media."
+	desc = "A jukebox is a partially automated music-playing device that will play a patron's selection from self-contained media. This one is modeled after a radio and takes payment."
 	icon = 'stalker/icons/lasers2.dmi'
 	icon_state = "radio1"
 	//var/timer_id = 0
@@ -199,13 +199,13 @@
 /obj/machinery/party/turntable/ui_interact(var/mob/living/carbon/human/H)
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		return
 
 	var/obj/item/stalker_pda/KPK = H.wear_id
 
 	if(!KPK.profile || !KPK.owner)
-		say("Activate your KPK profile.")
+		say("Activate your PDA profile.")
 		return
 
 	if(KPK.owner != H)
@@ -258,7 +258,7 @@
 	var/mob/living/carbon/human/H = usr
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
-		say("Put on your KPK.")
+		say("Put on your PDA.")
 		updateUsrDialog()
 		return
 

@@ -238,7 +238,7 @@
 	if(throwing || !(mobility_flags & MOBILITY_PULL))
 		return FALSE
 	if(get_area(src).safezone)
-		to_chat (src, "<span class='warning'>Вы не можете трогать людей в этой зоне!</span>")
+		to_chat (src, "<span class='warning'>You can't touch people in this area!</span>")
 		return FALSE
 
 	AM.add_fingerprint(src)
@@ -568,7 +568,7 @@
 		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
 			to_chat(src, "<span class='warning'>You can't be here!</span>")
 		else
-			to_chat(src, "<span class='warning'>Вам сюда нельзя!</span>")
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
 		return 0
 
 	if (buckled && buckled.loc != newloc) //not updating position
@@ -773,7 +773,7 @@
 		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
 			to_chat (src, "<span class='warning'>You can't unequip people in the safezone!</span>")
 		else
-			to_chat (src, "<span class='warning'>Вы не можете раздевать людей в этой зоне!</span>")
+			to_chat (src, "<span class='warning'>You can't unequip people in the safezone!</span>")
 		return
 
 	if(!what.canStrip(who))

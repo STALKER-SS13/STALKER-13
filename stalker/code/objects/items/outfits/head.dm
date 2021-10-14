@@ -10,7 +10,7 @@
 */
 /obj/item/clothing/head/steel
 	name = "SSh-68"
-	eng_desc = "SSh-68 Steel helmet made of old rusty steel.  Protects your head but won't hold lots of bullets. Ocassionally the brave venture into Psy-Anomalies with these."
+	eng_desc = "SSh-68 Steel helmet made of old rusty steel.  Protects your head but won't hold against a lot of bullets. Ocassionally, the brave venture into Psy-Anomalies with these."
 	icon_state = "steelhelmet"
 	item_state = "steelhelmet"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
@@ -74,7 +74,7 @@
 
 /obj/item/clothing/head/assaultmerc
 	name = "Mercenary helmet"
-	eng_desc = "Schutzhelm 04 made in Switzerland used by Mercenaries."
+	eng_desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City."
 	icon_state = "assaultmerc"
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
@@ -85,7 +85,7 @@
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
 /obj/item/clothing/head/gopcap
-	name = "Сap"
+	name = "cap"
 	eng_desc = "Put a fucking bullet in his forehead!"
 	icon_state = "gopcap"
 	item_state = "gopcap"
@@ -93,7 +93,7 @@
 
 /obj/item/clothing/head/soft/jacknoircap
 	name = "Сap"
-	desc = "Who knows how the British made it to Chernobyl?"
+	eng_desc = "Who knows how the British made it to Chernobyl?"
 	icon_state = "jacknoirsoft"
 	item_color = "jacknoir"
 	item_state = "greysoft"
@@ -133,7 +133,7 @@
 
 /obj/item/clothing/head/petrovichhelmet
 	name = "SKOT-M777"
-	eng_desc = "aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. "
+	eng_desc = "An aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. "
 	icon_state = "helmet_skot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 50)
@@ -158,6 +158,20 @@
 		else if(nvg.colour_matrix == NIGHTVISION_MATRIX_II)
 			modifications += "visor"
 */
+
+/obj/item/clothing/head/maska_1
+	name = "MASKA-1 SCH Helmet"
+	desc = "The Maska 1 helmet was in use by the Russian MVD until being largely replaced by the aluminum ZSh-1-2. Now it is more commonly seen being worn by Clear Sky stalkers."
+	eng_desc = "The Maska 1 helmet was in use by the Russian MVD until being largely replaced by the aluminum ZSh-1-2. Now it is more commonly seen being worn by Clear Sky stalkers."
+	icon_state = "maska_1"
+	item_state = "maska_1"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = UNACIDABLE
+	durability = 300
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 1)
+
 /obj/item/clothing/mask/gas/stalker
 	name = "gas mask"
 	eng_desc = "A regular plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. Widely used by rookies and veterans of all factions due to its universal functionality. Does not provide any physical protection."
@@ -173,6 +187,38 @@
 	//МОДИФИКАЦИИ//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
+/obj/item/clothing/mask/gas/stalker/gp4
+	name = "gp-4 gas mask"
+	desc = "The Soviet GP-4 is another mask in the Soviet GP series. It was made to be issued to civilians due to the rising panic about the Cold War. This model is extremely common in the Zone and is favored by many stalkers due to its relative reliability and light weight."
+	eng_desc = "The Soviet GP-4 is another mask in the Soviet GP series. It was made to be issued to civilians due to the rising panic about the Cold War. This model is extremely common in the Zone and is favored by many stalkers due to its relative reliability and light weight."
+	icon_state = "gp4"
+	item_state = "gp4"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/mask/gas/stalker/gp5
+	name = "gp-5 gas mask"
+	desc = "A gas mask."
+	eng_desc = "A gas mask."
+	icon_state = "gp5"
+	item_state = "gp5"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
 /obj/item/clothing/mask/gas/stalker/mercenary
 	name = "gas mask"
 	eng_desc = "A regular plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. Widely used by mercenaries. Does not provide any physical protection."
@@ -181,7 +227,20 @@
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
-	flags_inv = HIDEHAIR
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
+	resistance_flags = UNACIDABLE|FIRE_PROOF
+	durability = 400
+	//МОДИФИКАЦИИ//
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/mask/gas/stalker/respirator
+	name = "respirator"
+	eng_desc = "An old respirator. Doesn't protect from much."
+	icon_state = "respirator"
+	item_state = "respirator"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
 	resistance_flags = UNACIDABLE|FIRE_PROOF
 	durability = 400

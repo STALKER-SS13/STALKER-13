@@ -44,7 +44,7 @@
 	obj_integrity = 30
 	max_integrity = 30
 	lootcount = 2
-	loot = list(/obj/item/reagent_containers/pill/stalker/aptechka/civilian = 30,
+	loot = list(/obj/item/storage/firstaid/stalker/civillian = 30,
 					/obj/item/artifact/meduza = 1,
 					/obj/item/reagent_containers/food/snacks/stalker/konserva = 55,
 					/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti = 40,
@@ -52,7 +52,7 @@
 					/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 60,
 					/obj/item/reagent_containers/food/snacks/stalker/baton = 75,
 					/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki = 35,
-					/obj/item/reagent_containers/pill/stalker/aptechka/bint = 80,
+					/obj/item/stack/medical/gauze/bint = 80,
 					/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 10,
 					/obj/item/clothing/suit/hooded/kozhanka/banditka = 1,
 					/obj/item/ammo_box/stalker/b9x18 = 55,
@@ -111,7 +111,7 @@
 /obj/structure/stalker/blocks/vanish
 	opacity = 0
 	pass_flags = LETPASSTHROW
-	var/proj_pass_rate = 50
+	var/proj_pass_rate = 40
 
 /obj/structure/stalker/blocks/vanish/block1
 	icon_state = "block2"

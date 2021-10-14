@@ -94,9 +94,7 @@
 /obj/item/ammo_casing/c762x51
     desc = "A 7.62x51 bullet casing."
     caliber = "7.62x51mm"
-    projectile_type = /obj/item/projectile/bullet/bullet762x51
-
-    projectile_type = /obj/item/projectile/bullet/bullet762x51
+    projectile_type = /obj/item/projectile/bullet/bullet762x51 //Someone had this here twice?
 
 /obj/item/ammo_casing/tungsten_slug
     desc = "A 2mm ferromagnetic tungsten slug casing."

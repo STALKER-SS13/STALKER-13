@@ -184,22 +184,22 @@
 
 /obj/screen/alert/hot
 	name = "Too Hot"
-	desc = "You're flaming hot! Get somewhere cooler and take off any insulating clothing like a fire suit."
+	desc = "You're flaming hot! Get somewhere cooler and take off any insulating clothing!"
 	icon_state = "hot"
 
 /obj/screen/alert/cold
 	name = "Too Cold"
-	desc = "You're freezing cold! Get somewhere warmer and take off any insulating clothing like a space suit."
+	desc = "You're freezing cold! Get somewhere warmer and take off any insulating clothing!"
 	icon_state = "cold"
 
 /obj/screen/alert/lowpressure
 	name = "Low Pressure"
-	desc = "The air around you is hazardously thin. A space suit would protect you."
+	desc = "The air around you is hazardously thin. You start to feel dizzy and lightheaded..."
 	icon_state = "lowpressure"
 
 /obj/screen/alert/highpressure
 	name = "High Pressure"
-	desc = "The air around you is hazardously thick. A fire suit would protect you."
+	desc = "The air around you is hazardously thick. You can feel the pressure of your environment tighten around you."
 	icon_state = "highpressure"
 
 /obj/screen/alert/blind
@@ -249,7 +249,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /obj/screen/alert/fire
 	name = "On Fire"
-	desc = "You're on fire. Stop, drop and roll to put the fire out or move to a vacuum area."
+	desc = "You're on fire. Stop, drop and roll to put the fire out!"
 	icon_state = "fire"
 
 /obj/screen/alert/fire/Click()

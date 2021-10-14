@@ -3,7 +3,7 @@
 
 /obj/item/clothing/mask/gas/sechailer
 	name = "security gas mask"
-	desc = "A standard issue Security gas mask with integrated 'Compli-o-nator 3000' device. Plays over a dozen pre-recorded compliance phrases designed to get scumbags to stand still whilst you tase them. Do not tamper with the device."
+	desc = "A standard issue Security gas mask with integrated speakerbox device. Plays over a dozen pre-recorded compliance phrases designed to get anarchists and bandits to stand still whilst you robust them. Do not tamper with the device."
 	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/adjust)
 	icon_state = "sechailer"
 	item_state = "sechailer"
@@ -21,8 +21,8 @@
 	var/safety = TRUE
 
 /obj/item/clothing/mask/gas/sechailer/swat
-	name = "\improper SWAT mask"
-	desc = "A close-fitting tactical mask with an especially aggressive Compli-o-nator 3000."
+	name = "\improper tactical security mask"
+	desc = "A close-fitting tactical mask with an especially aggressive speakerbox device."
 	actions_types = list(/datum/action/item_action/halt)
 	icon_state = "swat"
 	item_state = "swat"
@@ -32,7 +32,7 @@
 
 /obj/item/clothing/mask/gas/sechailer/swat/spacepol
 	name = "spacepol mask"
-	desc = "A close-fitting tactical mask created in cooperation with a certain megacorporation, comes with an especially aggressive Compli-o-nator 3000."
+	desc = "A close-fitting tactical mask, comes with an especially aggressive speakerbox."
 	icon_state = "spacepol"
 	item_state = "spacepol"
 
@@ -133,18 +133,18 @@
 				if(1)				// good cop
 					phrase_text = "HALT! HALT! HALT!"
 					phrase_sound = "halt"
-				if(2)
-					phrase_text = "Stop in the name of the Law."
-					phrase_sound = "bobby"
+//				if(2)
+//					phrase_text = "Stop in the name of the Law."
+//					phrase_sound = "bobby"
 				if(3)
 					phrase_text = "Compliance is in your best interest."
 					phrase_sound = "compliance"
 				if(4)
 					phrase_text = "Prepare for justice!"
 					phrase_sound = "justice"
-				if(5)
-					phrase_text = "Running will only increase your sentence."
-					phrase_sound = "running"
+//				if(5)
+//					phrase_text = "Running will only increase your sentence."
+//					phrase_sound = "running"
 				if(6)				// bad cop
 					phrase_text = "Don't move, Creep!"
 					phrase_sound = "dontmove"
@@ -154,9 +154,9 @@
 				if(8)
 					phrase_text = "Dead or alive you're coming with me."
 					phrase_sound = "robocop"
-				if(9)
-					phrase_text = "God made today for the crooks we could not catch yesterday."
-					phrase_sound = "god"
+//				if(9)
+//					phrase_text = "God made today for the crooks we could not catch yesterday."
+//					phrase_sound = "god"
 				if(10)
 					phrase_text = "Freeze, Scum Bag!"
 					phrase_sound = "freeze"
@@ -169,23 +169,23 @@
 				if(13)
 					phrase_text = "Go ahead, make my day."
 					phrase_sound = "harry"
-				if(14)
-					phrase_text = "Stop breaking the law, ass hole."
-					phrase_sound = "asshole"
+//				if(14)
+//					phrase_text = "Stop breaking the law, asshole."
+//					phrase_sound = "asshole"
 				if(15)
 					phrase_text = "You have the right to shut the fuck up."
 					phrase_sound = "stfu"
 				if(16)
 					phrase_text = "Shut up crime!"
 					phrase_sound = "shutup"
-				if(17)
-					phrase_text = "Face the wrath of the golden bolt."
-					phrase_sound = "super"
+//				if(17)
+//					phrase_text = "Face the wrath of the golden bolt."
+//					phrase_sound = "super"
 				if(18)
 					phrase_text = "I am, the LAW!"
 					phrase_sound = "dredd"
 
-		usr.audible_message("[usr]'s Compli-o-Nator: <font color='red' size='4'><b>[phrase_text]</b></font>")
+		usr.audible_message("[usr]'s sound modulator: <font color='red' size='4'><b>[phrase_text]</b></font>")
 		playsound(src.loc, "sound/voice/complionator/[phrase_sound].ogg", 100, 0, 4)
 		cooldown = world.time
 		cooldown_special = world.time

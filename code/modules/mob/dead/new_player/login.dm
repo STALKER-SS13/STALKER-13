@@ -29,7 +29,7 @@
 		var/tl = SSticker.GetTimeLeft()
 		var/postfix
 		if(tl > 0)
-			postfix = "across [DisplayTimeText(tl)]"
+			postfix = "in [DisplayTimeText(tl)]"
 		else
 			postfix = "soon"
-		to_chat(src, "Customize your character and wait for the Zone to launch. [postfix].")
+		to_chat(src, "Customize your character and wait for the server to launch [postfix].")

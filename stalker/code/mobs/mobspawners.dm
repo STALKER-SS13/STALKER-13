@@ -23,7 +23,7 @@
 	name = "dog"
 
 /obj/effect/landmark/mobspawner/kaban_spawner
-	name = "kaban"
+	name = "boar"
 
 /obj/effect/landmark/mobspawner/snork_spawner
 	name = "snork"

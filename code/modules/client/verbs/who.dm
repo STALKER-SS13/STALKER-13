@@ -4,7 +4,7 @@
 
 	var/msg = "<table border='0' width='380'>"
 
-	msg += "<tr><td>CKEY</td><td>Дата Регистрации</td><td>Задержка</td></tr>"
+	msg += "<tr><td>CKEY</td><td>Registration Date </td><td>Delay</td></tr>"
 
 	var/list/Lines = list()
 
@@ -16,26 +16,26 @@
 			for(var/client/C in GLOB.clients)
 				var/entry = "<tr><td>[C.key]"
 				if(C.holder && C.holder.fakekey)
-					entry += " <i>(как [C.holder.fakekey])</i>"
+					entry += " <i>(how [C.holder.fakekey])</i>"
 				if (isnewplayer(C.mob))
-					entry += " - <font color='darkgray'><b>Лобби/b></font>"
+					entry += " - <font color='darkgray'><b>Lobby/b></font>"
 				else
-					entry += " - Играет за [C.mob.real_name]"
+					entry += " - Plays for [C.mob.real_name]"
 					entry += "[ADMIN_QUE(C.mob)]"
 					switch(C.mob.stat)
 						if(UNCONSCIOUS)
-							entry += " - <font color='darkgray'><b>Без сознания</b></font>"
+							entry += " - <font color='darkgray'><b>Unconscious</b></font>"
 						if(DEAD)
 							if(isobserver(C.mob))
 								var/mob/dead/observer/O = C.mob
 								if(O.started_as_observer)
-									entry += " - <font color='gray'>Обсервер</font>"
+									entry += " - <font color='gray'>Observer</font>"
 								else
-									entry += " - <font color='black'><b>Мёртв</b></font>"
+									entry += " - <font color='black'><b>Dead</b></font>"
 							else
-								entry += " - <font color='black'><b>Мёртв</b></font>"
+								entry += " - <font color='black'><b>Dead</b></font>"
 					if(is_special_character(C.mob))
-						entry += " - <b><font color='red'>!АНТАГ!</font></b>"
+						entry += " - <b><font color='red'>!ANTAGONIST!</font></b>"
 				entry += "</td><td>[C.account_join_date]</td>"
 				entry += "<td>[round(C.avgping, 1)]</td></tr>"
 				Lines += entry
@@ -43,7 +43,7 @@
 			for(var/client/C in GLOB.clients)
 				var/entry = "<tr><td>[C.key]</td>"
 				if(C.holder && C.holder.fakekey)
-					entry += " <i>(как [C.holder.fakekey])</i>"
+					entry += " <i>(how [C.holder.fakekey])</i>"
 				entry += "<td>[C.account_join_date]</td>"
 				entry += "<td>[round(C.avgping, 1)]</td></tr>"
 				Lines += entry
@@ -57,9 +57,9 @@
 	for(var/line in sortList(Lines))
 		msg += "[line]"
 
-	msg += "<tr><td>Всего: [length(Lines)]</td></tr></table>"
+	msg += "<tr><td>Total: [length(Lines)]</td></tr></table>"
 	var/datum/browser/popup
-	popup = new(src, "who", "КТО?", 400, 600)
+	popup = new(src, "who", "WHO?", 400, 600)
 	popup.set_content(msg)
 	popup.open(FALSE)
 	//to_chat(src, msg)
@@ -69,7 +69,7 @@
 	set name = "Adminwho"
 	set hidden = 1
 
-	var/msg = "<b>Адмены:</b>\n"
+	var/msg = "<b>Cancellations:</b>\n"
 	if(holder)
 		for(var/client/C in GLOB.admins)
 			msg += "\t[C] is a [C.holder.rank]"

@@ -137,7 +137,7 @@
 		for(var/obj/item/artifact/A in src.belt.contents)
 			A.Think(src)
 			for(var/armor_ in A.art_armor)
-				global_armor[armor_] = A.art_armor[armor_]
+				global_armor[armor_] += A.art_armor[armor_]
 
 	if(src.wear_suit && istype(src.wear_suit, /obj/item/clothing/suit))
 		var/obj/item/clothing/suit/S = src.wear_suit
@@ -170,7 +170,7 @@
 		S.durability = ((S.durability/initial(S.durability))*100 - 50) / 100 * initial(S.durability)
 
 	if(S.durability <= 0)
-		visible_message("<span class='danger'>[S] развалился прямо на [src]</span>", "<span class='warning'>[S] развалился прямо на вас!</span>")
+		visible_message("<span class='danger'>[S] fell apart right on [src]</span>", "<span class='warning'>[S] fell apart right on you!</span>")
 		qdel(S)
 
 	update_icons()
@@ -204,12 +204,12 @@
 				gain_trauma(U, TRAUMA_RESILIENCE_ABSOLUTE)
 				zombified = 1
 				if (prob(5))
-					brainwash(src, list("Благодарим Тебя за то, что раскрыл слугам Твоим козни врагов наших. \
-					Озари сиянием Твоим души тех, кто отдал жизнь во исполнение воли Твоей. В бой, защитники Монолита! \
-					В бой! Отомстим за павших братьев наших, да будет благословенно вечное их единение с Монолитом. \
-					Смерть....Лютая смерть тем, кто отвергает Его священную силу...", "Убить всех неверных."))
+					brainwash(src, list("Thank you for that, that he revealed to Thy servants the machinations of our enemies. \
+					Illuminate with Thy radiance the souls of those, who gave his life in fulfillment of thy will. Into battle, defenders of the Monolith! \
+					Into battle! Let us avenge our fallen brothers, may their eternal union with the Monolith be blessed. \
+					Death.... Fierce death themes, who rejects His sacred power...", "Kill all infidels."))
 				else
-					brainwash(src, list("Скоро весна-а-а-а… тепло-о-о-о… как до-о-о-ома…", "Убивать..."))
+					brainwash(src, list("Spring is coming... warm-oh-oh... like do-o-o-oma...", "Kill..."))
 			return
 		if(150 to 199)
 			if(slurring < 100)

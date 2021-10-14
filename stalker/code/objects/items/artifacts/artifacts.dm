@@ -60,7 +60,7 @@
 
 	/////////////////////////////////////////Gravity artifacts/////////////////////////////////////////
 /obj/item/artifact/meduza
-	name = "meduza"
+	name = "jellyfish"
 	desc = "An artifact of gravitational nature, which has the ability to actively attract and absorb radioactive particles, thereby reducing the body's exposure to radiation. Widespread in the Zone; beyond its borders, it is widely, although tacitly, used in the treatment of acute radiation sickness."
 	eng_desc = "This gravitational artifact attracts and absorbs radioactive particles, reducing the effects of radiation on the body. Very common in the Zone and is unofficially used outside the Zone for treating acute radiation sickness in exceptional circumstances."
 	icon_state = "meduza"
@@ -123,7 +123,7 @@
 	level_s = 2
 
 /obj/item/artifact/pustishka
-	name = "pustishka"
+	name = "shell"
 	desc = "Degenerate case of the Electra anomaly activity. Apparently, such a remarkable rounded shape can be obtained by subjecting the anomaly to thermal action. Expensive artifact."
 	icon_state = "pustishka"
 	art_armor = list(energy = 30)

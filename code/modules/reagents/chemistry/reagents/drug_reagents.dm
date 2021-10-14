@@ -10,9 +10,9 @@
 		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[id]_high")
 
 /datum/reagent/drug/space_drugs
-	name = "Space drugs"
+	name = "LSD"
 	id = "space_drugs"
-	description = "An illegal chemical compound used as drug."
+	description = "Lysergic acid diethylamide, an odorless and colorless substance with a slightly bitter taste. Makes you feel euphoric and beyond your own perception."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 30
 
@@ -27,7 +27,7 @@
 	..()
 
 /datum/reagent/drug/space_drugs/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
+	to_chat(M, "<span class='userdanger'>You start tripping hard! You see fractals, patterns, shapes, and colors of all kinds!</span>")
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[id]_overdose", /datum/mood_event/overdose, name)
 
 /datum/reagent/drug/space_drugs/overdose_process(mob/living/M)
@@ -415,32 +415,32 @@
 	. = 1
 
 /datum/reagent/drug/happiness/addiction_act_stage1(mob/living/M)// all work and no play makes jack a dull boy
-	GET_COMPONENT_FROM(mood, /datum/component/mood, M)
-	mood.setSanity(min(mood.sanity, SANITY_DISTURBED))
+	//GET_COMPONENT_FROM(mood, /datum/component/mood, M)
+	//mood.setSanity(min(mood.sanity, SANITY_DISTURBED))
 	M.Jitter(5)
 	if(prob(20))
 		M.emote(pick("twitch","laugh","frown"))
 	..()
 
 /datum/reagent/drug/happiness/addiction_act_stage2(mob/living/M)
-	GET_COMPONENT_FROM(mood, /datum/component/mood, M)
-	mood.setSanity(min(mood.sanity, SANITY_UNSTABLE))
+	//GET_COMPONENT_FROM(mood, /datum/component/mood, M)
+	//mood.setSanity(min(mood.sanity, SANITY_UNSTABLE))
 	M.Jitter(10)
 	if(prob(30))
 		M.emote(pick("twitch","laugh","frown"))
 	..()
 
 /datum/reagent/drug/happiness/addiction_act_stage3(mob/living/M)
-	GET_COMPONENT_FROM(mood, /datum/component/mood, M)
-	mood.setSanity(min(mood.sanity, SANITY_CRAZY))
+	//GET_COMPONENT_FROM(mood, /datum/component/mood, M)
+	//mood.setSanity(min(mood.sanity, SANITY_CRAZY))
 	M.Jitter(15)
 	if(prob(40))
 		M.emote(pick("twitch","laugh","frown"))
 	..()
 
 /datum/reagent/drug/happiness/addiction_act_stage4(mob/living/carbon/human/M)
-	GET_COMPONENT_FROM(mood, /datum/component/mood, M)
-	mood.setSanity(SANITY_INSANE)
+	//GET_COMPONENT_FROM(mood, /datum/component/mood, M)
+	//mood.setSanity(SANITY_INSANE)
 	M.Jitter(20)
 	if(prob(50))
 		M.emote(pick("twitch","laugh","frown"))

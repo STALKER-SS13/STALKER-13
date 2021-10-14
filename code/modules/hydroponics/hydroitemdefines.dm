@@ -74,11 +74,11 @@
 	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	flags_1 = CONDUCT_1
-	force = 12
+	force = 20
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = 15
+	throwforce = 25
 	throw_speed = 3
-	throw_range = 4
+	throw_range = 8
 	materials = list(MAT_METAL = 15000)
 	attack_verb = list("chopped", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'

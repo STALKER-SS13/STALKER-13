@@ -757,7 +757,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		to_chat(usr, "<span class='warning'>Stalker profile not found.</span>")
 		return
 
-	var/newrank = input(usr, "Если я узнаю, что ты это крутил себе, то я тебе откручу что-то другое. Число от 0 до бесконечности.", "Rating System") as num|null
+	var/newrank = input(usr, "If I find out that you twisted it yourself, then I will twist something else for you. A number from 0 to infinity.", "Rating System") as num|null
 
 	if(!newrank)
 		return
@@ -935,6 +935,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 /client/proc/StopBlowout()
 	set name = "Stop Blowout"
 	set category = "Stalker"
+	set background = 1
 
 	if(!SSblowout.isblowout)
 		to_chat(src, "<span class='warning'>There is no blowout going on.</span>")

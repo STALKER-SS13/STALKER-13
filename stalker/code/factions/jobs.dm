@@ -1,4 +1,4 @@
-/datum/job/stalker
+datum/job/stalker
 	title = "NOPE"
 	list/minimal_access = list()		//Useful for servers which prefer to only have access given to the places a job absolutely needs (Larger server population)
 	list/access = list()				//Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
@@ -85,7 +85,7 @@
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
-	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/outfit/stalker/palputin // For select_equipment
 	name = "Nedomonolith"
@@ -102,7 +102,7 @@
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
-	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/pill/stalker/aptechka/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	r_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/reagent_containers/food/snacks/stalker/konserva,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/job/stalker/jacknoir
 	title = "Machinist"

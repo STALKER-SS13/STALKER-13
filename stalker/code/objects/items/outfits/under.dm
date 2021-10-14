@@ -84,3 +84,10 @@
 	eng_desc = "Some sort of civillian apparel: gorka suit. Doesn't seem that useful for the Zone conditions."
 	icon_state = "tourist6"
 	item_state = "tourist6"
+
+/obj/item/clothing/under/color/switer/afghanka
+	name = "afghanka uniform"
+	desc = "The Afghanka is a Russian military slang term for a field uniform system developed and issued by the Soviet Army in the early 1980s. The popular name of the uniform was derived from its prolific use during the Soviet war in Afghanistan. The Afghanka began appearing in military units in the early 1980s during the Soviet war in Afghanistan, hence the name. The design of the jacket and trousers may have been based on similar patterns used by other Warsaw Pact armies such as the GDR. The soldiers found the new uniform to be very effective, especially in Afghanistan. Today the Afghanka design uniform sometimes still in use by Russia, Ukraine, Kazakhstan, Lithuania, Belarus and Georgia."
+	eng_desc = "The Afghanka is a Russian military slang term for a field uniform system developed and issued by the Soviet Army in the early 1980s. The popular name of the uniform was derived from its prolific use during the Soviet war in Afghanistan. The Afghanka began appearing in military units in the early 1980s during the Soviet war in Afghanistan, hence the name. The design of the jacket and trousers may have been based on similar patterns used by other Warsaw Pact armies such as the GDR. The soldiers found the new uniform to be very effective, especially in Afghanistan. Today the Afghanka design uniform sometimes still in use by Russia, Ukraine, Kazakhstan, Lithuania, Belarus and Georgia."
+	icon_state = "afghanka"
+	item_state = "afghanka"

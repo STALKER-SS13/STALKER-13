@@ -1,4 +1,4 @@
-GLOBAL_LIST_EMPTY(trash_tier_sidormatitems)
+	GLOBAL_LIST_EMPTY(trash_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(low_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(medium_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(high_tier_sidormatitems)
@@ -118,6 +118,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	"Suits" = list(
 		new /datum/data/stalker_equipment("Leather Jacket",				"Leather Jacket",			/obj/item/clothing/suit/hooded/kozhanka,					5000,		ROOKIE),
 		new /datum/data/stalker_equipment("White Leather Jacket",		"White Leather Jacket",		/obj/item/clothing/suit/hooded/kozhanka/white,				5000,		ROOKIE),
+		new /datum/data/stalker_equipment("6B2",		                "6B2",		                /obj/item/clothing/suit/6b2		                         	7500,		ROOKIE),
 		new /datum/data/stalker_equipment("Armored Tan Coat",			"Armored Tan Coat",			/obj/item/clothing/suit/hooded/kozhanka/tancoat,			15000,		ROOKIE),
 		new /datum/data/stalker_equipment("Clear Sky Coat",				"Clear Sky Coat",			/obj/item/clothing/suit/hooded/kozhanka/cs_hood,			15000,		ROOKIE,		faction = "Clear Sky"),
 		new	/datum/data/stalker_equipment("Bandit Jacket",				"Bandit Jacket",			/obj/item/clothing/suit/hooded/kozhanka/banditka,			6000,		ROOKIE,		faction = "Bandits"),
@@ -130,6 +131,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Ghillie Suit",				"Ghillie Suit",				/obj/item/clothing/suit/hooded/kozhanka/ghillie,			30000,		ROOKIE),
 		new /datum/data/stalker_equipment("Berill-5M",					"Berill-5M",				/obj/item/clothing/suit/berill,								50000,		EXPERIENCED,faction = "Military"),
 		new /datum/data/stalker_equipment("Guardian of Freedom",	   	"Guardian of Freedom",		/obj/item/clothing/suit/hooded/kombez/veter,				25000,		ROOKIE,		faction = "Freedom"),
+		new /datum/data/stalker_equipment("Defender II Vest",			"Defender II Vest",			/obj/item/clothing/suit/d2		                            85000,		EXPERIENCED),
 		new /datum/data/stalker_equipment("Wind of Freedom",			"Wind of Freedom",			/obj/item/clothing/head/hooded/stalker/strazh,				40000,		EXPERIENCED,faction = "Freedom"),
 		new /datum/data/stalker_equipment("PZ-1	",						"PZ-1",						/obj/item/clothing/suit/hooded/kombez/monolith,				25000,		ROOKIE,		faction = "Monolith", sale_price = 8000),
 		new /datum/data/stalker_equipment("Monolith Scientific Suit",	"Monolith Scientific Suit",	/obj/item/clothing/suit/hooded/sealed/monolith,				60000,		ROOKIE,		faction = "Monolith"),
@@ -159,6 +161,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Gas Mask",					"Gas Mask",						/obj/item/clothing/mask/gas/stalker,							7500,	ROOKIE),
 		new /datum/data/stalker_equipment("Mercenary Gas Mask",			"Mercenary Gas Mask",			/obj/item/clothing/mask/gas/stalker/mercenary,					7500,	ROOKIE,	faction = "Mercenaries"),
 		new /datum/data/stalker_equipment("Steel Helmet",				"Steel Helmet",					/obj/item/clothing/head/steel,									7500,	ROOKIE),
+		new /datum/data/stalker_equipment("SSH-68",				        "SSH-68",					    /obj/item/clothing/head/ssh									    7560,	ROOKIE),
 		new /datum/data/stalker_equipment("Light Tactical Helmet",		"Light Tactical Helmet",		/obj/item/clothing/head/hardhat/tactical/light,					12500,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Tactical Helmet",			"Tactical Helmet",				/obj/item/clothing/head/tacticalhelmet,							25000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Assault Helmet",	    		"Assault Helmet",				/obj/item/clothing/head/assaultmerc,							30000,	EXPERIENCED,	faction = "Mercenaries"),
@@ -236,7 +239,10 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Tracksuit",							"Tracksuit",											/obj/item/clothing/under/color/switer/tracksuit,			1500,	ROOKIE),
 		new /datum/data/stalker_equipment("Worn out army boots",				"Worn out army boots",									/obj/item/clothing/shoes/jackboots/warm,					800,	ROOKIE),
 		new /datum/data/stalker_equipment("Fingerless gloves",					"Fingerless gloves",									/obj/item/clothing/gloves/fingerless,						600,	ROOKIE),
-		new /datum/data/stalker_equipment("Balaclava",							"Balaclava",											/obj/item/clothing/mask/balaclava,							700,	ROOKIE)
+		new /datum/data/stalker_equipment("Balaclava",							"Balaclava",											/obj/item/clothing/mask/balaclava,							700,	ROOKIE),
+		new /datum/data/stalker_equipment("Gorka Suit",			                "Gorka Suit",		                                    /obj/item/clothing/under/color/switer/tourist/gorka			5500,	ROOKIE),
+		new /datum/data/stalker_equipment("Afghanka",			                "Afghanka",		                                        /obj/item/clothing/under/color/switer/afghanka			    2000,	ROOKIE),
+		new /datum/data/stalker_equipment("TSH-4M",			                    "TSH-4M",		                                        /obj/item/clothing/head/TSH-4M		                        3000,	ROOKIE)
 		),
 
 	"Detectors" = list(

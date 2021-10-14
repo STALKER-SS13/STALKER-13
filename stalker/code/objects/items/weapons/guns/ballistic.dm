@@ -723,7 +723,7 @@
 	recoil = 0.5
 	damagelose = 0
 	can_scope = 0
-	burst_size = 0
+	burst_size = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'

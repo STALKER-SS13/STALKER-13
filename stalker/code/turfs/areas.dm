@@ -485,7 +485,7 @@
 	icon_state = "tunnel"
 
 /area/stalker/cave
-	name = "пещера"
+	name = "Cave"
 	icon_state = "tunnel"
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	requires_power = 1
@@ -630,6 +630,12 @@
 	name = "Bar 100RENTGEN"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "realbar"
+	safezone = 1
+
+/area/stalker/buildings/bar/monolith
+	name = "Monolith Armory"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "monolith_bar"
 	safezone = 1
 
 //bar

@@ -30,7 +30,7 @@ Assistant
 
 /datum/outfit/clearsky/pre_equip(mob/living/carbon/human/H)
 	..()
-	uniform = /obj/item/clothing/under/color/switer
+	uniform = UNIFORMPICK
 	ears = null
 	belt = /obj/item/kitchen/knife/bayonet
 	id = /obj/item/stalker_pda
@@ -69,7 +69,7 @@ Assistant
 /datum/outfit/job/clearsky_leader/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/maska_1
-	uniform = /obj/item/clothing/under/color/switer
+	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/cs_heavy
 	ears = null
 	belt = /obj/item/weapon/kitchen/knife/hunting

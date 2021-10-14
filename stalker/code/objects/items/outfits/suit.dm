@@ -241,6 +241,21 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 30, "fire" = 10, "psy" = 0)
 	unique = 0
 
+/obj/item/clothing/suit/hooded/kozhanka/renegadecoat
+	name = "renegade coat"
+	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it."
+	eng_desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it."
+	icon_state = "renegadecoat"
+	item_state = "renegadecoat_t"
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/renegade
+	durability = 75
+
+/obj/item/clothing/head/hooded/stalker/renegade
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	icon_state = "winterhood_renegade"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/suit/hooded/kozhanka/tancoat
 	name = "tan coat"
 	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it."
@@ -1091,6 +1106,7 @@
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+
 	resistance_flags = UNACIDABLE
 	hoodtype = /obj/item/clothing/head/hooded/stalker/ghillie
 	durability = 75
@@ -1101,3 +1117,4 @@
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	icon_state = "ghillie"
+

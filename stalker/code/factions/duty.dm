@@ -39,7 +39,7 @@ Assistant
 		/obj/item/clothing/head/beret,
 		/obj/item/clothing/head/ushanka,
 		/obj/item/clothing/head/beret/black)
-	uniform = /obj/item/clothing/under/color/switer
+	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/cigar/havana,
@@ -117,7 +117,7 @@ Assistant
 /datum/outfit/job/duty_lieutenant/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/steel
-	uniform = /obj/item/clothing/under/color/switer
+	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/cigar/havana,

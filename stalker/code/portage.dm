@@ -210,6 +210,9 @@
 /obj/effect/landmark/latejoin/clearsky_leader
 	name = "JoinLateClear Sky Leader"
 
+/obj/effect/landmark/latejoin/renegade
+	name = "JoinLateRenegade"
+
 /turf/open/floor/plasteel/stairs/stalker
 	icon = 'stalker/icons/floor.dmi'
 	icon_state = "ladder"

@@ -817,6 +817,41 @@
 	durability = 150
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
+/obj/item/clothing/suit/sixb2
+	name = "6B2"
+	desc = "The 6B2 bulletproof vest was developed at the request of the USSR Ministry of Defense in 1980, after which it was supplied to the Soviet Army. The vest was used in all branches of the Soviet Army during the Afghan War of 1979-1989, and still remains in service in some post-Soviet states. The bulletproof vest has an average area of protection, has a height adjustment in the shoulder section, and is fastened on the user with Velcro."
+	eng_desc = "The 6B2 bulletproof vest was developed at the request of the USSR Ministry of Defense in 1980, after which it was supplied to the Soviet Army. The vest was used in all branches of the Soviet Army during the Afghan War of 1979-1989, and still remains in service in some post-Soviet states. The bulletproof vest has an average area of protection, has a height adjustment in the shoulder section, and is fastened on the user with Velcro."
+	icon_state = "6b2"
+	item_state = "6b2"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	cold_protection = CHEST|GROIN
+	heat_protection = CHEST|GROIN
+	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	resistance_flags = UNACIDABLE
+	armor = list("melee" = 50, "bullet" = 55, "laser" = 45, "energy" = 30, "bomb" = 60, "bio" = 20, "rad" = 20, "fire" = 20, "psy" = 0)
+	durability = 190
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0)
+
+/obj/item/clothing/suit/d2
+	name = "Defender II Vest"
+	desc = "Experience in the First Chechen War has shown that personnel need durable protection, which includes both front and back plates and neck and groin protection, because even one fragmentary injury might cause death. For this problem, FORT TECHNOLOGY issued the Defender 2 vest, which became standard equipment element in different SF units of FSB,FSO and Rusguard. It provides users with optimal protection coverage and included detachable neck protectors and groin pads. This particular one comes with a groin pad."
+	eng_desc = "Experience in  the First Chechen War has shown that personnel need durable protection, which includes both front and back plates and neck and groin protection, because even one fragmentary injury might cause death. For this problem. FORT TECHNOLOGY issued the Defender 2 vest, which became standard equipment element in different SF units of FSB,FSO and Rusguard. It provides users with optimal protection coverage and included detachable neck protectors and groin pads. This particular one comes with a groin pad."
+	icon_state = "d2"
+	item_state = "d2"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	cold_protection = CHEST|GROIN
+	heat_protection = CHEST|GROIN
+	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	resistance_flags = UNACIDABLE
+	armor = list("melee" = 85, "bullet" = 80, "laser" = 45, "energy" = 60, "bomb" = 80, "bio" = 30, "rad" = 30, "fire" = 20, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	durability = 150
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+
+
 /*
 /obj/item/clothing/suit/army/army2
 	icon_state = "army_armor2"
@@ -1079,6 +1114,27 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_combez_bandit"
+
+/obj/item/clothing/suit/hooded/kombez/kombez_renegade
+	name = "renegade armor"
+	eng_desc = "Stalker suit from the Renegades faction. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits."
+	icon_state = "combez_renegades"
+	item_state = "syndicate-orange"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez_renegade
+	durability = 150
+
+/obj/item/clothing/head/hooded/stalker/kombez_renegade
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	icon_state = "winterhood_combez_renegade"
 
 
 /obj/item/clothing/suit/hooded/kombez/mercenary/leader

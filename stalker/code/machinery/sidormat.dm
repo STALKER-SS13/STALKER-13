@@ -121,14 +121,18 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Armored Tan Coat",			"Armored Tan Coat",			/obj/item/clothing/suit/hooded/kozhanka/tancoat,			15000,		ROOKIE),
 		new /datum/data/stalker_equipment("Clear Sky Coat",				"Clear Sky Coat",			/obj/item/clothing/suit/hooded/kozhanka/cs_hood,			15000,		ROOKIE,		faction = "Clear Sky"),
 		new	/datum/data/stalker_equipment("Bandit Jacket",				"Bandit Jacket",			/obj/item/clothing/suit/hooded/kozhanka/banditka,			6000,		ROOKIE,		faction = "Bandits"),
-		new	/datum/data/stalker_equipment("Military Service Outfit",	"Military Service Outfit",	/obj/item/clothing/suit/army,								15000,		ROOKIE,		faction = "Military"),
+		new	/datum/data/stalker_equipment("Renegade Coat",				"Renegade Coat",			/obj/item/clothing/suit/hooded/kozhanka/renegadecoat,		6000,		ROOKIE,		faction = "Renegades"),
+		new	/datum/data/stalker_equipment("Military Service Outfit",	"Military Service Outfit",	/obj/item/clothing/suit/army,								15000,		ROOKIE,		faction = "State Security Service"),
 		new /datum/data/stalker_equipment("Sunrise Outfit",				"Sunrise Outfit",			/obj/item/clothing/suit/hooded/kombez,						33000,		ROOKIE),
+		new /datum/data/stalker_equipment("6B2",						"6B2",						/obj/item/clothing/suit/sixb2,								22000,		ROOKIE),
+		new /datum/data/stalker_equipment("Defender II Vest",			"Defender II Vest",			/obj/item/clothing/suit/d2,									45000,		EXPERIENCED),
 		new /datum/data/stalker_equipment("Mercenary Outfit",			"Mercenary Outfit",			/obj/item/clothing/suit/hooded/kombez/mercenary,			25000,		ROOKIE,		faction = "Mercenaries"),
 		new /datum/data/stalker_equipment("Bandit Outfit",				"Bandit Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_bandit,		25000,		ROOKIE,		faction = "Bandits"),
+		new /datum/data/stalker_equipment("Renegade Outfit",			"Renegade Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_renegade,		25000,		ROOKIE,		faction = "Renegades"),
 		new /datum/data/stalker_equipment("Black Trenchcoat",			"Black Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat,		12500,		ROOKIE,		faction = "Bandits"),
 		new /datum/data/stalker_equipment("Brown Trenchcoat",			"Brown Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown,12500,		ROOKIE),
 		new /datum/data/stalker_equipment("Ghillie Suit",				"Ghillie Suit",				/obj/item/clothing/suit/hooded/kozhanka/ghillie,			30000,		ROOKIE),
-		new /datum/data/stalker_equipment("Berill-5M",					"Berill-5M",				/obj/item/clothing/suit/berill,								50000,		EXPERIENCED,faction = "Military"),
+		new /datum/data/stalker_equipment("Berill-5M",					"Berill-5M",				/obj/item/clothing/suit/berill,								50000,		EXPERIENCED,faction = "State Security Service"),
 		new /datum/data/stalker_equipment("Guardian of Freedom",	   	"Guardian of Freedom",		/obj/item/clothing/suit/hooded/kombez/veter,				25000,		ROOKIE,		faction = "Freedom"),
 		new /datum/data/stalker_equipment("Wind of Freedom",			"Wind of Freedom",			/obj/item/clothing/head/hooded/stalker/strazh,				40000,		EXPERIENCED,faction = "Freedom"),
 		new /datum/data/stalker_equipment("PZ-1	",						"PZ-1",						/obj/item/clothing/suit/hooded/kombez/monolith,				25000,		ROOKIE,		faction = "Monolith", sale_price = 8000),
@@ -143,10 +147,12 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new	/datum/data/stalker_equipment("SSP-99 Ecologist",			"SSP-99 Ecologist",			/obj/item/clothing/suit/hooded/sealed/ecolog,				75000,		EXPERT,	faction = "Ecologists"),
 		new	/datum/data/stalker_equipment("SSP-99M Ecologist",			"SSP-99M Ecologist",		/obj/item/clothing/suit/hooded/sealed/ecologm,				100000,		EXPERT,	faction = "Ecologists"),
 		new	/datum/data/stalker_equipment("SEVA",						"SEVA",						/obj/item/clothing/suit/hooded/sealed/seva,					125000,		EXPERT,	faction = "Ecologists"),
-		new /datum/data/stalker_equipment("SKAT-9M",					"SKAT-9M",					/obj/item/clothing/suit/skat,								150000,		EXPERT,	faction = "Military"),
+		new /datum/data/stalker_equipment("SKAT-9M",					"SKAT-9M",					/obj/item/clothing/suit/skat,								150000,		EXPERT,	faction = "State Security Service"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Loners"),
+		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Clear Sky"),
+		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Renegades"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Bandits"),
-		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "Military"),
+		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			200000,		EXPERT,	faction = "State Security Service"),
 		new	/datum/data/stalker_equipment("Merc Exoskeleton",			"Merc Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/merc,		200000,		EXPERT,	faction = "Mercenaries"),
 		new	/datum/data/stalker_equipment("Duty Exoskeleton",			"Duty Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/duty,		200000,		EXPERT,	faction = "Duty"),
 		new	/datum/data/stalker_equipment("Freedom Exoskeleton",		"Freedom Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskelet/freedom,	200000,		EXPERT,	faction = "Freedom"),
@@ -158,12 +164,14 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Respirator",					"Respirator",					/obj/item/clothing/mask/gas/stalker/respirator,					1500,	ROOKIE),
 		new /datum/data/stalker_equipment("Gas Mask",					"Gas Mask",						/obj/item/clothing/mask/gas/stalker,							7500,	ROOKIE),
 		new /datum/data/stalker_equipment("Mercenary Gas Mask",			"Mercenary Gas Mask",			/obj/item/clothing/mask/gas/stalker/mercenary,					7500,	ROOKIE,	faction = "Mercenaries"),
+		new /datum/data/stalker_equipment("TSH-4M",						"TSH-4M",						/obj/item/clothing/head/tsh,									3000,	ROOKIE),
 		new /datum/data/stalker_equipment("Steel Helmet",				"Steel Helmet",					/obj/item/clothing/head/steel,									7500,	ROOKIE),
+		new /datum/data/stalker_equipment("SSH-68",						"SSH-68",						/obj/item/clothing/head/ssh,									7600,	ROOKIE),
 		new /datum/data/stalker_equipment("Light Tactical Helmet",		"Light Tactical Helmet",		/obj/item/clothing/head/hardhat/tactical/light,					12500,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Tactical Helmet",			"Tactical Helmet",				/obj/item/clothing/head/tacticalhelmet,							25000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Assault Helmet",	    		"Assault Helmet",				/obj/item/clothing/head/assaultmerc,							30000,	EXPERIENCED,	faction = "Mercenaries"),
-		new /datum/data/stalker_equipment("Sphera-M12",			 		"Sphera-M12",					/obj/item/clothing/head/spheram,								30000,	EXPERIENCED,	faction = "Military"),
-		new /datum/data/stalker_equipment("SKAT-9M Helmet",				"SKAT-9M Helmet",				/obj/item/clothing/head/skathelmet,								90000,	VETERAN, 		faction = "Military"),
+		new /datum/data/stalker_equipment("Sphera-M12",			 		"Sphera-M12",					/obj/item/clothing/head/spheram,								30000,	EXPERIENCED,	faction = "State Security Service"),
+		new /datum/data/stalker_equipment("SKAT-9M Helmet",				"SKAT-9M Helmet",				/obj/item/clothing/head/skathelmet,								90000,	VETERAN, 		faction = "State Security Service"),
 		new /datum/data/stalker_equipment("MASKA-1 SCH Helmet",			"MASKA-1 SCH Helmet",			/obj/item/clothing/head/maska_1,								12500,	EXPERIENCED, 		faction = "Clear Sky")
 	),
 
@@ -221,6 +229,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("5000RUB",							"5000Rub",												/obj/item/stack/spacecash/c5000,									5000,	ROOKIE, sale_price =5000),
 		new /datum/data/stalker_equipment("Bolts",								"Bolts",												/obj/item/stalker/bolts,											300,	ROOKIE),
 		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, faction = "Bandits"),
+		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, faction = "Renegades"),
 		new /datum/data/stalker_equipment("Binoculars",							"Binoculars",											/obj/item/twohanded/binoculars,										2500,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Frag Grenade",						"Frag Grenade",											/obj/item/grenade/syndieminibomb/concussion/stalker/frag,			2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Flash Grenade",						"Flash Grenade",										/obj/item/grenade/flashbang,										2500,	ROOKIE),
@@ -348,7 +357,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/rating = 0
 	var/switches = BUY_STUFF
 	var/real_assorment = list()
-	var/list/special_factions = list("Loners", "Bandits", "Duty", "Freedom", "Mercenaries", "Monolith", "Clear Sky", "Ecologists")
+	var/list/special_factions = list("Loners", "Bandits", "Duty", "Freedom", "Mercenaries", "Monolith", "Clear Sky", "Ecologists", "Renegades", "State Security Service")
 	var/path_ending = null
 	//Faction Locker
 	var/obj/item/assembly/control/door_device = null

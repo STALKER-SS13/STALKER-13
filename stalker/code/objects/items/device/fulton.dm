@@ -2,7 +2,7 @@ var/list/normal_extraction_beacons = list()
 var/list/total_extraction_beacons = list()
 
 /obj/item/weapon/fulton
-	name = "Fulton Recovery Pack"
+	name = "fulton recovery pack"
 	desc = "A balloon that can be used to extract a target to a Fulton Recovery Beacon. Anything not bolted down can be moved. Link the pack to a beacon by using the pack in hand."
 	icon = 'icons/stalker/device.dmi'
 	icon_state = "fulton_pack"
@@ -119,7 +119,7 @@ var/list/total_extraction_beacons = list()
 			return
 
 /obj/machinery/fulton
-	name = "Fulton Recovery Beacon"
+	name = "fulton recovery beacon"
 	desc = "A beacon for the fulton recovery system. Hit a beacon with a pack to link the pack to a beacon."
 	icon = 'icons/stalker/device.dmi'
 	icon_state = "fulton_beacon"

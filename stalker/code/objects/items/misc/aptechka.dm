@@ -9,7 +9,7 @@
 
 /obj/item/reagent_containers/pill/stalker/aptechka
 	name = "kit"
-	desc = "Old Soviet first aid kit."
+	desc = "An old Soviet first aid kit."
 
 /obj/item/reagent_containers/pill/stalker/canconsume(mob/eater, mob/user)
 	if(!iscarbon(eater))

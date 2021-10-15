@@ -67,7 +67,7 @@
 /obj/structure/stalker/blocks
 	name = "blocks"
 	icon = 'stalker/icons/decor2.dmi'
-	desc = "Ordinary concrete block."
+	desc = "An ordinary concrete block."
 	eng_desc = "Blocks."
 	density = 1
 	opacity = 1
@@ -154,8 +154,8 @@
 
 /obj/structure/stalker/blocks/vanish/pipe
 	name = "Pipe"
-	desc = "Big pipe."
-	eng_desc = "Big pipe."
+	desc = "A large pipe."
+	eng_desc = "A large pipe."
 	icon = 'stalker/icons/decor2.dmi'
 	icon_state = "truba1"
 
@@ -176,7 +176,7 @@
 
 /obj/structure/stalker/blocks/vanish/sandbags
 	name = "sandbags"
-	desc = "Sangbags."
+	desc = "A stack of sandbags."
 	eng_desc = "Sangbags."
 	icon = 'stalker/icons/structure/sandbags.dmi'
 	icon_state = "solo"

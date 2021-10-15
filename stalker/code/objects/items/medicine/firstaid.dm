@@ -65,7 +65,7 @@
 /obj/item/storage/firstaid/stalker/scientific
 	name = "scientific medkit"
 	icon_state = "aptechkay"
-	desc = "High end medical set designed for use in The Zone. This medkit includes items used to stop bleeding, treat burns, clean wounds, and treat a variety of different injuries. It also includes anti-radiation pills and medicine."
+	desc = "A high end medical set designed for use in The Zone. This medkit includes items used to stop bleeding, treat burns, clean wounds, and treat a variety of different injuries. It also includes anti-radiation pills and medicine."
 
 /obj/item/storage/firstaid/stalker/scientific/ComponentInitialize()
 	. = ..()

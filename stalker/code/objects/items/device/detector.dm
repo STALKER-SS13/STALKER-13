@@ -1,5 +1,5 @@
 /obj/item/detector
-	name = "Detector"
+	name = "detector"
 	desc = "The cheapest and least effective detector."
 	icon = 'stalker/icons/device_new.dmi'
 	icon_state = "echo_off"
@@ -21,7 +21,7 @@
 
 /obj/item/detector/blink
 	name = "echo"
-	desc = "Outdated model of anomalous activity detector. Reacts with a sound signal to the ingress of anomalous particles into a special chamber when approaching anomalies. In addition, it can register the presence of artifacts and measure the distance to the nearest of them - the distance to the artifact is determined by the frequency of the sound signal. The artifact search mode is activated by lifting the antenna cover on the front panel of the device. Due to the simplicity of the design, it is able to find only the most common artifacts."
+	desc = "An outdated model of anomalous activity detector. Reacts with a sound signal to the ingress of anomalous particles into a special chamber when approaching anomalies. In addition, it can register the presence of artifacts and measure the distance to the nearest of them - the distance to the artifact is determined by the frequency of the sound signal. The artifact search mode is activated by lifting the antenna cover on the front panel of the device. Due to the simplicity of the design, it is able to find only the most common artifacts."
 	eng_desc = "This dated anomalous activity detector produces an alarm signal when anomalous particles enter a special chamber as you approach an anomaly. It can also register the presence of artifacts and measure the distance to the nearest one. The distance is indicated by the frequency of the sound the detector emits. To switch to artifact search mode, open the device's front cover. Due to its simple design, Echo can only be used to locate the most common artifacts."
 	icon_state_inactive = "echo_off"
 	icon_state_active = "echo_on"
@@ -30,7 +30,7 @@
 
 /obj/item/detector/bear
 	name = "bear"
-	desc = "Detector of anomalous activity of the previous generation. It is equipped with a locator of anomalous formations and an LED display for displaying the direction to the artifact, and is able not only to detect artifacts, but also to determine the distance to them. The artifact search mode is activated by lifting the antenna cover on the front side of the device. Unfortunately, already a somewhat outdated list of detected artifacts is hardwired into the device - at the hardware level."
+	desc = "A detector of anomalous activity of the previous generation. It is equipped with a locator of anomalous formations and an LED display for displaying the direction to the artifact, and is able not only to detect artifacts, but also to determine the distance to them. The artifact search mode is activated by lifting the antenna cover on the front side of the device. Unfortunately, already a somewhat outdated list of detected artifacts is hardwired into the device - at the hardware level."
 	eng_desc = "The last generation of anomalous activity detector can be used to locate anomalous formations and has a color diode panel, which not only indicates the direction of artifacts, but also measures the distance to them. To switch to artifact search mode, open the device's front cover. Unfortunately the device is programmed with a somewhat outdated list of detectable artifacts."
 	icon_state = "bear_off"
 	icon_state_inactive = "bear_off"
@@ -40,7 +40,7 @@
 
 /obj/item/detector/veles
 	name = "veles"
-	desc = "A new generation detector-scanner used by scientists. Thanks to three advanced registration cameras, the location of the artifact relative to the detector is displayed on a special screen. Capable of detecting radiation and the presence of anomalies. The artifact search mode is activated by raising the indicator-board on the front side of the device; in this mode it is able to detect all artifacts known to science."
+	desc = "A new generation detector-scanner used by scientists. Thanks to three advanced detection cameras, the location of the artifact relative to the detector is displayed on a special screen. Capable of detecting radiation and the presence of anomalies. The artifact search mode is activated by raising the indicator-board on the front side of the device; in this mode it is able to detect all artifacts known to science."
 	eng_desc = "A next generation scientific detection scanner. Thanks to three modernized detection chambers, the position of artifacts is shown on a special display screen. When closed, the device registers only radiation and anomalies. To switch to artifact search mode, open the front LED display. When in search mode, the detector is capable of locating all artifacts known to science."
 	icon_state = "veles_off"
 	icon_state_inactive = "veles_off"

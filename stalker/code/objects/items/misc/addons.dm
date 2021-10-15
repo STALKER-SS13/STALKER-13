@@ -74,7 +74,7 @@
 
 /obj/item/attachment/scope/rifle
 	name = "rifle scope"
-	desc = "WWII rifle scope"
+	desc = "A rifle scope designed some time around the advent of WWII."
 	icon_state = "rifle"
 	types = list(/obj/item/gun/ballistic/rifle/boltaction/enfield,
 				/obj/item/gun/ballistic/shotgun/bm16,
@@ -89,11 +89,11 @@
 
 /obj/item/attachment/grenadelauncher
 	name = "grenade launcher"
-	desc = "Underbarrel grenade launcher."
+	desc = "A grenade launcher to be mounted on an underslung rail or other mounting system."
 	icon_state = ""
 	types = list()
 
 /obj/item/attachment/grenadelauncher/fnf2000
 	name = "fn-f2000 grenade launcher"
-	desc = "Underbarrel grenade launcher for FN-F2000"
+	desc = "A grenade launcher to be mounted on the FN-F2000's mounting system."
 	icon_state = "fnf2000-gl"

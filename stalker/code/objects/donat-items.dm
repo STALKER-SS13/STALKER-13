@@ -1,7 +1,7 @@
 /obj/item/clothing/suit/hooded/kozhanka/strazh/atelerd
-	name = "letniy kombinezon"
+	name = "summer overalls"
 
-	desc = "Made by artisans of the group 'Freedom' reinforced overalls stalker. Medium army body armor plus overhead reinforcing zirconium elements give good protection against machine gun bullets and fragments at various distances. The costume material consists of two layers: specially treated leather and fabric with asbestos thread. Gives some protection from various anomalous influences and radiation."
+	desc = "Made by artisans of Freedom. Medium army body armor plus overhead reinforcing zirconium elements give good protection against machine gun bullets and fragments at various distances. The fabric consists of two layers: specially treated leather and fabric with asbestos thread. Gives some protection from various anomalies and radiation."
 	armor = list(melee = 30, bullet = 30, laser = 30,burn = 30, bomb = 15, bio = 30, rad = 30, electro = 30)
 	hoodtype = /obj/item/clothing/head/winterhood/stalker/strazh/atelerd
 
@@ -10,7 +10,7 @@
 
 /obj/item/clothing/suit/hooded/kozhanka/white/monolith
 	name = "strange jacket"
-	desc = "The tight leather jacket is quite interesting coloring. The fabric is reinforced with very light Kevlar plates, which provides slightly increased protection, but does not slow down the carrier. Ineffective against abnormal and other influences."
+	desc = "The tight leather jacket has quite interesting coloring. The fabric is reinforced with very light Kevlar plates, which provides slightly increased protection, but does not slow down the wearer. Ineffective against anomalies and radiation."
 	icon_state = "kozhanka_mono_wh"
 	item_state = "labcoat"
 	hoodtype = /obj/item/clothing/head/winterhood/stalker/kozhanka_wh/monolith

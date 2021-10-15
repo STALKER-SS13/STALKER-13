@@ -3,7 +3,7 @@
 
 /obj/item/gun/ballistic/shotgun/bm16  // Горизонталка
 	name = "BM-16"
-	eng_desc = "The original Bm16 rifle. Heavy and dangerous two barrel rifle, and its effective in high range too."
+	eng_desc = "The original BM16 rifle. Heavy and dangerous two barrel rifle, and it's effective in high range too."
 	icon_state = "bm16"
 	item_state = "bm16"
 	w_class = 4

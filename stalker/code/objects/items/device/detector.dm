@@ -61,14 +61,14 @@
 			icon_state = icon_state_null
 			timer_detector = 0
 			if(!kostil)
-				Scan()
+				scan()
 	else
 		playsound(user, "stalker/sound/detector/detector_draw.ogg", 50, 0)
 		on = 0
 		cooldown = world.time
 		stop()
 
-/obj/item/detector/proc/Scan()
+/obj/item/detector/proc/scan()
 	kostil = 1
 
 	if(timer_detector >= 75)
@@ -134,7 +134,7 @@
 
 	if(!target)
 		kostil = 0
-		Scan()
+		//scan()
 		return
 
 	dir = get_dir(user, target)
@@ -151,7 +151,7 @@
 	icon_state = icon_state_null
 
 	kostil = 0
-	Scan()
+	scan()
 	return
 
 /obj/item/detector/dropped(mob/user)
@@ -164,7 +164,7 @@
 	target = null
 	icon_state = icon_state_inactive
 	src.user = null
-	//SSobj.processing.Remove(src)
+	SSobj.processing.Add(src)
 
 	for (var/obj/item/artifact/a in arts)
 		if(a.invisibility != 0)

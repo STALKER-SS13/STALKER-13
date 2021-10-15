@@ -71,12 +71,6 @@
 /obj/item/detector/proc/scan()
 	kostil = 1
 
-	if(timer_detector >= 75)
-		kostil = 0
-		on = 0
-		stop()
-		return
-
 	if(!on)
 		kostil = 0
 		return

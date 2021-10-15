@@ -74,7 +74,7 @@
 		if (suncorners[i]) // Already have a corner on this direction.
 			continue
 
-		suncorners[i] = new/datum/sunlighting_corner(src, GLOB.LIGHTING_CORNER_DIAGONAL[i])
+//		suncorners[i] = new/datum/sunlighting_corner(src, GLOB.LIGHTING_CORNER_DIAGONAL[i])
 
 /turf/proc/sun_reconsider_lights()
 	for (var/datum/sunlight_source/L in sun_affecting_lights)

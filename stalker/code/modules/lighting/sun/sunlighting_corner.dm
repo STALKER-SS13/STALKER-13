@@ -48,7 +48,7 @@
 			T.suncorners = list(null, null, null, null)
 
 		masters[T]   = diagonal
-		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(diagonal, 180))
+//		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(diagonal, 180))
 		T.suncorners[i] = src
 
 	// Now the horizontal one.
@@ -58,7 +58,7 @@
 			T.suncorners = list(null, null, null, null)
 
 		masters[T]   = ((T.x > x) ? EAST : WEST) | ((T.y > y) ? NORTH : SOUTH) // Get the dir based on coordinates.
-		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(masters[T], 180))
+//		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(masters[T], 180))
 		T.suncorners[i] = src
 
 	// And finally the vertical one.
@@ -68,7 +68,7 @@
 			T.suncorners = list(null, null, null, null)
 
 		masters[T]   = ((T.x > x) ? EAST : WEST) | ((T.y > y) ? NORTH : SOUTH) // Get the dir based on coordinates.
-		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(masters[T], 180))
+//		i            = GLOB.LIGHTING_CORNER_DIAGONAL.Find(turn(masters[T], 180))
 		T.suncorners[i] = src
 
 	update_active()

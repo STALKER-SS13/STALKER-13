@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 	var/old_affecting_lights = affecting_lights
 	var/old_lighting_object = lighting_object
 	var/old_sunlighting_object = sunlighting_object
-	var/old_corners = corners
+//	var/old_corners = corners
 	var/old_suncorners = suncorners
 
 	var/old_exl = explosion_level
@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 		lighting_object = old_lighting_object
 		sunlighting_object = old_sunlighting_object
 		affecting_lights = old_affecting_lights
-		corners = old_corners
+//		corners = old_corners
 		suncorners = old_suncorners
 		if (old_opacity != opacity || dynamic_lighting != old_dynamic_lighting)
 			reconsider_lights()

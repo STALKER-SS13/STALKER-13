@@ -1118,7 +1118,7 @@
 /obj/item/clothing/suit/hooded/kombez/kombez_renegade
 	name = "renegade armor"
 	eng_desc = "Stalker suit from the Renegades faction. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits."
-	icon_state = "combez_renegades"
+	icon_state = "combez_renegade"
 	item_state = "syndicate-orange"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS

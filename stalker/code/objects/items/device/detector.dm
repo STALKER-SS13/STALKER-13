@@ -154,6 +154,7 @@
 	stop()
 
 /obj/item/detector/proc/stop()
+	kostil = 0
 	timer_detector = 0
 	target = null
 	icon_state = icon_state_inactive

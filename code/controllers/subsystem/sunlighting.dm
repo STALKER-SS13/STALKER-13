@@ -2,17 +2,16 @@
 #define STAGE_CORNERS  2
 #define STAGE_OVERLAYS 3
 
-#define STEP_MORNING 0
+//#define STEP_MORNING 0
 #define STEP_DAY 1
-#define STEP_EVENING 2
-#define STEP_NIGHT 3
+//#define STEP_EVENING 2
+//#define STEP_NIGHT 3
 
 GLOBAL_LIST_EMPTY(sunlighting_update_lights) 	// List of lighting sources  queued for update.
 GLOBAL_LIST_EMPTY(sunlighting_update_corners) 	// List of lighting corners  queued for update.
 GLOBAL_LIST_EMPTY(sunlighting_update_overlays)	// List of lighting overlays queued for update.
 
-var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/morning(), new /datum/time_of_day/day(), \
-                                 new /datum/time_of_day/evening(), new /datum/time_of_day/night())
+var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/day())
 
 
 SUBSYSTEM_DEF(sunlight)
@@ -31,7 +30,7 @@ SUBSYSTEM_DEF(sunlight)
 
 	var/datum/time_of_day/current_step_datum
 	var/datum/time_of_day/next_step_datum
-	var/current_step
+	var/current_step = 2
 	var/next_step
 	var/step_started
 	var/step_finish
@@ -54,7 +53,7 @@ SUBSYSTEM_DEF(sunlight)
 
 	create_all_sunlighting_objects()
 
-	check_cycle()
+	//check_cycle()
 	update_color()
 
 	resuming_stage = STAGE_SOURCES
@@ -108,7 +107,7 @@ proc/set_time_of_day(var/step)
 /datum/controller/subsystem/sunlight/proc/set_time_of_day(var/step)
 	if(step > time_cycle_steps.len)
 		step = STEP_DAY
-		dodaychange()
+		//dodaychange()
 		/*
 	switch(step)
 		if(STEP_MORNING)
@@ -128,7 +127,7 @@ proc/set_time_of_day(var/step)
 	current_step = step
 	current_step_datum = time_cycle_steps[current_step]
 	step_finish = current_step_datum.duration + world.time
-
+/*
 	next_step = current_step + 1
 	if(next_step > time_cycle_steps.len)
 		next_step = 1
@@ -137,7 +136,7 @@ proc/set_time_of_day(var/step)
 /datum/controller/subsystem/sunlight/proc/check_cycle()
 	if(world.time > step_finish)
 		set_time_of_day(current_step + 1)
-
+*/
 /datum/controller/subsystem/sunlight/proc/update_color()
 	var/blend_amount = (world.time - step_started) / current_step_datum.duration
 	current_color = BlendRGB(current_step_datum.color, next_step_datum.color, blend_amount)
@@ -146,7 +145,7 @@ proc/set_time_of_day(var/step)
 		P.color = current_color
 
 /datum/controller/subsystem/sunlight/fire()
-	check_cycle()
+	//check_cycle()
 	update_color()
 
 	resuming_stage = STAGE_SOURCES
@@ -195,9 +194,11 @@ proc/set_time_of_day(var/step)
 #if defined(LIGHTING_ANIMATION)
 		O.animate_color()
 #endif
+/*
 		if (MC_TICK_CHECK)
 			return
 	resuming_stage = 0
+*/
 
 
 /datum/controller/subsystem/sunlight/Recover()

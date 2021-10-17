@@ -3,7 +3,7 @@
 
 /obj/item/stalker/loot/dog_tail
 	name = "dog tail"
-	desc = "The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab experimentation."
+	desc = "The resistance of the mutant dog's skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab experimentation."
 	icon_state = "pes"
 
 /obj/item/stalker/loot/flesh_eye
@@ -28,7 +28,7 @@
 
 /obj/item/stalker/loot/bloodsucker
 	name = "bloodsucker tendrils"
-	desc = "Bloodsucker's tentacles contain a special gland: it secretes an enzyme that dissolves the victim's skin and at the same time prevents blood from clotting. If scientists can determine the structure of the enzyme, it will help make a breakthrough in medicine. "
+	desc = "Bloodsucker's tentacles contain a special gland used for secreting an enzyme that dissolves the victim's skin and at the same time prevents blood from clotting. If scientists can determine the structure of the enzyme, it will help make a breakthrough in medicine. "
 	icon_state = "bloodsucker"
 
 

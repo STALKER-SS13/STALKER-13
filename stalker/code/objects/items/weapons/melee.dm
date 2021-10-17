@@ -14,7 +14,7 @@
 
 /obj/item/kitchen/knife/bayonet
 	name = "bayonet"
-	desc = "Dangerous, but bad at butchering mutants bayonet."
+	desc = "Dangerous, but bad at butchering mutants."
 	icon = 'stalker/icons/weapons.dmi'
 	icon_state = "bayonet"
 	slot_flags = ITEM_SLOT_BELT
@@ -28,7 +28,7 @@
 
 /obj/item/kitchen/knife/throwing
 	name = "throwing knife"
-	desc = "A small knife which is best thrown rather than applied manually."
+	desc = "A small knife which is best thrown rather than used in close combat."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "throwingknife"
 	slot_flags = ITEM_SLOT_BELT
@@ -43,7 +43,7 @@
 
 /obj/item/melee/tireiron
 	name = "tire iron"
-	desc = "A rusty metal tire iron which can be used to beat mutants and stalkers. The end is bent an unusable."
+	desc = "A rusty metal tire iron which can be used to beat mutants and stalkers. The end is bent and unusable."
 	icon_state = "tireiron"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT

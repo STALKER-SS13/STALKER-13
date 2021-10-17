@@ -32,6 +32,7 @@ SUBSYSTEM_DEF(job)
 	var/list/latejoin_chief_ecologist = list()
 	var/list/latejoin_clearsky = list()
 	var/list/latejoin_clearsky_leader = list()
+	var/list/latejoin_renegade = list()
 
 	var/overflow_role = "Assistant"
 
@@ -627,6 +628,8 @@ SUBSYSTEM_DEF(job)
 				SendToAtom(M, safepick(latejoin_clearsky), buckle)
 			if ("Clear Sky Leader")
 				SendToAtom(M, safepick(latejoin_clearsky_leader), buckle)
+			if ("Renegade")
+				SendToAtom(M, safepick(latejoin_renegade), buckle)
 			else
 				SendToAtom(M, pick(latejoin_trackers), buckle)
 	else

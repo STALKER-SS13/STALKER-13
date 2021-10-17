@@ -4,25 +4,27 @@
 	pass_flags = LETPASSTHROW
 
 /obj/structure/table/stalker/wood
-	eng_desc = "Simple table."
+	eng_desc = "A simple table."
 	icon = 'stalker/icons/structure/stol_stalker.dmi'
 	icon_state = "stol"
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table/stalker/wood)
 
 /obj/structure/table/stalker/wood/bar
-	eng_desc = "Homemade bar"
+	eng_desc = "A homemade bar counter."
 	icon = 'stalker/icons/structure/stol_stalker_bar.dmi'
 	icon_state = "bar"
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table/stalker/wood/bar)
 
 /obj/structure/table/stalker/wood/bar100rentgen
-	eng_desc = "Quality bar"
+	eng_desc = "A quality bar counter."
 	icon = 'stalker/icons/structure/bartables.dmi'
 	icon_state = "table"
+	climbable = FALSE
 	smooth = SMOOTH_FALSE
 
+/*
 /obj/structure/table/stalker/wood/bar100rentgen/Crossed(atom/movable/AM)
 	if(isliving(AM))
 		// No climbing on the bar please
@@ -30,13 +32,14 @@
 		//var/throwtarget = get_edge_target_turf(src, 4)
 		M.Paralyze(100)
 		//M.throw_at(throwtarget, 1, 1,src)
-		to_chat(M, "<span class='notice'>It's hard to climb on this table!</span>")
+		to_chat(M, "<span class='notice'>You shouldn't climb this dummy!</span>")
 	else
 		. = ..()
+*/
 
 /obj/structure/stalker/okno
 	name = "Window"
-	eng_desc = "Old wooden window."
+	eng_desc = "An old wooden window."
 	icon = 'stalker/icons/decor2.dmi'
 	pass_flags = LETPASSTHROW
 	var/proj_pass_rate = 40

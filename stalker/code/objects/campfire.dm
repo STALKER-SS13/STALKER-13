@@ -7,7 +7,7 @@
 	anchored = 1
 	var/firecolor = "#FFAA33"
 	var/sound_playing = 0
-	var/cooldown = 5 					//Кулдаун в секундах
+	var/cooldown = 5 					//In seconds
 	var/incooldown = 0
 	var/active = 0
 	var/list/mob/living/carbon/campers = list()
@@ -47,7 +47,7 @@ obj/machinery/campfire/barrel
 	if(!active || do_after_check)
 		return
 
-	user.visible_message("<span class='notice'>[user] started extinguishing a fire...</span>", "<span class='notice'>You started extinguishing a fire...</span>")
+	user.visible_message("<span class='notice'>[user] started extinguishing the fire...</span>", "<span class='notice'>You started extinguishing the fire...</span>")
 	do_after_check = 1
 
 	if(!do_after(user, 10, 1, src))
@@ -56,7 +56,7 @@ obj/machinery/campfire/barrel
 
 	do_after_check = 0
 
-	user.visible_message("<span class='green'>[user] extinguished a fire.</span>", "<span class='green'>You extinguished a fire.</span>")
+	user.visible_message("<span class='green'>[user] extinguished the fire.</span>", "<span class='green'>You extinguished the fire.</span>")
 	desc = initial(desc)
 	eng_desc = initial(eng_desc)
 

@@ -131,7 +131,7 @@ GLOBAL_LIST_INIT(admin_verbs_debug, world.AVerbsDebug())
 GLOBAL_PROTECT(admin_verbs_debug)
 /world/proc/AVerbsDebug()
 	return list(
-	/client/proc/SetTimeOfDay,
+	///client/proc/SetTimeOfDay,
 	/client/proc/SetAverageCooldownBlowout,
 	/client/proc/SetRespawnRate,
 	/client/proc/StopBlowout,
@@ -875,7 +875,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 	log_admin("[key_name(usr)] changed [sk_name] faction from [sk_faction_s] to [newfaction].")
 	message_admins("[key_name_admin(usr)] changed [sk_name] faction from [sk_faction_s] to [newfaction].")
-
+/*
 /client/proc/SetTimeOfDay()
 	set name = "Set Time of Day"
 	set category = "Stalker"
@@ -900,7 +900,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	to_chat(usr, "<span class='interface'>Time of day successfully updated.</span>")
 	log_admin("[key_name(usr)] changed time of day to [daytime].")
 	message_admins("[key_name_admin(usr)] changed time of day to [daytime].")
-
+*/
 /client/proc/SetAverageCooldownBlowout()
 	set name = "Set Blowout Cooldown"
 	set category = "Stalker"
@@ -935,6 +935,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 /client/proc/StopBlowout()
 	set name = "Stop Blowout"
 	set category = "Stalker"
+	set background = 1
 
 	if(!SSblowout.isblowout)
 		to_chat(src, "<span class='warning'>There is no blowout going on.</span>")

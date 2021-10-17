@@ -1,0 +1,4 @@
+valtosss = Trader
+valtosss = Monolith
+valtosss = Monolith Hegumen
+valtosss = Trap

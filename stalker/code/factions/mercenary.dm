@@ -23,11 +23,7 @@
 
 /datum/outfit/job/mercenary/pre_equip(mob/living/carbon/human/H)
 	..()
-	uniform = pick(
-		/obj/item/clothing/under/color/black,
-		/obj/item/clothing/under/color/grey/glorf,
-		/obj/item/clothing/under/color/darkblue,
-		/obj/item/clothing/under/color/switer)
+	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
 	mask = /obj/item/clothing/mask/gas/stalker/mercenary
 	belt = pick(
@@ -41,7 +37,6 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-//	suit_store = pick(/obj/item/gun/ballistic/automatic/mp5, /obj/item/gun/ballistic/shotgun/chaser)
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	r_pocket = pick(
 	/obj/item/restraints/handcuffs,
@@ -58,7 +53,6 @@
 
 	head = null
 	mask = /obj/item/clothing/mask/gas/stalker/mercenary
-	uniform = /obj/item/clothing/under/color/switer
 	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
 	ears = null
 	belt = /obj/item/kitchen/knife/tourist
@@ -98,11 +92,7 @@
 
 /datum/outfit/job/mercenarycommander/pre_equip(mob/living/carbon/human/H)
 	..()
-	uniform = pick(
-		/obj/item/clothing/under/color/black,
-		/obj/item/clothing/under/color/grey/glorf,
-		/obj/item/clothing/under/color/darkblue,
-		/obj/item/clothing/under/color/switer)
+	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
 	mask = /obj/item/clothing/mask/gas/stalker/mercenary
 	belt = pick(
@@ -116,7 +106,6 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-//	suit_store = pick(/obj/item/gun/ballistic/automatic/mp5, /obj/item/gun/ballistic/shotgun/chaser)
 	l_hand = pick(
 		/obj/item/weapon/kitchen/knife/hunting,
 		/obj/item/melee/classic_baton/telescopic)

@@ -138,8 +138,8 @@ proc/set_time_of_day(var/step)
 		set_time_of_day(current_step + 1)
 */
 /datum/controller/subsystem/sunlight/proc/update_color()
-	var/blend_amount = (world.time - step_started) / current_step_datum.duration
-	current_color = BlendRGB(current_step_datum.color, next_step_datum.color, blend_amount)
+//	var/blend_amount = (world.time - step_started) / current_step_datum.duration
+//	current_color = BlendRGB(current_step_datum.color, next_step_datum.color, blend_amount)
 	//to_chat(world, num2text(sunlighting_planes.len))
 	for(var/obj/screen/plane_master/sunlighting/P in sunlighting_planes)
 		P.color = current_color

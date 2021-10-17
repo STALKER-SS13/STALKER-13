@@ -271,6 +271,29 @@
 /obj/item/gun/ballistic/automatic
 	modifications = list("barrel_automatic" = 0, "frame_automatic" = 0, "grip_automatic" = 0, "compensator_automatic" = 0)
 
+/obj/item/gun/ballistic/automatic/mac10  // MAC10
+	name = "MAC10 Ingram"
+	desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
+	eng_desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
+	icon_state = "mac10"
+	item_state = "mac10"
+	fire_sound = 'stalker/sound/weapons/mac10_shoot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 0.8
+	slot_flags = ITEM_SLOT_BELT
+	durability = 80
+	w_class = 3
+	spread = 25
+	recoil = 0.8
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
 /obj/item/gun/ballistic/automatic/ak74  // AK-74
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable."
@@ -701,7 +724,7 @@
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/val_open.ogg'
 
-/obj/item/gun/ballistic/automatic/svd  // SVD
+/obj/item/gun/ballistic/semiauto/svd  // SVD
 	name = "SVD"
 	desc = "Snaiperskaya Vintovka Dragunova, abbreviated as the SVD is a high-caiber, anti-personell sniper rifle developed and deployed originally in 1963. Comes with a high-grade inbuilt scope for long-range scopeouts, and unlike its smaller-caliber cousin (the VSS), is incapable of burst fire due to the aforementioned higher caliber."
 	eng_desc = "Snaiperskaya Vintovka Dragunova, abbreviated as the SVD is a high-caiber, anti-personell sniper rifle developed and deployed originally in 1963. Comes with a high-grade inbuilt scope for long-range scopeouts, and unlike its smaller-caliber cousin (the VSS), is incapable of burst fire due to the aforementioned higher caliber."
@@ -723,7 +746,7 @@
 	recoil = 0.5
 	damagelose = 0
 	can_scope = 0
-	burst_size = 1
+    fire_delay = 35
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -757,7 +780,7 @@
 
 ///////////////////////////// Прочие винтовки //////////////////////////////////////////
 
-/obj/item/gun/ballistic/automatic/gaussrifle  // Gauss Rifle
+/obj/item/gun/ballistic/semiauto/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"
 	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
 	eng_desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
@@ -770,7 +793,7 @@
 	fire_sound = 'stalker/sound/weapons/gauss_shoot.ogg'
 	can_suppress = 0
 	can_unsuppress = 0
-	fire_delay = 200
+	fire_delay = 80
 	pin = /obj/item/firing_pin
 	durability = 120
 	w_class = 4
@@ -787,25 +810,3 @@
 	load_sound = 'stalker/sound/weapons/gauss_reload.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
 
-/obj/item/gun/ballistic/automatic/mac10  // MAC10
-	name = "MAC10 Ingram"
-	desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
-	eng_desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
-	icon_state = "mac10"
-	item_state = "mac10"
-	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
-	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
-	can_suppress = 1
-	burst_size = 4
-	fire_delay = 0.8
-	slot_flags = ITEM_SLOT_BELT
-	durability = 80
-	w_class = 3
-	spread = 25
-	recoil = 0.8
-	damagelose = 0.25
-	can_scope = 0
-	automatic = 1
-	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
-	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
-	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'

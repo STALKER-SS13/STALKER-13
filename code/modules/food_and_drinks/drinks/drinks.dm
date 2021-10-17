@@ -251,9 +251,9 @@
 	custom_price = 38
 
 /obj/item/reagent_containers/food/drinks/beer
-	name = "space beer"
-	desc = "Beer. In space."
-	icon_state = "beer"
+	name = "ukranian beer"
+	desc = "A standard pale lager, 4-5% alcohol. Generally low on flavour, but for the most part also free of off tastes and quite well made."
+	icon_state = "ukrbeer"
 	list_reagents = list("beer" = 30)
 	foodtype = GRAIN | ALCOHOL
 

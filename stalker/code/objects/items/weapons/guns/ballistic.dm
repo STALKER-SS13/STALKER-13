@@ -737,6 +737,7 @@
 	zoomable = 1
 	zoom_amt = 9
 	zoom_out_amt = 11
+	fire_delay = 35
 	durability = 180
 	slot_flags = ITEM_SLOT_BACK
 	force = 15
@@ -746,7 +747,6 @@
 	recoil = 0.5
 	damagelose = 0
 	can_scope = 0
-    fire_delay = 35
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'

@@ -638,6 +638,12 @@
 	icon_state = "monolith_bar"
 	safezone = 1
 
+/area/stalker/buildings/ecologist
+	name = "ecologist"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "ecologist"
+	safezone = 1
+
 //bar
 
 

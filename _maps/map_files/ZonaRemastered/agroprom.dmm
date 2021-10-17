@@ -585,7 +585,7 @@
 "ue" = (/obj/structure/stalker/trubas{dir = 10},/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/agroprom/tunnel)
 "ug" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 166; teleport_y = 15; teleport_z = 5},/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/agroprom/tunnel)
 "uu" = (/obj/structure/stalker/cacheable/bochka/red,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
-"uO" = (/obj/item/gun/ballistic/automatic/gaussrifle,/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/agroprom/tunnel)
+"uO" = (/obj/item/gun/ballistic/semiauto/gaussrifle,/turf/open/stalker/floor/agroprom/beton,/area/stalker/blowout/agroprom/tunnel)
 "uR" = (/obj/effect/step_trigger/teleporter{teleport_x = 57; teleport_y = 69; teleport_z = 5},/turf/open/floor/plasteel/stairs/stalker,/area/stalker/blowout/agroprom/buildings)
 "vd" = (/obj/structure/barricade/stalker/box,/turf/open/stalker/floor/road{icon_state = "road1"; tag = "icon-road1"},/area/stalker/blowout/outdoor)
 "vi" = (/obj/structure/stalker/car/moskvich/south,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)

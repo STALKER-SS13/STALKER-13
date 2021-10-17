@@ -56,9 +56,9 @@
 	icon = 'stalker/icons/areas_buildings.dmi'
 	icon_state = "sidor"
 	requires_power = 1
-	ambient_music = list()
-	ambient_background = list('stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg')//list('stalker/sound/ambience/sidor_music.ogg','stalker/sound/ambience/sidor_music2.ogg')
-	ambient_background_cooldown = list(700, 700, 700, 700)
+	//ambient_music = list()
+	//ambient_background = list('stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg')//list('stalker/sound/ambience/sidor_music.ogg','stalker/sound/ambience/sidor_music2.ogg')
+	//ambient_background_cooldown = list(700, 700, 700, 700)
 	environment = 5
 	safezone = 1
 
@@ -660,5 +660,3 @@
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit_bar"
 	safezone = 1
-
-//kordon + svalka

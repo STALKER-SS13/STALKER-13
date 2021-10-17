@@ -21,8 +21,10 @@
 	eng_desc = "A quality bar counter."
 	icon = 'stalker/icons/structure/bartables.dmi'
 	icon_state = "table"
+	climbable = FALSE
 	smooth = SMOOTH_FALSE
 
+/*
 /obj/structure/table/stalker/wood/bar100rentgen/Crossed(atom/movable/AM)
 	if(isliving(AM))
 		// No climbing on the bar please
@@ -30,9 +32,10 @@
 		//var/throwtarget = get_edge_target_turf(src, 4)
 		M.Paralyze(100)
 		//M.throw_at(throwtarget, 1, 1,src)
-		to_chat(M, "<span class='notice'>It's hard to climb on this table!</span>")
+		to_chat(M, "<span class='notice'>You shouldn't climb this dummy!</span>")
 	else
 		. = ..()
+*/
 
 /obj/structure/stalker/okno
 	name = "Window"

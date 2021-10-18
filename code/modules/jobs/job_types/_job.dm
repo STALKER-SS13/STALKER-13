@@ -29,6 +29,15 @@
 	//How many players have this job
 	var/current_positions = 0
 
+	//short description of the job
+	var/description = ""
+
+	//what this job is forbidden from doing
+	var/forbids = ""
+
+	//what this job enforces
+	var/enforces = ""
+
 	//Supervisors, who this person answers to directly
 	var/supervisors = ""
 
@@ -68,7 +77,7 @@
 
 	var/faction_s = "Loners"
 
-	var/real_rank = "Private"
+	var/real_rank = "Rookie"
 
 //Only override this proc
 //H is usually a human unless an /equip override transformed it

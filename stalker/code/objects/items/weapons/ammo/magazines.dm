@@ -184,6 +184,22 @@
 	name = "gauss rifle battery"
 	icon_state = "gaussbattery"
 	ammo_type = /obj/item/ammo_casing/tungsten_slug
-	caliber = "2mm ferromagnetic tungsten slug"
+	caliber = "2mm"
 	max_ammo = 10
 	multiple_sprites = 1
+
+/obj/item/ammo_box/magazine/stalker/mac10
+	name = "MAC10 SMG magazine (9x19mm)"
+	icon_state = "mac10"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 36
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/svd
+	name = "SVD magazine (7.62x54)"
+	icon_state = "svd"
+	ammo_type = /obj/item/ammo_casing/c762x54
+	caliber = "7.62x54mm"
+	max_ammo = 10
+	multiple_sprites = 2

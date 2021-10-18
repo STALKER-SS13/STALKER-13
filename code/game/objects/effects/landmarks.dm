@@ -285,30 +285,46 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 			SSjob.latejoin_bandit += loc
 		if ("JoinLateBandit Barman")
 			SSjob.latejoin_bandit_barman += loc
-		if ("JoinLatePahan")
-			SSjob.latejoin_bandit_pahan += loc
-		if ("JoinLateArmy" || "JoinLateEliteAgro" || "JoinLatePetrovich")
+		if ("JoinLateMilitary Soldier")
 			SSjob.latejoin_army += loc
+		if ("JoinLateMilitary Spetsnaz")
+			SSjob.latejoin_army_spetsnaz+= loc
+		if ("JoinLateMilitary Commander")
+			SSjob.latejoin_militarycommander+= loc
 		if ("JoinLateBarman")
 			SSjob.latejoin_barman += loc
 		if ("JoinLateBarman2")
 			SSjob.latejoin_barman2 += loc
+		if ("JoinLateTrader")
+			SSjob.latejoin_trader += loc
 		if ("JoinLateDuty")
 			SSjob.latejoin_duty += loc
 		if ("JoinLateDuty Lieutenant")
-			SSjob.latejoin_duty_lt += loc
-		if ("JoinLateFreedom" || "JoinLateFreedom Lieutenant")
+			SSjob.latejoin_duty_lieutenant += loc
+		if ("JoinLateFreedom Soldier")
 			SSjob.latejoin_freedom += loc
+		if ("JoinLateFreedom Lieutenant")
+			SSjob.latejoin_freedom_lieutenant += loc
 		if ("JoinLateMercenary")
 			SSjob.latejoin_mercenary += loc
-		if ("JoinLateMercenary Sql")
-			SSjob.latejoin_mercenary_sql += loc
+		if ("JoinLateMercenary Commander")
+			SSjob.latejoin_mercenarycommander += loc
 		if ("JoinLateTrader")
 			SSjob.latejoin_trader += loc
 		if ("JoinLateOld Stalker")
 			SSjob.latejoin_stalker += loc
 		if ("JoinLateMonolith" || "JoinLateMonolith Hegumen")
 			SSjob.latejoin_monolith += loc
+		if ("JoinLateEcologist")
+			SSjob.latejoin_ecologist += loc
+		if ("JoinLateChief Ecologist")
+			SSjob.latejoin_chief_ecologist += loc
+		if ("JoinLateClear Sky Soldier")
+			SSjob.latejoin_clearsky += loc
+		if ("JoinLateClear Sky Leader")
+			SSjob.latejoin_clearsky_leader += loc
+		if ("JoinLateRenegade")
+			SSjob.latejoin_renegade += loc
 		else
 			SSjob.latejoin_trackers += loc
 	return INITIALIZE_HINT_QDEL

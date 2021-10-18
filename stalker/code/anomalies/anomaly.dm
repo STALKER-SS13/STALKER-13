@@ -58,30 +58,34 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 		var/turf/T = get_turf(src)
 		var/obj/item/artifact/O = new lootspawn(T)
 		O.invisibility = 100
-		if (z == 1)
-			if(O.level_s > 4)
-				SpawnArtifact()
-				return
-		if (z == 2)
-			switch(y)
-				if(766 to 1000)
-					if(O.level_s > 4)
-						SpawnArtifact()
-						return
 
-				if(511 to 765)
-					if(O.level_s > 3)
-						SpawnArtifact()
-						return
+		switch(z)
 
-				if(256 to 510)
-					if(O.level_s > 2)
-						SpawnArtifact()
-						return
-				if(0 to 255)
-					if(O.level_s > 2)
-						SpawnArtifact()
-						return
+			if(6)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(5)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(4)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(3)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
+			if(2)
+				if(O.level_s > 4)
+					SpawnArtifact()
+					return
+
 		RandomMove(O)
 		GLOB.spawned_artifacts += O
 
@@ -239,7 +243,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 				L.apply_damage(40, BURN, null, 0)
 			else
 				L.apply_damage(20, BURN, null, 0)
-				//L.fire_act()
+				L.fire_act()
 	return
 
 /obj/anomaly/tramplin/DealDamage(var/mob/living/L)
@@ -262,7 +266,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 
 
 /obj/anomaly/electro
-	name = "anomaly"
+	name = "electro"
 	damage_amount = 40
 	cooldown = 2
 	sound = 'stalker/sound/anomalies/electra_blast1.ogg'
@@ -275,10 +279,10 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	active_invisibility = 0
 	inactive_invisibility = 0
 	loot = list(/obj/nothing = 90,
-				/obj/item/artifact/flash = 5,
-				/obj/item/artifact/moonlight = 3.5,
-				/obj/item/artifact/battery = 1.5,
-				/obj/item/artifact/pustishka = 0.5
+				/obj/item/artifact/flash = 2.5,
+				/obj/item/artifact/moonlight = 1.75,
+				/obj/item/artifact/battery = 0.75,
+				/obj/item/artifact/pustishka = 0.25
 				)
 
 /obj/anomaly/electro/Initialize()
@@ -289,23 +293,23 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 		SSobj.processing.Remove(src)
 
 /obj/anomaly/karusel
-	name = "anomaly"
+	name = "vortex"
 	damage_amount = 30
 	cooldown = 2
 	delay = 1
 	sound = 'stalker/sound/anomalies/gravi_blowout1.ogg'
 	idle_luminosity = 0
 	activated_luminosity = 0
-	inactive_icon_state = "tramplin0"
-	active_icon_state = "tramplin1"
+	inactive_icon_state = "karusel0"
+	active_icon_state = "karusel1"
 	damage_type = DMG_TYPE_GIB
 	active_invisibility = 0
-	inactive_invisibility = 101
-	loot = list(/obj/nothing = 80,
-				/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 5,
-				/obj/item/artifact/nightstar = 2,
-				/obj/item/artifact/soul = 1
+	inactive_invisibility = 0
+	loot = list(/obj/nothing = 76,
+				/obj/item/artifact/meduza = 10,
+				/obj/item/artifact/stoneflower = 8,
+				/obj/item/artifact/nightstar = 4,
+				/obj/item/artifact/soul = 2
 				)
 
 /obj/anomaly/karusel/Initialize()
@@ -324,7 +328,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 			//	src.trapped.Add(A)
 
 /obj/anomaly/tramplin
-	name = "anomaly"
+	name = "springboard"
 	damage_amount = 15
 	cooldown = 2
 	delay = 0.5
@@ -335,15 +339,16 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	active_icon_state = "tramplin1"
 	damage_type = DMG_TYPE_GIB
 	active_invisibility = 0
-	inactive_invisibility = 101
+	inactive_invisibility = 0
 	loot = list(/obj/nothing = 80,
 				/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 6,
-				/obj/item/artifact/nightstar = 2
+				/obj/item/artifact/stoneflower = 5.5,
+				/obj/item/artifact/nightstar = 2,
+				/obj/item/artifact/soul = 0.5
 				)
 
 /obj/anomaly/jarka
-	name = "anomaly"
+	name = "burner"
 	cooldown = 2
 	sound = 'stalker/sound/anomalies/zharka1.ogg'
 	luminosity = 3
@@ -430,7 +435,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 		stage = 0
 */ //NEED REWORK
 /obj/anomaly/holodec
-	name = "anomaly"
+	name = "fruit punch"
 	cooldown = 2
 	luminosity = 3
 	idle_luminosity = 3
@@ -545,7 +550,7 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 		qdel(src)
 
 /obj/anomaly/puh
-	name = "anomaly"
+	name = "burnt fuzz"
 	cooldown = 2
 	sound = 'stalker/sound/anomalies/buzz_hit.ogg'
 	damage_type = DMG_TYPE_BIO
@@ -592,8 +597,8 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	if(inactive_icon_state == "puh2")
 		active_icon_state = "puh2"
 
-/obj/rad 	//Не наносит урона
-	name = "Anomaly"
+/obj/rad 	//Only does rad damage
+	name = "radiation"
 	icon = 'stalker/icons/anomalies.dmi'
 	icon_state = "rad_low"
 	var/damage_amount = 0 				//How much damage

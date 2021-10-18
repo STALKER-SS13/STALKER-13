@@ -238,7 +238,7 @@ GLOBAL_VAR(restart_counter)
 /world/proc/update_status()
 	var/s = ""
 
-	s += "<center><a href=\"https://discord.gg/5aXdgXv\"><big><b>S.T.A.L.K.E.R.: Remastered</b></big><br>" //[config.server_name]
+	s += "<center><a href=\"https://discord.gg/wrn6ND4EGw\"><big><b>S.T.A.L.K.E.R.: 13</b></big><br>" //[config.server_name]
 	s += "<img src=\"https://frosty.space/styles/stalbanhub.png\"></a></center>"
 	s += "Map: <b>Zona (255x1000)</b><br>"
 	if(GLOB.master_mode)

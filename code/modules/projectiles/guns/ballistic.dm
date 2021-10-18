@@ -58,7 +58,7 @@
 /obj/item/gun/ballistic/verb/deattach()
 	set src in usr.contents
 	set category = "Object"
-	set name = "Снять Аддон"
+	set name = "Remove Addon"
 
 	if(usr.stat || usr.restrained() || !Adjacent(usr))
 		return
@@ -66,7 +66,7 @@
 	if(usr.get_active_held_item() == null || usr.get_inactive_held_item() == null) // всё заебок
 		switch(addons.len)
 			if(2 to INFINITY)
-				var/selection = input("Выберите то, что хотите снять.", "Gun", null, null) as null|anything in addons
+				var/selection = input("Choose what you want to shoot.", "Gun", null, null) as null|anything in addons
 				deattach_attachment(selection)
 
 			if(1)
@@ -75,10 +75,10 @@
 					deattach_attachment(A)
 			if(0)
 				//кек
-				to_chat(usr, "<span class='notice'>Здесь ничего не установлено.</span>")
+				to_chat(usr, "<span class='notice'>Nothing installed here.</span>")
 				return
 	else
-		to_chat(usr, "<span class='notice'>Освободите руку.</span>")
+		to_chat(usr, "<span class='notice'>Free your hand.</span>")
 	update_icon()
 	return
 
@@ -88,7 +88,7 @@
 		if(usr.get_held_items_for_side("l") != src && usr.get_held_items_for_side("r") != src)
 			..()
 			return
-		to_chat(usr, "<span class='notice'>Вы сняли [A] с [src].</span>")
+		to_chat(usr, "<span class='notice'>You took off [A] with [src].</span>")
 		playsound (src.loc, 'stalker/sound/weapons/detach_addon.ogg', 50, 1, 0)
 		usr.put_in_hands(S)
 		fire_sound = S.oldsound
@@ -101,7 +101,7 @@
 		if(usr.get_held_items_for_side("l") != src && usr.get_held_items_for_side("r") != src)
 			..()
 			return
-		to_chat(usr, "<span class='notice'>Вы сняли [A] с [src].</span>")
+		to_chat(usr, "<span class='notice'>You've removed [A] the [src].</span>")
 		playsound (src.loc, 'stalker/sound/weapons/detach_addon.ogg', 50, 1, 0)
 		azoom.Remove(usr)
 		usr.put_in_hands(S)
@@ -303,7 +303,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 					if(!user.transferItemToLoc(A, src))
 						to_chat(user, "<span class='warning'>\The [S] is stuck to your hand, you cannot put it in the [src.name]!</span>")
 						return
-					to_chat(user, "<span class='notice'>Вы прикрутили [S] на [src].</span>")
+					to_chat(user, "<span class='notice'>You screwed [S] onto[src].</span>")
 					playsound (src.loc, 'stalker/sound/weapons/attach_addon.ogg', 50, 1, 0)
 					suppressed = A
 					S.oldsound = fire_sound
@@ -315,9 +315,9 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 					addons += S
 					return
 				else
-					to_chat(user, "<span class='warning'>На [src] уже установлен глушитель!</span>")
+					to_chat(user, "<span class='warning'>Silencer already installed on [src]!</span>")
 					return
-		to_chat(user, "<span class='warning'>Вы не знаете как установить [S] на [src]!</span>")
+		to_chat(user, "<span class='warning'>You don't know how to set [S] to [src]!</span>")
 		return
 
 	if(istype(A, /obj/item/attachment/scope))
@@ -329,7 +329,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 				if(!user.transferItemToLoc(A, src))
 					to_chat(user, "<span class='warning'>\The [S] is stuck to your hand, you cannot put it in the [src.name]!</span>")
 					return
-				to_chat(user, "<span class='notice'>Вы прикрутили [S] на [src].</span>")
+				to_chat(user, "<span class='notice'>You screwed [S] onto [src].</span>")
 				playsound (src.loc, 'stalker/sound/weapons/attach_addon.ogg', 50, 1, 0)
 				zoomable = 1
 				A.loc = src
@@ -341,10 +341,10 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 				azoom.Grant(user)
 				return
 			else
-				to_chat(user, "<span class='warning'>На [src] уже установлен прицел!</span>")
+				to_chat(user, "<span class='warning'>[src] has a crosshair already installed!</span>")
 				return
 		else
-			to_chat(user, "<span class='warning'>Вы не знаете как установить [S] на [src]!</span>")
+			to_chat(user, "<span class='warning'>You don't know how to set [S] to [src]!</span>")
 			return
 
 	return FALSE
@@ -409,7 +409,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 /obj/item/gun/ballistic/attack_self(mob/living/user)
 	if(jam)
 		jam = 0
-		user << "<span class='notice'>Оружие снова в норме.</span>"
+		user << "<span class='notice'>Guns are back to normal.</span>"
 	if(!internal_magazine && magazine)
 		if(!magazine.ammo_count())
 			eject_magazine(user)

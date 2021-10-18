@@ -42,3 +42,52 @@
 	eng_desc = "Usually you see this tracksuit being worn by gopniks."
 	icon_state = "tracksuit"
 	item_state = "tracksuit"
+
+/obj/item/clothing/under/color/switer/tourist/sweater
+	name = "jeans and sweater"
+	desc = "Some sort of civillian apparel. A thin cream sweater with a pair of worn jeans. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: thin cream sweater with a pair of worn jeans. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist1"
+	item_state = "tourist1"
+
+/obj/item/clothing/under/color/switer/tourist/jacket_green
+	name = "green jacket"
+	desc = "Some sort of civillian apparel. A fairly thick green jacket worn over a thin grey shirt. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: fairly thick green jacket worn over a thin grey shirt. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist2"
+	item_state = "tourist2"
+
+/obj/item/clothing/under/color/switer/tourist/jacket_brown
+	name = "brown jacket"
+	desc = "Some sort of civillian apparel. A fairly thick brown jacket worn over a thin blue shirt. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: fairly thick brown jacket worn over a thin blue shirt. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist3"
+	item_state = "tourist3"
+
+/obj/item/clothing/under/color/switer/tourist/suspenders
+	name = "suspenders"
+	desc = "Some sort of civillian apparel. Some pants with suspenders with a pale white shirt. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: pants with suspenders with a pale white shirt. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist4"
+	item_state = "tourist4"
+
+/obj/item/clothing/under/color/switer/tourist/mall_cop
+	name = "shirt with a tie"
+	desc = "Some sort of civillian apparel. A worn shirt with a tie and a pair of slacks. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: worn shirt with a tie and a pair of slacks. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist5"
+	item_state = "tourist5"
+
+/obj/item/clothing/under/color/switer/tourist/gorka
+	name = "gorka suit"
+	desc = "Some sort of civillian apparel. A gorka suit. Doesn't seem that useful for the Zone conditions."
+	eng_desc = "Some sort of civillian apparel: gorka suit. Doesn't seem that useful for the Zone conditions."
+	icon_state = "tourist6"
+	item_state = "tourist6"
+
+/obj/item/clothing/under/color/switer/afghanka
+	name = "afghanka uniform"
+	desc = "The Afghanka is a Russian military slang term for a field uniform system developed and issued by the Soviet Army in the early 1980s."
+	eng_desc = "The Afghanka is a Russian military slang term for a field uniform system developed and issued by the Soviet Army in the early 1980s."
+	icon_state = "afghanka"
+	item_state = "afghanka"

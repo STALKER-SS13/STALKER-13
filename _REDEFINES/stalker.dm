@@ -3,6 +3,7 @@
 
 ///////////////JOB
 #define UNIFORMPICK (pick(/obj/item/clothing/under/color/switer, /obj/item/clothing/under/color/switer/dark, /obj/item/clothing/under/color/switer/lolg, /obj/item/clothing/under/color/switer/tracksuit))
+#define SHOESPICK_TOURIST (pick(/obj/item/clothing/shoes/sneakers/black, /obj/item/clothing/shoes/sneakers/brown, /obj/item/clothing/shoes/sandal, /obj/item/clothing/shoes/laceup))
 
 ///////////////РЕЙТИНГ
 #define ZONE_LEGEND							10000

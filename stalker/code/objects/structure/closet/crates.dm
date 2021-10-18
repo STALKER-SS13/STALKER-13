@@ -9,7 +9,7 @@
 
 /obj/structure/closet/crate/stalker/blue/stash
 	name = "stash"
-	eng_desc = "In such boxes usually hide khabar. The castle is rotten."
+	eng_desc = "Stalkers commonly use these crates to hide their loot. The lock is rusted away."
 	var/lootcount = 1		//how many items will be spawned
 	var/lootdoubles = 1		//if the same item can be spawned twice
 	var/list/loot = list()

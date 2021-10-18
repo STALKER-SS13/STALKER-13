@@ -1,7 +1,7 @@
 /obj/item/grenade/preprime(mob/user, delayoverride, msg = TRUE, volume = 60)
 	var/area/B = get_area(user.loc)
 	if(B.safezone)
-		to_chat(user, "<span class='warning'>You are trying to rip the pin off the grenade, but you stick your finger in the wrong place and rip your point off! </span> ")
+		to_chat(user, "<span class='warning'>You try to rip the pin off the grenade, but it's giving you some resistance. </span> ")
 		return 0
 	..()
 

@@ -401,7 +401,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/molotov
 	name = "molotov cocktail"
 	desc = "A throwing weapon used to ignite things, typically filled with an accelerant. Recommended highly by rioters and revolutionaries. Light and toss."
-	icon_state = "vodkabottle"
+	icon_state = "molotovbottle"
 	list_reagents = list()
 	var/list/accelerants = list(	/datum/reagent/consumable/ethanol, /datum/reagent/fuel, /datum/reagent/clf3, /datum/reagent/phlogiston,
 							/datum/reagent/napalm, /datum/reagent/hellwater, /datum/reagent/toxin/plasma, /datum/reagent/toxin/spore_burning)
@@ -425,10 +425,17 @@
 			if(istype(R,A))
 				firestarter = 1
 				break
+	if(iscarbon(hit_atom))
+		var/mob/living/carbon/M = hit_atom
+		M.adjust_fire_stacks(6)
+		M.IgniteMob()
+		damtype = BURN
+		throwforce = pick(30,40,50)
 	if(firestarter && active)
 		hit_atom.fire_act()
 		new /obj/effect/hotspot(get_turf(hit_atom))
 	..()
+
 
 /obj/item/reagent_containers/food/drinks/bottle/molotov/attackby(obj/item/I, mob/user, params)
 	if(I.is_hot() && !active)

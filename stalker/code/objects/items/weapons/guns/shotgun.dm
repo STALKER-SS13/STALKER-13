@@ -3,7 +3,7 @@
 
 /obj/item/gun/ballistic/shotgun/bm16  // Горизонталка
 	name = "BM-16"
-	eng_desc = "The original Bm16 rifle. Heavy and dangerous two barrel rifle, and its effective in high range too."
+	eng_desc = "The original BM16 rifle. Heavy and dangerous two barrel rifle, and it's effective in high range too."
 	icon_state = "bm16"
 	item_state = "bm16"
 	w_class = 4
@@ -13,7 +13,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/stalker/bm16
 	recoil = 1
 	durability = 150
-	sawn_desc = "Значительно компактней и легче новой двустволки, но эффективен только в ближнем бою. Один из самых распространённых видов оружия у новичков."
+	sawn_desc = "Much more compact and lighter than the new double-barreled gun, but effective only in close combat."
 	randomspread = 0
 	spread = 12
 	damagelose = 0.3
@@ -150,7 +150,7 @@
 
 ///////////////////////////// Винтовки //////////////////////////////////////////
 
-/obj/item/gun/ballistic/shotgun/boltaction/enfield
+/obj/item/gun/ballistic/rifle/boltaction/enfield
 	name = "Lee Enfield"
 	eng_desc = ""
 	icon_state = "enfield"
@@ -160,7 +160,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enfield
 	recoil = 1
 	w_class = 4
-	randomspread = 0
+	randomspread = 1
 	spread = 3
 	force = 15
 	damagelose = 0.1

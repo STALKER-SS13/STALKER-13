@@ -31,6 +31,7 @@
 
 /obj/item/storage/backpack/stalker/civilian
 	name = "civilian backpack"
+	desc = "A regular camping backpack popular among those who just arrived in the Zone."
 	icon_state = "backpack-civilian"
 	item_state = "backpack-civilian"
 
@@ -42,6 +43,7 @@
 
 /obj/item/storage/backpack/stalker/tourist
 	name = "tourist backpack"
+	desc = "A hobbyist hiking backpack with enough space to hold a few days of supplies."
 	icon_state = "backpack-tourist"
 	item_state = "backpack-tourist"
 
@@ -53,6 +55,7 @@
 
 /obj/item/storage/backpack/stalker/professional
 	name = "professional backpack"
+	desc = "A heavy-duty military surplus backpack. You can carry a small supply-room in this."
 	icon_state = "backpack-professional"
 	item_state = "backpack-professional"
 
@@ -79,6 +82,7 @@
 
 /obj/item/storage/backpack/satchel/stalker/civilian
 	name = "civilian satchel"
+	desc = "A small bag that seems more at home on a student than a Stalker."
 	icon_state = "satchel-civilian"
 	item_state = "satchel-civilian"
 

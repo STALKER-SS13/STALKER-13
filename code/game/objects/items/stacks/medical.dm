@@ -2,8 +2,8 @@
 	name = "medical pack"
 	singular_name = "medical pack"
 	icon = 'icons/obj/stack_objects.dmi'
-	amount = 6
-	max_amount = 6
+	amount = 8
+	max_amount = 8
 	w_class = WEIGHT_CLASS_TINY
 	full_w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
@@ -14,10 +14,10 @@
 	var/heal_brute = 0
 	var/heal_burn = 0
 	var/stop_bleeding = 0
-	var/self_delay = 50
+	var/self_delay = 20
 
 /obj/item/stack/medical/attack(mob/living/M, mob/user)
-
+/*
 	if(M.stat == DEAD)
 		var/t_him = "it"
 		if(M.gender == MALE)
@@ -26,7 +26,7 @@
 			t_him = "her"
 		to_chat(user, "<span class='danger'>\The [M] is dead, you cannot help [t_him]!</span>")
 		return
-
+*/
 	if(!iscarbon(M) && !isanimal(M))
 		to_chat(user, "<span class='danger'>You don't know how to apply \the [src] to [M]!</span>")
 		return 1
@@ -109,7 +109,7 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_brute = 40
+	heal_brute = 65
 	self_delay = 20
 	grind_results = list("styptic_powder" = 10)
 
@@ -164,7 +164,7 @@
 	icon_state = "ointment"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_burn = 40
+	heal_burn = 65
 	self_delay = 20
 	grind_results = list("silver_sulfadiazine" = 10)
 

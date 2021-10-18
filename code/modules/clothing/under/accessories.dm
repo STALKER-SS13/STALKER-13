@@ -396,3 +396,8 @@
 	name = "mercenaries patch"
 	desc = "A patch with an eagle embroidered in blue and gold, denoting a member of the Mercenary faction in the Zone."
 	icon_state = "mercenaries_patch"
+
+/obj/item/clothing/accessory/patch/renegades
+	name = "renegades patch"
+	desc = "A patch with a scorpion embroidered in  gold, denoting a member of the Renegades faction in the Zone."
+	icon_state = "renegades_patch"

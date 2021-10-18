@@ -198,6 +198,11 @@
 	desc = "A spacious backpack with lots of pockets, worn by Security Officers of an Emergency Response Team."
 	icon_state = "ert_security"
 
+/obj/item/storage/backpack/duty
+	name = "duty rucksack"
+	desc = "A spacious backpack with lots of pockets, worn by members of the Duty faction."
+	icon_state = "ert_security"
+
 /obj/item/storage/backpack/ert/medical
 	name = "emergency response team medical backpack"
 	desc = "A spacious backpack with lots of pockets, worn by Medical Officers of an Emergency Response Team."

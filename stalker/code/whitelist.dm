@@ -1,4 +1,5 @@
-#define ST_WHITELISTFILE "[global.config.directory]/st_whitelist.txt"
+
+#define ST_WHITELISTFILE "config/st_whitelist.txt"
 
 GLOBAL_LIST(st_whitelist)
 GLOBAL_PROTECT(st_whitelist)
@@ -10,14 +11,37 @@ GLOBAL_PROTECT(st_whitelist)
 	while(swl_regex.Find(swl_text))
 		GLOB.st_whitelist[swl_regex.group[1]] += list(swl_regex.group[2])
 
-/proc/check_st_whitelist(ckey, access_to)
+/proc/check_st_whitelist(ckey, job_title)
 	if(!GLOB.st_whitelist)
 		return FALSE
-	//if(ckey == "valtosss")
-	//	return TRUE
+	if(ckey == "malgover")
+		return TRUE
 	for (var/WL in GLOB.st_whitelist[ckey])
-		if (WL == access_to)
+		if (WL == job_title)
 			return TRUE
 	return FALSE
 
 #undef ST_WHITELISTFILE
+
+/*
+#define WHITELISTFILE "config/alienwhitelist.txt"
+
+var/list/st_whitelist
+
+/proc/load_st_whitelist()
+	st_whitelist = file2list(WHITELISTFILE)
+	if(!st_whitelist.len)	st_whitelist = null
+
+/proc/check_st_whitelist(ckey, job_title)
+	if(!whitelist)
+		return 0
+		if(ckey == "malgover")
+			return 1
+	for(var/line in st_whitelist)
+		var/list/pair = text2list(line, " = ")
+		if(pair[1] == ckey && pair[2] == job_title)
+			return 1
+	return 0
+
+#undef WHITELISTFILE
+*/

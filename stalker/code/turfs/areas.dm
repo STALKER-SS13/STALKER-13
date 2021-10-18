@@ -56,9 +56,9 @@
 	icon = 'stalker/icons/areas_buildings.dmi'
 	icon_state = "sidor"
 	requires_power = 1
-	ambient_music = list()
-	ambient_background = list('stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg')//list('stalker/sound/ambience/sidor_music.ogg','stalker/sound/ambience/sidor_music2.ogg')
-	ambient_background_cooldown = list(700, 700, 700, 700)
+	//ambient_music = list()
+	//ambient_background = list('stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg')//list('stalker/sound/ambience/sidor_music.ogg','stalker/sound/ambience/sidor_music2.ogg')
+	//ambient_background_cooldown = list(700, 700, 700, 700)
 	environment = 5
 	safezone = 1
 
@@ -485,7 +485,7 @@
 	icon_state = "tunnel"
 
 /area/stalker/cave
-	name = "пещера"
+	name = "Cave"
 	icon_state = "tunnel"
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	requires_power = 1
@@ -632,6 +632,18 @@
 	icon_state = "realbar"
 	safezone = 1
 
+/area/stalker/buildings/bar/monolith
+	name = "Monolith Armory"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "monolith_bar"
+	safezone = 1
+
+/area/stalker/buildings/ecologist
+	name = "ecologist"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "ecologist"
+	safezone = 1
+
 //bar
 
 
@@ -654,5 +666,3 @@
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit_bar"
 	safezone = 1
-
-//kordon + svalka

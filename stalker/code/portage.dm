@@ -153,17 +153,14 @@
 /obj/effect/landmark/latejoin/bandit_barman
 	name = "JoinLateBandit Barman"
 
-/obj/effect/landmark/latejoin/bandit_pahan
-	name = "JoinLatePahan"
-
 /obj/effect/landmark/latejoin/army
-	name = "JoinLateArmy"
+	name = "JoinLateMilitary Soldier"
 
-/obj/effect/landmark/latejoin/army_eliteagro
-	name = "JoinLateEliteAgro"
+/obj/effect/landmark/latejoin/army_spetsnaz
+	name = "JoinLateMilitary Spetsnaz"
 
-/obj/effect/landmark/latejoin/petrovich
-	name = "JoinLatePetrovich"
+/obj/effect/landmark/latejoin/militarycommander
+	name = "JoinLateMilitary Commander"
 
 /obj/effect/landmark/latejoin/trader
 	name = "JoinLateTrader"
@@ -187,10 +184,10 @@
 	name = "JoinLateDuty Lieutenant"
 
 /obj/effect/landmark/latejoin/mercenary_sql
-	name = "JoinLateMercenary Sql"
+	name = "JoinLateMercenary Commander"
 
 /obj/effect/landmark/latejoin/freedom
-	name = "JoinLateFreedom"
+	name = "JoinLateFreedom Soldier"
 
 /obj/effect/landmark/latejoin/freedom_lieutenant
 	name = "JoinLateFreedom Lieutenant"
@@ -200,6 +197,21 @@
 
 /obj/effect/landmark/latejoin/monolith_hegumen
 	name = "JoinLateMonolith Hegumen"
+
+/obj/effect/landmark/latejoin/ecologist
+	name = "JoinLateEcologist"
+
+/obj/effect/landmark/latejoin/chief_ecologist
+	name = "JoinLateChief Ecologist"
+
+/obj/effect/landmark/latejoin/clearsky
+	name = "JoinLateClear Sky Soldier"
+
+/obj/effect/landmark/latejoin/clearsky_leader
+	name = "JoinLateClear Sky Leader"
+
+/obj/effect/landmark/latejoin/renegade
+	name = "JoinLateRenegade"
 
 /turf/open/floor/plasteel/stairs/stalker
 	icon = 'stalker/icons/floor.dmi'

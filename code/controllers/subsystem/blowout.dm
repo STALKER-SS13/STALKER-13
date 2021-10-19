@@ -151,7 +151,7 @@ SUBSYSTEM_DEF(blowout)
 /datum/controller/subsystem/blowout/proc/BlowoutDealDamage()
 	for(var/mob/living/carbon/human/H)
 		H.clear_fullscreen("blowjob")
-		if(!H.inshelter)
+		if(!H.inshelter || !H.has_trait(TRAIT_BLOWOUT_IMMUNE))
 			H.apply_damage(200, PSY)
 		CHECK_TICK
 

@@ -2822,6 +2822,8 @@
 #include "stalker\code\modules\ambient_system.dm"
 #include "stalker\code\modules\faction_wars.dm"
 #include "stalker\code\modules\modifications.dm"
+#include "stalker\code\modules\chemistry\medicine.dm"
+#include "stalker\code\modules\chemistry\reagent_containers.dm"
 #include "stalker\code\modules\lighting\sun\sunlighting_corner.dm"
 #include "stalker\code\modules\lighting\sun\sunlighting_object.dm"
 #include "stalker\code\modules\lighting\sun\sunlighting_setup.dm"

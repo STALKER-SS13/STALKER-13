@@ -75,7 +75,7 @@
 #define TRAIT_BOOZE_SLIDER      "booze-slider"
 #define TRAIT_UNINTELLIGIBLE_SPEECH "unintelligible-speech"
 #define TRAIT_UNSTABLE			"unstable"
-
+#define TRAIT_BLOWOUT_IMMUNE	"blowout immunity"
 //non-mob traits
 #define TRAIT_PARALYSIS			"paralysis" //Used for limb-based paralysis, where replacing the limb will fix it
 

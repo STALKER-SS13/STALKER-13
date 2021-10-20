@@ -270,3 +270,14 @@
 	durability = 400
 	//МОДИФИКАЦИИ//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/head/buckethelmet
+	name = "Bucket Helmet"
+	eng_desc = "A bucket with two holes to see through. Protects the head from impacts at the cost of looking like an idiot. Come to think of it, maybe this is not the best choice for protection."
+	icon_state = "bucket_helmet"
+	item_state = "bucket_helmet"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 15, "bullet" = 1, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = FIRE_PROOF
+	durability = 50

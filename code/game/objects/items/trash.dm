@@ -57,11 +57,15 @@
 	name = "steel wire"
 	icon_state = "steelwire1"
 
+/obj/item/trash/metaljunk
+	name = "metal junk"
+	icon_state = "metaljunk"
+	
 /obj/item/trash/oldcircuitboard
 	name = "circuit board"
 	icon_state = "circuitboard"
 
-/obj/item/trash/oldcircuitboard0
+/obj/item/trash/oldcircuitboard/alt
 	name = "circuit board"
 	icon_state = "circuitboard0"
 

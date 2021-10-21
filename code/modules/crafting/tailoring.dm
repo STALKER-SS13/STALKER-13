@@ -1,3 +1,4 @@
+/*
 /datum/crafting_recipe/durathread_vest
 	name = "Durathread Vest"
 	result = /obj/item/clothing/suit/armor/vest/durathread
@@ -129,3 +130,4 @@
 	tools = list(TOOL_WIRECUTTER)
 	reqs = list(/obj/item/bedsheet = 1)
 	category = CAT_CLOTHING
+*/

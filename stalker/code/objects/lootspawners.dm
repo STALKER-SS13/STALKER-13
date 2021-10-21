@@ -231,7 +231,7 @@ obj/nothing/New()
 				/obj/item/trash/wire = 10,
 				/obj/item/trash/duct_tape = 10,
 				/obj/item/trash/oldcircuitboard = 15,
-				/obj/item/trash/oldcircuitboard0 = 15,
+				/obj/item/trash/oldcircuitboard/alt = 15,
 				/obj/item/c_tube = 25,
 				/obj/item/newspaper = 20,
 				/obj/item/trash/oldchembottle = 5,

@@ -226,7 +226,7 @@
 				A.initialize_custom_food(src, S, user)
 	else
 		. = ..()
-
+/*
 //what you can craft with these things
 /datum/crafting_recipe/mushroom_bowl
 	name = "Mushroom Bowl"
@@ -234,7 +234,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/ash_flora/shavings = 5)
 	time = 30
 	category = CAT_PRIMAL
-
+*/
 /obj/item/reagent_containers/food/snacks/customizable/salad/ashsalad
 	desc = "Very ashy."
 	trash = /obj/item/reagent_containers/glass/bowl/mushroom_bowl

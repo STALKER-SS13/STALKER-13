@@ -21,6 +21,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/*
 /datum/crafting_recipe/IED
 	name = "IED"
 	result = /obj/item/grenade/iedcasing
@@ -54,6 +55,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
+*/
 
 /datum/crafting_recipe/molotov
 	name = "Molotov"
@@ -65,6 +67,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/*
 /datum/crafting_recipe/stunprod
 	name = "Stunprod"
 	result = /obj/item/melee/baton/cattleprod
@@ -681,3 +684,4 @@
 	reqs = list(/obj/item/tank/internals/oxygen/red = 2, /obj/item/extinguisher = 1, /obj/item/pipe = 3, /obj/item/stack/cable_coil = 30)//red oxygen tank so it looks right
 	category = CAT_MISC
 	tools = list(TOOL_WRENCH, TOOL_WELDER, TOOL_WIRECUTTER)
+*/

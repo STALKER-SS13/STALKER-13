@@ -243,7 +243,7 @@
 	. = ..()
 	.["isdryer"] = TRUE
 	.["verb"] = "Take"
-	.["drying"] = drying
+	.["drying"] = "drying"
 
 
 /obj/machinery/smartfridge/drying_rack/ui_act(action, params)
@@ -271,11 +271,10 @@
 
 /obj/machinery/smartfridge/drying_rack/update_icon()
 	..()
-	cut_overlays()
 	if(drying)
 		add_overlay("drying_rack_drying")
 	if(contents.len)
-		add_overlay("drying_rack_filled")
+		add_overlay("drying_rack_complete")
 
 /obj/machinery/smartfridge/drying_rack/process()
 	..()
@@ -320,6 +319,116 @@
 	return FALSE
 
 /obj/machinery/smartfridge/drying_rack/emp_act(severity)
+	. = ..()
+	if(. & EMP_PROTECT_SELF)
+		return
+	atmos_spawn_air("TEMP=1000")
+
+/obj/machinery/smartfridge/drying_rackfan
+	name = "drying rack"
+	desc = "A wooden contraption with a broken fan placed next to it, used to dry plant products, food and leather."
+	icon = 'icons/obj/hydroponics/equipment.dmi'
+	icon_state = "drying_rackfan"
+	use_power = IDLE_POWER_USE
+	idle_power_usage = 5
+	active_power_usage = 200
+	var/drying = FALSE
+	var/complete = FALSE
+
+/obj/machinery/smartfridge/drying_rackfan/Initialize()
+	. = ..()
+	if(component_parts && component_parts.len)
+		component_parts.Cut()
+	component_parts = null
+
+/obj/machinery/smartfridge/drying_rack/on_deconstruction()
+	new /obj/item/stack/sheet/mineral/wood(drop_location(), 10)
+	..()
+
+/obj/machinery/smartfridge/drying_rackfan/RefreshParts()
+/obj/machinery/smartfridge/drying_rackfan/default_deconstruction_screwdriver()
+/obj/machinery/smartfridge/drying_rackfan/exchange_parts()
+/obj/machinery/smartfridge/drying_rackfan/spawn_frame()
+
+/obj/machinery/smartfridge/drying_rackfan/default_deconstruction_crowbar(obj/item/crowbar/C, ignore_panel = 1)
+	..()
+
+/obj/machinery/smartfridge/drying_rackfan/ui_data(mob/user)
+	. = ..()
+	.["isdryer"] = TRUE
+	.["verb"] = "Take"
+	.["drying"] = "drying"
+	.["complete"] = "complete"
+
+/obj/machinery/smartfridge/drying_rackfan/ui_act(action, params)
+	. = ..()
+	if(.)
+		update_icon() // This is to handle a case where the last item is taken out manually instead of through drying pop-out
+		return
+	switch(action)
+		if("Dry")
+			toggle_drying(FALSE)
+			return TRUE
+	return FALSE
+
+/obj/machinery/smartfridge/drying_rackfan/power_change()
+	if(powered() && anchored)
+		stat &= ~NOPOWER
+	else
+		stat |= NOPOWER
+		toggle_drying(TRUE)
+	update_icon()
+
+/obj/machinery/smartfridge/drying_rackfan/update_icon()
+	..()
+	if(drying)
+		update_icon("drying_rackfan")
+	if(contents.len)
+		update_icon("drying_rackfan-complete")
+
+/obj/machinery/smartfridge/drying_rackfan/process()
+	..()
+	if(drying)
+		if(rack_dry())//no need to update unless something got dried
+			SStgui.update_uis(src)
+			update_icon()
+
+/obj/machinery/smartfridge/drying_rackfan/accept_check(obj/item/O)
+	if(istype(O, /obj/item/reagent_containers/food/snacks/))
+		var/obj/item/reagent_containers/food/snacks/S = O
+		if(S.dried_type)
+			return TRUE
+	if(istype(O, /obj/item/stack/sheet/wetleather/))
+		return TRUE
+	return FALSE
+
+/obj/machinery/smartfridge/drying_rackfan/proc/toggle_drying(forceoff)
+	if(drying || forceoff)
+		drying = FALSE
+		use_power = IDLE_POWER_USE
+	else
+		drying = TRUE
+		use_power = ACTIVE_POWER_USE
+	update_icon()
+
+/obj/machinery/smartfridge/drying_rackfan/proc/rack_dry()
+	for(var/obj/item/reagent_containers/food/snacks/S in src)
+		if(S.dried_type == S.type)//if the dried type is the same as the object's type, don't bother creating a whole new item...
+			S.add_atom_colour("#ad7257", FIXED_COLOUR_PRIORITY)
+			S.dry = TRUE
+			S.forceMove(drop_location())
+		else
+			var/dried = S.dried_type
+			new dried(drop_location())
+			qdel(S)
+		return TRUE
+	for(var/obj/item/stack/sheet/wetleather/WL in src)
+		new /obj/item/stack/sheet/leather(drop_location(), WL.amount)
+		qdel(WL)
+		return TRUE
+	return FALSE
+
+/obj/machinery/smartfridge/drying_rackfan/emp_act(severity)
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
 		return

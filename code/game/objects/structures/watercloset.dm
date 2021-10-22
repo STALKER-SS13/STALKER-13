@@ -1,6 +1,6 @@
 /obj/structure/toilet
 	name = "toilet"
-	desc = "The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean."
+	desc = "A surprisingly spotless toilet. Somehow, its squeaky clean!"
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "toilet00"
 	density = FALSE
@@ -123,7 +123,7 @@
 
 /obj/structure/urinal
 	name = "urinal"
-	desc = "The HU-452, an experimental urinal. Comes complete with experimental urinal cake."
+	desc = "A surprisingly spotless urinal. Somehow, its squeaky clean!"
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "urinal"
 	density = FALSE
@@ -338,12 +338,47 @@
 	new /obj/item/stack/sheet/metal (loc, 3)
 	qdel(src)
 
-
-
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
 	icon_state = "sink_alt"
 
+/obj/structure/sink/well
+	name = "water well"
+	icon = 'stalker/icons/farm.dmi'
+	icon_state = "well1"
+	desc = "A well with sturdy wooden beams still in place after all these years. It appears there is still water down there!"
+
+/obj/structure/sink/wellbroken
+	name = "water well"
+	icon = 'stalker/icons/farm.dmi'
+	icon_state = "well2"
+	desc = "A well with broken beams around it. It appears there is still water down there!"
+
+/obj/structure/sink/wellsmall
+	name = "water well"
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "well3"
+	desc = "A small well. It appears there is still water down there!"
+
+/obj/structure/sink/wellpump
+	name = "water pump"
+	desc = "A small well. It appears there is still water down there!"
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "waterpump"
+
+//ATTACK HAND IGNORING PARENT RETURN VALUE
+/obj/structure/sink/wellpump/attack_hand(mob/M)
+	icon_state = "waterpump-use"
+	. = ..()
+	icon_state = "waterpump"
+
+/obj/structure/sink/wellpump/attackby(obj/item/O, mob/user, params)
+	icon_state = "waterpump-use"
+	. = ..()
+	icon_state = "waterpump"
+
+/obj/structure/sink/wellpump/deconstruct(disassembled = TRUE)
+	qdel(src)
 
 /obj/structure/sink/puddle	//splishy splashy ^_^
 	name = "puddle"

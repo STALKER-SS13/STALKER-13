@@ -41,6 +41,9 @@
 	//Supervisors, who this person answers to directly
 	var/supervisors = ""
 
+	//SHOOTONSIGHT disclaimer
+	var/sosdisclaim = ""
+
 	//Sellection screen color
 	var/selection_color = "#ffffff"
 

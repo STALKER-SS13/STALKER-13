@@ -189,28 +189,33 @@
 	icon_state = "compostbin"
 	reagent_id = "compost"
 	anchored = TRUE
-	tank_volume = 10000
+	tank_volume = 120
 
 /obj/structure/reagent_dispensers/compostbinmetal
 	name = "compost bin"
 	desc = "An odiforous bin where refuse is thrown to decompose into fertilizer. There are flies which buzz around the top."
-	icon_state = "compostbinmetal-1"
+	icon_state = "compostbinmetal"
 	reagent_id = "compost"
 	anchored = TRUE
-	var/update_icon
-	tank_volume = 10000
+	tank_volume = 120
 
-/obj/structure/reagent_dispensers/compostbinmetal/update_icon(var/tank_volume)
-	if(tank_volume == 10000)
-		icon_state = "compostbinmetal-1"
-	else if(tank_volume == 7500)
-		icon_state = "compostbinmetal-2"
-	else if(tank_volume == 5000)
-		icon_state = "compostbinmetal-3"
-	else if(tank_volume == 2500)
-		icon_state = "compostbinmetal-4"
-	else(tank_volume = 0)
-		icon_state = "compostbinmetal-5"
+/obj/structure/reagent_dispensers/attackby(obj/item/W, mob/user, params)
+	..()
+	update_icon()
+
+/obj/structure/reagent_dispensers/compostbinmetal/update_icon()
+	var/percent = round((reagents.total_volume / 120 * 100))
+	switch(percent)
+		if(0 to 24)
+			icon_state = "[initial(icon_state)]-4"
+		if(25 to 49)
+			icon_state = "[initial(icon_state)]-3"
+		if(50 to 74)
+			icon_state = "[initial(icon_state)]-2"
+		if(75 to 99)
+			icon_state = "[initial(icon_state)]-1"
+		if(100)
+			icon_state = "[initial(icon_state)]"
 
 /obj/structure/reagent_dispensers/watertank1
 	name = "large red tank"

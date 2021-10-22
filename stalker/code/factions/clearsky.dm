@@ -8,8 +8,8 @@ Assistant
 	total_positions = -1
 	spawn_positions = -1
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
-	enforces = "Exploration and research of the zone. Eliminating enimies of Clear Sky (Bandits, Renegades, and Monolith)."
-	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction without asking up the chain of command."
+	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
+	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits or Renegades, and starting fights with any neutral faction without asking up the chain of command."
 	supervisors = "Leader"
 	selection_color = "#64B2F7"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -54,7 +54,7 @@ Assistant
 	locked = 1
 	spawn_positions = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
-	enforces = "Exploration and research of the zone. Eliminating enimies of Clear Sky (Bandits, Renegades, and Monolith)."
+	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction without asking up the chain of command."
 	selection_color = "#64B2F7"
 	whitelist_only = 1

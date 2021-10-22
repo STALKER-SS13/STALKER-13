@@ -4,7 +4,9 @@
 	faction_s = "Renegades"
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = ""
+	description = "Renegades are bandit loners; not only do they have no loyalty to the bandits in the region, many don't have loyalty between others. As a result of the war, the number of renegades have thinned and some say that the cream of the crop is what is left."
+	enforces = "Form a group and find people to rob and antagonize, cause chaos between and exploit all the other factions, work with Freedom to destabalize the order in the Zone."
+	forbids = "Randomly, worldessly murder others unless they're Clear Sky and instead escalate on them, try to team up and work together all the time in the same way, be anything but a bandit loner.."
 	selection_color = "#003D06"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()

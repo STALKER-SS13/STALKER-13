@@ -508,7 +508,7 @@
 
 /obj/structure/stalker/cacheable/plita
 	name = "stove"
-	eng_desc = "A rusty old gas stove. Covered with grease and dirt."
+	eng_desc = "A rusty old gas stove. Covered with grease and dirt. It doesn't look like you can use this, but there might be something inside..."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "gazovaya_plita"
 	density = 1
@@ -517,7 +517,7 @@
 
 /obj/structure/stalker/cacheable/pech
 	name = "oven"
-	eng_desc = "A well-made russian oven made out of bricks."
+	eng_desc = "A well-made russian oven made out of bricks, worn down by time. It doesn't look like you can use this, but there might be something inside..."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "pech"
 	density = 0

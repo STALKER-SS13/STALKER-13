@@ -1,8 +1,7 @@
 /obj/machinery/campfire
 	name = "Campfire"
 	desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
-	eng_desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
-	icon = 'stalker/icons/stalker.dmi'
+	icon = 'stalker/icons/bochka.dmi'
 	icon_state = "campfire0"
 	anchored = 1
 	var/firecolor = "#FFAA33"
@@ -41,6 +40,7 @@ obj/machinery/campfire/barrel
 	icon = 'stalker/icons/bochka.dmi'
 	icon_state = "barrel0"
 	density = 1
+
 
 /obj/machinery/campfire/attack_hand(mob/user)
 	..()
@@ -144,3 +144,4 @@ obj/machinery/campfire/process()
 		if(active)
 			I.fire_act()
 			return
+

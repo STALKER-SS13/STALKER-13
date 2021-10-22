@@ -7,7 +7,7 @@
 	anchored = FALSE
 	pressure_resistance = 2*ONE_ATMOSPHERE
 	max_integrity = 300
-	var/tank_volume = 1000 //In units, how much the dispenser can hold
+	var/tank_volume = 10000 //In units, how much the dispenser can hold
 	var/reagent_id = "water" //The ID of the reagent that the dispenser uses
 
 /obj/structure/reagent_dispensers/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
@@ -190,3 +190,42 @@
 	reagent_id = "compost"
 	anchored = TRUE
 	tank_volume = 10000
+
+/obj/structure/reagent_dispensers/compostbinmetal
+	name = "compost bin"
+	desc = "An odiforous bin where refuse is thrown to decompose into fertilizer. There are flies which buzz around the top."
+	icon_state = "compostbinmetal-1"
+	reagent_id = "compost"
+	anchored = TRUE
+	var/update_icon
+	tank_volume = 10000
+
+/obj/structure/reagent_dispensers/compostbinmetal/update_icon(var/tank_volume)
+	if(tank_volume == 10000)
+		icon_state = "compostbinmetal-1"
+	else if(tank_volume == 7500)
+		icon_state = "compostbinmetal-2"
+	else if(tank_volume == 5000)
+		icon_state = "compostbinmetal-3"
+	else if(tank_volume == 2500)
+		icon_state = "compostbinmetal-4"
+	else(tank_volume = 0)
+		icon_state = "compostbinmetal-5"
+
+/obj/structure/reagent_dispensers/watertank1
+	name = "large red tank"
+	desc = "A large red tank that has been weathered by time. Despite its age, it appear to still have quite a lot of water in it."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "watertank1"
+	reagent_id = "water"
+	anchored = TRUE
+	tank_volume = 35750
+
+/obj/structure/reagent_dispensers/watertank2
+	name = "large blue tank"
+	desc = "A large blue tank that has been weathered by time. Despite its age, it appear to still have quite a lot of water in it."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "watertank2"
+	reagent_id = "water"
+	anchored = TRUE
+	tank_volume = 35750

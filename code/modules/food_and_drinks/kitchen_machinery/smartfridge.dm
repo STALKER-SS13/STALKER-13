@@ -274,7 +274,7 @@
 	if(drying)
 		add_overlay("drying_rack_drying")
 	if(contents.len)
-		add_overlay("drying_rack_complete")
+		add_overlay("drying_rack-complete")
 
 /obj/machinery/smartfridge/drying_rack/process()
 	..()
@@ -382,9 +382,9 @@
 /obj/machinery/smartfridge/drying_rackfan/update_icon()
 	..()
 	if(drying)
-		update_icon("drying_rackfan")
+		add_overlay("drying_rackfan")
 	if(contents.len)
-		update_icon("drying_rackfan-complete")
+		add_overlay("drying_rackfan-complete")
 
 /obj/machinery/smartfridge/drying_rackfan/process()
 	..()

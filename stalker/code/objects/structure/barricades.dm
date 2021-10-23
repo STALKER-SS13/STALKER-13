@@ -33,6 +33,13 @@
 	icon_state = "zabitiy_proxod"
 	debriss_type = /obj/structure/stalker/doski
 
+/obj/structure/barricade/stalker/woodalt
+	name = "wooden barricade"
+	desc = "A barricaded passage."
+	eng_desc = "Planks."
+	icon_state = "zabitiy_proxod_alt"
+	debriss_type = /obj/structure/stalker/doski
+
 /obj/structure/barricade/stalker/box
 	name = "wooden box"
 	desc = "Boarded up wooden box. Who knows what might be inside."
@@ -151,6 +158,11 @@
 		return 0
 	else
 		return 0
+
+/obj/structure/stalker/blocks/vanish/wframe2nowalk
+	name =  "metal window frame"
+	icon = 'stalker/icons/wframe.dmi'
+	icon_state = "wframe"
 
 /obj/structure/stalker/blocks/vanish/pipe
 	name = "Pipe"

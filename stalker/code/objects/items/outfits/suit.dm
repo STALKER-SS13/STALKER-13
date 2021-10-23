@@ -213,6 +213,16 @@
 	icon_state = "winterhood_kozhanka_wh"
 	flags_inv = HIDEEARS|HIDEHAIR
 
+/obj/item/clothing/suit/hooded/kozhanka/dolg
+	icon_state = "kozhanka_dolg"
+	item_state = "labcoat"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/kozhanka_dolg
+
+/obj/item/clothing/head/hooded/stalker/kozhanka_dolg
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	icon_state = "winterhood_dolg"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/suit/hooded/kozhanka/banditka
 	name = "bandit jacket"
 	eng_desc = "Traditional bandit clothing - a leather jacket with armor pieces sewed in. The protection it provides is completely inadequate for the harsh conditions of the Zone."

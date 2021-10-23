@@ -183,36 +183,44 @@
 	anchored = TRUE
 	reagent_id = "cooking_oil"
 
+/obj/structure/reagent_dispensers/compostvat
+	name = "vat of compost"
+	desc = "A huge metal vat with a tap on the front. Filled with composted waste."
+	icon_state = "dirtyvat"
+	anchored = TRUE
+	reagent_id = "compost"
+	tank_volume = 12000
+
 /obj/structure/reagent_dispensers/compostbin
 	name = "compost bin"
 	desc = "An odiforous bin with a big hole at the top where refuse is thrown to decompose into fertilizer. There are flies which buzz around the top."
 	icon_state = "compostbin"
 	reagent_id = "compost"
 	anchored = TRUE
-	tank_volume = 120
+	tank_volume = 12000
 
 /obj/structure/reagent_dispensers/compostbinmetal
 	name = "compost bin"
 	desc = "An odiforous bin where refuse is thrown to decompose into fertilizer. There are flies which buzz around the top."
-	icon_state = "compostbinmetal"
+	icon_state = "compostbinmetal-1"
 	reagent_id = "compost"
 	anchored = TRUE
-	tank_volume = 120
+	tank_volume = 12000
 
 /obj/structure/reagent_dispensers/attackby(obj/item/W, mob/user, params)
 	..()
 	update_icon()
 
 /obj/structure/reagent_dispensers/compostbinmetal/update_icon()
-	var/percent = round((reagents.total_volume / 120 * 100))
+	var/percent = round((reagents.total_volume / 12000 * 100))
 	switch(percent)
-		if(0 to 24)
+		if(0 to 2400)
 			icon_state = "[initial(icon_state)]-4"
-		if(25 to 49)
+		if(25 to 4900)
 			icon_state = "[initial(icon_state)]-3"
-		if(50 to 74)
+		if(50 to 7400)
 			icon_state = "[initial(icon_state)]-2"
-		if(75 to 99)
+		if(75 to 9900)
 			icon_state = "[initial(icon_state)]-1"
 		if(100)
 			icon_state = "[initial(icon_state)]"

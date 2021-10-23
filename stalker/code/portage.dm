@@ -19,7 +19,7 @@
 
 	if(src.loc && istype(src.loc, /turf/open/stalker/floor/water))
 
-		var/image/standing //= image('icons/stalker/water.dmi', "water_overlay")
+		var/image/standing //= image('stalker/icons/water.dmi', "water_overlay")
 		var/icon/I
 		if(lying != 0)
 			I = turn(icon('stalker/icons/water.dmi', "water_overlay_turned"), - lying)

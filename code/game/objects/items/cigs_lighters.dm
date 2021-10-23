@@ -526,7 +526,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		"plain",
 		"dame",
 		"thirteen",
-		"snake"
+		"snake",
+		"black",
+		"gold"
 		)
 	heat = 1500
 	resistance_flags = FIRE_PROOF

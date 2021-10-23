@@ -186,7 +186,7 @@
 /obj/structure/reagent_dispensers/compostvat
 	name = "vat of compost"
 	desc = "A huge metal vat with a tap on the front. Filled with composted waste."
-	icon_state = "dirtyvat"
+	icon_state = "vatdirty"
 	anchored = TRUE
 	reagent_id = "compost"
 	tank_volume = 12000

@@ -314,13 +314,13 @@
 	pass_flags = LETPASSTHROW
 	cache_size = 1
 
-/obj/structure/stalker/cacheable/shina
+/obj/structure/stalker/shina
 	name = "shina"
 	eng_desc = "A heavy old flat tire."
 	icon_state = "shina"
 	density = 1
 
-/obj/structure/stalker/cacheable/shina2
+/obj/structure/stalker/shina2
 	name = "two shina"
 	eng_desc = "A couple of heavy old flat tires."
 	icon_state = "shina2"

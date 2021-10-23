@@ -203,6 +203,20 @@
 	anchored = 1
 	cache_size = 0
 
+/obj/structure/stalker/woodlogs
+	name = "logs"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "logs1"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/woodlogs/big
+	name = "logs"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "logs2"
+	density = 1
+	anchored = 1
+
 /obj/structure/stalker/radiation
 	name = "radiation sign"
 	desc = "This sign symbolises something."
@@ -447,6 +461,70 @@
 	name = "pillar"
 	icon = 'stalker/icons/decorations_32x64.dmi'
 	icon_state = "stolb_double"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_anim
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_anim"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_1
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_1"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_2
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_2"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap3
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_3"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap4
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_4"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_broken_1
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_broken_1"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_broken_2
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_broken_2"
+	eng_desc = "An old pillar."
+	layer = MASSIVE_OBJ_LAYER
+	density = 0
+
+/obj/structure/stalker/stolb_lap_broken_3
+	name = "pillar"
+	icon = 'stalker/icons/decorations_32x64.dmi'
+	icon_state = "stolb_lap_broken_3"
 	eng_desc = "An old pillar."
 	layer = MASSIVE_OBJ_LAYER
 	density = 0
@@ -779,6 +857,20 @@
 	name = "elevator"
 	eng_desc = "An old soviet lift. It doesn't work anymore."
 	icon_state = "lift"
+
+/obj/structure/stalker/luk
+	name = "hatch"
+	eng_desc = "A manhole. It's covered."
+	icon = 'stalker/icons/decor2.dmi'
+	icon_state = "luk0"
+
+/obj/structure/stalker/luk/open
+	eng_desc = "An open manhole. I wonder what's down there?"
+	icon_state = "luk1"
+
+/obj/structure/stalker/luk/open/ladder
+	eng_desc = "An open manhole with stairs. I wonder what's down there?"
+	icon_state = "luk2"
 
 /obj/structure/stalker/trubas
 	name = "pipe"

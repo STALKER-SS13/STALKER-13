@@ -18,7 +18,7 @@ SUBSYSTEM_DEF(zona)
 
 	var/level_of_pain
 	var/cd = 10
-	var/z_state = L_NORMAL
+	var/z_state = L_INSANE
 
 /datum/controller/subsystem/zona/stat_entry()
 	..("LoP:[level_of_pain]")
@@ -32,11 +32,11 @@ SUBSYSTEM_DEF(zona)
 
 	switch(GLOB.clients.len)
 		if(0 to 10)
-			z_state = L_NORMAL
+			z_state = L_INSANE
 		if(11 to 20)
-			z_state = L_NORMAL
+			z_state = L_INSANE
 		if(21 to 30)
-			z_state = L_HARD
+			z_state = L_INSANE
 		if(31 to 40)
 			z_state = L_INSANE
 		if(41 to 50)

@@ -62,7 +62,7 @@
 	M.pixel_y = 14
 	layer = ABOVE_MOB_LAYER
 	setDir(SOUTH)
-	playsound(src,'sound/mecha/mechmove01.ogg', 50, 1)
+//	playsound(src,'sound/mecha/mechmove01.ogg', 50, 1)
 	anchored = TRUE
 	if(M.client)
 		M.client.change_view(view_range)
@@ -155,13 +155,42 @@
 	P.starting = targets_from
 	P.firer = user
 	P.original = target
-	playsound(src, 'sound/weapons/gunshot_smg.ogg', 75, 1)
+	playsound(src, 'sound/weapons/sniper_shot.ogg', 75, 1)
 	P.xo = target.x - targets_from.x
 	P.yo = target.y - targets_from.y
 	P.Angle = calculated_projectile_vars[1] + rand(-9, 9)
 	P.p_x = calculated_projectile_vars[2]
 	P.p_y = calculated_projectile_vars[3]
 	P.fire()
+
+/////////
+// DShK
+/////////
+/obj/machinery/manned_turret/checkpoint
+	name = "DShK"
+	desc = "A heavy machine gun in service since 1938, placed into a heavy emplacement. \
+	You could easily punch through anything with what this lobs downrange."
+	icon = 'icons/obj/turrets.dmi'
+	icon_state = "dshk"
+	max_integrity = 999999999
+	can_buckle = TRUE
+	anchored = TRUE
+	density = TRUE
+	rate_of_fire = 1
+	number_of_shots = 1
+	cooldown_duration = 0
+	view_range = 24//spooky boy
+	projectile_type = /obj/item/projectile/bullet/checkpoint
+
+/obj/machinery/manned_turret/checkpoint/checkfire(atom/targeted_atom, mob/user)
+	target = targeted_atom
+	if(target == user || target == get_turf(src))
+		return
+	target_turf = get_turf(target)
+	fire_helper(user)
+/////////
+// DShK End
+/////////
 
 /obj/machinery/manned_turret/ultimate  // Admin-only proof of concept for autoclicker automatics
 	name = "Infinity Gun"

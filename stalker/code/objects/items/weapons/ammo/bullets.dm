@@ -109,6 +109,13 @@
 	range = 80
 	spread = 2
 
+//DShK - Just a PKM
+/obj/item/projectile/bullet/checkpoint
+	damage = 64
+	armour_penetration = 20
+	range = 24
+	spread = 2
+
 /obj/item/projectile/bullet/bullet762x51
 	damage = 52
 	armour_penetration = 0

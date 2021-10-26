@@ -63,7 +63,9 @@
 
 /mob/living/carbon/human/proc/handle_tension(type = "default")
 	if (setup_tension)
-		var/sound/S = sound(pick("stalker/sound/battletension.ogg", "stalker/sound/battletension2.ogg"))
+		var/sound/S = sound(pick("stalker/sound/battletension.ogg", "stalker/sound/battletension2.ogg", "stalker/sound/battletension3.ogg", \
+		"stalker/sound/battletension4.ogg", "stalker/sound/battletension5.ogg", "stalker/sound/battletension6.ogg", "stalker/sound/battletension7.ogg", \
+		"stalker/sound/battletension8.ogg", "stalker/sound/battletension9.ogg"))
 		S.repeat = 1
 		S.channel = CHANNEL_BATTLE
 		S.falloff = 1

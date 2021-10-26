@@ -49,7 +49,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	faction_s = "State Security Service"
@@ -68,7 +68,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 	faction_s = "Army"

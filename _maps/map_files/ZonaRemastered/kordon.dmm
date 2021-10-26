@@ -188,8 +188,11 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "aN" = (
-/obj/structure/grille/stalker{
-	icon_state = "fence3"
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	teleport_x = 236;
+	teleport_y = 8;
+	teleport_z = 7
 	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor)

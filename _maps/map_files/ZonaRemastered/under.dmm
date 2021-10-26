@@ -3907,7 +3907,6 @@
 "ok" = (
 /obj/machinery/light/small{
 	dir = 8;
-	icon_state = "bulb";
 	tag = "icon-bulb1 (WEST)"
 	},
 /turf/open/stalker/floor/gryaz,
@@ -3919,6 +3918,11 @@
 "qp" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
+"qA" = (
+/obj/structure/table/stalker,
+/obj/item/pen/fountain,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "qG" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker,
@@ -3944,6 +3948,11 @@
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"vN" = (
+/obj/structure/table/stalker,
+/obj/item/stalker/docs,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "xe" = (
 /obj/effect/landmark/latejoin/monolith_hegumen,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -3962,6 +3971,12 @@
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"zE" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "AT" = (
 /obj/machinery/door/poddoor/sidor{
 	id = "monolithbar"
@@ -3971,7 +3986,6 @@
 "Cf" = (
 /obj/machinery/light/small{
 	dir = 4;
-	icon_state = "bulb";
 	tag = "icon-bulb1 (EAST)"
 	},
 /obj/structure/stalker/cacheable/yashik,
@@ -3982,6 +3996,14 @@
 	id = "monolithbar"
 	},
 /turf/closed/wall/stalker/beton,
+/area/stalker/buildings/backwater/krug)
+"Em" = (
+/obj/structure/stalker/cacheable/polka,
+/obj/item/stack/spacecash/c5000,
+/obj/item/stack/spacecash/c5000,
+/obj/item/stack/spacecash/c5000,
+/obj/item/stack/spacecash/c5000,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "IH" = (
 /obj/structure/table/stalker/wood/bar100rentgen{
@@ -4014,6 +4036,15 @@
 /obj/structure/bed/stalker/matras,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
+"Pj" = (
+/obj/machinery/door/poddoor/sidor,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
+"Qq" = (
+/obj/structure/table/stalker,
+/obj/item/paper_bin,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Rx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -4033,6 +4064,9 @@
 /obj/effect/landmark/latejoin/monolith,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"YR" = (
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker)
 
 (1,1,1) = {"
 aa
@@ -4381,14 +4415,14 @@ ad
 ad
 ad
 fg
-ge
+jb
 qR
 oS
 ga
 ok
 ge
 jB
-ge
+jb
 zf
 fg
 in
@@ -4631,12 +4665,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+hJ
+hJ
+hJ
+hJ
+hJ
 fg
 fj
 fj
@@ -4888,12 +4922,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+YR
+YR
+YR
+YR
+YR
 fg
 ge
 ge
@@ -5145,12 +5179,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+YR
+YR
+YR
+YR
+YR
 fg
 OL
 YA
@@ -5175,13 +5209,13 @@ fg
 fj
 fj
 fg
-fj
-fj
-ge
-ge
-fj
-fj
 iF
+fj
+ge
+ge
+fj
+fj
+fj
 fg
 fr
 gM
@@ -5402,13 +5436,13 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
-fg
+hJ
+YR
+YR
+YR
+YR
+YR
+Pj
 ge
 ge
 ge
@@ -5430,10 +5464,10 @@ fg
 ge
 fj
 fj
-fj
+ip
 fg
-fj
-fj
+qA
+zE
 ge
 fg
 fg
@@ -5659,12 +5693,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+YR
+YR
+YR
+YR
+YR
 fg
 ga
 oS
@@ -5686,12 +5720,12 @@ hp
 fg
 fj
 fg
-fj
-fj
+ip
+ip
 fg
-fj
-fj
-ge
+Qq
+vN
+gA
 fg
 jz
 jE
@@ -5916,12 +5950,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+YR
+YR
+YR
+YR
+YR
 fg
 ge
 ge
@@ -5947,7 +5981,7 @@ fg
 fg
 fg
 fg
-hm
+ge
 fg
 fg
 fg
@@ -6173,12 +6207,12 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+hJ
+hJ
+hJ
+hJ
+hJ
+hJ
 fg
 fj
 ge
@@ -6437,7 +6471,7 @@ ad
 ad
 ad
 fg
-hp
+jb
 ge
 ge
 ge
@@ -6445,7 +6479,7 @@ CF
 fj
 fj
 ge
-gz
+Em
 fg
 ad
 fg

@@ -33,9 +33,9 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/cora
+	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,
@@ -94,9 +94,7 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = pick(
-		/obj/item/gun/ballistic/automatic/pistol/desert,
-		/obj/item/gun/ballistic/revolver/anaconda)
+	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(

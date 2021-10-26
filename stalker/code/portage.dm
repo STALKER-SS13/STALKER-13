@@ -196,7 +196,7 @@
 	name = "JoinLateMonolith"
 
 /obj/effect/landmark/latejoin/monolith_hegumen
-	name = "JoinLateMonolith Hegumen"
+	name = "JoinLateMonolith Preacher"
 
 /obj/effect/landmark/latejoin/ecologist
 	name = "JoinLateEcologist"

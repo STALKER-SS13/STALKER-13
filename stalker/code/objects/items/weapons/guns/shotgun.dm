@@ -152,7 +152,7 @@
 
 /obj/item/gun/ballistic/rifle/boltaction/enfield
 	name = "Lee Enfield"
-	eng_desc = ""
+	eng_desc = "A heavy and versatile rifle, rechambered in the powerful 7.62x51mm cartridge."
 	icon_state = "enfield"
 	item_state = "enfield"
 	durability = 200

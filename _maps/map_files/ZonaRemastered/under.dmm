@@ -2102,13 +2102,6 @@
 /obj/structure/stalker/blocks/block3,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
-"ia" = (
-/obj/machinery/button/door{
-	id = "bloodsuckers1";
-	pixel_y = -32
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "ib" = (
 /obj/structure/barricade/stalker/wood,
 /obj/structure/grille/stalker{
@@ -2146,12 +2139,6 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
-"ig" = (
-/obj/machinery/door/poddoor/sidor{
-	id = "bloodsuckers1"
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "ih" = (
 /obj/structure/table/stalker,
 /obj/structure/stalker/cacheable/televizor/broken,
@@ -3904,21 +3891,6 @@
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
-"ok" = (
-/obj/machinery/light/small{
-	dir = 8;
-	tag = "icon-bulb1 (WEST)"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"oS" = (
-/obj/effect/landmark/latejoin/monolith,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"qp" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "qA" = (
 /obj/structure/table/stalker,
 /obj/item/pen/fountain,
@@ -3928,10 +3900,6 @@
 /mob/living/simple_animal/hostile/mutant/bloodsucker,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
-"qR" = (
-/obj/structure/bed/stalker/matras,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "sL" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -3941,82 +3909,18 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
-"tZ" = (
-/obj/structure/table/stalker,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "vN" = (
 /obj/structure/table/stalker,
 /obj/item/stalker/docs,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"xe" = (
-/obj/effect/landmark/latejoin/monolith_hegumen,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "yA" = (
 /obj/structure/closet/crate/stalker/blue/stash/high,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
-"zf" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"zv" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "zE" = (
 /obj/structure/chair/office/dark{
 	dir = 4
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"AT" = (
-/obj/machinery/door/poddoor/sidor{
-	id = "monolithbar"
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"Cf" = (
-/obj/machinery/light/small{
-	dir = 4;
-	tag = "icon-bulb1 (EAST)"
-	},
-/obj/structure/stalker/cacheable/yashik,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"CF" = (
-/obj/machinery/button/door{
-	id = "monolithbar"
-	},
-/turf/closed/wall/stalker/beton,
-/area/stalker/buildings/backwater/krug)
-"Em" = (
-/obj/structure/stalker/cacheable/polka,
-/obj/item/stack/spacecash/c5000,
-/obj/item/stack/spacecash/c5000,
-/obj/item/stack/spacecash/c5000,
-/obj/item/stack/spacecash/c5000,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"IH" = (
-/obj/structure/table/stalker/wood/bar100rentgen{
-	dir = 4;
-	pixel_x = -13;
-	tag = "icon-table (EAST)"
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"IV" = (
-/obj/structure/table/stalker,
-/obj/machinery/stalker/sidormat{
-	pixel_y = 8
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
@@ -4029,27 +3933,10 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
-"OL" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/structure/bed/stalker/matras,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"Pj" = (
-/obj/machinery/door/poddoor/sidor,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "Qq" = (
 /obj/structure/table/stalker,
 /obj/item/paper_bin,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"Rx" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "SL" = (
 /obj/rad/rad_low,
@@ -4060,13 +3947,6 @@
 /obj/rad/rad_low,
 /turf/closed/mineral,
 /area/stalker/buildings/backwater/claw)
-"YA" = (
-/obj/effect/landmark/latejoin/monolith,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"YR" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker)
 
 (1,1,1) = {"
 aa
@@ -4415,15 +4295,15 @@ ad
 ad
 ad
 fg
-jb
-qR
-oS
-ga
-ok
 ge
-jB
-jb
-zf
+ge
+ge
+fj
+ge
+ge
+ge
+fj
+fj
 fg
 in
 gp
@@ -4665,22 +4545,22 @@ ad
 ad
 ad
 ad
-hJ
-hJ
-hJ
-hJ
-hJ
-hJ
+ad
+ad
+ad
+ad
+ad
+ad
 fg
 fj
 fj
-ge
-ge
-oS
 fj
 ge
 fj
-ia
+ge
+ge
+fj
+ge
 fg
 io
 ge
@@ -4922,23 +4802,23 @@ ad
 ad
 ad
 ad
-hJ
-YR
-YR
-YR
-YR
-YR
+ad
+ad
+ad
+ad
+ad
+ad
 fg
-ge
-ge
-gp
-ge
+fj
+fj
 fj
 ge
 ge
 fj
+ge
+ge
+ge
 fj
-ig
 ge
 ge
 gk
@@ -5179,22 +5059,22 @@ ad
 ad
 ad
 ad
-hJ
-YR
-YR
-YR
-YR
-YR
+ad
+ad
+ad
+ad
+ad
+ad
 fg
-OL
-YA
 ge
 ge
 ge
-Rx
 fj
 ge
-qp
+ge
+ge
+ge
+ge
 fg
 ip
 ge
@@ -5436,22 +5316,22 @@ ad
 ad
 ad
 ad
-hJ
-YR
-YR
-YR
-YR
-YR
-Pj
-ge
-ge
-ge
-ge
+ad
+ad
+ad
+ad
+ad
+ad
 fg
-fg
-fg
-IH
-IH
+ge
+ge
+ge
+ge
+fj
+ge
+ge
+ge
+ge
 fg
 jZ
 fj
@@ -5693,21 +5573,21 @@ ad
 ad
 ad
 ad
-hJ
-YR
-YR
-YR
-YR
-YR
+ad
+ad
+ad
+ad
+ad
+ad
 fg
-ga
-oS
-ge
-ge
-fg
-ip
-zv
 fj
+ge
+fj
+ge
+fj
+ge
+fj
+ge
 fj
 fg
 ip
@@ -5950,22 +5830,22 @@ ad
 ad
 ad
 ad
-hJ
-YR
-YR
-YR
-YR
-YR
+ad
+ad
+ad
+ad
+ad
+ad
 fg
 ge
 ge
 ge
-zf
-fg
-IV
-xe
+ge
+ge
 ge
 fj
+ge
+ge
 fg
 fg
 fg
@@ -6207,22 +6087,22 @@ ad
 ad
 ad
 ad
-hJ
-hJ
-hJ
-hJ
-hJ
-hJ
+ad
+ad
+ad
+ad
+ad
+ad
 fg
+ge
+ge
+ge
+fj
 fj
 ge
-oS
+ge
 fj
-fg
-tZ
-ge
-ge
-qp
+fj
 fg
 ad
 ad
@@ -6471,15 +6351,15 @@ ad
 ad
 ad
 fg
-jb
 ge
-ge
-ge
-CF
-fj
 fj
 ge
-Em
+ge
+ge
+ge
+ge
+fj
+fj
 fg
 ad
 fg
@@ -6728,15 +6608,15 @@ ad
 ad
 ad
 fg
-hp
-Cf
 ge
-ge
-AT
-ge
-kT
 fj
-gz
+ge
+ge
+ge
+fj
+ge
+ge
+ge
 fg
 ad
 fg

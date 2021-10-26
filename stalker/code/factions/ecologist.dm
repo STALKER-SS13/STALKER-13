@@ -22,7 +22,7 @@
 	..()
 	head = null
 	uniform = /obj/item/clothing/under/lawyer/blacksuit
-	suit = pick(/obj/item/clothing/suit/toggle/labcoat/ecologist_blue, /obj/item/clothing/suit/toggle/labcoat/ecologist_green, /obj/item/clothing/suit/toggle/labcoat/ecologist_orange, /obj/item/clothing/suit/toggle/labcoat/ecologist_purple)
+	suit = /obj/item/clothing/suit/hooded/sealed/ecolog
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
@@ -81,7 +81,7 @@
 	..()
 	head = null
 	uniform = /obj/item/clothing/under/lawyer/blacksuit
-	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
+	suit = /obj/item/clothing/suit/hooded/sealed/ecologm
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
@@ -102,7 +102,7 @@
 	name = "Chief Ecologist"
 	head = null
 	uniform = /obj/item/clothing/under/lawyer/blacksuit
-	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
+	suit = /obj/item/clothing/suit/hooded/sealed/ecologm
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda

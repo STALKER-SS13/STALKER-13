@@ -118,7 +118,7 @@ Assistant
 	..()
 	head = /obj/item/clothing/head/steel
 	uniform = UNIFORMPICK
-	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
+	suit = /obj/item/clothing/suit/psz9d
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/cigar/havana,
 		/obj/item/clothing/mask/bandana/black)

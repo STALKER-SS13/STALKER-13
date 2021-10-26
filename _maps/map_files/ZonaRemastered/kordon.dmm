@@ -5552,8 +5552,12 @@
 	icon_state = "fence3";
 	pixel_x = 14
 	},
-/obj/structure/table/stalker,
 /obj/machinery/light,
+/obj/structure/table/stalker/wood/bar100rentgen{
+	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
+	icon_state = "r_table";
+	name = "reinforced table"
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "MS" = (
@@ -5717,25 +5721,11 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
 "Ph" = (
-/obj/structure/closet/radiation,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
+/obj/structure/table/stalker/wood/bar100rentgen{
+	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
+	icon_state = "r_table";
+	name = "reinforced table"
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "Pv" = (
@@ -31513,7 +31503,7 @@ rJ
 nR
 wq
 wq
-Ph
+wq
 uh
 pY
 Yp
@@ -32539,7 +32529,7 @@ mq
 mq
 qF
 LL
-nR
+Ph
 ML
 we
 LL

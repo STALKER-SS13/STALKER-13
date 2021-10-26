@@ -84,7 +84,7 @@
 	..()
 	head = /obj/item/clothing/head/steel
 	uniform = /obj/item/clothing/under/color/switer
-	suit = /obj/item/clothing/suit/hooded/kombez/veter
+	suit = /obj/item/clothing/suit/hooded/strazh
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/rollie/cannabis,
 		/obj/item/clothing/mask/gas,

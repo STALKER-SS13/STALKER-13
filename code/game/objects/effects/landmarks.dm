@@ -313,8 +313,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 			SSjob.latejoin_trader += loc
 		if ("JoinLateOld Stalker")
 			SSjob.latejoin_stalker += loc
-		if ("JoinLateMonolith" || "JoinLateMonolith Preacher")
+		if ("JoinLateMonolith")
 			SSjob.latejoin_monolith += loc
+		if ("JoinLateMonolith Preacher")
+			SSjob.latejoin_monolith_hegumen += loc
 		if ("JoinLateEcologist")
 			SSjob.latejoin_ecologist += loc
 		if ("JoinLateChief Ecologist")

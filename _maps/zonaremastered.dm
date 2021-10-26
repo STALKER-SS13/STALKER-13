@@ -6,6 +6,7 @@
 #include "map_files/ZonaRemastered/bar.dmm"
 #include "map_files/ZonaRemastered/agroprom.dmm"
 #include "map_files/ZonaRemastered/svalka.dmm"
+#include "map_files/ZonaRemastered/radar.dmm"
 //#include "map_files/ZonaRemastered/zona.dmm"
 
 #define FORCE_MAP "_maps/zonaremastered.json"

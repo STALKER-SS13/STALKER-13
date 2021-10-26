@@ -34,8 +34,8 @@ Assistant
 	ears = null
 	belt = /obj/item/kitchen/knife/bayonet
 	id = /obj/item/stalker_pda
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
+	suit_store = /obj/item/gun/ballistic/automatic/kiparis
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/kiparis = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = pick(
 		 /obj/item/radio/off,
 		 /obj/item/flashlight/seclite,

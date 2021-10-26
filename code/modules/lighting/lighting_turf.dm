@@ -1,4 +1,9 @@
 /turf
+
+	var/lum_r = 0
+	var/lum_g = 0
+	var/lum_b = 0
+
 	var/dynamic_lighting = TRUE
 	luminosity           = 1
 

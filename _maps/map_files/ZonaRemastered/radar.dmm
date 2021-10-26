@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 14;
+	teleport_y = 239;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "ao" = (
 /obj/structure/stalker/rails{
 	icon_state = "l";
@@ -765,14 +773,6 @@
 /obj/structure/stalker/cacheable/yashik{
 	density = 0;
 	pixel_x = -16
-	},
-/turf/open/stalker/floor/road,
-/area/stalker/blowout/outdoor)
-"Vu" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 13;
-	teleport_y = 239;
-	teleport_z = 3
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
@@ -61487,7 +61487,7 @@ YF
 YF
 YF
 YF
-Vu
+aa
 Te
 YF
 YF
@@ -61744,7 +61744,7 @@ YF
 YF
 YF
 YF
-Vu
+aa
 Rf
 YF
 YF

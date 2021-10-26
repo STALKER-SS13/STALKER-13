@@ -34,6 +34,13 @@
 	},
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/buildings)
+"bp" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/black,
+/area/stalker/buildings)
 "by" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -65,6 +72,12 @@
 	pixel_y = 27
 	},
 /turf/open/stalker/floor/plasteel/plita,
+/area/stalker/buildings)
+"ck" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/black,
 /area/stalker/buildings)
 "cp" = (
 /obj/structure/stalker/brokenbed,
@@ -147,6 +160,11 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"fM" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/light,
+/turf/open/stalker/floor/wood/brown,
+/area/stalker/buildings)
 "fR" = (
 /obj/structure/stalker/rails{
 	icon_state = "l1";
@@ -327,6 +345,13 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"pX" = (
+/obj/effect/landmark/latejoin/monolith,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/black,
+/area/stalker/buildings)
 "qo" = (
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/gryaz,
@@ -351,6 +376,13 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"qU" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/stalker/floor/wood/brown,
+/area/stalker/buildings)
 "re" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big{
 	pixel_x = -4
@@ -471,6 +503,10 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"yG" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/wood/brown,
+/area/stalker/buildings)
 "zc" = (
 /obj/structure/bed/stalker/metal/matras{
 	dir = 4;
@@ -547,6 +583,12 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
+"DJ" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/stalker/floor/wood/black,
+/area/stalker/buildings)
 "Eb" = (
 /obj/structure/stalker/cacheable/body{
 	icon_state = "deadbody3"
@@ -581,6 +623,10 @@
 "GG" = (
 /obj/structure/stalker/cacheable/polka,
 /turf/open/stalker/floor/wood/black,
+/area/stalker/buildings)
+"Hc" = (
+/obj/machinery/light,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings)
 "Hr" = (
 /obj/structure/stalker/cacheable/yashik,
@@ -695,11 +741,8 @@
 /turf/closed/wall/stalker/beton_agro,
 /area/stalker/buildings)
 "Nx" = (
-/obj/structure/stalker/cacheable/polka{
-	desc = "Деревный стеллаж. С боковой стороны кто-то вырезал слова: ''Петрович пидор!''";
-	dir = 4;
-	pixel_x = 24;
-	tag = "icon-polka (EAST)"
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/open/stalker/floor/wood/brown,
 /area/stalker/buildings)
@@ -710,6 +753,12 @@
 "NT" = (
 /turf/closed/mineral,
 /area/stalker/blowout/outdoor)
+"NX" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings)
 "Oe" = (
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass,
@@ -887,6 +936,12 @@
 /obj/structure/fence/cut/large,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"Yv" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/brown,
+/area/stalker/buildings)
 "YF" = (
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
@@ -5639,26 +5694,26 @@ Xc
 Xc
 Kr
 tq
-eB
+ck
 eB
 eB
 lN
 Dv
 eB
-tq
-pr
+bp
+yG
 pr
 eB
 lN
-eB
+ck
 Ky
 CP
 eB
 eB
-Ky
+pX
 Pg
 eB
-lN
+Yv
 lN
 eB
 GG
@@ -6175,7 +6230,7 @@ lN
 lN
 Kr
 eB
-pr
+fM
 Kr
 Xc
 og
@@ -6411,7 +6466,7 @@ Xc
 Kr
 pr
 eB
-eB
+ck
 eB
 Mv
 lN
@@ -6671,22 +6726,22 @@ Mv
 eB
 eB
 eB
-lN
+Nx
 bb
+DJ
 eB
 eB
 eB
 eB
-eB
-eB
+DJ
 sA
 pr
 NH
 Mg
-pr
+qU
 CP
 Ky
-eB
+DJ
 lN
 eB
 HK
@@ -7955,7 +8010,7 @@ Mv
 Mv
 Mv
 Mv
-Mv
+Hc
 Kr
 VD
 Xc
@@ -8723,10 +8778,10 @@ Xc
 Xc
 Kr
 eB
-Mv
+NX
 eB
 lN
-Mv
+NX
 Kr
 Xc
 Xc

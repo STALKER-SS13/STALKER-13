@@ -40,12 +40,7 @@
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
-	l_pocket = pick(
-	/obj/item/megaphone,
-	/obj/item/lighter/greyscale,
-	/obj/item/storage/fancy/cigarettes,
-	/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
-	/obj/item/reagent_containers/food/drinks/bottle/vodka)
+	l_pocket = /obj/item/stalker/bolts
 
 /datum/outfit/renegade  // For select_equipment
 	name = "Renegade"

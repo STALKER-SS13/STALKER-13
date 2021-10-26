@@ -32,7 +32,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/abakan
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/flashlight/seclite = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/stalker/frag = 2)
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	l_pocket = /obj/item/stalker/bolts
 
 /datum/outfit/job/monolith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

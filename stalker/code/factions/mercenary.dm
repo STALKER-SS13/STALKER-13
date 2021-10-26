@@ -37,7 +37,7 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = pick(
 	/obj/item/restraints/handcuffs,
 	/obj/item/camera,
@@ -64,7 +64,7 @@
 							/obj/item/storage/firstaid/stalker/military = 1,
 							/obj/item/gun/ballistic/automatic/pistol/sip = 1,
 							/obj/item/flashlight/seclite = 1)
-	l_pocket = /obj/item/reagent_containers/food/snacks/stalker/kolbasa
+	l_pocket = /obj/item/stalker/bolts
 	faction_s = "Mercenaries"
 
 /datum/job/mercenarycommander
@@ -106,9 +106,7 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	l_hand = pick(
-		/obj/item/weapon/kitchen/knife/hunting,
-		/obj/item/melee/classic_baton/telescopic)
+	l_hand = /obj/item/stalker/bolts
 	r_pocket = pick(
 	/obj/item/restraints/handcuffs,
 	/obj/item/camera,

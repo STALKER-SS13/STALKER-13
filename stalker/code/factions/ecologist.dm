@@ -28,7 +28,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/flashlight/seclite
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -49,7 +49,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/flashlight/seclite
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -87,7 +87,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/flashlight/seclite
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -108,7 +108,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/flashlight/seclite
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,

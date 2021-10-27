@@ -1,4 +1,6 @@
 /mob/living/simple_animal/hostile/mutant
+	vision_range = 9
+	aggro_vision_range = 9
 	stat_attack = 2
 	stat_exclusive = 0
 	fearless = 0
@@ -10,7 +12,6 @@
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
-
 /*
 /mob/living/simple_animal/hostile/mutant/death(gibbed)
 	..()
@@ -305,6 +306,7 @@
 	speed = 3
 	a_intent = "harm"
 	search_objects = 0
+	icon = 'stalker/icons/bloodsucker.dmi'
 	icon_state = "bloodsucker"
 	icon_living = "bloodsucker"
 	icon_dead = "bloodsucker_dead"

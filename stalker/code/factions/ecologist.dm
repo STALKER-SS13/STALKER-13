@@ -36,7 +36,8 @@
 							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
-							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
+							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
+							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
 
 /datum/outfit/ecologist  // For select_equipment
@@ -95,7 +96,8 @@
 							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
-							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
+							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
+							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
 
 /datum/outfit/job/chief_ecologist // For select_equipment

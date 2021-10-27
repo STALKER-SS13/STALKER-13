@@ -237,9 +237,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Wallet",								"Wallet",												/obj/item/storage/wallet,											500,	ROOKIE),
 		new /datum/data/stalker_equipment("Flare",								"Flare",												/obj/item/flashlight/flare,											2000,	ROOKIE,	sale_price = 250),
 		new /datum/data/stalker_equipment("Glowstick",							"Glowstick",											/obj/item/flashlight/glowstick,										2000,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Soap",								"Soap",													/obj/item/soap,														125,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Trash Bag",							"Trash Bag",											/obj/item/storage/bag/trash,											125,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Spray Cleaner",						"Spray Cleaner",										/obj/item/reagent_containers/spray/cleaner,							125,	ROOKIE,	sale_price = 250)
+		new /datum/data/stalker_equipment("Soap",								"Soap",													/obj/item/soap,														250,	ROOKIE,	sale_price = 150),
+		new /datum/data/stalker_equipment("Trash Bag",							"Trash Bag",											/obj/item/storage/bag/trash,											250,	ROOKIE,	sale_price = 150),
+		new /datum/data/stalker_equipment("Spray Cleaner",						"Spray Cleaner",										/obj/item/reagent_containers/spray/cleaner,							250,	ROOKIE,	sale_price = 150)
 		),
 
 	"Clothing" = list(

@@ -12,6 +12,11 @@
 "ad" = (
 /turf/open/stalker/floor/road,
 /area/stalker)
+"ae" = (
+/obj/structure/grille/stalker,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "af" = (
 /obj/structure/stalker/tree/leafless,
 /turf/open/stalker/floor/digable/grass,
@@ -88,6 +93,11 @@
 /obj/anomaly/electro,
 /turf/open/stalker/floor/road,
 /area/stalker/buildings)
+"az" = (
+/obj/structure/grille/stalker,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "aA" = (
 /obj/machinery/door/poddoor/shutters,
 /turf/open/stalker/floor/digable/grass,
@@ -369,6 +379,11 @@
 /obj/structure/stalker/blocks/vanish/pipe,
 /turf/open/stalker/floor/gryaz,
 /area/stalker)
+"bu" = (
+/obj/structure/stalker/radiation,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "bv" = (
 /obj/structure/stalker/cacheable/musor_yashik/green/full,
 /turf/open/stalker/floor/digable/grass,
@@ -582,6 +597,30 @@
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/blowout/outdoor)
+"cb" = (
+/obj/structure/curtain,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	pixel_x = 0;
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	pixel_y = -24;
+	tag = "icon-border2"
+	},
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 1;
+	tag = "icon-ladder (EAST)"
+	},
+/area/stalker/buildings/bar/rentgen)
 "cc" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
 	dir = 8;
@@ -613,6 +652,10 @@
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bar/city)
+"cj" = (
+/obj/machinery/door/poddoor/sidor,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/bar/rentgen)
 "cl" = (
 /obj/structure/stalker/doski/doski4,
 /turf/open/stalker/floor/agroprom/beton,
@@ -748,6 +791,14 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"cL" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	pixel_y = 12
+	},
+/obj/machinery/light,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/bar/rentgen)
 "cM" = (
 /obj/structure/stalker/rails{
 	icon_state = "l1";
@@ -4919,21 +4970,9 @@
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"qc" = (
-/obj/structure/grille/stalker{
-	density = 0;
-	icon_state = "fence5";
-	tag = "icon-fence5"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
 "qe" = (
 /obj/anomaly/tramplin,
 /turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
-"qg" = (
-/obj/structure/stalker/radiation,
-/turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "qh" = (
 /obj/rad/rad_low,
@@ -42109,8 +42148,8 @@ al
 al
 al
 al
-aD
-aD
+qa
+qa
 ak
 ak
 ak
@@ -42366,8 +42405,8 @@ al
 al
 al
 al
-al
-al
+qh
+qh
 qa
 qb
 ak
@@ -42624,9 +42663,9 @@ aD
 al
 al
 al
-al
-al
-oQ
+qh
+qh
+ae
 qa
 qa
 qa
@@ -42881,12 +42920,12 @@ al
 al
 al
 aD
-al
-al
-oQ
-al
-al
-al
+qh
+qh
+ae
+qh
+qh
+qh
 qh
 qh
 qh
@@ -43138,14 +43177,14 @@ al
 al
 al
 al
-aD
-al
-oQ
-al
-al
-al
-al
-al
+qa
+qh
+ae
+qh
+qh
+qh
+qh
+qh
 qh
 qi
 qi
@@ -43395,14 +43434,14 @@ al
 aD
 aD
 al
-al
-al
-qc
-al
-al
-aD
-aD
-al
+qh
+qh
+ae
+qh
+qh
+qa
+qa
+qh
 qh
 qh
 qi
@@ -43652,14 +43691,14 @@ al
 al
 al
 al
-al
-al
-oQ
-qg
-al
-al
-aD
-aD
+qh
+qh
+ae
+bu
+qh
+qh
+qa
+qa
 qh
 qi
 qi
@@ -43909,13 +43948,13 @@ al
 al
 al
 al
-al
-aD
-rr
-al
-al
-al
-al
+qh
+qa
+az
+qh
+qh
+qh
+qh
 qh
 qh
 qi
@@ -44166,13 +44205,13 @@ al
 al
 al
 aD
-aD
-al
-oQ
-al
-al
-al
-al
+qa
+qh
+ae
+qh
+qh
+qh
+qh
 qh
 qi
 qi
@@ -44423,12 +44462,12 @@ al
 al
 al
 al
-al
-al
-oQ
-al
-al
-al
+qh
+qh
+ae
+qh
+qh
+qh
 qh
 qi
 qi
@@ -44680,10 +44719,10 @@ al
 al
 al
 al
-al
-al
-oQ
-al
+qh
+qh
+ae
+qh
 qh
 qh
 qi
@@ -44936,9 +44975,9 @@ al
 al
 al
 al
-al
-al
-al
+qh
+qh
+qh
 qb
 qa
 qi
@@ -45193,7 +45232,7 @@ al
 al
 al
 al
-al
+qh
 qa
 qa
 ak
@@ -45450,7 +45489,7 @@ al
 al
 aD
 aD
-aD
+qa
 ak
 ak
 ak
@@ -63600,8 +63639,8 @@ fS
 Vq
 gI
 cT
-aj
-aj
+ai
+ai
 aj
 aj
 aj
@@ -63857,9 +63896,9 @@ cT
 gn
 gn
 cT
-aj
-aj
-aj
+cj
+cT
+cT
 aj
 aj
 aj
@@ -64114,9 +64153,9 @@ fT
 go
 Fh
 cT
-aj
-aj
-aj
+ds
+eJ
+cT
 aj
 aj
 aj
@@ -64370,10 +64409,10 @@ oV
 gJ
 oV
 oV
+cb
+ds
+cL
 cT
-aj
-aj
-aj
 aj
 aj
 aj
@@ -64628,9 +64667,9 @@ oV
 oV
 BK
 cT
-aj
-aj
-aj
+ds
+eJ
+cT
 aj
 aj
 aj
@@ -64885,9 +64924,9 @@ cT
 gq
 QF
 cT
-aj
-aj
-aj
+cT
+cT
+cT
 aj
 aj
 aj

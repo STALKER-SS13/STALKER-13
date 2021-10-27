@@ -44,7 +44,8 @@
 /obj/item/melee/tireiron
 	name = "tire iron"
 	desc = "A rusty metal tire iron which can be used to beat mutants and stalkers. The end is bent and unusable."
-	icon_state = "tireiron"
+	icon = 'stalker/icons/weapons.dmi'
+	icon_state = "tire"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT
 	force = 20

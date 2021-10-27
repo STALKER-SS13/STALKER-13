@@ -196,7 +196,8 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Energy drink \"NonStop\"",	"Energy drink \"NonStop\"",	/obj/item/reagent_containers/food/drinks/soda_cans/energetic,			500,	ROOKIE),
 		new /datum/data/stalker_equipment("Snickers",					"Snickers",					/obj/item/reagent_containers/food/snacks/stalker/konserva/snack/snikers,300,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Salami",						"Salami",					/obj/item/reagent_containers/food/snacks/stalker/kolbasa,				500,	ROOKIE),
-		new /datum/data/stalker_equipment("Bread",						"Bread",					/obj/item/reagent_containers/food/snacks/stalker/baton,					400,	ROOKIE)
+		new /datum/data/stalker_equipment("Bread",						"Bread",					/obj/item/reagent_containers/food/snacks/stalker/baton,					400,	ROOKIE),
+		new /datum/data/stalker_equipment("MRE",						"MRE",						/obj/item/storage/box/MRE,												2500,	EXPERIENCED)
 		),
 
 	"Bacpacks" = list(
@@ -235,7 +236,10 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Flash Grenade",						"Flash Grenade",										/obj/item/grenade/flashbang,										2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Wallet",								"Wallet",												/obj/item/storage/wallet,											500,	ROOKIE),
 		new /datum/data/stalker_equipment("Flare",								"Flare",												/obj/item/flashlight/flare,											2000,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Glowstick",							"Glowstick",											/obj/item/flashlight/glowstick,										2000,	ROOKIE,	sale_price = 250)
+		new /datum/data/stalker_equipment("Glowstick",							"Glowstick",											/obj/item/flashlight/glowstick,										2000,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Soap",								"Soap",													/obj/item/soap,														125,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Trash Bag",							"Trash Bag",											/obj/item/storage/bag/trash,											125,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Spray Cleaner",						"Spray Cleaner",										/obj/item/reagent_containers/spray/cleaner,							125,	ROOKIE,	sale_price = 250)
 		),
 
 	"Clothing" = list(
@@ -306,6 +310,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Stone Blood",		"Stone Blood",						/obj/item/artifact/stone_blood,				4000,	ROOKIE,	sale_price = 2500),
 		new /datum/data/stalker_equipment("Bubble",				"Bubble",							/obj/item/artifact/bubble,					12000,	ROOKIE,	sale_price = 15000),
 		new /datum/data/stalker_equipment("Mica",				"Mica",								/obj/item/artifact/mica,					30000,	ROOKIE,	sale_price = 20000),
+		new /datum/data/stalker_equipment("Firefly",			"Firefly",							/obj/item/artifact/firefly,					90000,	ROOKIE,	sale_price = 40000),
   	/////////////////////////////////	Мусор	//////////////////////////////////////////////
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva,						400,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/MREkonserva1,			200,	ROOKIE),

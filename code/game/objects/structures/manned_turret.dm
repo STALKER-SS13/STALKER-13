@@ -6,7 +6,7 @@
 	icon = 'icons/obj/turrets.dmi'
 	icon_state = "machinegun"
 	can_buckle = TRUE
-	anchored = FALSE
+	anchored = TRUE
 	density = TRUE
 	max_integrity = 100
 	buckle_lying = FALSE
@@ -30,7 +30,7 @@
 //BUCKLE HOOKS
 
 /obj/machinery/manned_turret/unbuckle_mob(mob/living/buckled_mob,force = FALSE)
-	playsound(src,'sound/mecha/mechmove01.ogg', 50, 1)
+//	playsound(src,'sound/mecha/mechmove01.ogg', 50, 1)
 	for(var/obj/item/I in buckled_mob.held_items)
 		if(istype(I, /obj/item/gun_control))
 			qdel(I)
@@ -39,7 +39,7 @@
 		buckled_mob.pixel_y = 0
 		if(buckled_mob.client)
 			buckled_mob.client.change_view(CONFIG_GET(string/default_view))
-	anchored = FALSE
+	anchored = TRUE
 	. = ..()
 	STOP_PROCESSING(SSfastprocess, src)
 
@@ -132,7 +132,7 @@
 	if(world.time < cooldown)
 		if(!warned && world.time > (cooldown - cooldown_duration + rate_of_fire*number_of_shots)) // To capture the window where one is done firing
 			warned = TRUE
-			playsound(src, 'sound/weapons/sear.ogg', 100, 1)
+//			playsound(src, 'sound/weapons/sear.ogg', 100, 1)
 		return
 	else
 		cooldown = world.time + cooldown_duration

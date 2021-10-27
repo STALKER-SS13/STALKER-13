@@ -4187,6 +4187,13 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"nP" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	pixel_y = 9
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "nQ" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4554,6 +4561,10 @@
 	},
 /obj/item/instrument/violin,
 /turf/open/stalker/floor/lattice,
+/area/stalker/kordon/buildings)
+"tG" = (
+/obj/structure/stalker/cacheable/polka,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
 "tI" = (
 /obj/structure/table/stalker/wood,
@@ -5199,6 +5210,10 @@
 /obj/machinery/campfire,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/kordon/buildings)
+"Hj" = (
+/obj/structure/table/stalker/wood,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "Hk" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -5666,6 +5681,14 @@
 /obj/item/seeds/potato,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
+"Or" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/stalker/cacheable/porog/porog2{
+	dir = 8;
+	tag = "icon-porog2 (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "Ox" = (
 /obj/machinery/light,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -6086,6 +6109,10 @@
 /obj/structure/barricade/stalker/woodalt,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"Wq" = (
+/obj/structure/sign/vendor,
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker)
 "Wt" = (
 /obj/structure/sink/wellsmall,
 /turf/open/floor/plating/dirt,
@@ -48722,8 +48749,8 @@ aa
 nA
 nA
 nA
-nA
-nA
+Or
+Wq
 nA
 nA
 nA
@@ -48976,13 +49003,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+Hj
+mE
+mE
+mE
+mE
+nA
 aa
 aa
 aa
@@ -49233,13 +49260,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+nP
+mE
+mE
+mE
+tG
+nA
 aa
 aa
 aa
@@ -49490,13 +49517,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+Hj
+mE
+mE
+mE
+tG
+nA
 aa
 aa
 aa
@@ -49747,13 +49774,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+mE
+mE
+mE
+mE
+mE
+nA
 aa
 aa
 aa
@@ -50004,13 +50031,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+nA
+nA
+nA
+nA
+nA
+nA
 aa
 aa
 aa

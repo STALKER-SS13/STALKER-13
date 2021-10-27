@@ -7,6 +7,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits or Renegades, and starting fights with any neutral faction without asking up the chain of command."
@@ -14,7 +15,7 @@ Assistant
 	selection_color = "#64B2F7"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/clearsky
 

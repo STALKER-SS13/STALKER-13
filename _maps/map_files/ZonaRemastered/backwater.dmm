@@ -3131,7 +3131,6 @@
 "mS" = (
 /obj/structure/closet,
 /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/stalker/bolts,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
 "mT" = (

@@ -666,3 +666,8 @@
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit_bar"
 	safezone = 1
+
+//radar
+/area/stalker/buildings/radar
+	name = "Buildings"
+	icon_state = "buildings"

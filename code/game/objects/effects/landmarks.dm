@@ -319,6 +319,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 			SSjob.latejoin_monolith_hegumen += loc
 		if ("JoinLateEcologist")
 			SSjob.latejoin_ecologist += loc
+		if ("JoinLateEcologist Guard")
+			SSjob.latejoin_ecologistguard += loc
 		if ("JoinLateChief Ecologist")
 			SSjob.latejoin_chief_ecologist += loc
 		if ("JoinLateClear Sky Soldier")

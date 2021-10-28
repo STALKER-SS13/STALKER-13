@@ -372,6 +372,8 @@
 	switch(SSjob.GetJob(rank).faction_s)
 		if("Monolith")
 			character.faction = list("monolith_forces")
+		if("Ecologist")
+			character.faction = list("ecologist_forces", "stalker_forces")
 		else
 			character.faction = list("stalker_forces")
 	var/equip = SSjob.EquipRank(character, rank, TRUE)

@@ -642,6 +642,12 @@
 	name = "ecologist"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "ecologist"
+	ecosafezone = 1
+
+/area/stalker/buildings/ecologist_entrance
+	name = "ecologist"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "ecologist entrance"
 	safezone = 1
 
 //bar

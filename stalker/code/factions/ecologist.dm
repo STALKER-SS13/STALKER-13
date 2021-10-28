@@ -36,8 +36,7 @@
 							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
-							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
-							/obj/item/clothing/accessory/patch/ecologists = 1)
+							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
 	faction_s = "Ecologist"
 
 /datum/outfit/ecologist  // For select_equipment
@@ -60,6 +59,65 @@
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
 	faction_s = "Ecologist"
+
+/datum/job/ecologistguard
+	title = "Ecologist Guard"
+	faction_s = "Ecologist"
+	faction = "Station"
+	total_positions = -1
+	locked = 1
+	spawn_positions = -1
+	description = "Ecologists are a group focusing on researching the Zone, in order to properly harness its potential for the good of mankind. They are largely pacifist when it comes to human conflict, and rely on other factions to offer protection when it comes to embarking on missions into the zone. Your job is to research the wonders of these strange lands and to report your discoveries, and coordinate with those around you to make it all happen."
+	enforces = "Stay aware of zone hostilities, stay pleasant and neutral to Zone politics, keep yourself safe and sound in mind, keep lab secure and useable, and write your reports so they can be peer reviewed."
+	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
+	supervisors = "Chief Ecologist"
+	selection_color = "#601919"
+	whitelist_only = 1
+	outfit = /datum/outfit/job/ecologistguard
+	real_rank = "Private"
+
+/datum/outfit/job/ecologistguard
+	name = "Ecologist Guard"
+	faction_s = "Ecologist"
+
+/datum/outfit/job/ecologistguard/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = null
+	uniform = /obj/item/clothing/under/color/switer/tourist/sweater
+	suit = /obj/item/clothing/suit/hooded/kombez/eco_mercenary
+	shoes = /obj/item/clothing/shoes/jackboots/warm
+	mask = /obj/item/clothing/mask/gas/stalker/mercenary
+	gloves = /obj/item/clothing/gloves/fingerless
+	id = /obj/item/stalker_pda
+	belt = /obj/item/storage/belt/stalker/artifact_belt/small
+	back = /obj/item/storage/backpack/stalker/tourist
+	l_pocket = /obj/item/stalker/bolts
+	r_pocket = /obj/item/radio/off
+	suit_store = /obj/item/gun/ballistic/automatic/mp5
+	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/weapon/kitchen/knife/hunting = 1,
+							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2)
+	faction_s = "Ecologist"
+
+/datum/outfit/ecologistguard  // For select_equipment
+	name = "Ecologist Guard"
+	head = null
+	uniform = /obj/item/clothing/under/color/switer/tourist/sweater
+	suit = /obj/item/clothing/suit/hooded/kombez/eco_mercenary
+	shoes = /obj/item/clothing/shoes/jackboots/warm
+	mask = /obj/item/clothing/mask/gas/stalker/mercenary
+	gloves = /obj/item/clothing/gloves/fingerless
+	id = /obj/item/stalker_pda
+	belt = /obj/item/storage/belt/stalker/artifact_belt/small
+	back = /obj/item/storage/backpack/stalker/tourist
+	l_pocket = /obj/item/stalker/bolts
+	r_pocket = /obj/item/radio/off
+	suit_store = /obj/item/gun/ballistic/automatic/mp5
+	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/weapon/kitchen/knife/hunting = 1,
+							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2)
+	faction_s = "Ecologist"
+
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"
@@ -96,8 +154,7 @@
 							/obj/item/storage/firstaid/stalker/scientific = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
-							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
-							/obj/item/clothing/accessory/patch/ecologists = 1)
+							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2)
 	faction_s = "Ecologist"
 
 /datum/outfit/job/chief_ecologist // For select_equipment

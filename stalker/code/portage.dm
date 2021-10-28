@@ -201,6 +201,9 @@
 /obj/effect/landmark/latejoin/ecologist
 	name = "JoinLateEcologist"
 
+/obj/effect/landmark/latejoin/ecologistguard
+	name = "JoinLateEcologist Guard"
+
 /obj/effect/landmark/latejoin/chief_ecologist
 	name = "JoinLateChief Ecologist"
 

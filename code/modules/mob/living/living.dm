@@ -570,6 +570,13 @@
 		else
 			to_chat(src, "<span class='warning'>You can't be here!</span>")
 		return 0
+//Ecologist safezone stuff
+	if((stat != DEAD) && get_area(newloc).ecosafezone && !("ecologist_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
 
 	if (buckled && buckled.loc != newloc) //not updating position
 		if (!buckled.anchored)

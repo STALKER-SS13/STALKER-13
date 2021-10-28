@@ -72,7 +72,6 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
@@ -100,7 +99,6 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless

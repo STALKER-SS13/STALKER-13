@@ -150,6 +150,9 @@
 /obj/effect/landmark/latejoin/bandit
 	name = "JoinLateBandit"
 
+/obj/effect/landmark/latejoin/banditboss
+	name = "JoinLateBandit Boss"
+
 /obj/effect/landmark/latejoin/bandit_barman
 	name = "JoinLateBandit Barman"
 

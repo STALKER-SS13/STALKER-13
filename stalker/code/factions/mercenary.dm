@@ -26,12 +26,13 @@
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
 	mask = /obj/item/clothing/mask/gas/stalker/mercenary
+	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	belt = pick(
 		/obj/item/kitchen/knife/bayonet,
 		/obj/item/melee/classic_baton)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/marta,
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 		/obj/item/storage/firstaid/stalker/military = 1,
-		/obj/item/ammo_box/magazine/stalker/m9x19marta = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/clothing/accessory/patch/mercenaries)
@@ -93,14 +94,12 @@
 /datum/outfit/job/mercenarycommander/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
-	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
-	mask = /obj/item/clothing/mask/gas/stalker/mercenary
-	belt = pick(
-		/obj/item/gun/ballistic/automatic/pistol/desert,
-		/obj/item/gun/ballistic/revolver/anaconda)
+	head = /obj/item/clothing/head/assaultmerc
+	suit = /obj/item/clothing/suit/assaultmerc
+	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	backpack_contents = list(
 		/obj/item/storage/firstaid/stalker/military = 1,
-		/obj/item/ammo_box/stalker/bmag44  = 1,
+		/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/clothing/accessory/patch/mercenaries)

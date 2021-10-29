@@ -151,8 +151,6 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("SKAT-9M",					"SKAT-9M",					/obj/item/clothing/suit/skat,								150000,		EXPERT,	faction = "State Security Service"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			400000,		EXPERT,	faction = "Loners"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			400000,		EXPERT,	faction = "Clear Sky"),
-		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			400000,		EXPERT,	faction = "Renegades"),
-		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			400000,		EXPERT,	faction = "Bandits"),
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Exoskeleton",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			400000,		EXPERT,	faction = "State Security Service"),
 		new	/datum/data/stalker_equipment("Merc Exoskeleton",			"Merc Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/merc,		400000,		EXPERT,	faction = "Mercenaries"),
 		new	/datum/data/stalker_equipment("Duty Exoskeleton",			"Duty Exoskeleton",			/obj/item/clothing/suit/hooded/sealed/exoskelet/duty,		400000,		EXPERT,	faction = "Duty"),

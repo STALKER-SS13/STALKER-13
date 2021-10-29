@@ -16,9 +16,6 @@
 "ae" = (
 /turf/closed/wall/stalker/bricks,
 /area/stalker/buildings/backwater/burntfarm)
-"af" = (
-/turf/closed/wall/stalker/bricks,
-/area/stalker/buildings/backwater/ranger)
 "ag" = (
 /turf/closed/wall/stalker/bricks,
 /area/stalker/buildings/backwater/waste)
@@ -30,7 +27,7 @@
 /area/stalker)
 "aj" = (
 /turf/closed/wall/stalker/bricks,
-/area/stalker)
+/area/stalker/buildings/clearsky)
 "ak" = (
 /turf/closed/indestructible/riveted,
 /area/start)
@@ -58,10 +55,6 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/sawmill)
-"aq" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
 "ar" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/backwater/sawmill)
@@ -116,7 +109,7 @@
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/blowout/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "aB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -128,14 +121,11 @@
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/blowout/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "aC" = (
 /obj/structure/barricade/stalker/box,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
-"aD" = (
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "aE" = (
 /turf/closed/mineral,
 /area/stalker/buildings/backwater/ranger)
@@ -177,19 +167,18 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "aN" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/substation)
 "aO" = (
-/obj/structure/table/stalker/wood,
 /obj/machinery/light/small{
 	dir = 8;
 	tag = "icon-bulb1 (WEST)"
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "aP" = (
 /turf/open/stalker/floor/lattice,
 /area/stalker/sidor)
@@ -233,16 +222,16 @@
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/blowout/buildings/backwater/ranger)
-"aZ" = (
-/obj/item/storage/box/matches,
-/obj/structure/closet/crate/stalker/blue,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "ba" = (
 /obj/structure/stalker/doski/doski4,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "bb" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -299,26 +288,31 @@
 	dir = 8
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "bn" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "bo" = (
 /obj/structure/stalker/cacheable/porog{
 	dir = 8
 	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "bp" = (
 /obj/structure/stalker/doski,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "bq" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "br" = (
 /obj/structure/stalker/cacheable/porog{
 	dir = 1
@@ -372,7 +366,7 @@
 "bA" = (
 /obj/effect/landmark/latejoin/clearsky_leader,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "bB" = (
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -522,10 +516,10 @@
 /turf/open/stalker/floor/wood/brown,
 /area/stalker/buildings/backwater/substation)
 "cg" = (
-/obj/structure/bed/stalker/matras,
-/obj/item/bedsheet,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
+/turf/open/floor/plasteel/stairs/right/stalker{
+	dir = 4
+	},
+/area/stalker/buildings/clearsky)
 "ch" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/agroprom/beton,
@@ -547,15 +541,7 @@
 	pixel_y = 24
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/ranger)
-"cm" = (
-/obj/structure/stalker/cacheable/shkaf64,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
-"cn" = (
-/obj/structure/stalker/doski/doski2,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "co" = (
 /turf/open/floor/plasteel/stairs,
 /area/stalker/buildings/backwater/waste)
@@ -648,9 +634,8 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/sawmill)
 "cC" = (
-/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "cE" = (
 /turf/open/floor/plasteel/stairs,
 /area/stalker/blowout/buildings/backwater/waste)
@@ -694,11 +679,11 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "cM" = (
 /obj/structure/stalker/doski/doski3,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "cN" = (
 /obj/structure/stalker/cacheable/clocks{
 	pixel_y = -32
@@ -748,15 +733,9 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/substation)
-"cX" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a,
-/obj/machinery/light/small,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
 "cY" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "cZ" = (
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/buildings/backwater/waste)
@@ -797,7 +776,7 @@
 	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker)
+/area/stalker/buildings/backwater/burntfarm)
 "dh" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/plasteel/plita,
@@ -824,30 +803,37 @@
 /obj/structure/bed/stalker/matras,
 /obj/effect/landmark/latejoin/clearsky,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dm" = (
 /obj/structure/closet/stalker/shkaf,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (NORTH)"
+	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dn" = (
 /obj/structure/stalker/cacheable/shkaf64,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "do" = (
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dp" = (
 /obj/structure/chair/stalker/divan,
+/obj/effect/landmark/latejoin/clearsky_leader,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dq" = (
 /obj/structure/chair/stalker/divan/divan2,
+/obj/effect/landmark/latejoin/clearsky_leader,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dr" = (
 /obj/structure/bookcase/manuals/medical,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "ds" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -868,11 +854,11 @@
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/cacheable/televizor,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dw" = (
 /obj/structure/table/stalker/wood,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dx" = (
 /obj/structure/table/stalker,
 /turf/open/stalker/floor/lattice,
@@ -880,20 +866,20 @@
 "dy" = (
 /obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dz" = (
 /obj/structure/stalker/cacheable/porog{
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dA" = (
 /obj/structure/barricade/stalker/box,
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -903,7 +889,7 @@
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dC" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -913,7 +899,7 @@
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dD" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
@@ -930,11 +916,11 @@
 "dF" = (
 /obj/structure/stalker/matras,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dG" = (
 /obj/structure/stalker/cacheable/polka,
 /turf/open/floor/carpet,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dH" = (
 /turf/open/floor/plasteel/stairs,
 /area/stalker/buildings/backwater/ranger)
@@ -974,7 +960,7 @@
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dO" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 139;
@@ -982,7 +968,7 @@
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "dP" = (
 /turf/closed/mineral,
 /area/stalker/buildings/backwater/claw)
@@ -1029,7 +1015,7 @@
 	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker)
+/area/stalker/buildings/backwater/burntfarm)
 "ea" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -1814,7 +1800,7 @@
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/blowout/buildings/backwater/ranger)
+/area/stalker/buildings/clearsky)
 "gX" = (
 /obj/structure/target_stake,
 /turf/open/stalker/floor/lattice,
@@ -3678,21 +3664,26 @@
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings/backwater/ironforest)
 "np" = (
-/obj/structure/chair/wood/normal,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
-"nq" = (
-/obj/structure/chair/wood/normal,
-/obj/structure/stalker/cacheable/cover{
-	pixel_y = 32
+/turf/open/floor/plasteel/stairs/left/stalker{
+	dir = 4
 	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
+/area/stalker/buildings/clearsky)
+"nq" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "nr" = (
-/obj/structure/closet,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/clearsky)
 "ns" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3701,40 +3692,41 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
 "nt" = (
-/obj/structure/table/stalker/wood,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
+/obj/structure/sign/vendor,
+/turf/closed/wall/stalker/bricks,
+/area/stalker/buildings/clearsky)
 "nu" = (
 /obj/structure/table/stalker/wood,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/clearsky)
 "nv" = (
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
-"nw" = (
 /obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	dir = 1;
+	pixel_y = 9
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/clearsky)
+"nw" = (
 /turf/open/stalker/floor/gryaz,
-/area/stalker)
+/area/stalker/buildings/clearsky)
 "nx" = (
 /turf/open/floor/plasteel/stairs,
-/area/stalker)
+/area/stalker/buildings/backwater/burntfarm)
 "ny" = (
-/obj/structure/chair/wood/normal{
-	dir = 1
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
+/turf/closed/wall/stalker/beton_agro,
+/area/stalker/buildings/clearsky)
 "nz" = (
-/obj/structure/stalker/doski/doski4,
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/clearsky)
 "nA" = (
-/obj/structure/stalker/cacheable/komod,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
+/turf/open/floor/plasteel/stairs,
+/area/stalker/buildings/clearsky)
 "nB" = (
 /obj/effect/step_trigger/teleporter{
 	icon_state = "up";
@@ -3745,13 +3737,8 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
 "nC" = (
-/obj/structure/stalker/doski,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker)
-"nD" = (
-/obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/clearsky)
 "nE" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -18867,11 +18854,11 @@ cB
 cK
 ac
 ad
-aj
-aj
-aj
-aj
-aj
+ae
+ae
+ae
+ae
+ae
 ad
 ad
 ad
@@ -19124,11 +19111,11 @@ cB
 cK
 ac
 ad
-aj
-np
-nt
-ny
-aj
+ae
+au
+be
+bk
+ae
 ad
 ad
 ad
@@ -19381,15 +19368,15 @@ ac
 ac
 ac
 ad
-aj
-nq
-nu
-ny
-aj
-aj
-aj
-aj
-aj
+ae
+av
+aU
+bk
+ae
+ae
+ae
+ae
+ae
 ad
 ai
 ai
@@ -19638,15 +19625,15 @@ ac
 ad
 ad
 ad
-aj
-hV
-nv
-nv
-aj
-nv
-nv
-nv
-aj
+ae
+aw
+aV
+aV
+ae
+aV
+aV
+aV
+ae
 ad
 ai
 ai
@@ -19895,15 +19882,15 @@ ac
 ad
 ad
 ad
-aj
-nr
-nw
-nv
-nv
-nv
-nC
-hV
-aj
+ae
+ax
+aW
+aV
+aV
+aV
+bY
+aw
+ae
 ad
 ai
 ai
@@ -20152,15 +20139,15 @@ ac
 ad
 ad
 ad
-aj
-aj
-aj
-hV
-aj
-nA
-hV
-hV
-aj
+ae
+ae
+ae
+aw
+ae
+bP
+aw
+aw
+ae
 ad
 ai
 ai
@@ -20409,15 +20396,15 @@ ac
 ad
 ad
 ad
-aj
+ae
 dZ
 nx
-nz
-aj
-cg
-hV
-nD
-aj
+bl
+ae
+bQ
+aw
+ck
+ae
 ad
 ai
 ai
@@ -20666,15 +20653,15 @@ ac
 ad
 ad
 ad
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
 ad
 ad
 ad
@@ -21178,11 +21165,11 @@ ad
 ad
 ad
 ad
-aj
-aj
-aj
-aj
-aj
+ae
+ae
+ae
+ae
+ae
 ad
 ad
 ad
@@ -21435,11 +21422,11 @@ ad
 ad
 ad
 ad
-aj
-np
-nt
-ny
-aj
+ae
+au
+be
+bk
+ae
 ad
 ad
 ad
@@ -21692,15 +21679,15 @@ ae
 ae
 ae
 ad
-aj
-nq
-nu
-ny
-aj
-aj
-aj
-aj
-aj
+ae
+av
+aU
+bk
+ae
+ae
+ae
+ae
+ae
 ad
 dP
 dT
@@ -21949,15 +21936,15 @@ aV
 aV
 ae
 ad
-aj
-hV
-nv
-nv
-aj
-nv
-nv
-nv
-aj
+ae
+aw
+aV
+aV
+ae
+aV
+aV
+aV
+ae
 ad
 dP
 dT
@@ -22206,15 +22193,15 @@ bY
 aw
 ae
 ad
-aj
-nr
-nw
-nv
-nv
-nv
-nC
-hV
-aj
+ae
+ax
+aW
+aV
+aV
+aV
+bY
+aw
+ae
 dP
 dP
 dT
@@ -22463,15 +22450,15 @@ aw
 aw
 ae
 ad
-aj
-aj
-aj
-hV
-aj
-nA
-hV
-hV
-aj
+ae
+ae
+ae
+aw
+ae
+bP
+aw
+aw
+ae
 dP
 dT
 ng
@@ -22720,15 +22707,15 @@ aw
 ck
 ae
 ad
-aj
+ae
 dg
 nx
-nz
-aj
-cg
-hV
-nD
-aj
+bl
+ae
+bQ
+aw
+ck
+ae
 dP
 dT
 dT
@@ -22977,15 +22964,15 @@ ae
 ae
 ae
 ad
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
 dP
 dT
 dT
@@ -23481,24 +23468,24 @@ ai
 ai
 "}
 (77,1,1) = {"
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
 ad
 dP
 dT
@@ -23738,24 +23725,24 @@ ai
 ai
 "}
 (78,1,1) = {"
-af
-az
-az
+aj
+cC
+cC
 bm
-az
-az
-af
+cC
+cC
+aj
 cl
 cC
 aO
-az
-af
+cC
+aj
 dl
-bn
+cY
 bq
-bn
-bn
-af
+cY
+cY
+aj
 ad
 dP
 dT
@@ -23995,24 +23982,24 @@ ai
 ai
 "}
 (79,1,1) = {"
-af
-az
-az
-az
-az
-az
-af
+aj
+cC
+cC
+cC
+cC
+cC
+aj
 cl
-az
-az
-az
-af
+cC
+cC
+nu
+aj
 dm
-aD
+nw
 dy
-aD
+nw
 dl
-af
+aj
 ad
 dP
 dT
@@ -24252,24 +24239,24 @@ ai
 ai
 "}
 (80,1,1) = {"
-af
+aj
 aA
 aY
-af
-il
-ji
-af
+aj
+cg
+np
+aj
 cl
-az
-az
-az
-af
+cC
+cC
+nv
+aj
 dl
-bn
-aD
-bn
-bn
-af
+cY
+nw
+cY
+cY
+aj
 ad
 dP
 dT
@@ -24509,24 +24496,24 @@ ai
 ai
 "}
 (81,1,1) = {"
-af
+aj
 aB
 gW
-af
-il
-ji
-af
+aj
+cg
+np
+aj
 cl
-az
-az
-az
-af
+nr
+cC
+nu
+aj
 dn
-bn
-bn
-bn
+cY
+cY
+nz
 dl
-af
+aj
 ad
 dP
 dP
@@ -24766,25 +24753,25 @@ ai
 ai
 "}
 (82,1,1) = {"
-af
-af
-af
-af
-il
-ji
-af
-af
-af
+aj
+aj
+aj
+aj
+cg
+np
+aj
+aj
+nt
 cL
-af
-af
-af
-af
+aj
+aj
+aj
+aj
 dz
-af
-af
-af
-af
+aj
+aj
+aj
+aj
 aj
 dP
 dT
@@ -25023,24 +25010,24 @@ ai
 ai
 "}
 (83,1,1) = {"
-af
+aj
 aC
-aD
+cY
 bn
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
 bn
-bn
-bn
-bn
-bn
-bn
-bn
-bn
-bn
-bn
-bn
+cY
+cY
 dF
-bn
-dH
+cY
+nA
 dN
 aj
 dP
@@ -25280,24 +25267,24 @@ ai
 ai
 "}
 (84,1,1) = {"
-af
-aD
-aD
-aD
-aD
-bn
+aj
+cY
+cY
+cY
+cY
+cY
 aM
-aD
-aD
-aD
-bn
-bn
-bn
-bn
-bn
-bn
-bn
-dH
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+nA
 dO
 aj
 dP
@@ -25537,25 +25524,25 @@ ai
 ai
 "}
 (85,1,1) = {"
-af
-af
-af
+aj
+aj
+aj
 bo
-af
-af
-af
-af
+aj
+aj
+aj
+aj
 bo
-af
-af
-af
+aj
+aj
+aj
 do
 do
 do
 do
-af
-af
-af
+aj
+aj
+aj
 aj
 ad
 dP
@@ -25795,22 +25782,22 @@ ai
 "}
 (86,1,1) = {"
 ad
-af
-aZ
-aD
-aD
-aq
-af
-cm
-aD
-aD
+aj
+dl
+cY
 bn
-af
+dl
+aj
+dl
+cY
+bn
+dl
+aj
 dp
 dv
 do
 dG
-af
+aj
 ad
 ad
 ad
@@ -26052,22 +26039,22 @@ ai
 "}
 (87,1,1) = {"
 ad
-af
+aj
 aC
 bp
-aE
-aE
-af
-cn
-aD
-bn
-cX
-af
+cY
+cY
+aj
+cY
+cY
+cY
+cY
+aj
 dq
 dw
 bA
 dG
-af
+aj
 ad
 ad
 dP
@@ -26309,22 +26296,22 @@ ai
 "}
 (88,1,1) = {"
 ad
-af
+aj
 ba
-aE
-aE
-ad
-aE
-aE
-aD
+cY
+cY
+cY
+aj
+nq
+cY
 cM
 cY
-af
+aj
 do
 do
 do
 do
-af
+aj
 ad
 ad
 dP
@@ -26566,22 +26553,22 @@ ai
 "}
 (89,1,1) = {"
 ad
-aE
-aE
-aE
-ad
-ad
-ad
-aE
-aE
-aE
-aD
-af
+aj
+dl
+cY
+cY
+dl
+aj
+dl
+cY
+cY
+dl
+aj
 dr
 dr
 dA
 do
-af
+aj
 ad
 dP
 dP
@@ -26824,21 +26811,21 @@ ai
 (90,1,1) = {"
 ad
 aj
-ad
-ad
 aj
 aj
 aj
-ad
-ad
-ad
-ad
-af
-af
-af
-af
-af
-af
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
+aj
 ad
 dP
 dT
@@ -38914,10 +38901,10 @@ ah
 ad
 ad
 ad
-bf
-bf
-bf
-bf
+ny
+ny
+ny
+ny
 dL
 dd
 dd
@@ -39171,10 +39158,10 @@ ah
 ah
 ah
 ad
-bf
+ny
 dB
-dH
-dd
+nA
+nC
 dd
 dd
 dd
@@ -39428,10 +39415,10 @@ cU
 nd
 ah
 ad
-bf
+ny
 dC
-dH
-dd
+nA
+nC
 dd
 dd
 dd
@@ -39685,10 +39672,10 @@ cU
 nd
 ah
 ad
-bf
-bf
-bf
-bf
+ny
+ny
+ny
+ny
 dd
 dd
 dd

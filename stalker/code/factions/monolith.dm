@@ -12,7 +12,7 @@
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
-	limit_per_player = 1
+	limit_per_player = 2
 	outfit = /datum/outfit/job/monolith// /datum/outfit/job/duty
 
 /datum/outfit/job/monolith
@@ -70,7 +70,7 @@
 	supervisors = "Monolith"
 	selection_color = "#601919"
 	whitelist_only = 1
-	limit_per_player = 2
+	limit_per_player = 1
 	outfit = /datum/outfit/job/monolith_hegumen
 	real_rank = "Lieutenant"
 

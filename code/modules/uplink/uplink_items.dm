@@ -113,7 +113,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 //All bundles and telecrystals
 /datum/uplink_item/bundles_TC
-	category = "Bundles and Telecrystals"
+	category = "Trader Bundle"
 	surplus = 0
 	cant_discount = TRUE
 

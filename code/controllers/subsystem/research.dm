@@ -25,7 +25,29 @@ SUBSYSTEM_DEF(research)
 	var/list/techweb_boost_items = list()		//associative double-layer path = list(id = list(point_type = point_discount))
 	var/list/techweb_nodes_hidden = list()		//Node ids that should be hidden by default.
 	var/list/techweb_point_items = list(		//path = list(point type = value)
-	/obj/item/assembly/signaler/anomaly = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	/obj/item/assembly/signaler/anomaly = list(TECHWEB_POINT_TYPE_GENERIC = 10000),
+	/obj/item/artifact/meduza = list(TECHWEB_POINT_TYPE_GENERIC = 250),
+	/obj/item/artifact/stoneflower = list(TECHWEB_POINT_TYPE_GENERIC = 500),
+	/obj/item/artifact/nightstar = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
+	/obj/item/artifact/soul = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
+	/obj/item/artifact/flash = list(TECHWEB_POINT_TYPE_GENERIC = 300),
+	/obj/item/artifact/moonlight = list(TECHWEB_POINT_TYPE_GENERIC = 600),
+	/obj/item/artifact/pustishka = list(TECHWEB_POINT_TYPE_GENERIC = 2000),
+	/obj/item/artifact/battery = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
+	/obj/item/artifact/droplet = list(TECHWEB_POINT_TYPE_GENERIC = 350),
+	/obj/item/artifact/fireball = list(TECHWEB_POINT_TYPE_GENERIC = 750),
+	/obj/item/artifact/crystal = list(TECHWEB_POINT_TYPE_GENERIC = 3000),
+	/obj/item/artifact/maminibusi = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
+	/obj/item/artifact/stone_blood = list(TECHWEB_POINT_TYPE_GENERIC = 200),
+	/obj/item/artifact/bubble = list(TECHWEB_POINT_TYPE_GENERIC = 600),
+	/obj/item/artifact/mica = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
+	/obj/item/stalker/loot/dog_tail = list(TECHWEB_POINT_TYPE_GENERIC = 50),
+	/obj/item/stalker/loot/flesh_eye = list(TECHWEB_POINT_TYPE_GENERIC = 90),
+	/obj/item/stalker/loot/boar_leg = list(TECHWEB_POINT_TYPE_GENERIC = 300),
+	/obj/item/stalker/loot/snork_leg = list(TECHWEB_POINT_TYPE_GENERIC = 350),
+	/obj/item/stalker/loot/bloodsucker = list(TECHWEB_POINT_TYPE_GENERIC = 800),
+	/obj/item/stalker/loot/pseudo_tail = list(TECHWEB_POINT_TYPE_GENERIC = 400),
+	/obj/item/stalker/loot/controller_brain = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 	)
 	var/list/errored_datums = list()
 	var/list/point_types = list()				//typecache style type = TRUE list

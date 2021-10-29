@@ -37,4 +37,35 @@
 	desc = "A brain. You can feel the psy-waves unconfortably pushing into your thoughts when you hold it."
 	icon_state = "controller_brain"
 
+/obj/item/micro_sd
+	name = "micro SD"
+	desc = "An encrypted simple tiny micro SD drive with a fixed amount of cryptocurrency, used by traders to perform trades."
+	icon = 'stalker/icons/quest.dmi'
+	icon_state = "microsd"
+	w_class = WEIGHT_CLASS_TINY
+	item_flags = NOBLUDGEON
+
+/obj/item/micro_sd/attack(mob/target, mob/user)
+	if(target == user) //You can't go around smacking people with crystals to find out if they have an uplink or not.
+		for(var/obj/item/implant/uplink/I in target)
+			if(I && I.imp_in)
+				GET_COMPONENT_FROM(hidden_uplink, /datum/component/uplink, I)
+				if(hidden_uplink)
+					hidden_uplink.telecrystals += 40 //~80k? ~100k? I dunno rn.
+					qdel(src)
+					to_chat(user, "<span class='notice'>You press [src] onto yourself and charge your hidden uplink.</span>")
+	else
+		return ..()
+
+/obj/item/micro_sd/afterattack(obj/item/I, mob/user, proximity)
+	. = ..()
+	if(istype(I, /obj/item/cartridge/virus/frame))
+		var/obj/item/cartridge/virus/frame/cart = I
+		if(!cart.charges)
+			to_chat(user, "<span class='notice'>[cart] is out of charges, it's refusing to accept [src].</span>")
+			return
+		cart.telecrystals += 40
+		qdel(src)
+		to_chat(user, "<span class='notice'>You slot [src] into [cart].  The next time it's used, it will also give telecrystals.</span>")
+
 	// Meat for cooking after this soon.

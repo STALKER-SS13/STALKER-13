@@ -1,9 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 14;
-	teleport_y = 239;
-	teleport_z = 3
+	teleport_x = 32;
+	teleport_y = 49;
+	teleport_z = 8
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)

@@ -662,6 +662,12 @@
 	icon_state = "bandit"
 	banditsafezone = 1
 
+/area/stalker/buildings/military
+	name = "Military Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "military"
+	militarysafezone = 1
+
 /area/stalker/buildings/renegade
 	name = "Renegade Safezone"
 	icon = 'stalker/icons/areas.dmi'

@@ -1433,6 +1433,10 @@
 /obj/structure/stalker/list,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/svalka/buildings)
+"ep" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "eq" = (
 /obj/structure/stalker/cacheable/bochka{
 	density = 0;
@@ -33101,7 +33105,7 @@ bs
 bs
 bs
 pt
-cM
+ep
 cM
 cM
 cM

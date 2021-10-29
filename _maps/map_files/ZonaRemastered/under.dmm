@@ -736,6 +736,10 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/substation)
+"cX" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/clearsky)
 "cY" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/clearsky)
@@ -24752,7 +24756,7 @@ aj
 cl
 cC
 aO
-cC
+cX
 aj
 dl
 cY

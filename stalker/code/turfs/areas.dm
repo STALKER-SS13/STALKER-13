@@ -674,6 +674,12 @@
 	icon_state = "renegades"
 	renegadesafezone = 1
 
+/area/stalker/buildings/mercenary
+	name = "Mercenary Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "mercenary"
+	mercenarysafezone = 1
+
 /area/stalker/buildings/ecologist
 	name = "ecologist safezone"
 	icon = 'stalker/icons/areas.dmi'

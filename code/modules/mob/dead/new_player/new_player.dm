@@ -382,6 +382,8 @@
 			character.faction = list("freedom_forces", "stalker_forces")
 		if("Clear Sky")
 			character.faction = list("cs_forces", "stalker_forces")
+		if("Mercenaries")
+			character.faction = list("mercenary_forces", "stalker_forces")
 		if("Ecologist")
 			character.faction = list("ecologist_forces", "stalker_forces")
 		if("State Security Service")

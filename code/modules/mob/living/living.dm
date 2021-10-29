@@ -626,6 +626,14 @@
 			to_chat(src, "<span class='warning'>You can't be here!</span>")
 		return 0
 
+//Mercenary safezone stuff
+	if((stat != DEAD) && get_area(newloc).mercenarysafezone && !("mercenary_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
 //Monolith safezone stuff
 	if((stat != DEAD) && get_area(newloc).monolithsafezone && !("monolith_forces" in faction))
 		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))

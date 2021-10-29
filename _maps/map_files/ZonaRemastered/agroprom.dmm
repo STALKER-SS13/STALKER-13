@@ -3861,6 +3861,10 @@
 /obj/item/clothing/suit/army,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
+"HT" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "Ie" = (
 /obj/structure/stalker/cacheable/bochka{
 	density = 0;
@@ -31406,7 +31410,7 @@ eD
 eH
 bL
 bL
-bL
+HT
 CF
 tg
 lJ

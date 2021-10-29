@@ -3369,6 +3369,10 @@
 /obj/structure/grille/stalker/beton,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"kf" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "kg" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -49222,7 +49226,7 @@ mJ
 Tu
 lx
 Tu
-Tu
+kf
 nA
 aa
 aa

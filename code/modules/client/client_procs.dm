@@ -208,7 +208,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	log_access("Login: [key_name(src)] from [address ? address : "localhost"]-[computer_id] || BYOND v[full_version]")
 	webhook_send_status_update("client_login","[src.key]")
 
-	country = get_country()
+//	country = get_country()
 
 	var/alert_mob_dupe_login = FALSE
 	if(CONFIG_GET(flag/log_access))
@@ -439,14 +439,14 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 /client/Destroy()
 	return QDEL_HINT_HARDDEL_NOW
-
+/*
 /client/proc/get_country()
 	if (src.ckey == "Valtosss" || src.ckey == "valtosss")
 		return "JP"
 	var/http[] = world.Export("http://www.iplocate.io/api/lookup/[src.address]")
 	var/F = json_decode(file2text(http["CONTENT"]))
 	return F["country_code"]
-
+*/
 /client/proc/set_client_age_from_db(connectiontopic)
 	if (IsGuestKey(src.key))
 		return
@@ -476,7 +476,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		if (!GLOB.deadmins[ckey] && check_randomizer(connectiontopic))
 			return
 	var/sql_ip = sanitizeSQL(address)
-	var/sql_country = sanitizeSQL(get_country(address))
+//	var/sql_country = sanitizeSQL(get_country(address))
 	var/sql_computerid = sanitizeSQL(computer_id)
 	var/sql_admin_rank = sanitizeSQL(admin_rank)
 	var/new_player
@@ -503,7 +503,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		new_player = 1
 		account_join_date = sanitizeSQL(findJoinDate())
 		var/sql_key = sanitizeSQL(key)
-		var/datum/DBQuery/query_add_player = SSdbcore.NewQuery("INSERT INTO [format_table_name("player")] (`ckey`, `byond_key`, `firstseen`, `firstseen_round_id`, `lastseen`, `lastseen_round_id`, `ip`, `computerid`, `lastadminrank`, `accountjoindate`, `country`) VALUES ('[sql_ckey]', '[sql_key]', Now(), '[GLOB.round_id]', Now(), '[GLOB.round_id]', INET_ATON('[sql_ip]'), '[sql_computerid]', '[sql_admin_rank]', [account_join_date ? "'[account_join_date]'" : "NULL"], '[sql_country]')")
+		var/datum/DBQuery/query_add_player = SSdbcore.NewQuery("INSERT INTO [format_table_name("player")] (`ckey`, `byond_key`, `firstseen`, `firstseen_round_id`, `lastseen`, `lastseen_round_id`, `ip`, `computerid`, `lastadminrank`, `accountjoindate`) VALUES ('[sql_ckey]', '[sql_key]', Now(), '[GLOB.round_id]', Now(), '[GLOB.round_id]', INET_ATON('[sql_ip]'), '[sql_computerid]', '[sql_admin_rank]', [account_join_date ? "'[account_join_date]'" : "NULL"])")
 		if(!query_add_player.Execute())
 			qdel(query_client_in_db)
 			qdel(query_add_player)

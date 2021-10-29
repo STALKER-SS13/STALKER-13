@@ -175,6 +175,11 @@ SUBSYSTEM_DEF(blowout)
 		An.SpawnArtifact()
 		CHECK_TICK
 
+	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
+
+		Ms.SpawnMobs()
+		CHECK_TICK
+
 	for(var/datum/job/J in SSjob.occupations)
 
 		J.total_positions = initial(J.total_positions)

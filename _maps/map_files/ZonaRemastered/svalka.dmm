@@ -6602,6 +6602,10 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/kordon/banditbar)
+"wc" = (
+/obj/structure/stalker/blocks/vanish/block1,
+/turf/open/stalker/floor/wood,
+/area/stalker/blowout/outdoor)
 "wd" = (
 /obj/rad,
 /turf/open/stalker/floor/gryaz{
@@ -6912,6 +6916,10 @@
 "ye" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker)
+"yh" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/stalker/floor/wood,
+/area/stalker/blowout/outdoor)
 "yj" = (
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/gryaz,
@@ -7363,6 +7371,13 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/wood/grey,
 /area/stalker)
+"AL" = (
+/obj/structure/stalker/car/mi24{
+	icon_state = "1,3"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/stalker/floor/wood,
+/area/stalker/blowout/outdoor)
 "AO" = (
 /obj/structure/stalker/cacheable/bochka{
 	pixel_x = 13
@@ -11449,6 +11464,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
+"Yd" = (
+/turf/open/stalker/floor/wood,
+/area/stalker/blowout/outdoor)
 "Ye" = (
 /obj/structure/stalker/car/uaz{
 	icon_state = "0,2";
@@ -11659,6 +11677,9 @@
 /obj/rad/rad_medium,
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt,
+/area/stalker)
+"ZG" = (
+/turf/open/stalker/floor/wood,
 /area/stalker)
 "ZK" = (
 /obj/effect/decal/cleanable/blood/tracks,
@@ -24159,7 +24180,7 @@ af
 af
 af
 aI
-Uf
+af
 af
 af
 af
@@ -25695,7 +25716,7 @@ bs
 bs
 bs
 bs
-WQ
+bs
 bs
 bs
 bs
@@ -31700,7 +31721,7 @@ bs
 bs
 bs
 bs
-ye
+bs
 bs
 bs
 bs
@@ -33955,7 +33976,7 @@ bC
 ad
 ad
 ad
-Uf
+ad
 jP
 Wh
 Wh
@@ -40127,7 +40148,7 @@ ad
 ad
 ad
 af
-Uf
+mS
 mS
 mS
 mS
@@ -42690,7 +42711,7 @@ ad
 ad
 ad
 ad
-ad
+aM
 ad
 mS
 mS
@@ -43196,6 +43217,7 @@ gv
 ad
 ad
 ad
+aM
 ad
 ad
 ad
@@ -43203,8 +43225,7 @@ ad
 ad
 ad
 ad
-ad
-ad
+aM
 ad
 ad
 ad
@@ -48414,7 +48435,7 @@ bs
 bs
 bs
 bs
-bs
+ZG
 bs
 mS
 mS
@@ -52038,7 +52059,7 @@ aa
 aa
 ag
 ag
-Uf
+af
 af
 af
 af
@@ -52270,7 +52291,7 @@ af
 af
 af
 af
-Uf
+af
 af
 af
 af
@@ -52512,7 +52533,7 @@ af
 ad
 ad
 ad
-kK
+wc
 ad
 ad
 ad
@@ -54268,8 +54289,8 @@ aM
 af
 af
 af
-af
-af
+Yd
+Yd
 af
 af
 af
@@ -55261,8 +55282,8 @@ lV
 eE
 GW
 OF
-mf
-TS
+yh
+AL
 Np
 qd
 Sn
@@ -55277,7 +55298,7 @@ bo
 aI
 af
 af
-aM
+Yd
 aM
 af
 af
@@ -55835,7 +55856,7 @@ ab
 af
 af
 af
-af
+Yd
 af
 af
 ag

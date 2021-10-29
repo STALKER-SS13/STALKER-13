@@ -14,7 +14,7 @@ GLOBAL_PROTECT(st_whitelist)
 /proc/check_st_whitelist(ckey, job_title)
 	if(!GLOB.st_whitelist)
 		return FALSE
-	if(ckey == "malgover")
+	if(ckey == "marrone")
 		return TRUE
 	for (var/WL in GLOB.st_whitelist[ckey])
 		if (WL == job_title)

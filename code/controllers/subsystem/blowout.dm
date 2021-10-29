@@ -155,6 +155,11 @@ SUBSYSTEM_DEF(blowout)
 			H.apply_damage(200, PSY)
 		CHECK_TICK
 
+/datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
+	for(var/datum/controller/subsystem/zona/MS)
+		MS.SpawnMobs()
+		CHECK_TICK
+
 /datum/controller/subsystem/blowout/proc/StopBlowout()
 
 	if(blowoutphase == 2)
@@ -236,6 +241,8 @@ SUBSYSTEM_DEF(blowout)
 			add_lenta_message(null, "0", "Sidorovich", "Loners", "For PDA [name_] get [GetCostBasedOnReputation(rep_)] roubles.")
 	add_lenta_message(null, "0", "Sidorovich", "Loners", "Search, kill and sell the PDAs of stalkers with bad reputations!")
 
+
+	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners.
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)

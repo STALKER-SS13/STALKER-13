@@ -921,6 +921,7 @@
 	icon_state = "gazovaya_truba";
 	tag = "icon-gazovaya_truba (WEST)"
 	},
+/obj/effect/landmark/latejoin/banditboss,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
 "cT" = (
@@ -1468,7 +1469,6 @@
 	icon_state = "tube";
 	tag = "icon-tube1 (EAST)"
 	},
-/obj/effect/landmark/latejoin/bandit,
 /obj/structure/window{
 	dir = 4;
 	icon_state = "clear";
@@ -1573,22 +1573,8 @@
 /area/stalker/blowout/svalka/buildings)
 "eG" = (
 /obj/effect/landmark/latejoin/bandit,
-/obj/structure/window{
-	dir = 4;
-	icon_state = "clear";
-	name = "";
-	obj_integrity = 1e+006;
-	tag = "icon-window (EAST)"
-	},
-/obj/structure/window{
-	dir = 8;
-	icon_state = "clear";
-	name = "";
-	obj_integrity = 1e+006;
-	tag = "icon-window (WEST)"
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "eH" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -1730,7 +1716,6 @@
 	icon_state = "tube";
 	tag = "icon-tube1 (EAST)"
 	},
-/obj/effect/landmark/latejoin/bandit,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/svalka/buildings)
 "eY" = (
@@ -2699,7 +2684,7 @@
 /obj/structure/stalker/cacheable/porog/porog2,
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
+/area/stalker/buildings/bandit)
 "hI" = (
 /obj/structure/table/stalker/wood,
 /obj/item/reagent_containers/food/snacks/stalker/kolbasa,
@@ -3029,7 +3014,7 @@
 "if" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/svalka/cellar)
+/area/stalker/buildings/bandit)
 "ih" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3145,9 +3130,6 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"iq" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/svalka/cellar)
 "ir" = (
 /obj/machinery/campfire,
 /turf/open/stalker/floor/gryaz,
@@ -3277,7 +3259,7 @@
 	teleport_z = 6
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/svalka/cellar)
+/area/stalker/buildings/bandit)
 "iz" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4908,9 +4890,14 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "ob" = (
+/obj/structure/stalker/cacheable/battery{
+	dir = 4;
+	icon_state = "gazovaya_truba";
+	tag = "icon-gazovaya_truba (EAST)"
+	},
 /obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "og" = (
 /obj/machinery/door/airlock/stalker/sidor{
 	id_tag = 343
@@ -5990,9 +5977,9 @@
 	},
 /area/stalker/blowout/outdoor)
 "wX" = (
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
+/obj/effect/landmark/latejoin/banditboss,
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "wZ" = (
 /obj/item/ammo_casing/shotgun/dart,
 /turf/open/floor/plating/dirt,
@@ -6212,14 +6199,6 @@
 /obj/structure/stalker/cacheable/shina3,
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/outdoor)
-"yY" = (
-/obj/structure/stalker/rails{
-	icon_state = "spl1";
-	tag = "icon-spl1"
-	},
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "yZ" = (
 /obj/rad/rad_high,
@@ -7324,14 +7303,6 @@
 /obj/item/trash/cigs_trash,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"JX" = (
-/obj/structure/stalker/rails{
-	icon_state = "r";
-	tag = "icon-r"
-	},
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
 "Kc" = (
 /obj/structure/stalker/blocks/block3/m,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -7386,9 +7357,8 @@
 	},
 /area/stalker/blowout/outdoor)
 "Ku" = (
-/obj/effect/landmark/latejoin/bandit,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/svalka/cellar)
+/area/stalker/buildings/bandit)
 "Kx" = (
 /obj/structure/stalker/okno/window3,
 /turf/closed/wall/stalker/bricks_white,
@@ -7562,14 +7532,6 @@
 /obj/anomaly/karusel,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"LA" = (
-/obj/structure/stalker/rails{
-	icon_state = "l";
-	tag = "icon-l"
-	},
-/obj/effect/landmark/latejoin/bandit_barman,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
 "LC" = (
 /obj/structure/table/stalker/wood,
 /obj/item/radio,
@@ -7758,7 +7720,7 @@
 	tag = "icon-border8"
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/svalka/cellar)
+/area/stalker/buildings/bandit)
 "Np" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "2,3"
@@ -8391,20 +8353,6 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Sr" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border1";
-	tag = "icon-border1"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border1";
-	tag = "icon-border1"
-	},
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/svalka/cellar)
 "Sv" = (
 /obj/anomaly/electro,
 /turf/open/stalker/floor/gryaz,
@@ -9040,14 +8988,6 @@
 	layer = 1.8
 	},
 /area/stalker)
-"WU" = (
-/obj/structure/stalker/rails{
-	icon_state = "l";
-	tag = "icon-l"
-	},
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
 "WW" = (
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/stalker/floor/gryaz{
@@ -9161,10 +9101,6 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"XV" = (
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
 "XX" = (
 /obj/machinery/button/door{
 	id = 343;
@@ -9197,14 +9133,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"Yh" = (
-/obj/structure/stalker/rails{
-	icon_state = "spr1";
-	tag = "icon-spr1"
-	},
-/obj/effect/landmark/latejoin/bandit,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/svalka/buildings)
 "Ym" = (
 /obj/rad/rad_low,
 /turf/closed/mineral,
@@ -9323,11 +9251,6 @@
 /obj/rad/rad_high,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"Zu" = (
-/obj/structure/barricade/stalker/wood,
-/obj/structure/stalker/cacheable/porog/porog2,
-/turf/open/stalker/floor/agroprom/beton,
-/area/stalker/svalka/cellar)
 "Zy" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -29290,7 +29213,7 @@ af
 aD
 af
 af
-ob
+af
 af
 af
 eb
@@ -29305,7 +29228,7 @@ go
 gF
 go
 gF
-yY
+hh
 af
 af
 bC
@@ -30069,7 +29992,7 @@ ad
 ad
 ad
 ad
-XV
+ad
 fD
 fU
 go
@@ -30081,7 +30004,7 @@ ad
 hF
 ad
 ad
-XV
+ad
 ad
 iD
 iI
@@ -31102,7 +31025,7 @@ ad
 fT
 go
 gF
-LA
+go
 gF
 hh
 ad
@@ -31313,7 +31236,7 @@ pt
 cM
 cM
 cM
-cM
+wX
 cT
 cM
 cM
@@ -31347,7 +31270,7 @@ aD
 af
 af
 af
-XV
+ad
 ad
 ee
 em
@@ -31371,7 +31294,7 @@ fE
 ad
 ad
 ad
-XV
+ad
 gS
 jP
 Wh
@@ -31878,8 +31801,8 @@ gF
 hh
 hy
 bC
-iq
-iq
+Ku
+Ku
 No
 iy
 bC
@@ -32135,7 +32058,7 @@ gF
 hl
 hz
 hH
-iq
+Ku
 if
 bC
 bC
@@ -32343,9 +32266,9 @@ cV
 pt
 dd
 cM
-Zu
+dp
 cM
-cM
+eG
 pt
 pt
 cM
@@ -32392,9 +32315,9 @@ Nw
 hl
 hz
 bC
-iq
 Ku
-iq
+Ku
+Ku
 bC
 bC
 ad
@@ -32893,7 +32816,7 @@ aI
 bC
 bC
 eq
-eG
+oh
 eT
 eT
 eT
@@ -33106,10 +33029,10 @@ bs
 bs
 pt
 ep
+eG
 cM
 cM
-cM
-cT
+ob
 cX
 pt
 df
@@ -33169,7 +33092,7 @@ ko
 bG
 bC
 ad
-XV
+ad
 ad
 jP
 jT
@@ -33372,7 +33295,7 @@ pt
 dg
 dm
 pt
-cM
+eG
 cM
 pt
 pt
@@ -33621,7 +33544,7 @@ bs
 pt
 cB
 cH
-cM
+eG
 cM
 cM
 cX
@@ -33669,7 +33592,7 @@ eT
 eT
 eT
 fG
-Yh
+fV
 gq
 gI
 gq
@@ -33678,7 +33601,7 @@ hl
 xF
 eT
 oh
-eG
+oh
 is
 bC
 bC
@@ -33880,7 +33803,7 @@ cC
 cI
 cM
 cQ
-cM
+eG
 cM
 da
 cM
@@ -34949,7 +34872,7 @@ af
 bC
 bC
 eu
-eG
+oh
 eT
 EC
 eT
@@ -35214,7 +35137,7 @@ fH
 fV
 gq
 gI
-WU
+gq
 gI
 hl
 hz
@@ -36755,7 +36678,7 @@ eT
 fG
 fY
 gq
-JX
+gI
 gq
 gI
 hn
@@ -37537,7 +37460,7 @@ il
 cw
 cw
 bC
-XV
+ad
 iM
 iQ
 ad
@@ -37781,7 +37704,7 @@ sq
 eT
 eT
 eT
-wX
+eT
 gc
 gu
 gu
@@ -38045,7 +37968,7 @@ gM
 eT
 eT
 ad
-XV
+ad
 cw
 cw
 bC
@@ -39063,7 +38986,7 @@ bC
 ey
 bC
 bb
-Sr
+sq
 fi
 eT
 eT
@@ -39583,7 +39506,7 @@ eW
 gd
 ad
 ad
-XV
+ad
 ad
 hr
 eT

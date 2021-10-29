@@ -4153,7 +4153,7 @@
 	tag = "icon-border8"
 	},
 /turf/open/floor/plasteel/stairs/stalker,
-/area/stalker/blowout/outdoor/bar)
+/area/stalker/buildings/bar/rentgen)
 "nK" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/agroprom/beton,
@@ -4985,6 +4985,9 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/buildings/mercenary)
+"xt" = (
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bar/rentgen)
 "xy" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -51147,7 +51150,7 @@ au
 mX
 nh
 np
-nB
+xt
 nJ
 nN
 cT

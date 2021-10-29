@@ -736,11 +736,6 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/substation)
-"cX" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
-/area/stalker)
 "cY" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/clearsky)
@@ -3886,14 +3881,6 @@
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
-"og" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/cockroach{
-	faction = list("neutral, stalker_mutants1")
-	},
-/turf/open/floor/plating/dirt,
-/area/stalker)
 "om" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/storage/firstaid/stalker/military,
@@ -3903,14 +3890,6 @@
 "op" = (
 /mob/living/simple_animal/hostile/mutant/snork,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"os" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "ov" = (
 /obj/rad/rad_low,
@@ -3939,14 +3918,12 @@
 "pn" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "pE" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/anomaly/tramplin,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "pK" = (
@@ -3975,12 +3952,6 @@
 /obj/structure/curtain,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
-"qs" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "qv" = (
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
@@ -3996,7 +3967,6 @@
 /area/stalker/buildings/backwater/ranger)
 "qT" = (
 /obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
@@ -4017,7 +3987,6 @@
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/item/stack/spacecash/c100,
-/obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
@@ -4027,10 +3996,6 @@
 /obj/structure/chair/pew/left,
 /obj/item/stack/spacecash/c5000,
 /turf/open/floor/plasteel/chapel,
-/area/stalker)
-"rj" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "ru" = (
 /obj/effect/decal/cleanable/blood,
@@ -4049,7 +4014,6 @@
 /area/stalker)
 "sa" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "sc" = (
@@ -4061,7 +4025,6 @@
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "sf" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -4088,16 +4051,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
-/area/stalker)
-"tb" = (
-/obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
-/area/stalker)
-"tA" = (
-/obj/anomaly/tramplin,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "tF" = (
 /obj/item/stack/spacecash/c5000,
@@ -4139,7 +4092,6 @@
 "uD" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "uQ" = (
@@ -4173,7 +4125,6 @@
 	},
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "wm" = (
@@ -4187,18 +4138,6 @@
 "wn" = (
 /obj/anomaly/electro,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"wy" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
-/area/stalker)
-"wG" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/survival/pod{
-	desc = "A slick black wall that is made of a strong metal.";
-	name = "slick metal wall"
-	},
 /area/stalker)
 "wL" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
@@ -4225,7 +4164,6 @@
 "xk" = (
 /obj/structure/chair/pew/right,
 /obj/item/stack/spacecash/c1000,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "xo" = (
@@ -4355,11 +4293,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
-"BI" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "BM" = (
 /obj/structure/stalker/structure/junk_bed2,
 /turf/open/floor/plasteel/dark,
@@ -4379,8 +4312,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Ch" = (
@@ -4468,7 +4399,6 @@
 /area/stalker)
 "Fx" = (
 /obj/item/stack/spacecash/c500,
-/obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
@@ -4479,14 +4409,6 @@
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/item/stack/spacecash/c100,
 /turf/open/floor/plasteel/chapel,
-/area/stalker)
-"Gh" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Gm" = (
 /obj/structure/chair/pew/left,
@@ -4513,7 +4435,6 @@
 "Ib" = (
 /obj/anomaly/tramplin,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "Io" = (
@@ -4524,10 +4445,6 @@
 "It" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"IU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "IX" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker{
@@ -4564,7 +4481,6 @@
 /obj/item/candle{
 	lit = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
@@ -4595,7 +4511,6 @@
 "JS" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "JT" = (
@@ -4628,23 +4543,10 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"Ku" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "Lb" = (
 /obj/structure/reagent_dispensers/compostvat,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating/dirt,
-/area/stalker)
-"Li" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Lr" = (
 /obj/effect/step_trigger/teleporter{
@@ -4680,16 +4582,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/item/stack/spacecash/c5000,
 /turf/open/floor/plasteel/chapel,
-/area/stalker)
-"Ni" = (
-/obj/structure/grille/indestructable,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
-/area/stalker)
-"Nj" = (
-/obj/anomaly/tramplin,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Np" = (
 /mob/living/simple_animal/hostile/mutant/snork{
@@ -4744,20 +4636,6 @@
 "Ot" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"Pi" = (
-/mob/living/simple_animal/hostile/mutant/bloodsucker{
-	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
-	health = 800;
-	name = "large bloodsucker";
-	resize = 2.4;
-	speed = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Po" = (
@@ -4777,18 +4655,11 @@
 /obj/item/paper_bin,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
-"Rq" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "Rz" = (
 /obj/rad/rad_low,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker)
 "RK" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/floor/plating/dirt,
 /area/stalker)
@@ -4818,7 +4689,6 @@
 /area/stalker/buildings/backwater/claw)
 "SQ" = (
 /obj/effect/decal/cleanable/blood/gibs/torso,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "SR" = (
@@ -4840,21 +4710,6 @@
 	resize = 2.4;
 	speed = 1
 	},
-/turf/open/floor/plating/dirt,
-/area/stalker)
-"Td" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/cockroach{
-	faction = list("neutral, stalker_mutants1")
-	},
-/turf/open/floor/plating/dirt,
-/area/stalker)
-"Th" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "Tq" = (
@@ -4948,14 +4803,6 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"UP" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "UR" = (
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/floor/plating/dirt,
@@ -4964,7 +4811,6 @@
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/item/stack/spacecash/c5000,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "Vc" = (
@@ -4973,10 +4819,6 @@
 	faction = list("neutral, stalker_mutants1")
 	},
 /turf/open/floor/plasteel/chapel,
-/area/stalker)
-"Vt" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/r_wall/rust,
 /area/stalker)
 "Vu" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -4990,13 +4832,6 @@
 /obj/rad/rad_low,
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
-/area/stalker)
-"VD" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "VQ" = (
 /obj/effect/step_trigger/teleporter{
@@ -5037,37 +4872,15 @@
 /area/stalker)
 "Ww" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
-/area/stalker)
-"WO" = (
-/obj/rad/rad_low,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "WT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"Xf" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/mutant/bloodsucker{
-	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
-	health = 800;
-	name = "large bloodsucker";
-	resize = 2.4;
-	speed = 1
-	},
-/turf/open/floor/plating/dirt,
-/area/stalker)
 "Xj" = (
 /obj/anomaly/tramplin,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "Xl" = (
@@ -5080,12 +4893,6 @@
 "XK" = (
 /obj/item/kitchen/knife/throwing,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"Yc" = (
-/obj/anomaly/tramplin,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "Yd" = (
 /obj/structure/bed/stalker/mattress_dirty,
@@ -5110,16 +4917,6 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"YE" = (
-/obj/effect/landmark/mobspawner/bloodsucker_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"Zc" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall,
-/area/stalker)
 "Zk" = (
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt,
@@ -5134,7 +4931,6 @@
 "ZC" = (
 /obj/structure/chair/pew,
 /obj/item/stack/spacecash/c500,
-/obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
@@ -30102,7 +29898,7 @@ ag
 yM
 Uv
 Wd
-Gh
+Xl
 Wd
 dP
 dP
@@ -30359,7 +30155,7 @@ ag
 Wd
 qv
 qv
-Gh
+Xl
 Wd
 Wd
 dP
@@ -30616,7 +30412,7 @@ ag
 af
 qv
 Wd
-Th
+AA
 My
 Wd
 Wd
@@ -30873,7 +30669,7 @@ ag
 Wd
 si
 Wd
-VD
+RV
 Np
 rJ
 af
@@ -31385,9 +31181,9 @@ ag
 aF
 ag
 af
-rj
+rJ
 Wd
-rj
+rJ
 oF
 rJ
 Wd
@@ -31642,9 +31438,9 @@ ag
 aF
 ag
 Wd
-rj
+rJ
 Wd
-VD
+RV
 Tq
 rJ
 Wd
@@ -31899,9 +31695,9 @@ ag
 aF
 ag
 Wd
-rj
 rJ
-Ku
+rJ
+Ja
 Wd
 Wd
 oX
@@ -32932,7 +32728,7 @@ Wd
 DQ
 Wd
 RV
-Ni
+oF
 Xl
 VV
 Wd
@@ -33188,8 +32984,8 @@ rJ
 Wd
 RV
 Wd
-VD
-rj
+RV
+rJ
 AA
 Wd
 Tq
@@ -33443,13 +33239,13 @@ ag
 Wd
 rJ
 Tq
-Ku
-wy
-Li
+Ja
+sw
+It
 Wd
-Th
-IU
-IU
+AA
+Tq
+Tq
 Sv
 Wd
 Wd
@@ -33700,14 +33496,14 @@ ag
 af
 rv
 Wd
-wG
+Wd
 Ww
-wG
+Wd
 NT
 RV
 Wd
 Wd
-rj
+rJ
 Wd
 uD
 sf
@@ -33965,9 +33761,9 @@ Po
 wh
 pn
 Wd
-wG
+Wd
 SQ
-rj
+rJ
 af
 tF
 RX
@@ -34217,13 +34013,13 @@ rJ
 Wd
 My
 Wd
-rj
-rj
-wG
-WO
+rJ
+rJ
+Wd
 qv
-qs
-qs
+qv
+ZW
+ZW
 Po
 yM
 yP
@@ -34474,7 +34270,7 @@ rJ
 Tq
 SR
 qv
-rj
+rJ
 Wd
 Wd
 yM
@@ -34735,7 +34531,7 @@ Wd
 Wd
 Wd
 rJ
-Xf
+SS
 Tq
 yM
 yK
@@ -34987,12 +34783,12 @@ rJ
 Tq
 af
 Tq
-Xf
+SS
 rJ
 rJ
 GG
-rj
-IU
+rJ
+Tq
 af
 af
 AA
@@ -35243,16 +35039,16 @@ Wd
 DQ
 Tq
 yM
-IU
-rj
-IU
-cX
-Rq
+Tq
+rJ
+Tq
+Tq
+rJ
 rJ
 Tq
 af
 JS
-Th
+AA
 yM
 pE
 EC
@@ -35500,16 +35296,16 @@ Wd
 Tq
 Tq
 Wd
-IU
+Tq
 rJ
 Wd
 Wd
 af
 af
 yM
-Vt
-tb
-IU
+af
+My
+Tq
 af
 UU
 rg
@@ -35757,15 +35553,15 @@ Wd
 Zk
 Tq
 Wd
-rj
-IU
+rJ
+Tq
 Wd
 Wn
 It
 Tq
 sw
-wy
-qs
+sw
+ZW
 It
 Un
 Ju
@@ -36015,18 +35811,18 @@ Tq
 Tq
 Wd
 rJ
-IU
+Tq
 Wd
-Ku
+Ja
 rJ
 Un
-Td
-IU
-Pi
+DQ
+Tq
+Kg
 Wd
-wG
-Zc
-wG
+Wd
+Un
+Wd
 Wd
 Qb
 Un
@@ -36272,18 +36068,18 @@ Tq
 Fb
 af
 rJ
-og
+DQ
 Un
-UP
-rj
+Ja
+rJ
 Un
 PE
 rJ
 Ec
 Wd
-Yc
+Zk
 RK
-Ni
+oF
 Lb
 BN
 Un
@@ -36529,20 +36325,20 @@ Tq
 wn
 Wd
 Tq
-IU
+Tq
 Un
 Cd
-wG
+Wd
 Wd
 Un
 Un
 Wd
 Wd
-cX
-cX
+Tq
+Tq
 Xj
 Ot
-rj
+rJ
 Un
 BR
 EJ
@@ -36786,20 +36582,20 @@ rJ
 Fb
 Wd
 Tq
-rj
-rj
-UP
-IU
-IU
+rJ
+rJ
+Ja
+Tq
+Tq
 Tq
 oF
 Fb
-IU
-os
+Tq
+RV
 oF
-wG
-Rq
-Ni
+Wd
+rJ
+oF
 Wd
 BR
 GP
@@ -37043,19 +36839,19 @@ rJ
 Tq
 Wd
 Tq
-YE
-rj
+GG
+rJ
 sa
-IU
+Tq
 Ib
-BI
+It
 It
 sw
 sw
-tA
+Zk
 Tq
-wG
-Rq
+Wd
+rJ
 rJ
 Un
 BR
@@ -37299,21 +37095,21 @@ Wd
 rJ
 Tq
 Wd
-rj
-Un
-Un
-Wd
-Wd
-Un
-Wd
-Un
-Wd
-Wd
-Wd
-Un
-wG
 rJ
-Nj
+Un
+Un
+Wd
+Wd
+Un
+Wd
+Un
+Wd
+Wd
+Wd
+Un
+Wd
+rJ
+Fb
 Un
 BR
 BR
@@ -37556,7 +37352,7 @@ Wd
 Tq
 Tq
 Wd
-IU
+Tq
 Wd
 Tq
 rJ
@@ -37570,7 +37366,7 @@ Tq
 Ns
 Tq
 Tq
-rj
+rJ
 Wd
 BR
 NF

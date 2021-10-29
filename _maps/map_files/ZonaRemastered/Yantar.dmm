@@ -85,7 +85,7 @@
 	icon_state = "21"
 	},
 /turf/open/stalker/floor/lattice,
-/area/space)
+/area/stalker/buildings/ecologist_entrance)
 "aq" = (
 /obj/machinery/button/door{
 	id = "ecoshutters";
@@ -177,13 +177,13 @@
 	id = "ecoshutters"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "aC" = (
 /obj/structure/stalker/bunker{
 	icon_state = "10"
 	},
 /turf/open/stalker/floor/lattice,
-/area/space)
+/area/stalker/buildings/ecologist_entrance)
 "aD" = (
 /obj/machinery/door/airlock/stalker,
 /turf/open/stalker/floor/lattice,
@@ -211,7 +211,7 @@
 	id = "ecoshutters"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "aH" = (
 /obj/machinery/light,
 /obj/structure/closet/stalker/shkaf,
@@ -245,7 +245,7 @@
 	icon_state = "23"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "aM" = (
 /obj/structure/stalker/bunker{
 	icon_state = "1"
@@ -266,7 +266,7 @@
 	icon_state = "3"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "aP" = (
 /obj/structure/table/stalker,
 /obj/item/bodybag,
@@ -693,9 +693,11 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "cb" = (
-/obj/machinery/door/airlock/stalker,
+/obj/structure/stalker/bunker{
+	icon_state = "1"
+	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/ecologist_entrance)
 "cc" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "20"
@@ -999,6 +1001,12 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"MR" = (
+/obj/structure/stalker/bunker{
+	icon_state = "24"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist_entrance)
 
 (1,1,1) = {"
 ba
@@ -5093,7 +5101,7 @@ ba
 ba
 ag
 bR
-ar
+ap
 aB
 aG
 aL
@@ -5353,7 +5361,7 @@ bS
 as
 as
 as
-aM
+cb
 aU
 az
 az
@@ -5610,7 +5618,7 @@ bQ
 at
 as
 as
-aN
+MR
 aU
 az
 aS
@@ -6381,7 +6389,7 @@ bT
 av
 as
 aH
-aN
+MR
 aV
 bc
 bi
@@ -6636,7 +6644,7 @@ ba
 ba
 bU
 bY
-cb
+aD
 ce
 bX
 cj

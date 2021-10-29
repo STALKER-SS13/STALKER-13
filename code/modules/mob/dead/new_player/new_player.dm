@@ -381,6 +381,7 @@
 		character = equip
 
 	var/datum/job/job = SSjob.GetJob(rank)
+	SSjob.GiveKeypadCodes(character, rank)
 
 	if(job && !job.override_latejoin_spawn(character))
 		SSjob.SendToLateJoin(character, FALSE, rank)

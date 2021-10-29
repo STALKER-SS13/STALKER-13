@@ -95,4 +95,4 @@
 
 /datum/outfit/job/monolith_hegumen/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
-	H.add_trait(TRAIT_BLOWOUT_IMMUNE, TRAIT_GENERIC)
+	H.add_trait(TRAIT_BLOWOUT_IMMUNE, ROUNDSTART_TRAIT)

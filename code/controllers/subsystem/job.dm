@@ -712,3 +712,12 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/JobDebug(message)
 	log_job_debug(message)
+
+////////////////////////////////////////
+//    Gives keypad codes roundstart   //
+////////////////////////////////////////
+/datum/controller/subsystem/job/proc/GiveKeypadCodes(mob/living/H, rank)
+	for(var/obj/machinery/button/door/keypad/faction/K in all_faction_keypads)
+		if(rank in K.allowed_jobs)
+			H.mind.memory += "<BR><b>You remember that the code for [K.name] is [K.correctcode].</b>"
+			H << "<span class = 'notice'>You remember that the code for [K.name] is [K.correctcode].</span>"

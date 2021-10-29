@@ -2041,9 +2041,9 @@
 /area/stalker/buildings/backwater/ranger)
 "hP" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 6;
-	teleport_y = 162;
-	teleport_z = 1
+	teleport_x = 22;
+	teleport_y = 159;
+	teleport_z = 2
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker)
@@ -2075,9 +2075,9 @@
 /area/stalker)
 "hW" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 18;
-	teleport_y = 160;
-	teleport_z = 1
+	teleport_x = 15;
+	teleport_y = 159;
+	teleport_z = 2
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)

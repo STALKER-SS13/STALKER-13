@@ -632,14 +632,50 @@
 	icon_state = "realbar"
 	safezone = 1
 
-/area/stalker/buildings/bar/monolith
-	name = "Monolith Armory"
+/area/stalker/buildings/monolith
+	name = "Monolith Safezone"
 	icon = 'stalker/icons/areas.dmi'
-	icon_state = "monolith_bar"
-	safezone = 1
+	icon_state = "monolith"
+	monolithsafezone = 1
+
+/area/stalker/buildings/duty
+	name = "Duty Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "duty"
+	dutysafezone = 1
+
+/area/stalker/buildings/freedom
+	name = "Freedom Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "freedom"
+	dutysafezone = 1
+
+/area/stalker/buildings/clearsky
+	name = "Clear Sky Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "clearsky"
+	dutysafezone = 1
+
+/area/stalker/buildings/bandit
+	name = "Bandit Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "bandit"
+	banditsafezone = 1
+
+/area/stalker/buildings/military
+	name = "Military Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "military"
+	militarysafezone = 1
+
+/area/stalker/buildings/renegade
+	name = "Renegade Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "renegades"
+	renegadesafezone = 1
 
 /area/stalker/buildings/ecologist
-	name = "ecologist"
+	name = "ecologist safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "ecologist"
 	ecosafezone = 1
@@ -671,7 +707,7 @@
 	name = "Bandit Bar"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit_bar"
-	safezone = 1
+	banditsafezone = 1
 
 //radar
 /area/stalker/buildings/radar

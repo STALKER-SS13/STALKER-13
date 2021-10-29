@@ -687,6 +687,7 @@
 	armor = list("melee" = 95, "bullet" = 80, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 50, "rad" = 85, "fire" = 50, "psy" = 40)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	durability = 200
+	resistance_flags = UNACIDABLE | FIRE_PROOF
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	name = "exoskeleton helmet"
@@ -695,6 +696,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = UNACIDABLE | FIRE_PROOF
 	icon_state = "exoskelet_helmet"
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/New()
 	..()

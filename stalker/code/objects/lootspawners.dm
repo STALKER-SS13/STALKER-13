@@ -223,7 +223,7 @@ obj/nothing/New()
 	loot = list(/obj/item/trash/paintcan = 20,
 				/obj/item/trash/teapot = 20,
 				/obj/item/trash/pincers = 10,
-				/obj/item/trash/carkey = 20,
+				/obj/item/trash/oldkey = 20,
 				/obj/item/trash/crossnecklace = 15,
 				/obj/item/trash/oldvials = 5,
 				/obj/item/trash/steelwire = 10,

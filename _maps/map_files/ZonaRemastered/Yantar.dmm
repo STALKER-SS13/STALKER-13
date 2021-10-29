@@ -1,0 +1,188 @@
+"aa" = (/obj/rad/rad_medium,/turf/open/stalker/floor/water,/area/stalker/blowout/outdoor)
+"ab" = (/obj/rad/rad_low,/turf/open/stalker/floor/water,/area/stalker/blowout/outdoor)
+"ac" = (/obj/rad/rad_low,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"ad" = (/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"ae" = (/obj/rad/rad_low,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"af" = (/turf/closed/wall/stalker/bricks_white,/area/stalker/blowout/outdoor)
+"ag" = (/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"ah" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 236; teleport_y = 8; teleport_z = 7},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"ai" = (/obj/structure/sink/kitchen{layer = 3.1; pixel_y = 28},/obj/structure/table/stalker,/obj/item/circular_saw,/obj/item/taperecorder,/obj/item/taperecorder,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aj" = (/obj/structure/table/stalker,/obj/item/surgicaldrill,/obj/item/scalpel,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ak" = (/obj/structure/table/stalker,/obj/item/retractor,/obj/item/hemostat,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"al" = (/obj/structure/stalker/blocks/vanish/pipe/pipe3,/obj/rad/rad_medium,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"am" = (/obj/structure/stalker/bunker{icon_state = "9"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"an" = (/obj/structure/table/stalker,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ao" = (/obj/machinery/stalker/sidormat{layer = 3.1; pixel_y = 17},/obj/structure/table/stalker,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ap" = (/obj/structure/stalker/bunker{icon_state = "21"},/turf/open/stalker/floor/lattice,/area/space)
+"aq" = (/obj/machinery/button/door{id = "ecoshutters"; name = "lockdown button"; pixel_y = 15},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ar" = (/obj/structure/stalker/bunker{icon_state = "21"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"as" = (/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"at" = (/obj/structure/stalker/cacheable/clocks{pixel_x = -1; pixel_y = 35},/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = "icon-tube1 (EAST)"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"au" = (/obj/structure/stalker/cacheable/bochka{pixel_x = -7; pixel_y = 6; pixel_z = 1},/obj/structure/stalker/cacheable/bochka{density = 0; layer = 4; opacity = 1; pixel_x = 8; pixel_y = -3},/obj/structure/stalker/cacheable/bochka/red{pixel_x = -6; pixel_y = -1},/obj/structure/stalker/cacheable/bochka/red{density = 0; pixel_x = 8; pixel_y = 3},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"av" = (/obj/machinery/shower,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"aw" = (/obj/structure/table/optable,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ax" = (/obj/effect/landmark/latejoin/chief_ecologist,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ay" = (/obj/structure/table/stalker,/obj/item/cautery,/obj/item/surgical_drapes,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"az" = (/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aA" = (/obj/structure/chair/office/dark{dir = 4},/obj/effect/landmark/latejoin/chief_ecologist,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aB" = (/obj/structure/table/stalker/wood/bar100rentgen{icon = 'icons/obj/smooth_structures/reinforced_table.dmi'; icon_state = "r_table"; name = "reinforced table"},/obj/machinery/door/poddoor/preopen{id = "ecoshutters"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aC" = (/obj/structure/stalker/bunker{icon_state = "10"},/turf/open/stalker/floor/lattice,/area/space)
+"aD" = (/obj/machinery/door/airlock/stalker,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"aE" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = "icon-tube1 (WEST)"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aF" = (/obj/machinery/door/airlock/stalker,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aG" = (/obj/machinery/light,/obj/structure/table/stalker/wood/bar100rentgen{icon = 'icons/obj/smooth_structures/reinforced_table.dmi'; icon_state = "r_table"; name = "reinforced table"},/obj/machinery/door/poddoor/preopen{id = "ecoshutters"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aH" = (/obj/machinery/light,/obj/structure/closet/stalker/shkaf,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist_entrance)
+"aI" = (/obj/machinery/light{dir = 8},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aJ" = (/obj/structure/stalker/bunker{icon_state = "10"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aK" = (/obj/item/trash/oldvials{pixel_x = 1; pixel_y = 4},/obj/structure/table/stalker,/obj/item/pen/fourcolor,/obj/item/pen/fountain,/obj/item/paper_bin,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aL" = (/obj/structure/stalker/bunker{icon_state = "23"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aM" = (/obj/structure/stalker/bunker{icon_state = "1"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aN" = (/obj/structure/stalker/bunker{icon_state = "24"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aO" = (/obj/structure/stalker/bunker{icon_state = "5"},/obj/structure/stalker/bunker{icon_state = "3"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aP" = (/obj/structure/table/stalker,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/hand_labeler,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aQ" = (/obj/structure/stalker/bunker{icon_state = "2"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aR" = (/obj/structure/closet/stalker/shkaf,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen/fourcolor,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/pen,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/obj/item/camera_film,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aS" = (/obj/effect/landmark/latejoin/ecologistguard,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aT" = (/obj/structure/table/stalker,/obj/item/camera/detective,/obj/item/camera/detective,/obj/item/camera_film,/obj/item/camera_film,/obj/item/stalker/docs,/obj/item/folder,/obj/item/folder,/obj/item/folder,/obj/item/folder,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aU" = (/obj/structure/stalker/cacheable/yashik/yaskik_a{pixel_x = 1; pixel_y = 2},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aV" = (/obj/structure/stalker/cacheable/yashik/yaskik_a{pixel_x = 1; pixel_y = 2},/obj/item/instrument/violin,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aW" = (/obj/structure/bodycontainer/morgue,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aX" = (/obj/structure/filingcabinet/filingcabinet,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aY" = (/obj/structure/stalker/modification_table,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"aZ" = (/obj/machinery/light,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"ba" = (/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bb" = (/obj/structure/chair/sofa/right,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bc" = (/obj/structure/chair/sofa/corner,/obj/effect/landmark/latejoin/ecologist,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bd" = (/obj/structure/stalker/bunker{icon_state = "28"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"be" = (/obj/structure/stalker/bunker{icon_state = "8"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bf" = (/obj/structure/stalker/bunker{icon_state = "29"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bg" = (/obj/structure/stalker/cacheable/yashik/yaskik_a{pixel_x = 1; pixel_y = 2},/obj/structure/stalker/cacheable/televizor{pixel_y = 8},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bh" = (/obj/machinery/campfire/barrel,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bi" = (/obj/structure/chair/sofa{dir = 8},/obj/machinery/light{dir = 4},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bj" = (/obj/structure/stalker/bunker{icon_state = "8"},/obj/structure/mirror,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bk" = (/obj/structure/bed/stalker/metal/matras,/obj/effect/landmark/latejoin/ecologist,/obj/item/bedsheet/medical,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bl" = (/obj/structure/closet/stalker/shkaf,/obj/item/clothing/mask/surgical,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bm" = (/obj/structure/bedsheetbin,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bn" = (/obj/structure/chair/sofa/right{dir = 1},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bo" = (/obj/structure/chair/sofa/corner{dir = 8},/obj/effect/landmark/latejoin/ecologist,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bp" = (/obj/structure/toilet,/obj/effect/landmark/latejoin/ecologist,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bq" = (/obj/machinery/shower,/obj/structure/curtain,/obj/item/soap/deluxe,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"br" = (/obj/structure/sink/kitchen{layer = 3.1; pixel_y = 28},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bs" = (/obj/machinery/light{dir = 4; icon_state = "tube1"; tag = "icon-tube1 (EAST)"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bt" = (/obj/structure/table/stalker,/obj/item/pen/fourcolor,/obj/item/papercutter,/obj/item/taperecorder,/obj/item/taperecorder,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"bu" = (/obj/structure/stalker/tree/leafless,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"bv" = (/obj/rad/rad_low,/obj/structure/flora/stalker/bush,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bw" = (/obj/structure/stalker/blocks/vanish/pipe/pipe2,/obj/rad/rad_medium,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bx" = (/obj/rad/rad_low,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"by" = (/obj/rad/rad_medium,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"bz" = (/obj/structure/flora/stalker/bush,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bA" = (/obj/rad/rad_medium,/obj/structure/flora/stalker/bush,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bB" = (/obj/structure/stalker/car/gryzovik2/south,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bC" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "2"; tag = "icon-2"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bD" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "3"; tag = "icon-3"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bE" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "4"; tag = "icon-4"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bF" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "5"; tag = "icon-5"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bG" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "6"; tag = "icon-6"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bH" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "7"; tag = "icon-7"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bI" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "8"; tag = "icon-8"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bJ" = (/obj/structure/grille/stalker/beton{density = 0; icon_state = "-|2"; layer = 5; tag = "icon--|2"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bK" = (/obj/structure/grille/stalker/beton,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bL" = (/obj/structure/grille/stalker/beton{icon_state = "-|3"; tag = "icon--|3"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bM" = (/obj/structure/grille/stalker/beton{icon_state = "l4"; tag = "icon-l4"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bN" = (/obj/structure/grille/stalker/beton{icon_state = "|"; tag = "icon-|"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"bO" = (/turf/open/stalker/floor/asphalt,/area/stalker/buildings/ecologist)
+"bP" = (/obj/structure/stalker/bunker{icon_state = "16"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"bQ" = (/obj/structure/stalker/bunker{icon_state = "1"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"bR" = (/obj/structure/stalker/bunker{icon_state = "26"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"bS" = (/obj/structure/stalker/bunker{icon_state = "8"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"bT" = (/obj/structure/stalker/bunker{icon_state = "1"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"bU" = (/obj/structure/stalker/bunker{icon_state = "17"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"bV" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "00"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bW" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "01"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"bX" = (/obj/structure/stalker/bunker{icon_state = "2"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"bY" = (/obj/structure/stalker/bunker{icon_state = "21"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"bZ" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "10"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"ca" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "11"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"cb" = (/obj/machinery/door/airlock/stalker,/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"cc" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "20"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"cd" = (/obj/structure/stalker/car/moskvich/south/hyi{icon_state = "21"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"ce" = (/obj/structure/stalker/bunker{icon_state = "10"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"cf" = (/obj/structure/chair/stalker/divan,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"cg" = (/obj/structure/chair/stalker/divan/divan2,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"ch" = (/obj/structure/table/stalker/wood/bar,/obj/item/instrument/guitar,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"ci" = (/obj/machinery/campfire,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"cj" = (/obj/structure/stalker/bunker{icon_state = "9"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"ck" = (/obj/structure/chair/brevno,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"cl" = (/obj/structure/chair/brevno/log2,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"cm" = (/obj/structure/stalker/blocks/vanish/block2/l,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"cn" = (/obj/structure/stalker/blocks/vanish/block2/m,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"co" = (/obj/structure/stalker/blocks/vanish/block2/r,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"cp" = (/obj/structure/stalker/bunker{icon_state = "2"},/obj/structure/stalker/bunker{icon_state = "28"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"cq" = (/obj/structure/stalker/blocks/vanish/block2/r,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
+"cr" = (/obj/effect/step_trigger/teleporter{dir = 4; teleport_x = 14; teleport_y = 239; teleport_z = 3},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"cs" = (/obj/structure/stalker/bunker{icon_state = "15"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"ct" = (/obj/structure/table/stalker,/obj/item/paper_bin,/obj/item/hand_labeler,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cu" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cv" = (/obj/structure/stalker/cacheable/battery{dir = 8; tag = "icon-gazovaya_truba (WEST)"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cw" = (/obj/machinery/washing_machine,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cx" = (/obj/machinery/light,/obj/effect/spawner/lootdrop/stalker/books,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cy" = (/obj/structure/closet/stalker/shkaf,/obj/item/clothing/mask/surgical,/obj/machinery/light,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cz" = (/obj/structure/table/stalker,/obj/structure/stalker/cacheable/radio{dir = 8; pixel_x = -6; pixel_y = 4; tag = "icon-radio (WEST)"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cA" = (/obj/effect/landmark/latejoin/ecologist,/obj/structure/chair/office/dark,/turf/open/stalker/floor/lattice,/area/stalker/buildings/ecologist)
+"cB" = (/obj/structure/stalker/bunker{icon_state = "3"},/turf/open/stalker/floor/lattice,/area/stalker/blowout/outdoor)
+"cC" = (/obj/structure/stalker/bunker{icon_state = "6"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
+"cD" = (/obj/structure/grille/stalker/beton{icon_state = "-|"; tag = "icon--|"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"cE" = (/obj/machinery/door/poddoor/sidor,/turf/open/stalker/floor/asphalt,/area/stalker/buildings/ecologist)
+
+(1,1,1) = {"
+aaaaaaababacadadadadadadadadaeafafafaeadadadadadadadadadadagagahahahahagagadadadadadadadadadadadadad
+aaaaaaababacadadadadadadadadaeafalafaeadadadadadadadadadadagagagagagagagagadadadadadadadadadadadadad
+aaaaaaabacacadadadadbabaadadaeafalafaeadadadadadadbuadadadagagagagagagagagadadadadadadadadadadadbuad
+aaaaaaabacbvbabababababaadadaeafbwafaeadadbababaadadadadadagagagagagagagagadadbuadadbababaadadadadad
+aaaaaaacbvbvbababababaadadadaeaeabaeaeadbabababababaadadadadagagagagagagagagadadadadbababababaadadad
+aaaaaabvbvbxbabababaadadadadabababababadbabababababaadadadadagagagagagagagagadadadadbabababababaadad
+aaaaaaacacacadadadadadadadadadabababadadadbababababaadadadadagagagagagagagagadadadadadbababababaadad
+aaaabyacacacadadadadadadadadbzbzadadadadadbababababaadadadadagagagagagagagagadadadadadadbabababaadad
+aaaabyacacacadadbuadadadadbabababzadadadadadbabababaadadadadadaeaeaeaeagagagadadbuadadadbabababaadad
+aaaabAbxbxacadadadadadadbababababzadadadadadadbababaadadadadadaebBbCaeagagagagadadadadadadbababaadad
+aaaabAbxbxbxbaadadadbababababababaadadadadadadadbabaadadbuadadaebDbEaeagagagagadadadadadadadadadadad
+aaaabAbvbxbxbababaadbababababaadadadadadadadadadadadadadadadadaebFbGaeagagagagadadadadadadadadadbuad
+aaaaaabvbvbxbababaadadadadadadadadadadbuadadadadadadadadadadadaebHbIaeagagagagadadadbuadadadadadadad
+aaaaaaabbvbvbababaadadadadadadadadadadadadadadbabababaadadadadaeaeaeaeagagagagagadadadadadadadadadad
+aaaaaaababbvbababaadadadadadadadadadadadadbabababababaadadadadadagagagagagagagagadadadadadadbabaadad
+aaaaaaabababadadadadadadadadadadadadadbabababababababaadadadadadagagagagagagagagadadadadadbababaadad
+aaaaaaabababadadadadadadadadadadadadadbabababababaadadadadadadadagagagagagagagagagadadadadbababaadad
+aaaaaaacacacadadadadadadbuadadadadadadbabababaadadadadbuadadadadadagagagagagagagagadadadadbababaadad
+aaaabyacacacadadadadadadadadadadadadadadadadadadadadadadadadadadadagagagagagagagagadadadadbababaadad
+aabybyacacacadadadadadadadadadadadadadadadadadadadadadadadadadadadagagagagagagagagagadadadbababaadad
+bJbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbLadadadadadadagagagagagagagagadadadbababaadad
+bMbababababababaafafafafbababaafafafafbababababababababNadadadadadadagagagagagagagagadadadadadbaadad
+bMbababababababaafbObOafbababaafbObOafbababababababababNadadadadadadadagagagagagagagadadadadadadadad
+bMbababababababaafbObOafbababaafbObOafbababababababababNadadadbuadadadagagagagagagagagadadadadadadad
+bMbababababababaafcEafafbababaafafcEafbababababababababNadadadadadadadadagagagagagagagadadadadadadad
+bMbababababababababababababababababababababaadadadbababNadadadadadadadadagagagagagagagagadadadadbuad
+bMbaadadbababababababababababababababababaadadadadbababNadadadadadadadadadagagagagagagagagadadadadad
+bMbaadadadadbabaadadadadbababababababaadadadadadbabababNadadbababaadadadadadagagagagagagagadadadadad
+bMbabaadadadbababaadadadadbababaadadadadadadbabababababNadadadbababaadadadadagagagagagagagadadadadad
+bMbababaadadbabababababababababababababababababababababNadadadbababaadadadadadagagagagagagadadadadad
+bMbabababababaagagagagagagagagagagagagagagbababababababNadadadbabababaadadadadagagagagagaeaeaeacadad
+bMbabababababPbQbQbQbRbQbSbQbQbRbSbQbSbRbTbUbababaadbabNadadadadbababaadadadadagagagagagaebVbWacbuad
+bMbabababaagbXaiajakamanaoanaqarasatauapavbYagbabaadadbNadadadadbababaadadadadagagagagagaebZcaacadad
+bMbabababaagbXawaxayarazazazaAaBasasasaDascbagbaadadadbNadadadadadbabaadadadadadagagagagaecccdacadad
+bMbaadadbaagbXaEazazaFazazazazaGasasasaCaHceagbacfcgbabNadadbuadadadadadadadadadagagagagaeaeaeacadad
+bMbaadadbaagbXaIazazaJazazazaKaLaMaNaFaOaNbXagbachcibabNadadadadadadadadadadadadagagagagagagagagadad
+bMbaadadbaagbXaPazazaQaRaSazaTaraUaUazazaVcjagbackclbabNadadadadadadadadadadcmadagagagagagagagagadad
+bMadadadbaagbXaWazaXaQaYaZazazaFazazazbbbccjagbababababNadadadcmadadadadadadcnadadagagagagagagagadad
+bMadadadbaagbXaWaZaXbdbeaMaMaMbfazaSbgbhbibXagbababababNadadadcnadadadadadbacobababaagagagagagagagad
+bMadadbabaagcpbjbeaNambkblbmazarazazazbnbobXagbababababNadadadcqadadadbababababababaagagagagagagagag
+bMadadbabaagbXbpbqbraraEazazaSaFazazazazbsbXagbababababaadadadbababababababababaadadagagagagagagagag
+bMbabababaagbXazazaSaFazazazazaJbtctcuaScvcjagbababababaadbababababababaadadadadadadadagagagagagagag
+bMbabababaagbXcwcxazaJbkcybkblaQczcAaZazaXbXagbabababababababababacmadadadadadadadadadagagagagagagcr
+bMbababababacsbQbQbQcBbQbQbSbQcBbSbSbQbQbScCbababababababababaadadcnadadadadadadadadadadagagagagagcr
+bMbaadadbababaagagagagagagagagagagagagagagbababababababaadadadadadcqadbuadadadadadadadadagagagagagcr
+bMbaadadadbababababababababababababababababababaadadadbaadadadadadadadadadadbabaadadadadadagagagagcr
+bMbaadadadadadbababababababababababababababaadadadadadbNadadadadadadadbabababababaadadadadagagagagag
+bMbabaadadadadadbabababababababababababaadadadadadbababNadadbababababababababababaadadadadadagagagag
+bMbababababababababababababababababababababababababababNadadbabababababababababaadadadadadadadagagag
+bJbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKcDadadadadadadadadadadadadadadadadadadadadagag
+"}

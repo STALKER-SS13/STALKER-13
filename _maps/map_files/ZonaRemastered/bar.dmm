@@ -654,10 +654,11 @@
 /area/stalker/buildings/bar/city)
 "cj" = (
 /obj/machinery/light/small{
-	dir = 8;
+	dir = 4;
 	icon_state = "bulb";
-	tag = "icon-bulb1 (WEST)"
+	tag = "icon-bulb1 (EAST)"
 	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
 "cl" = (
@@ -3715,6 +3716,15 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
+"mf" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
+/obj/structure/stalker/cacheable/polka,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "mh" = (
 /obj/effect/landmark/latejoin/duty,
 /turf/open/stalker/floor/wood/oldvert,
@@ -3807,6 +3817,7 @@
 	dir = 4;
 	tag = "icon-bulb1 (EAST)"
 	},
+/obj/structure/stalker/cacheable/polka,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
 "my" = (
@@ -4965,10 +4976,6 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"qK" = (
-/obj/structure/stalker/cacheable/yashik,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "rl" = (
 /obj/structure/closet/crate/stalker/blue,
 /obj/item/stack/spacecash/c5000,
@@ -4985,22 +4992,10 @@
 /obj/item/stack/spacecash/c5000,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
-"rn" = (
-/obj/effect/landmark/latejoin/duty_lieutenant,
-/obj/structure/chair/wood/normal{
-	dir = 1;
-	tag = "icon-wooden_chair (NORTH)"
-	},
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "rr" = (
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"rH" = (
-/obj/structure/filingcabinet/chestdrawer,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "rU" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
@@ -5008,19 +5003,6 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"sn" = (
-/obj/structure/table/stalker/wood,
-/obj/structure/stalker/cacheable/radio{
-	layer = 3.2;
-	pixel_x = 4;
-	pixel_y = 18
-	},
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
-"vf" = (
-/obj/effect/landmark/latejoin/duty_lieutenant,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "wi" = (
 /obj/machinery/light{
 	dir = 8;
@@ -5028,9 +5010,13 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
-"xw" = (
-/obj/machinery/light/small,
-/obj/structure/stalker/cacheable/yashik/yaskik_a,
+"xy" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/obj/structure/stalker/cacheable/polka,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
 "yk" = (
@@ -5044,23 +5030,24 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/bar/rentgen)
+"yw" = (
+/obj/machinery/light/small,
+/obj/structure/stalker/cacheable/yashik/yaskik_a,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "yO" = (
 /obj/machinery/light,
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
-"Ag" = (
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/bar/rentgen)
-"AM" = (
+"za" = (
 /obj/structure/chair/stalker/divan/divan2,
 /obj/effect/landmark/latejoin/duty,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
-"Bk" = (
-/obj/structure/sign/vendor,
-/turf/closed/wall/stalker/bricks_white,
-/area/stalker/buildings/duty)
+"Ag" = (
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/bar/rentgen)
 "BK" = (
 /obj/structure/chair/wood/normal{
 	dir = 4;
@@ -5081,6 +5068,22 @@
 "Cs" = (
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/buildings)
+"CZ" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
+"DX" = (
+/obj/effect/landmark/latejoin/duty_lieutenant,
+/obj/structure/chair/wood/normal{
+	dir = 1;
+	tag = "icon-wooden_chair (NORTH)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "Ek" = (
 /obj/structure/stalker/cacheable/apc/open{
 	pixel_y = 32
@@ -5091,15 +5094,6 @@
 /obj/machinery/light,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
-"Fo" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb";
-	tag = "icon-bulb1 (EAST)"
-	},
-/obj/structure/stalker/cacheable/polka,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "FL" = (
 /obj/structure/table/stalker/wood,
 /obj/item/stack/spacecash/c5000,
@@ -5139,6 +5133,13 @@
 /obj/item/stack/spacecash/c5000,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/bar/rentgen)
+"GQ" = (
+/obj/machinery/light/small{
+	dir = 1;
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "GV" = (
 /obj/machinery/button/door{
 	id = "rentgenbarmanvault";
@@ -5152,6 +5153,13 @@
 "Il" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings)
+"IO" = (
+/obj/machinery/light/small{
+	dir = 4;
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "IZ" = (
 /obj/structure/stalker/blocks/vanish/pipe,
 /turf/open/stalker/floor/wood/oldgor,
@@ -5202,10 +5210,6 @@
 /obj/item/stack/spacecash/c1000,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
-"LL" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/duty)
 "LT" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 146;
@@ -5214,20 +5218,13 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"Mi" = (
-/obj/structure/table/stalker/wood,
-/obj/machinery/stalker/sidormat{
-	dir = 1;
-	pixel_y = 9
-	},
+"Mc" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
-"Oc" = (
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
-/turf/open/stalker/floor/wood/oldvert,
+"Nk" = (
+/obj/structure/sign/vendor,
+/turf/closed/wall/stalker/bricks_white,
 /area/stalker/buildings/duty)
 "OR" = (
 /obj/machinery/button/door{
@@ -5236,6 +5233,23 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"OY" = (
+/obj/structure/table/stalker/wood,
+/obj/structure/stalker/cacheable/radio{
+	layer = 3.2;
+	pixel_x = 4;
+	pixel_y = 18
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
+"OZ" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	dir = 1;
+	pixel_y = 9
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "PQ" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -5259,6 +5273,14 @@
 /obj/item/reagent_containers/food/snacks/stalker/konserva,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"QV" = (
+/obj/effect/landmark/latejoin/duty_lieutenant,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
+"RA" = (
+/obj/structure/stalker/cacheable/yashik,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "RO" = (
 /obj/structure/chair/stalker/divan,
 /turf/open/stalker/floor/wood/oldgor,
@@ -5345,6 +5367,10 @@
 /obj/item/stack/spacecash/c50,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"Wj" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/duty)
 "Wv" = (
 /obj/structure/closet/crate/stalker/blue,
 /obj/item/stack/spacecash/c100,
@@ -59782,11 +59808,11 @@ aD
 aD
 aD
 aI
-cj
-vf
+CZ
+QV
 nc
-LL
-xw
+Mc
+yw
 aI
 au
 au
@@ -60039,12 +60065,12 @@ aD
 aD
 aD
 kg
-qK
+RA
 nx
 nx
 nx
 ny
-ly
+kg
 mS
 au
 au
@@ -60296,12 +60322,12 @@ aD
 aD
 aD
 kg
-qK
+RA
 nx
 mh
 nx
-Mi
-ly
+OZ
+kg
 kS
 lc
 au
@@ -60555,7 +60581,7 @@ aD
 aI
 nx
 nx
-mx
+IO
 nx
 ny
 aI
@@ -60810,7 +60836,7 @@ aI
 aI
 aI
 aI
-Bk
+Nk
 lW
 Tp
 Tp
@@ -61064,10 +61090,10 @@ aF
 iL
 aD
 aI
-cj
-nx
+mf
+Mc
 Tp
-nx
+mf
 nx
 nx
 mv
@@ -61075,9 +61101,9 @@ pc
 nG
 Tp
 na
-cj
+CZ
 nx
-rH
+Wj
 aI
 aF
 aF
@@ -61331,7 +61357,7 @@ ny
 ny
 nx
 Tp
-AM
+za
 nx
 nx
 nG
@@ -61578,10 +61604,10 @@ iL
 iL
 aD
 aI
-nx
+cj
 nx
 Tp
-Oc
+GQ
 nx
 nx
 nx
@@ -61847,8 +61873,8 @@ nx
 Tp
 nx
 nx
-sn
-rn
+OY
+DX
 aI
 aF
 aF
@@ -62103,7 +62129,7 @@ mB
 mB
 Tp
 nc
-Fo
+xy
 aI
 aI
 aI

@@ -16,7 +16,8 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
+	locked = 1
 	outfit = /datum/outfit/job/bandit
 
 /datum/job/banditboss
@@ -72,7 +73,6 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
@@ -82,13 +82,7 @@ Assistant
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
-	l_pocket = pick(
-	/obj/item/megaphone,
-	/obj/item/restraints/handcuffs,
-	/obj/item/lighter/greyscale,
-	/obj/item/storage/fancy/cigarettes,
-	/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
-	/obj/item/reagent_containers/food/drinks/bottle/vodka)
+	l_pocket = /obj/item/stalker/bolts
 
 /datum/outfit/job/banditboss
 	name = "Bandit Boss"
@@ -106,20 +100,13 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
-	l_pocket = pick(
-	/obj/item/megaphone,
-	/obj/item/restraints/handcuffs,
-	/obj/item/lighter/greyscale,
-	/obj/item/storage/fancy/cigarettes,
-	/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
-	/obj/item/reagent_containers/food/drinks/bottle/vodka)
+	l_pocket = /obj/item/stalker/bolts
 
 /datum/outfit/job/bandit_barman
 	name = "Bandit Barman"
@@ -139,7 +126,7 @@ Assistant
 						/obj/item/ammo_box/stalker/b12x70 = 2,
 						/obj/item/flashlight/seclite = 1,
 						/obj/item/clothing/accessory/patch/bandits)
-	l_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
 
 /datum/outfit/bandit  // For select_equipment

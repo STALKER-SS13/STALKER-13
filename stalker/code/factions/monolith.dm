@@ -12,7 +12,7 @@
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
-	limit_per_player = 1
+	limit_per_player = 2
 	outfit = /datum/outfit/job/monolith// /datum/outfit/job/duty
 
 /datum/outfit/job/monolith
@@ -31,8 +31,8 @@
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/abakan
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/flashlight/seclite = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/frag = 1)
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
+	backpack_contents = list(/obj/item/flashlight/seclite = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/stalker/frag = 2)
+	l_pocket = /obj/item/stalker/bolts
 
 /datum/outfit/job/monolith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -70,7 +70,7 @@
 	supervisors = "Monolith"
 	selection_color = "#601919"
 	whitelist_only = 1
-	limit_per_player = 2
+	limit_per_player = 1
 	outfit = /datum/outfit/job/monolith_hegumen
 	real_rank = "Lieutenant"
 
@@ -88,11 +88,11 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/groza
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sp9x39groza = 2, /obj/item/flashlight/seclite = 1, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/frag = 2)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sp9x39groza = 2, /obj/item/flashlight/seclite = 1, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/stalker/frag = 2)
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	r_pocket = /obj/item/stalker/bolts
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/outfit/job/monolith_hegumen/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
-	H.add_trait(TRAIT_BLOWOUT_IMMUNE, TRAIT_GENERIC)
+	H.add_trait(TRAIT_BLOWOUT_IMMUNE, ROUNDSTART_TRAIT)

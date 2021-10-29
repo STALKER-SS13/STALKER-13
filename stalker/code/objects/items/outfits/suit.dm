@@ -687,6 +687,7 @@
 	armor = list("melee" = 95, "bullet" = 80, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 50, "rad" = 85, "fire" = 50, "psy" = 40)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	durability = 200
+	resistance_flags = UNACIDABLE | FIRE_PROOF
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	name = "exoskeleton helmet"
@@ -695,6 +696,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = UNACIDABLE | FIRE_PROOF
 	icon_state = "exoskelet_helmet"
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/New()
 	..()
@@ -1041,6 +1043,27 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_mercenary"
+
+/obj/item/clothing/suit/hooded/kombez/eco_mercenary
+	name = "ecologist mercenary armor"
+	eng_desc = "Stalker suit from the Merc faction donning an ecologist armband. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits."
+	icon_state = "eco_mercenary"
+	item_state = "syndicate-black"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/eco_mercenary
+	durability = 150
+
+/obj/item/clothing/head/hooded/stalker/eco_mercenary
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	icon_state = "winterhood_eco_merc"
 
 /obj/item/clothing/suit/hooded/kombez/veter
 	name = "guardian of freedom"

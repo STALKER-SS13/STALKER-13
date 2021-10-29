@@ -7,6 +7,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	//limit_per_player = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits or Renegades, and starting fights with any neutral faction without asking up the chain of command."
@@ -14,8 +15,6 @@ Assistant
 	selection_color = "#64B2F7"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
-	locked = 1
 	outfit = /datum/outfit/clearsky
 
 /datum/outfit/clearsky  // For select_equipment
@@ -36,10 +35,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/kiparis
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/kiparis = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
@@ -50,9 +46,9 @@ Assistant
 	title = "Clear Sky Leader"
 	faction_s = "Clear Sky"
 	faction = "Station"
-	total_positions = 2
+	total_positions = 4
 	locked = 1
-	spawn_positions = 2
+	spawn_positions = 4
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction without asking up the chain of command."
@@ -79,10 +75,7 @@ Assistant
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/clothing/accessory/patch/clearsky)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	l_pocket = /obj/item/stalker/bolts
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,

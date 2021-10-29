@@ -372,6 +372,22 @@
 	switch(SSjob.GetJob(rank).faction_s)
 		if("Monolith")
 			character.faction = list("monolith_forces")
+		if("Bandits")
+			character.faction = list("bandit_forces")
+		if("Renegades")
+			character.faction = list("renegade_forces")
+		if("Duty")
+			character.faction = list("duty_forces", "stalker_forces")
+		if("Freedom")
+			character.faction = list("freedom_forces", "stalker_forces")
+		if("Clear Sky")
+			character.faction = list("cs_forces", "stalker_forces")
+		if("Mercenaries")
+			character.faction = list("mercenary_forces", "stalker_forces")
+		if("Ecologist")
+			character.faction = list("ecologist_forces", "stalker_forces")
+		if("State Security Service")
+			character.faction = list("ecologist_forces", "military_forces")
 		else
 			character.faction = list("stalker_forces")
 	var/equip = SSjob.EquipRank(character, rank, TRUE)
@@ -379,6 +395,7 @@
 		character = equip
 
 	var/datum/job/job = SSjob.GetJob(rank)
+	SSjob.GiveKeypadCodes(character, rank)
 
 	if(job && !job.override_latejoin_spawn(character))
 		SSjob.SendToLateJoin(character, FALSE, rank)

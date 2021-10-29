@@ -90,12 +90,12 @@
 	pixel_y = 7
 	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "at" = (
 /obj/structure/bed/stalker/mattresspillow,
 /obj/item/shovel,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "au" = (
 /obj/structure/grille/stalker/beton{
 	icon_state = "|";
@@ -108,9 +108,14 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "aw" = (
-/obj/structure/barricade/stalker/box,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	teleport_x = 49;
+	teleport_y = 7;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor)
 "ax" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/kordon/buildings)
@@ -124,9 +129,13 @@
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/kordon/buildings)
 "aA" = (
-/obj/structure/barricade/stalker/wood,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/stalker/bigyashik{
+	icon_state = "bigyashik 0,1";
+	tag = "icon-bigyashik 0,1"
+	},
+/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/buildings)
 "aB" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/gryaz,
@@ -178,7 +187,7 @@
 "aK" = (
 /obj/structure/bed/stalker/mattress_plain,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "aL" = (
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/digable/grass,
@@ -188,21 +197,19 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "aN" = (
-/obj/effect/step_trigger/teleporter{
+/obj/machinery/campfire/barrel,
+/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/buildings)
+"aO" = (
+/obj/structure/bed/stalker/matras{
 	dir = 8;
-	teleport_x = 236;
-	teleport_y = 8;
-	teleport_z = 7
+	pixel_x = 2;
+	tag = "icon-matras (EAST)"
 	},
 /turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor)
-"aO" = (
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/buildings)
 "aP" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/gryaz,
@@ -221,9 +228,10 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
 "aS" = (
-/obj/structure/stalker/matras,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/stalker/blocks/block2/l,
+/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "aT" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
 /obj/rad/rad_high,
@@ -254,13 +262,18 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "aY" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/stalker/bigyashik{
+	icon_state = "bigyashik 1,0";
+	tag = "icon-bigyashik 1,0"
+	},
+/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/buildings)
 "aZ" = (
-/obj/structure/stalker/cacheable/yashik,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/stalker/tree,
+/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "ba" = (
 /obj/machinery/light/small,
 /obj/rad/rad_high,
@@ -291,9 +304,10 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "be" = (
-/obj/structure/mineral_door/wood,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/rad/rad_low,
+/turf/open/stalker/floor/asphalt,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "bf" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "5";
@@ -587,24 +601,25 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/buildings)
 "bY" = (
-/turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/grille/stalker/beton,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "bZ" = (
 /obj/structure/stalker/okno/window1,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/kordon/buildings)
 "ca" = (
-/obj/structure/stalker/cacheable/yashik,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/obj/machinery/door/poddoor/gate,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "cb" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cc" = (
 /obj/item/shovel,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cd" = (
 /obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/digable/grass,
@@ -618,18 +633,20 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "cf" = (
-/obj/anomaly/puh,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "cg" = (
 /obj/effect/landmark/mobspawner/flesh_spawner,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "ch" = (
 /obj/structure/stalker/doski,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "ci" = (
 /obj/structure/stalker/car/gryzovik/south,
 /turf/open/stalker/floor/gryaz,
@@ -666,11 +683,11 @@
 "co" = (
 /obj/structure/stalker/doski/doski4,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cp" = (
 /obj/effect/landmark/mobspawner/kaban_spawner,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cq" = (
 /obj/anomaly/puh,
 /turf/open/stalker/floor/gryaz,
@@ -733,7 +750,7 @@
 /obj/effect/spawner/lootdrop/stalker/food,
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cz" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -781,13 +798,19 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/buildings)
 "cG" = (
-/obj/structure/stalker/doski/doski2,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/table/stalker/wood,
+/obj/structure/stalker/cacheable/radio{
+	dir = 4;
+	pixel_x = -6;
+	pixel_y = 6;
+	tag = "icon-radio (EAST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "cH" = (
 /obj/structure/stalker/matras,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "cI" = (
 /obj/structure/stalker/car/gryzovik/south{
 	icon_state = "7";
@@ -926,7 +949,7 @@
 /obj/structure/stalker/doski/doski4,
 /obj/anomaly/puh,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "dl" = (
 /obj/structure/stalker/list,
 /turf/open/stalker/floor/digable/grass,
@@ -972,19 +995,16 @@
 /obj/item/cigbutt,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "du" = (
-/obj/structure/stalker/bigyashik{
-	icon_state = "bigyashik 0,1";
-	tag = "icon-bigyashik 0,1"
-	},
-/turf/open/stalker/floor/tropa,
-/turf/open/stalker/floor/gryaz,
+/obj/structure/table/stalker/wood,
+/obj/structure/stalker/cacheable/oldcomputer,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
 "dv" = (
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "dw" = (
 /obj/rad/rad_low,
 /turf/open/stalker/floor/wood/oldgor,
@@ -1091,12 +1111,12 @@
 /area/stalker/blowout/outdoor)
 "dJ" = (
 /obj/structure/stalker/blocks/vanish/sandbags{
-	dir = 4;
-	icon_state = "e-w-connected-to-s";
-	tag = "icon-e-w-connected-to-s (WEST)"
+	dir = 9;
+	icon_state = "corners";
+	tag = "icon-corners (NORTHWEST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/buildings)
 "dK" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -2145,12 +2165,12 @@
 "gu" = (
 /obj/item/storage/box/matches,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "gv" = (
 /obj/structure/stalker/cacheable/toilet_broken,
 /obj/effect/spawner/lootdrop/stalker/pornmag,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "gw" = (
 /obj/structure/stalker/cacheable/porog/porog2{
 	dir = 8;
@@ -2168,8 +2188,11 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "gy" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/chair/wood/normal{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "gz" = (
 /obj/rad/rad_low,
 /turf/open/stalker/floor/wood/oldvert,
@@ -2180,18 +2203,18 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
 "gB" = (
-/obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/tropa,
-/turf/open/stalker/floor/gryaz,
+/obj/structure/stalker/blocks/vanish/sandbags{
+	icon_state = "centers";
+	tag = "icon-centers"
+	},
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
 "gC" = (
-/obj/structure/bed/stalker/matras{
-	dir = 8;
-	pixel_x = 2;
-	tag = "icon-matras (EAST)"
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 5;
+	icon_state = "corners"
 	},
-/turf/open/stalker/floor/tropa,
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
 "gD" = (
 /obj/structure/stalker/doski,
@@ -2215,18 +2238,18 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/buildings)
 "gH" = (
-/obj/structure/stalker/blocks/block2/l,
-/turf/open/stalker/floor/tropa,
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
+"gI" = (
+/obj/structure/grille/stalker/beton/green{
+	icon_state = "end";
+	tag = "icon-end"
+	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"gI" = (
-/obj/structure/stalker/bigyashik{
-	icon_state = "bigyashik 1,0";
-	tag = "icon-bigyashik 1,0"
-	},
-/turf/open/stalker/floor/tropa,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/buildings)
 "gJ" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe3{
 	dir = 1;
@@ -2237,8 +2260,12 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "gK" = (
-/obj/structure/stalker/tree,
-/turf/open/stalker/floor/tropa,
+/obj/structure/grille/stalker/beton{
+	density = 0;
+	icon_state = "-|2";
+	layer = 5;
+	tag = "icon--|2"
+	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "gL" = (
@@ -2308,7 +2335,7 @@
 	dir = 8
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "gV" = (
 /obj/structure/stalker/blocks/vanish/pipe,
 /turf/open/stalker/floor/gryaz,
@@ -2370,8 +2397,13 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "hg" = (
-/turf/open/floor/plasteel/stairs/stalker,
-/area/stalker/blowout/outdoor)
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 8;
+	icon_state = "e-w-connected-to-s";
+	tag = "icon-e-w-connected-to-s (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "hh" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -2487,8 +2519,9 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "hB" = (
-/obj/rad/rad_low,
-/turf/open/stalker/floor/asphalt,
+/obj/structure/grille/stalker/beton{
+	opacity = 1
+	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "hC" = (
@@ -2642,8 +2675,11 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "ia" = (
-/turf/closed/wall/stalker/bricks,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/grille/stalker/beton{
+	opacity = 1
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "ib" = (
 /obj/effect/landmark/latejoin/oldstalker,
 /turf/open/stalker/floor/tropa,
@@ -2655,19 +2691,18 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "id" = (
-/obj/structure/stalker/blocks/vanish/sandbags{
-	dir = 9;
-	icon_state = "corners";
-	tag = "icon-corners (NORTHWEST)"
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "ie" = (
-/obj/structure/stalker/cacheable/bochka{
-	pixel_x = 4
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/obj/machinery/manned_turret/checkpoint,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "if" = (
 /obj/structure/stalker/water/bochka/kap{
 	pixel_x = 6
@@ -2728,9 +2763,13 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "ip" = (
-/obj/structure/table/stalker/wood,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 4;
+	icon_state = "e-w-connected-to-s";
+	tag = "icon-e-w-connected-to-s (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "iq" = (
 /obj/structure/stalker/blocks/block2/l,
 /turf/open/stalker/floor/gryaz,
@@ -2871,7 +2910,7 @@
 	},
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/military)
 "iO" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/wood/oldvert,
@@ -2982,7 +3021,7 @@
 	teleport_z = 3
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jh" = (
 /obj/structure/stalker/broke_table/right,
 /turf/open/stalker/floor/wood/oldvert,
@@ -3020,7 +3059,7 @@
 	},
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/military)
 "jo" = (
 /obj/structure/stalker/car/gryzovik/west,
 /turf/open/stalker/floor/tropa,
@@ -3071,18 +3110,14 @@
 "jw" = (
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jx" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "jy" = (
-/obj/structure/stalker/blocks/vanish/sandbags{
-	icon_state = "centers";
-	tag = "icon-centers"
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/blowout/outdoor)
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/kordon/buildings)
 "jz" = (
 /obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/wood/oldvert,
@@ -3120,7 +3155,7 @@
 /obj/effect/landmark/latejoin/army,
 /obj/structure/chair/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jE" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3131,7 +3166,7 @@
 /obj/effect/landmark/latejoin/army,
 /obj/structure/bed/stalker/mattress_wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jF" = (
 /obj/structure/stalker/cacheable/plita{
 	pixel_y = 8
@@ -3148,7 +3183,7 @@
 	},
 /obj/structure/bed/stalker/mattress_wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jH" = (
 /obj/structure/stalker/cacheable/pech{
 	icon_state = "pech3";
@@ -3216,10 +3251,10 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jO" = (
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jP" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3229,12 +3264,12 @@
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jQ" = (
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jR" = (
 /obj/structure/stalker/cacheable/pech{
 	pixel_y = 27
@@ -3260,7 +3295,7 @@
 	},
 /obj/structure/bed/stalker/mattress_wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jU" = (
 /obj/structure/stalker/blocks/block2/r,
 /turf/open/stalker/floor/digable/grass,
@@ -3278,14 +3313,14 @@
 /obj/effect/landmark/latejoin/army,
 /obj/structure/bed/stalker/mattress_wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "jX" = (
 /obj/machinery/light/small{
 	dir = 8;
 	tag = "icon-bulb1 (WEST)"
 	},
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jY" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3295,12 +3330,12 @@
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jZ" = (
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "ka" = (
 /obj/structure/stalker/brokenbed{
 	pixel_x = -2
@@ -3325,30 +3360,28 @@
 	},
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/military)
 "kd" = (
 /obj/structure/stalker/cacheable/porog/porog2,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "ke" = (
-/obj/structure/stalker/blocks/vanish/sandbags{
-	dir = 5;
-	icon_state = "corners"
-	},
-/turf/open/stalker/floor/wood/oldgor,
+/obj/structure/grille/stalker/beton,
+/turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "kf" = (
-/turf/open/floor/plasteel/stairs/stalker{
-	dir = 1;
-	tag = "icon-ladder (EAST)"
-	},
-/area/stalker/kordon/buildings)
-"kg" = (
-/obj/structure/fence{
-	dir = 8
-	},
+/obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
+"kg" = (
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "kh" = (
 /obj/structure/stalker/cacheable/radio{
 	dir = 8;
@@ -3359,8 +3392,13 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "ki" = (
-/obj/machinery/manned_turret/checkpoint,
-/turf/open/stalker/floor/wood/oldgor,
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "kj" = (
 /obj/effect/step_trigger/teleporter{
@@ -3377,14 +3415,18 @@
 	dir = 1;
 	tag = "icon-ladder (EAST)"
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "kk" = (
-/obj/structure/stalker/blocks/vanish/sandbags{
-	dir = 8;
-	icon_state = "e-w-connected-to-s";
-	tag = "icon-e-w-connected-to-s (WEST)"
+/obj/item/cigbutt{
+	pixel_x = 1
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "kl" = (
 /obj/structure/grille/stalker/wood{
@@ -3400,6 +3442,14 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"kn" = (
+/obj/machinery/button/door{
+	id = 333;
+	pixel_x = 24;
+	pixel_y = 8
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/kordon/buildings)
 "ks" = (
 /obj/structure/stalker/trubas,
 /turf/open/stalker/floor/gryaz,
@@ -3415,7 +3465,7 @@
 /obj/anomaly/tramplin,
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "ky" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 19;
@@ -3431,7 +3481,7 @@
 	dir = 1;
 	tag = "icon-ladder (EAST)"
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "kz" = (
 /obj/structure/stalker/blocks/block2,
 /turf/open/stalker/floor/gryaz,
@@ -3449,7 +3499,7 @@
 "kC" = (
 /obj/structure/stalker/cacheable/plita/burnt,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "kD" = (
 /obj/item/cigbutt,
 /turf/open/stalker/floor/wood/oldgor,
@@ -3463,12 +3513,12 @@
 	pixel_x = -6
 	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "kG" = (
 /obj/structure/table/stalker/wood,
 /obj/item/instrument/guitar,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "kH" = (
 /obj/effect/landmark/latejoin,
 /obj/structure/bed/stalker/mattress_old,
@@ -3537,14 +3587,10 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"kR" = (
-/obj/structure/stalker/doski/doski3,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
 "kS" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "kT" = (
 /obj/structure/stalker/cacheable/komod{
 	pixel_x = 3;
@@ -3619,9 +3665,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"lf" = (
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
 "lg" = (
 /obj/structure/bed/stalker/matras{
 	dir = 1;
@@ -3648,7 +3691,7 @@
 "li" = (
 /obj/machinery/campfire/barrel,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "lj" = (
 /obj/item/cigbutt,
 /turf/open/stalker/floor/digable/grass,
@@ -3696,24 +3739,18 @@
 "lu" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "lv" = (
 /obj/machinery/blackbox_recorder,
 /turf/open/floor/plasteel,
 /area/stalker/buildings/backwater/skadovsk)
-"lw" = (
-/obj/item/cigbutt{
-	pixel_x = 1
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "lx" = (
 /obj/machinery/light/small{
 	dir = 4;
 	tag = "icon-bulb1 (EAST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "ly" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "5";
@@ -3765,7 +3802,7 @@
 "lG" = (
 /obj/structure/stairs,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "lI" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -3782,7 +3819,7 @@
 	pixel_y = 12
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "lJ" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "7";
@@ -3797,7 +3834,7 @@
 /obj/structure/curtain,
 /obj/item/soap/homemade,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "lR" = (
 /obj/structure/stalker/cacheable/vanna{
 	pixel_y = 10
@@ -3818,14 +3855,11 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"ma" = (
-/turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
 "md" = (
 /obj/rad/rad_low,
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "me" = (
 /obj/structure/stalker/tree,
 /obj/structure/stalker/stolb,
@@ -3895,29 +3929,10 @@
 /obj/machinery/light,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"my" = (
-/obj/structure/grille/stalker/beton/green{
-	icon_state = "-|";
-	tag = "icon--|"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
-"mz" = (
-/obj/structure/fence/door,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"mA" = (
-/obj/structure/fence/corner,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"mC" = (
-/obj/structure/bed/stalker/matras,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
 "mD" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mE" = (
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
@@ -3932,14 +3947,14 @@
 	pixel_y = 13
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mG" = (
 /obj/structure/table/stalker/wood,
 /obj/item/instrument/guitar,
 /obj/item/storage/fancy/cigarettes,
 /obj/item/lighter/greyscale,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mH" = (
 /obj/structure/stalker/okno/window2,
 /turf/closed/wall/stalker/bricks_white,
@@ -3950,22 +3965,11 @@
 	tag = "icon-bulb1 (EAST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mK" = (
 /obj/structure/grille/stalker/beton/green{
 	icon_state = "-|";
 	tag = "icon--|"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"mL" = (
-/obj/structure/grille/stalker/beton/green{
-	icon_state = "-|";
-	tag = "icon--|"
-	},
-/obj/structure/grille/stalker/beton/green{
-	icon_state = "|";
-	tag = "icon-|"
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
@@ -3974,11 +3978,7 @@
 	pixel_y = 32
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"mN" = (
-/obj/structure/fence,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mO" = (
 /obj/structure/grille/stalker/beton/green{
 	icon_state = "|";
@@ -3993,16 +3993,11 @@
 "mQ" = (
 /obj/structure/chair/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"mR" = (
-/obj/machinery/light/small,
-/obj/structure/fence,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mW" = (
 /obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "mY" = (
 /obj/structure/stalker/tree{
 	pixel_x = -7
@@ -4012,15 +4007,11 @@
 "mZ" = (
 /obj/structure/stalker/cacheable/painting/stalin,
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/kordon/buildings)
-"na" = (
-/obj/machinery/light,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nb" = (
 /obj/structure/stalker/cacheable/komod,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nd" = (
 /obj/structure/grille/stalker/beton/green{
 	icon_state = "end";
@@ -4047,7 +4038,7 @@
 /obj/item/shovel,
 /obj/item/shovel,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "ng" = (
 /obj/structure/stalker/cacheable/musor_yashik/red/full,
 /turf/open/stalker/floor/digable/grass,
@@ -4081,13 +4072,13 @@
 	dir = 1
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "np" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nq" = (
 /obj/structure/table/stalker/wood,
 /obj/item/trash/plate{
@@ -4105,32 +4096,22 @@
 	pixel_y = 12
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nr" = (
 /obj/structure/chair/sofa/right{
 	dir = 8
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"ns" = (
-/obj/structure/stalker/bunker{
-	icon_state = "1"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"nt" = (
-/obj/structure/filingcabinet/chestdrawer,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nu" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nv" = (
 /obj/effect/spawner/lootdrop/khabar_low,
 /obj/structure/closet/stalker/shkaf,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nw" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4149,7 +4130,7 @@
 	},
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nA" = (
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker)
@@ -4164,19 +4145,11 @@
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/oscillograph,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "nD" = (
 /obj/structure/stalker/matras,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"nE" = (
-/obj/structure/grille/stalker/beton/green{
-	icon_state = "end";
-	tag = "icon-end"
-	},
-/obj/structure/grille/stalker,
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/military)
 "nF" = (
 /obj/structure/grille/stalker/beton/green,
 /turf/open/stalker/floor/digable/grass,
@@ -4187,6 +4160,13 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"nP" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	pixel_y = 9
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "nQ" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4195,31 +4175,6 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"nR" = (
-/obj/structure/table/stalker,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"nY" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/clothing/mask/surgical,
-/obj/machinery/light,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"oe" = (
-/obj/structure/stalker/bunker{
-	icon_state = "16"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"og" = (
-/obj/structure/stalker/bunker{
-	icon_state = "5"
-	},
-/obj/structure/stalker/bunker{
-	icon_state = "3"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "oh" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -4275,7 +4230,7 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "pA" = (
 /obj/structure/chair/brevno/log2{
 	dir = 1;
@@ -4283,25 +4238,9 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"pH" = (
-/obj/structure/stalker/cacheable/clocks{
-	pixel_x = -1;
-	pixel_y = 35
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	tag = "icon-tube1 (EAST)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "pR" = (
 /obj/effect/spawner/lootdrop/stalker/pornmag,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/kordon/buildings)
-"pY" = (
-/obj/structure/stalker/modification_table,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "qc" = (
 /obj/structure/stalker/cacheable/junk_locker,
@@ -4332,7 +4271,7 @@
 	pixel_y = 7
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker)
+/area/stalker/buildings/backwater/skadovsk)
 "qo" = (
 /obj/structure/mineral_door/wood,
 /obj/structure/barricade/stalker/woodalt,
@@ -4344,16 +4283,6 @@
 	pixel_y = 6
 	},
 /turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
-"qD" = (
-/obj/rad/rad_low,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
-"qF" = (
-/obj/structure/stalker/bunker{
-	icon_state = "26"
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
 "qJ" = (
 /obj/structure/table/stalker/wood,
@@ -4370,7 +4299,7 @@
 	pixel_x = 12
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "qM" = (
 /obj/structure/stalker/car/uaz{
 	icon_state = "0,1";
@@ -4378,22 +4307,9 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"qN" = (
-/obj/structure/stalker/bunker{
-	icon_state = "6"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
 "qQ" = (
 /obj/structure/stalker/mirror/mirror_broken,
 /turf/closed/wall/stalker/bricks,
-/area/stalker/kordon/buildings)
-"qR" = (
-/obj/structure/chair/sofa/corner{
-	dir = 8
-	},
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "qV" = (
 /obj/structure/stalker/doski/doski2,
@@ -4403,12 +4319,6 @@
 /obj/machinery/telecomms/allinone,
 /turf/open/floor/plasteel,
 /area/stalker/buildings/backwater/skadovsk)
-"rf" = (
-/obj/structure/stalker/bunker{
-	icon_state = "9"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "rn" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/floor/plating/dirt,
@@ -4426,24 +4336,13 @@
 /obj/structure/chair/stalker/divan/divan2,
 /obj/effect/landmark/latejoin/army,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"rJ" = (
-/obj/structure/stalker/bunker{
-	icon_state = "1"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
-"rV" = (
-/obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
+"rI" = (
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/buildings/military)
 "rY" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
-"rZ" = (
-/obj/structure/filingcabinet/filingcabinet,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "sr" = (
 /obj/machinery/hydroponics/soil,
@@ -4452,12 +4351,6 @@
 "ss" = (
 /obj/structure/stalker/structure/junk_table,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/buildings)
-"sD" = (
-/obj/structure/stalker/bunker{
-	icon_state = "29"
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "sF" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
@@ -4490,24 +4383,13 @@
 	tag = "icon-bulb1 (EAST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "ti" = (
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
-"tr" = (
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker)
 "ts" = (
 /obj/effect/landmark/mobspawner/kaban_spawner,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
-"tt" = (
-/obj/machinery/stalker/sidormat{
-	layer = 3.1;
-	pixel_y = 17
-	},
-/obj/structure/table/stalker,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "tz" = (
 /obj/structure/mirror,
@@ -4547,19 +4429,16 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"tF" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a{
-	pixel_x = 1;
-	pixel_y = 2
-	},
-/obj/item/instrument/violin,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+"tG" = (
+/obj/structure/stalker/cacheable/polka,
+/obj/machinery/light/small,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "tI" = (
 /obj/structure/table/stalker/wood,
 /obj/item/storage/box/handcuffs,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "tS" = (
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/digable/grass,
@@ -4571,10 +4450,6 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"uh" = (
-/obj/structure/closet/stalker/shkaf,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "ui" = (
 /obj/structure/stalker/doski/doski_alt3,
 /turf/open/stalker/floor/gryaz,
@@ -4609,12 +4484,6 @@
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"va" = (
-/obj/structure/stalker/bunker{
-	icon_state = "10"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "vd" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "5";
@@ -4661,37 +4530,17 @@
 "wa" = (
 /obj/item/razor,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "wc" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"we" = (
-/obj/structure/stalker/bunker{
-	icon_state = "23"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "wp" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "11"
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"wq" = (
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"ws" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"wx" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/clothing/mask/surgical,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "wB" = (
 /obj/structure/stalker/woodlogs,
 /turf/open/stalker/floor/digable/grass,
@@ -4733,13 +4582,6 @@
 /obj/structure/chair/wood,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"yi" = (
-/obj/structure/chair/office/dark{
-	dir = 4
-	},
-/obj/effect/landmark/latejoin/chief_ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "yw" = (
 /obj/machinery/button/door{
 	id = 99;
@@ -4747,22 +4589,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/stalker/buildings/backwater/skadovsk)
-"yB" = (
-/obj/structure/table/stalker,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/hand_labeler,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "yY" = (
 /obj/anomaly/karusel,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "za" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4776,13 +4606,13 @@
 "ze" = (
 /obj/structure/sink/wellpump,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "zf" = (
 /obj/structure/stalker/cacheable/painting/lenin{
 	pixel_y = 30
 	},
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "zk" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4799,14 +4629,6 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"zE" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1";
-	tag = "icon-tube1 (EAST)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "zN" = (
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
@@ -4814,15 +4636,6 @@
 /obj/anomaly/puh,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/kordon/buildings)
-"zV" = (
-/obj/structure/stalker/bunker{
-	icon_state = "2"
-	},
-/obj/structure/stalker/bunker{
-	icon_state = "28"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "zW" = (
 /obj/machinery/campfire,
 /turf/open/floor/plating/dirt,
@@ -4831,27 +4644,15 @@
 /obj/rad/rad_low,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Ae" = (
 /obj/structure/stalker/cacheable/truba,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/buildings)
-"Af" = (
-/obj/structure/table/stalker,
-/obj/item/surgicaldrill,
-/obj/item/scalpel,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "Ah" = (
 /obj/item/trash/cigs_trash,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"Aj" = (
-/obj/structure/table/stalker,
-/obj/item/cautery,
-/obj/item/surgical_drapes,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Am" = (
 /obj/machinery/stalker/sidormat{
 	pixel_y = 7
@@ -4876,11 +4677,7 @@
 "AA" = (
 /obj/structure/stalker/doski/doski2,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
-"AF" = (
-/obj/structure/table,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker)
+/area/stalker/kordon/buildings)
 "AM" = (
 /obj/structure/stalker/car/gryzovik2/south,
 /turf/open/stalker/floor/asphalt,
@@ -4894,58 +4691,24 @@
 /obj/structure/stalker/cacheable/shina2a,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"AX" = (
-/obj/structure/stalker/doski/doski2,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
-"Be" = (
-/obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "Bi" = (
 /obj/structure/chair/wood,
 /obj/effect/landmark/latejoin/militarycommander,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Bj" = (
 /obj/item/cigbutt/cigarbutt,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
-"Bm" = (
-/obj/structure/stalker/bunker{
-	icon_state = "3"
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
 "BA" = (
 /obj/structure/stalker/stolb,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"BG" = (
-/obj/structure/table/stalker,
-/obj/item/pen/fourcolor,
-/obj/item/papercutter,
-/obj/item/taperecorder,
-/obj/item/taperecorder,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "BT" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotguns,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"Cc" = (
-/obj/structure/stalker/bunker{
-	icon_state = "15"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"Ce" = (
-/obj/structure/chair/sofa/right{
-	dir = 1
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Cg" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/pistols,
 /turf/open/floor/plating/dirt/dark,
@@ -4960,24 +4723,15 @@
 	tag = "icon-bulb1 (WEST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Di" = (
 /obj/structure/stalker/structure/junk_table,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Dn" = (
 /obj/structure/chair/wood,
 /turf/closed/mineral,
 /area/stalker)
-"Du" = (
-/obj/structure/table/stalker,
-/obj/item/camera/detective,
-/obj/item/camera/detective,
-/obj/item/camera_film,
-/obj/item/camera_film,
-/obj/item/stalker/docs,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "DG" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "00"
@@ -5001,25 +4755,9 @@
 "DY" = (
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings/backwater/skadovsk)
-"Eb" = (
-/obj/structure/bedsheetbin,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Ee" = (
 /obj/structure/chair/brevno/log2,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/outdoor)
-"Eh" = (
-/obj/structure/stalker/bunker{
-	icon_state = "8"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
-"Ek" = (
-/obj/structure/stalker/bunker{
-	icon_state = "2"
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
 "Eq" = (
 /obj/structure/table/reinforced,
@@ -5034,11 +4772,6 @@
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"Eu" = (
-/obj/structure/chair/sofa/corner,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Ey" = (
 /obj/structure/stalker/woodlogs/big{
 	dir = 1
@@ -5056,19 +4789,15 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/kordon/buildings)
-"EH" = (
-/obj/anomaly/puh,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
 "EP" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /obj/item/storage/pill_bottle/dice,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "EW" = (
 /obj/anomaly/tramplin,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Fa" = (
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
@@ -5115,12 +4844,6 @@
 /obj/structure/stalker/cacheable/toilet_broken,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/kordon/buildings)
-"FN" = (
-/obj/structure/table/stalker,
-/obj/item/retractor,
-/obj/item/hemostat,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "FO" = (
 /obj/structure/stalker/cacheable/polka,
 /obj/structure/stalker/cacheable/polka{
@@ -5152,7 +4875,7 @@
 /obj/item/lighter/greyscale,
 /obj/item/storage/fancy/cigarettes,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Ge" = (
 /obj/structure/table/stalker/wood,
 /obj/item/twohanded/binoculars,
@@ -5160,7 +4883,7 @@
 /obj/item/twohanded/binoculars,
 /obj/item/twohanded/binoculars,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Gr" = (
 /obj/structure/stalker/cacheable/painting/stalin{
 	pixel_y = 28
@@ -5188,17 +4911,10 @@
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"He" = (
-/obj/structure/sink/kitchen{
-	layer = 3.1;
-	pixel_y = 28
-	},
-/turf/open/stalker/floor/lattice,
+"Hj" = (
+/obj/structure/table/stalker/wood,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
-"Hg" = (
-/obj/machinery/campfire,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
 "Hk" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -5207,16 +4923,6 @@
 /obj/effect/spawner/lootdrop/stalker/pornmag,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"Hm" = (
-/obj/structure/table/stalker,
-/obj/structure/stalker/cacheable/radio{
-	dir = 8;
-	pixel_x = -6;
-	pixel_y = 4;
-	tag = "icon-radio (WEST)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Hq" = (
 /obj/structure/stalker/cacheable/yashik,
 /obj/machinery/light/small{
@@ -5224,28 +4930,13 @@
 	tag = "icon-bulb1 (EAST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Hy" = (
 /obj/machinery/shower{
 	dir = 1
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"Hz" = (
-/obj/effect/landmark/latejoin/chief_ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"HB" = (
-/obj/structure/sink/kitchen{
-	layer = 3.1;
-	pixel_y = 28
-	},
-/obj/structure/table/stalker,
-/obj/item/circular_saw,
-/obj/item/taperecorder,
-/obj/item/taperecorder,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "HC" = (
 /obj/structure/stalker/doski/doski_alt4,
 /turf/open/stalker/floor/wood/oldvert,
@@ -5255,35 +4946,17 @@
 /obj/structure/table/stalker/wood,
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "HG" = (
 /obj/structure/stalker/doski/doski4,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "HL" = (
 /obj/structure/table/stalker/wood,
 /obj/machinery/party/turntable,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"HU" = (
-/obj/structure/grille/stalker{
-	icon_state = "fence0"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"HW" = (
-/obj/structure/stalker/bunker{
-	icon_state = "28"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"HY" = (
-/obj/structure/stalker/bunker{
-	icon_state = "2"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Ie" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -5308,7 +4981,7 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Ix" = (
 /obj/machinery/light{
 	dir = 1;
@@ -5327,14 +5000,10 @@
 /obj/structure/stalker/blocks/vanish/sandbags,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"IL" = (
-/obj/machinery/washing_machine,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "IN" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "IT" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big{
 	pixel_x = -2;
@@ -5349,10 +5018,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"Jh" = (
-/obj/rad/rad_low,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
 "Jx" = (
 /obj/structure/stalker/trubas{
 	dir = 5
@@ -5372,23 +5037,13 @@
 "JO" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"JU" = (
-/obj/structure/stalker/bunker{
-	icon_state = "1"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/military)
 "JZ" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "20"
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"Kh" = (
-/obj/structure/stalker/cacheable/shkaf64,
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
 "Kq" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5399,7 +5054,7 @@
 /obj/structure/barricade/stalker/box,
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "KH" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/floor/plating/dirt/dark,
@@ -5420,17 +5075,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"KR" = (
-/obj/item/trash/oldvials{
-	pixel_x = 1;
-	pixel_y = 4
-	},
-/obj/structure/table/stalker,
-/obj/item/pen/fourcolor,
-/obj/item/pen/fountain,
-/obj/item/paper_bin,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "La" = (
 /obj/structure/table/stalker/wood/bar,
 /obj/effect/spawner/lootdrop/stalker/books,
@@ -5446,12 +5090,11 @@
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
-"Lp" = (
-/obj/machinery/shower,
-/obj/structure/curtain,
-/obj/item/soap/deluxe,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+"Lv" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/food,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "Lw" = (
 /obj/structure/plasticflaps{
 	density = 1;
@@ -5465,17 +5108,11 @@
 	dir = 8
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "LI" = (
 /obj/structure/closet/stalker/shkaf,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"LL" = (
-/obj/structure/stalker/bunker{
-	icon_state = "21"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "LN" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/cacheable/radio{
@@ -5485,7 +5122,7 @@
 	tag = "icon-radio (WEST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "LV" = (
 /obj/structure/sink{
 	dir = 8;
@@ -5493,7 +5130,7 @@
 	pixel_y = 8
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "LX" = (
 /obj/structure/stalker/cacheable/bochka{
 	layer = 3.2;
@@ -5508,17 +5145,14 @@
 	},
 /obj/structure/stalker/cacheable/cover,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Mk" = (
 /obj/effect/landmark/latejoin/army,
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
-"Mm" = (
-/turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/buildings/military)
 "Ms" = (
 /obj/structure/stalker/shina2,
 /turf/open/stalker/floor/digable/grass,
@@ -5532,7 +5166,7 @@
 /obj/effect/landmark/mobspawner/flesh_spawner,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Mx" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "8";
@@ -5540,22 +5174,6 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"MB" = (
-/obj/structure/stalker/bunker{
-	icon_state = "21"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
-"ML" = (
-/obj/structure/grille/stalker{
-	density = 0;
-	icon_state = "fence3";
-	pixel_x = 14
-	},
-/obj/structure/table/stalker,
-/obj/machinery/light,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "MS" = (
 /obj/machinery/campfire,
 /turf/open/stalker/floor/wood/oldgor,
@@ -5564,19 +5182,19 @@
 /obj/structure/stalker/doski,
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "MW" = (
 /obj/structure/bed/stalker/metal/matras,
 /obj/item/bedsheet/hos,
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "MZ" = (
 /obj/structure/chair/wood{
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Na" = (
 /obj/structure/stalker/okno/window1,
 /turf/closed/wall/stalker/bricks,
@@ -5593,7 +5211,7 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Nn" = (
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter{
@@ -5603,7 +5221,7 @@
 	teleport_z = 3
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Np" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -5621,7 +5239,7 @@
 /obj/structure/stalker/cacheable/televizor,
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "NI" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -5656,16 +5274,20 @@
 	pixel_y = 13
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Oh" = (
 /obj/structure/stalker/broke_table/right,
 /obj/item/seeds/potato,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
-"Ox" = (
-/obj/machinery/light,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker)
+"Or" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/stalker/cacheable/porog/porog2{
+	dir = 8;
+	tag = "icon-porog2 (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "OA" = (
 /obj/structure/dresser,
 /turf/open/stalker/floor/wood/oldvert,
@@ -5674,13 +5296,6 @@
 /obj/rad/rad_medium,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/blowout/outdoor)
-"OM" = (
-/obj/structure/stalker/cacheable/battery{
-	dir = 8;
-	tag = "icon-gazovaya_truba (WEST)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "OP" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/gryaz,
@@ -5711,40 +5326,21 @@
 	pixel_x = 11
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "Pg" = (
 /obj/structure/stalker/cacheable/truba,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"Ph" = (
-/obj/structure/closet/radiation,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/obj/item/geiger_counter,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
+"Pk" = (
+/obj/structure/stalker/cacheable/battery{
+	dir = 8;
+	tag = "icon-gazovaya_truba (WEST)"
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "Pv" = (
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/kordon/buildings)
-"Pz" = (
-/obj/structure/chair/sofa/right,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "PF" = (
 /obj/machinery/conveyor/auto,
@@ -5774,17 +5370,6 @@
 /obj/structure/stalker/cacheable/yashik,
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
-"Qf" = (
-/obj/structure/bodycontainer/morgue,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"Qn" = (
-/obj/structure/stalker/bunker{
-	icon_state = "8"
-	},
-/obj/structure/mirror,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "Qr" = (
 /obj/effect/turf_decal/stripes/full{
@@ -5810,7 +5395,7 @@
 	},
 /obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "QW" = (
 /obj/machinery/campfire,
 /turf/open/stalker/floor/gryaz/gryaz3,
@@ -5824,21 +5409,6 @@
 /obj/effect/spawner/lootdrop/stalker/food,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"Rc" = (
-/obj/effect/landmark/latejoin/ecologist,
-/obj/structure/chair/office/dark,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"Rr" = (
-/obj/machinery/shower,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"RF" = (
-/obj/structure/stalker/bunker{
-	icon_state = "10"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "RG" = (
 /obj/machinery/door/poddoor/sidor{
 	id = 665
@@ -5850,22 +5420,12 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"RJ" = (
-/obj/structure/toilet,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"RL" = (
-/obj/machinery/light,
-/obj/structure/closet/stalker/shkaf,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "RN" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "RQ" = (
 /obj/machinery/light{
 	dir = 8;
@@ -5878,18 +5438,10 @@
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
-"Sg" = (
-/obj/rad/rad_medium,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
 "Sv" = (
 /obj/anomaly/puh,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/kordon/buildings)
-"SI" = (
-/obj/structure/table/optable,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "ST" = (
 /turf/open/floor/plating/dirt/dark,
@@ -5908,16 +5460,14 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"Tm" = (
-/obj/machinery/light,
-/obj/effect/spawner/lootdrop/stalker/books,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Tp" = (
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
+"Tu" = (
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "Tx" = (
 /obj/item/cigbutt/cigarbutt,
 /turf/open/stalker/floor/wood/oldgor,
@@ -5930,7 +5480,7 @@
 /obj/structure/chair/stalker/divan,
 /obj/effect/landmark/latejoin/army,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "TY" = (
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/floor/plating/dirt/dark,
@@ -5951,14 +5501,6 @@
 "Un" = (
 /turf/open/floor/plating/dirt,
 /area/stalker/kordon/buildings)
-"Up" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	tag = "icon-tube1 (WEST)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Us" = (
 /obj/machinery/button/door{
 	id = 99;
@@ -5973,7 +5515,7 @@
 "Uy" = (
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "UI" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "10"
@@ -6008,12 +5550,10 @@
 /obj/machinery/conveyor_switch,
 /turf/open/floor/plasteel,
 /area/stalker/buildings/backwater/skadovsk)
-"Vn" = (
-/obj/structure/stalker/bunker{
-	icon_state = "9"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+"Vg" = (
+/obj/structure/stalker/cacheable/polka,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "Vv" = (
 /obj/structure/mirror,
 /turf/closed/wall/stalker/bricks_white,
@@ -6074,7 +5614,7 @@
 "VQ" = (
 /obj/structure/stalker/doski/doski4,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "VZ" = (
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/gryaz,
@@ -6096,6 +5636,10 @@
 /obj/structure/barricade/stalker/woodalt,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"Wq" = (
+/obj/structure/sign/vendor,
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker)
 "Wt" = (
 /obj/structure/sink/wellsmall,
 /turf/open/floor/plating/dirt,
@@ -6109,7 +5653,7 @@
 "Wx" = (
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "Wz" = (
 /obj/item/cigbutt,
 /turf/open/stalker/floor/gryaz/gryaz3,
@@ -6121,12 +5665,6 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"WP" = (
-/obj/structure/stalker/bunker{
-	icon_state = "17"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
 "WV" = (
 /obj/effect/landmark/mobspawner/flesh_spawner,
 /turf/open/floor/plating/dirt/dark,
@@ -6148,15 +5686,19 @@
 /obj/item/bedsheet/centcom,
 /obj/effect/landmark/latejoin/army_spetsnaz,
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "XL" = (
 /obj/structure/stalker/doski,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "XQ" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/buildings)
+"XW" = (
+/obj/structure/table/stalker/wood,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "Ye" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "3";
@@ -6176,36 +5718,6 @@
 /obj/structure/stalker/cacheable/painting/gorbachev,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker)
-"Yn" = (
-/obj/structure/stalker/cacheable/bochka{
-	pixel_x = -7;
-	pixel_y = 6;
-	pixel_z = 1
-	},
-/obj/structure/stalker/cacheable/bochka{
-	density = 0;
-	layer = 4;
-	opacity = 1;
-	pixel_x = 8;
-	pixel_y = -3
-	},
-/obj/structure/stalker/cacheable/bochka/red{
-	pixel_x = -6;
-	pixel_y = -1
-	},
-/obj/structure/stalker/cacheable/bochka/red{
-	density = 0;
-	pixel_x = 8;
-	pixel_y = 3
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"Yp" = (
-/obj/structure/stalker/bunker{
-	icon_state = "8"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "Ys" = (
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -6214,30 +5726,15 @@
 "Yz" = (
 /obj/structure/bed/stalker/mattress_dried,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "YA" = (
 /obj/structure/stalker/cacheable/painting/lenin,
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/military)
 "YC" = (
 /obj/structure/barricade/stalker/woodalt,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"YF" = (
-/obj/structure/chair/sofa{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"YK" = (
-/obj/structure/table/stalker,
-/obj/item/paper_bin,
-/obj/item/hand_labeler,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "YM" = (
 /obj/structure/closet/crate/stalker/blue,
 /obj/item/stack/spacecash/c500,
@@ -6271,10 +5768,6 @@
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/food,
 /turf/open/stalker/floor/wood/oldvert,
-/area/stalker/blowout/kordon/buildings)
-"Zv" = (
-/obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/lattice,
 /area/stalker/kordon/buildings)
 "Zz" = (
 /obj/structure/closet/crate/stalker/blue,
@@ -6307,41 +5800,12 @@
 "ZH" = (
 /obj/effect/spawner/lootdrop/stalker/pornmag,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker/blowout/kordon/buildings)
+/area/stalker/kordon/buildings)
 "ZK" = (
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"ZM" = (
-/obj/structure/bed/stalker/metal/matras,
-/obj/effect/landmark/latejoin/ecologist,
-/obj/item/bedsheet/medical,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"ZO" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a{
-	pixel_x = 1;
-	pixel_y = 2
-	},
-/obj/structure/stalker/cacheable/televizor{
-	pixel_y = 8
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"ZP" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a{
-	pixel_x = 1;
-	pixel_y = 2
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
-"ZV" = (
-/obj/structure/stalker/bunker{
-	icon_state = "24"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/buildings)
 "ZW" = (
 /obj/structure/stalker/car/uaz{
 	icon_state = "1,1";
@@ -8556,7 +8020,7 @@ aa
 jI
 jN
 jX
-kf
+Lg
 kj
 jI
 aa
@@ -8813,7 +8277,7 @@ aa
 jI
 jO
 jO
-kf
+Lg
 ky
 jI
 aa
@@ -9450,8 +8914,8 @@ ay
 ay
 ay
 ay
-aN
-aN
+aw
+aw
 ay
 ay
 ay
@@ -11127,7 +10591,7 @@ af
 af
 mq
 mq
-gK
+aZ
 aJ
 aJ
 aJ
@@ -13258,10 +12722,10 @@ aa
 lT
 aa
 aa
-dX
-AF
-tr
-dX
+sJ
+vQ
+zN
+sJ
 aa
 aa
 aa
@@ -13515,10 +12979,10 @@ aa
 aa
 aa
 aa
-dX
+sJ
 qh
-Ox
-dX
+oY
+sJ
 aa
 aa
 aa
@@ -13772,10 +13236,10 @@ aa
 aa
 aa
 aa
-dX
-AF
-tr
-dX
+sJ
+vQ
+zN
+sJ
 aa
 aa
 aa
@@ -14029,10 +13493,10 @@ aa
 aa
 aa
 aa
-dX
-dX
-dX
-dX
+sJ
+sJ
+sJ
+sJ
 aa
 aa
 aa
@@ -20523,12 +19987,12 @@ mq
 mq
 af
 an
-bY
-EH
-lf
-lf
-bY
-bY
+az
+zU
+bX
+bX
+az
+az
 an
 af
 mq
@@ -20544,12 +20008,12 @@ mq
 mq
 ae
 an
-bY
-bY
-cf
-qD
-lf
-bY
+az
+az
+fH
+fh
+bX
+az
 an
 af
 mq
@@ -20780,12 +20244,12 @@ mq
 mq
 af
 an
-Jh
-Jh
-lf
-lf
-Mm
-Mm
+Pv
+Pv
+bX
+bX
+ST
+ST
 an
 af
 af
@@ -20801,11 +20265,11 @@ mq
 mq
 mq
 an
-Mm
-Mm
-qD
-lf
-Sg
+ST
+ST
+fh
+bX
+fq
 cb
 an
 af
@@ -21037,12 +20501,12 @@ mq
 mq
 af
 bV
-Mm
-lf
+ST
+bX
 Mw
-qD
-qD
-Jh
+fh
+fh
+Pv
 bV
 af
 af
@@ -21058,12 +20522,12 @@ mq
 mq
 mq
 bV
-Mm
+ST
 dt
 Mw
-Sg
-lf
-Mm
+fq
+bX
+ST
 bV
 af
 mq
@@ -21294,11 +20758,11 @@ mq
 mq
 af
 an
-Mm
-Mm
-lf
-Mm
-Mm
+ST
+ST
+bX
+ST
+ST
 cb
 an
 af
@@ -21315,12 +20779,12 @@ mq
 mq
 mq
 an
-Jh
-qD
-Mm
+Pv
+fh
+ST
 co
-Mm
-Mm
+ST
+ST
 an
 af
 mq
@@ -21551,12 +21015,12 @@ mq
 mq
 af
 an
-bY
-bY
-lf
-Mm
-bY
-bY
+az
+az
+bX
+ST
+az
+az
 an
 af
 mq
@@ -21572,12 +21036,12 @@ af
 af
 dq
 an
-bY
-cf
-Mm
-Mm
-bY
-bY
+az
+fH
+ST
+ST
+az
+az
 an
 af
 ae
@@ -21808,11 +21272,11 @@ mq
 mq
 af
 an
-Mm
-Mm
-lf
-Mm
-Mm
+ST
+ST
+bX
+ST
+ST
 XL
 an
 cO
@@ -21830,10 +21294,10 @@ af
 dq
 an
 Qc
-lf
-lf
-Mm
-Mm
+bX
+bX
+ST
+ST
 ZH
 an
 af
@@ -22065,12 +21529,12 @@ mq
 mq
 af
 bV
-Mm
+ST
 Mw
-lf
-lf
-lf
-Mm
+bX
+bX
+bX
+ST
 an
 an
 an
@@ -22086,12 +21550,12 @@ an
 an
 an
 an
-Mm
-lf
-lf
-lf
-lf
-Mm
+ST
+bX
+bX
+bX
+bX
+ST
 bV
 af
 mq
@@ -22322,15 +21786,15 @@ mq
 mq
 af
 an
-Mm
-Mm
-Mm
-lf
+ST
+ST
+ST
+bX
 yY
-Mm
-Mm
-Jh
-Mm
+ST
+ST
+Pv
+ST
 bV
 mq
 mq
@@ -22341,14 +21805,14 @@ mq
 ae
 bV
 cH
-Jh
-Mm
-Mm
-lf
+Pv
+ST
+ST
+bX
 cg
-Mm
-Mm
-Mm
+ST
+ST
+ST
 an
 af
 mq
@@ -22579,15 +22043,15 @@ mq
 mq
 af
 an
-bY
-bY
-Jh
-lf
-lf
-qD
-qD
-Mm
-EH
+az
+az
+Pv
+bX
+bX
+fh
+fh
+ST
+zU
 an
 mq
 mq
@@ -22598,14 +22062,14 @@ mq
 mq
 an
 dk
-Mm
+ST
 md
-Jh
-Mm
-lf
-Mm
-bY
-bY
+Pv
+ST
+bX
+ST
+az
+az
 an
 af
 mq
@@ -22836,15 +22300,15 @@ mq
 mq
 af
 an
-Mm
-Mm
-Mm
-qD
+ST
+ST
+ST
+fh
 zY
-lf
+bX
 EW
-lf
-lf
+bX
+bX
 YC
 mq
 mq
@@ -22854,15 +22318,15 @@ mq
 mq
 mq
 Wl
-Mm
-Mm
-Mm
+ST
+ST
+ST
 kw
-Jh
-Mm
+Pv
+ST
 Wx
-Mm
-Mm
+ST
+ST
 an
 af
 mq
@@ -23093,12 +22557,12 @@ mq
 mq
 af
 bV
-ca
-lf
+KH
+bX
 co
-lf
-qD
-Jh
+bX
+fh
+Pv
 xW
 an
 an
@@ -23114,12 +22578,12 @@ an
 an
 an
 an
-Mm
-lf
+ST
+bX
 dv
-lf
-lf
-Mm
+bX
+bX
+ST
 bV
 af
 mq
@@ -23350,12 +22814,12 @@ mq
 mq
 af
 an
-Mm
-Mm
-Mm
+ST
+ST
+ST
 cy
-Jh
-Mm
+Pv
+ST
 an
 cP
 cP
@@ -23371,12 +22835,12 @@ mq
 mq
 mq
 an
-Mm
-lf
-lf
-lf
-Mm
-AX
+ST
+bX
+bX
+bX
+ST
+cm
 an
 af
 mq
@@ -23607,12 +23071,12 @@ mq
 af
 af
 an
-bY
-bY
+az
+az
 Uy
-qD
-Mm
-bY
+fh
+ST
+az
 an
 af
 af
@@ -23628,12 +23092,12 @@ mq
 mq
 mq
 an
-bY
-cf
-lf
-Sg
-Mm
-bY
+az
+fH
+bX
+fq
+ST
+az
 an
 af
 mq
@@ -23864,11 +23328,11 @@ mq
 af
 af
 an
-Mm
-Mm
-Mm
-Mm
-Mm
+ST
+ST
+ST
+ST
+ST
 cb
 an
 ah
@@ -23885,12 +23349,12 @@ mq
 ae
 mq
 an
-Mm
-lf
-lf
+ST
+bX
+bX
 Uy
-Mm
-Jh
+ST
+Pv
 an
 af
 mq
@@ -24121,11 +23585,11 @@ mq
 af
 af
 bV
-Mm
-Sg
-lf
-qD
-Mm
+ST
+fq
+bX
+fh
+ST
 cb
 bV
 mq
@@ -24142,12 +23606,12 @@ mq
 mq
 mq
 bV
-Mm
-Sg
-lf
-Mm
-Mm
-Jh
+ST
+fq
+bX
+ST
+ST
+Pv
 bV
 af
 mq
@@ -24378,11 +23842,11 @@ mq
 mq
 af
 an
-Mm
-Mm
-qD
-Mm
-Mm
+ST
+ST
+fh
+ST
+ST
 rY
 an
 mq
@@ -24399,12 +23863,12 @@ mq
 dl
 mq
 an
-Mm
-Mm
-lf
-lf
-Jh
-ca
+ST
+ST
+bX
+bX
+Pv
+KH
 an
 af
 mq
@@ -24635,12 +24099,12 @@ mq
 mq
 af
 an
-bY
-bY
-qD
-EH
-bY
-bY
+az
+az
+fh
+zU
+az
+az
 an
 af
 mq
@@ -24656,12 +24120,12 @@ mq
 mq
 mq
 an
-bY
-bY
+az
+az
 Sv
-qD
-Mm
-bY
+fh
+ST
+az
 an
 af
 mq
@@ -24892,12 +24356,12 @@ af
 mq
 af
 an
-Mm
-Jh
-qD
-Mm
-Mm
-AX
+ST
+Pv
+fh
+ST
+ST
+cm
 an
 xW
 af
@@ -24913,12 +24377,12 @@ mq
 mq
 mq
 an
-Mm
-Jh
-qD
+ST
+Pv
+fh
 cp
-Mm
-Mm
+ST
+ST
 an
 af
 mq
@@ -25150,11 +24614,11 @@ mq
 af
 bV
 md
-qD
-lf
-lf
-lf
-Mm
+fh
+bX
+bX
+bX
+ST
 bV
 cQ
 xW
@@ -25171,11 +24635,11 @@ mq
 mq
 bV
 Uy
-Jh
-Mm
-lf
-Mm
-Mm
+Pv
+ST
+bX
+ST
+ST
 bV
 af
 mq
@@ -25407,11 +24871,11 @@ mq
 af
 an
 cb
-lf
-lf
-Mm
+bX
+bX
+ST
 Uy
-Mm
+ST
 an
 cR
 af
@@ -25427,12 +24891,12 @@ mq
 mq
 mq
 an
-Mm
+ST
 MV
-Mm
-lf
-Mm
-Mm
+ST
+bX
+ST
+ST
 an
 af
 mq
@@ -25663,12 +25127,12 @@ mq
 mq
 af
 an
-bY
-cf
-lf
-Mm
-bY
-bY
+az
+fH
+bX
+ST
+az
+az
 an
 cR
 mq
@@ -25684,12 +25148,12 @@ mq
 mq
 mq
 an
-bY
-bY
-EH
-Mm
-bY
-bY
+az
+az
+zU
+ST
+az
+az
 an
 af
 mq
@@ -25921,11 +25385,11 @@ mq
 af
 an
 rY
-lf
-Mm
+bX
+ST
 Wx
-Mm
-Mm
+ST
+ST
 an
 cS
 mq
@@ -25941,12 +25405,12 @@ mq
 mq
 ae
 OH
-Mm
-Mm
-Mm
-Sg
-Jh
-Mm
+ST
+ST
+ST
+fq
+Pv
+ST
 an
 af
 mq
@@ -26177,12 +25641,12 @@ mq
 mq
 af
 bV
-Mm
-lf
+ST
+bX
 ts
 Uy
-lf
-Jh
+bX
+Pv
 bV
 af
 mq
@@ -26198,12 +25662,12 @@ mq
 dm
 mq
 bV
-Mm
-Mm
+ST
+ST
 Uy
-lf
-lf
-Mm
+bX
+bX
+ST
 bV
 af
 mq
@@ -26435,11 +25899,11 @@ mq
 af
 an
 cc
-Mm
-Mm
-lf
+ST
+ST
+bX
 HG
-Jh
+Pv
 an
 mq
 af
@@ -26455,12 +25919,12 @@ mq
 dn
 mq
 an
-Mm
+ST
 Uy
-Sg
-lf
-Jh
-Mm
+fq
+bX
+Pv
+ST
 an
 af
 mq
@@ -26691,12 +26155,12 @@ mq
 mq
 ah
 an
-bY
-bY
-Mm
-qD
-qD
-bY
+az
+az
+ST
+fh
+fh
+az
 an
 mq
 mq
@@ -26712,12 +26176,12 @@ mq
 dn
 mq
 an
-bY
+az
 Uy
-lf
+bX
 Sv
-bY
-bY
+az
+az
 an
 af
 mq
@@ -26948,11 +26412,11 @@ mq
 mq
 af
 an
-Mm
-Mm
+ST
+ST
 md
-qD
-lf
+fh
+bX
 cH
 an
 mq
@@ -26971,10 +26435,10 @@ mq
 an
 Kv
 Uy
-qD
-qD
-Mm
-Mm
+fh
+fh
+ST
+ST
 an
 af
 mq
@@ -27205,12 +26669,12 @@ mq
 mq
 af
 bV
-Mm
+ST
 ch
-qD
-lf
-Mm
-Mm
+fh
+bX
+ST
+ST
 bV
 mq
 mq
@@ -27227,11 +26691,11 @@ mq
 mq
 bV
 Uy
-qD
-lf
-lf
-lf
-Mm
+fh
+bX
+bX
+bX
+ST
 bV
 af
 mq
@@ -27462,12 +26926,12 @@ mq
 ae
 af
 an
-Mm
+ST
 md
-lf
-lf
-Mm
-ca
+bX
+bX
+ST
+KH
 an
 af
 mq
@@ -27483,12 +26947,12 @@ mq
 mq
 mq
 an
-Mm
-Jh
+ST
+Pv
 EW
-cG
-Mm
-Mm
+VZ
+ST
+ST
 an
 af
 mq
@@ -27721,8 +27185,8 @@ af
 an
 an
 an
-lf
-lf
+bX
+bX
 an
 an
 an
@@ -27742,8 +27206,8 @@ mq
 an
 an
 an
-lf
-lf
+bX
+bX
 an
 an
 an
@@ -29443,34 +28907,34 @@ mq
 mq
 mq
 mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
-mq
+gK
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+by
 aG
 aG
 aG
@@ -29700,34 +29164,34 @@ mq
 mq
 mq
 mq
-ek
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-ay
-HU
+am
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aG
 aG
@@ -29957,7 +29421,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -29968,7 +29432,7 @@ mq
 mq
 mq
 mq
-mq
+mY
 mq
 mq
 mq
@@ -29983,8 +29447,8 @@ mq
 mq
 mq
 mq
-aj
 mq
+hB
 aG
 aG
 aG
@@ -30214,7 +29678,12 @@ mq
 mq
 mq
 mq
-mr
+am
+mq
+mq
+mq
+mq
+mY
 mq
 mq
 mq
@@ -30224,27 +29693,22 @@ mq
 mq
 mq
 mq
-oe
-Ek
-Ek
-Ek
-Ek
-Ek
-Ek
-Ek
-zV
-Ek
-Ek
-Ek
-Cc
+mq
+mY
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mY
+mq
+mq
+mq
+hB
 aG
-hB
-hB
+be
+be
 aG
 ab
 aa
@@ -30471,7 +29935,7 @@ af
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -30481,27 +29945,27 @@ mq
 af
 mq
 mq
-rJ
-HB
-SI
-Up
-ws
-yB
-Qf
-Qf
-Qn
-RJ
-wq
-IL
-rJ
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aH
-hB
+be
 ho
 ab
 aa
@@ -30728,7 +30192,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 af
 mq
@@ -30738,27 +30202,27 @@ mq
 mq
 mq
 mq
-rJ
-Af
-Hz
-wq
-wq
-wq
-wq
-na
-Yp
-Lp
-wq
-Tm
-rJ
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aH
-hB
+be
 aG
 ab
 aa
@@ -30985,7 +30449,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -30995,24 +30459,24 @@ mq
 mq
 mq
 mq
-rJ
-FN
-Aj
-wq
-wq
-wq
-rZ
-rZ
-ZV
-He
-wq
-wq
-rJ
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
 af
 mq
 mq
-aj
 mq
+cT
+mq
+mq
+mq
+hB
 aG
 aH
 aG
@@ -31242,7 +30706,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -31252,24 +30716,24 @@ mq
 mq
 mq
 mq
-qF
-rf
-LL
-Zv
-va
-HY
-HY
-HW
-rf
-LL
-Zv
-va
-Bm
 mq
 mq
 mq
-aj
 mq
+mY
+mq
+mq
+mq
+mq
+af
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aG
 aG
@@ -31499,7 +30963,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -31509,24 +30973,24 @@ af
 mq
 mq
 mY
-rJ
-nR
-wq
-wq
-Ph
-uh
-pY
-Yp
-ZM
-Up
-wq
-ZM
-rJ
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aG
 aG
@@ -31756,7 +31220,7 @@ af
 af
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -31766,24 +31230,24 @@ mq
 mq
 mq
 mq
-Eh
-tt
-wq
-wq
-wq
-wq
-na
-ns
-wx
-wq
-wq
-nY
-rJ
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 aG
 aG
 aG
@@ -32013,7 +31477,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 cT
@@ -32023,24 +31487,24 @@ mq
 mq
 mq
 mq
-rJ
-nR
-wq
-wq
-wq
-wq
-wq
-ns
-Eb
-wq
-wq
-ZM
-Eh
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
 ae
 mq
 mq
-aj
 mq
+hB
 aG
 aG
 aH
@@ -32270,7 +31734,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -32280,24 +31744,24 @@ mq
 mq
 mq
 mq
-rJ
-wq
-yi
-wq
-KR
-Du
-wq
-ns
-wq
-wq
-wq
-wx
-rJ
+mq
+mq
+mq
 af
 af
 mq
-aj
 mq
+cT
+mq
+mY
+mq
+mq
+mq
+af
+af
+mq
+mq
+hB
 aG
 aG
 aG
@@ -32527,7 +31991,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 ae
 mq
@@ -32537,24 +32001,24 @@ mq
 mq
 mq
 mq
-qF
-LL
-nR
-ML
-we
-LL
-Zv
-sD
-LL
-Zv
-va
-HY
-Bm
 mq
 mq
 mq
-aj
-ae
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 mq
 aG
 aG
@@ -32784,7 +32248,7 @@ mq
 mq
 mq
 mq
-mr
+am
 mq
 mq
 mq
@@ -32794,24 +32258,24 @@ mq
 mq
 mq
 mY
-Eh
-wq
-wq
-wq
-ns
-ZP
-wq
-wq
-wq
-wq
-BG
-Hm
-Eh
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 mq
 mq
 aG
@@ -33041,7 +32505,7 @@ mq
 mq
 mq
 mq
-mr
+am
 ae
 mq
 mq
@@ -33051,24 +32515,24 @@ mq
 mq
 mq
 mq
-rJ
-pH
-wq
-wq
-ZV
-ZP
-wq
-wq
-wq
-wq
-YK
-Rc
-Eh
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 mq
 mq
 mq
@@ -33298,9 +32762,7 @@ mq
 mq
 mq
 mq
-mr
-cx
-cx
+am
 mq
 mq
 mq
@@ -33308,24 +32770,26 @@ mq
 mq
 mq
 mq
-Eh
-Yn
-wq
-wq
-Zv
-wq
-wq
-ZO
-wq
-wq
-nt
-na
-rJ
 mq
 mq
 mq
-aj
 mq
+mq
+mq
+mY
+mq
+mq
+mq
+mq
+af
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 mq
 mq
 mq
@@ -33555,7 +33019,7 @@ mq
 mq
 mq
 mq
-mr
+am
 af
 af
 af
@@ -33565,24 +33029,24 @@ af
 af
 mq
 mq
-qF
-LL
-Zv
-va
-og
-wq
-Pz
-rV
-Ce
-wq
-wq
-wq
-rJ
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
 mq
 mq
 ae
-aj
 mq
+hB
 mq
 mq
 ab
@@ -33812,34 +33276,34 @@ mq
 mq
 mq
 mq
-af
+am
 an
 an
 an
-iN
+an
 an
 an
 af
 mq
 mY
-JU
-Rr
-wq
-RL
-ZV
-tF
-Eu
-YF
-qR
-zE
-OM
-rZ
-Eh
 mq
 mq
 mq
-mr
 mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+hB
 mq
 ae
 ab
@@ -34067,36 +33531,36 @@ mq
 mq
 mq
 mq
-mq
-mq
-af
+kg
+kg
+am
 an
 fk
-kg
-mE
+cG
+Hj
 mE
 an
 ah
 mq
 mq
-WP
-MB
-Be
-RF
-Ek
-Vn
-Vn
-Ek
-Ek
-Ek
-Vn
-Ek
-qN
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
+mq
 mq
 mq
 wc
-aj
-af
+mq
+ia
 mq
 mq
 ab
@@ -34322,14 +33786,14 @@ mq
 mq
 mq
 mq
-id
-kk
-an
 mq
-af
+id
+dJ
+hg
 an
-mE
-mz
+an
+cf
+gy
 mE
 mE
 an
@@ -34349,11 +33813,11 @@ LX
 wc
 mY
 mq
-af
+cT
 mq
 ng
-aj
 mq
+hB
 mq
 ab
 ab
@@ -34579,18 +34043,18 @@ mq
 mq
 mq
 mq
-jy
-ki
-dc
-hg
-af
-an
-mE
-mA
-mN
-mR
-an
 mq
+id
+gB
+ie
+mE
+jy
+mE
+mE
+mE
+mE
+nl
+af
 mq
 mq
 mq
@@ -34609,8 +34073,8 @@ mq
 mq
 mq
 vJ
-aj
 mq
+hB
 ab
 ab
 aa
@@ -34836,19 +34300,19 @@ mq
 mq
 mq
 mq
-ke
-dJ
-an
 mq
+id
+gC
+ip
+an
+an
+mE
+mE
+Hj
+mE
+an
 af
-an
-mE
-mE
-mE
-mE
-an
-mq
-mq
+af
 af
 af
 mq
@@ -34866,7 +34330,7 @@ af
 mq
 mq
 wc
-aj
+mq
 ab
 ab
 aa
@@ -35095,14 +34559,14 @@ mq
 mq
 mq
 mq
-mq
-mq
-lw
-an
-mC
-mC
-mC
-mC
+ki
+ki
+kk
+ar
+kn
+mE
+du
+gH
 an
 af
 af
@@ -35123,7 +34587,7 @@ mq
 mq
 mq
 ae
-aj
+mq
 mq
 ab
 ab
@@ -35380,7 +34844,7 @@ mq
 mq
 mq
 mq
-mr
+mq
 mq
 mq
 ab
@@ -35611,8 +35075,8 @@ mq
 mq
 mq
 mq
-mv
-my
+mq
+bY
 kb
 af
 af
@@ -35637,7 +35101,7 @@ mY
 mq
 mq
 mq
-eg
+mq
 mq
 mq
 mr
@@ -35868,8 +35332,8 @@ ad
 ad
 ad
 ad
-bC
 ad
+ke
 ad
 ad
 ad
@@ -36126,7 +35590,7 @@ ad
 ad
 ad
 ad
-ad
+ca
 ad
 bv
 ad
@@ -36381,7 +35845,7 @@ ad
 ad
 ad
 ad
-bn
+ad
 ad
 ad
 ad
@@ -36638,7 +36102,7 @@ ad
 ad
 ad
 ad
-bo
+ad
 ad
 ad
 ad
@@ -36895,9 +36359,9 @@ ad
 ad
 ad
 ad
-bC
 ad
 ad
+ke
 ad
 ad
 ad
@@ -37154,7 +36618,7 @@ mq
 mq
 mq
 aq
-my
+bY
 af
 af
 kb
@@ -37179,7 +36643,7 @@ mq
 mq
 ae
 mq
-ek
+mq
 mq
 mq
 mr
@@ -37206,9 +36670,9 @@ an
 aC
 aE
 az
-aw
-aS
-ax
+iO
+lk
+aE
 an
 ah
 af
@@ -37436,7 +36900,7 @@ mq
 mq
 mq
 mq
-mr
+mq
 mq
 mq
 mr
@@ -37463,9 +36927,9 @@ an
 aD
 aE
 ig
-ax
-ax
-ax
+aE
+aE
+aE
 gl
 af
 af
@@ -37670,12 +37134,12 @@ mq
 mq
 an
 mD
-mE
-mE
+Tu
+Tu
 mQ
 lI
 nn
-mE
+Tu
 an
 nd
 ad
@@ -37693,7 +37157,7 @@ mO
 mO
 mO
 mO
-nE
+gI
 mq
 mq
 ab
@@ -37715,14 +37179,14 @@ aa
 ab
 an
 as
-aw
+iO
 az
 az
 aE
 ig
-aO
-ax
-ax
+iK
+aE
+aE
 an
 af
 af
@@ -37926,13 +37390,13 @@ mq
 mq
 mq
 ar
-mE
-mE
-mE
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
+Tu
+Tu
+Tu
 an
 mq
 ad
@@ -37972,14 +37436,14 @@ aa
 ab
 an
 at
-ax
-aA
-ax
+aE
+jz
+aE
 aE
 az
-ax
-ax
-ax
+aE
+aE
+aE
 an
 af
 mq
@@ -38183,13 +37647,13 @@ mq
 mq
 mq
 an
-az
+rI
 jw
-az
-az
+rI
+rI
 mM
-mE
-mE
+Tu
+Tu
 ar
 mq
 ad
@@ -38231,12 +37695,12 @@ an
 ar
 an
 an
-be
+iD
 az
 az
-ax
-ax
-ax
+aE
+aE
+aE
 ar
 af
 af
@@ -38441,10 +37905,10 @@ mq
 mq
 an
 mF
-mE
-mE
+Tu
+Tu
 mZ
-mE
+Tu
 np
 Nk
 an
@@ -38488,12 +37952,12 @@ am
 ah
 af
 an
-ax
-ax
-ax
-ax
-ax
-aY
+aE
+aE
+aE
+aE
+aE
+jx
 an
 bi
 bm
@@ -38699,9 +38163,9 @@ mq
 an
 mG
 nn
-mE
-az
-mE
+Tu
+rI
+Tu
 nq
 Pe
 an
@@ -38747,10 +38211,10 @@ af
 an
 an
 MZ
-ax
-Hg
-ax
-ax
+aE
+TB
+aE
+aE
 ar
 bj
 af
@@ -38956,9 +38420,9 @@ mq
 an
 an
 mJ
-mE
+Tu
 jw
-mE
+Tu
 nr
 LA
 ar
@@ -39005,9 +38469,9 @@ aB
 an
 Za
 aK
-ax
+aE
 Yz
-aZ
+jL
 an
 af
 mq
@@ -39213,11 +38677,11 @@ mq
 mq
 an
 mM
-mE
-az
+Tu
+rI
 mJ
-az
-az
+rI
+rI
 an
 mq
 ad
@@ -39469,10 +38933,10 @@ mq
 mq
 mq
 an
-jb
-jb
-az
-mE
+Lv
+Lv
+rI
+Tu
 lG
 jg
 an
@@ -39626,10 +39090,10 @@ mq
 af
 af
 an
-bY
-gy
-bY
-gy
+az
+iR
+az
+iR
 an
 af
 dB
@@ -39884,9 +39348,9 @@ ae
 af
 an
 gu
-gy
-gy
-gy
+iR
+iR
+iR
 an
 af
 mq
@@ -39983,7 +39447,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 mq
@@ -40141,8 +39605,8 @@ mq
 af
 an
 gv
-gy
-bY
+iR
+az
 gU
 an
 af
@@ -40240,7 +39704,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -40497,7 +39961,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -40754,7 +40218,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -41011,7 +40475,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -41268,7 +40732,7 @@ af
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -41279,11 +40743,11 @@ mq
 mq
 an
 lK
-mE
+Tu
 jD
 qJ
 Mk
-az
+rI
 jG
 nu
 jT
@@ -41525,7 +40989,7 @@ ae
 af
 mq
 mq
-mK
+am
 mq
 mq
 ad
@@ -41536,16 +41000,16 @@ an
 an
 Vv
 wa
-mE
-mE
-mE
-mE
-az
-mE
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
+rI
+Tu
+Tu
+Tu
+Tu
+Tu
 an
 mq
 nF
@@ -41782,26 +41246,26 @@ mq
 af
 mq
 mq
-mK
+am
 mq
 mq
 ad
 ad
 mq
 an
-mE
-mE
-az
-mE
-mE
-mE
-mE
-mE
-az
-mE
-mE
-mE
-mE
+Tu
+Tu
+rI
+Tu
+Tu
+Tu
+Tu
+Tu
+rI
+Tu
+Tu
+Tu
+Tu
 mD
 an
 mq
@@ -42039,26 +41503,26 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 mq
 ad
 ad
 mq
 jn
-mE
-mE
+Tu
+Tu
 jw
-mE
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
+Tu
 jw
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
 nC
 an
 mq
@@ -42296,7 +41760,7 @@ mq
 mq
 af
 mq
-mK
+am
 mq
 mq
 ad
@@ -42304,18 +41768,18 @@ ad
 mq
 an
 nf
-mE
-az
-mE
-mE
+Tu
+rI
+Tu
+Tu
 mW
-mE
-mE
-az
+Tu
+Tu
+rI
 mM
-mE
-mE
-mE
+Tu
+Tu
+Tu
 nD
 an
 mq
@@ -42553,7 +42017,7 @@ mq
 mq
 af
 mq
-mK
+am
 mq
 fj
 ad
@@ -42565,15 +42029,15 @@ an
 an
 EP
 TV
-mE
-mE
-mE
-az
-mE
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+rI
+Tu
+Tu
+Tu
+Tu
+Tu
 an
 mq
 nF
@@ -42810,7 +42274,7 @@ mq
 mq
 ae
 mq
-mK
+am
 mq
 an
 nl
@@ -42824,8 +42288,8 @@ mD
 rD
 lx
 NH
-kJ
-az
+Pk
+rI
 jG
 nv
 jW
@@ -43067,7 +42531,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 an
 nm
@@ -43324,7 +42788,7 @@ mq
 mq
 mq
 mq
-mK
+am
 mq
 nk
 an
@@ -43581,7 +43045,7 @@ mq
 mq
 mq
 mq
-mL
+am
 mO
 mO
 mO
@@ -45900,14 +45364,14 @@ aa
 aa
 nA
 Xq
-mE
-mE
+Tu
+Tu
 Xq
-az
+rI
 Hq
 JO
 JO
-az
+rI
 LV
 Hy
 nA
@@ -46156,16 +45620,16 @@ aa
 aa
 aa
 FE
-mE
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
 jw
-mE
-mE
-mE
+Tu
+Tu
+Tu
 jw
-mE
+Tu
 Qy
 nA
 aa
@@ -46414,16 +45878,16 @@ aa
 aa
 nA
 td
-mE
-mE
+Tu
+Tu
 Gc
-az
-mE
-mE
+rI
+Tu
+Tu
 mD
-az
-az
-az
+rI
+rI
+rI
 nA
 aa
 aa
@@ -46671,15 +46135,15 @@ aa
 aa
 nA
 Ge
-mE
-mE
+Tu
+Tu
 HD
-az
-mE
-mE
+rI
+Tu
+Tu
 mD
-az
-mE
+rI
+Tu
 tI
 nA
 aa
@@ -46927,16 +46391,16 @@ aa
 aa
 aa
 nA
-mE
-mE
-mE
-mE
-az
-mE
-mE
-mE
+Tu
+Tu
+Tu
+Tu
+rI
+Tu
+Tu
+Tu
 jw
-mE
+Tu
 nb
 nA
 aa
@@ -47185,14 +46649,14 @@ aa
 aa
 nA
 Xq
-mE
-kJ
+Tu
+Pk
 Xq
-az
-mE
-mE
+rI
+Tu
+Tu
 Il
-az
+rI
 Mh
 MW
 nA
@@ -47445,12 +46909,12 @@ nA
 nA
 nA
 nA
-az
+rI
 jw
-az
-az
+rI
+rI
 YA
-mE
+Tu
 Bi
 nA
 aa
@@ -47703,10 +47167,10 @@ aa
 aa
 nA
 CZ
-mE
+Tu
 np
 pt
-az
+rI
 Oc
 LN
 nA
@@ -47959,13 +47423,13 @@ aa
 aa
 aa
 Yj
-mE
+Tu
 mW
-mE
+Tu
 RN
-az
-az
-az
+rI
+rI
+rI
 nA
 aa
 aa
@@ -48216,12 +47680,12 @@ aa
 aa
 aa
 nA
-mE
+Tu
 NH
-mE
-mE
+Tu
+Tu
 jw
-mE
+Tu
 IN
 nA
 aa
@@ -48473,11 +47937,11 @@ aa
 aa
 aa
 nA
-mE
-kJ
-mE
+Tu
+Pk
+Tu
 lx
-az
+rI
 Nn
 lG
 nA
@@ -48732,8 +48196,8 @@ aa
 nA
 nA
 nA
-nA
-nA
+Or
+Wq
 nA
 nA
 nA
@@ -48986,13 +48450,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+XW
+Tu
+Tu
+CZ
+Tu
+nA
 aa
 aa
 aa
@@ -49243,13 +48707,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+nP
+Tu
+Tu
+Tu
+tG
+nA
 aa
 aa
 aa
@@ -49500,13 +48964,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+XW
+Tu
+Tu
+Tu
+Vg
+nA
 aa
 aa
 aa
@@ -49757,13 +49221,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+mJ
+Tu
+lx
+Tu
+kf
+nA
 aa
 aa
 aa
@@ -50014,13 +49478,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nA
+nA
+nA
+nA
+nA
+nA
+nA
 aa
 aa
 aa
@@ -53262,17 +52726,17 @@ mq
 mq
 mq
 cW
-ip
-ax
-ax
+ig
+aE
+aE
 cW
 aJ
 aJ
 aJ
 cW
-ax
-ax
-ax
+aE
+aE
+aE
 cW
 af
 af
@@ -53519,17 +52983,17 @@ hV
 hV
 hV
 cW
-ip
-ax
-ax
+ig
+aE
+aE
 cW
 aJ
 aJ
 aJ
 cW
-ax
-ax
-ax
+aE
+aE
+aE
 cW
 kv
 kv
@@ -53776,17 +53240,17 @@ mq
 mq
 ae
 cW
-Kh
-ax
-ax
+PH
+aE
+aE
 cW
 aJ
 aJ
 aJ
 cW
-ax
-ax
-af
+aE
+aE
+bX
 af
 af
 af
@@ -55843,19 +55307,19 @@ mq
 mq
 mq
 af
-ax
-ax
+aE
+aE
 kF
 kF
-ax
-ax
-ax
-ia
-lf
-lf
-lf
-Mm
-ma
+aE
+aE
+aE
+ac
+bX
+bX
+bX
+ST
+Un
 cW
 mq
 lD
@@ -56100,19 +55564,19 @@ mq
 cW
 af
 af
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-lf
-lf
-lf
-lf
-ma
-Mm
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+bX
+bX
+bX
+bX
+Un
+ST
 cW
 mq
 lB
@@ -56357,19 +55821,19 @@ mq
 cW
 JF
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-lf
-lf
-lf
-Mm
-ma
-lf
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+bX
+bX
+bX
+ST
+Un
+bX
 cW
 mq
 lB
@@ -56614,19 +56078,19 @@ mq
 cW
 hU
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-lf
-Mm
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+bX
+ST
 li
-Mm
-lf
+ST
+bX
 ln
 mq
 lC
@@ -56871,19 +56335,19 @@ mq
 cW
 jV
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-Mm
-ma
-Mm
-lf
-lf
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+ST
+Un
+ST
+bX
+bX
 mq
 mq
 lB
@@ -57128,19 +56592,19 @@ mq
 cW
 cW
 af
-af
-ax
-ax
+bX
+aE
+aE
 kG
 kC
-ax
-ax
-ia
-ma
-Mm
-lf
-lf
-lf
+aE
+aE
+ac
+Un
+ST
+bX
+bX
+bX
 cW
 mq
 lB
@@ -57386,12 +56850,12 @@ mq
 mq
 af
 cW
-ax
-ax
-ia
-ia
-aA
-ia
+aE
+aE
+ac
+ac
+jz
+ac
 cW
 cW
 cW
@@ -57621,7 +57085,7 @@ Un
 fu
 ac
 mq
-gH
+aS
 gM
 kX
 kY
@@ -57643,12 +57107,12 @@ mq
 mq
 mq
 cW
-Mm
-ax
-ia
-aw
-ax
-ax
+ST
+aE
+ac
+iO
+aE
+aE
 cW
 la
 af
@@ -57900,12 +57364,12 @@ aJ
 mq
 mq
 cX
-ma
-ax
-ax
-ax
-kR
-ax
+Un
+aE
+aE
+aE
+hy
+aE
 cX
 af
 af
@@ -58157,12 +57621,12 @@ aJ
 aJ
 mq
 cW
-ma
+Un
 VQ
-Mm
-Mm
-ax
-lf
+ST
+ST
+aE
+bX
 cW
 af
 mq
@@ -58414,12 +57878,12 @@ aJ
 aJ
 mq
 cX
-lf
+bX
 ze
-ia
+ac
 lu
-Mm
-lf
+ST
+bX
 cX
 mq
 mq
@@ -58672,11 +58136,11 @@ aJ
 mq
 cW
 zf
-Mm
+ST
 AA
-ma
+Un
 lu
-lf
+bX
 cW
 mq
 mq
@@ -58928,12 +58392,12 @@ aJ
 aJ
 mq
 cX
-lf
-lf
+bX
+bX
 lu
-ma
-Mm
-lf
+Un
+ST
+bX
 cX
 mq
 mq
@@ -59185,12 +58649,12 @@ aJ
 aJ
 mq
 cW
-lf
-lf
-lf
-ma
+bX
+bX
+bX
+Un
 lu
-Mm
+ST
 cW
 af
 mq
@@ -59442,12 +58906,12 @@ aJ
 mq
 mq
 cX
-lf
-lf
-ia
+bX
+bX
+ac
 lu
-ma
-lf
+Un
+bX
 cX
 af
 af
@@ -59699,12 +59163,12 @@ mq
 mq
 mq
 cW
-lf
-lf
-lf
-lf
+bX
+bX
+bX
+bX
 kS
-ma
+Un
 cW
 lb
 af
@@ -59956,12 +59420,12 @@ mq
 mq
 mq
 cX
-lf
-lf
-ie
-ie
-lf
-ma
+bX
+bX
+hH
+hH
+bX
+Un
 cX
 lc
 ah
@@ -60213,12 +59677,12 @@ aJ
 aJ
 mq
 cW
-ia
-lf
-lf
-lf
-lf
-ia
+ac
+bX
+bX
+bX
+bX
+ac
 cW
 cW
 cW
@@ -60470,14 +59934,14 @@ aJ
 aJ
 mq
 cW
-lf
-lf
-lf
-lf
-lf
-lf
-ax
-ax
+bX
+bX
+bX
+bX
+bX
+bX
+aE
+aE
 Di
 cW
 mq
@@ -60727,15 +60191,15 @@ aJ
 aJ
 mq
 cW
-lf
-lf
-lf
-lf
-lf
-ax
-ax
-ax
-ax
+bX
+bX
+bX
+bX
+bX
+aE
+aE
+aE
+aE
 cW
 mq
 mq
@@ -60984,15 +60448,15 @@ aJ
 aJ
 aJ
 kN
-lf
-lf
-lf
-ax
-ax
-ax
-ax
-ax
-ax
+bX
+bX
+bX
+aE
+aE
+aE
+aE
+aE
+aE
 cW
 mq
 mq
@@ -61241,15 +60705,15 @@ aJ
 aJ
 aJ
 kN
-ax
-ax
-lf
-lf
-ax
-ax
-ax
-lf
-ax
+aE
+aE
+bX
+bX
+aE
+aE
+aE
+bX
+aE
 cW
 mq
 mq
@@ -61498,15 +60962,15 @@ aJ
 aJ
 aJ
 kN
-ax
-lf
-lf
-lf
-ax
-lf
-lf
-lf
-dx
+aE
+bX
+bX
+bX
+aE
+bX
+bX
+bX
+aE
 cW
 mq
 mq
@@ -61755,15 +61219,15 @@ aJ
 aJ
 mq
 cW
-ax
-lf
-lf
-lf
-ax
-lf
-lf
-ax
-dx
+aE
+bX
+bX
+bX
+aE
+bX
+bX
+aE
+aE
 cW
 bF
 af
@@ -62012,15 +61476,15 @@ aJ
 aJ
 mq
 cW
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-dx
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+aE
+aE
 cW
 mq
 af
@@ -67643,7 +67107,7 @@ aa
 aa
 jI
 gY
-du
+aA
 hE
 bX
 bX
@@ -67901,7 +67365,7 @@ aa
 jI
 gZ
 hk
-gI
+aY
 bX
 bX
 jI
@@ -68157,7 +67621,7 @@ aa
 aa
 jI
 ha
-gB
+aN
 hN
 bX
 bX
@@ -68671,7 +68135,7 @@ aa
 aa
 jI
 aQ
-gC
+aO
 bX
 bX
 cF

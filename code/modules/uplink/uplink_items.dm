@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			A.cost = max(round(A.cost * discount),1)
 			A.category = "Discounted Gear"
 			A.name += " ([round(((initial(A.cost)-A.cost)/initial(A.cost))*100)]% off!)"
-			A.desc += " Normally costs [initial(A.cost)] TC. All sales final. [pick(disclaimer)]"
+			A.desc += " Normally costs [initial(A.cost)] GMP. All sales final. [pick(disclaimer)]"
 			A.item = I.item
 
 			if(!filtered_uplink_items[A.category])
@@ -122,92 +122,49 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "Humanitarian aid: Contains a selections of various crucial items, such as food, medicine, basic ammunition and such. \
 			Recommended first buy. Can only be bought twice."
 	item = /obj/item/storage/backpack/satchel/stalker/civilian/provision
-	cost = 20 // normally 42
+	cost = 20 //40k rubles for a 178k worth of equipment
 	limited_stock = 2
-	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/bundles_TC/basic_guns_kit
 	name = "Black market deal: basic weaponry"
-	desc = "Lean and mean: Optimized for people that want to get up close and personal. Contains the popular \
-			Bulldog shotgun, two 12g buckshot drums, and a pair of Thermal imaging goggles. Can only be bought once."
-	item = /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle
-	cost = 13 // normally 16
+	desc = "Cheap and mean: Optimized for people that want to save themselves a buck. Contains the popular \
+			Makarov pistols, two MP5s, and a pair of shotguns. Can only be bought once."
+	item = /obj/item/storage/backpack/satchel/stalker/civilian/basic_guns
+	cost = 20  //40k rubles for a 82k worth of equipment
 	limited_stock = 1
-	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/bundles_TC/c20r
-	name = "C-20r bundle"
-	desc = "Old Faithful: The classic C-20r, bundled with two magazines and a (surplus) suppressor at discount price."
-	item = /obj/item/storage/backpack/duffelbag/syndie/c20rbundle
-	cost = 14 // normally 16
-	include_modes = list(/datum/game_mode/nuclear)
+/datum/uplink_item/bundles_TC/basic_armor_kit
+	name = "Black market deal: basic armor"
+	desc = "Economic protection: Optimized for people that want to save themselves a buck. Contains several\
+			Sunrise-like suits, leather coats, gasmasks and steel helmets. Can only be bought once."
+	item = /obj/item/storage/backpack/satchel/stalker/civilian/basic_armor
+	cost = 20  //40k rubles for 156k worth of equipment
+	limited_stock = 1
 
-/datum/uplink_item/bundles_TC/cyber_implants
-	name = "Cybernetic Implants Bundle"
-	desc = "A random selection of cybernetic implants. Guaranteed 5 high quality implants. Comes with an autosurgeon."
-	item = /obj/item/storage/box/cyber_implants
-	cost = 40
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/bundles_TC/medical
-	name = "Medical bundle"
-	desc = "The support specialist: Aid your fellow operatives with this medical bundle. Contains a tactical medkit, \
-			a Donksoft LMG, a box of riot darts and a pair of magboots to rescue your friends in no-gravity environments."
-	item = /obj/item/storage/backpack/duffelbag/syndie/med/medicalbundle
-	cost = 15 // normally 20
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/bundles_TC/sniper
-	name = "Sniper bundle"
-	desc = "Elegant and refined: Contains a collapsed sniper rifle in an expensive carrying case, \
-			two soporific knockout magazines, a free surplus suppressor, and a sharp-looking tactical turtleneck suit. \
-			We'll throw in a free red tie if you order NOW."
-	item = /obj/item/storage/briefcase/sniperbundle
-	cost = 20 // normally 26
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/bundles_TC/firestarter
-	name = "Spetsnaz Pyro bundle"
-	desc = "For systematic suppression of carbon lifeforms in close quarters: Contains a lethal New Russian backpack spray, Elite hardsuit, \
-			Stechkin APS pistol, two magazines, a minibomb and a stimulant syringe. \
-			Order NOW and comrade Boris will throw in an extra tracksuit."
-	item = /obj/item/storage/backpack/duffelbag/syndie/firestarter
-	cost = 30
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/bundles_TC/bundle_A
-	name = "Syndi-kit Tactical"
-	desc = "Syndicate Bundles, also known as Syndi-Kits, are specialized groups of items that arrive in a plain box. \
-			These items are collectively worth more than 20 telecrystals, but you do not know which specialization \
-			you will receive. May contain discontinued and/or exotic items."
-	item = /obj/item/storage/box/syndicate/bundle_A
-	cost = 20
-	exclude_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/bundles_TC/bundle_B
-	name = "Syndi-kit Special"
-	desc = "Syndicate Bundles, also known as Syndi-Kits, are specialized groups of items that arrive in a plain box. \
-			In Syndi-kit Special, you will recieve items used by famous syndicate agents of the past. Collectively worth more than 20 telecrystals, the syndicate loves a good throwback."
-	item = /obj/item/storage/box/syndicate/bundle_B
-	cost = 20
-	exclude_modes = list(/datum/game_mode/nuclear)
+/datum/uplink_item/bundles_TC/anomalous
+	name = "Corrupt governmental funding: research"
+	desc = "Zone exploration: various detectors and a single radiation-proof suit smuggled by the local\
+			science team. Can only be bought once."
+	item = /obj/item/storage/backpack/satchel/stalker/civilian/anomalous_trader
+	cost = 50  //100k rubles for 133k worth of semi-unique equipment
+	limited_stock = 1
 
 /datum/uplink_item/bundles_TC/surplus
-	name = "Syndicate Surplus Crate"
-	desc = "A dusty crate from the back of the Syndicate warehouse. Rumored to contain a valuable assortment of items, \
-			but you never know. Contents are sorted to always be worth 50 TC."
+	name = "Army Surplus Crate"
+	desc = "A dusty crate from the back of the army warehouse. Rumored to contain a valuable assortment of items, \
+			but you never know. Contents are sorted to always be worth 50 GMP."
 	item = /obj/structure/closet/crate
 	cost = 20
-	player_minimum = 25
+	player_minimum = 10
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 	var/starting_crate_value = 50
 
 /datum/uplink_item/bundles_TC/surplus/super
 	name = "Super Surplus Crate"
-	desc = "A dusty SUPER-SIZED from the back of the Syndicate warehouse. Rumored to contain a valuable assortment of items, \
-			but you never know. Contents are sorted to always be worth 125 TC."
+	desc = "A dusty SUPER-SIZED from the back of the army warehouse. Rumored to contain a valuable assortment of items, \
+			but you never know. Contents are sorted to always be worth 125 GMP."
 	cost = 40
-	player_minimum = 40
+	player_minimum = 20
 	starting_crate_value = 125
 
 /datum/uplink_item/bundles_TC/surplus/purchase(mob/user, datum/component/uplink/U)
@@ -257,24 +214,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		SSblackbox.record_feedback("tally", "traitor_random_uplink_items_gotten", 1, initial(I.name))
 		U.MakePurchase(user, I)
 
-/datum/uplink_item/bundles_TC/telecrystal
-	name = "1 Raw Telecrystal"
-	desc = "A telecrystal in its rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
-	item = /obj/item/stack/telecrystal
-	cost = 1
-	// Don't add telecrystals to the purchase_log since
-	// it's just used to buy more items (including itself!)
-	purchase_log_vis = FALSE
-
-/datum/uplink_item/bundles_TC/telecrystal/five
-	name = "5 Raw Telecrystals"
-	desc = "Five telecrystals in their rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
-	item = /obj/item/stack/telecrystal/five
-	cost = 5
-
 /datum/uplink_item/bundles_TC/telecrystal/twenty
-	name = "20 Raw Telecrystals"
-	desc = "Twenty telecrystals in their rawest and purest form; can be utilized on active uplinks to increase their telecrystal count."
+	name = "MicroSD card"
+	desc = "Cryptocurrency in its rawest and purest form; can be utilized by traders to increase their Gross Mercantile Product count."
 	item = /obj/item/stack/telecrystal/twenty
 	cost = 20
 

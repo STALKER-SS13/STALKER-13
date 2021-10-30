@@ -382,7 +382,7 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/cs_medium
 	durability = 250
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
@@ -407,7 +407,7 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
@@ -660,7 +660,7 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 1, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/sealed/sin
-	name = "sinner suit Mask"
+	name = "sinner suit mask"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 65, "bomb" = 50, "bio" = 50, "rad" = 70, "fire" = 65, "psy" = 20)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR

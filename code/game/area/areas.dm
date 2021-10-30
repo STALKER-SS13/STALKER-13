@@ -75,6 +75,7 @@
 	var/cssafezone = 0
 	var/monolithsafezone = 0
 	var/militarysafezone = 0
+	var/mercenarysafezone = 0
 	var/controlled_by = null
 	var/blowout = 0
 	var/ambient_music_cooldown				= 6000

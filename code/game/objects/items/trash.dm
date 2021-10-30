@@ -13,6 +13,10 @@
 	name = "cigarettes"
 	icon_state = "cigs_trash"
 
+/obj/item/trash/cigs_trash2
+	name = "cigarettes"
+	icon_state = "cigs_trash2"
+
 /obj/item/trash/paintcan
 	name = "can of paint"
 	icon_state = "paintcan"
@@ -25,9 +29,9 @@
 	name = "rusty pincers"
 	icon_state = "artifactholder"
 
-/obj/item/trash/carkey
+/obj/item/trash/oldkey
 	name = "old key"
-	icon_state = "gruzkey"
+	icon_state = "oldkey"
 
 /obj/item/trash/crossnecklace
 	name = "cross necklace"
@@ -60,7 +64,7 @@
 /obj/item/trash/metaljunk
 	name = "metal junk"
 	icon_state = "metaljunk"
-	
+
 /obj/item/trash/oldcircuitboard
 	name = "circuit board"
 	icon_state = "circuitboard"

@@ -648,7 +648,7 @@
 	name = "Freedom Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "freedom"
-	dutysafezone = 1
+	freedomsafezone = 1
 
 /area/stalker/buildings/clearsky
 	name = "Clear Sky Safezone"
@@ -673,6 +673,12 @@
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "renegades"
 	renegadesafezone = 1
+
+/area/stalker/buildings/mercenary
+	name = "Mercenary Safezone"
+	icon = 'stalker/icons/areas.dmi'
+	icon_state = "mercenary"
+	mercenarysafezone = 1
 
 /area/stalker/buildings/ecologist
 	name = "ecologist safezone"

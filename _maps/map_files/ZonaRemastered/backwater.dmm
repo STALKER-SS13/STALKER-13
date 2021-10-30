@@ -7508,6 +7508,10 @@
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"Mf" = (
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "NX" = (
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/agroprom/beton,
@@ -11951,7 +11955,7 @@ eC
 eC
 eC
 eC
-eC
+Mf
 dl
 dl
 eV

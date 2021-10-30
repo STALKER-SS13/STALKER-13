@@ -3251,10 +3251,10 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jO" = (
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jP" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3264,12 +3264,12 @@
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jQ" = (
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jR" = (
 /obj/structure/stalker/cacheable/pech{
 	pixel_y = 27
@@ -3320,7 +3320,7 @@
 	tag = "icon-bulb1 (WEST)"
 	},
 /turf/open/floor/plasteel,
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jY" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -3330,12 +3330,12 @@
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "jZ" = (
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "ka" = (
 /obj/structure/stalker/brokenbed{
 	pixel_x = -2
@@ -3370,11 +3370,9 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "kf" = (
-/turf/open/floor/plasteel/stairs/stalker{
-	dir = 1;
-	tag = "icon-ladder (EAST)"
-	},
-/area/stalker/kordon/buildings)
+/obj/structure/stalker/modification_table,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/military)
 "kg" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -3417,7 +3415,7 @@
 	dir = 1;
 	tag = "icon-ladder (EAST)"
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "kk" = (
 /obj/item/cigbutt{
 	pixel_x = 1
@@ -3483,7 +3481,7 @@
 	dir = 1;
 	tag = "icon-ladder (EAST)"
 	},
-/area/stalker/kordon/buildings)
+/area/stalker/buildings/backwater/skadovsk)
 "kz" = (
 /obj/structure/stalker/blocks/block2,
 /turf/open/stalker/floor/gryaz,
@@ -8022,7 +8020,7 @@ aa
 jI
 jN
 jX
-kf
+Lg
 kj
 jI
 aa
@@ -8279,7 +8277,7 @@ aa
 jI
 jO
 jO
-kf
+Lg
 ky
 jI
 aa
@@ -49228,7 +49226,7 @@ mJ
 Tu
 lx
 Tu
-Tu
+kf
 nA
 aa
 aa

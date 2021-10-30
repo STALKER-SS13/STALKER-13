@@ -20,4 +20,4 @@
 	imp_type = /obj/item/implant/uplink/precharged
 
 /obj/item/implant/uplink/precharged
-	starting_tc = 10
+	starting_tc = 50

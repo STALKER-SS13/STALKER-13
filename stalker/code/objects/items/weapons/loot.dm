@@ -51,7 +51,7 @@
 			if(I && I.imp_in)
 				GET_COMPONENT_FROM(hidden_uplink, /datum/component/uplink, I)
 				if(hidden_uplink)
-					hidden_uplink.telecrystals += 40 //~80k? ~100k? I dunno rn.
+					hidden_uplink.telecrystals += 50 // ~100k? I dunno rn.
 					qdel(src)
 					to_chat(user, "<span class='notice'>You press [src] onto yourself and charge your hidden uplink.</span>")
 	else
@@ -64,7 +64,7 @@
 		if(!cart.charges)
 			to_chat(user, "<span class='notice'>[cart] is out of charges, it's refusing to accept [src].</span>")
 			return
-		cart.telecrystals += 40
+		cart.telecrystals += 50
 		qdel(src)
 		to_chat(user, "<span class='notice'>You slot [src] into [cart].  The next time it's used, it will also give telecrystals.</span>")
 

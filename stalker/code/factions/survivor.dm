@@ -265,6 +265,11 @@ Assistant
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
 
+
+/datum/outfit/job/trader/post_equip(mob/living/carbon/human/H)
+	var/obj/item/implant/uplink/precharged/P = new/obj/item/implant/uplink/precharged(H)
+	P.implant(H)
+
 /datum/job/barman
 	title = "Barman"
 	faction_s = "Loners"
@@ -295,3 +300,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
+
+/datum/outfit/job/barman/post_equip(mob/living/carbon/human/H)
+	var/obj/item/implant/uplink/precharged/P = new/obj/item/implant/uplink/precharged(H)
+	P.implant(H)

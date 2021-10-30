@@ -113,24 +113,26 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 //All bundles and telecrystals
 /datum/uplink_item/bundles_TC
-	category = "Trader Bundle"
+	category = "Trader Bundles"
 	surplus = 0
 	cant_discount = TRUE
 
-/datum/uplink_item/bundles_TC/chemical
-	name = "Bioterror bundle"
-	desc = "For the madman: Contains a handheld Bioterror chem sprayer, a Bioterror foam grenade, a box of lethal chemicals, a dart pistol, \
-			box of syringes, Donksoft assault rifle, and some riot darts. Remember: Seal suit and equip internals before use."
-	item = /obj/item/storage/backpack/duffelbag/syndie/med/bioterrorbundle
-	cost = 30 // normally 42
+/datum/uplink_item/bundles_TC/provision
+	name = "Provisions request"
+	desc = "Humanitarian aid: Contains a selections of various crucial items, such as food, medicine, basic ammunition and such. \
+			Recommended first buy. Can only be bought twice."
+	item = /obj/item/storage/backpack/satchel/stalker/civilian/provision
+	cost = 20 // normally 42
+	limited_stock = 2
 	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/bundles_TC/bulldog
-	name = "Bulldog bundle"
+/datum/uplink_item/bundles_TC/basic_guns_kit
+	name = "Black market deal: basic weaponry"
 	desc = "Lean and mean: Optimized for people that want to get up close and personal. Contains the popular \
-			Bulldog shotgun, two 12g buckshot drums, and a pair of Thermal imaging goggles."
+			Bulldog shotgun, two 12g buckshot drums, and a pair of Thermal imaging goggles. Can only be bought once."
 	item = /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle
 	cost = 13 // normally 16
+	limited_stock = 1
 	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/bundles_TC/c20r

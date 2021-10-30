@@ -654,7 +654,7 @@
 	name = "Clear Sky Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "clearsky"
-	dutysafezone = 1
+	cssafezone = 1
 
 /area/stalker/buildings/bandit
 	name = "Bandit Safezone"

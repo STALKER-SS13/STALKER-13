@@ -7494,7 +7494,7 @@
 /area/stalker/buildings/renegade)
 "IM" = (
 /obj/structure/grille/stalker,
-/turf/open/floor/plating/dirt,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "IU" = (
 /turf/open/floor/plating/dirt/dark,
@@ -7516,16 +7516,6 @@
 /obj/structure/chair/brevno,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"Lg" = (
-/obj/rad/rad_medium,
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 49;
-	teleport_y = 81;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/gryaz/gryaz3,
-/area/stalker/blowout/outdoor/backwater/ironforest)
 "Ma" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -7590,7 +7580,7 @@
 /area/stalker/buildings/renegade)
 "XR" = (
 /obj/rad/rad_medium,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "Ys" = (
 /obj/effect/step_trigger/teleporter{
@@ -19617,9 +19607,9 @@ xX
 tC
 yu
 tC
-Lg
 XR
-Op
+XR
+tV
 IM
 tV
 tG
@@ -19875,7 +19865,7 @@ xZ
 ug
 ug
 ug
-Op
+ug
 ug
 ug
 tV

@@ -126,36 +126,119 @@
 
 /obj/effect/spawner/lootdrop/stalker/weapon/pistols
 	name = "stalker pistols"
-	loot = list(/obj/item/gun/ballistic/automatic/pistol/pm = 25,
-				/obj/item/gun/ballistic/automatic/pistol/pb1s = 15,
-				/obj/item/gun/ballistic/automatic/pistol/fort12 = 10,
-				/obj/item/gun/ballistic/automatic/pistol/usp_match = 5,
-				/obj/item/gun/ballistic/automatic/pistol/sip = 5,
-				/obj/item/gun/ballistic/automatic/pistol/cora = 5,
-				/obj/item/gun/ballistic/automatic/pistol/marta = 5,
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/pm = 10,
+				/obj/item/gun/ballistic/automatic/pistol/pb1s = 20,
+				/obj/item/gun/ballistic/automatic/pistol/fort12 = 20,
+				/obj/item/gun/ballistic/automatic/pistol/tt = 20,
+				/obj/nothing = 30)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/pistolstier2
+	name = "stalker pistols tier 2"
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/fort12/unique = 10,
+				/obj/item/gun/ballistic/automatic/pistol/sip = 20,
+				/obj/item/gun/ballistic/automatic/pistol/cora = 20,
+				/obj/item/gun/ballistic/automatic/pistol/marta = 20,
+				/obj/nothing = 30)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/pistolstier3
+	name = "stalker pistols tier 3"
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/usp_match = 35,
+				/obj/item/gun/ballistic/automatic/pistol/desert = 15,
+				/obj/item/gun/ballistic/revolver/anaconda = 15,
+				/obj/item/gun/ballistic/automatic/mac10 = 5,
 				/obj/nothing = 30)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotguns
 	name = "stalker rifles_and_shotguns"
-	loot = list(/obj/item/gun/ballistic/shotgun/bm16 = 25,
-				/obj/item/gun/ballistic/automatic/ak74 = 25,
-				/obj/item/gun/ballistic/automatic/aksu74 = 35,
-				/obj/item/gun/ballistic/automatic/tpc301 = 10,
+	loot = list(/obj/item/gun/ballistic/shotgun/bm16 = 15,
+				/obj/item/gun/ballistic/rifle/boltaction/enfield = 15,
+				/obj/item/gun/ballistic/automatic/aksu74 = 10,
+				/obj/item/gun/ballistic/automatic/berettam38 = 10,
 				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier2
+	name = "stalker rifles_and_shotguns tier 2"
+	loot = list(/obj/item/gun/ballistic/shotgun/bm16/toz34 = 15,
+				/obj/item/gun/ballistic/automatic/ppsh = 15,
+				/obj/item/gun/ballistic/automatic/ak74 = 10,
+				/obj/item/gun/ballistic/automatic/abakan = 10,
+				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier3
+	name = "stalker rifles_and_shotguns tier 3"
+	loot = list(/obj/item/gun/ballistic/shotgun/ithaca = 15,
+				/obj/item/gun/ballistic/automatic/tpc301 = 15,
+				/obj/item/gun/ballistic/automatic/il86 = 10,
+				/obj/item/gun/ballistic/shotgun/chaser = 10,
+				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier4
+	name = "stalker rifles_and_shotguns tier 4"
+	loot = list(/obj/item/gun/ballistic/automatic/groza = 15,
+				/obj/item/gun/ballistic/automatic/val = 15,
+				/obj/item/gun/ballistic/automatic/sigsg550 = 10,
+				/obj/item/gun/ballistic/shotgun/spsa = 10,
+				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles
+	name = "stalker rifles_and_shotguns"
+	loot = list(/obj/item/gun/ballistic/rifle/boltaction/enfield = 15,
+				/obj/item/gun/ballistic/automatic/aksu74 = 15,
+				/obj/item/gun/ballistic/automatic/berettam38 = 15,
+				/obj/nothing = 55)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/riflestier2
+	name = "stalker rifles_and_shotguns tier 2"
+	loot = list(/obj/item/gun/ballistic/automatic/ppsh = 15,
+				/obj/item/gun/ballistic/automatic/ak74 = 15,
+				/obj/item/gun/ballistic/automatic/abakan = 15,
+				/obj/nothing = 55)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/riflestier3
+	name = "stalker rifles_and_shotguns tier 3"
+	loot = list(/obj/item/gun/ballistic/automatic/groza = 15,
+				/obj/item/gun/ballistic/automatic/tpc301 = 15,
+				/obj/item/gun/ballistic/automatic/il86 = 15,
+				/obj/nothing = 55)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/riflestier4
+	name = "stalker rifles_and_shotguns tier 4"
+	loot = list(/obj/item/gun/ballistic/automatic/gp37 = 15,
+				/obj/item/gun/ballistic/automatic/fnf2000 = 15,
+				/obj/item/gun/ballistic/automatic/vintorez = 15,
+				/obj/nothing = 55)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/smgs
 	name = "stalker smgs"
-	loot = list(/obj/item/gun/ballistic/automatic/mp5 = 30,
+	loot = list(/obj/item/gun/ballistic/automatic/mp5 = 20,
 				/obj/item/gun/ballistic/automatic/aksu74 = 20,
+				/obj/item/gun/ballistic/automatic/kiparis = 10,
 				/obj/nothing = 60)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/melee
+	name = "stalker melee"
+	loot = list(/obj/item/kitchen/knife = 20,
+				/obj/item/kitchen/knife/butcher = 15,
+				/obj/item/kitchen/knife/tourist = 15,
+				/obj/item/melee/tireiron = 15,
+				/obj/item/melee/pipe = 15,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/meleetier2
+	name = "stalker melee tier 2"
+	loot = list(/obj/item/kitchen/knife/throwing = 25,
+				/obj/item/weapon/kitchen/knife/hunting = 15,
+				/obj/item/weapon/kitchen/knife/m9 = 15,
+				/obj/item/kitchen/knife/bayonet = 25,
+				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/medicine
 	name = "stalker medicine"
 	lootcount = 1
 	loot = list(/obj/item/storage/firstaid/stalker/civillian = 30,
-				/obj/item/storage/firstaid/stalker/military = 15,
-				/obj/item/storage/firstaid/stalker/scientific = 5,
-				/obj/nothing = 60)
+				/obj/item/storage/firstaid/stalker/military = 20,
+				/obj/item/storage/firstaid/stalker/scientific = 10,
+				/obj/nothing = 40)
 
 /obj/effect/spawner/lootdrop/stalker/food
 	name = "stalker food"
@@ -261,3 +344,37 @@ obj/nothing/New()
 				/obj/item/book/manual/theprophetdeath = 10,
 				/obj/item/book/manual/theprophetfriendship = 10,
 				/obj/nothing = 80)
+
+/obj/effect/spawner/lootdrop/stalker/equipment
+	name = "equipment"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/flashlight/flare/torch = 10,
+				/obj/item/flashlight/flare = 10,
+				/obj/item/radio/off = 10,
+				/obj/item/twohanded/binoculars = 10,
+				/obj/item/flashlight = 10,
+				/obj/item/restraints/handcuffs = 10,
+				/obj/item/flashlight/lantern = 10,
+				/obj/nothing = 80)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/armor
+	name = "stalker armor"
+	loot = list(/obj/item/clothing/suit/sixb2 = 15,
+				/obj/item/clothing/suit/hooded/kombez = 15,
+				/obj/item/clothing/suit/hooded/kozhanka/tancoat = 10,
+				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/armortier2
+	name = "stalker armor tier 2"
+	loot = list(/obj/item/clothing/suit/hooded/kozhanka/ghillie = 15,
+				/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown = 15,
+				/obj/item/clothing/suit/d2 = 10,
+				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/helmet
+	name = "stalker helmet"
+	loot = list(/obj/item/clothing/head/ssh = 20,
+				/obj/item/clothing/head/steel = 20,
+				/obj/item/clothing/head/hardhat/tactical/light = 10,
+				/obj/nothing = 50)

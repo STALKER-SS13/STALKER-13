@@ -679,19 +679,20 @@
 	eng_desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskelet"
 	item_state = "syndicate-black"
+	slowdown = 0.15
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
-	armor = list("melee" = 95, "bullet" = 80, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 50, "rad" = 85, "fire" = 50, "psy" = 40)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 50, "rad" = 85, "fire" = 50, "psy" = 40)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	durability = 200
 	resistance_flags = UNACIDABLE | FIRE_PROOF
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	name = "exoskeleton helmet"
-	armor = list("melee" = 95, "bullet" = 95, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 50, "psy" = 30)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 50, "psy" = 30)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH

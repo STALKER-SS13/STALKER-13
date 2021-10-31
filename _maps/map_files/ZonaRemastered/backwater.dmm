@@ -2591,6 +2591,12 @@
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/buildings/backwater/krug)
 "kP" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	teleport_x = 12;
+	teleport_y = 141;
+	teleport_z = 2
+	},
 /obj/structure/stalker/luk,
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/buildings/backwater/krug)
@@ -7479,7 +7485,7 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Gg" = (
-/obj/machinery/campfire/barrel,
+/obj/machinery/campfire,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Gv" = (
@@ -7496,6 +7502,23 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"IU" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 49;
+	teleport_y = 81;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/buildings/backwater/ironforest)
+"JQ" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 19;
+	teleport_y = 51;
+	teleport_z = 2
+	},
+/turf/closed/mineral,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "Kq" = (
 /obj/structure/chair/brevno/log2,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7504,6 +7527,16 @@
 /obj/structure/chair/brevno,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"KG" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 36;
+	teleport_y = 91;
+	teleport_z = 2
+	},
+/obj/structure/stalker/luk,
+/turf/open/stalker/floor/gryaz/gryaz3,
+/area/stalker/blowout/outdoor/backwater)
 "Ma" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -7525,6 +7558,16 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor/backwater)
+"Op" = (
+/obj/structure/grille/stalker,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 19;
+	teleport_y = 51;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "OC" = (
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7536,6 +7579,16 @@
 "QE" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
+"Rg" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 25;
+	teleport_y = 36;
+	teleport_z = 2
+	},
+/obj/structure/stalker/luk,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "RI" = (
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7565,6 +7618,15 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor/backwater)
+"YO" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 19;
+	teleport_y = 51;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/backwater/ironforest)
 
 (1,1,1) = {"
 aa
@@ -12889,7 +12951,7 @@ bq
 bq
 bq
 dw
-tR
+YO
 tR
 tO
 fj
@@ -13411,7 +13473,7 @@ tR
 uP
 tR
 tI
-tV
+Rg
 tG
 tI
 vI
@@ -16470,7 +16532,7 @@ bq
 bq
 bg
 bq
-tz
+Op
 tG
 tJ
 tJ
@@ -17509,7 +17571,7 @@ tH
 tL
 tL
 tC
-tC
+JQ
 tL
 tL
 tL
@@ -20608,7 +20670,7 @@ zz
 Ak
 AJ
 zw
-zw
+IU
 xG
 tV
 tG
@@ -37438,7 +37500,7 @@ bq
 ky
 ky
 bg
-bg
+KG
 hI
 sB
 sy

@@ -343,7 +343,7 @@
 /area/stalker/blowout/agroprom/tunnel)
 "bC" = (
 /obj/structure/stalker/cacheable/yashik,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "bD" = (
 /obj/anomaly/tramplin,
@@ -399,10 +399,9 @@
 "bP" = (
 /obj/machinery/light/small{
 	dir = 1;
-	icon_state = "bulb1";
-	tag = "icon-bulb1 (NORTH)"
+	tag = "icon-bulb1 (EAST)"
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/buildings/freedom)
 "bR" = (
 /obj/structure/stalker/rails{
@@ -1033,8 +1032,7 @@
 /obj/structure/barricade/stalker/box,
 /obj/machinery/light/small{
 	dir = 1;
-	icon_state = "bulb1";
-	tag = "icon-bulb1 (NORTH)"
+	tag = "icon-bulb1 (EAST)"
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/freedom)
@@ -1077,7 +1075,7 @@
 /obj/structure/stalker/propane{
 	pixel_x = -6
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "en" = (
 /obj/structure/stalker/doski,
@@ -1123,7 +1121,7 @@
 	dir = 1;
 	tag = "icon-truba2 (NORTH)"
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "ex" = (
 /obj/structure/stalker/cacheable/bochka/red{
@@ -1162,7 +1160,7 @@
 /area/stalker/buildings/freedom)
 "eD" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe3,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eE" = (
 /obj/structure/stalker/list,
@@ -1170,7 +1168,7 @@
 /area/stalker/buildings/freedom)
 "eF" = (
 /obj/structure/bed/stalker/matras,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eG" = (
 /obj/structure/stalker/blocks/block2,
@@ -1214,7 +1212,7 @@
 	pixel_x = 6;
 	pixel_y = 8
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eN" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
@@ -1242,30 +1240,30 @@
 /obj/structure/stalker/cacheable/shitok{
 	pixel_y = 30
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eT" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
 	dir = 4;
 	tag = "icon-truba2 (EAST)"
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eU" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
 	dir = 8;
 	tag = "icon-truba2 (WEST)"
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eV" = (
 /obj/structure/barricade/stalker/box,
 /obj/machinery/light/small,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eW" = (
 /obj/machinery/light/small,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "eX" = (
 /obj/structure/stalker/blocks/block1,
@@ -1307,7 +1305,7 @@
 /area/stalker/buildings/freedom)
 "ff" = (
 /obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/buildings/freedom)
 "fh" = (
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -1337,7 +1335,7 @@
 	density = 0;
 	pixel_x = 6
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/buildings/freedom)
 "fo" = (
 /obj/structure/stalker/water/bochka{
@@ -1443,11 +1441,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/freedom)
 "fL" = (
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	tag = "icon-bulb1 (WEST)"
-	},
+/obj/machinery/smartfridge/drying_rack,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/freedom)
 "fM" = (
@@ -1455,12 +1449,8 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "fN" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	tag = "icon-bulb1 (EAST)"
-	},
-/turf/open/stalker/floor/gryaz,
+/obj/machinery/smartfridge/drying_rack,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "fO" = (
 /obj/structure/stalker/panel,
@@ -2447,7 +2437,7 @@
 /area/stalker/agroprom/buildings)
 "jm" = (
 /obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "jn" = (
 /obj/structure/stalker/cacheable/komod{
@@ -2794,22 +2784,7 @@
 /area/stalker/agroprom/buildings)
 "ky" = (
 /obj/structure/table/stalker/wood,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
-/obj/item/clothing/mask/cigarette/rollie/trippy,
+/obj/item/storage/fancy/rollingpapers,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/freedom)
 "kA" = (
@@ -3265,6 +3240,10 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/agroprom/buildings)
+"nr" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe2,
+/turf/open/floor/plating/dirt,
+/area/stalker/buildings/freedom)
 "nt" = (
 /obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
@@ -3276,6 +3255,11 @@
 	},
 /turf/closed/wall/stalker/beton_agro,
 /area/stalker/agroprom/tunnel)
+"nJ" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/equipment,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/freedom)
 "nZ" = (
 /obj/structure/grille/stalker{
 	density = 0;
@@ -3395,6 +3379,11 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"qZ" = (
+/obj/structure/stalker/cacheable/yashik,
+/obj/machinery/light/small,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "rk" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/road{
@@ -3433,6 +3422,11 @@
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
+"sf" = (
+/obj/structure/stalker/panel,
+/obj/machinery/light/small,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "sx" = (
 /obj/structure/stalker/cacheable/bochka{
 	pixel_x = 6;
@@ -3444,6 +3438,12 @@
 /obj/structure/stalker/stolb,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"sI" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "sR" = (
 /obj/structure/table/stalker/wood,
 /obj/machinery/light{
@@ -3478,6 +3478,9 @@
 /obj/effect/landmark/mobspawner/controller_spawner,
 /turf/open/stalker/floor/tropa,
 /area/stalker/agroprom/tunnel)
+"ts" = (
+/turf/open/stalker/floor/gryaz/gryaz3,
+/area/stalker/buildings/freedom)
 "ua" = (
 /obj/structure/stalker/cacheable/bochka,
 /turf/open/stalker/floor/agroprom/beton,
@@ -3505,6 +3508,10 @@
 /obj/item/gun/ballistic/semiauto/gaussrifle,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/blowout/agroprom/tunnel)
+"uQ" = (
+/turf/open/stalker/floor/road,
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "uR" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 57;
@@ -3557,6 +3564,13 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"vE" = (
+/obj/structure/stalker/cacheable/bochka/red{
+	density = 0;
+	pixel_y = 12
+	},
+/turf/open/floor/plating/dirt,
+/area/stalker/buildings/freedom)
 "vN" = (
 /obj/machinery/door/poddoor/sidor{
 	id = 42
@@ -3774,6 +3788,10 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"Ec" = (
+/obj/machinery/light/small,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "Ee" = (
 /obj/structure/table/stalker/wood,
 /obj/item/clothing/mask/gas/stalker/respirator,
@@ -3848,6 +3866,16 @@
 /obj/structure/grille/stalker/beton,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"Ho" = (
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/buildings/freedom)
+"Ht" = (
+/obj/machinery/light/small{
+	dir = 1;
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "Hy" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 18;
@@ -3862,8 +3890,7 @@
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
 "HT" = (
-/obj/structure/stalker/modification_table,
-/turf/open/stalker/floor/gryaz,
+/turf/open/floor/plating/dirt,
 /area/stalker/buildings/freedom)
 "Ie" = (
 /obj/structure/stalker/cacheable/bochka{
@@ -3887,6 +3914,10 @@
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/agroprom/buildings)
+"II" = (
+/obj/machinery/door/poddoor/shutters/preopen,
+/turf/open/floor/plating/dirt,
+/area/stalker/buildings/freedom)
 "IP" = (
 /obj/machinery/light,
 /turf/open/stalker/floor/asphalt,
@@ -3929,6 +3960,14 @@
 /obj/structure/stalker/matras,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/agroprom/buildings)
+"JV" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe3,
+/obj/machinery/light/small{
+	dir = 4;
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "Ke" = (
 /obj/structure/chair/stalker/divan/divan2,
 /turf/open/stalker/floor/agroprom/beton,
@@ -3948,6 +3987,10 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"KR" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "Lo" = (
 /obj/structure/stalker/broke_table/right,
 /turf/open/stalker/floor/plasteel/plita,
@@ -4084,6 +4127,19 @@
 /obj/machinery/light/small,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
+"PF" = (
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/buildings/freedom)
+"PI" = (
+/obj/structure/sign/poster/contraband/have_a_puff{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/dirt,
+/area/stalker/buildings/freedom)
+"PT" = (
+/obj/effect/landmark/latejoin/freedom,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/buildings/freedom)
 "PU" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/oscillograph,
@@ -4247,6 +4303,12 @@
 /obj/anomaly/electro,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"Uz" = (
+/obj/structure/sign/poster/contraband/ambrosia_vulgaris{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/freedom)
 "UC" = (
 /obj/structure/stalker/broke_table,
 /turf/open/stalker/floor/plasteel/plita,
@@ -4305,6 +4367,10 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/agroprom/tunnel)
+"Xj" = (
+/obj/structure/barricade/stalker/box,
+/turf/open/floor/plating/dirt,
+/area/stalker/buildings/freedom)
 "XK" = (
 /turf/closed/wall/stalker/beton_agro,
 /area/stalker/blowout/agroprom/tunnel)
@@ -4321,6 +4387,10 @@
 /obj/structure/stalker/okno/window2,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/agroprom/buildings)
+"YW" = (
+/obj/structure/barricade/stalker/box,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/buildings/freedom)
 "YZ" = (
 /obj/structure/stalker/trubas{
 	dir = 8;
@@ -31401,15 +31471,15 @@ kE
 ac
 aq
 bC
-dT
-bL
-bL
+Xj
+HT
+HT
 ew
 eD
 eD
-eH
-bL
-bL
+nr
+HT
+HT
 HT
 CF
 tg
@@ -31659,14 +31729,14 @@ ad
 aq
 bL
 bL
+Ho
+Ho
+Ho
 bL
 bL
 bL
-bL
-bL
-bL
-bL
-bL
+Ho
+Ho
 bL
 CF
 fa
@@ -31914,17 +31984,17 @@ kE
 kE
 ad
 aq
-bL
+Ht
 bL
 CF
 fH
 fH
 CF
-ez
+vE
 bL
 CF
-bP
 bL
+Ec
 CF
 tg
 lJ
@@ -32171,13 +32241,13 @@ kE
 kE
 ad
 aq
-bL
-bL
+PI
+HT
 el
+HT
 bL
 bL
-bL
-bL
+HT
 bL
 jF
 bL
@@ -32428,7 +32498,7 @@ kE
 kE
 ad
 aq
-bP
+KR
 bL
 bL
 bL
@@ -32689,13 +32759,13 @@ bL
 bL
 bL
 bL
-bL
-bL
-bL
-bL
+Ho
+ts
+HT
+HT
 ky
 bL
-bL
+HT
 tg
 tg
 tg
@@ -32942,22 +33012,22 @@ kE
 kE
 ad
 aq
-bL
+Ht
 bL
 CF
 fH
-fH
+PT
+CF
+HT
+YW
 CF
 bL
-dT
-CF
-bP
-bL
+eW
 CF
 fc
 tg
 tg
-TX
+nJ
 aq
 ad
 kE
@@ -33199,17 +33269,17 @@ kE
 kE
 ac
 aq
+HT
+HT
+HT
+HT
+HT
 bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
+HT
+HT
+HT
+HT
+HT
 CF
 fe
 tg
@@ -33460,13 +33530,13 @@ fn
 fn
 fn
 fn
+Ho
 bL
-bL
-bL
-bL
-bL
-bL
-bL
+HT
+HT
+HT
+HT
+HT
 CF
 dG
 tg
@@ -33717,10 +33787,10 @@ aq
 aq
 aq
 aq
+Uz
 bL
 bL
-bL
-bL
+HT
 bL
 bL
 bL
@@ -33977,10 +34047,10 @@ aq
 cl
 eE
 bL
+HT
 bL
-bL
-bL
-bL
+HT
+HT
 eV
 aq
 fo
@@ -34234,7 +34304,7 @@ aq
 ex
 bL
 bL
-bL
+HT
 bL
 CF
 CF
@@ -34245,7 +34315,7 @@ ad
 ad
 ad
 ad
-bf
+uQ
 bf
 bf
 kE
@@ -34491,18 +34561,18 @@ hU
 bL
 bL
 bL
-bL
-bL
+HT
+Ec
 CF
-bL
-bL
+PF
+PF
 aq
 kE
 fx
 kE
 kE
 kE
-bf
+uQ
 bf
 bf
 kE
@@ -34748,18 +34818,18 @@ hU
 ey
 bL
 bL
-bL
-bL
+HT
+HT
 ff
-bL
-bL
+PF
+PF
 ff
 kE
 fy
 kE
 kE
 kE
-bf
+uQ
 bf
 bf
 kE
@@ -35004,19 +35074,19 @@ kE
 hU
 ez
 bL
-bL
-bL
+HT
+HT
 bL
 CF
-bL
-bL
+PF
+PF
 aq
 kE
 fA
 kE
 kE
 kE
-bf
+uQ
 bf
 bf
 kE
@@ -35261,7 +35331,7 @@ ac
 aq
 eB
 bL
-bL
+HT
 eJ
 eM
 CF
@@ -35273,7 +35343,7 @@ ad
 ad
 ad
 ad
-bf
+uQ
 bf
 bf
 kE
@@ -35516,13 +35586,13 @@ aq
 aq
 aq
 aq
-bL
-bL
-bL
+sI
+HT
+HT
 CF
-CF
+HT
 eS
-bL
+HT
 eW
 aq
 aq
@@ -35769,12 +35839,12 @@ kE
 ad
 aq
 bC
+HT
+HT
+HT
 bL
-bL
-bL
-bL
-bL
-bL
+HT
+HT
 bL
 bL
 bL
@@ -35784,7 +35854,7 @@ bL
 CF
 fq
 dT
-fL
+bL
 fO
 aq
 jp
@@ -36027,22 +36097,22 @@ ad
 aq
 ed
 bL
+Ho
+Ho
 bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
+HT
+HT
+HT
+HT
+HT
 eT
+HT
+HT
+II
+HT
+HT
 bL
-bL
-fh
-bL
-bL
-bL
-fO
+sf
 aq
 kE
 kE
@@ -36282,12 +36352,12 @@ kE
 kr
 eA
 aq
-bL
-bL
-bL
+fL
+Ho
+Ho
 CF
 et
-bL
+HT
 bL
 bL
 bL
@@ -36539,19 +36609,19 @@ kE
 kE
 ad
 aq
-bL
-bL
-bL
+fN
+HT
+Ho
 CF
 eu
+HT
 bL
 bL
-bL
-bL
-bL
+Ho
+Ho
 eU
-bL
-bL
+HT
+HT
 CF
 fr
 bL
@@ -36797,23 +36867,23 @@ kE
 ac
 aq
 bP
+HT
+HT
 bL
 bL
+HT
 bL
-bL
-bL
-bL
-bL
-bL
-bL
-bL
+HT
+HT
+HT
+HT
 bL
 ds
 CF
 fs
 bL
 bL
-bC
+qZ
 aq
 kE
 kE
@@ -37053,13 +37123,13 @@ kE
 kE
 ad
 aq
-dT
-bL
-bL
+YW
+Ho
+Ho
 bL
 bL
 ew
-eD
+JV
 eH
 bL
 bL
@@ -37069,7 +37139,7 @@ ds
 CF
 ft
 bL
-fN
+bL
 dT
 aq
 kE

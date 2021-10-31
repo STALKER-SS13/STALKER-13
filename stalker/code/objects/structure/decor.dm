@@ -18,6 +18,34 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/katushka
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "katushka"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/rustymachine/transformator
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "transformator"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/rustymachine/transformator2
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "transformator2"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/transformator
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "toilet00"
+	density = 1
+	anchored = 1
+
 /obj/structure/stalker/cacheable/junk_dresser
 	name = "burnt dresser"
 	icon = 'stalker/icons/decor.dmi'
@@ -158,6 +186,27 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/cacheable/brokenmachine
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine2
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine2"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine3
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine3"
+	density = 1
+	anchored = 1
+
 /obj/structure/sign/vendor
 	name = "vendor sign"
 	desc = "There's a vendor this way!"
@@ -266,6 +315,17 @@
 	..()
 	icon_state = "deadbody[rand(1,6)]"
 
+/obj/structure/stalker/cacheable/vendmachine
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine1"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/body/New()
+	..()
+	icon_state = "vendmachine[rand(1,35)]"
+
 /obj/structure/stalker/cacheable/bochka
 	name = "barrel"
 	eng_desc = "An old steel barrel."
@@ -372,7 +432,7 @@
 	icon_state = "doski_oblomki4"
 
 /obj/structure/stalker/doski/doski_alt
-	icon_state = "doski_oblomki_alt1"
+	icon_state = "doski_oblomki_alt"
 
 /obj/structure/stalker/doski/doski_alt2
 	icon_state = "doski_oblomki_alt2"

@@ -77,6 +77,10 @@
 	name = "chemical bottle"
 	icon_state = "chembottle"
 
+/obj/item/trash/brokenpocketwatch
+	name = "broken pocket watch"
+	icon_state = "brokenpocketwatch"
+
 // Porn Mags
 
 /obj/item/trash/pornmagazine

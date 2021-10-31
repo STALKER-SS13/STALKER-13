@@ -18,6 +18,13 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/katushka
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "katushka"
+	density = 1
+	anchored = 1
+
 /obj/structure/stalker/cacheable/junk_dresser
 	name = "burnt dresser"
 	icon = 'stalker/icons/decor.dmi'

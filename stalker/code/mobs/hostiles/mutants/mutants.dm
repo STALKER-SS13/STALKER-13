@@ -96,7 +96,7 @@
 	//random_butcher_results = 1
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
-	rating_add = 15
+	rating_add = 25
 	vision_range = 7
 	aggro_vision_range = 7
 
@@ -244,7 +244,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
 	move_to_delay = 3
-	rating_add = 10
+	rating_add = 25
 	vision_range = 7
 	aggro_vision_range = 7
 
@@ -337,7 +337,7 @@
 	attack_type = "claw"
 	move_to_delay = 1.8
 	speak_chance = 0.5
-	rating_add = 150
+	rating_add = 500
 	vision_range = 7
 	aggro_vision_range = 7
 
@@ -418,7 +418,7 @@
 	attack_type = "bite"
 	move_to_delay = 1.4
 	speak_chance = 10
-	rating_add = 100
+	rating_add = 250
 
 /mob/living/simple_animal/hostile/mutant/controller
 	name = "Controller"
@@ -467,7 +467,7 @@
 	var/attack_stage = 0
 	var/last_attack_time = 0
 	//see_through_walls = 1
-	rating_add = 350
+	rating_add = 800
 	//long_attack = 1
 
 /mob/living/simple_animal/hostile/mutant/controller/Life()

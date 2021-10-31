@@ -3,6 +3,12 @@ GLOBAL_LIST_EMPTY(low_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(medium_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(high_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(real_sidormat_items)
+//rating_tier
+var/list/rookie_sidormatitems = list()
+var/list/experienced_sidormatitems = list()
+var/list/veteran_sidormatitems = list()
+var/list/expert_sidormatitems = list()
+var/list/legend_sidormatitems = list()
 
 GLOBAL_LIST_INIT(global_sidormat_list, list(
 		///////////////////////////////  Оружие  /////////////////////////////////////////
@@ -28,11 +34,11 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("PPSh",			"PPSh",				/obj/item/gun/ballistic/automatic/ppsh,						15000,	ROOKIE),
 		new /datum/data/stalker_equipment("MP-5",			"MP-5",				/obj/item/gun/ballistic/automatic/mp5,						18000,	ROOKIE),
 		new /datum/data/stalker_equipment("AK-74S",			"AK-74S",			/obj/item/gun/ballistic/automatic/aksu74 ,					24000,	ROOKIE),
-		new /datum/data/stalker_equipment("AK-74",			"AK-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	ROOKIE),
+		new /datum/data/stalker_equipment("AK-74",			"AK-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("AS-96",			"AS-96",			/obj/item/gun/ballistic/automatic/abakan,					40000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("LR-300",			"LR-300",			/obj/item/gun/ballistic/automatic/tpc301,					40000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("L85",			"L85",				/obj/item/gun/ballistic/automatic/il86,						40000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Tunder OTs-14", 	"Tunder OTs-14",	/obj/item/gun/ballistic/automatic/groza,					35000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Tunder OTs-14", 	"Tunder OTs-14",	/obj/item/gun/ballistic/automatic/groza,					35000,	VETERAN),
 		new /datum/data/stalker_equipment("AS \"Val\"",		"AS \"Val\"",		/obj/item/gun/ballistic/automatic/val,						50000,	VETERAN),
 		new /datum/data/stalker_equipment("SIG SG 550",		"SIG SG 550",		/obj/item/gun/ballistic/automatic/sigsg550,					50000,	VETERAN),
 		new /datum/data/stalker_equipment("FN F2000",		"FN F2000",			/obj/item/gun/ballistic/automatic/fnf2000,					65000,	EXPERT),
@@ -388,6 +394,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	else
 		src.sale_price = cost/2
 	src.assortment_level = assortment_level
+
 	switch(cost)
 		if(0 to TRASH_TIER_COST)
 			GLOB.trash_tier_sidormatitems += src
@@ -400,7 +407,20 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 		if(LOW_TIER_COST to HIGH_TIER_COST)
 			GLOB.high_tier_sidormatitems += src
+
 	GLOB.real_sidormat_items += src
+
+	switch(rating)//causes runtimes but whatever. It works 100%. Probably.
+		if(0 to ROOKIE)
+			rookie_sidormatitems += src
+		if(0 to EXPERIENCED)
+			experienced_sidormatitems += src
+		if(0 to VETERAN)
+			veteran_sidormatitems += src
+		if(0 to EXPERT)
+			expert_sidormatitems += src
+		if(0 to ZONE_LEGEND)
+			legend_sidormatitems += src
 
 /datum/data/stalker_equipment/proc/GetCost()
 	return src.sale_price
@@ -497,9 +517,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 			dat += "<tr><td><center><big><b>[L]</b></big></center></td><td></td><td></td></tr>"
 			for(var/datum/data/stalker_equipment/prize in GLOB.global_sidormat_list[L])
 				if((sk.fields["faction_s"] == prize.faction && ((sk.fields["faction_s"] in special_factions) || (switches & SHOW_FACTION_EQUIPMENT))) || prize.faction == "Everyone")
-					//if(rating >= prize.rating)
-					if(get_assortment_level(H) >= prize.assortment_level)
-						dat += "<tr><td>[prize.name]</td><td>[prize.cost]</td><td><A href='?src=\ref[src];purchase=\ref[prize]'>Buy</A></td></tr>"
+					if(rating >= prize.rating)
+						if(get_assortment_level(H) >= prize.assortment_level)
+							dat += "<tr><td><img src='data:image/jpeg;base64,[GetIconForProduct(prize)]'/></td><td>[prize.name_ru]</td><td>[prize.cost]</td><td><A href='?src=\ref[src];purchase=\ref[prize]'>Buy</A></td></tr>"
 
 		dat += "</table>"
 		dat += "</div>"
@@ -524,9 +544,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 			dat += "<tr><td></td><td><center><b>[L]</b></center></td><td></td><td></td></tr>"
 			for(var/datum/data/stalker_equipment/prize in GLOB.global_sidormat_list[L])
 				if((sk.fields["faction_s"] == prize.faction && ((sk.fields["faction_s"] in special_factions) || (switches & SHOW_FACTION_EQUIPMENT))) || prize.faction == "Everyone")
-					//if(rating >= prize.rating)
-					if(get_assortment_level(H) >= prize.assortment_level)
-						dat += "<tr><td><img src='data:image/jpeg;base64,[GetIconForProduct(prize)]'/></td><td>[prize.name_ru]</td><td>[prize.cost]</td><td><A href='?src=\ref[src];purchase=\ref[prize]'>Buy</A></td></tr>"
+					if(rating >= prize.rating)
+						if(get_assortment_level(H) >= prize.assortment_level)
+							dat += "<tr><td><img src='data:image/jpeg;base64,[GetIconForProduct(prize)]'/></td><td>[prize.name_ru]</td><td>[prize.cost]</td><td><A href='?src=\ref[src];purchase=\ref[prize]'>Buy</A></td></tr>"
 		dat += "</table>"
 		dat += "</div>"
 

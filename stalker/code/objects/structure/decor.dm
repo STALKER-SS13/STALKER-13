@@ -25,6 +25,27 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/rustymachine/transformator
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "transformator"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/rustymachine/transformator2
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "transformator2"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/transformator
+	name = "machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "toilet00"
+	density = 1
+	anchored = 1
+
 /obj/structure/stalker/cacheable/junk_dresser
 	name = "burnt dresser"
 	icon = 'stalker/icons/decor.dmi'

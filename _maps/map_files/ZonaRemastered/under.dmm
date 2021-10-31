@@ -1531,12 +1531,8 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "fS" = (
-/obj/structure/grille/stalker{
-	density = 0;
-	icon_state = "fence5"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker)
 "fT" = (
 /obj/structure/closet/stalker/shkaf,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -1578,20 +1574,25 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "gc" = (
-/obj/structure/chair/wood/normal,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/structure/grille/stalker{
+	density = 0;
+	icon_state = "fence5"
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "gd" = (
-/obj/structure/barricade/stalker/box,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "ge" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "gf" = (
-/obj/structure/table/stalker,
-/obj/item/stalker/blue_box,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "gg" = (
 /obj/structure/table/reinforced,
@@ -1626,10 +1627,8 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "gm" = (
-/obj/structure/stalker/lift{
-	pixel_y = 32
-	},
-/turf/open/stalker/floor/plasteel/plitochka,
+/obj/structure/chair/wood/normal,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "gn" = (
 /obj/structure/sign/departments/science{
@@ -1641,6 +1640,10 @@
 /obj/structure/stalker/lift{
 	pixel_y = 32
 	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
+	pixel_x = 7;
+	pixel_y = -1
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "gp" = (
@@ -1648,20 +1651,12 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "gq" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 58;
-	teleport_y = 176;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/lattice,
+/obj/structure/barricade/stalker/box,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "gr" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 62;
-	teleport_y = 176;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/lattice,
+/obj/structure/stalker/lift,
+/turf/closed/wall/stalker/beton,
 /area/stalker/buildings/backwater/krug)
 "gs" = (
 /obj/structure/safe,
@@ -2007,8 +2002,10 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater/krug)
 "hJ" = (
-/turf/closed/wall/stalker/beton,
-/area/stalker)
+/obj/structure/table/stalker,
+/obj/item/stalker/blue_box,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "hK" = (
 /obj/machinery/button/door{
 	id = 1;
@@ -2040,12 +2037,14 @@
 /area/stalker/buildings/backwater/ranger)
 "hP" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 22;
-	teleport_y = 159;
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 21;
+	teleport_y = 160;
 	teleport_z = 2
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker)
+/area/stalker/buildings/backwater/krug)
 "hQ" = (
 /obj/machinery/door/poddoor/sidor{
 	icon_state = "closed0";
@@ -2070,8 +2069,14 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
 "hV" = (
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 58;
+	teleport_y = 175;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "hW" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 15;
@@ -2323,8 +2328,13 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "iS" = (
-/obj/structure/closet/crate/stalker/blue/stash/low,
-/turf/open/stalker/floor/gryaz,
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 62;
+	teleport_y = 175;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "iT" = (
 /obj/machinery/light/small/broken{
@@ -2355,15 +2365,15 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "iZ" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/reagent_containers/food/snacks/stalker/konserva,
-/obj/item/reagent_containers/food/snacks/stalker/konserva,
-/turf/open/stalker/floor/gryaz,
+/obj/structure/stalker/lift{
+	dir = 8;
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "ja" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/kitchen/knife,
-/turf/open/stalker/floor/plasteel/plitochka,
+/obj/structure/sign/poster/official/work_for_a_future,
+/turf/closed/wall/stalker/beton,
 /area/stalker/buildings/backwater/krug)
 "jb" = (
 /obj/structure/barricade/stalker/box,
@@ -2374,25 +2384,35 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "jd" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/geiger_counter,
-/turf/open/stalker/floor/gryaz,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 104;
+	teleport_y = 183;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "je" = (
 /obj/machinery/light/small/broken,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "jf" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/turf/open/stalker/floor/gryaz,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 108;
+	teleport_y = 183;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "jg" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/gun/ballistic/automatic/pistol/fort12,
-/turf/open/stalker/floor/plasteel/plitochka,
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 2;
+	teleport_y = 138;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "jh" = (
 /obj/structure/chair/comfy/teal{
@@ -2406,8 +2426,13 @@
 	},
 /area/stalker/buildings/backwater/ranger)
 "jj" = (
-/obj/structure/stalker/cacheable/porog,
-/turf/open/stalker/floor/plasteel/plitochka,
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 7;
+	teleport_y = 138;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "jk" = (
 /obj/effect/step_trigger/teleporter{
@@ -2449,8 +2474,8 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "jq" = (
-/obj/structure/stalker/doski,
-/turf/open/stalker/floor/plasteel/plitochka,
+/obj/machinery/door/poddoor/sidor,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "jr" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
@@ -2468,6 +2493,7 @@
 /area/stalker/buildings/backwater/krug)
 "ju" = (
 /obj/effect/step_trigger/teleporter{
+	icon_state = "up";
 	teleport_x = 12;
 	teleport_y = 136;
 	teleport_z = 2
@@ -2548,7 +2574,6 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "jH" = (
-/obj/structure/stalker/doski/doski2,
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	teleport_x = 12;
@@ -3408,8 +3433,9 @@
 /area/stalker/buildings/backwater/ironforest)
 "mz" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 35;
-	teleport_y = 86;
+	icon_state = "up";
+	teleport_x = 38;
+	teleport_y = 46;
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker{
@@ -3511,8 +3537,9 @@
 /area/stalker/buildings/backwater/ironforest)
 "mS" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 36;
-	teleport_y = 86;
+	icon_state = "up";
+	teleport_x = 39;
+	teleport_y = 46;
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker{
@@ -3541,11 +3568,10 @@
 /area/stalker/buildings/backwater/ironforest)
 "mX" = (
 /obj/effect/step_trigger/teleporter{
-	dir = 8;
-	icon_state = "up";
-	teleport_x = 47;
-	teleport_y = 15;
-	teleport_z = 1
+	dir = 4;
+	teleport_x = 55;
+	teleport_y = 82;
+	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -3627,8 +3653,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	icon_state = "up";
-	teleport_x = 25;
-	teleport_y = 36;
+	teleport_x = 33;
+	teleport_y = 47;
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker,
@@ -3643,9 +3669,8 @@
 "no" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	icon_state = "up";
-	teleport_x = 19;
-	teleport_y = 51;
+	teleport_x = 25;
+	teleport_y = 41;
 	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker,
@@ -3891,14 +3916,9 @@
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "oL" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 37;
-	teleport_y = 91;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/agroprom/beton,
-/area/stalker/buildings/backwater/ironforest)
+/obj/machinery/door/poddoor/sidor,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "oQ" = (
 /obj/anomaly/electro,
 /turf/closed/mineral,
@@ -3913,12 +3933,30 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"pp" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/kitchen/knife,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "pE" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/anomaly/tramplin,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"pH" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	icon_state = "up";
+	teleport_x = 49;
+	teleport_y = 81;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 8;
+	tag = "icon-ladder (EAST)"
+	},
+/area/stalker/buildings/backwater/ironforest)
 "pK" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -3949,6 +3987,16 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"qw" = (
+/obj/structure/sign/departments/science{
+	pixel_y = 32
+	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "qA" = (
 /obj/structure/table/stalker,
 /obj/item/pen/fountain,
@@ -4002,6 +4050,10 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"rC" = (
+/obj/structure/closet/crate/stalker/blue/stash/low,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "rJ" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -4032,16 +4084,21 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/melee,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"sr" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/gun/ballistic/automatic/pistol/fort12,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "sw" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "sL" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 7;
-	teleport_y = 138;
-	teleport_z = 2
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
@@ -4050,6 +4107,30 @@
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
+"td" = (
+/obj/structure/stalker/lift{
+	pixel_y = 32
+	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
+	pixel_x = 13
+	},
+/obj/structure/stalker/cacheable/bochka/red{
+	pixel_x = -13;
+	pixel_y = 7
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
+"tf" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 37;
+	teleport_y = 91;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/ironforest)
 "tF" = (
 /obj/item/stack/spacecash/c5000,
 /obj/item/candle{
@@ -4092,6 +4173,11 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"uG" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/geiger_counter,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "uQ" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/holofloor/wood,
@@ -4112,8 +4198,18 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
 "vN" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker)
+/obj/machinery/door/poddoor/shutters/preopen,
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	teleport_x = 70;
+	teleport_y = 184;
+	teleport_z = 2
+	},
+/obj/structure/sign/warning{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "vU" = (
 /turf/closed/wall/stalker/bricks_yellow,
 /area/stalker/buildings/backwater/claw)
@@ -4223,14 +4319,17 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "yG" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 36;
-	teleport_y = 91;
-	teleport_z = 2
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
 	},
-/turf/open/stalker/floor/agroprom/beton,
-/area/stalker/buildings/backwater/ironforest)
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "yJ" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/mineral/titanium,
@@ -4245,6 +4344,15 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"yL" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 25;
+	teleport_y = 36;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/ironforest)
 "yM" = (
 /turf/closed/wall/rust,
 /area/stalker)
@@ -4266,6 +4374,17 @@
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
+"yZ" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 36;
+	teleport_y = 91;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/ironforest)
 "za" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/holofloor/wood,
@@ -4285,6 +4404,12 @@
 /obj/structure/curtain,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"Ag" = (
+/obj/structure/stalker/cacheable/yashik{
+	pixel_x = -4
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "Ar" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/stalker/cacheable/shitok{
@@ -4384,6 +4509,10 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"DS" = (
+/obj/structure/stalker/cacheable/yashik,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "DT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/rad/rad_low,
@@ -4431,6 +4560,15 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"FA" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 47;
+	teleport_y = 15;
+	teleport_z = 1
+	},
+/turf/closed/mineral,
+/area/stalker/buildings/backwater/ironforest)
 "FX" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -4458,6 +4596,13 @@
 "GP" = (
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"Hp" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "Hs" = (
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
@@ -4482,6 +4627,14 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/pistolstier2,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"Is" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 19;
+	teleport_y = 51;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/ironforest)
 "It" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
@@ -4503,6 +4656,10 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Jc" = (
+/obj/structure/stalker/doski,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "Ju" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -4589,18 +4746,19 @@
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "Lr" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 2;
-	teleport_y = 138;
-	teleport_z = 2
-	},
+/obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "LC" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"LK" = (
+/obj/structure/stalker/radiation/stop{
+	pixel_y = -5
+	},
+/turf/closed/wall/stalker/beton,
+/area/stalker/buildings/backwater/krug)
 "LM" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plasteel/dark,
@@ -4953,6 +5111,12 @@
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"Ym" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/reagent_containers/food/snacks/stalker/konserva,
+/obj/item/reagent_containers/food/snacks/stalker/konserva,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "Yr" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5880,7 +6044,7 @@ fj
 ge
 ge
 ge
-fj
+jq
 ge
 ge
 gk
@@ -6923,7 +7087,7 @@ fg
 fg
 fg
 fg
-fj
+fg
 fg
 fg
 fg
@@ -7180,7 +7344,7 @@ ad
 ad
 ad
 ad
-vN
+ad
 ad
 ad
 ad
@@ -7437,7 +7601,7 @@ fg
 fg
 fg
 fg
-fj
+fg
 fg
 fg
 ad
@@ -7691,7 +7855,7 @@ fj
 hm
 gM
 gM
-fg
+ge
 gM
 gM
 fj
@@ -8205,7 +8369,7 @@ ge
 ge
 ge
 gM
-fg
+gM
 gM
 gM
 ge
@@ -8446,11 +8610,11 @@ ad
 ad
 ad
 ad
-hJ
-hJ
-hJ
-hJ
-hJ
+fg
+fg
+fg
+fg
+fg
 ad
 fg
 gM
@@ -8703,15 +8867,15 @@ ad
 ad
 ad
 ad
-hJ
+fg
 hP
-hV
-hV
-hJ
+ge
+ge
+fg
 ad
 fg
 gM
-gM
+ge
 fg
 iL
 fg
@@ -8967,8 +9131,8 @@ ib
 fg
 fg
 fg
-gM
-gM
+ge
+ge
 fg
 fg
 fg
@@ -9225,17 +9389,17 @@ gM
 gM
 gM
 gM
-gM
+ge
 fg
 iM
 iu
 gM
 ge
 ge
-ge
-ge
-ge
-ge
+fg
+sL
+Lr
+fj
 ge
 gM
 iu
@@ -9489,9 +9653,9 @@ gM
 ge
 ge
 ge
-gM
-gM
-gM
+fg
+vN
+LK
 ge
 ge
 ge
@@ -9746,10 +9910,10 @@ gM
 ge
 iY
 gM
-gM
-iu
-gM
-gM
+fg
+yG
+gr
+fj
 jp
 js
 jv
@@ -10002,7 +10166,7 @@ fg
 fg
 fg
 fg
-fg
+oL
 fg
 fg
 fg
@@ -10245,8 +10409,8 @@ fA
 fg
 ge
 ge
-ge
-fg
+hz
+hz
 hW
 fg
 gE
@@ -10257,20 +10421,20 @@ gA
 iG
 iG
 fg
-iS
-iZ
-jd
-jf
+ge
+ge
+ge
+ge
 fg
 ge
 ge
 ge
 ge
 ge
+fg
+rC
 ge
-ge
-ge
-ge
+rC
 fg
 fr
 iW
@@ -10504,7 +10668,7 @@ ge
 ge
 ge
 fg
-hz
+fg
 fg
 ih
 hm
@@ -10517,17 +10681,17 @@ fg
 iT
 ge
 fn
-fn
-jj
-fn
-fn
-fn
+fg
+fg
+fg
+Ag
+Jc
 fg
 fn
-ge
-ge
+fg
+pp
 jJ
-ge
+Ym
 fg
 fr
 iW
@@ -10758,10 +10922,10 @@ ge
 ge
 ge
 ge
-ge
+fg
 ge
 fg
-hz
+fJ
 fg
 gA
 hz
@@ -10771,20 +10935,20 @@ hz
 hz
 iG
 fg
-iS
-ja
-fR
-jg
+ge
+fn
+fn
 fg
+fZ
+fg
+td
 fn
-fn
-jq
 jt
 fn
-fn
-fn
+fg
+fR
 ge
-ge
+uG
 fg
 fr
 fj
@@ -10880,10 +11044,10 @@ kg
 ki
 ki
 kg
-ad
-ad
-ad
-ad
+kG
+kG
+kG
+kG
 kg
 kg
 kg
@@ -11017,7 +11181,7 @@ fg
 ge
 ge
 ge
-ge
+fJ
 ge
 fg
 fg
@@ -11032,16 +11196,16 @@ fg
 fg
 fg
 fg
+fZ
 fg
+qw
+fn
+fn
+fn
 fg
-fn
-fn
-fn
-fn
-fn
-fn
+sr
 ge
-ge
+Hp
 fg
 fr
 fj
@@ -11136,10 +11300,10 @@ ad
 kg
 ki
 ki
+ki
 kG
-ad
-ad
-ad
+kG
+kG
 kG
 kG
 ki
@@ -11271,7 +11435,7 @@ fA
 fA
 fA
 fg
-ge
+fg
 ge
 ge
 ge
@@ -11293,12 +11457,12 @@ fZ
 fg
 go
 fn
+DS
 fn
+fg
+fg
 fn
-fn
-fn
-fn
-ge
+fg
 fg
 fr
 jQ
@@ -11393,10 +11557,10 @@ ad
 kg
 kG
 kG
+ki
+yL
 kG
-ad
-ad
-ad
+kG
 no
 ki
 ki
@@ -11546,15 +11710,15 @@ iU
 fn
 je
 fg
-fZ
 fg
-gn
+fg
+gk
 fn
 fn
 fn
 fn
 je
-fg
+ge
 ge
 fg
 fr
@@ -11651,9 +11815,9 @@ kg
 ks
 ks
 kg
-cb
-cb
-cb
+kg
+kg
+kg
 kg
 kg
 kg
@@ -11775,8 +11939,8 @@ fg
 ad
 ad
 fg
-Lr
 ge
+jg
 fg
 ad
 fg
@@ -11802,13 +11966,13 @@ fj
 fg
 fn
 fn
+fn
 fg
-fZ
-fg
-go
+ge
 fn
 fn
 fn
+DS
 fn
 fn
 fn
@@ -11909,11 +12073,11 @@ kk
 kk
 kg
 ad
-ai
-ai
-ai
-ai
-ai
+ad
+ad
+ad
+ad
+ad
 kg
 kk
 ki
@@ -12032,8 +12196,8 @@ fg
 fg
 fg
 fg
-fg
 ge
+fg
 fg
 ad
 fg
@@ -12059,9 +12223,9 @@ fg
 fg
 fg
 fn
+ge
 fg
-fg
-fg
+ge
 ge
 fn
 fn
@@ -12166,11 +12330,11 @@ kk
 kk
 kg
 ad
-ai
-ai
-ai
-ai
-ai
+ad
+ad
+ad
+ad
+ad
 kg
 mU
 mU
@@ -12556,7 +12720,7 @@ ad
 ad
 ad
 fg
-ge
+fg
 ge
 ge
 ge
@@ -12803,20 +12967,20 @@ fg
 fg
 fg
 fg
-fg
-ge
-fg
-ad
-ad
-ad
-fA
-fA
-fA
-fg
-fg
 ge
 fg
 fg
+ad
+ad
+ad
+fA
+fA
+fA
+fA
+fg
+ge
+ge
+ge
 fg
 fg
 fg
@@ -12930,8 +13094,8 @@ kg
 mv
 kg
 kg
-cb
-cb
+kg
+kg
 kg
 kk
 kk
@@ -13060,8 +13224,8 @@ fg
 ad
 ad
 fg
-sL
 ge
+jj
 fg
 ad
 ad
@@ -13073,7 +13237,7 @@ fA
 ge
 ge
 ge
-fA
+fg
 fA
 fA
 fg
@@ -13187,8 +13351,8 @@ mA
 ki
 ki
 kg
-ad
-ad
+kG
+kG
 kg
 kk
 kk
@@ -13443,9 +13607,9 @@ lx
 me
 ki
 ki
-kg
-ad
-ad
+ki
+Is
+kG
 kg
 kk
 kk
@@ -13701,8 +13865,8 @@ ki
 ki
 kr
 kg
-ad
-ad
+kG
+kG
 kg
 lv
 kk
@@ -13917,7 +14081,7 @@ kg
 kg
 kg
 ad
-yG
+kG
 kQ
 kQ
 kQ
@@ -14174,7 +14338,7 @@ kk
 mz
 kG
 ad
-oL
+kG
 kQ
 kQ
 kQ
@@ -14728,10 +14892,10 @@ lj
 ki
 ki
 kg
+yZ
 kW
 kW
-kW
-kh
+ki
 ki
 ki
 lw
@@ -14985,10 +15149,10 @@ kG
 ki
 ki
 kg
+tf
 kW
 kW
-kW
-kh
+ki
 ki
 ki
 mN
@@ -17779,7 +17943,7 @@ ki
 kG
 kg
 mX
-kG
+FA
 kg
 lo
 kk
@@ -18547,8 +18711,8 @@ kV
 ll
 ki
 ki
-ki
 kG
+kg
 kG
 kG
 kg
@@ -18803,10 +18967,10 @@ ki
 ki
 ki
 ki
-ki
 kG
 kG
-kG
+pH
+kg
 kG
 lj
 ki
@@ -19060,10 +19224,10 @@ ki
 ki
 ki
 ki
-kG
-kG
-kG
-kG
+kg
+ki
+ki
+kg
 kG
 kG
 kG
@@ -19317,8 +19481,8 @@ ki
 ki
 ki
 ki
-kG
-kG
+ki
+ki
 kG
 kG
 kG
@@ -19739,7 +19903,7 @@ fA
 ad
 ad
 fg
-fJ
+jd
 gM
 gM
 fg
@@ -20767,7 +20931,7 @@ fA
 ad
 ad
 fg
-fJ
+jf
 gM
 gM
 fg
@@ -21262,7 +21426,7 @@ ai
 ai
 ad
 fg
-fl
+gw
 fl
 fg
 fg
@@ -22558,9 +22722,9 @@ fQ
 fg
 ad
 fg
-fZ
-fg
-gm
+jL
+gr
+fn
 fn
 fn
 gz
@@ -22815,7 +22979,7 @@ fQ
 fg
 ad
 fg
-fZ
+gd
 fg
 gn
 fn
@@ -23072,13 +23236,13 @@ fy
 fg
 ad
 fg
-fZ
-fg
-go
-fn
+gf
+jM
+ge
+iZ
 fn
 fx
-fg
+ja
 ad
 ad
 ad
@@ -30521,14 +30685,14 @@ ai
 ai
 ai
 ad
-fr
-fr
-fr
+ad
+ad
+ad
 fr
 fj
 fj
 fr
-fr
+ad
 ad
 ai
 ai
@@ -30778,14 +30942,14 @@ ai
 ai
 ai
 ad
+ad
+ad
+ad
 fr
-fJ
-fJ
-fS
 fj
 fj
-gq
 fr
+ad
 ad
 ai
 ai
@@ -31035,14 +31199,14 @@ ai
 ai
 ai
 ad
-fr
-fr
-fr
+ad
+ad
+ad
 fr
 fj
 fj
 fr
-fr
+ad
 ad
 ai
 ai
@@ -31292,14 +31456,14 @@ ai
 ai
 ai
 ad
-ad
-ad
-ad
 fr
-gc
+fr
+fr
+fr
+fj
 fj
 fr
-ad
+fr
 ad
 ai
 ai
@@ -31550,12 +31714,12 @@ ai
 ai
 ad
 fr
-fr
-fr
-fr
+fJ
+fJ
+gc
 fj
 fj
-fr
+hV
 fr
 ad
 ai
@@ -31807,12 +31971,12 @@ ai
 ai
 ad
 fr
-fJ
-fJ
-fS
+fr
+fr
+fr
 fj
 fj
-gr
+fr
 fr
 ad
 ai
@@ -32063,14 +32227,14 @@ ai
 ai
 ai
 ad
+ad
+ad
+ad
 fr
-fr
-fr
-fr
+gm
 fj
-fj
 fr
-fr
+ad
 ad
 ai
 ai
@@ -32320,14 +32484,14 @@ ai
 ai
 ai
 ad
-ad
-ad
-ad
 fr
-gd
-gf
 fr
-ad
+fr
+fr
+fj
+fj
+fr
+fr
 ad
 ai
 ai
@@ -32576,16 +32740,16 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
 ad
 fr
-fr
-fr
+fJ
+fJ
+gc
+fj
+fj
+iS
 fr
 ad
-ai
 ai
 ai
 ai
@@ -32833,15 +32997,15 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
 ad
-ad
-ad
-ad
-ad
-ad
+fr
+fr
+fr
+fr
+fj
+fj
+fr
+fr
 ai
 ai
 ai
@@ -33090,15 +33254,15 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+ad
+ad
+ad
+ad
+fr
+gq
+hJ
+fr
+ad
 ai
 ai
 ai
@@ -33350,12 +33514,12 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
+ad
+fr
+fr
+fr
+fr
+ad
 ai
 ai
 ai
@@ -52097,7 +52261,7 @@ ev
 bf
 dd
 dd
-dd
+fS
 dd
 dd
 dd

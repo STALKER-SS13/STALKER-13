@@ -242,7 +242,7 @@ SUBSYSTEM_DEF(blowout)
 	add_lenta_message(null, "0", "Sidorovich", "Loners", "Search, kill and sell the PDAs of stalkers with bad reputations!")
 
 
-	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners.
+//	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners. Disabled for now.
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)

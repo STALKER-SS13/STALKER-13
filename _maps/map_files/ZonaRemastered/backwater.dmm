@@ -2590,16 +2590,6 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/buildings/backwater/krug)
-"kP" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 8;
-	teleport_x = 12;
-	teleport_y = 141;
-	teleport_z = 2
-	},
-/obj/structure/stalker/luk,
-/turf/open/stalker/floor/road,
-/area/stalker/blowout/buildings/backwater/krug)
 "kQ" = (
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/buildings/backwater/krug)
@@ -5249,13 +5239,13 @@
 /obj/structure/stalker/car/mi24{
 	icon_state = "1,3"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uy" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "1,4"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uz" = (
 /obj/structure/stalker/car/uaz{
@@ -5277,20 +5267,20 @@
 /obj/structure/stalker/car/mi24{
 	icon_state = "2,2"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uD" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "2,3"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uE" = (
 /obj/structure/stalker/doski/doski2,
 /obj/structure/stalker/car/mi24{
 	icon_state = "2,4"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uF" = (
 /obj/structure/stalker/bigyashik{
@@ -5345,25 +5335,25 @@
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,1"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uR" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,2"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uS" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,3"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uT" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,4"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "uU" = (
 /obj/structure/stalker/bigyashik{
@@ -5409,25 +5399,25 @@
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,1"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "vd" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,2"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "ve" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,3"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "vf" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,4"
 	},
-/turf/open/stalker/floor/gryaz/gryaz3,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "vg" = (
 /obj/structure/bookcase/manuals/medical,
@@ -7502,14 +7492,13 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"IM" = (
+/obj/structure/grille/stalker,
+/turf/open/floor/plating/dirt,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "IU" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 49;
-	teleport_y = 81;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/wood/oldvert,
-/area/stalker/buildings/backwater/ironforest)
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "JQ" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -7527,16 +7516,16 @@
 /obj/structure/chair/brevno,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"KG" = (
+"Lg" = (
+/obj/rad/rad_medium,
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 36;
-	teleport_y = 91;
+	teleport_x = 49;
+	teleport_y = 81;
 	teleport_z = 2
 	},
-/obj/structure/stalker/luk,
 /turf/open/stalker/floor/gryaz/gryaz3,
-/area/stalker/blowout/outdoor/backwater)
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "Ma" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -7545,10 +7534,17 @@
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Mt" = (
+/obj/structure/stalker/cacheable/yashik,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/ironforest)
 "NX" = (
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
+"NZ" = (
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/ironforest)
 "Of" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -7559,14 +7555,7 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor/backwater)
 "Op" = (
-/obj/structure/grille/stalker,
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 19;
-	teleport_y = 51;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/digable/grass,
+/turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "OC" = (
 /obj/structure/mineral_door/wood,
@@ -7579,16 +7568,6 @@
 "QE" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
-"Rg" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 25;
-	teleport_y = 36;
-	teleport_z = 2
-	},
-/obj/structure/stalker/luk,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor/backwater/ironforest)
 "RI" = (
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7609,6 +7588,10 @@
 /obj/structure/stalker/doski/doski4,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"XR" = (
+/obj/rad/rad_medium,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/blowout/outdoor/backwater/ironforest)
 "Ys" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -7618,15 +7601,6 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor/backwater)
-"YO" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 19;
-	teleport_y = 51;
-	teleport_z = 2
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/backwater/ironforest)
 
 (1,1,1) = {"
 aa
@@ -11315,7 +11289,7 @@ bq
 bq
 kC
 kI
-kP
+kQ
 kA
 kY
 kA
@@ -12951,7 +12925,7 @@ bq
 bq
 bq
 dw
-YO
+tR
 tR
 tO
 fj
@@ -13473,7 +13447,7 @@ tR
 uP
 tR
 tI
-Rg
+tV
 tG
 tI
 vI
@@ -16532,7 +16506,7 @@ bq
 bq
 bg
 bq
-Op
+tz
 tG
 tJ
 tJ
@@ -16795,7 +16769,7 @@ tJ
 tH
 tH
 uv
-tH
+Op
 uQ
 vc
 tH
@@ -17818,8 +17792,8 @@ tJ
 tJ
 tJ
 tH
-tH
-tH
+IU
+IU
 tH
 tH
 tH
@@ -19643,10 +19617,10 @@ xX
 tC
 yu
 tC
-xX
-xX
-tH
-tz
+Lg
+XR
+Op
+IM
 tV
 tG
 tG
@@ -19901,7 +19875,7 @@ xZ
 ug
 ug
 ug
-ug
+Op
 ug
 ug
 tV
@@ -20156,9 +20130,9 @@ fu
 zr
 zw
 zw
-zw
-zw
-zA
+NZ
+NZ
+Mt
 ug
 tV
 tG
@@ -20413,8 +20387,8 @@ zs
 zw
 Aj
 zw
-zw
-zw
+NZ
+NZ
 xG
 tV
 tG
@@ -20670,7 +20644,7 @@ zz
 Ak
 AJ
 zw
-IU
+zw
 xG
 tV
 tG
@@ -37500,7 +37474,7 @@ bq
 ky
 ky
 bg
-KG
+bg
 hI
 sB
 sy

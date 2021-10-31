@@ -265,7 +265,7 @@
 	name = "artifact belt"
 	desc = "Special belt for artifacts."
 	icon = 'icons/obj/clothing/belts.dmi'
-	icon_state = "utilitybelt"
+	icon_state = "artifactbelt"
 	item_state = "utility"
 
 /obj/item/storage/belt/stalker/ComponentInitialize()
@@ -281,7 +281,7 @@
 	name = "small artifact belt"
 	desc = "Special belt for artifacts."
 	icon = 'icons/obj/clothing/belts.dmi'
-	icon_state = "fannypack_black"
+	icon_state = "artifactbeltsmall"
 	item_state = "artifacts"
 
 /obj/item/storage/belt/stalker/artifact_belt/small/ComponentInitialize()

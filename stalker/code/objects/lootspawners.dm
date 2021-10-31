@@ -317,6 +317,7 @@ obj/nothing/New()
 				/obj/item/trash/oldcircuitboard/alt = 15,
 				/obj/item/c_tube = 25,
 				/obj/item/newspaper = 20,
+				/obj/item/trash/brokenpocketwatch = 10,
 				/obj/item/trash/oldchembottle = 5,
 				/obj/nothing = 80)
 
@@ -378,3 +379,17 @@ obj/nothing/New()
 				/obj/item/clothing/head/steel = 20,
 				/obj/item/clothing/head/hardhat/tactical/light = 10,
 				/obj/nothing = 50)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/stockparts
+	name = "stalker stock parts"
+	loot = list(/obj/item/stock_parts/manipulator = 15,
+/obj/item/stock_parts/micro_laser = 15,
+/obj/item/stock_parts/matter_bin = 15,
+/obj/item/stock_parts/subspace/ansible = 15,
+/obj/item/stock_parts/subspace/filter = 15,
+/obj/item/stock_parts/subspace/amplifier = 15,
+/obj/item/stock_parts/subspace/analyzer = 15,
+/obj/item/stock_parts/rom1 = 15,
+/obj/item/stock_parts/hdd1 = 15,
+/obj/item/stock_parts/capacitor = 15,
+/obj/item/stock_parts/scanning_module = 15)

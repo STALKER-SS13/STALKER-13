@@ -4064,7 +4064,9 @@
 	tag = "icon-matras (NORTH)"
 	},
 /obj/item/radio,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "lg" = (
 /obj/structure/chair/brevno{
@@ -4090,7 +4092,9 @@
 "li" = (
 /obj/structure/stalker/tree,
 /obj/item/instrument/guitar,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "lj" = (
 /obj/structure/table/stalker/wood,
@@ -4143,7 +4147,7 @@
 "lt" = (
 /obj/structure/stalker/tree/leafless,
 /obj/anomaly/tramplin,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "lu" = (
 /obj/machinery/campfire/barrel,
@@ -4319,6 +4323,12 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
+"lR" = (
+/obj/structure/stalker/cacheable/bochka/red,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "lS" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,4"
@@ -4359,10 +4369,10 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
 "mb" = (
-/obj/structure/stalker/car/mi24{
-	icon_state = "1,1"
+/obj/effect/decal/cleanable/oil,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
 	},
-/turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "mc" = (
 /obj/structure/stalker/car/gryzovik2/south{
@@ -5472,7 +5482,9 @@
 /area/stalker/blowout/outdoor)
 "sH" = (
 /obj/item/trash/konserva/soup,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "sJ" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -5806,7 +5818,8 @@
 "vm" = (
 /obj/rad/rad_low,
 /obj/anomaly/tramplin,
-/turf/open/stalker/floor/digable/grass/dump,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "vr" = (
 /obj/item/trash/steelwire1,
@@ -5994,9 +6007,11 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "xi" = (
-/obj/rad/rad_medium,
-/obj/structure/stalker/cacheable/shina3,
-/turf/open/stalker/floor/digable/grass/dump,
+/obj/rad,
+/obj/rad,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "xk" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -6432,7 +6447,9 @@
 	pixel_y = 12
 	},
 /obj/effect/decal/cleanable/ash/large,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "BJ" = (
 /obj/rad/rad_medium,
@@ -6457,6 +6474,11 @@
 /obj/structure/stalker/cacheable/televizor/broken,
 /turf/closed/mineral/ash_rock,
 /area/stalker)
+"BY" = (
+/obj/structure/stalker/tree/leafless,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "Cc" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -6746,6 +6768,12 @@
 /obj/item/trash/cigs_trash,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"EA" = (
+/obj/anomaly/holodec,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "EB" = (
 /obj/structure/stalker/tree/leafless,
 /obj/effect/landmark/mobspawner/dog_spawner,
@@ -6989,6 +7017,17 @@
 /obj/structure/stalker/cacheable/televizor/broken,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"GM" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe2{
+	dir = 1;
+	icon_state = "truba2";
+	pixel_x = 0;
+	tag = "icon-truba2 (NORTH)"
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "GS" = (
 /obj/rad/rad_medium,
 /obj/structure/stalker/cacheable/bochka/red,
@@ -7095,6 +7134,12 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"HS" = (
+/obj/structure/stalker/blocks/vanish/block1,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "HT" = (
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
@@ -7117,6 +7162,13 @@
 /obj/structure/grille/stalker,
 /turf/closed/mineral/ash_rock,
 /area/stalker)
+"HY" = (
+/obj/structure/grille/stalker{
+	icon_state = "fence0";
+	tag = "icon-fence0"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "HZ" = (
 /obj/structure/stalker/cacheable/bochka/red{
 	pixel_x = -3;
@@ -7179,9 +7231,10 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "IP" = (
-/obj/rad/rad_high,
-/obj/rad/rad_high,
-/turf/open/stalker/floor/digable/grass/dump,
+/obj/effect/landmark/mobspawner/snork_spawner,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "IQ" = (
 /obj/rad/rad_medium,
@@ -7345,7 +7398,9 @@
 	density = 1;
 	pixel_y = 12
 	},
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "Ks" = (
 /obj/structure/stalker/blocks/vanish/shlagbaum1/shlagbaum2{
@@ -7479,6 +7534,12 @@
 "Lc" = (
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/water,
+/area/stalker/blowout/outdoor)
+"Ld" = (
+/obj/structure/grille/stalker{
+	icon_state = "fence2"
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Le" = (
 /obj/rad/rad_medium,
@@ -7761,6 +7822,15 @@
 /obj/structure/stalker/broke_table,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Nz" = (
+/obj/structure/stalker/bigyashik{
+	icon_state = "bigyashik 0,1";
+	tag = "icon-bigyashik 0,1"
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "NB" = (
 /obj/structure/stalker/cacheable/shina3,
 /obj/structure/stalker/shina,
@@ -7859,7 +7929,9 @@
 "OF" = (
 /obj/rad/rad_medium,
 /obj/structure/stalker/tree/leafless,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "OI" = (
 /obj/structure/simple_extractor,
@@ -7869,6 +7941,15 @@
 "OL" = (
 /obj/structure/stalker/cacheable/vanna,
 /turf/open/floor/plating/dirt/dark,
+/area/stalker/blowout/outdoor)
+"OM" = (
+/obj/structure/stalker/bigyashik{
+	icon_state = "bigyashik 1,1";
+	tag = "icon-bigyashik 1,1"
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "OP" = (
 /obj/rad/rad_medium,
@@ -8101,6 +8182,12 @@
 	icon_state = "1,2"
 	},
 /turf/open/floor/plating/dirt/dark,
+/area/stalker/blowout/outdoor)
+"QH" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe3,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "QJ" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
@@ -8618,10 +8705,18 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
+"Un" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe2,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "Uo" = (
 /obj/rad/rad_low,
 /obj/rad/rad_high,
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
 /area/stalker/blowout/outdoor)
 "Ut" = (
 /obj/effect/landmark/mobspawner/flesh_spawner,
@@ -8695,6 +8790,18 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"UQ" = (
+/obj/structure/stalker/blocks/vanish/pipe/pipe2{
+	dir = 4;
+	icon_state = "truba2";
+	pixel_x = 0;
+	pixel_y = 0;
+	tag = "icon-truba2 (EAST)"
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/blowout/outdoor)
 "UR" = (
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/medicine,
@@ -8732,7 +8839,7 @@
 /area/stalker/blowout/outdoor)
 "Vj" = (
 /obj/structure/table/stalker/wood,
-/obj/item/gun/ballistic/automatic/pistol/desert,
+/obj/effect/spawner/lootdrop/stalker/weapon/pistolstier3,
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "Vl" = (
@@ -8786,6 +8893,10 @@
 /obj/structure/stalker/doski/doski4,
 /turf/open/stalker/floor/wood/grey,
 /area/stalker)
+"VJ" = (
+/obj/structure/simple_extractor,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/kordon/banditbar)
 "VK" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/dirt,
@@ -23628,16 +23739,16 @@ WQ
 aa
 aa
 ag
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
 af
 af
 fq
@@ -23885,17 +23996,17 @@ WQ
 aa
 aa
 ag
-dh
-cu
-cu
-cv
-af
-af
+GM
+QH
+QH
+Un
+aM
+aM
 li
 ag
 ll
-af
-af
+aM
+aM
 aI
 af
 af
@@ -24146,13 +24257,13 @@ ag
 kP
 vd
 vd
-af
+aM
 ag
 ag
 ag
 ag
-af
-af
+aM
+aM
 af
 af
 br
@@ -24408,8 +24519,8 @@ lf
 ag
 ag
 ki
-af
-af
+aM
+aM
 af
 af
 af
@@ -24665,7 +24776,7 @@ vd
 ag
 aM
 aM
-af
+aM
 af
 af
 af
@@ -24922,7 +25033,7 @@ vd
 vd
 aM
 aM
-af
+aM
 af
 aM
 bD
@@ -25178,8 +25289,8 @@ vd
 vd
 vd
 vd
-bD
-af
+UQ
+aM
 af
 aM
 bE
@@ -25431,11 +25542,11 @@ ag
 ag
 ag
 vd
-dh
-cu
-cv
-aI
-ax
+GM
+QH
+Un
+aP
+bE
 af
 af
 bD
@@ -25687,11 +25798,11 @@ ag
 ag
 kS
 kX
-af
-af
-af
-af
-af
+aM
+aM
+aM
+aM
+aM
 ay
 af
 af
@@ -26212,10 +26323,10 @@ af
 ay
 eb
 af
-af
-af
-af
-af
+bM
+bM
+bM
+bM
 af
 af
 ag
@@ -26467,14 +26578,14 @@ af
 af
 af
 aI
-af
-af
-af
+bM
+bM
+bM
 vd
 vd
-af
+bM
 lt
-af
+bM
 af
 ag
 ag
@@ -26723,17 +26834,17 @@ cu
 cu
 cv
 af
-af
-af
+bM
+bM
 vd
 vd
 vd
-af
-af
-af
-af
-af
-af
+bM
+bM
+bM
+bM
+bM
+bM
 af
 ag
 ag
@@ -26979,18 +27090,18 @@ af
 af
 af
 af
-af
-af
+bM
+bM
 vd
 vd
 vd
-af
-af
+bM
+bM
 vd
 vd
 vd
 VQ
-af
+bM
 af
 af
 af
@@ -27236,19 +27347,19 @@ af
 aI
 af
 af
-af
-af
+bM
+bM
 vd
 vd
-af
-af
+bM
+bM
 vd
 vd
 vd
-af
-af
-af
-af
+bM
+bM
+bM
+bM
 af
 af
 af
@@ -27491,9 +27602,9 @@ aM
 aM
 af
 af
-af
 bM
-af
+bM
+bM
 vd
 vd
 vd
@@ -27501,12 +27612,12 @@ vd
 vd
 KE
 vd
-af
-af
-af
-af
-af
-bB
+bM
+bM
+bM
+bM
+bM
+lq
 af
 af
 bM
@@ -27746,9 +27857,9 @@ aM
 aI
 af
 af
-af
-af
-af
+bM
+bM
+bM
 vd
 dD
 dD
@@ -27758,12 +27869,12 @@ dD
 dD
 vd
 vd
-af
+bM
 vd
 vd
 vd
 vd
-af
+bM
 KL
 bM
 bM
@@ -27773,7 +27884,7 @@ bM
 bM
 bM
 bM
-af
+bM
 af
 bM
 bM
@@ -28003,8 +28114,8 @@ af
 af
 af
 af
-af
-af
+bM
+bM
 dD
 dD
 dD
@@ -28018,20 +28129,20 @@ dD
 vd
 vd
 vd
+bM
+bM
+bM
 af
+bM
+bM
 af
+bM
 vd
-af
-bM
-bM
-af
-bM
-bM
 vd
 vd
 eN
 bM
-af
+bM
 af
 af
 af
@@ -28259,8 +28370,8 @@ af
 af
 af
 af
-dZ
-af
+bM
+bM
 dD
 dD
 mS
@@ -28274,23 +28385,23 @@ mS
 dD
 dD
 KE
-af
-af
+bM
+bM
 dE
-af
-af
+bM
+bM
 af
 af
 af
 bM
-bM
-bM
+vd
+vd
 vd
 vd
 bM
 bM
-af
-af
+bM
+bM
 af
 af
 af
@@ -28516,7 +28627,7 @@ af
 af
 af
 af
-af
+bM
 dD
 dD
 mS
@@ -28531,24 +28642,24 @@ mS
 mS
 dD
 dD
-vd
-af
-vd
-vd
-af
-af
-af
-bM
-bM
-bM
 bM
 bM
 vd
 vd
 bM
-bM
 af
-aN
+af
+bM
+bM
+bM
+bM
+vd
+vd
+vd
+bM
+bM
+bM
+eN
 af
 af
 af
@@ -28772,8 +28883,8 @@ af
 af
 af
 af
-af
-af
+bM
+bM
 dD
 mS
 mS
@@ -28792,22 +28903,22 @@ dD
 vd
 vd
 vd
-af
+bM
 af
 bM
 bM
 bM
-af
 bM
 bM
 bM
 vd
 vd
+vd
 bM
 bM
 bM
-af
-af
+bM
+bM
 af
 aN
 af
@@ -29028,8 +29139,8 @@ dE
 af
 af
 af
-af
-af
+bM
+bM
 dD
 dD
 mS
@@ -29048,23 +29159,23 @@ mS
 dD
 vd
 KE
-af
-af
-af
 bM
 bM
-aN
-af
-cj
+bM
+bM
+bM
+eN
+bM
+HY
 zq
 zq
-bM
 vd
 vd
+vd
 zq
 zq
 zq
-bz
+zq
 bz
 bz
 bz
@@ -29283,9 +29394,9 @@ af
 af
 af
 af
-af
-af
-VB
+bM
+bM
+BY
 dD
 dD
 mS
@@ -29305,18 +29416,18 @@ mS
 dD
 vd
 vd
-af
-af
+bM
+bM
 af
 aN
 cj
 bz
 bz
-cm
-bo
+Ld
+bH
 bM
 bM
-bM
+vd
 vd
 vd
 bM
@@ -29539,8 +29650,8 @@ af
 af
 af
 af
-af
-af
+bM
+bM
 dD
 dD
 mS
@@ -29561,20 +29672,20 @@ bs
 mS
 dD
 dD
-af
-af
-af
+bM
+bM
+bM
 af
 af
 cl
 bo
 bH
 bo
-bo
-bo
 bH
-bM
-bM
+bH
+bH
+vd
+vd
 vd
 vd
 bM
@@ -29795,8 +29906,8 @@ af
 af
 af
 af
-af
-af
+bM
+bM
 dD
 dD
 mS
@@ -29818,7 +29929,7 @@ bs
 mS
 mS
 dD
-af
+bM
 vd
 vd
 af
@@ -29827,11 +29938,11 @@ cl
 xa
 yw
 bH
-Vp
-bo
-bo
+Hm
 bH
-bM
+bH
+bH
+vd
 Ut
 vd
 vd
@@ -30052,8 +30163,8 @@ af
 af
 af
 af
-bo
-bo
+bH
+bH
 dD
 mS
 mS
@@ -30085,8 +30196,8 @@ Yx
 yw
 yw
 Xd
-jL
-bo
+bH
+bH
 un
 bM
 bM
@@ -30309,7 +30420,7 @@ af
 aN
 bo
 bo
-bo
+bH
 mS
 mS
 mS
@@ -30344,7 +30455,7 @@ vd
 HG
 mq
 rf
-bo
+bH
 af
 dZ
 dZ
@@ -30601,7 +30712,7 @@ ma
 mj
 tO
 MI
-dD
+bH
 af
 pu
 dZ
@@ -30814,8 +30925,8 @@ bo
 bo
 bo
 aP
-af
-af
+aM
+aM
 bo
 bo
 bo
@@ -31069,9 +31180,9 @@ mS
 mS
 mS
 mS
-bo
-bo
-bo
+bt
+bt
+bt
 bo
 bo
 mS
@@ -31635,7 +31746,7 @@ dV
 af
 af
 af
-bo
+pd
 bH
 Xd
 Xd
@@ -32149,7 +32260,7 @@ IR
 dZ
 dZ
 af
-bo
+pd
 Xd
 FK
 ma
@@ -32405,8 +32516,8 @@ rV
 oU
 pu
 dZ
-af
-dD
+bo
+bH
 Xd
 Lb
 lB
@@ -32662,8 +32773,8 @@ mQ
 af
 PE
 af
-af
-bo
+bH
+pd
 dD
 Dh
 Pz
@@ -32918,8 +33029,8 @@ Hm
 af
 af
 Qb
-af
-af
+bM
+bM
 vd
 dD
 Hd
@@ -33175,7 +33286,7 @@ bo
 qH
 dZ
 af
-af
+bM
 vd
 vd
 vd
@@ -33352,7 +33463,7 @@ ad
 ad
 ad
 jP
-jT
+VJ
 jT
 Gd
 jE
@@ -33426,8 +33537,8 @@ GF
 lB
 qd
 Sn
-Xd
-bo
+yw
+bH
 af
 dZ
 dZ
@@ -33683,8 +33794,8 @@ Dh
 Pz
 Yr
 RR
-bo
-bo
+bH
+bH
 af
 pu
 dZ
@@ -33939,9 +34050,9 @@ lL
 Xd
 Xd
 Xd
-Vp
-bo
-af
+Hm
+bH
+bM
 af
 Vg
 af
@@ -34196,7 +34307,7 @@ lM
 Vp
 dD
 dD
-bo
+bH
 af
 af
 dZ
@@ -34333,10 +34444,10 @@ ru
 af
 af
 af
-af
-af
-af
-af
+aM
+aM
+aM
+aM
 af
 cl
 xa
@@ -34587,13 +34698,13 @@ af
 ru
 pl
 Yx
-af
-af
-af
-af
+aM
+aM
+aM
+aM
 vd
 vd
-bB
+kd
 af
 cl
 xa
@@ -34711,8 +34822,8 @@ dD
 bH
 bH
 EQ
-af
-af
+bM
+bM
 dZ
 dZ
 af
@@ -34843,14 +34954,14 @@ af
 ru
 af
 Xz
-af
-SX
+aM
+uV
 vd
-xa
+tv
 Xd
 vw
 Xd
-af
+aM
 af
 cl
 ce
@@ -34969,8 +35080,8 @@ dD
 dD
 dD
 dD
-bo
-af
+bH
+bM
 af
 af
 bM
@@ -35100,14 +35211,14 @@ af
 Jh
 pl
 Yx
-af
+aM
 vd
 yR
 Xw
 HG
 mq
 zC
-af
+aM
 af
 cl
 af
@@ -35227,7 +35338,7 @@ vd
 ol
 rJ
 dD
-af
+bM
 af
 Vg
 td
@@ -35357,14 +35468,14 @@ tv
 tv
 Yx
 af
-af
-af
+aM
+aM
 CM
 ma
 mj
 mr
-xa
-af
+tv
+aM
 aN
 cl
 xa
@@ -35484,7 +35595,7 @@ ma
 GX
 Ul
 dD
-af
+bM
 dZ
 pu
 af
@@ -35620,8 +35731,8 @@ uG
 lB
 lG
 Ol
-xa
-af
+tv
+aM
 af
 cl
 af
@@ -35740,8 +35851,8 @@ Lb
 lB
 qd
 Sn
-bo
-af
+bH
+bM
 HC
 dZ
 af
@@ -35871,14 +35982,14 @@ uJ
 aM
 tD
 Kr
-af
+aM
 vd
 Bm
 Pz
 lN
 lS
 IQ
-xa
+tv
 af
 ck
 af
@@ -35997,7 +36108,7 @@ Dh
 Pz
 Yr
 KZ
-bo
+bH
 VP
 dZ
 dZ
@@ -36126,16 +36237,16 @@ af
 nK
 aM
 aM
-Gh
+HZ
 BI
 pp
 vd
 Xd
-qC
-xa
+Kz
+tv
 qi
 DC
-xa
+tv
 af
 cl
 xa
@@ -36253,8 +36364,8 @@ dD
 dD
 bH
 bH
-bo
-af
+bH
+bM
 dZ
 dZ
 dZ
@@ -36373,8 +36484,8 @@ xa
 af
 af
 af
-af
-af
+aM
+aM
 af
 Vw
 Vw
@@ -36383,16 +36494,16 @@ MX
 aM
 uP
 aM
-af
+aM
 vd
 vd
 vd
-PJ
-af
-ru
+IP
+aM
+rY
 vd
 Zt
-af
+aM
 Da
 cl
 af
@@ -36625,13 +36736,13 @@ af
 af
 pc
 xa
-af
-af
-aN
-af
-af
-af
-af
+aM
+aM
+by
+aM
+aM
+aM
+aM
 af
 pR
 MX
@@ -36640,16 +36751,16 @@ aN
 aM
 tv
 bt
-af
+aM
 Qf
-OL
-af
-af
-af
-af
-pl
-af
-af
+rY
+aM
+aM
+aM
+aM
+EA
+aM
+aM
 af
 af
 cl
@@ -36882,7 +36993,7 @@ af
 af
 af
 Yx
-af
+aM
 tv
 vw
 ZL
@@ -36898,13 +37009,13 @@ aM
 aM
 bt
 sH
-af
-Da
+aM
+UY
 Fm
 Fm
 vd
 wl
-af
+aM
 ru
 af
 af
@@ -37139,13 +37250,13 @@ af
 xa
 af
 af
-af
+aM
 IK
 wG
 ol
 mq
 Ha
-af
+aM
 af
 af
 Gh
@@ -37154,14 +37265,14 @@ af
 af
 Ci
 bt
-af
-xa
+aM
+tv
 dD
 Xd
 Cp
 UW
 vd
-af
+aM
 Da
 af
 af
@@ -37288,7 +37399,7 @@ dZ
 dZ
 dZ
 UV
-af
+bM
 bM
 bH
 bH
@@ -37395,14 +37506,14 @@ af
 af
 af
 af
-af
-IP
+aM
+Qe
 CM
 ma
 mj
 mr
 KM
-af
+aM
 af
 yJ
 MX
@@ -37418,7 +37529,7 @@ HG
 sl
 ZL
 vd
-af
+aM
 af
 af
 af
@@ -37545,7 +37656,7 @@ BH
 dZ
 dZ
 pu
-af
+bM
 dD
 dD
 dD
@@ -37652,14 +37763,14 @@ xa
 xa
 pj
 af
-af
+aM
 vd
 uG
 lB
 lG
 ms
 jR
-af
+aM
 Da
 af
 af
@@ -37675,7 +37786,7 @@ mj
 mr
 vA
 vd
-WF
+Nz
 or
 af
 af
@@ -37801,8 +37912,8 @@ mL
 dZ
 dZ
 pu
-af
-mb
+bM
+MO
 Zn
 ol
 OC
@@ -37909,14 +38020,14 @@ tv
 pj
 xa
 af
-af
+aM
 vd
 Bm
 Xm
 wA
 uN
-xa
-QL
+tv
+xi
 MX
 QL
 af
@@ -37932,7 +38043,7 @@ lG
 SP
 jR
 vd
-Yo
+OM
 sF
 af
 af
@@ -38166,14 +38277,14 @@ uP
 xa
 pj
 af
-af
+aM
 ww
 Zt
 vd
 Zt
-WA
-af
-MX
+mb
+aM
+wd
 MX
 MX
 af
@@ -38187,9 +38298,9 @@ Bm
 Xm
 wA
 Mo
-af
-af
-af
+aM
+aM
+aM
 af
 aO
 jI
@@ -38315,13 +38426,13 @@ bM
 af
 dZ
 Vg
-af
+bM
 Lb
 lB
 lG
 Sn
 dD
-bB
+lq
 af
 cj
 cm
@@ -38423,12 +38534,12 @@ tv
 uP
 tv
 af
-af
+aM
 vd
 Zt
-Oj
-Oj
-af
+Sd
+Sd
+aM
 Da
 ht
 MX
@@ -38444,7 +38555,7 @@ vd
 vd
 Jc
 vd
-af
+aM
 af
 af
 af
@@ -38572,13 +38683,13 @@ bM
 af
 af
 af
-af
+bM
 Dh
 Pz
 Yr
 KZ
 dD
-af
+bM
 af
 Lf
 af
@@ -38680,11 +38791,11 @@ aM
 tv
 tv
 tv
-xa
-af
-af
-af
-af
+tv
+aM
+aM
+aM
+aM
 af
 af
 af
@@ -38699,9 +38810,9 @@ vr
 vd
 yK
 vd
-af
-af
-af
+aM
+aM
+aM
 af
 af
 kg
@@ -38830,12 +38941,12 @@ af
 af
 dZ
 qH
-af
+bM
 dD
 dD
 dD
-dD
-PJ
+bH
+qe
 af
 cl
 af
@@ -38953,10 +39064,10 @@ af
 af
 AO
 AO
-af
-af
-af
-af
+aM
+aM
+aM
+aM
 af
 af
 af
@@ -39087,12 +39198,12 @@ af
 af
 pu
 BH
-af
+bM
 vd
-dD
 bH
-af
-af
+bH
+bM
+bM
 af
 cl
 af
@@ -39344,8 +39455,8 @@ af
 af
 Vg
 af
-af
-af
+bM
+bM
 bH
 af
 af
@@ -44633,7 +44744,7 @@ af
 af
 af
 af
-Uf
+af
 af
 af
 dE
@@ -45262,7 +45373,7 @@ ad
 ad
 ad
 af
-af
+aM
 aM
 kd
 aM
@@ -45518,13 +45629,13 @@ ad
 ad
 ad
 ad
-af
+aM
 aM
 Uf
 vd
 aM
 aM
-af
+aM
 ag
 aa
 aa
@@ -46032,7 +46143,7 @@ ad
 ad
 ad
 ad
-Uf
+aM
 vd
 kd
 aM
@@ -46289,8 +46400,8 @@ ad
 ad
 ad
 ad
-Uf
-Uf
+aM
+aM
 aM
 af
 af
@@ -46972,7 +47083,7 @@ af
 af
 ad
 ad
-Uf
+ad
 ad
 ad
 ad
@@ -49597,8 +49708,8 @@ af
 af
 aV
 ad
-Uf
-Uf
+ad
+ad
 ad
 ad
 ad
@@ -50604,7 +50715,7 @@ ad
 ad
 ad
 ad
-Uf
+ad
 ad
 ad
 ad
@@ -51121,7 +51232,7 @@ ad
 ad
 ad
 ad
-Uf
+ad
 ad
 ad
 ad
@@ -51294,7 +51405,7 @@ af
 af
 af
 af
-Uf
+af
 af
 af
 af
@@ -51577,9 +51688,9 @@ tv
 tv
 aM
 aM
-af
-af
-af
+aM
+aM
+aM
 aM
 bt
 bt
@@ -51832,11 +51943,11 @@ af
 Vg
 aM
 aM
+aM
 vd
 vd
-vd
-vd
-vd
+aM
+aM
 aM
 bt
 bt
@@ -52093,8 +52204,8 @@ Uf
 Uf
 zB
 vd
-vd
-af
+aM
+aM
 bo
 bo
 bo
@@ -52344,14 +52455,14 @@ af
 af
 af
 GV
-vd
+aM
 sR
 Uf
 ol
 rJ
 Uf
 vd
-af
+aM
 af
 bo
 bo
@@ -52608,7 +52719,7 @@ GX
 Ul
 Uf
 vd
-af
+aM
 af
 bo
 bq
@@ -52864,8 +52975,8 @@ Np
 qd
 Sn
 Uf
-vd
-af
+aM
+aM
 af
 af
 bo
@@ -53114,15 +53225,15 @@ aM
 ql
 xa
 wU
-xa
+tv
 vd
 ZV
 Gu
 Yr
 HU
-Go
-af
-af
+Tl
+aM
+aM
 af
 af
 bo
@@ -53353,7 +53464,7 @@ xm
 bq
 aM
 Uo
-Yx
+Jh
 bt
 UU
 wG
@@ -53372,12 +53483,12 @@ af
 af
 Vg
 aM
-vd
+aM
 vd
 Yc
 vd
-vd
-af
+aM
+aM
 af
 af
 af
@@ -53629,12 +53740,12 @@ ng
 nj
 af
 aM
-af
-aM
-kJ
 aM
 aM
-xa
+HS
+aM
+aM
+tv
 xa
 xa
 xa
@@ -53874,8 +53985,8 @@ lB
 lG
 IS
 rY
-ru
-xa
+rY
+tv
 tv
 tv
 pc
@@ -54124,7 +54235,7 @@ FY
 bo
 aM
 uV
-xa
+tv
 Xd
 Bm
 Xm
@@ -54636,7 +54747,7 @@ aM
 aM
 bo
 bo
-af
+aM
 yK
 Xd
 Xd
@@ -54893,7 +55004,7 @@ aM
 aM
 xa
 af
-af
+aM
 vd
 Zt
 Vx
@@ -54917,10 +55028,10 @@ aM
 xa
 tv
 xa
-pj
-xa
-xa
-af
+uP
+tv
+tv
+aM
 af
 af
 af
@@ -55150,7 +55261,7 @@ af
 af
 xa
 kB
-af
+aM
 Zt
 SX
 lT
@@ -55173,11 +55284,11 @@ af
 Nu
 af
 aM
-af
-xa
+aM
+tv
 Xd
 Xd
-af
+aM
 af
 af
 af
@@ -55407,7 +55518,7 @@ af
 af
 xa
 af
-af
+aM
 Zt
 Xd
 yw
@@ -55430,11 +55541,11 @@ Vg
 aM
 Yb
 aM
-af
+aM
 vd
 Uf
 vd
-af
+aM
 af
 bB
 af
@@ -55664,7 +55775,7 @@ af
 af
 bo
 af
-af
+aM
 Kp
 Xd
 Xd
@@ -55922,7 +56033,7 @@ af
 bt
 af
 af
-af
+aM
 GS
 Xd
 Xd
@@ -55940,15 +56051,15 @@ uP
 tv
 tv
 af
-af
+aM
 aM
 ok
 TO
 GX
 Ul
 Uf
-af
-af
+aM
+aM
 af
 af
 af
@@ -56179,7 +56290,7 @@ af
 af
 af
 af
-bD
+UQ
 yw
 Xd
 Xd
@@ -56197,14 +56308,14 @@ tv
 aM
 aM
 af
-af
+aM
 vd
 TS
 Np
 qd
 Sn
-af
-af
+aM
+aM
 af
 af
 af
@@ -56454,14 +56565,14 @@ aM
 af
 aM
 UE
-Vg
+GV
 vd
 ZV
 Gu
 Yr
 HU
-af
-af
+aM
+aM
 ql
 af
 af
@@ -56711,13 +56822,13 @@ tv
 tv
 tv
 xa
-Vg
-vd
+GV
+aM
 Uf
 Uf
-af
-af
-af
+aM
+aM
+aM
 ET
 af
 af
@@ -56970,11 +57081,11 @@ tv
 pj
 xa
 GV
-af
-af
 aM
 aM
-af
+aM
+aM
+aM
 af
 af
 af
@@ -57209,8 +57320,8 @@ af
 xa
 xa
 pc
-SN
-SN
+lR
+lR
 Xd
 Xd
 tv
@@ -57227,7 +57338,7 @@ uP
 xa
 af
 GV
-af
+aM
 af
 af
 af
@@ -57467,9 +57578,9 @@ Cj
 pc
 pc
 xa
-xa
-xa
-xi
+tv
+tv
+Le
 tv
 tv
 Le

@@ -81,6 +81,20 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/cacheable/curtain_broken
+	name = "broken curtain"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "curtain_broken"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/junk_bench
+	name = "broken curtain"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "junk_bench"
+	density = 1
+	anchored = 1
+
 /obj/structure/bed/stalker/desecratedbed
 	name = "desecrated bed"
 	icon = 'stalker/icons/decor.dmi'
@@ -207,6 +221,41 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/cacheable/brokenmachine4
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine4"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine5
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine5"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine6
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine6"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine7
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine7"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/washer
+	name = "broken washing machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "washer"
+	density = 1
+	anchored = 1
+
 /obj/structure/sign/vendor
 	name = "vendor sign"
 	desc = "There's a vendor this way!"
@@ -322,9 +371,166 @@
 	density = 0
 	cache_size = 2
 
-/obj/structure/stalker/cacheable/body/New()
-	..()
-	icon_state = "vendmachine[rand(1,35)]"
+/obj/structure/stalker/cacheable/vendmachine2
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine2"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine3
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine3"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine4
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine4"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine5
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine5"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine6
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine6"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine7
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine7"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine8
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine8"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine9
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine9"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine10
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine10"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine11
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine11"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine12
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine12"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine13
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine13"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine14
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine14"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine15
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine15"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine16
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine16"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine17
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine17"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine18
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine18"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine19
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine19"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine20
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine20"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine21
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine21"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine22
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine22"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine23
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine23"
+	density = 0
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/vendmachine24
+	name = "a broken vending machine"
+	eng_desc = "A broken, dilapidated vending machine."
+	icon_state = "vendmachine24"
+	density = 0
+	cache_size = 2
 
 /obj/structure/stalker/cacheable/bochka
 	name = "barrel"
@@ -374,20 +580,26 @@
 	pass_flags = LETPASSTHROW
 	cache_size = 1
 
+/obj/structure/stalker/shinaold
+	name = "tire"
+	eng_desc = "A heavy old flat tire."
+	icon_state = "shinaold"
+	density = 1
+
 /obj/structure/stalker/shina
-	name = "shina"
+	name = "tire"
 	eng_desc = "A heavy old flat tire."
 	icon_state = "shina"
 	density = 1
 
 /obj/structure/stalker/shina2
-	name = "two shina"
+	name = "two tires"
 	eng_desc = "A couple of heavy old flat tires."
 	icon_state = "shina2"
 	density = 1
 
 /obj/structure/stalker/cacheable/shina3
-	name = "three shina"
+	name = "three tires"
 	eng_desc = "A couple of heavy old flat tires."
 	icon_state = "shina3"
 	density = 1
@@ -454,6 +666,13 @@
 	name = "bath"
 	eng_desc = "An old cast-iron bath. Nothing special."
 	icon_state = "vanna"
+	density = 1
+	cache_size =  2
+
+/obj/structure/stalker/cacheable/vanna2
+	name = "bath"
+	eng_desc = "An old cast-iron bath. Nothing special."
+	icon_state = "vann2"
 	density = 1
 	cache_size =  2
 
@@ -911,6 +1130,42 @@
 	eng_desc = "Rusty old gas stove. Covered with grease and dirt."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "gazovaya_plita_burn"
+	density = 1
+	anchored= 1
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/gasstove1
+	name = "stove"
+	eng_desc = "Rusty old gas stove. Covered with grease and dirt."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "gasstove1"
+	density = 1
+	anchored= 1
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/wardrobe2
+	name = "stove"
+	eng_desc = "Rusty old gas stove. Covered with grease and dirt."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "wardrobe2"
+	density = 1
+	anchored= 1
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/radiole
+	name = "stove"
+	eng_desc = "A broken soviet radio."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "radiole"
+	density = 1
+	anchored= 1
+	cache_size = 2
+
+/obj/structure/stalker/cacheable/gasstove2
+	name = "stove"
+	eng_desc = "Rusty old gas stove. Covered with grease and dirt."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "gasstove2"
 	density = 1
 	anchored= 1
 	cache_size = 2

@@ -44,7 +44,7 @@
 #define ui_drop_throw_wide "WEST-1,NORTH-9:18"
 #define ui_above_movement_wide "EAST+1,SOUTH+2:16" //rest
 #define ui_above_intent_wide "EAST+1,SOUTH+2" //resist
-#define ui_pull_intent_wide "WEST-1,SOUTH+4:18"
+#define ui_pull_intent_wide "EAST-1:11,SOUTH+1:7"
 #define ui_movi_wide "EAST+1,SOUTH+1"
 #define ui_acti_wide "WEST-2,NORTH-9:18"
 #define ui_zonesel_wide "EAST+1,SOUTH"
@@ -52,6 +52,7 @@
 #define ui_crafting_wide	"EAST+1,CENTER"
 #define ui_building_wide "EAST-4:22,SOUTH:21"
 #define ui_language_menu_wide "EAST-4:6,SOUTH:21"
+#define ui_bolt_wide "EAST-1.5,SOUTH+2.3"//should function with '2.3'.
 
 #define ui_borg_pull_wide "EAST-2:26,SOUTH+1:7"
 #define ui_borg_radio_wide "EAST-1:28,SOUTH+1:7"

@@ -2430,7 +2430,7 @@
 /obj/machinery/door/poddoor/sidor{
 	autoclose = 50;
 	icon_state = "closed0";
-	id = "penot1971"
+	id = "DoorToOut"
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
@@ -4860,7 +4860,7 @@
 /area/stalker)
 "Jp" = (
 /obj/machinery/button{
-	id = penot1971
+	id = "DoorToOut"
 	},
 /turf/closed/wall/stalker/ship,
 /area/stalker/buildings/backwater/krug)

@@ -28,7 +28,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -50,7 +50,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -93,7 +93,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
@@ -113,7 +113,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
@@ -150,7 +150,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -172,7 +172,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,

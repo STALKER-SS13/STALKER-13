@@ -1497,6 +1497,8 @@
 /area/stalker/buildings/backwater/krug)
 "fl" = (
 /obj/machinery/door/poddoor{
+	auto_close = 50;
+	autoclose = 50;
 	id = "krug-end"
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -2140,6 +2142,7 @@
 /area/stalker/buildings/backwater/krug)
 "hH" = (
 /obj/machinery/door/poddoor/sidor{
+	autoclose = 50;
 	icon_state = "closed0";
 	id = "controllers_lair"
 	},
@@ -21879,7 +21882,7 @@ ai
 ai
 ad
 fg
-gw
+fl
 fl
 fg
 fg

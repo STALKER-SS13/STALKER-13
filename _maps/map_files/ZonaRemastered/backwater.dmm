@@ -7773,7 +7773,10 @@
 	pixel_x = -5
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki{
+	pixel_x = 5;
+	pixel_y = 5
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "UC" = (

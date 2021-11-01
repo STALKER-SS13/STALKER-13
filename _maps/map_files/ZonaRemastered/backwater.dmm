@@ -823,6 +823,8 @@
 /area/stalker/buildings/renegade)
 "dm" = (
 /obj/structure/stalker/car/gryzovik/east{
+	desc = "Go to Amerika.";
+	eng_desc = null;
 	icon_state = "7"
 	},
 /turf/open/stalker/floor/wood/oldgor,
@@ -899,9 +901,9 @@
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/backwater/sawmill)
 "dA" = (
-/obj/structure/stalker/cacheable/painting/gorbachev{
-	name = "Vladimir Putin";
-	pixel_y = 32
+/obj/structure/grille/stalker{
+	icon_state = "fence3";
+	pixel_x = -13
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -2452,9 +2454,10 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/shevchenko)
 "kc" = (
-/obj/structure/flora/stalker/bush,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/obj/structure/table/stalker/wood,
+/obj/machinery/light/small,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "kd" = (
 /obj/structure/closet/crate/stalker/blue,
 /turf/open/stalker/floor/lattice,
@@ -7553,15 +7556,13 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "JE" = (
-/obj/structure/stalker/tree,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/obj/item/reagent_containers/syringe,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "JM" = (
 /obj/structure/stalker/doski/doski2,
 /obj/structure/bed/stalker/metal,
 /obj/effect/decal/cleanable/vomit/old,
-/obj/item/reagent_containers/syringe,
-/obj/item/reagent_containers/pill/happiness,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/landmark/latejoin/renegade,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -7635,6 +7636,8 @@
 /area/stalker/buildings/backwater/ironforest)
 "MA" = (
 /obj/structure/stalker/car/gryzovik/east{
+	desc = "Go to Amerika.";
+	eng_desc = null;
 	icon_state = "5";
 	tag = "icon-5"
 	},
@@ -7677,6 +7680,24 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
+"OK" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/obj/rad/rad_medium,
+/obj/anomaly/tramplin,
+/obj/machinery/button/door{
+	pixel_x = 16
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ironforest)
 "OT" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7711,8 +7732,14 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/item/reagent_containers/syringe,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Qm" = (
+/obj/rad/rad_low,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ironforest)
 "QE" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
@@ -7810,8 +7837,13 @@
 /obj/structure/table/stalker/wood/bar{
 	pixel_x = -5
 	},
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki{
+	pixel_x = -10;
+	pixel_y = 14
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "XA" = (
@@ -7829,6 +7861,12 @@
 /obj/structure/stalker/cacheable/porog,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Yl" = (
+/obj/structure/stalker/lift{
+	dir = 8
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/backwater/ironforest)
 "Ys" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -12764,7 +12802,7 @@ CQ
 eC
 eC
 eJ
-eC
+JE
 To
 cV
 cs
@@ -15066,7 +15104,7 @@ eC
 eC
 eC
 eC
-Mf
+kc
 cV
 eR
 aP
@@ -20186,9 +20224,9 @@ aP
 aP
 aP
 bd
-kc
 aQ
-JE
+aQ
+aQ
 aQ
 aQ
 aP
@@ -24987,8 +25025,8 @@ tJ
 tJ
 tV
 xH
-ug
-ya
+tV
+fu
 ya
 fu
 yB
@@ -25243,9 +25281,9 @@ tJ
 tK
 tV
 xH
-ug
-ya
-ya
+tV
+fu
+fu
 fu
 yC
 vP
@@ -25499,11 +25537,11 @@ tJ
 tV
 tV
 xH
-ug
-ya
-ya
+tV
 fu
-yB
+OK
+Qm
+Yl
 vP
 fu
 yA
@@ -25755,9 +25793,9 @@ tG
 tV
 tV
 xH
-ug
-ya
-ya
+tV
+fu
+fu
 fu
 vP
 vP
@@ -26011,8 +26049,8 @@ tF
 vu
 xC
 xH
-ug
-ya
+tV
+fu
 ya
 fu
 yB

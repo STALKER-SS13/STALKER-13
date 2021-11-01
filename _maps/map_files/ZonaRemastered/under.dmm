@@ -3896,6 +3896,11 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"oo" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/kitchen/knife,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "op" = (
 /mob/living/simple_animal/hostile/mutant/snork,
 /turf/open/floor/plating/dirt/dark,
@@ -3933,30 +3938,12 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"pp" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/kitchen/knife,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/krug)
 "pE" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/anomaly/tramplin,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"pH" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 4;
-	icon_state = "up";
-	teleport_x = 49;
-	teleport_y = 81;
-	teleport_z = 2
-	},
-/turf/open/floor/plasteel/stairs/stalker{
-	dir = 8;
-	tag = "icon-ladder (EAST)"
-	},
-/area/stalker/buildings/backwater/ironforest)
 "pK" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -3987,16 +3974,6 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"qw" = (
-/obj/structure/sign/departments/science{
-	pixel_y = 32
-	},
-/obj/structure/stalker/cacheable/yashik/yaskik_a{
-	pixel_x = 10;
-	pixel_y = 6
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "qA" = (
 /obj/structure/table/stalker,
 /obj/item/pen/fountain,
@@ -4050,10 +4027,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"rC" = (
-/obj/structure/closet/crate/stalker/blue/stash/low,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "rJ" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -4084,11 +4057,6 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/melee,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
-"sr" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/gun/ballistic/automatic/pistol/fort12,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/krug)
 "sw" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt,
@@ -4107,30 +4075,6 @@
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
-"td" = (
-/obj/structure/stalker/lift{
-	pixel_y = 32
-	},
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
-	pixel_x = 13
-	},
-/obj/structure/stalker/cacheable/bochka/red{
-	pixel_x = -13;
-	pixel_y = 7
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"tf" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 37;
-	teleport_y = 91;
-	teleport_z = 2
-	},
-/turf/open/floor/plasteel/stairs{
-	dir = 1
-	},
-/area/stalker/buildings/backwater/ironforest)
 "tF" = (
 /obj/item/stack/spacecash/c5000,
 /obj/item/candle{
@@ -4173,11 +4117,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"uG" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/geiger_counter,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "uQ" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/holofloor/wood,
@@ -4187,6 +4126,19 @@
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"uZ" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	icon_state = "up";
+	teleport_x = 49;
+	teleport_y = 81;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 8;
+	tag = "icon-ladder (EAST)"
+	},
+/area/stalker/buildings/backwater/ironforest)
 "vr" = (
 /obj/structure/stalker/cacheable/junk_locker,
 /obj/effect/spawner/lootdrop/glowstick,
@@ -4344,15 +4296,6 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"yL" = (
-/obj/effect/step_trigger/teleporter{
-	icon_state = "up";
-	teleport_x = 25;
-	teleport_y = 36;
-	teleport_z = 2
-	},
-/turf/open/floor/plasteel/stairs/stalker,
-/area/stalker/buildings/backwater/ironforest)
 "yM" = (
 /turf/closed/wall/rust,
 /area/stalker)
@@ -4374,17 +4317,6 @@
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
-"yZ" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 36;
-	teleport_y = 91;
-	teleport_z = 2
-	},
-/turf/open/floor/plasteel/stairs{
-	dir = 1
-	},
-/area/stalker/buildings/backwater/ironforest)
 "za" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/holofloor/wood,
@@ -4404,11 +4336,23 @@
 /obj/structure/curtain,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
-"Ag" = (
-/obj/structure/stalker/cacheable/yashik{
-	pixel_x = -4
+"zP" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 36;
+	teleport_y = 91;
+	teleport_z = 2
 	},
-/turf/open/stalker/floor/plasteel/plitochka,
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/ironforest)
+"Aj" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "Ar" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -4509,10 +4453,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"DS" = (
-/obj/structure/stalker/cacheable/yashik,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/krug)
 "DT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/rad/rad_low,
@@ -4553,6 +4493,11 @@
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Fl" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/gun/ballistic/automatic/pistol/fort12,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "Fx" = (
 /obj/item/stack/spacecash/c500,
 /mob/living/simple_animal/cockroach{
@@ -4560,21 +4505,25 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"FA" = (
-/obj/effect/step_trigger/teleporter{
-	icon_state = "up";
-	teleport_x = 47;
-	teleport_y = 15;
-	teleport_z = 1
-	},
-/turf/closed/mineral,
-/area/stalker/buildings/backwater/ironforest)
 "FX" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/item/stack/spacecash/c100,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"Gj" = (
+/obj/structure/stalker/lift{
+	pixel_y = 32
+	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
+	pixel_x = 13
+	},
+/obj/structure/stalker/cacheable/bochka/red{
+	pixel_x = -13;
+	pixel_y = 7
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "Gm" = (
 /obj/structure/chair/pew/left,
 /obj/item/cultivator,
@@ -4589,6 +4538,15 @@
 	},
 /turf/open/floor/plasteel/stairs,
 /area/stalker/buildings/backwater/ironforest)
+"Gz" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 25;
+	teleport_y = 36;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/ironforest)
 "GG" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plating/dirt/dark,
@@ -4596,13 +4554,6 @@
 "GP" = (
 /turf/open/floor/plasteel/dark,
 /area/stalker)
-"Hp" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "Hs" = (
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
@@ -4627,14 +4578,6 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/pistolstier2,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
-"Is" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 19;
-	teleport_y = 51;
-	teleport_z = 2
-	},
-/turf/open/floor/plasteel/stairs/stalker,
-/area/stalker/buildings/backwater/ironforest)
 "It" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
@@ -4656,10 +4599,6 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"Jc" = (
-/obj/structure/stalker/doski,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/krug)
 "Ju" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -4740,6 +4679,16 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Ko" = (
+/obj/structure/sign/departments/science{
+	pixel_y = 32
+	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "Lb" = (
 /obj/structure/reagent_dispensers/compostvat,
 /obj/effect/decal/cleanable/cobweb,
@@ -4753,12 +4702,6 @@
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"LK" = (
-/obj/structure/stalker/radiation/stop{
-	pixel_y = -5
-	},
-/turf/closed/wall/stalker/beton,
-/area/stalker/buildings/backwater/krug)
 "LM" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plasteel/dark,
@@ -4781,6 +4724,15 @@
 /obj/item/stack/spacecash/c5000,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"MV" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 47;
+	teleport_y = 15;
+	teleport_z = 1
+	},
+/turf/closed/mineral,
+/area/stalker/buildings/backwater/ironforest)
 "Np" = (
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
@@ -4831,15 +4783,38 @@
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
+"Oq" = (
+/obj/structure/stalker/cacheable/yashik,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "Ot" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Ox" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 37;
+	teleport_y = 91;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/ironforest)
 "Po" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"Px" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 19;
+	teleport_y = 51;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/ironforest)
 "PE" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/dirt/dark,
@@ -4926,6 +4901,12 @@
 "Tq" = (
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"TF" = (
+/obj/structure/stalker/cacheable/yashik{
+	pixel_x = -4
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "TN" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker{
 	color = null;
@@ -5101,22 +5082,31 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Xv" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/geiger_counter,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
+"XG" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/item/reagent_containers/food/snacks/stalker/konserva,
+/obj/item/reagent_containers/food/snacks/stalker/konserva,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "XK" = (
 /obj/item/kitchen/knife/throwing,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"XU" = (
+/obj/structure/stalker/doski,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "Yd" = (
 /obj/structure/bed/stalker/mattress_dirty,
 /obj/item/gun/ballistic/automatic/il86,
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
-"Ym" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/item/reagent_containers/food/snacks/stalker/konserva,
-/obj/item/reagent_containers/food/snacks/stalker/konserva,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
 "Yr" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5134,6 +5124,10 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"YZ" = (
+/obj/structure/closet/crate/stalker/blue/stash/low,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "Zk" = (
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt,
@@ -5145,6 +5139,12 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"Zz" = (
+/obj/structure/stalker/radiation/stop{
+	pixel_y = -5
+	},
+/turf/closed/wall/stalker/beton,
+/area/stalker/buildings/backwater/krug)
 "ZC" = (
 /obj/structure/chair/pew,
 /obj/item/stack/spacecash/c500,
@@ -9655,7 +9655,7 @@ ge
 ge
 fg
 vN
-LK
+Zz
 ge
 ge
 ge
@@ -10432,9 +10432,9 @@ ge
 ge
 ge
 fg
-rC
+YZ
 ge
-rC
+YZ
 fg
 fr
 iW
@@ -10684,14 +10684,14 @@ fn
 fg
 fg
 fg
-Ag
-Jc
+TF
+XU
 fg
 fn
 fg
-pp
+oo
 jJ
-Ym
+XG
 fg
 fr
 iW
@@ -10941,14 +10941,14 @@ fn
 fg
 fZ
 fg
-td
+Gj
 fn
 jt
 fn
 fg
 fR
 ge
-uG
+Xv
 fg
 fr
 fj
@@ -11198,14 +11198,14 @@ fg
 fg
 fZ
 fg
-qw
+Ko
 fn
 fn
 fn
 fg
-sr
+Fl
 ge
-Hp
+Aj
 fg
 fr
 fj
@@ -11457,7 +11457,7 @@ fZ
 fg
 go
 fn
-DS
+Oq
 fn
 fg
 fg
@@ -11558,7 +11558,7 @@ kg
 kG
 kG
 ki
-yL
+Gz
 kG
 kG
 no
@@ -11972,7 +11972,7 @@ ge
 fn
 fn
 fn
-DS
+Oq
 fn
 fn
 fn
@@ -13608,7 +13608,7 @@ me
 ki
 ki
 ki
-Is
+Px
 kG
 kg
 kk
@@ -14892,7 +14892,7 @@ lj
 ki
 ki
 kg
-yZ
+zP
 kW
 kW
 ki
@@ -15149,7 +15149,7 @@ kG
 ki
 ki
 kg
-tf
+Ox
 kW
 kW
 ki
@@ -17943,7 +17943,7 @@ ki
 kG
 kg
 mX
-FA
+MV
 kg
 lo
 kk
@@ -18969,7 +18969,7 @@ ki
 ki
 kG
 kG
-pH
+uZ
 kg
 kG
 lj

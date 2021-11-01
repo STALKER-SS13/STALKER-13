@@ -1175,7 +1175,7 @@
 	tag = "icon-border2"
 	},
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 73;
+	teleport_x = 72;
 	teleport_y = 172;
 	teleport_z = 2
 	},
@@ -1236,7 +1236,7 @@
 	tag = "icon-border2"
 	},
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 73;
+	teleport_x = 75;
 	teleport_y = 172;
 	teleport_z = 2
 	},
@@ -1686,7 +1686,7 @@
 	},
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 71;
+	teleport_x = 69;
 	teleport_y = 154;
 	teleport_z = 2
 	},
@@ -1724,7 +1724,7 @@
 	},
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 71;
+	teleport_x = 72;
 	teleport_y = 154;
 	teleport_z = 2
 	},
@@ -5374,6 +5374,29 @@
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
+"Ob" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 74;
+	teleport_y = 172;
+	teleport_z = 2
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "Oc" = (
 /obj/structure/table/stalker/wood,
 /obj/item/twohanded/binoculars,
@@ -5468,6 +5491,20 @@
 /area/stalker/blowout/outdoor)
 "PV" = (
 /obj/item/cigbutt/roach,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"PZ" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 70;
+	teleport_y = 154;
+	teleport_z = 2
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Qa" = (
@@ -17172,7 +17209,7 @@ eQ
 bO
 mq
 dC
-fb
+PZ
 ce
 af
 af
@@ -17418,7 +17455,7 @@ af
 af
 bK
 dH
-dQ
+Ob
 dC
 mr
 et

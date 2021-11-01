@@ -2428,8 +2428,9 @@
 /area/stalker/buildings/backwater/krug)
 "iI" = (
 /obj/machinery/door/poddoor/sidor{
+	autoclose = 50;
 	icon_state = "closed0";
-	id = "monolith_secret_enterance"
+	id = "penot1971"
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
@@ -4857,6 +4858,12 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Jp" = (
+/obj/machinery/button{
+	id = penot1971
+	},
+/turf/closed/wall/stalker/ship,
+/area/stalker/buildings/backwater/krug)
 "Ju" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -5326,13 +5333,13 @@
 /turf/open/floor/holofloor/wood,
 /area/stalker)
 "VQ" = (
+/obj/rad/rad_low,
 /obj/effect/step_trigger/teleporter{
-	dir = 4;
+	dir = 8;
 	teleport_x = 129;
 	teleport_y = 5;
 	teleport_z = 6
 	},
-/obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/space)
 "VV" = (
@@ -20125,7 +20132,7 @@ fJ
 fr
 fr
 fr
-fr
+Jp
 fJ
 fr
 ad

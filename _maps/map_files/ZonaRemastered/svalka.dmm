@@ -4882,7 +4882,7 @@
 /area/stalker/svalka/cellar)
 "nX" = (
 /obj/effect/step_trigger/teleporter{
-	dir = 4;
+	dir = 8;
 	teleport_x = 93;
 	teleport_y = 240;
 	teleport_z = 2

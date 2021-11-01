@@ -308,7 +308,7 @@ var/sid_generator = 0
 
 		if(J)
 			if(J.real_rank == "Lieutenant")
-				sk.fields["rating"] = 1000
+				sk.fields["rating"] = 10000//Starts faction leaders at Veteran.
 				sk.fields["degree"] = 1
 			sk.fields["faction_s"]	= J.faction_s
 		else

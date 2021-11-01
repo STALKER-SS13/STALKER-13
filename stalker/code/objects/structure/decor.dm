@@ -4,6 +4,13 @@
 	anchored = 1
 	layer = OBJ_LAYER
 
+/obj/structure/stalker/antitank
+	name = "barricade"
+	eng_desc = "A big rusty barricade."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "anti-tank"
+	density = 1
+
 /obj/structure/stalker/rustymachine
 	name = "machine"
 	icon = 'stalker/icons/decor.dmi'
@@ -249,6 +256,48 @@
 	density = 1
 	anchored = 1
 
+/obj/structure/stalker/cacheable/brokenmachine8
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine8"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine9
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine9"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine10
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine10"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine11
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine11"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine12
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine12"
+	density = 1
+	anchored = 1
+
+/obj/structure/stalker/cacheable/brokenmachine13
+	name = "broken machine"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "brokenmachine13"
+	density = 1
+	anchored = 1
+
 /obj/structure/stalker/cacheable/washer
 	name = "broken washing machine"
 	icon = 'stalker/icons/decor.dmi'
@@ -326,8 +375,32 @@
 /obj/structure/stalker/radiation/stop
 	name = "sign"
 	desc = "The sign says: \"Stop! Forbidden zone! No enterance!\"."
-	eng_desc = "The sign says: \"Stop! Forbidden zone! No enterance!\"."
+	eng_desc = "The sign says: \"Stop! Forbidden zone! No entrance!\"."
 	icon_state = "stop_sign"
+
+/obj/structure/stalker/radiation/cafe
+	name = "sign"
+	desc = "This sign indicates there is a cafe nearby!"
+	eng_desc = "This sign indicates there is a cafe nearby!"
+	icon_state = "cafesign"
+
+/obj/structure/stalker/radiation/gas
+	name = "sign"
+	desc = "This sign indicates there is gas nearby!"
+	eng_desc = "This sign indicates there is gas nearby!"
+	icon_state = "gasolinesign"
+
+/obj/structure/stalker/radiation/human
+	name = "sign"
+	desc = "The sign is indecipherable, but you can see what looks to be a symbol of a person here!"
+	eng_desc = "The sign is indecipherable, but you can see what looks to be a symbol of a person here!"
+	icon_state = "humansign"
+
+/obj/structure/stalker/radiation/way
+	name = "sign"
+	desc = "The sign is indecipherable, but you can see what looks to be a symbol of a road here!"
+	eng_desc = "The sign is indecipherable, but you can see what looks to be a symbol of a road here!"
+	icon_state = "waysign"
 
 /obj/structure/stalker/water
 	anchored = 1
@@ -532,6 +605,13 @@
 	density = 0
 	cache_size = 2
 
+/obj/structure/stalker/cacheable/clock
+	name = "a grandmaster clock"
+	eng_desc = "a grandmaster clock"
+	icon_state = "pclock"
+	density = 0
+	cache_size = 2
+
 /obj/structure/stalker/cacheable/bochka
 	name = "barrel"
 	eng_desc = "An old steel barrel."
@@ -618,6 +698,37 @@
 	desc = "Old flat tires."
 	eng_desc = "Old flat tires."
 	icon_state = "shina3a"
+	density = 1
+	cache_size = 1
+
+/obj/structure/stalker/halfshina
+	name = "tire"
+	eng_desc = "Half of a heavy old flat tire."
+	icon_state = "half_shina"
+	density = 1
+
+/obj/structure/stalker/busshina
+	name = "tire"
+	eng_desc = "A heavy old flat tire."
+	icon_state = "bus_shina"
+	density = 1
+
+/obj/structure/stalker/oneshina
+	name = "tire"
+	eng_desc = "A heavy old flat tire."
+	icon_state = "one_shina"
+	density = 1
+
+/obj/structure/stalker/twoshina
+	name = "two tires"
+	eng_desc = "A couple of heavy old flat tires."
+	icon_state = "two_shina"
+	density = 1
+
+/obj/structure/stalker/cacheable/fiveshina
+	name = "five tires"
+	eng_desc = "A couple of heavy old flat tires."
+	icon_state = "five_shina"
 	density = 1
 	cache_size = 1
 

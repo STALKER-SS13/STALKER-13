@@ -3979,6 +3979,15 @@
 /obj/item/pen/fountain,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"qB" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 43;
+	teleport_y = 158;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "qG" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker,
 /turf/open/stalker/floor/agroprom/beton,
@@ -4015,6 +4024,15 @@
 /obj/item/stack/spacecash/c5000,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"rj" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 46;
+	teleport_y = 158;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "ru" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -4027,6 +4045,15 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"rw" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 44;
+	teleport_y = 158;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "rJ" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -4280,6 +4307,17 @@
 /obj/structure/stalker/cacheable/porog{
 	dir = 1
 	},
+/obj/machinery/button/door{
+	pixel_x = 16;
+	pixel_y = -6
+	},
+/obj/machinery/button/door{
+	pixel_x = 16
+	},
+/obj/machinery/button/door{
+	pixel_x = 16;
+	pixel_y = 6
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "yJ" = (
@@ -4430,6 +4468,16 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"CA" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 46;
+	teleport_y = 171;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "CG" = (
 /turf/open/floor/holofloor/wood,
 /area/stalker)
@@ -4733,6 +4781,16 @@
 	},
 /turf/closed/mineral,
 /area/stalker/buildings/backwater/ironforest)
+"MW" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 45;
+	teleport_y = 171;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "Np" = (
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
@@ -5124,6 +5182,16 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"YC" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 43;
+	teleport_y = 171;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "YZ" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
 /turf/open/stalker/floor/gryaz,
@@ -22753,7 +22821,7 @@ nJ
 nL
 nJ
 nJ
-nB
+qB
 ad
 ad
 ad
@@ -23010,7 +23078,7 @@ nJ
 nJ
 nJ
 nJ
-nB
+rw
 ad
 ad
 ad
@@ -23504,7 +23572,7 @@ ad
 ad
 ad
 ad
-ne
+YC
 nJ
 nJ
 nJ
@@ -23524,7 +23592,7 @@ nJ
 nL
 nP
 nJ
-nB
+rj
 ad
 ad
 ad
@@ -24018,7 +24086,7 @@ ad
 ad
 ad
 ad
-ne
+MW
 nJ
 nJ
 nJ
@@ -24275,7 +24343,7 @@ ad
 ad
 ad
 ad
-ne
+CA
 nJ
 nJ
 nJ

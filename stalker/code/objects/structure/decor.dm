@@ -4,11 +4,25 @@
 	anchored = 1
 	layer = OBJ_LAYER
 
+/obj/structure/stalker/brainscorchertower
+	name = "brainscorchertower"
+	eng_desc = "A big rusty tower."
+	icon = 'stalker/icons/structure/brainscorchertower.dmi'
+	icon_state = "brainscorchertower"
+	density = 1
+
 /obj/structure/stalker/antitank
 	name = "barricade"
 	eng_desc = "A big rusty barricade."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "anti-tank"
+	density = 1
+
+/obj/structure/stalker/antitank2
+	name = "barricade"
+	eng_desc = "A big rusty barricade."
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "anti-tank2"
 	density = 1
 
 /obj/structure/stalker/rustymachine
@@ -663,7 +677,7 @@
 /obj/structure/stalker/shinaold
 	name = "tire"
 	eng_desc = "A heavy old flat tire."
-	icon_state = "shinaold"
+	icon_state = "shina_old"
 	density = 1
 
 /obj/structure/stalker/shina
@@ -1255,8 +1269,8 @@
 	cache_size = 2
 
 /obj/structure/stalker/cacheable/wardrobe2
-	name = "stove"
-	eng_desc = "Rusty old gas stove. Covered with grease and dirt."
+	name = "wardrobe"
+	eng_desc = "Rusty old wardrobe. Covered with grease and dirt."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "wardrobe2"
 	density = 1
@@ -1264,7 +1278,7 @@
 	cache_size = 2
 
 /obj/structure/stalker/cacheable/radiole
-	name = "stove"
+	name = "radio"
 	eng_desc = "A broken soviet radio."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "radiole"

@@ -274,7 +274,7 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 // Subspace stock parts
 
 /obj/item/stock_parts/subspace/ansible
-	name = "subspace ansible"
+	name = "subwave ansible"
 	icon_state = "subspace_ansible"
 	desc = "A compact module capable of sensing extradimensional activity."
 	materials = list(MAT_METAL=30, MAT_GLASS=10)

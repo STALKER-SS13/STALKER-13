@@ -100,7 +100,7 @@ Assistant
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 
 /datum/outfit/stalker  // For select_equipment
 	name = "Loner"
@@ -142,7 +142,7 @@ Assistant
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/professional)
 	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/twohanded/binoculars
 	r_hand = /obj/item/weapon/kitchen/knife/hunting
 
@@ -204,7 +204,7 @@ Assistant
 		/obj/item/storage/backpack/stalker/tourist,
 		/obj/item/storage/backpack/satchel/stalker/civilian,
 		/obj/item/storage/backpack/satchel/leather)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_hand = pick(
 		/obj/item/camera,
 		/obj/item/taperecorder,

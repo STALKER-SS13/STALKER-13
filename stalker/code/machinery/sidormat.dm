@@ -233,7 +233,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("500RUB",								"500Rub",												/obj/item/stack/spacecash/c500,										500,	ROOKIE, sale_price =500),
 		new /datum/data/stalker_equipment("1000RUB",							"1000Rub",												/obj/item/stack/spacecash/c1000,									1000,	ROOKIE, sale_price =1000),
 		new /datum/data/stalker_equipment("5000RUB",							"5000Rub",												/obj/item/stack/spacecash/c5000,									5000,	ROOKIE, sale_price =5000),
-		new /datum/data/stalker_equipment("Bolts",								"Bolts",												/obj/item/stalker/bolts,											300,	ROOKIE),
+//		new /datum/data/stalker_equipment("Bolts",								"Bolts",												/obj/item/stalker/bolts,											300,	ROOKIE),
 		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, faction = "Bandits"),
 		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, faction = "Renegades"),
 		new /datum/data/stalker_equipment("Binoculars",							"Binoculars",											/obj/item/twohanded/binoculars,										2500,	EXPERIENCED),

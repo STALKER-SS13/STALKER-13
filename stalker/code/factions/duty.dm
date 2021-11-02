@@ -53,7 +53,7 @@ Assistant
 	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/duty)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
@@ -129,7 +129,7 @@ Assistant
 	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/clothing/accessory/patch/duty)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,

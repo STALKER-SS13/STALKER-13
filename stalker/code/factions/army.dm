@@ -51,7 +51,7 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	faction_s = "State Security Service"
 
 /datum/outfit/job/army
@@ -70,7 +70,7 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	faction_s = "Army"
 
 /datum/job/militarycommander
@@ -107,7 +107,7 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	faction_s = "State Security Service"
 
 /datum/outfit/army  // For select_equipment
@@ -125,7 +125,7 @@ Assistant
 	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1,
 							/obj/item/ammo_box/magazine/stalker/m545 = 2,
 							/obj/item/storage/firstaid/stalker/military = 1)
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio
 	faction_s = "State Security Service"
 
@@ -134,7 +134,7 @@ Assistant
 	uniform = /obj/item/clothing/under/color/switer/lolg
 	suit = /obj/item/clothing/suit/army
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
-	r_pocket =/obj/item/stalker/bolts
+	r_pocket = /obj/item/storage/wallet/stalker
 
 /datum/outfit/armycommander // For select_equipment
 	name = "Military Commander"
@@ -155,5 +155,5 @@ Assistant
 							/obj/item/storage/firstaid/stalker/military = 1,
 							/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki = 1)
 	r_pocket = /obj/item/radio
-	l_pocket = /obj/item/stalker/bolts
+	l_pocket = /obj/item/storage/wallet/stalker
 	faction_s = "State Security Service"

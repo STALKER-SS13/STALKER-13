@@ -1081,8 +1081,8 @@
 	},
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 227;
-	teleport_y = 207;
+	teleport_x = 189;
+	teleport_y = 198;
 	teleport_z = 2
 	},
 /obj/effect/turf_decal/stripes/full{
@@ -1628,8 +1628,9 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor/backwater/krug)
 "fL" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "krug-end"
+/obj/machinery/door/poddoor{
+	auto_close = 50;
+	id = "krug-end2"
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
@@ -2323,6 +2324,13 @@
 /area/stalker/buildings/backwater/krug)
 "io" = (
 /obj/structure/chair/brevno/log2,
+/obj/machinery/button/door/keypad{
+	correctcode = "88005553535";
+	id = "DoorFullOfSecrets";
+	keycode = "1971";
+	pixel_x = 3;
+	pixel_y = 29
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "ip" = (
@@ -2489,8 +2497,9 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "iT" = (
-/obj/machinery/light/small/broken{
-	dir = 1
+/obj/structure/grille/stalker{
+	icon_state = "fence3";
+	pixel_x = 16
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
@@ -2626,7 +2635,11 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "jq" = (
-/obj/machinery/door/poddoor/sidor,
+/obj/machinery/door/poddoor/sidor{
+	autoclose = 50;
+	id = "DoorFullOfSecrets";
+	name = "Laboratory"
+	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "jr" = (
@@ -4073,8 +4086,11 @@
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "oL" = (
-/obj/machinery/door/poddoor/sidor,
-/turf/open/stalker/floor/gryaz,
+/obj/structure/table,
+/obj/machinery/button/door{
+	id = "krug-end2"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "oQ" = (
 /obj/anomaly/electro,
@@ -4085,11 +4101,26 @@
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"pg" = (
+/obj/machinery/button/door{
+	id = "DoorFullOfSecrets";
+	pixel_x = 3;
+	pixel_y = -21
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "pn" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"ps" = (
+/obj/structure/table/stalker,
+/obj/item/paper{
+	text = "the scientists are always sitting in their lab behind an iron door and we should not disturb them, but if something happens, the password to their stupid room is 88005553535"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "pE" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -4103,6 +4134,10 @@
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
+"pP" = (
+/obj/item/bodypart/chest/monkey,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "pW" = (
 /obj/item/weapon/kitchen/knife/m9,
 /obj/rad/rad_low,
@@ -4146,6 +4181,7 @@
 /area/stalker/buildings/backwater/ranger)
 "qR" = (
 /obj/anomaly/karusel,
+/obj/machinery/door/poddoor/shutters,
 /turf/open/indestructible/boss/air,
 /area/stalker/buildings/backwater/krug)
 "qT" = (
@@ -4155,6 +4191,10 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"qV" = (
+/obj/machinery/clonepod,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "qY" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -4214,6 +4254,13 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"rC" = (
+/obj/machinery/button/door{
+	id = "bloodsuckerhome";
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "rJ" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -4250,18 +4297,144 @@
 /area/stalker)
 "sL" = (
 /obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
 	dir = 1
 	},
-/turf/open/stalker/floor/lattice,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 227;
+	teleport_y = 207;
+	teleport_z = 2
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/turf/open/indestructible/boss/air,
 /area/stalker/buildings/backwater/krug)
 "sM" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
+"tc" = (
+/obj/machinery/light/small/broken,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
+"tj" = (
+/obj/machinery/light/small/broken{
+	dir = 4;
+	icon_state = "bulb"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "tF" = (
 /obj/item/stack/spacecash/c5000,
 /obj/item/candle{
@@ -4272,6 +4445,18 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"tH" = (
+/obj/machinery/button/door/keypad{
+	correctcode = "2983457230948";
+	desc = "A door remote control keypad. Broken. ";
+	id = "DoorFullOfSecrets2";
+	keycode = "197";
+	name = "broken door keypad";
+	pixel_x = -29;
+	pixel_y = -3
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/backwater/krug)
 "tM" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -4285,6 +4470,16 @@
 /area/stalker)
 "tZ" = (
 /turf/closed/wall/stalker/beton_agro,
+/area/stalker/buildings/backwater/krug)
+"uc" = (
+/obj/machinery/button/door/keypad{
+	correctcode = "1971";
+	id = "DungeonArmory";
+	keycode = "197";
+	pixel_x = 28;
+	pixel_y = -5
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "uf" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -4339,17 +4534,19 @@
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"vD" = (
+/obj/machinery/door/poddoor/sidor{
+	autoclose = 50;
+	id = "DoorFullOfSecrets2";
+	name = "Laboratory"
+	},
+/turf/closed/wall/stalker/beton,
+/area/stalker/buildings/backwater/krug)
 "vN" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/obj/effect/step_trigger/teleporter{
-	dir = 4;
-	teleport_x = 70;
-	teleport_y = 184;
-	teleport_z = 2
-	},
-/obj/structure/sign/warning{
-	pixel_y = 32
-	},
+/obj/item/stack/sheet/animalhide/monkey,
+/obj/item/stack/sheet/animalhide/monkey,
+/obj/item/stack/sheet/animalhide/monkey,
+/obj/item/stack/sheet/animalhide/monkey,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "vU" = (
@@ -4549,6 +4746,12 @@
 	},
 /turf/open/indestructible/boss/air,
 /area/stalker/buildings/backwater/krug)
+"yT" = (
+/obj/structure/chair/comfy/teal{
+	dir = 1
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "za" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/holofloor/wood,
@@ -4557,6 +4760,12 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"zq" = (
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "zv" = (
 /obj/structure/stalker/doski/doski4,
 /obj/structure/stalker/cacheable/porog{
@@ -4581,6 +4790,15 @@
 /obj/structure/curtain,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"zN" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/item/artifact/flash,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "zP" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -4598,6 +4816,17 @@
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
+"Ao" = (
+/obj/structure/table/stalker,
+/obj/structure/sign/departments/science{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
+"Aq" = (
+/obj/machinery/computer/telecrystals/uplinker,
+/turf/closed/wall/stalker/beton,
 /area/stalker/buildings/backwater/krug)
 "Ar" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -4618,6 +4847,15 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier2,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"AP" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/item/artifact/stone_blood,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Ba" = (
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
@@ -4629,6 +4867,10 @@
 /obj/rad/rad_medium,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Bg" = (
+/obj/structure/stalker/cacheable/bochka/red,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Bu" = (
 /obj/rad/rad_low,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -4692,14 +4934,31 @@
 "CG" = (
 /turf/open/floor/holofloor/wood,
 /area/stalker)
+"CR" = (
+/obj/item/bodypart/head/monkey,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "Dd" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
+"Dg" = (
+/obj/structure/table/abductor,
+/obj/item/detector/veles,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/structure/window/reinforced/tinted/frosted,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "DB" = (
 /obj/structure/stalker/cacheable/junk_micro,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"DI" = (
+/mob/living/simple_animal/hostile/mutant/bloodsucker,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "DO" = (
 /turf/closed/wall/mineral/titanium/survival/pod{
 	desc = "A slick black wall that is made of a strong metal.";
@@ -4748,10 +5007,18 @@
 /obj/structure/curtain,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"EO" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Fb" = (
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Fe" = (
+/obj/item/bodypart/l_arm/monkey,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "Fl" = (
 /obj/structure/closet/stalker/shkaf,
 /obj/item/gun/ballistic/automatic/pistol/fort12,
@@ -4764,12 +5031,25 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"FH" = (
+/obj/structure/chair/comfy/teal{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "FX" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/item/stack/spacecash/c100,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"FY" = (
+/obj/machinery/door/poddoor/sidor{
+	id = "DungeonArmory";
+	name = "Armory"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Gj" = (
 /obj/structure/stalker/lift{
 	pixel_y = 32
@@ -4827,6 +5107,12 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"In" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Io" = (
 /obj/rad/rad_medium,
 /obj/rad/rad_low,
@@ -4841,6 +5127,20 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"IB" = (
+/obj/machinery/shower{
+	dir = 8
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
+"IN" = (
+/obj/structure/grille/stalker{
+	density = 0;
+	icon_state = "fence4";
+	tag = "icon-fence4"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "IX" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker{
 	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
@@ -4954,6 +5254,21 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
+"Ks" = (
+/obj/item/paper{
+	text = "guys, if the result of caveman and octopus crossbreeding breaks out, blow into the armory! Don't forget your password - 1971"
+	},
+/obj/structure/stalker/cacheable/body{
+	name = "scientist body"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
+"KL" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "bloodsuckerhome"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "Lb" = (
 /obj/structure/reagent_dispensers/compostvat,
 /obj/effect/decal/cleanable/cobweb,
@@ -4967,10 +5282,18 @@
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"LF" = (
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/krug)
 "LM" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"LW" = (
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/krug)
 "Mk" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/dark,
@@ -5078,6 +5401,12 @@
 	dir = 1
 	},
 /area/stalker/buildings/backwater/ironforest)
+"Pc" = (
+/obj/structure/table/abductor,
+/obj/item/clothing/suit/hooded/sealed/ecolog,
+/obj/structure/window/reinforced/tinted/frosted,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Po" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt,
@@ -5086,8 +5415,8 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 189;
-	teleport_y = 198;
+	teleport_x = 69;
+	teleport_y = 184;
 	teleport_z = 2
 	},
 /obj/structure/sign/departments/custodian{
@@ -5115,6 +5444,15 @@
 /obj/structure/table/stalker,
 /obj/item/paper_bin,
 /turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
+"QG" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 11;
+	teleport_y = 159;
+	teleport_z = 02
+	},
+/turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings/backwater/krug)
 "Rz" = (
 /obj/rad/rad_low,
@@ -5148,6 +5486,19 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"SB" = (
+/obj/effect/step_trigger/teleporter{
+	icon_state = "up";
+	teleport_x = 23;
+	teleport_y = 148;
+	teleport_z = 2
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/krug)
+"SD" = (
+/obj/machinery/clonepod,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "SK" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 27;
@@ -5202,6 +5553,14 @@
 "Tq" = (
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"TA" = (
+/obj/structure/table/abductor,
+/obj/structure/stalker/cacheable/oldcomputer/dirty{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "TF" = (
 /obj/structure/stalker/cacheable/yashik{
 	pixel_x = -4
@@ -5284,6 +5643,10 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Uy" = (
+/obj/structure/stalker/panel,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "UB" = (
 /obj/structure/chair/pew,
 /obj/item/stack/spacecash/c100,
@@ -5327,6 +5690,15 @@
 /obj/anomaly/tramplin,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"Vv" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/item/artifact/droplet,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Vw" = (
 /obj/rad/rad_low,
 /obj/rad/rad_low,
@@ -5346,6 +5718,14 @@
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"VW" = (
+/obj/structure/table/abductor,
+/obj/structure/stalker/cacheable/oldcomputer/dirty{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Wd" = (
 /turf/closed/wall/mineral/titanium/survival/pod{
 	desc = "A slick black wall that is made of a strong metal.";
@@ -5376,10 +5756,26 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"Wx" = (
+/obj/structure/table/abductor,
+/obj/item/pizzabox/vegetable{
+	pixel_y = 7
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/krug)
 "WT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"WY" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Xj" = (
 /obj/anomaly/tramplin,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -5541,6 +5937,15 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
+"Yo" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/item/artifact/meduza,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "Yr" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5583,6 +5988,10 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"YN" = (
+/obj/item/bodypart/r_leg/monkey,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "YZ" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
 /turf/open/stalker/floor/gryaz,
@@ -5598,15 +6007,23 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"Zu" = (
+/obj/machinery/button/door{
+	id = "DoorFullOfSecrets2";
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/buildings/backwater/krug)
 "Zw" = (
 /obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ranger)
 "Zz" = (
-/obj/structure/stalker/radiation/stop{
-	pixel_y = -5
+/obj/item/bodypart/r_arm/monkey,
+/obj/machinery/light/small{
+	dir = 1
 	},
-/turf/closed/wall/stalker/beton,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "ZC" = (
 /obj/structure/chair/pew,
@@ -5979,20 +6396,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
-ge
-ge
-ge
-fj
-ge
-ge
-ge
-fj
-fj
+fg
+fg
+fg
+fg
+gE
+Vv
+gE
+zN
+gE
+AP
+gE
+Yo
+Uy
 fg
 in
 gp
@@ -6236,20 +6653,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+vN
+fJ
+fJ
+Aq
 fj
 fj
+fj
+fJ
 fj
 ge
+fJ
 fj
-ge
-ge
-fj
-ge
+pg
 fg
 io
 ge
@@ -6493,20 +6910,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+fJ
+fJ
+YN
+fq
+VW
+yT
 fj
+fJ
+fJ
 fj
-fj
+fJ
 ge
-ge
-fj
-ge
-ge
-ge
+fJ
 jq
 ge
 ge
@@ -6750,22 +7167,22 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+Zz
+DI
+CR
+fq
+Wx
 ge
-ge
-ge
+fJ
 fj
+fJ
 ge
+fJ
 ge
-ge
-ge
-ge
+tc
 fg
-ip
+Ao
 ge
 gk
 fg
@@ -7007,20 +7424,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+fJ
+pP
+fJ
+fq
+TA
+FH
+fJ
 ge
 ge
-ge
-ge
+WY
 fj
-ge
-ge
-ge
-ge
+fj
+Dg
 fg
 jZ
 fj
@@ -7264,20 +7681,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+Fe
+fJ
+CR
+KL
 fj
 ge
 fj
 ge
-fj
 ge
+In
+IB
 fj
-ge
-fj
+Pc
 fg
 ip
 is
@@ -7521,20 +7938,20 @@ ad
 ad
 ad
 ad
-ad
-ad
-ad
-ad
 fg
+fg
+fg
+fg
+fg
+rC
+SD
+fJ
+SD
 ge
-ge
-ge
-ge
-ge
-ge
-fj
-ge
-ge
+fg
+fg
+fg
+fg
 fg
 fg
 fg
@@ -7783,14 +8200,14 @@ ad
 ad
 ad
 fg
-ge
-ge
-ge
+zq
+fJ
+fJ
 fj
 fj
-ge
-ge
-fj
+fg
+kt
+IN
 fj
 fg
 ad
@@ -8040,15 +8457,15 @@ ad
 ad
 ad
 fg
+fJ
+qV
+fJ
+SD
 ge
-fj
-ge
-ge
-ge
-ge
-ge
-fj
-fj
+fJ
+fJ
+EO
+Bg
 fg
 ad
 fg
@@ -8297,15 +8714,15 @@ ad
 ad
 ad
 fg
-ge
+fJ
 fj
 ge
+tj
+fJ
+fg
 ge
-ge
-fj
-ge
-ge
-ge
+LW
+SB
 fg
 ad
 fg
@@ -10117,8 +10534,8 @@ ge
 ge
 ge
 fg
-vN
-Zz
+wY
+fg
 ge
 ge
 ge
@@ -10386,7 +10803,7 @@ gM
 iu
 fr
 fr
-fJ
+uc
 fJ
 jW
 fr
@@ -10629,7 +11046,7 @@ fg
 fg
 fg
 fg
-oL
+fg
 fg
 fg
 fg
@@ -10644,7 +11061,7 @@ fg
 fg
 fr
 fr
-fj
+FY
 fr
 fr
 gM
@@ -10884,10 +11301,10 @@ gA
 iG
 iG
 fg
+fA
+LF
 ge
-ge
-ge
-ge
+jB
 fg
 ge
 ge
@@ -11142,8 +11559,8 @@ iH
 iG
 fg
 iT
-ge
-fn
+iT
+je
 fg
 fg
 fg
@@ -11398,8 +11815,8 @@ hz
 hz
 iG
 fg
-ge
-fn
+QG
+Zu
 fn
 fg
 fZ
@@ -11657,7 +12074,7 @@ fg
 fg
 fg
 fg
-fg
+vD
 fg
 fZ
 fg
@@ -11913,7 +12330,7 @@ fj
 ge
 ge
 fg
-fn
+tH
 fn
 fg
 fZ
@@ -11930,7 +12347,7 @@ fg
 fr
 jQ
 kT
-ip
+ps
 fr
 gM
 fr
@@ -13701,8 +14118,8 @@ ge
 ge
 ge
 fg
-fA
-fA
+Ks
+ge
 fg
 ge
 ge
@@ -13957,9 +14374,9 @@ ge
 ge
 ge
 ge
-ge
-ge
 fA
+fA
+ge
 fg
 ir
 it
@@ -21379,7 +21796,7 @@ fj
 fj
 fq
 ft
-ft
+oL
 fM
 fg
 fj
@@ -63510,17 +63927,17 @@ fg
 fg
 ai
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
 tZ
 tZ
@@ -63767,17 +64184,17 @@ Yi
 Lr
 ai
 ai
-tZ
+fg
 Wo
-Cv
+fg
 ai
-tZ
+fg
 Wo
-Cv
+fg
 ai
-tZ
+fg
 Wo
-Cv
+fg
 ai
 tZ
 ST
@@ -64024,17 +64441,17 @@ wY
 fg
 ai
 ai
-tZ
+fg
 cm
-tZ
+fg
 ai
-tZ
+fg
 yS
-tZ
+fg
 ai
-tZ
+fg
 Pw
-tZ
+fg
 ai
 tZ
 gd
@@ -64281,17 +64698,17 @@ yG
 gr
 ai
 ai
-tZ
+fg
 qR
-Cv
+fg
 ai
-tZ
+fg
 qR
-Cv
+fg
 ai
-tZ
+fg
 qR
-Cv
+fg
 ai
 tZ
 gf
@@ -64538,17 +64955,17 @@ fg
 fg
 ai
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
-tZ
-tZ
-tZ
+fg
+fg
+fg
 ai
 tZ
 fg

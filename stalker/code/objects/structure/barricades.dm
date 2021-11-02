@@ -44,7 +44,7 @@
 	name = "wooden box"
 	desc = "Boarded up wooden box. Who knows what might be inside."
 	icon = 'stalker/icons/decor.dmi'
-	icon_state = "yashik"
+	icon_state = "yashik_b"
 	debriss_type = /obj/structure/stalker/doski/doski2
 	anchored = 1
 	proj_pass_rate = 0

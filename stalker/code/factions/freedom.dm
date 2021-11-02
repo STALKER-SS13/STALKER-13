@@ -4,6 +4,7 @@
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	//limit_per_player = 2
 	description = "Freedom are anarchists and daredevils who declare themselves fighters for a free access to the Zone and consequently find themselves in constant conflict with the army, military stalkers and the Duty faction. These so-called freedom warriors believe in sharing all information about the Zone with the rest of the world and challenge the state's monopoly over the Zone's secrets and wonders."
 	enforces = "Work with fellow Freedom faction members to patrol the Zone, save stalkers from death and help them get back on their feet, vanquish the grip of oppression from various militant factions which suffocate those within it, and shoot Duty on sight."
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without permission from leadership, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
@@ -13,6 +14,7 @@
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
 	outfit = /datum/outfit/freedomrookie
+	real_rank = "Freedom"
 
 /datum/outfit/job/freedomrookie
 	name = "Freedom Soldier"
@@ -33,13 +35,10 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/cora
+	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
@@ -67,6 +66,7 @@
 	total_positions = 4
 	locked = 1
 	spawn_positions = 4
+	limit_per_player = 2
 	description = "Freedom are anarchists and daredevils who declare themselves fighters for a free access to the Zone and consequently find themselves in constant conflict with the army, military stalkers and the Duty faction. These so-called freedom warriors believe in sharing all information about the Zone with the rest of the world and challenge the state's monopoly over the Zone's secrets and wonders."
 	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, vanquish the grip of oppression from various militant factions which suffocate those within it, and establish good relationships with various factions such as the Bandits and Loners."
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without permission from leadership, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
@@ -84,7 +84,7 @@
 	..()
 	head = /obj/item/clothing/head/steel
 	uniform = /obj/item/clothing/under/color/switer
-	suit = /obj/item/clothing/suit/hooded/kombez/veter
+	suit = /obj/item/clothing/suit/hooded/strazh
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/rollie/cannabis,
 		/obj/item/clothing/mask/gas,
@@ -94,15 +94,10 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/civilian
-	suit_store = pick(
-		/obj/item/gun/ballistic/automatic/pistol/desert,
-		/obj/item/gun/ballistic/revolver/anaconda)
+	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,

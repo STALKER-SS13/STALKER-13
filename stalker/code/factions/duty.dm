@@ -7,6 +7,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	//limit_per_player = 2
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
 	enforces = "Work with your teammates to neutralize anarchists and mutants, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom on sight and escalate on everyone else where appropriate."
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and start a fight with a neutral faction without asking up the chain of command."
@@ -16,6 +17,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
 	outfit = /datum/outfit/job/dutysoldier
+	real_rank = "Duty"
 
 /datum/outfit/job/dutysoldier  // For select_equipment
 	name = "Duty Soldier"
@@ -49,13 +51,10 @@ Assistant
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/duty
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/fort12
+	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/duty)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/duty)
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
@@ -78,6 +77,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/barman2
+	real_rank = "Bartender"
 
 /datum/outfit/job/barman2
 	name = "Barman"
@@ -101,6 +101,7 @@ Assistant
 	total_positions = 4
 	locked = 1
 	spawn_positions = 4
+	limit_per_player = 2
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
 	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom on sight and escalate on everyone else where appropriate."
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and jeopordize the faction for an insignificant reason."
@@ -118,7 +119,7 @@ Assistant
 	..()
 	head = /obj/item/clothing/head/steel
 	uniform = UNIFORMPICK
-	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
+	suit = /obj/item/clothing/suit/psz9d
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/cigar/havana,
 		/obj/item/clothing/mask/bandana/black)
@@ -127,15 +128,10 @@ Assistant
 	gloves = /obj/item/clothing/gloves/color/black
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/duty
-	suit_store = pick(
-		/obj/item/gun/ballistic/automatic/pistol/desert,
-		/obj/item/gun/ballistic/revolver/anaconda)
+	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/clothing/accessory/patch/duty)
-	l_pocket = pick(
-		 /obj/item/radio/off,
-		 /obj/item/flashlight/seclite,
-		 /obj/item/twohanded/binoculars)
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,

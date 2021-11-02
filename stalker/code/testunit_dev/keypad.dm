@@ -8,9 +8,18 @@
 	var/keypadhtml = ""
 	var/correctcode = "909"
 	var/keycode = "908"
+	layer = ABOVE_OBJ_LAYER
 
 /obj/machinery/button/door/keypad/New(loc, ndir = 0, built = 0)
+	correctcode = "[rand(11111,99999)]"
+	all_faction_keypads += src
 	..()
+
+/obj/machinery/button/door/keypad/faction
+	var/list/allowed_jobs = list()
+
+/obj/machinery/button/door/keypad/proc/GetCode()
+	return correctcode
 
 /obj/machinery/button/door/keypad/proc/AddButtons()
 	if(correctcode == keycode)

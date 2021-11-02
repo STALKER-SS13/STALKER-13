@@ -4,7 +4,7 @@
 	eng_desc = "A pile of bolts."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "kucha"
-	w_class = 2
+	w_class = 6//from 2. >:(
 
 /obj/item/stalker/bolts/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stalker/bolt))
@@ -19,7 +19,7 @@
 	eng_desc = "Old Soviet bolt affected by corrosion."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "bolt"
-	w_class = 1
+	w_class = 6//from 1. >:(
 	var/spawn_time = 0
 
 /obj/item/stalker/bolt/New()

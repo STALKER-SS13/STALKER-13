@@ -59,14 +59,14 @@
 	desc = "Old wooden fence."
 	icon_state = "zabor_horizontal1"
 	density = 1
-	opacity = 0
+	opacity = 1
 
 /obj/structure/grille/stalker/beton
 	icon = 'stalker/icons/beton_zabor.dmi'
 	desc = "Too strong."
 	icon_state = "1"
 	density = 1
-	opacity = 0
+	opacity = 1
 
 /obj/structure/grille/stalker/beton/green
 	icon = 'stalker/icons/green_zabor.dmi'

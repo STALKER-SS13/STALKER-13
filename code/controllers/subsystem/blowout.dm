@@ -151,8 +151,13 @@ SUBSYSTEM_DEF(blowout)
 /datum/controller/subsystem/blowout/proc/BlowoutDealDamage()
 	for(var/mob/living/carbon/human/H)
 		H.clear_fullscreen("blowjob")
-		if(!H.inshelter || !H.has_trait(TRAIT_BLOWOUT_IMMUNE))
+		if(!H.inshelter)
 			H.apply_damage(200, PSY)
+		CHECK_TICK
+
+/datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
+	for(var/datum/controller/subsystem/zona/MS)
+		MS.SpawnMobs()
 		CHECK_TICK
 
 /datum/controller/subsystem/blowout/proc/StopBlowout()
@@ -173,6 +178,11 @@ SUBSYSTEM_DEF(blowout)
 	for(var/obj/anomaly/An in GLOB.anomalies)
 
 		An.SpawnArtifact()
+		CHECK_TICK
+
+	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
+
+		Ms.SpawnMobs()
 		CHECK_TICK
 
 	for(var/datum/job/J in SSjob.occupations)
@@ -231,6 +241,8 @@ SUBSYSTEM_DEF(blowout)
 			add_lenta_message(null, "0", "Sidorovich", "Loners", "For PDA [name_] get [GetCostBasedOnReputation(rep_)] roubles.")
 	add_lenta_message(null, "0", "Sidorovich", "Loners", "Search, kill and sell the PDAs of stalkers with bad reputations!")
 
+
+//	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners. Disabled for now.
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)

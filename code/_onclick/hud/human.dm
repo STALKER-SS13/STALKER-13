@@ -207,6 +207,11 @@
 		using.screen_loc = ui_above_intent_wide
 		hotkeybuttons += using
 
+		using = new /obj/screen/bolt()
+		using.icon = 'icons/mob/screen_midnight.dmi'
+		using.screen_loc = ui_bolt_wide
+		hotkeybuttons += using
+
 		//using = new /obj/screen/human/toggle()
 		//using.icon = ui_style
 		//using.screen_loc = ui_inventory
@@ -438,6 +443,17 @@
 		using = new /obj/screen/resist()
 		using.icon = ui_style
 		using.screen_loc = ui_above_intent
+		hotkeybuttons += using
+
+		using = new /obj/screen/bolt()
+		using.icon = 'icons/mob/screen_midnight.dmi'
+		using.screen_loc = ui_bolt_wide
+		hotkeybuttons += using
+
+		using = new /obj/screen/pull()
+		using.icon = ui_style
+		using.update_icon(mymob)
+		using.screen_loc = ui_pull_intent_wide
 		hotkeybuttons += using
 
 		using = new /obj/screen/human/toggle()

@@ -58,16 +58,17 @@
 	name = "dog mutant"
 	desc = "A mutated blind wild dog."
 	eng_desc = "This dog became blind because of the radiation, allowing it to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage. The tail is edible and taking it would be a good idea to make a soup or to sell."
-	turns_per_move = 15
+	turns_per_move = 25
 	speed = 1
+	wander = 1
 	a_intent = "harm"
 	harm_intent_damage = 5
 	icon_state = "stalker_dog"
 	icon_living = "stalker_dog"
 	icon_dead = "stalker_dog_dead"
-	attacktext = "bites"
+	attacktext = list("bites", "chomps")
 	search_objects = 1
-	speak_emote = list("whines", "roars")
+	speak_emote = list("whines", "roars", "barks", "growls")
 	emote_see = list("barks!")
 	faction = list("stalker_mutants1")
 	attack_sound = 'stalker/sound/mobs/mutants/attack/dog_attack.ogg'
@@ -78,7 +79,7 @@
 	deathsound = 'stalker/sound/mobs/mutants/death/dog_death.ogg'
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	maxHealth = 25
+	maxHealth = 75
 	fearborder = 10
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	healable = 1
@@ -97,7 +98,7 @@
 	move_to_delay = 1.2 //Real speed of a mob
 	rating_add = 15
 	vision_range = 7
-	aggro_vision_range = 7
+	aggro_vision_range = 12
 
 /mob/living/simple_animal/hostile/mutant/dog/New()
 	..()
@@ -119,7 +120,7 @@
 	desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
 	eng_desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
 	turns_per_move = 15
-	speed = 3
+	speed = 1
 	a_intent = "harm"
 	search_objects = 1
 	icon_state = "snork"
@@ -128,7 +129,7 @@
 	attacktext = "claws at"
 	speak_emote = list("growls", "roars")
 	emote_see = list("growls!", "roars!")
-	maxHealth = 70
+	maxHealth = 140
 	healable = 1
 	melee_damage_lower = 20
 	attack_sound = 'stalker/sound/mobs/mutants/attack/snork_attack.ogg'
@@ -153,14 +154,14 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	ranged = 1
 	ranged_cooldown = 1 //By default, start the Goliath with his cooldown off so that people can run away quickly on first sight
-	ranged_cooldown_time = 4
+	ranged_cooldown_time = 2.5
 
 	attack_type = "claw"
 	var/leaping = 0
 	move_to_delay = 2
 	rating_add = 50
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 8
+	aggro_vision_range = 8
 
 /mob/living/simple_animal/hostile/mutant/snork/New()
 	..()
@@ -194,7 +195,6 @@
 					blocked = 1
 			if(!blocked)
 				L.visible_message("<span class ='danger'>[src] pounces on [L]!</span>", "<span class ='userdanger'>[src] pounces on you!</span>")
-				L.AdjustStun(20)
 				sleep(2) //Runtime prevention (infinite bump() calls on hulks)
 				step_towards(src,L)
 		else if(A.density && !A.CanPass(src))
@@ -219,7 +219,7 @@
 	attacktext = "crashes into"
 	speak_emote = list("grunts")
 	emote_see = list("shrieks aggressively!")
-	maxHealth = 40
+	maxHealth = 80
 	healable = 5
 	melee_damage_lower = 10
 	attack_sound = 'stalker/sound/mobs/mutants/attack/flesh_attack.ogg'
@@ -301,6 +301,7 @@
 	name = "bloodsucker"
 	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
 	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
+	icon = 'stalker/icons/bloodsucker.dmi'
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -308,10 +309,10 @@
 	icon_state = "bloodsucker"
 	icon_living = "bloodsucker"
 	icon_dead = "bloodsucker_dead"
-	attacktext = "slashes"
+	attacktext = "eviscerates"
 	speak_emote = list("growls", "roars")
 	emote_see = list("growls!", "roars!")
-	maxHealth = 300
+	maxHealth = 475
 	healable = 1
 	melee_damage_lower = 30
 	attack_sound = 'stalker/sound/mobs/mutants/attack/bloodsucker_attack.ogg'
@@ -337,7 +338,7 @@
 	speak_chance = 0.5
 	rating_add = 150
 	vision_range = 7
-	aggro_vision_range = 7
+	aggro_vision_range = 12
 
 /mob/living/simple_animal/hostile/mutant/bloodsucker/Life()
 	if(..())
@@ -366,7 +367,7 @@
 
 /mob/living/simple_animal/hostile/mutant/bloodsucker/AttackingTarget()
 	..()
-	icon_state = "bloodsucker"
+	icon_state = list("bloodsucker_attack1","bloodsucker_attack2")
 	if(istype(target, /mob/living/carbon))
 		var/mob/living/carbon/C = target
 		if(C.health > 35)
@@ -389,7 +390,7 @@
 	attacktext = "bites"
 	speak_emote = list("growls", "roars")
 	emote_see = list("growls!", "roars!")
-	maxHealth = 80
+	maxHealth = 120
 	healable = 1
 	melee_damage_lower = 15
 	attack_sound = 'stalker/sound/mobs/mutants/attack/pdog_attack.ogg'
@@ -414,7 +415,7 @@
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "bite"
-	move_to_delay = 1.4
+	move_to_delay = 1.1
 	speak_chance = 10
 	rating_add = 100
 

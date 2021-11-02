@@ -40,11 +40,9 @@
 	if(prob(1))
 		deathsound_pick = 'sound/voice/human/wilhelm_scream.ogg'
 	else
-		deathsound_pick = pick('sound/voice/human/malescream_1.ogg',
-									'sound/voice/human/malescream_2.ogg',
-									'sound/voice/human/malescream_3.ogg',
-									'sound/voice/human/malescream_4.ogg',
-									'sound/voice/human/malescream_5.ogg')
+		deathsound_pick = pick(
+		'stalker/sound/voice/death1.ogg',
+		'stalker/sound/voice/death2.ogg')
 		deathsound = deathsound_pick
 
 /mob/living/carbon/human/ComponentInitialize()

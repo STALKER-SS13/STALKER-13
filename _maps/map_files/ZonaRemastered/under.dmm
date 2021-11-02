@@ -5259,7 +5259,7 @@
 	text = "guys, if the result of caveman and octopus crossbreeding breaks out, blow into the armory! Don't forget your password - 1971"
 	},
 /obj/structure/stalker/cacheable/body{
-	name = "scientist body"
+	name = "mercenary body"
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
@@ -14372,7 +14372,7 @@ ge
 ge
 ge
 ge
-ge
+fA
 ge
 fA
 fA
@@ -14628,8 +14628,8 @@ fA
 ge
 ge
 ge
-ge
-ge
+fA
+fA
 ge
 ge
 ge
@@ -14885,10 +14885,10 @@ fA
 fA
 ge
 ge
+fA
 ge
 ge
-ge
-ge
+fA
 ge
 ge
 fA

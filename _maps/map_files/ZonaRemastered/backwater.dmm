@@ -7523,6 +7523,7 @@
 /area/stalker/buildings/renegade)
 "Gn" = (
 /obj/machinery/campfire,
+/obj/anomaly/jarka,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Gs" = (

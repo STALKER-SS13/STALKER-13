@@ -713,7 +713,7 @@
 	name = "Bandit Bar"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit_bar"
-	banditsafezone = 1
+//	banditsafezone = 1
 
 //radar
 /area/stalker/buildings/radar

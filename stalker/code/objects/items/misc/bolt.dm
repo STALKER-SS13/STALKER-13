@@ -20,6 +20,7 @@
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "bolt"
 	w_class = 6//from 1. >:(
+	throwforce = 1//:)
 	var/spawn_time = 0
 
 /obj/item/stalker/bolt/New()

@@ -16,6 +16,7 @@ Assistant
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	outfit = /datum/outfit/clearsky
+	real_rank = "ClearSky"
 
 /datum/outfit/clearsky  // For select_equipment
 	name = "Clear Sky Soldier"
@@ -56,7 +57,7 @@ Assistant
 	whitelist_only = 1
 	limit_per_player = 2
 	outfit = /datum/outfit/job/clearsky_leader
-	real_rank = "Leader"
+	real_rank = "Lieutenant"
 
 /datum/outfit/job/clearsky_leader
 	name = "Clear Sky Leader"

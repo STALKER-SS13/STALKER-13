@@ -17,6 +17,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
 	outfit = /datum/outfit/job/dutysoldier
+	real_rank = "Duty"
 
 /datum/outfit/job/dutysoldier  // For select_equipment
 	name = "Duty Soldier"
@@ -76,6 +77,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/barman2
+	real_rank = "Bartender"
 
 /datum/outfit/job/barman2
 	name = "Barman"

@@ -19,6 +19,7 @@ Assistant
 	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/job/bandit
+	real_rank = "Bandit"
 
 /datum/job/banditboss
 	title = "Bandit Boss"
@@ -54,6 +55,7 @@ Assistant
 	minimal_access = list()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/bandit_barman
+	real_rank = "Bartender"
 
 /datum/outfit/job/bandit
 	name = "Bandit"

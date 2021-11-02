@@ -12,7 +12,7 @@
 	selection_color = "#601919"
 	whitelist_only = 1
 	outfit = /datum/outfit/job/ecologist
-	real_rank = "Private"
+	real_rank = "Ecologist"
 
 /datum/outfit/job/ecologist
 	name = "Ecologist"
@@ -76,7 +76,7 @@
 	selection_color = "#601919"
 	whitelist_only = 1
 	outfit = /datum/outfit/job/ecologistguard
-	real_rank = "Private"
+	real_rank = "Ecologist"
 
 /datum/outfit/job/ecologistguard
 	name = "Ecologist Guard"
@@ -134,7 +134,7 @@
 	whitelist_only = 1
 	limit_per_player = 1
 	outfit = /datum/outfit/job/chief_ecologist
-	real_rank = "Captain"
+	real_rank = "Lieutenant"
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"

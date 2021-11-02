@@ -16,6 +16,7 @@
 	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/job/mercenary
+	real_rank = "Special"
 
 /datum/outfit/job/mercenary
 	name = "Mercenary"

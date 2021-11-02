@@ -14,6 +14,7 @@
 	whitelist_only = 1
 	limit_per_player = 2
 	outfit = /datum/outfit/job/monolith// /datum/outfit/job/duty
+	real_rank = "Monolith"
 
 /datum/outfit/job/monolith
 	name = "Monolith"

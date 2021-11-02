@@ -54,6 +54,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/oldstalker
+	real_rank = "Special"
 
 /*/datum/job/assistant/get_access()
 	if((config.jobs_have_maint_access & ASSISTANTS_HAVE_MAINT_ACCESS) || !config.jobs_have_minimal_access) //Config has assistant maint access set
@@ -280,6 +281,7 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/barman
+	real_rank = "Bartender"
 
 /datum/outfit/job/barman
 	name = "Barman"

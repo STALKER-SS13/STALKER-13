@@ -19,6 +19,7 @@ Assistant
 	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/job/army
+	real_rank = "Army"
 
 /datum/job/army_spetsnaz
 	title = "Military Spetsnaz"
@@ -34,6 +35,8 @@ Assistant
 	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/job/army_spetsnaz
+	real_rank = "Special"
+
 /datum/outfit/job/army_spetsnaz
 	name = "Military Spetsnaz"
 	faction_s = "State Security Service"

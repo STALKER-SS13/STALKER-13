@@ -617,12 +617,12 @@ var/global/global_lentahtml = ""
 				profile = find_record("sid", H.sid, GLOB.data_core.stalkers)
 
 				profile.fields["pass"] = pass
-
+/*
 				if(H.job == "Old Stalker" || H.job == "Duty Soldier" || H.job == "Monolith Soldier" || H.job == "Freedom Soldier")
 					profile.fields["rating"] = 3000
 				else if(H.job == "Duty Lieutenant" || H.job == "Monolith Hegumen" || H.job == "Freedom Lieutenant")
 					profile.fields["rating"] = 5000
-
+*/
 				set_owner_info(profile)
 			else //Если человек зарегистрирован в сети сталкеров
 				if(sk && sk.fields["pass"] != t)

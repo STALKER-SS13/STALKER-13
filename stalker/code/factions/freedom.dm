@@ -14,6 +14,7 @@
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 0
 	outfit = /datum/outfit/freedomrookie
+	real_rank = "Freedom"
 
 /datum/outfit/job/freedomrookie
 	name = "Freedom Soldier"

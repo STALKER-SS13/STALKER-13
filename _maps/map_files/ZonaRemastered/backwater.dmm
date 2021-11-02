@@ -915,6 +915,12 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a{
 	cache_quality = 0
 	},
+/obj/structure/stalker/cacheable/painting/gorbachev{
+	desc = "A true Renegade";
+	eng_desc = null;
+	name = "Vladimir Putin";
+	pixel_y = 32
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "dB" = (
@@ -7503,7 +7509,8 @@
 /turf/closed/wall/stalker/bricks,
 /area/stalker/blowout/outdoor/backwater/sawmill)
 "Ed" = (
-/obj/structure/stalker/cacheable/yashik,
+/obj/structure/table/stalker/wood,
+/obj/item/trash/crossnecklace,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Ep" = (
@@ -7655,6 +7662,12 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"Ld" = (
+/obj/structure/sign/skadovsk_bar{
+	pixel_y = 36
+	},
+/turf/closed/wall/stalker/bricks,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Lt" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -7834,7 +7847,6 @@
 	dir = 4
 	},
 /obj/item/reagent_containers/syringe,
-/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Qm" = (
@@ -12192,7 +12204,7 @@ aQ
 cV
 cV
 cV
-cV
+Ld
 cV
 cV
 dR

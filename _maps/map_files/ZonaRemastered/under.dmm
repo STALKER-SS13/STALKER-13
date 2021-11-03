@@ -4819,6 +4819,14 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"zk" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	name = "broken button"
+	},
+/obj/item/clothing/suit/berill,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "zq" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -5508,10 +5516,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
-"OS" = (
-/obj/structure/chair/office/light,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "Pc" = (
 /obj/structure/table/abductor,
 /obj/item/clothing/suit/hooded/sealed/ecolog,
@@ -5607,6 +5611,10 @@
 /obj/effect/spawner/lootdrop/stalker/equipment,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"Sd" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "St" = (
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plating/dirt/dark,
@@ -5700,6 +5708,10 @@
 "Tq" = (
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"Ts" = (
+/obj/structure/chair/office/light,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "TA" = (
 /obj/structure/table/abductor,
 /obj/structure/stalker/cacheable/oldcomputer/dirty{
@@ -6169,14 +6181,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ranger)
-"Yw" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	name = "broken button"
-	},
-/obj/item/clothing/suit/berill,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "YC" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -6206,10 +6210,6 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"Zo" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
 "Zu" = (
 /obj/machinery/button/door{
 	id = "DoorFullOfSecrets2";
@@ -7147,8 +7147,8 @@ jq
 fj
 fj
 fg
-Yw
-OS
+zk
+Ts
 fg
 iP
 fg
@@ -7915,7 +7915,7 @@ IB
 Yj
 Pc
 fg
-Zo
+Sd
 jr
 jr
 fg

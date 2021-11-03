@@ -3020,6 +3020,7 @@
 "lr" = (
 /obj/structure/chair/brevno/log2{
 	dir = 1;
+	pixel_y = 3;
 	tag = "icon-log2 (NORTH)"
 	},
 /turf/open/stalker/floor/gryaz,
@@ -3154,14 +3155,11 @@
 	icon_state = "fence0";
 	tag = "icon-fence0"
 	},
-/turf/closed/wall/stalker/bricks_white{
-	opacity = 0
-	},
+/turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "mh" = (
-/obj/structure/grille/stalker,
-/turf/closed/wall/stalker/bricks_white{
-	opacity = 0
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 8
 	},
 /area/stalker/agroprom/tunnel)
 "mi" = (
@@ -3182,9 +3180,7 @@
 /obj/structure/grille/stalker{
 	icon_state = "fence3"
 	},
-/turf/closed/wall/stalker/bricks_white{
-	opacity = 0
-	},
+/turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "ml" = (
 /obj/structure/grille/stalker,
@@ -3778,9 +3774,8 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Dz" = (
-/turf/closed/wall/stalker/bricks_white{
-	opacity = 0
-	},
+/obj/structure/stalker/luk,
+/turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "DD" = (
 /obj/structure/stalker/cacheable/porog{
@@ -3978,6 +3973,12 @@
 	},
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
+"Kk" = (
+/obj/anomaly/electro,
+/turf/open/floor/plasteel/stairs/stalker{
+	dir = 8
+	},
+/area/stalker/agroprom/tunnel)
 "Kp" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -58049,9 +58050,9 @@ kX
 Qc
 Qc
 Qc
-mh
+hM
 Dz
-mh
+hM
 Qc
 Qc
 Qc
@@ -58303,15 +58304,15 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Qc
-mh
-Dz
 mh
 Qc
+Qc
+hM
 Dw
+hM
 Qc
+Qc
+Kk
 kX
 aa
 aa
@@ -58548,7 +58549,7 @@ aa
 aa
 aa
 aa
-aa
+iD
 kX
 kX
 kX
@@ -58556,19 +58557,19 @@ kX
 kX
 kX
 kX
+iD
+iD
+kX
+kX
+Kk
 kX
 kX
 kX
 kX
-Uh
 kX
 kX
 kX
-kX
-kX
-kX
-kX
-Qc
+mh
 kX
 kX
 kX
@@ -58805,8 +58806,8 @@ aa
 aa
 aa
 aa
-aa
-kX
+iD
+Qc
 Qc
 Qc
 Uh
@@ -59062,13 +59063,7 @@ aa
 aa
 aa
 aa
-aa
-kX
-Qc
-Qc
-Qc
-Qc
-Uh
+iD
 Qc
 Qc
 Qc
@@ -59077,6 +59072,12 @@ Qc
 Uh
 Qc
 Qc
+Qc
+Qc
+Qc
+Uh
+Qc
+wh
 kX
 aa
 aa
@@ -59319,14 +59320,14 @@ aa
 aa
 aa
 aa
-aa
+iD
 kX
 kX
 kX
-kX
-kX
-kX
-kX
+iD
+Qc
+Qc
+iD
 kX
 kX
 kX

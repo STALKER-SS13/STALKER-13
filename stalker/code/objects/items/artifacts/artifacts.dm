@@ -86,6 +86,24 @@
 	radiation = 3
 	level_s = 3
 
+/obj/item/artifact/stoneflower_depleted
+	name = "depleted stone flower"
+	desc = "Born in gravity-type anomalies. This one appears to be depleted of all usefulness."
+	eng_desc = "Born in gravitional anomalies. This artifact is found in only a few areas of the Zone. The bits of metallic compounds create a beautiful light play."
+	icon_state = "stoneflower"
+	art_armor = list()
+	radiation = 2
+	level_s = 2
+
+/obj/item/artifact/nightstar_depleted
+	name = "depleted night star"
+	desc = "This remarkable artifact is formed by a gravitational type of anomaly.  This one appears to be depleted of all usefulness."
+	eng_desc = "This wonderful artifact is formed by gravitional anomalies anomaly. The use of the artifact demands the neutralization of deadly radiation. Expensive and rare."
+	icon_state = "nightstar"
+	art_armor = list()
+	radiation = 3
+	level_s = 3
+
 /obj/item/artifact/soul
 	name = "soul"
 	desc = "This remarkable artifact is formed by a gravitational type of anomaly. The use of the artifact requires the neutralization of deadly radioactive radiation."

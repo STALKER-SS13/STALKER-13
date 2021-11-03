@@ -1624,6 +1624,9 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "jZ" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = -10
+	},
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "6";
 	tag = "icon-7"
@@ -2288,6 +2291,15 @@
 	icon_state = "5"
 	},
 /turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"sU" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = 11
+	},
+/obj/structure/stalker/car/gryzovik/west{
+	icon_state = "4"
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "sX" = (
 /obj/structure/stalker/cacheable/brokenmachine,
@@ -4414,10 +4426,6 @@
 /area/stalker/blowout/outdoor)
 "UO" = (
 /obj/structure/stalker/cacheable/shina3{
-	pixel_x = -13;
-	pixel_y = 21
-	},
-/obj/structure/stalker/cacheable/shina3{
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -4763,10 +4771,6 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "ZQ" = (
-/obj/structure/stalker/cacheable/shina3{
-	pixel_x = 13;
-	pixel_y = 14
-	},
 /obj/structure/stalker/cacheable/shina3{
 	pixel_x = 14;
 	pixel_y = -4
@@ -65096,7 +65100,7 @@ Pu
 YF
 YF
 YF
-as
+sU
 ZQ
 YF
 YF

@@ -42,7 +42,7 @@ GLOBAL_LIST_EMPTY(typing_indicator_overlays)
 /obj/effect/overlay/typing_indicator
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	icon = 'icons/mob/talk.dmi'
-	icon_state = "normal_typing"
+	icon_state = "no_indicator"
 	appearance_flags = RESET_COLOR | TILE_BOUND | PIXEL_SCALE
 	layer = FLY_LAYER
 
@@ -56,7 +56,7 @@ GLOBAL_LIST_EMPTY(typing_indicator_overlays)
 
 /mob/proc/set_typing_indicator(var/state)
 	if(!typing_indicator)
-		typing_indicator = mutable_appearance('icons/mob/talk.dmi', "normal_typing", FLY_LAYER)
+		typing_indicator = mutable_appearance('icons/mob/talk.dmi', "no_indicator", FLY_LAYER)
 	if(client && !stat)
 		if(state)
 			if(!typing)

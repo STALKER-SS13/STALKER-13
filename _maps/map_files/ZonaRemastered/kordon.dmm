@@ -3418,6 +3418,14 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/buildings)
+"kp" = (
+/obj/machinery/door/poddoor/shutters{
+	auto_close = 50;
+	autoclose = 50;
+	id = "anotherwaytobase"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/military)
 "ks" = (
 /obj/structure/stalker/trubas,
 /turf/open/stalker/floor/gryaz,
@@ -4190,6 +4198,14 @@
 /obj/machinery/light,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
+"pc" = (
+/obj/machinery/button/door{
+	id = "anotherwaytobase";
+	pixel_x = 16;
+	pixel_y = 18
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "ph" = (
 /obj/structure/chair/brevno/log2{
 	dir = 1
@@ -33808,7 +33824,7 @@ mq
 wc
 mq
 ia
-mq
+pc
 mq
 ab
 aa
@@ -34064,7 +34080,7 @@ cT
 mq
 ng
 mq
-hB
+kp
 mq
 ab
 ab

@@ -881,6 +881,17 @@
 	pixel_y = 32
 	},
 /obj/structure/stalker/cacheable/toilet_broken,
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "dv" = (
@@ -901,9 +912,14 @@
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/backwater/sawmill)
 "dA" = (
-/obj/structure/grille/stalker{
-	icon_state = "fence3";
-	pixel_x = -13
+/obj/structure/stalker/cacheable/yashik/yaskik_a{
+	cache_quality = 0
+	},
+/obj/structure/stalker/cacheable/painting/gorbachev{
+	desc = "A true Renegade";
+	eng_desc = null;
+	name = "Vladimir Putin";
+	pixel_y = 32
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -963,6 +979,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "dP" = (
@@ -974,9 +995,6 @@
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/backwater/sawmill)
 "dR" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -7489,9 +7507,10 @@
 "Ds" = (
 /obj/structure/sign/poster/contraband/punch_shit,
 /turf/closed/wall/stalker/bricks,
-/area/stalker/buildings/renegade)
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Ed" = (
-/obj/structure/stalker/cacheable/yashik,
+/obj/structure/table/stalker/wood,
+/obj/item/trash/crossnecklace,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Ep" = (
@@ -7511,6 +7530,7 @@
 /area/stalker/buildings/renegade)
 "Gn" = (
 /obj/machinery/campfire,
+/obj/anomaly/jarka,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Gs" = (
@@ -7530,12 +7550,27 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "GQ" = (
-/obj/structure/stalker/blocks/vanish/block1/l,
-/turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "GT" = (
 /obj/structure/stalker/doski/doski3,
 /obj/item/reagent_containers/syringe,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Hq" = (
@@ -7548,6 +7583,10 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/renegade)
+"HM" = (
+/obj/structure/stalker/blocks/vanish/block1/l,
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "IM" = (
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz,
@@ -7609,10 +7648,85 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/renegade)
+"Ky" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"Ld" = (
+/obj/structure/sign/skadovsk_bar{
+	pixel_y = 36
+	},
+/turf/closed/wall/stalker/bricks,
+/area/stalker/blowout/outdoor/backwater/sawmill)
+"Lt" = (
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"LF" = (
+/obj/structure/stalker/doski/doski2,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/water,
+/area/stalker/buildings/renegade)
 "Ma" = (
 /obj/structure/stalker/doski/doski3,
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/cleanable/food/pie_smudge,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Mf" = (
@@ -7628,6 +7742,13 @@
 /area/stalker/buildings/renegade)
 "Mn" = (
 /obj/effect/decal/cleanable/blood/tracks,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"Mo" = (
+/obj/structure/stalker/blocks/vanish/block1/l{
+	pixel_x = 2;
+	pixel_y = 8
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Mt" = (
@@ -7703,19 +7824,12 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "PX" = (
-/obj/structure/table/stalker/wood/bar{
-	pixel_y = 34
-	},
-/obj/structure/table/stalker/wood/bar{
-	dir = 1;
-	pixel_y = 17
-	},
-/obj/structure/table/stalker/wood/bar{
-	pixel_x = -15
-	},
 /obj/machinery/campfire/barrel{
 	pixel_x = 7;
 	pixel_y = -3
+	},
+/obj/structure/table/stalker/wood/bar{
+	pixel_x = -15
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -7748,6 +7862,14 @@
 /obj/structure/stalker/cacheable/porog,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Rw" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "RI" = (
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7777,6 +7899,7 @@
 /area/stalker/buildings/renegade)
 "To" = (
 /obj/item/reagent_containers/pill/happiness,
+/obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "TM" = (
@@ -7784,9 +7907,24 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Ue" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "UA" = (
 /obj/structure/chair/sofa/left{
-	dir = 8
+	dir = 8;
+	pixel_x = 13;
+	pixel_y = -5
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -7807,6 +7945,14 @@
 "Vz" = (
 /obj/item/cigbutt,
 /turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"VZ" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "WU" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -7848,7 +7994,9 @@
 /area/stalker/buildings/renegade)
 "XA" = (
 /obj/structure/chair/sofa/right{
-	dir = 8
+	dir = 8;
+	pixel_x = 13;
+	pixel_y = -5
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -7856,6 +8004,14 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/ironforest)
+"Ye" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "Yf" = (
 /obj/structure/barricade/stalker/wood,
 /obj/structure/stalker/cacheable/porog,
@@ -7881,10 +8037,21 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "YP" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a{
-	cache_quality = 0
+/obj/structure/stalker/water/bochka/kap{
+	pixel_x = -4
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "ZB" = (
 /obj/structure/bed/stalker/mattress_dirty,
@@ -7896,6 +8063,16 @@
 /area/stalker/buildings/renegade)
 "ZK" = (
 /obj/item/cigbutt,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 
@@ -11772,11 +11949,11 @@ aQ
 cs
 cs
 cs
-GQ
+cs
+HM
 cs
 cs
-GQ
-cs
+HM
 cs
 cs
 cs
@@ -12027,11 +12204,11 @@ aQ
 cV
 cV
 cV
+Ld
 cV
 cV
 dR
 dR
-cV
 cV
 cV
 aS
@@ -12541,9 +12718,9 @@ eC
 Gg
 Xi
 SS
-eC
-eC
-eC
+Mo
+Gg
+Gg
 eC
 ZB
 JM
@@ -12798,8 +12975,8 @@ eC
 Kh
 SL
 YP
-CQ
-eC
+LF
+Gg
 eC
 eJ
 JE
@@ -13053,8 +13230,8 @@ dl
 dA
 PX
 eC
-eC
-eC
+Gg
+Gg
 eC
 Xa
 eJ
@@ -13314,7 +13491,7 @@ Gg
 Gg
 eC
 Qk
-Ed
+Mf
 Ed
 cV
 eZ
@@ -13564,7 +13741,7 @@ eC
 Xa
 eC
 eC
-Gg
+Ue
 TM
 eC
 eC
@@ -13813,15 +13990,15 @@ cN
 aP
 cs
 cV
-dl
-dl
-dl
-dl
+cV
+cV
+cV
+cV
 Xb
 eC
+GQ
 Gg
-Gg
-Gg
+Ky
 eC
 eC
 eF
@@ -14075,9 +14252,9 @@ Mf
 Ds
 eH
 eC
-Gg
+VZ
 Gn
-Gg
+Rw
 eC
 Or
 eG
@@ -14332,9 +14509,9 @@ RP
 Mh
 Gg
 ZK
-Gg
-Gg
-Gg
+Ye
+Ye
+Lt
 eC
 eH
 cV
@@ -14590,7 +14767,7 @@ Gg
 eC
 XA
 UA
-Gg
+VZ
 Xa
 FM
 cV
@@ -14840,7 +15017,7 @@ cV
 di
 Kw
 Kw
-dl
+cV
 Nk
 eC
 dN
@@ -15096,7 +15273,7 @@ cV
 dr
 Qg
 JT
-dl
+cV
 du
 Gg
 eC
@@ -15359,7 +15536,7 @@ dO
 eC
 eC
 eC
-Mf
+eC
 Mf
 cV
 cs

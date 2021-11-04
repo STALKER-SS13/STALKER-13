@@ -154,7 +154,6 @@
 /obj/item/ammo_box/stalker/b762x51
 	name = "ammo box(7.62x51mm)"
 	desc = "Battle Rifle cartidge used by NATO, high recoil makes full auto not practical (7.62x51mm M80)."
-	eng_desc = "An ammo box."
 	ammo_type = /obj/item/ammo_casing/c762x51
 	icon_state = "762x51"
 	max_ammo = 40
@@ -163,7 +162,6 @@
 /obj/item/ammo_box/stalker/b762x54r
 	name = "ammo box(7.62x54mmR)"
 	desc = "Rimmed Rifle cartidge used by by Russia from the late 19th century. (7.62x54)."
-	eng_desc = "Rimmed Rifle cartidge used by by Russia from the late 19th century. (7.62x54)."
 	ammo_type = /obj/item/ammo_casing/c762x54
 	icon_state = "762x54"
 	max_ammo = 40
@@ -172,7 +170,6 @@
 /obj/item/ammo_box/stalker/cl762x51
 	name = "stripper clip(7.62x51mm)"
 	desc = "A stripper clip."
-	eng_desc = "A stripper clip."
 	ammo_type = /obj/item/ammo_casing/c762x51
 	icon_state = "303"
 	max_ammo = 5

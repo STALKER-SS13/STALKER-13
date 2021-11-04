@@ -2318,11 +2318,9 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
 "in" = (
-/obj/structure/chair/brevno,
 /turf/open/floor/plating/foam,
 /area/stalker/buildings/backwater/krug)
 "io" = (
-/obj/structure/chair/brevno/log2,
 /obj/machinery/button/door/keypad{
 	correctcode = "88005553535";
 	id = "DoorFullOfSecrets";
@@ -2330,7 +2328,7 @@
 	pixel_x = 3;
 	pixel_y = 29
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "ip" = (
 /obj/structure/table/stalker,
@@ -2350,11 +2348,9 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "is" = (
-/obj/structure/chair/office/light,
-/obj/machinery/light/small/broken{
-	dir = 4
-	},
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/rad/rad_medium,
+/obj/structure/showcase/horrific_experiment,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "it" = (
 /obj/structure/stalker/cacheable/bochka/red,
@@ -2391,7 +2387,8 @@
 /area/stalker/buildings/backwater/krug)
 "iz" = (
 /obj/structure/barricade/stalker/wood,
-/turf/open/stalker/floor/gryaz,
+/obj/machinery/door/poddoor/preopen,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "iA" = (
 /obj/structure/stalker/cacheable/porog{
@@ -2852,8 +2849,8 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "jZ" = (
-/obj/structure/table/stalker,
-/obj/item/clothing/suit/berill,
+/obj/rad/rad_medium,
+/obj/structure/stalker/cacheable/brokenmachine5,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "ka" = (
@@ -4115,10 +4112,8 @@
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "ps" = (
-/obj/machinery/button/door{
-	pixel_x = 32
-	},
 /obj/rad/rad_medium,
+/obj/structure/stalker/cacheable/brokenmachine5,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "pE" = (
@@ -4191,8 +4186,8 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "qV" = (
-/obj/machinery/clonepod,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/structure/stalker/cacheable/brokenmachine2,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "qY" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -4824,6 +4819,14 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"zk" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	name = "broken button"
+	},
+/obj/item/clothing/suit/berill,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "zq" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -4901,7 +4904,6 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "Ao" = (
-/obj/structure/table/stalker,
 /obj/structure/sign/departments/science{
 	pixel_y = 32
 	},
@@ -4963,10 +4965,7 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "Bo" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "bloodsuckerhome"
-	},
-/obj/item/detector/veles,
+/obj/structure/stalker/cacheable/brokenmachine7,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Bu" = (
@@ -4975,10 +4974,8 @@
 /turf/open/floor/mineral/titanium,
 /area/stalker)
 "Bw" = (
-/obj/machinery/power/emitter/energycannon{
-	projectile_sound = null
-	},
-/turf/open/stalker/floor/lattice,
+/obj/structure/stalker/cacheable/brokenmachine2,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "BM" = (
 /obj/structure/stalker/structure/junk_bed2,
@@ -5053,7 +5050,6 @@
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/rad/rad_low,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "DB" = (
@@ -5130,7 +5126,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "Fw" = (
-/obj/structure/showcase/horrific_experiment,
+/obj/effect/decal/remains/xeno,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Fx" = (
@@ -5390,6 +5386,7 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Ly" = (
+/obj/structure/table/abductor,
 /obj/item/detector/veles,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
@@ -5614,6 +5611,10 @@
 /obj/effect/spawner/lootdrop/stalker/equipment,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ironforest)
+"Sd" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "St" = (
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plating/dirt/dark,
@@ -5633,7 +5634,11 @@
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings/backwater/krug)
 "SD" = (
-/obj/machinery/clonepod,
+/obj/machinery/door/poddoor/sidor{
+	autoclose = 50;
+	id = "DoorFullOfSecrets";
+	name = "Laboratory"
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "SK" = (
@@ -5703,6 +5708,10 @@
 "Tq" = (
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"Ts" = (
+/obj/structure/chair/office/light,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "TA" = (
 /obj/structure/table/abductor,
 /obj/structure/stalker/cacheable/oldcomputer/dirty{
@@ -5887,6 +5896,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/space)
 "VS" = (
+/obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plating/foam,
 /area/stalker/buildings/backwater/krug)
 "VV" = (
@@ -6610,20 +6620,20 @@ fg
 fg
 fg
 fg
-gE
+Bw
 Vv
-gE
+Bw
 zN
-gE
+qV
 AP
 Bw
 Yo
 Uy
 VS
 in
-ge
-ga
-fg
+fj
+jA
+gM
 gM
 fg
 fj
@@ -6874,13 +6884,13 @@ fJ
 Pr
 Tj
 OD
-fj
+in
 pg
 fg
 io
-gp
-ge
+fj
 fg
+fM
 gM
 fg
 fj
@@ -7134,11 +7144,11 @@ rS
 Iv
 OD
 jq
-ge
-ge
-gk
+fj
+fj
 fg
-gM
+zk
+Ts
 fg
 iP
 fg
@@ -7392,10 +7402,10 @@ ge
 tc
 fg
 Ao
-ge
-gk
+fj
 fg
-gM
+fg
+fs
 fg
 iP
 fg
@@ -7642,15 +7652,15 @@ TA
 FH
 fJ
 ge
-fJ
+Bo
 WY
 rS
 rS
 Dg
 fg
-jZ
 fj
-ge
+fj
+fj
 iz
 gM
 iJ
@@ -7905,9 +7915,9 @@ IB
 Yj
 Pc
 fg
-ip
-is
-fM
+Sd
+jr
+jr
 fg
 fj
 fg
@@ -8153,9 +8163,9 @@ fg
 fg
 fg
 rC
-SD
+fJ
 up
-Fw
+fJ
 FY
 fg
 fg
@@ -8666,10 +8676,10 @@ ad
 ad
 ad
 fg
-up
-qV
-up
-SD
+is
+fj
+is
+fJ
 ge
 fJ
 fJ
@@ -8925,9 +8935,9 @@ ad
 fg
 ps
 AV
-FY
+jZ
 tj
-fJ
+Fw
 fg
 ge
 LW
@@ -9184,7 +9194,7 @@ fg
 fs
 fs
 fs
-fJ
+SD
 fg
 fg
 fg
@@ -9440,7 +9450,7 @@ fJ
 fJ
 KL
 Ks
-Bo
+KL
 fJ
 fg
 ad

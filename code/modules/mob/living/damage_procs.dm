@@ -260,6 +260,8 @@
 	return psyloss
 
 /mob/living/proc/adjustPsyLoss(amount)
+	if(has_trait(TRAIT_BLOWOUT_IMMUNE))
+		return FALSE
 	if(status_flags & GODMODE)
 		return FALSE
 	psyloss = CLAMP((psyloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)

@@ -110,8 +110,8 @@
 "aw" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 49;
-	teleport_y = 7;
+	teleport_x = 72;
+	teleport_y = 2;
 	teleport_z = 8
 	},
 /turf/open/stalker/floor/tropa,

@@ -86,7 +86,7 @@
 	robust_searching = 1
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	see_in_dark = 4
-	deathmessage = "The dog lets out a pained whine before falling on its side!"
+	deathmessage = "lets out a pained whine before falling on its side!"
 	del_on_death = 0
 	minbodytemp = 0
 	maxbodytemp = 1500
@@ -147,7 +147,7 @@
 	del_on_death = 0
 	//environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The snork seizes up and falls limp!"
+	deathmessage = "seizes up and falls limp!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/snork_leg = 1)
 	//random_butcher_results = 1
@@ -237,7 +237,7 @@
 	del_on_death = 0
 	environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The flesh stops dead and falls over itself!"
+	deathmessage = "stops dead and falls over itself!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/flesh_eye = 1)
 	//random_butcher_results = 1
@@ -280,7 +280,7 @@
 	del_on_death = 0
 	environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The boar collapses to the ground!"
+	deathmessage = "collapses to the ground!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/boar_leg = 1)
 	//random_butcher_results = 1
@@ -329,7 +329,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "The bloodsucker chokes up blood and falls to the ground!"
+	deathmessage = "chokes up blood and falls to the ground!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/bloodsucker = 1, /obj/item/stalker/loot/bloodsucker = 1)
 	//random_butcher_results = 1
@@ -410,7 +410,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "The pseudodog makes a sinister howl before falling on its side!"
+	deathmessage = "makes a sinister howl before falling on its side!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/pseudo_tail = 1)
 	//random_butcher_results = 1

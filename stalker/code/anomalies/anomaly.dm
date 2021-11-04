@@ -342,8 +342,8 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 	inactive_invisibility = 0
 	loot = list(/obj/nothing = 80,
 				/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 5.5,
-				/obj/item/artifact/nightstar = 2,
+				/obj/item/artifact/stoneflower_depleted = 5.5,
+				/obj/item/artifact/nightstar_depleted = 2,
 				/obj/item/artifact/soul = 0.5
 				)
 

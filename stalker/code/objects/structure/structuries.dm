@@ -4,21 +4,21 @@
 	pass_flags = LETPASSTHROW
 
 /obj/structure/table/stalker/wood
-	eng_desc = "A simple table."
+	desc = "A simple table."
 	icon = 'stalker/icons/structure/stol_stalker.dmi'
 	icon_state = "stol"
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table/stalker/wood)
 
 /obj/structure/table/stalker/wood/bar
-	eng_desc = "A homemade bar counter."
+	desc = "A homemade bar counter."
 	icon = 'stalker/icons/structure/stol_stalker_bar.dmi'
 	icon_state = "bar"
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table/stalker/wood/bar)
 
 /obj/structure/table/stalker/wood/bar100rentgen
-	eng_desc = "A quality bar counter."
+	desc = "A quality bar counter."
 	icon = 'stalker/icons/structure/bartables.dmi'
 	icon_state = "table"
 	climbable = FALSE
@@ -39,7 +39,7 @@
 
 /obj/structure/stalker/okno
 	name = "Window"
-	eng_desc = "An old wooden window."
+	desc = "An old wooden window."
 	icon = 'stalker/icons/decor2.dmi'
 	pass_flags = LETPASSTHROW
 	var/proj_pass_rate = 40

@@ -23,7 +23,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "Injector"
 	icon_state = "brute"
 	desc = "Small-effective combat stimulant. 15 units in one injector."
-	eng_desc = "Small-effective combat stimulant. 15 units in one injector."
 	item_state = "brute"
 	var/wrapped = 1
 	list_reagents = list("cryoxadone" = 14)
@@ -51,7 +50,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "brute trauma treatment injector"
 	icon_state = "brute"
 	desc = "Small yet effective bruise-healing stimulant. 25 units in one injector. Taking three of those in a quick succession isn't recommended."
-	eng_desc = "Small yet effective bruise-healing stimulant. 25 units in one injector. Taking three of those in a quick succession isn't recommended."
 	item_state = "brute"
 	list_reagents = list("bicaridine" = 15)
 	icon_state_opened = "brute_open"
@@ -61,7 +59,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "burn trauma treatment injector"
 	icon_state = "burn"
 	desc = "Small yet effective burn-treating solution. 15 units in one injector. Taking three of those in a quick succession isn't recommended."
-	eng_desc = "Small yet effective burn-treating solution. 15 units in one injector. Taking three of those in a quick succession isn't recommended."
 	item_state = "burn"
 	list_reagents = list("kelotane" = 15)
 	icon_state_opened = "burn_open"
@@ -71,7 +68,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "antitoxin injector"
 	icon_state = "toxin"
 	desc = "Small yet effective antitoxin injector. 15 units in one injector."
-	eng_desc = "Small yet effective antitoxin injector. 15 units in one injector."
 	item_state = "toxin"
 	list_reagents = list("charcoal" = 15)
 	icon_state_opened = "toxin_open"
@@ -81,7 +77,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "blood oxygenation injector"
 	icon_state = "oxygen"
 	desc = "Small yet effective oxygenation injector. 15 units in one injector."
-	eng_desc = "Small yet effective oxygenation injector. 15 units in one injector."
 	list_reagents = list("salbutamol" = 15)
 	icon_state_opened = "oxygen_open"
 	desc_opened = "Opened injector."
@@ -90,7 +85,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "blood-refilling coagulant injector"
 	icon_state = "blood"
 	desc = "Effective coagulant that also doubles as hematogen. 25 units in one injector."
-	eng_desc = "Effective coagulant that also doubles as hematogen. 25 units in one injector."
 	item_state = "blood"
 	list_reagents = list("coagulant" = 25)
 	icon_state_opened = "blood_open"
@@ -100,7 +94,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "combat stimulants injector"
 	icon_state = "painkiller"
 	desc = "Military-grade mix of combat stimulants and painkillers. 30 units in one injector. Taking more than one of those in a quick succession isn't recommended."
-	eng_desc = "Military-grade mix of combat stimulants and painkillers. 30 units in one injector. Taking more than one of those in a quick succession isn't recommended."
 	item_state = "painkiller"
 	list_reagents = list("mine_salve" = 30)
 	icon_state_opened = "painkiller_open"
@@ -110,7 +103,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "epinephrine injector"
 	icon_state = "epipen"
 	desc = "Generic epinephrine injector for the critically wounded. 15 units in one injector."
-	eng_desc = "Generic epinephrine injector for the critically wounded. 15 units in one injector."
 	item_state = "epipen"
 	list_reagents = list("epinephrine" = 15)
 	icon_state_opened = "epipen_open"
@@ -120,7 +112,6 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 	name = "antirad injector"
 	icon_state = "radanti"
 	desc = "Antiradiation chemicals that treat radiation sickness and intoxication. 15 units in one injector. Might deal some mild bruisings."
-	eng_desc = "Antiradiation chemicals that treat radiation sickness and intoxication. 15 units in one injector. Might deal some mild bruisings."
 	item_state = "radanti"
 	list_reagents = list("pen_acid" = 15)
 	icon_state_opened = "radanti_open"

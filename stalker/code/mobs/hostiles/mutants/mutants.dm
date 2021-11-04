@@ -57,8 +57,7 @@
 
 /mob/living/simple_animal/hostile/mutant/dog
 	name = "dog mutant"
-	desc = "A mutated blind wild dog."
-	eng_desc = "This dog became blind because of the radiation, allowing it to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage. The tail is edible and taking it would be a good idea to make a soup or to sell."
+	desc = "This dog became blind because of the radiation, allowing it to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage. The tail is edible and taking it would be a good idea to make a soup or to sell."
 	turns_per_move = 15
 	speed = 1
 	a_intent = "harm"
@@ -118,7 +117,6 @@
 /mob/living/simple_animal/hostile/mutant/snork
 	name = "snork"
 	desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
-	eng_desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -209,7 +207,6 @@
 /mob/living/simple_animal/hostile/mutant/flesh
 	name = "flesh"
 	desc = "This abomination is a horribly mutated pig affected by radiation. Its three eyes have lost all the vigor of life and stare blankly. Despite the large and heavy legs, it seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
-	eng_desc = "This abomination is a horribly mutated pig affected by radiation. Its three eyes have lost all the vigor of life and stare blankly. Despite the large and heavy legs, it seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
 	turns_per_move = 15
 	speed = 5
 	a_intent = "harm"
@@ -251,7 +248,6 @@
 /mob/living/simple_animal/hostile/mutant/kaban
 	name = "boar"
 	desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome. The smell coming from its mouth smells of carrion and grass. Its posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him."
-	eng_desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome. The smell coming from its mouth smells of carrion and grass. Its posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him."
 	turns_per_move = 15
 	speed = 5
 	a_intent = "harm"
@@ -301,7 +297,6 @@
 /mob/living/simple_animal/hostile/mutant/bloodsucker
 	name = "bloodsucker"
 	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -380,7 +375,6 @@
 /mob/living/simple_animal/hostile/mutant/pseudog
 	name = "pseudodog"
 	desc = "A disgusting animal with wolf, bear, and human DNA. Their faces are almost human-like and constantly snarling to show their sharpened teeth. The eyes appear to glow almost eerily in the dark."
-	eng_desc = "A disgusting animal with wolf, bear, and human DNA. Their faces are almost human-like and constantly snarling to show their sharpened teeth. The eyes appear to glow almost eerily in the dark."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -423,7 +417,6 @@
 /mob/living/simple_animal/hostile/mutant/controller
 	name = "Controller"
 	desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties. It has barely any clothes besides torn rags displayed randomly on the chest. Looking at him sends chills down your spine."
-	eng_desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties. It has barely any clothes besides torn rags displayed randomly on the chest. Looking at him sends chills down your spine."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"

@@ -953,7 +953,7 @@
 /area/stalker/blowout/buildings/backwater/burntfarm)
 "dI" = (
 /obj/item/storage/box/matches,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "dJ" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -7502,7 +7502,7 @@
 /area/stalker/buildings/backwater/substation)
 "CQ" = (
 /obj/structure/stalker/doski/doski2,
-/turf/open/stalker/floor/gryaz/gryaz2,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Ds" = (
 /obj/structure/sign/poster/contraband/punch_shit,
@@ -7510,7 +7510,10 @@
 /area/stalker/blowout/outdoor/backwater/sawmill)
 "Ed" = (
 /obj/structure/table/stalker/wood,
-/obj/item/trash/crossnecklace,
+/obj/item/trash/crossnecklace{
+	desc = "You don't turn your back on family, even when they do.";
+	name = "Dominic Toretto cross necklace"
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Ep" = (
@@ -7749,7 +7752,7 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Mt" = (
 /obj/structure/stalker/cacheable/yashik,
@@ -7792,7 +7795,7 @@
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "Or" = (
 /obj/structure/stalker/doski/doski2,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "OC" = (
 /obj/structure/stalker/cacheable/porog{
@@ -7905,7 +7908,7 @@
 "TM" = (
 /obj/item/reagent_containers/syringe,
 /obj/effect/decal/cleanable/vomit/old,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Ue" = (
 /obj/effect/turf_decal/stripes/full{
@@ -7926,7 +7929,7 @@
 	pixel_x = 13;
 	pixel_y = -5
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "UK" = (
 /obj/structure/bed/stalker/mattresspillow,
@@ -7944,7 +7947,7 @@
 /area/stalker/buildings/clearsky)
 "Vz" = (
 /obj/item/cigbutt,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "VZ" = (
 /obj/effect/turf_decal/stripes/full{
@@ -7998,7 +8001,7 @@
 	pixel_x = 13;
 	pixel_y = -5
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "XR" = (
 /obj/rad/rad_medium,
@@ -8034,7 +8037,7 @@
 /area/stalker/blowout/outdoor/backwater)
 "YE" = (
 /obj/structure/stalker/blocks/vanish/block2/r,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "YP" = (
 /obj/structure/stalker/water/bochka/kap{
@@ -13232,7 +13235,7 @@ PX
 eC
 Gg
 Gg
-eC
+Gg
 Xa
 eJ
 eC
@@ -13486,9 +13489,9 @@ eC
 eC
 dI
 Vz
+Gg
 eC
-Gg
-Gg
+eC
 eC
 Qk
 Mf
@@ -13739,11 +13742,11 @@ de
 eC
 eC
 Xa
-eC
-eC
+Gg
+Gg
 Ue
 TM
-eC
+Gg
 eC
 eE
 cV
@@ -13995,11 +13998,11 @@ cV
 cV
 cV
 Xb
-eC
+Gg
 GQ
 Gg
 Ky
-eC
+Gg
 eC
 eF
 cV
@@ -14251,11 +14254,11 @@ eD
 Mf
 Ds
 eH
-eC
+Gg
 VZ
 Gn
 Rw
-eC
+Gg
 Or
 eG
 cV
@@ -14512,7 +14515,7 @@ ZK
 Ye
 Ye
 Lt
-eC
+Gg
 eH
 cV
 eQ
@@ -14764,7 +14767,7 @@ eC
 Yf
 CQ
 Gg
-eC
+Gg
 XA
 UA
 VZ
@@ -15023,7 +15026,7 @@ eC
 dN
 Ep
 YE
-eC
+Gg
 eC
 eH
 cV

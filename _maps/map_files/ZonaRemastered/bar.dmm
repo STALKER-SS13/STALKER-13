@@ -5096,6 +5096,15 @@
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/bar)
+"xR" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 002;
+	teleport_y = 032;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
+/area/stalker)
 "xY" = (
 /obj/structure/stalker/okno/window2,
 /turf/closed/wall/stalker/bricks_white,
@@ -5120,6 +5129,15 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/duty)
+"yy" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 002;
+	teleport_y = 033;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
+/area/stalker)
 "yz" = (
 /obj/structure/chair/brevno{
 	dir = 1;
@@ -5758,6 +5776,15 @@
 /obj/structure/sink/puddle,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Ye" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 002;
+	teleport_y = 031;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
+/area/stalker)
 "Yf" = (
 /obj/structure/table/stalker/wood,
 /obj/machinery/stalker/sidormat{
@@ -41885,7 +41912,7 @@ aa
 aa
 aa
 aa
-ad
+yy
 ad
 ad
 ad
@@ -41906,7 +41933,7 @@ aF
 aF
 aF
 aF
-pa
+aF
 aF
 aF
 cR
@@ -42142,6 +42169,7 @@ aa
 aa
 aa
 aa
+xR
 ad
 ad
 ad
@@ -42149,7 +42177,6 @@ ad
 ad
 ad
 ad
-ad
 aF
 aF
 aF
@@ -42163,7 +42190,7 @@ aF
 aF
 aF
 aF
-pa
+aF
 aF
 aF
 aF
@@ -42399,6 +42426,7 @@ aa
 aa
 aa
 aa
+Ye
 ad
 ad
 ad
@@ -42406,7 +42434,6 @@ ad
 ad
 ad
 ad
-ad
 aF
 aF
 aF
@@ -42420,7 +42447,7 @@ aF
 aF
 aF
 aF
-pa
+aF
 aF
 aF
 aF

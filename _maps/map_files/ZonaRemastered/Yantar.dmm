@@ -24,16 +24,6 @@
 "ag" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"ah" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	opacity = 1;
-	teleport_x = 236;
-	teleport_y = 8;
-	teleport_z = 7
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
 "ai" = (
 /obj/structure/sink/kitchen{
 	layer = 3.1;
@@ -9432,7 +9422,7 @@ ba
 ba
 ba
 dd
-ah
+ag
 ag
 ag
 ag
@@ -9689,7 +9679,7 @@ ba
 ba
 ba
 dd
-ah
+ag
 ag
 ag
 ag
@@ -9946,7 +9936,7 @@ ba
 ba
 ba
 dd
-ah
+ag
 ag
 ag
 ag
@@ -10203,7 +10193,7 @@ ba
 ba
 ba
 dd
-ah
+ag
 ag
 ag
 ag

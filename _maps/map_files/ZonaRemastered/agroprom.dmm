@@ -1291,7 +1291,6 @@
 /area/stalker/buildings/freedom)
 "fc" = (
 /obj/structure/chair/stalker/divan,
-/obj/effect/landmark/latejoin/freedom,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/freedom)
 "fd" = (
@@ -1300,12 +1299,7 @@
 /area/stalker/blowout/outdoor)
 "fe" = (
 /obj/structure/chair/stalker/divan/divan2,
-/obj/effect/landmark/latejoin/freedom,
 /turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/freedom)
-"ff" = (
-/obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/buildings/freedom)
 "fh" = (
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -1426,10 +1420,6 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"fH" = (
-/obj/effect/landmark/latejoin/freedom,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/freedom)
 "fI" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/table/stalker/wood,
@@ -2787,10 +2777,6 @@
 /obj/item/storage/fancy/rollingpapers,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/freedom)
-"kA" = (
-/obj/effect/landmark/latejoin/freedom_lieutenant,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/freedom)
 "kB" = (
 /obj/structure/stalker/cacheable/porog/porog2{
 	dir = 1;
@@ -4135,10 +4121,6 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/dirt,
-/area/stalker/buildings/freedom)
-"PT" = (
-/obj/effect/landmark/latejoin/freedom,
-/turf/open/floor/plating/dirt/dark,
 /area/stalker/buildings/freedom)
 "PU" = (
 /obj/structure/table/stalker/wood,
@@ -31987,8 +31969,8 @@ aq
 Ht
 bL
 CF
-fH
-fH
+bL
+bL
 CF
 vE
 bL
@@ -32507,7 +32489,7 @@ bL
 eF
 jm
 eL
-kA
+bL
 bL
 CF
 tg
@@ -33015,8 +32997,8 @@ aq
 Ht
 bL
 CF
-fH
-PT
+bL
+Ho
 CF
 HT
 YW
@@ -34820,10 +34802,10 @@ bL
 bL
 HT
 HT
-ff
 PF
 PF
-ff
+PF
+PF
 kE
 fy
 kE

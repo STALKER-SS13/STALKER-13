@@ -7551,6 +7551,9 @@
 "Gv" = (
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/buildings/clearsky)
+"GB" = (
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/renegade)
 "GC" = (
 /obj/rad/rad_low,
 /obj/structure/stalker/cacheable/shitok/shitok2{
@@ -7586,7 +7589,7 @@
 "Hq" = (
 /obj/structure/stalker/blocks/vanish/block1/r,
 /turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/area/stalker/buildings/renegade)
 "HB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -7606,7 +7609,7 @@
 "HM" = (
 /obj/structure/stalker/blocks/vanish/block1/l,
 /turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/area/stalker/buildings/renegade)
 "IM" = (
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz,
@@ -7815,6 +7818,9 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/kordon/tunnel)
+"Oi" = (
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
 "Op" = (
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
@@ -7954,6 +7960,9 @@
 /obj/item/reagent_containers/pill/happiness,
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"Tr" = (
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
 "TM" = (
 /obj/item/reagent_containers/syringe,
@@ -11510,10 +11519,10 @@ aP
 aP
 aP
 aP
-aP
-aP
-er
-er
+GB
+GB
+dl
+Tr
 er
 er
 aP
@@ -11764,13 +11773,13 @@ aQ
 aQ
 aP
 aP
-aP
-aP
-aP
-aP
-aP
-aP
-aP
+cs
+cs
+GB
+GB
+GB
+GB
+cs
 aP
 aP
 aP
@@ -12023,8 +12032,8 @@ cs
 cs
 cs
 HM
-cs
-cs
+eC
+eC
 HM
 cs
 cs
@@ -16117,8 +16126,8 @@ cs
 cs
 dB
 Hq
-cs
-cs
+eC
+eC
 Hq
 cs
 cs
@@ -16372,10 +16381,10 @@ cs
 cs
 cs
 cs
-cs
-cs
-cs
-cs
+GB
+GB
+eC
+GB
 cs
 cs
 cs
@@ -16628,10 +16637,10 @@ cs
 aP
 aP
 aP
-aP
-aP
-aR
-aP
+Oi
+cV
+cV
+Oi
 cs
 cs
 bd

@@ -7504,24 +7504,6 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"Dd" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "Ds" = (
 /obj/structure/sign/poster/contraband/punch_shit,
 /turf/closed/wall/stalker/bricks,
@@ -7534,7 +7516,11 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"Eh" = (
+"Ep" = (
+/obj/structure/stalker/blocks/vanish/block2/l,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"EV" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
 	icon_state = "up";
@@ -7544,27 +7530,10 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"Ep" = (
-/obj/structure/stalker/blocks/vanish/block2/l,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "Fx" = (
 /obj/structure/stalker/list,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"FE" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "FM" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7593,16 +7562,6 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"GO" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 8;
-	icon_state = "up";
-	teleport_x = 44;
-	teleport_y = 49;
-	teleport_z = 3
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "GQ" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -7631,6 +7590,24 @@
 /obj/structure/stalker/blocks/vanish/block1/r,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"HG" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "HL" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/stalker/floor/lattice{
@@ -7825,6 +7802,19 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Ns" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "NX" = (
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7868,6 +7858,16 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ironforest)
+"OP" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	icon_state = "up";
+	teleport_x = 44;
+	teleport_y = 49;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "OT" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7906,6 +7906,25 @@
 "QE" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
+"QI" = (
+/obj/structure/flora/stalker/bush,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "QP" = (
 /obj/structure/mineral_door/wood,
 /obj/structure/stalker/cacheable/porog,
@@ -7919,6 +7938,10 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"RD" = (
+/obj/anomaly/holodec,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/kordon/tunnel)
 "RI" = (
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7929,14 +7952,6 @@
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"SI" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "SL" = (
 /obj/structure/chair/brevno/log2{
 	dir = 1;
@@ -7964,7 +7979,20 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
-"Ua" = (
+"Ue" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"Uy" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
 	icon_state = "border4";
@@ -7987,19 +8015,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"Ue" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border1";
-	tag = "icon-border1"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border2";
-	tag = "icon-border2"
-	},
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/renegade)
 "UA" = (
 /obj/structure/chair/sofa/left{
 	dir = 8;
@@ -8026,7 +8041,7 @@
 /obj/item/cigbutt,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
-"VE" = (
+"VK" = (
 /turf/open/stalker/floor/water,
 /area/stalker/kordon/tunnel)
 "VZ" = (
@@ -8037,10 +8052,6 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
-"Wj" = (
-/obj/anomaly/holodec,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "WU" = (
 /obj/structure/stalker/car/gryzovik/east{
 	icon_state = "4";
@@ -8114,18 +8125,11 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"YC" = (
-/obj/structure/flora/stalker/bush,
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border4";
-	tag = "icon-border4"
-	},
+"YE" = (
+/obj/structure/stalker/blocks/vanish/block2/r,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"YO" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
 	icon_state = "border4";
@@ -8133,10 +8137,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"YE" = (
-/obj/structure/stalker/blocks/vanish/block2/r,
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/renegade)
 "YP" = (
 /obj/structure/stalker/water/bochka/kap{
 	pixel_x = -4
@@ -39668,7 +39668,7 @@ ab
 (124,1,1) = {"
 lM
 Ys
-VE
+VK
 ab
 aw
 aw
@@ -39923,8 +39923,8 @@ ab
 "}
 (125,1,1) = {"
 ab
-VE
-VE
+VK
+VK
 lM
 aw
 aw
@@ -40179,7 +40179,7 @@ ab
 "}
 (126,1,1) = {"
 lM
-Wj
+RD
 Ys
 lM
 aw
@@ -40435,8 +40435,8 @@ ab
 "}
 (127,1,1) = {"
 lM
-Ua
-Ua
+Uy
+Uy
 ab
 aw
 aw
@@ -40691,8 +40691,8 @@ ab
 "}
 (128,1,1) = {"
 lM
-Dd
-YC
+HG
+QI
 lM
 aw
 aw
@@ -40947,8 +40947,8 @@ ab
 "}
 (129,1,1) = {"
 lM
-FE
-FE
+Ns
+Ns
 lM
 aw
 aw
@@ -41203,8 +41203,8 @@ ab
 "}
 (130,1,1) = {"
 lM
-SI
-SI
+YO
+YO
 lM
 ac
 aw
@@ -41459,8 +41459,8 @@ ab
 "}
 (131,1,1) = {"
 lM
-Eh
-GO
+EV
+OP
 lM
 ac
 aw

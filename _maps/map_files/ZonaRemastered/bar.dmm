@@ -18,8 +18,10 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "af" = (
-/obj/structure/stalker/tree/leafless,
-/turf/open/stalker/floor/digable/grass,
+/obj/structure/grille/stalker{
+	icon_state = "fence3"
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker)
 "ag" = (
 /turf/closed/wall/stalker/bricks,
@@ -5001,6 +5003,12 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"th" = (
+/obj/structure/grille/stalker{
+	icon_state = "fence3"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker)
 "tt" = (
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz,
@@ -5757,6 +5765,15 @@
 "XX" = (
 /obj/structure/sink/puddle,
 /turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"Ye" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 2;
+	teleport_y = 33;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "Yf" = (
 /obj/structure/table/stalker/wood,
@@ -40857,14 +40874,14 @@ aa
 aa
 aa
 aa
-eq
-eq
-eq
-eq
-eq
-ac
-ac
-ac
+aD
+aD
+aD
+aD
+aD
+al
+al
+al
 aI
 aI
 aI
@@ -41114,14 +41131,14 @@ aa
 aa
 aa
 aa
-eq
-ac
-ac
-ac
-ac
-af
-ac
-ac
+aD
+al
+al
+al
+al
+bm
+al
+al
 al
 al
 al
@@ -41371,14 +41388,14 @@ aa
 aa
 aa
 aa
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+al
+al
+al
+al
+al
+al
+al
+al
 al
 al
 al
@@ -41628,14 +41645,14 @@ aa
 aa
 aa
 aa
-ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+rV
+al
+al
+al
+al
+al
+al
+al
 al
 al
 al
@@ -41885,14 +41902,14 @@ aa
 aa
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+Ye
+aF
+aF
+aF
+aF
+aF
+aF
+aF
 aF
 aF
 aF
@@ -41906,7 +41923,7 @@ aF
 aF
 aF
 aF
-pa
+aF
 aF
 aF
 cR
@@ -42142,14 +42159,7 @@ aa
 aa
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+Ye
 aF
 aF
 aF
@@ -42163,7 +42173,14 @@ aF
 aF
 aF
 aF
-pa
+aF
+aF
+aF
+aF
+aF
+aF
+aF
+aF
 aF
 aF
 aF
@@ -42399,14 +42416,7 @@ aa
 aa
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+Ye
 aF
 aF
 aF
@@ -42420,7 +42430,14 @@ aF
 aF
 aF
 aF
-pa
+aF
+aF
+aF
+aF
+aF
+aF
+aF
+aF
 aF
 aF
 aF
@@ -42656,14 +42673,14 @@ aa
 aa
 aa
 aa
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+al
+al
+al
+al
+al
+al
+al
+al
 al
 al
 al
@@ -42913,14 +42930,14 @@ aa
 aa
 aa
 aa
-ac
-af
-ac
-ac
-ac
-ac
-ac
-ac
+al
+bm
+al
+al
+al
+al
+al
+al
 al
 al
 al
@@ -43170,14 +43187,14 @@ aa
 aa
 aa
 aa
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-eq
+al
+al
+al
+al
+al
+al
+al
+aD
 aD
 aD
 al
@@ -43427,14 +43444,14 @@ aa
 aa
 aa
 aa
-eq
-ac
-ac
-ac
-ac
-ac
-eq
-eq
+af
+th
+th
+th
+th
+th
+af
+af
 aI
 aI
 aI

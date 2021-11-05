@@ -2412,16 +2412,6 @@
 "Pi" = (
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
-"Pk" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 4;
-	opacity = 1;
-	teleport_x = 236;
-	teleport_y = 8;
-	teleport_z = 7
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "Ps" = (
 /obj/structure/stalker/car/gryzovik/south,
 /turf/open/floor/plating/dirt/dark,
@@ -20299,11 +20289,11 @@ JK
 JK
 JK
 JK
-Pk
-Pk
-Pk
-Pk
-Pk
+JK
+JK
+JK
+JK
+JK
 JK
 JK
 JK

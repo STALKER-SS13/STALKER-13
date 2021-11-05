@@ -8,6 +8,7 @@
 #include "map_files/ZonaRemastered/svalka.dmm"
 #include "map_files/ZonaRemastered/radar.dmm"
 #include "map_files/ZonaRemastered/yantar.dmm"
+#include "map_files/ZonaRemastered/ArmyWarehouses.dmm"
 //#include "map_files/ZonaRemastered/zona.dmm"
 
 #define FORCE_MAP "_maps/zonaremastered.json"

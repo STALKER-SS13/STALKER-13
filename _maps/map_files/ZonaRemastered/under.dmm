@@ -2386,9 +2386,8 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/backwater/krug)
 "iz" = (
-/obj/structure/barricade/stalker/wood,
 /obj/machinery/door/poddoor/preopen,
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "iA" = (
 /obj/structure/stalker/cacheable/porog{
@@ -4710,6 +4709,13 @@
 /obj/rad/rad_low,
 /turf/open/floor/mineral/titanium,
 /area/stalker)
+"xH" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/yashik/yaskik_a,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "xL" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5200,6 +5206,10 @@
 /obj/rad/rad_low,
 /turf/open/floor/holofloor/wood,
 /area/stalker)
+"HP" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "HZ" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/rad/rad_medium,
@@ -7399,7 +7409,7 @@ Ao
 ge
 fg
 fg
-fg
+fs
 fg
 iP
 fg
@@ -7654,7 +7664,7 @@ Dg
 fg
 fj
 fj
-ge
+fj
 iz
 gM
 iJ
@@ -7909,9 +7919,9 @@ IB
 Yj
 Pc
 fg
-fj
-jE
-fj
+HP
+xH
+jr
 fg
 fj
 fg

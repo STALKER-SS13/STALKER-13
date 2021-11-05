@@ -104,10 +104,10 @@
 	spread = 3
 
 /obj/item/projectile/bullet/bullet762x54
-	damage = 64
-	armour_penetration = 20
+	damage = 75
+	armour_penetration = 50
 	range = 80
-	spread = 2
+	spread = 1
 
 //DShK - Just a PKM
 /obj/item/projectile/bullet/checkpoint
@@ -117,10 +117,10 @@
 	spread = 2
 
 /obj/item/projectile/bullet/bullet762x51
-	damage = 52
-	armour_penetration = 0
+	damage = 65
+	armour_penetration = 40
 	range = 80
-	spread = 2
+	spread = 1
 
 /obj/item/projectile/bullet/tungsten_slug
 	damage = 75

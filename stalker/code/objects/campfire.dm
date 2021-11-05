@@ -58,7 +58,6 @@ obj/machinery/campfire/barrel
 
 	user.visible_message("<span class='green'>[user] extinguished the fire.</span>", "<span class='green'>You extinguished the fire.</span>")
 	desc = initial(desc)
-	eng_desc = initial(eng_desc)
 
 	active = !active
 	update_icon()
@@ -114,7 +113,6 @@ obj/machinery/campfire/process()
 				update_icon()
 				soundloop.start()
 				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)
@@ -133,7 +131,6 @@ obj/machinery/campfire/process()
 				update_icon()
 				soundloop.start()
 				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)

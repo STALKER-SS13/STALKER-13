@@ -34,7 +34,6 @@
 /obj/item/attachment/scope/SUSAT
 	name = "SUSAT"
 	desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
-	eng_desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
 	icon = 'stalker/icons/weapon_mods.dmi'
 	icon_state = "susat"
 	types = list(/obj/item/gun/ballistic/automatic/tpc301,

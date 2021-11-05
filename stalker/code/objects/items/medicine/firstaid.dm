@@ -89,7 +89,6 @@
 
 /obj/item/stack/medical/gauze/bint
 	desc = "A common gauze bandage. It'll work extremely well for stopping any bleeding!"
-	eng_desc = "A common gauze bandage. It'll work extremely well for stopping any bleeding!"
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "bint"
 	amount = 2

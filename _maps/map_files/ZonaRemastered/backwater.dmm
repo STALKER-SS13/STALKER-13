@@ -1135,10 +1135,10 @@
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "eF" = (
-/obj/machinery/stalker/sidormat{
-	pixel_y = 8
-	},
 /obj/structure/table/reinforced,
+/obj/machinery/stalker/sidormat{
+	pixel_y = 10
+	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "eG" = (

@@ -1,9 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 195;
-	teleport_y = 207;
-	teleport_z = 9
+	teleport_x = 69;
+	teleport_y = 216;
+	teleport_z = 8
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
@@ -1624,6 +1624,9 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "jZ" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = -10
+	},
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "6";
 	tag = "icon-7"
@@ -1721,6 +1724,18 @@
 	tag = "icon-truba2 (EAST)"
 	},
 /turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
+"lt" = (
+/obj/structure/stalker/car/gryzovik/west{
+	icon_state = "2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	pixel_y = -11;
+	tag = "icon-border2"
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "lw" = (
 /obj/structure/fence/post{
@@ -2277,6 +2292,15 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"sU" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = 11
+	},
+/obj/structure/stalker/car/gryzovik/west{
+	icon_state = "4"
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "sX" = (
 /obj/structure/stalker/cacheable/brokenmachine,
 /turf/open/stalker/floor/plasteel/plita,
@@ -2379,6 +2403,32 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"tS" = (
+/obj/structure/stalker/car/gryzovik/west{
+	icon_state = "8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "tX" = (
 /obj/structure/stalker/busshina,
 /turf/open/stalker/floor/gryaz,
@@ -2460,6 +2510,24 @@
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "7";
 	tag = "icon-7"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	pixel_y = -4;
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	pixel_y = -4;
+	tag = "icon-border2"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	pixel_y = -4;
+	tag = "icon-border8"
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
@@ -3301,6 +3369,36 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/plasteel/plita,
+/area/stalker/blowout/outdoor)
+"HH" = (
+/obj/structure/stalker/car/gryzovik/west,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	pixel_y = 20;
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border4";
+	tag = "icon-border4"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border1";
+	tag = "icon-border1"
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "HL" = (
 /obj/rad/rad_low,
@@ -4326,6 +4424,16 @@
 /obj/rad/rad_high,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"UO" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/structure/stalker/car/gryzovik/west{
+	icon_state = "5"
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "UQ" = (
 /obj/structure/stalker/car/gryzovik/east{
 	icon_state = "6";
@@ -4663,6 +4771,10 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "ZQ" = (
+/obj/structure/stalker/cacheable/shina3{
+	pixel_x = 14;
+	pixel_y = -4
+	},
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "3";
 	tag = "icon-3"
@@ -64731,8 +64843,8 @@ RS
 YF
 YF
 YF
-ar
-av
+lt
+HH
 YF
 YF
 YF
@@ -64988,7 +65100,7 @@ Pu
 YF
 YF
 YF
-as
+sU
 ZQ
 YF
 YF
@@ -65246,7 +65358,7 @@ YF
 YF
 YF
 YF
-YF
+Pu
 YF
 YF
 YF
@@ -65504,7 +65616,7 @@ YF
 YF
 YF
 jZ
-ax
+UO
 YF
 RS
 RS
@@ -65761,7 +65873,7 @@ YF
 YF
 YF
 uX
-ay
+tS
 ib
 ib
 RS

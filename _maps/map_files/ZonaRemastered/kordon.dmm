@@ -110,8 +110,8 @@
 "aw" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 49;
-	teleport_y = 7;
+	teleport_x = 72;
+	teleport_y = 2;
 	teleport_z = 8
 	},
 /turf/open/stalker/floor/tropa,
@@ -4201,8 +4201,8 @@
 "pc" = (
 /obj/machinery/button/door{
 	id = "anotherwaytobase";
-	pixel_x = 16;
-	pixel_y = 18
+	pixel_x = 12;
+	pixel_y = 14
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
@@ -33824,7 +33824,7 @@ mq
 wc
 mq
 ia
-pc
+mq
 mq
 ab
 aa
@@ -34081,7 +34081,7 @@ mq
 ng
 mq
 kp
-mq
+pc
 ab
 ab
 aa

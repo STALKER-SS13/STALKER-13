@@ -1,7 +1,6 @@
 /obj/item/stalker/bolts
 	name = "bolts"
-	desc = "A bunch of bolts."
-	eng_desc = "A pile of bolts."
+	desc = "A pile of bolts."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "kucha"
 	w_class = 6//from 2. >:(
@@ -15,8 +14,7 @@
 
 /obj/item/stalker/bolt
 	name = "bolt"
-	desc = "Old Soviet bolt stricken with corrosion,"
-	eng_desc = "Old Soviet bolt affected by corrosion."
+	desc = "Old Soviet bolt affected by corrosion."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "bolt"
 	w_class = 6//from 1. >:(

@@ -4547,7 +4547,7 @@
 	id = "DoorFullOfSecrets2";
 	name = "Laboratory"
 	},
-/turf/open/space/basic,
+/turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "vN" = (
 /obj/item/stack/sheet/animalhide/monkey,

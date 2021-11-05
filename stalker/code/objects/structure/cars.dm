@@ -4,7 +4,6 @@
 /obj/structure/stalker/car/gryzovik
 	name = "Gruzovik"
 	desc = "An old soviet truck."
-	eng_desc = "An old soviet truck."
 
 /obj/structure/stalker/car/gryzovik/south
 	icon = 'stalker/icons/cars/gruzovik_south.dmi'
@@ -41,7 +40,6 @@
 	name = "UAZ"
 	icon = 'stalker/icons/cars/uaz-469_south.dmi'
 	desc = "Rusty, but still working. The gas tank is empty."
-	eng_desc = "Rusty, but still working. The gas tank is empty."
 
 /obj/structure/stalker/car/mi24
 	name = "MI24"
@@ -50,7 +48,6 @@
 /obj/structure/stalker/car/gryzovik_army
 	name = "Gruzovik"
 	desc = "An old Soviet army gruen with flat tires."
-	eng_desc = "An old Soviet army gruen with flat tires."
 
 /obj/structure/stalker/car/gryzovik_army/south
 	icon = 'stalker/icons/cars/gruzovik_army_south.dmi'

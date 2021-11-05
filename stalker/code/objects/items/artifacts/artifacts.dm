@@ -62,7 +62,7 @@
 /obj/item/artifact/meduza
 	name = "jellyfish"
 	desc = "This gravitational artifact attracts and absorbs radioactive particles, reducing the effects of radiation on the body. Very common in the Zone and is unofficially used outside the Zone for treating acute radiation sickness in exceptional circumstances."
-	icon_state = "meduza"
+	icon_state = "jellyfish"
 	art_armor = list()
 	radiation = -2
 	level_s = 1
@@ -135,7 +135,7 @@
 /obj/item/artifact/pustishka
 	name = "shell"
 	desc = "Degenerate case of the Electra anomaly activity. Apparently, such a remarkable rounded shape can be obtained by subjecting the anomaly to thermal action. Expensive artifact."
-	icon_state = "pustishka"
+	icon_state = "shell"
 	art_armor = list(energy = 30)
 	radiation = 2
 	level_s = 3
@@ -184,6 +184,7 @@
 	name = "mama's beads"
 	desc = "Much about this artifact remains a complete mystery to scientists. At the same time, it is known for certain that emissions produced by pulses in its thicker sections force blood in open wounds to clot quicker, forming a protective scab. One of the most noticeable effects of this artifact is the increased speed of wound healing. Emits radiation."
 	icon_state = "mamini_busi"
+	icon_state = "mamas_beads"
 	art_armor = list()
 	radiation = 5
 	level_s = 4
@@ -260,6 +261,53 @@
 		mob.adjustFireLoss(-0.5)
 		mob.adjustBruteLoss(-0.5)
 	return 1
+
+/obj/item/artifact/thorn
+	name = "thorn"
+	desc = "A relatively rare artifact which forms in areas contaminated with chemicals, Kolobok is highly valued for its ability to heal wounds of any kind in mere minutes. For unknown reasons, scientists are spreading rumors among stalkers that the artifact interacts with the bearer's genetic code. Emits radiation."
+	eng_desc = "A relatively rare artifact which forms in areas contaminated with chemicals, Kolobok is highly valued for its ability to heal wounds of any kind in mere minutes. For unknown reasons, scientists are spreading rumors among stalkers that the artifact interacts with the bearer's genetic code. Emits radiation."
+	icon_state = "thorn"
+	radiation = -1
+	level_s = 1
+
+/obj/item/artifact/thorn/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon))
+		var/mob/living/carbon/mob = user
+		mob.adjustBruteLoss(1) //temporary until bleeding weakness is added
+	return 1
+
+/obj/item/artifact/urchin
+	name = "urchin"
+	desc = "The anomaly Burnt Fuzz very rarely gives rise to this artifact. Blood pressure rises, the body gets rid of a large amount of red blood cells. But along with them the stored radiation leaves the body as well. In his fundamental work titled \"Ionization and polarization of the components of rare artifacts\", Sakharov noted that the content of this formation has a critical stability, and it's not realistic to create such an artifact in lab conditions in the next ten years."
+	eng_desc = "The anomaly Burnt Fuzz very rarely gives rise to this artifact. Blood pressure rises, the body gets rid of a large amount of red blood cells. But along with them the stored radiation leaves the body as well. In his fundamental work titled \"Ionization and polarization of the components of rare artifacts\", Sakharov noted that the content of this formation has a critical stability, and it's not realistic to create such an artifact in lab conditions in the next ten years."
+	icon_state = "urchin"
+	radiation = -3
+	level_s = 4
+
+/obj/item/artifact/urchin/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon))
+		var/mob/living/carbon/mob = user
+		mob.adjustBruteLoss(1) //Temporary until bleeding weakness is added
+	return 1
+
+/obj/item/artifact/slug //needs code to apply it's effects; don't implement yet
+	name = "slug"
+	desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
+	eng_desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
+	icon_state = "slug"
+	art_armor = list() // -10% burn, -10% bio, -267% bleeding
+	radiation = 0
+	level_s = 2
+
+/obj/item/artifact/slime //needs code to apply it's effects; don't implement yet
+	name = "slime"
+	desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
+	eng_desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
+	icon_state = "slime"
+	radiation = 0
+	level_s = 1
 
 	//ПОЯС
 /obj/item/storage/belt/stalker

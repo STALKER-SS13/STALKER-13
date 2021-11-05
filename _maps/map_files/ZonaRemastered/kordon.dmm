@@ -2575,8 +2575,8 @@
 "hO" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 130;
-	teleport_y = 252;
+	teleport_x = 118;
+	teleport_y = 253;
 	teleport_z = 1
 	},
 /turf/open/stalker/floor/gryaz,
@@ -3888,7 +3888,7 @@
 "mo" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 130;
+	teleport_x = 117;
 	teleport_y = 253;
 	teleport_z = 1
 	},

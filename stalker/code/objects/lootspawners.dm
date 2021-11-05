@@ -254,8 +254,8 @@
 	lootcount = 1
 	cooldown = 4500
 	loot = list(/obj/item/artifact/meduza = 12,
-				/obj/item/artifact/stoneflower = 6,
-				/obj/item/artifact/nightstar = 3,
+				/obj/item/artifact/stoneflower_depleted = 6,
+				/obj/item/artifact/nightstar_depleted = 3,
 				/obj/item/artifact/maminibusi = 1,
 				/obj/nothing = 80)
 

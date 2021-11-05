@@ -140,7 +140,6 @@
 /obj/structure/chair/brevno
 	name = "log"
 	desc = "A simple log."
-	eng_desc = "A simple log."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "log1"
 

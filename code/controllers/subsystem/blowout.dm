@@ -232,14 +232,14 @@ SUBSYSTEM_DEF(blowout)
 		KPK.lentahtml = ""
 
 	blowout_count++
-	add_lenta_message(null, "0", "Sidorovich", "Loners", "The emmission is over! You can safely leave the shelter.")
+	add_lenta_message(null, "0", "Sidorovich", "Loners", "The emmission is over! You can safely leave shelter.")
 
 	for(var/datum/data/record/sk in GLOB.data_core.stalkers)
 		if(sk.fields["reputation"] <= VERYBAD)
 			var/name_ = sk.fields["name"]
 			var/rep_ = sk.fields["reputation"]
 			add_lenta_message(null, "0", "Sidorovich", "Loners", "For PDA [name_] get [GetCostBasedOnReputation(rep_)] roubles.")
-	add_lenta_message(null, "0", "Sidorovich", "Loners", "Search, kill and sell the PDAs of stalkers with bad reputations!")
+	add_lenta_message(null, "0", "Sidorovich", "Loners", "Don't go wandering alone and die, you have much more to buy from me!")
 
 
 //	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners. Disabled for now.

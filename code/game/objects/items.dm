@@ -111,6 +111,9 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/list/modifications = list()
 	var/unique = 0
 
+/obj/item/proc/shiftv(mob/user)
+	return
+
 /obj/item/Initialize()
 
 	materials =	typelist("materials", materials)

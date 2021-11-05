@@ -43,9 +43,9 @@ Assistant
 
 /datum/outfit/job/army_spetsnaz/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/tacticalhelmet
+	head = /obj/item/clothing/head/skathelmet
 	uniform = /obj/item/clothing/under/color/switer/lolg
-	suit = /obj/item/clothing/suit/berill
+	suit = /obj/item/clothing/suit/skat
 	ears = null
 	belt = /obj/item/weapon/kitchen/knife/m9
 	gloves = /obj/item/clothing/gloves/fingerless

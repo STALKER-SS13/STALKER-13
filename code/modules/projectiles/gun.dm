@@ -133,7 +133,7 @@
 		pin = new pin(src)
 	if(gun_light)
 		alight = new(src)
-	build_zooming()
+//	build_zooming()
 
 /obj/item/gun/Destroy()
 	QDEL_NULL(pin)
@@ -657,6 +657,9 @@
 	gun.zoom(L, FALSE)
 	..()
 
+/obj/item/gun/shiftv(mob/user)
+	if(zoomable)
+		zoom(user)
 
 /obj/item/gun/proc/zoom(mob/living/user, forced_zoom)
 	if(!user || !user.client)

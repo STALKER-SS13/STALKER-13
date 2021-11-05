@@ -24,6 +24,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
+	bayonet = TRUE
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/throwing

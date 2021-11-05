@@ -3,7 +3,6 @@ GLOBAL_LIST_EMPTY(cps)
 /obj/machinery/stalker/sidorpoint
 	name = "SIDORPOINT - null"
 	desc = "Control point."
-	eng_desc = "Control point."
 	icon = 'stalker/icons/device_new.dmi'
 	icon_state = "radio_free"
 	density = 1
@@ -46,17 +45,15 @@ GLOBAL_LIST_EMPTY(cps)
 	if(controlled_by)
 
 		desc = "The point is under the control of the group [get_rus_faction(controlled_by)] on [control_percent]%"
-		eng_desc = "Point is under [controlled_by] control by [control_percent]%"
+		desc = "Point is under [controlled_by] control by [control_percent]%"
 
 	else if(control_percent)
 
-		desc = "The point is under the control of the group [get_rus_faction(capturing_faction)] on [control_percent]%"
-		eng_desc = "Point is under [capturing_faction] control by [control_percent]%"
+		desc = "Point is under [capturing_faction] control by [control_percent]%"
 
 	else
 
 		desc = "This point can be captured."
-		eng_desc = "This point can be captured."
 
 /obj/machinery/stalker/sidorpoint/proc/update_icon_percent()
 	switch(control_percent)

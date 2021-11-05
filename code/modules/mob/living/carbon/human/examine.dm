@@ -343,7 +343,7 @@
 							msg += "Rating: [rus_rank_name_s]\n\n"
 							msg += "<a href='?src=\ref[src];KPK=1;money_transfer=1'>Make a money transfer</a>\n"
 				else
-					msg += "\n<span class='warning'>NO ACCESS!</span>\n"
+					msg += "\n<span class='warning'></span>\n"
 
 
 	else if(isobserver(user) && traitstring)

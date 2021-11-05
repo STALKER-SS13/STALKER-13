@@ -4542,7 +4542,7 @@
 	id = "DoorFullOfSecrets2";
 	name = "Laboratory"
 	},
-/turf/open/space/basic,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "vN" = (
 /obj/item/stack/sheet/animalhide/monkey,
@@ -5056,10 +5056,6 @@
 /obj/structure/stalker/cacheable/junk_micro,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"DI" = (
-/mob/living/simple_animal/hostile/mutant/bloodsucker,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
 "DO" = (
 /turf/closed/wall/mineral/titanium/survival/pod{
 	desc = "A slick black wall that is made of a strong metal.";
@@ -5361,14 +5357,6 @@
 	pixel_y = 6
 	},
 /turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/krug)
-"Ks" = (
-/obj/machinery/door/poddoor/shutters{
-	icon_state = "open";
-	id = "bloodsuckerhome";
-	state_open = 1
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "KL" = (
 /obj/machinery/door/poddoor/shutters{
@@ -7388,7 +7376,7 @@ ad
 ad
 fg
 Zz
-DI
+fJ
 CR
 fq
 Wx
@@ -9447,10 +9435,10 @@ ad
 ad
 fg
 fJ
+SD
 fJ
-KL
-Ks
-KL
+fJ
+fJ
 fJ
 fg
 ad
@@ -9704,7 +9692,7 @@ ad
 ad
 fg
 fJ
-fJ
+fg
 fg
 fg
 fg
@@ -11522,7 +11510,7 @@ iG
 fg
 fA
 fA
-iY
+ge
 jB
 fg
 ge

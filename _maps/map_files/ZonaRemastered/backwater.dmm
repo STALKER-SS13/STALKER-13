@@ -7749,7 +7749,7 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Mt" = (
 /obj/structure/stalker/cacheable/yashik,
@@ -13232,7 +13232,7 @@ PX
 eC
 Gg
 Gg
-eC
+Gg
 Xa
 eJ
 eC

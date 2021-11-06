@@ -20,7 +20,7 @@
 	dir = 4
 	},
 /obj/structure/stalker/water/bochka/kap,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "ag" = (
 /obj/anomaly/electro,
@@ -351,6 +351,12 @@
 "by" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/agroprom/tunnel)
+"bz" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "bA" = (
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/agroprom/tunnel)
@@ -1247,6 +1253,12 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
+"eP" = (
+/obj/structure/grille/stalker{
+	icon_state = "fence3"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
 "eQ" = (
 /obj/structure/stalker/car/gryzovik2/south,
 /turf/open/stalker/floor/road,
@@ -1995,6 +2007,12 @@
 /area/stalker/blowout/outdoor)
 "hM" = (
 /obj/structure/grille/stalker,
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
+"hN" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a{
+	pixel_y = 15
+	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "hO" = (
@@ -3075,7 +3093,7 @@
 	icon_state = "up";
 	teleport_x = 206;
 	teleport_y = 45;
-	teleport_z = 5
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4
@@ -3109,6 +3127,15 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/blowout/agroprom/buildings)
+"lK" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	teleport_x = 206;
+	teleport_y = 57;
+	teleport_z = 5
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "lM" = (
 /obj/structure/stalker/blocks/vanish/block2/l,
 /turf/open/stalker/floor/road{
@@ -3291,7 +3318,7 @@
 "mA" = (
 /obj/structure/table/stalker/wood,
 /obj/item/trash/konserva/snikers,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "mG" = (
 /obj/effect/turf_decal/stripes/full{
@@ -3335,7 +3362,7 @@
 /area/stalker/agroprom/tunnel)
 "mN" = (
 /obj/machinery/door/airlock/stalker/sidor,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "mR" = (
 /obj/structure/stalker/cacheable/bochka{
@@ -3372,12 +3399,13 @@
 /obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"nF" = (
+/obj/effect/landmark/mobspawner/bloodsucker_spawner,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "nH" = (
-/obj/machinery/button/door/keypad{
-	correctcode = "1986";
-	id = 42
-	},
-/turf/closed/wall/stalker/beton_agro,
+/obj/effect/landmark/observer_start,
+/turf/open/stalker/floor/road,
 /area/stalker/agroprom/tunnel)
 "nJ" = (
 /obj/structure/table/stalker/wood,
@@ -3494,6 +3522,18 @@
 	dir = 8
 	},
 /area/stalker/agroprom/tunnel)
+"oG" = (
+/obj/structure/table/stalker/wood,
+/obj/item/clothing/suit/hooded/kombez{
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 50, "bomb" = 45, "bio" = 50, "rad" = 65, "fire" = 50, "psy" = 0);
+	durability = 300;
+	eng_desc = "This DIY stalker bodysuit is a combination of a bodysuit of twin-layered rubberized cloth with plexiglass lining and built-in body armor. Despite the fact that the body armor is incapable of protecting the wearer from even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential. Comes with built-in artifact containers. This particular suit has been improved with additional polycarbonate armor plates, increasing its protection without sacrificing mobility.";
+	modifications = null;
+	name = "hardened sunrise";
+	unique = 1
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
 "oL" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/stalker/floor/plasteel/plita,
@@ -3510,6 +3550,7 @@
 	icon_state = "border2";
 	tag = "icon-border2"
 	},
+/obj/anomaly/puh,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/agroprom/tunnel)
 "oN" = (
@@ -3783,7 +3824,7 @@
 	dir = 8;
 	teleport_x = 204;
 	teleport_y = 47;
-	teleport_z = 5
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -3817,6 +3858,10 @@
 /obj/machinery/light/small,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/agroprom/buildings)
+"re" = (
+/obj/anomaly/holodec,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/agroprom/tunnel)
 "rk" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/road{
@@ -3895,19 +3940,7 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/agroprom/buildings)
 "sR" = (
-/obj/structure/table/stalker/wood,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/clothing/suit/hooded/kombez{
-	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 50, "bomb" = 45, "bio" = 50, "rad" = 65, "fire" = 50, "psy" = 0);
-	durability = 300;
-	eng_desc = "This DIY stalker bodysuit is a combination of a bodysuit of twin-layered rubberized cloth with plexiglass lining and built-in body armor. Despite the fact that the body armor is incapable of protecting the wearer from even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential. Comes with built-in artifact containers. This particular suit has been improved with additional polycarbonate armor plates, increasing its protection without sacrificing mobility.";
-	modifications = null;
-	name = "hardened sunrise";
-	unique = 1
-	},
-/obj/item/storage/box/MRE,
+/obj/anomaly/puh,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "sS" = (
@@ -4063,23 +4096,15 @@
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
 "vp" = (
-/obj/structure/closet/crate/stalker/blue,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/syndieminibomb/concussion/stalker/frag,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/flashbang,
+/obj/structure/table/stalker/wood,
+/obj/item/gun/ballistic/automatic/ak74{
+	burst_size = 5;
+	desc = "The modified closing system increases the speed of shooting.";
+	durability = 200;
+	name = "Fast-shooting AK-74";
+	unique = 1
+	},
+/obj/item/ammo_box/stalker/b545ap,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "vD" = (
@@ -4093,10 +4118,11 @@
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
 "vN" = (
-/obj/machinery/door/poddoor/sidor{
-	id = 42
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "TainikStrelka";
+	up = 1
 	},
-/obj/structure/barricade/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "vO" = (
@@ -4130,6 +4156,7 @@
 	pixel_x = 0;
 	tag = "icon-border8"
 	},
+/obj/anomaly/puh,
 /turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "wz" = (
@@ -4259,10 +4286,7 @@
 /turf/open/stalker/floor/road,
 /area/stalker/agroprom/tunnel)
 "yv" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/stalker/cacheable/polka,
+/obj/structure/stalker/cacheable/junk_locker,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "yw" = (
@@ -4294,6 +4318,15 @@
 /obj/rad/rad_high,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"zx" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	teleport_x = 206;
+	teleport_y = 60;
+	teleport_z = 5
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "zz" = (
 /obj/structure/stalker/trubas{
 	dir = 4
@@ -4464,7 +4497,7 @@
 /area/stalker/agroprom/tunnel)
 "Bk" = (
 /obj/structure/stalker/modification_table,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Bs" = (
 /obj/structure/table/stalker/wood,
@@ -4487,7 +4520,8 @@
 /area/stalker/agroprom/tunnel)
 "BV" = (
 /obj/anomaly/tramplin,
-/turf/open/stalker/floor/agroprom/beton,
+/obj/anomaly/holodec,
+/turf/open/floor/plating/foam,
 /area/stalker/agroprom/tunnel)
 "BY" = (
 /obj/anomaly/holodec,
@@ -4626,7 +4660,7 @@
 /area/stalker/agroprom/tunnel)
 "CP" = (
 /obj/anomaly/holodec,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/blowout/agroprom/tunnel)
 "Dd" = (
 /obj/structure/stalker/cacheable/televizor/broken{
@@ -4643,14 +4677,8 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Dx" = (
-/obj/structure/table/stalker/wood,
-/obj/item/gun/ballistic/automatic/aksu74{
-	burst_size = 5;
-	durability = 200;
-	eng_desc = "The modified closing system increases the speed of shooting.";
-	fire_delay = 0.75;
-	name = "Fast-shooting AKS 74u";
-	unique = 1
+/obj/structure/stalker/trubas{
+	dir = 4
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
@@ -4694,6 +4722,15 @@
 /obj/machinery/light,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/agroprom/tunnel)
+"Eb" = (
+/obj/effect/mine/explosive,
+/obj/structure/stalker/cacheable/cover,
+/obj/structure/stalker/cacheable/truba/vert{
+	desc = "Warning!";
+	name = "stretch"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
 "Ec" = (
 /obj/machinery/light/small,
 /turf/open/stalker/floor/gryaz,
@@ -4701,6 +4738,15 @@
 "Ee" = (
 /obj/structure/table/stalker/wood,
 /obj/item/clothing/mask/gas/stalker/respirator,
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
+"Ew" = (
+/obj/structure/fluff/broken_flooring,
+/obj/structure/ladder/unbreakable{
+	down = 1;
+	height = 6;
+	id = "TainikStrelka"
+	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "EJ" = (
@@ -4867,6 +4913,12 @@
 /obj/rad/rad_high,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"FZ" = (
+/obj/structure/barricade/stalker/wood{
+	dir = 8
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "Ga" = (
 /obj/structure/stalker/water/bochka{
 	density = 0;
@@ -4933,6 +4985,13 @@
 	dir = 4
 	},
 /area/stalker/agroprom/tunnel)
+"HN" = (
+/obj/structure/stalker/cacheable/body{
+	desc = "Died aftel talk with Strelok. Sad, but true.";
+	name = "Doctor"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
 "Ia" = (
 /obj/structure/stalker/trubas{
 	dir = 8;
@@ -4981,7 +5040,11 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/agroprom/tunnel)
 "IZ" = (
-/obj/structure/stalker/cacheable/truba/vert,
+/obj/structure/flora/stalker/bush{
+	icon = 'stalker/icons/decorations_32x64.dmi';
+	icon_state = "crate";
+	pixel_y = -2
+	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Ja" = (
@@ -5112,7 +5175,7 @@
 	dir = 4;
 	teleport_x = 208;
 	teleport_y = 41;
-	teleport_z = 5
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4
@@ -5140,6 +5203,12 @@
 	dir = 5
 	},
 /turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
+"KQ" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a{
+	pixel_y = -15
+	},
+/turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "KR" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -5197,6 +5266,14 @@
 	},
 /obj/effect/decal/cleanable/glitter/white,
 /turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/agroprom/tunnel)
+"LD" = (
+/obj/structure/flora/stalker/bush{
+	icon = 'stalker/icons/decorations_32x64.dmi';
+	icon_state = "crate";
+	pixel_x = -4
+	},
+/turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "LE" = (
 /obj/effect/turf_decal/stripes/full{
@@ -5307,6 +5384,13 @@
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/agroprom/tunnel)
+"LR" = (
+/obj/machinery/door/poddoor/sidor{
+	desc = "Leads to the swamp doctor.";
+	id = "doctorhouse"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "LU" = (
 /obj/structure/grille/stalker{
 	dir = 1;
@@ -5345,7 +5429,16 @@
 /area/stalker/agroprom/tunnel)
 "LY" = (
 /obj/structure/closet/crate/stalker/blue/stash/high,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
+"LZ" = (
+/obj/machinery/button/door/keypad{
+	correctcode = "2007";
+	id = "doctorhouse";
+	keycode = "1971";
+	pixel_y = -32
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Md" = (
 /obj/effect/turf_decal/stripes/full{
@@ -5603,6 +5696,15 @@
 /obj/structure/stalker/blocks/vanish/pipe/pipe2,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"MY" = (
+/obj/structure/ladder/unbreakable{
+	down = 1;
+	height = 4;
+	id = "TainikStrelka";
+	up = 1
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
 "MZ" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -5632,8 +5734,20 @@
 /turf/open/stalker/floor/road,
 /area/stalker/agroprom/tunnel)
 "Ns" = (
-/obj/structure/stalker/cacheable/polka,
-/turf/open/stalker/floor/agroprom/beton,
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	pixel_x = 0;
+	tag = "icon-border8"
+	},
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	pixel_x = 0;
+	tag = "icon-border8"
+	},
+/obj/structure/stalker/cacheable/body,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "Nt" = (
 /obj/structure/stalker/cacheable/polka,
@@ -5654,6 +5768,10 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
+"ND" = (
+/obj/structure/stalker/cacheable/polka,
+/turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
 "NS" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/cacheable/radio{
@@ -5667,7 +5785,7 @@
 	dir = 1;
 	tag = "icon-krovat_s (NORTH)"
 	},
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Om" = (
 /obj/structure/bed/stalker/desecratedbed,
@@ -5680,6 +5798,10 @@
 "Oy" = (
 /obj/structure/stalker/cacheable/rozetka,
 /turf/closed/wall/stalker/beton_agro,
+/area/stalker/agroprom/tunnel)
+"OD" = (
+/obj/machinery/door/unpowered/stalker,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "OE" = (
 /obj/structure/stalker/cacheable/porog/porog2{
@@ -5702,9 +5824,8 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "OR" = (
-/obj/machinery/light,
-/obj/structure/barricade/stalker/box,
-/turf/open/stalker/floor/agroprom/beton,
+/obj/anomaly/puh,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Pd" = (
 /obj/effect/turf_decal/stripes/full{
@@ -5853,7 +5974,7 @@
 "QG" = (
 /obj/structure/table/stalker/wood,
 /obj/item/trash/konserva/bobi,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "QL" = (
 /obj/anomaly/electro,
@@ -5867,6 +5988,10 @@
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/agroprom/buildings)
+"QQ" = (
+/obj/machinery/light,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "QS" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker,
 /turf/open/stalker/floor/agroprom/beton,
@@ -5946,6 +6071,15 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
+"RS" = (
+/obj/structure/ladder/unbreakable{
+	down = 1;
+	height = 3;
+	id = "TainikStrelka";
+	up = 1
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
 "Sd" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -5969,7 +6103,7 @@
 	pixel_y = 32
 	},
 /obj/structure/stalker/cacheable/komod,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "So" = (
 /obj/structure/grille/stalker{
@@ -6097,7 +6231,7 @@
 	dir = 8;
 	tag = "icon-tube1 (WEST)"
 	},
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Su" = (
 /obj/effect/step_trigger/teleporter{
@@ -6301,7 +6435,7 @@
 	icon_state = "up";
 	teleport_x = 206;
 	teleport_y = 51;
-	teleport_z = 5
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -6404,6 +6538,9 @@
 /obj/anomaly/electro,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/agroprom/tunnel)
+"Uq" = (
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/blowout/agroprom/tunnel)
 "Ur" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -6440,6 +6577,10 @@
 	},
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/agroprom/buildings)
+"Vf" = (
+/obj/machinery/door/unpowered/stalker,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "Vh" = (
 /obj/structure/grille/stalker{
 	dir = 8;
@@ -6608,6 +6749,10 @@
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/agroprom/tunnel)
+"Vu" = (
+/obj/machinery/campfire/barrel,
+/turf/open/stalker/floor/lattice,
+/area/stalker/agroprom/tunnel)
 "Vx" = (
 /obj/structure/table/stalker/wood,
 /obj/item/gun/ballistic/automatic/pistol/marta,
@@ -6635,11 +6780,14 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "VP" = (
-/obj/structure/stalker/cacheable/cover,
-/obj/effect/mine/stun{
-	layer = 2.9
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	icon_state = "up";
+	teleport_x = 210;
+	teleport_y = 60;
+	teleport_z = 5
 	},
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "VV" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
@@ -6771,16 +6919,44 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/agroprom/tunnel)
+"Xi" = (
+/obj/structure/ladder/unbreakable{
+	down = 1;
+	height = 2;
+	id = "TainikStrelka";
+	up = 1
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
 "Xj" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
+"Xs" = (
+/obj/structure/ladder/unbreakable{
+	down = 1;
+	height = 5;
+	id = "TainikStrelka";
+	up = 1
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
+"XE" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 8;
+	icon_state = "up";
+	teleport_x = 210;
+	teleport_y = 57;
+	teleport_z = 5
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/agroprom/tunnel)
 "XG" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
 	teleport_x = 199;
 	teleport_y = 50;
-	teleport_z = 5
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -6869,7 +7045,7 @@
 "Yl" = (
 /obj/structure/table/stalker/wood,
 /obj/item/trash/konserva/chocolate,
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Yu" = (
 /obj/effect/turf_decal/stripes/full{
@@ -50314,11 +50490,11 @@ aa
 aa
 aa
 aa
-kX
-kX
-Wx
-kX
-kX
+nZ
+nZ
+FZ
+nZ
+nZ
 aa
 aa
 aa
@@ -50554,7 +50730,7 @@ aa
 aa
 aa
 nZ
-hG
+OR
 kX
 hG
 nZ
@@ -50565,25 +50741,25 @@ aa
 aa
 kX
 kX
+nZ
+nZ
 kX
+nZ
+nZ
+nZ
+nZ
+hG
+hG
+hG
+nZ
+nZ
 kX
+nZ
+nZ
 kX
+nZ
 kX
-kX
-kX
-kX
-Qc
-Qc
-Qc
-kX
-kX
-kX
-kX
-kX
-kX
-kX
-kX
-kX
+nZ
 kX
 kX
 kX
@@ -50823,21 +50999,21 @@ aa
 kX
 kX
 Qc
+hG
+hG
+hG
+hG
+hG
+hG
+hG
+hG
+hG
+hG
 Qc
 Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
+hG
+hG
+hG
 Qc
 Qc
 Qc
@@ -51080,19 +51256,19 @@ aa
 kX
 Vn
 Qc
-Dw
+zY
+Qc
+hG
+hG
+hG
+hG
+hG
 Qc
 Qc
+hG
+hG
 Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
+hG
 Qc
 Qc
 Qc
@@ -51335,21 +51511,21 @@ aa
 aa
 aa
 kX
-kX
-kX
+nZ
+nZ
+Qc
+Qc
+Qc
+hG
+hG
+hG
 Qc
 Qc
 Qc
 Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
+hG
+hG
+hG
 Qc
 Qc
 Qc
@@ -51594,10 +51770,8 @@ aa
 kX
 kX
 kX
-kX
-Wx
-kX
-kX
+nZ
+FZ
 kX
 kX
 kX
@@ -51613,7 +51787,9 @@ kX
 kX
 kX
 kX
-vO
+kX
+kX
+OD
 kX
 kX
 kX
@@ -51852,8 +52028,8 @@ aa
 aa
 aa
 kX
-Qc
-Qc
+hG
+hG
 ob
 Vx
 Ee
@@ -51870,9 +52046,9 @@ aa
 aa
 aa
 XK
-IC
+Uq
 CP
-IC
+Uq
 XK
 aa
 aa
@@ -52109,8 +52285,8 @@ aa
 aa
 aa
 kX
-Qc
-Qc
+OR
+hG
 Qc
 Qc
 Qc
@@ -52128,8 +52304,8 @@ aa
 aa
 XK
 IC
-IC
-IC
+Uq
+Uq
 XK
 aa
 aa
@@ -52366,9 +52542,9 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Qc
+hG
+hG
+hG
 Qc
 Qc
 kX
@@ -52386,7 +52562,7 @@ aa
 XK
 IC
 IC
-IC
+Uq
 XK
 aa
 aa
@@ -52623,10 +52799,10 @@ aa
 aa
 aa
 kX
-SN
-Qc
-Qc
-Qc
+bz
+hG
+hG
+hG
 Qc
 kX
 aa
@@ -52643,7 +52819,7 @@ aa
 XK
 IC
 IC
-IC
+Uq
 XK
 aa
 aa
@@ -52880,10 +53056,10 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Qc
-Qc
+hG
+hG
+hG
+hG
 Qc
 kX
 aa
@@ -52900,7 +53076,7 @@ kX
 kX
 kX
 kX
-vO
+Vf
 kX
 kX
 aa
@@ -53140,7 +53316,7 @@ kX
 QG
 Yl
 mA
-Qc
+hG
 Qc
 kX
 kX
@@ -53149,15 +53325,15 @@ kX
 Qc
 Qc
 Sq
+hG
 Qc
-Qc
-Qc
+tV
 BV
-Qc
-Qc
+tV
+hG
 Sq
-Qc
-Qc
+hG
+hG
 Dw
 kX
 aa
@@ -53372,7 +53548,7 @@ hG
 zI
 kh
 hG
-hG
+zY
 hG
 Qc
 Qc
@@ -53400,18 +53576,18 @@ kX
 kX
 Wx
 kX
-Dw
+xF
+xF
+hG
+hG
 Qc
 Qc
+hG
+hG
 Qc
+tV
 Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
+hG
 Qc
 Qc
 Qc
@@ -53629,7 +53805,7 @@ hG
 zI
 Un
 hG
-Dw
+Qc
 kX
 Qc
 Qc
@@ -53657,22 +53833,22 @@ kX
 kX
 Qc
 Qc
+zY
+xF
+hG
+hG
+zY
 Qc
 Qc
 Qc
+KQ
+Qc
+hN
 Qc
 Qc
-Qc
-Qc
-Qc
-Qc
-GD
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
+hG
+hG
+hG
 kX
 aa
 aa
@@ -53917,8 +54093,8 @@ Qc
 Qc
 Qc
 Qc
-Qc
-Dw
+hG
+hG
 kX
 kX
 kX
@@ -54170,17 +54346,17 @@ kX
 Qc
 Qc
 Qc
-Wg
+nF
 Qc
 Qc
 kX
 kX
 kX
 kX
-aa
-aa
-nH
-Qc
+kX
+Xi
+kX
+LD
 kX
 aa
 aa
@@ -54426,16 +54602,16 @@ kX
 Qc
 Qc
 Qc
-Qc
-Qc
+hG
+hG
 kX
 kX
 kX
-aa
-aa
-aa
-aa
-aa
+Xs
+kX
+MY
+kX
+kX
 kX
 vN
 kX
@@ -54682,19 +54858,19 @@ kX
 Qc
 Qc
 Qc
-Dw
-Qc
+zY
+hG
 kX
 kX
 aa
-aa
-aa
-aa
-aa
-aa
-aa
 kX
-VP
+kX
+kX
+kX
+kX
+RS
+kX
+kX
 kX
 aa
 aa
@@ -54936,10 +55112,10 @@ aa
 aa
 kX
 kX
-Dw
+zY
 Qc
-Qc
-Qc
+hG
+hG
 kX
 kX
 aa
@@ -54951,7 +55127,7 @@ aa
 kX
 kX
 kX
-Qc
+Ew
 kX
 kX
 kX
@@ -55192,7 +55368,7 @@ aa
 aa
 aa
 kX
-Qc
+hG
 Qc
 Qc
 Qr
@@ -55207,10 +55383,10 @@ aa
 aa
 kX
 Dx
-Qc
-Qc
-Qc
-LY
+kX
+Eb
+kX
+xF
 kX
 aa
 aa
@@ -55449,7 +55625,7 @@ aa
 aa
 aa
 kX
-Qc
+hG
 Qc
 Qc
 Qc
@@ -55463,11 +55639,11 @@ aa
 aa
 aa
 kX
-sR
 Qc
-Qc
-Qc
-OR
+xF
+xF
+xF
+xF
 kX
 aa
 aa
@@ -55706,9 +55882,9 @@ aa
 aa
 kX
 kX
-Qc
-Qc
-Qc
+Am
+Am
+zY
 kX
 kX
 aa
@@ -55717,16 +55893,16 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+kX
 kX
 NS
-Qc
-Qc
-Qc
-hJ
+xF
+xF
+xF
+xF
 kX
-aa
+kX
 aa
 aa
 aa
@@ -55963,9 +56139,9 @@ aa
 aa
 kX
 Qc
-Qc
-Qc
-Dw
+hG
+hG
+hG
 kX
 aa
 aa
@@ -55974,16 +56150,16 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 kX
 sS
-Qc
-Fx
-Qc
+xF
+Vu
+xF
 vp
+ND
 kX
-aa
 aa
 aa
 aa
@@ -56220,9 +56396,9 @@ aa
 aa
 kX
 Dw
-Qc
-Qc
-Qc
+Am
+hG
+hG
 kX
 aa
 aa
@@ -56231,16 +56407,16 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 Oy
 Ke
-Qc
-Qc
-Qc
-hJ
+xF
+hG
+hG
+oG
+ND
 kX
-aa
 aa
 aa
 aa
@@ -56477,8 +56653,8 @@ aa
 aa
 kX
 Qc
-Qc
-Qc
+Am
+hG
 kX
 kX
 aa
@@ -56488,16 +56664,16 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 kX
 Sh
-Qc
-Qc
-Qc
+hG
+hG
+hG
 LY
 kX
-aa
+kX
 aa
 aa
 aa
@@ -56733,9 +56909,9 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Qc
+zI
+re
+zI
 kX
 aa
 aa
@@ -56745,18 +56921,18 @@ aa
 aa
 aa
 aa
-aa
-aa
 kX
-Ns
+TB
+xW
 Qc
 Qc
-Qc
-hJ
+hG
+hG
+LZ
 kX
-aa
-aa
-aa
+kX
+kX
+kX
 aa
 aa
 aa
@@ -56990,9 +57166,9 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Qc
+zI
+zI
+zI
 kX
 aa
 aa
@@ -57002,18 +57178,18 @@ aa
 aa
 aa
 aa
-aa
-aa
 kX
+TB
+xW
 Nt
 Qc
-Qc
-Qc
-Qc
+hG
+hG
+hG
+LR
+xF
+HN
 kX
-aa
-aa
-aa
 aa
 aa
 aa
@@ -57247,9 +57423,9 @@ aa
 aa
 aa
 kX
-Qc
-Qc
-Dw
+zI
+zI
+zI
 kX
 aa
 aa
@@ -57259,18 +57435,18 @@ aa
 aa
 aa
 aa
-aa
-aa
 kX
+TB
+xW
 yv
 Qc
 Qc
-Qc
-Qr
+hG
+QQ
 kX
-aa
-aa
-aa
+kX
+kX
+kX
 aa
 aa
 aa
@@ -57516,8 +57692,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 kX
 WH
 Qc
@@ -57773,13 +57949,13 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 kX
 Jl
 Qc
 af
-Qc
+hG
 Bk
 kX
 aa
@@ -58030,14 +58206,14 @@ aa
 aa
 aa
 aa
-aa
-aa
+kX
+TB
 kX
 kX
 kX
 kX
-kX
-kX
+eP
+eP
 kX
 aa
 aa
@@ -58287,15 +58463,15 @@ aa
 aa
 aa
 aa
+kX
+kX
+kX
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+kX
+kX
+kX
+kX
 aa
 aa
 aa
@@ -58765,7 +58941,7 @@ kX
 kX
 kX
 kX
-Qc
+sR
 hG
 hG
 hF
@@ -59036,12 +59212,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+iD
+iD
+iD
+iD
+iD
 aa
 aa
 aa
@@ -59279,7 +59455,7 @@ kX
 hJ
 hG
 Qc
-Qc
+GD
 hG
 hG
 Qc
@@ -59293,12 +59469,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+iD
+hG
+hG
+hG
+iD
 aa
 aa
 aa
@@ -59550,12 +59726,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+hG
+iC
+iD
+hG
+iD
 aa
 aa
 aa
@@ -59795,7 +59971,7 @@ hG
 nN
 mH
 mH
-mH
+Ns
 mG
 Qc
 Qc
@@ -59807,12 +59983,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+hG
+hG
+iD
+hG
+iD
 aa
 aa
 aa
@@ -60064,12 +60240,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+VP
+iD
+iD
+XE
+iD
 aa
 aa
 aa
@@ -60321,12 +60497,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+iD
+iD
+iD
+iD
+iD
+iD
 aa
 aa
 aa
@@ -60578,17 +60754,17 @@ aa
 aa
 aa
 aa
+iD
+zx
+iD
+iD
+lK
+iD
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-Qc
+sR
 Qc
 iD
 kX
@@ -60835,12 +61011,12 @@ aa
 aa
 aa
 kX
+iD
+hG
 kX
 kX
-kX
-kX
-kX
-kX
+hG
+iD
 kX
 kX
 kX
@@ -61096,7 +61272,7 @@ Qc
 Qc
 Uh
 hG
-hG
+QL
 hG
 zY
 QL
@@ -61322,7 +61498,7 @@ aa
 aa
 iD
 hG
-No
+nH
 wR
 Rv
 Qc
@@ -61352,9 +61528,9 @@ Qc
 Uh
 Qc
 Qc
+Dw
 Qc
-Qc
-QL
+hG
 hG
 QL
 QL
@@ -61859,8 +62035,8 @@ hG
 QL
 hG
 Qc
-Qc
-QL
+Uh
+hG
 hG
 Qc
 hG

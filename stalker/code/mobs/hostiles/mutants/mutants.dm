@@ -534,3 +534,63 @@
 			ranged_cooldown = max(0, ranged_cooldown_time - attack_stage)
 			attack_stage = 0
 	return
+
+/////////////////
+// Poltergeist!//
+/////////////////
+/mob/living/simple_animal/hostile/mutant/poltergeist
+	name = "poltergeist"
+	real_name = "poltergeist"
+	icon = 'stalker/icons/anomalies.dmi'
+	density = FALSE
+	anchored = TRUE
+	maxHealth = 500
+	incorporeal_move = 1
+	layer = 4
+	minimum_distance = 6//Just at the edge of the screen, normally.
+	vision_range = 15
+	aggro_vision_range = 15
+	see_invisible = SEE_INVISIBLE_MINIMUM
+	see_in_dark = 15
+	var/timer = 0
+	var/flick_timer = 0
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/Initialize()
+	. = ..()
+	icon_state = "electra0"
+	icon_living = icon_state
+//	status_flags |= GODMODE
+	timer = rand(1,5)
+	flick_timer = rand(1,15)
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/Life()
+	..()
+	timer--
+	flick_timer--
+	if(timer == 0)
+		polter()
+		timer = rand(1,5)
+	if(flick_timer == 0)
+		flick("electra1", src)
+		flick_timer = rand(1,15)
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/proc/polter()
+	..()
+	if(stat != DEAD)
+		for(var/mob/living/carbon/human/H in view(15, src))
+			var/most_violent = -1 //So it can pick up items with 0 throwforce if there's nothing else
+			var/obj/item/throwing
+			for(var/obj/item/I in view(15, get_turf(H)))
+				if(I.anchored)
+					continue
+				if(I.throwforce > most_violent)
+					most_violent = I.throwforce
+					throwing = I
+			if(throwing)
+				throwing.throw_at(H, 8, 2)
+/*
+/mob/living/simple_animal/hostile/mutant/poltergeist/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
+	. = 0
+*/
+/mob/living/simple_animal/hostile/mutant/poltergeist/CanPass(atom/movable/mover, turf/target)
+	return 1

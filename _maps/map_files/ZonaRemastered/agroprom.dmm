@@ -4126,14 +4126,15 @@
 /area/stalker/agroprom/buildings)
 "vp" = (
 /obj/structure/table/stalker/wood,
-/obj/item/gun/ballistic/automatic/ak74{
+/obj/item/ammo_box/stalker/b545ap,
+/obj/item/gun/ballistic/automatic/aksu74{
 	burst_size = 5;
 	desc = "The modified closing system increases the speed of shooting.";
 	durability = 200;
-	name = "Fast-shooting AK-74";
+	fire_delay = 0.75;
+	name = "Fast-shooting AK 74S";
 	unique = 1
 	},
-/obj/item/ammo_box/stalker/b545ap,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "vD" = (
@@ -4147,11 +4148,8 @@
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
 "vN" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
-	height = 1;
-	id = "jojo";
-	up = 1
+/obj/structure/ladder/unbreakable/binary{
+	up = null
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
@@ -4753,13 +4751,11 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/agroprom/tunnel)
 "Eb" = (
-/obj/effect/mine/explosive,
-/obj/structure/stalker/cacheable/cover,
-/obj/structure/stalker/cacheable/truba/vert{
-	desc = "Warning!";
-	name = "stretch"
+/obj/structure/stalker/radiation/stop{
+	desc = "The sign says: \"GET OUT OF HERE, STALKER!!\".";
+	name = "STOP"
 	},
-/turf/open/stalker/floor/lattice,
+/turf/closed/wall/stalker/beton_agro,
 /area/stalker/agroprom/tunnel)
 "Ec" = (
 /obj/machinery/light/small,
@@ -4771,11 +4767,9 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Ew" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
+/obj/structure/ladder/unbreakable/binary{
 	down = 1;
-	height = 6;
-	id = "jojo"
+	height = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
@@ -5186,6 +5180,13 @@
 /area/stalker/blowout/agroprom/buildings)
 "Ke" = (
 /obj/structure/chair/stalker/divan/divan2,
+/obj/machinery/button/door{
+	icon = 'stalker/icons/decor.dmi';
+	icon_state = "rozetka";
+	id = "doctorhouse";
+	pixel_x = -7;
+	pixel_y = 32
+	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Kg" = (
@@ -5727,14 +5728,8 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "MY" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
-	down = 1;
-	height = 4;
-	id = "jojo";
-	up = 1
-	},
-/turf/open/stalker/floor/agroprom/beton,
+/obj/structure/stalker/cacheable/porog/porog2,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "MZ" = (
 /obj/structure/closet/crate/stalker/blue/stash/low,
@@ -6103,14 +6098,13 @@
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "RS" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
-	down = 1;
-	height = 3;
-	id = "jojo";
-	up = 1
+/obj/effect/mine/explosive,
+/obj/structure/stalker/cacheable/cover,
+/obj/structure/stalker/cacheable/truba/vert{
+	desc = "???";
+	name = "stretch"
 	},
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "Sd" = (
 /obj/effect/turf_decal/stripes/full{
@@ -6783,7 +6777,7 @@
 /area/stalker/agroprom/tunnel)
 "Vu" = (
 /obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/lattice,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
 "Vx" = (
 /obj/structure/table/stalker/wood,
@@ -6952,29 +6946,16 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/agroprom/tunnel)
 "Xi" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
-	down = 1;
-	height = 2;
-	id = "jojo";
-	up = 1
+/obj/structure/stalker/cacheable/porog/porog2{
+	dir = 1;
+	tag = "icon-porog2 (NORTH)"
 	},
-/turf/open/stalker/floor/agroprom/beton,
+/turf/open/stalker/floor/lattice,
 /area/stalker/agroprom/tunnel)
 "Xj" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
-"Xs" = (
-/obj/structure/ladder/unbreakable/jacob{
-	climbable = 1;
-	down = 1;
-	height = 5;
-	id = "jojo";
-	up = 1
-	},
-/turf/open/stalker/floor/agroprom/beton,
-/area/stalker/agroprom/tunnel)
 "XE" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -54388,7 +54369,7 @@ kX
 kX
 kX
 kX
-Xi
+Qc
 kX
 LD
 nG
@@ -54641,9 +54622,9 @@ hG
 kX
 kX
 kX
-Xs
+Qc
 kX
-MY
+Qc
 kX
 kX
 kX
@@ -54902,7 +54883,7 @@ kX
 kX
 kX
 kX
-RS
+Qc
 kX
 kX
 kX
@@ -55417,8 +55398,8 @@ aa
 aa
 kX
 Dx
-kX
 Eb
+xF
 kX
 xF
 kX
@@ -55674,9 +55655,9 @@ aa
 aa
 kX
 Qc
-xF
-xF
-xF
+MY
+RS
+Xi
 xF
 kX
 aa
@@ -56189,7 +56170,7 @@ TB
 kX
 sS
 xF
-Vu
+xF
 xF
 vp
 ND
@@ -56960,7 +56941,7 @@ TB
 xW
 Qc
 Qc
-hG
+Vu
 hG
 LZ
 kX

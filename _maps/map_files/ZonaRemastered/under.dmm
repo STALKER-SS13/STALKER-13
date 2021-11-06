@@ -4228,6 +4228,7 @@
 "pP" = (
 /obj/item/bodypart/chest/monkey,
 /obj/rad/rad_high,
+/mob/living/simple_animal/hostile/mutant/pseudog,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "pW" = (
@@ -4272,9 +4273,9 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
 "qR" = (
-/obj/effect/landmark/mobspawner/monolith/controller_spawner,
-/obj/rad/rad_medium,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/rad/rad_high,
+/mob/living/simple_animal/hostile/mutant/pseudog,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "qT" = (
 /obj/rad/rad_low,
@@ -4322,8 +4323,8 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
 "rt" = (
-/obj/rad/rad_low,
-/mob/living/simple_animal/hostile/mutant/controller,
+/obj/rad/rad_medium,
+/obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "ru" = (
@@ -5752,7 +5753,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/landmark/mobspawner/monolith/controller_spawner,
+/obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "WO" = (
@@ -5812,8 +5813,8 @@
 /turf/open/floor/plasteel/dark,
 /area/stalker)
 "Yj" = (
-/obj/effect/landmark/mobspawner/monolith/controller_spawner,
 /obj/rad/rad_low,
+/obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "Yo" = (
@@ -6552,8 +6553,8 @@ vN
 Ae
 Ae
 Aq
+rt
 AV
-qR
 AV
 up
 Pr
@@ -6806,7 +6807,7 @@ ad
 ad
 fg
 Ae
-Ae
+qR
 YN
 fq
 VW
@@ -7063,7 +7064,7 @@ ad
 ad
 fg
 Zz
-Ae
+qR
 CR
 fq
 Wx
@@ -7330,7 +7331,7 @@ cm
 Fw
 WY
 rS
-rt
+rS
 Dg
 fg
 fj

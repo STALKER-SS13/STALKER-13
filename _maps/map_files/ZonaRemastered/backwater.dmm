@@ -7763,7 +7763,8 @@
 	dir = 4;
 	icon_state = "up";
 	teleport_x = 21;
-	teleport_y = 216
+	teleport_y = 216;
+	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8

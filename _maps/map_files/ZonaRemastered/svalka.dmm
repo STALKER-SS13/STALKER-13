@@ -813,6 +813,11 @@
 /obj/structure/closet/stalker/shkaf,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
+"cz" = (
+/obj/rad/rad_medium,
+/mob/living/simple_animal/hostile/mutant/snork,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/svalka/tunnel)
 "cA" = (
 /obj/structure/stalker/cacheable/clocks{
 	pixel_y = 32
@@ -831,6 +836,10 @@
 /obj/item/instrument/guitar,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
+"cD" = (
+/mob/living/simple_animal/hostile/mutant/poltergeist,
+/turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
 "cE" = (
 /obj/structure/table/stalker/wood,
 /obj/machinery/stalker/sidormat{
@@ -3715,11 +3724,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/svalka/tunnel)
-"ka" = (
-/mob/living/simple_animal/hostile/mutant/snork,
-/obj/rad/rad_medium,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/svalka/tunnel)
 "kb" = (
 /obj/structure/stalker/doski/doski2,
 /obj/rad/rad_medium,
@@ -5429,7 +5433,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt/dark,
@@ -6792,7 +6796,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt,
@@ -6900,7 +6904,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt/dark,
@@ -7144,7 +7148,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/stalker/floor/gryaz{
@@ -8453,7 +8457,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt,
@@ -8864,7 +8868,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt,
@@ -34569,7 +34573,7 @@ PJ
 af
 dZ
 pu
-af
+cD
 Ny
 bM
 Tv
@@ -43803,7 +43807,7 @@ bs
 bs
 bs
 bs
-ka
+cz
 lw
 bs
 bs

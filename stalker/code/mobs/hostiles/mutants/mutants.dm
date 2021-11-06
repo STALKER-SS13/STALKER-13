@@ -96,8 +96,8 @@
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
 	rating_add = 25
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/dog/New()
 	..()
@@ -158,8 +158,8 @@
 	var/leaping = 0
 	move_to_delay = 2
 	rating_add = 50
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/snork/New()
 	..()
@@ -242,8 +242,8 @@
 	attack_type = "smash"
 	move_to_delay = 3
 	rating_add = 25
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/kaban
 	name = "boar"
@@ -284,8 +284,8 @@
 	attack_type = "smash"
 	move_to_delay = 3
 	rating_add = 50
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 	/*Код крашера с колониал маринов
 	Раскидывает мобов с дороги в стороны
@@ -333,8 +333,8 @@
 	move_to_delay = 1.8
 	speak_chance = 0.5
 	rating_add = 500
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/bloodsucker/Life()
 	if(..())
@@ -413,6 +413,8 @@
 	move_to_delay = 1.4
 	speak_chance = 10
 	rating_add = 250
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/controller
 	name = "Controller"
@@ -444,7 +446,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "Controller screams in agony, straining your mind with its last breath!"
+	deathmessage = "screams in agony, straining your mind with its last breath!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/controller_brain = 1)
 	//random_butcher_results = 1
@@ -542,16 +544,39 @@
 	name = "poltergeist"
 	real_name = "poltergeist"
 	icon = 'stalker/icons/anomalies.dmi'
-	density = FALSE
+	density = TRUE
 	anchored = TRUE
 	maxHealth = 500
-	incorporeal_move = 1
+	incorporeal_move = INCORPOREAL_MOVE_SHADOW
 	layer = 4
-	minimum_distance = 6//Just at the edge of the screen, normally.
+	minimum_distance = 12//Beyond sight, normally.
 	vision_range = 15
 	aggro_vision_range = 15
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	see_in_dark = 15
+	robust_searching = 1
+	melee_damage_upper = 25
+	melee_damage_lower = 15
+	attack_sound = 	list('stalker/sound/mobs/mutants/special/poltergeist/attack_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_1.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_2.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_3.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_4.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_5.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_6.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_7.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_8.ogg'
+						)
+	idle_sounds =	list('stalker/sound/mobs/mutants/special/poltergeist/tele_idle_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_1.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_2.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_3.ogg'
+						)
+	deathsound =	list('stalker/sound/mobs/mutants/special/poltergeist/death_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/death_1.ogg'
+						)
+
 	var/timer = 0
 	var/flick_timer = 0
 
@@ -578,7 +603,7 @@
 	..()
 	if(stat != DEAD)
 		for(var/mob/living/carbon/human/H in view(15, src))
-			var/most_violent = -1 //So it can pick up items with 0 throwforce if there's nothing else
+			var/most_violent = -1
 			var/obj/item/throwing
 			for(var/obj/item/I in view(15, get_turf(H)))
 				if(I.anchored)
@@ -587,10 +612,16 @@
 					most_violent = I.throwforce
 					throwing = I
 			if(throwing)
+				playsound(src, pick('stalker/sound/mobs/mutants/special/poltergeist/tele_damage_0.ogg',
+							'stalker/sound/mobs/mutants/special/poltergeist/tele_damage_1.ogg'))
 				throwing.throw_at(H, 8, 2)
 /*
 /mob/living/simple_animal/hostile/mutant/poltergeist/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
 	. = 0
-*/
+
 /mob/living/simple_animal/hostile/mutant/poltergeist/CanPass(atom/movable/mover, turf/target)
 	return 1
+*/
+/mob/living/simple_animal/hostile/mutant/poltergeist/death()
+	..()
+	gib()

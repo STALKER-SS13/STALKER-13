@@ -289,6 +289,10 @@
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
+"bj" = (
+/mob/living/simple_animal/hostile/mutant/poltergeist,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/agroprom/tunnel)
 "bk" = (
 /obj/effect/step_trigger/teleporter{
 	icon_state = "up";
@@ -321,6 +325,10 @@
 /obj/structure/stalker/tree/leafless,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"bp" = (
+/obj/effect/spawner/lootdrop/stalker/weapon/meleetier2,
+/turf/open/stalker/floor/tropa,
+/area/stalker/agroprom/tunnel)
 "bq" = (
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/blowout/outdoor)
@@ -336,6 +344,10 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"bt" = (
+/obj/effect/spawner/lootdrop/stalker/weapon/melee,
+/turf/open/stalker/floor/tropa,
+/area/stalker/agroprom/tunnel)
 "bu" = (
 /obj/structure/stalker/tree,
 /obj/effect/landmark/mobspawner/snork_spawner,
@@ -344,6 +356,10 @@
 "bv" = (
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/blowout/outdoor)
+"bw" = (
+/obj/effect/spawner/lootdrop/stalker/junk,
+/turf/open/stalker/floor/tropa,
+/area/stalker/agroprom/tunnel)
 "bx" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/digable/grass,
@@ -360,6 +376,10 @@
 "bA" = (
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/agroprom/tunnel)
+"bB" = (
+/obj/effect/spawner/lootdrop/stalker/junk,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/agroprom/tunnel)
 "bC" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/floor/plating/dirt,
@@ -63587,7 +63607,7 @@ kU
 kU
 TO
 TO
-TO
+bw
 TO
 TO
 kU
@@ -64117,7 +64137,7 @@ TO
 TO
 TO
 TO
-TO
+bt
 TO
 TO
 kU
@@ -64355,7 +64375,7 @@ kU
 kU
 TO
 TO
-TO
+bw
 TO
 TO
 TO
@@ -64633,7 +64653,7 @@ TO
 TO
 TO
 TO
-TO
+bw
 TO
 TO
 kU
@@ -64871,7 +64891,7 @@ TO
 TO
 TO
 TO
-TO
+bw
 kU
 kU
 kU
@@ -64879,14 +64899,14 @@ TO
 TO
 TO
 TO
-kU
+bB
 TO
 TO
 TO
 TO
 kU
 kU
-kU
+bB
 TO
 TO
 TO
@@ -65124,7 +65144,7 @@ kX
 kh
 kU
 TO
-TO
+bw
 TO
 TO
 TO
@@ -65133,7 +65153,7 @@ kU
 kU
 TO
 TO
-TO
+bt
 TO
 TO
 kU
@@ -65644,7 +65664,7 @@ kU
 kU
 kU
 TO
-TO
+bw
 TO
 TO
 TO
@@ -65913,10 +65933,10 @@ TO
 TO
 TO
 TO
+bp
 TO
 TO
-TO
-kU
+bB
 kU
 kU
 TO
@@ -66671,7 +66691,7 @@ Xa
 kU
 TO
 TO
-TO
+bp
 TO
 TO
 kU
@@ -66931,7 +66951,7 @@ kU
 kU
 kU
 kU
-kU
+bj
 hF
 hF
 hF
@@ -66939,7 +66959,7 @@ hF
 hF
 hF
 hF
-kU
+bj
 kU
 kU
 kU
@@ -67699,7 +67719,7 @@ kU
 kU
 TO
 TO
-TO
+bt
 TO
 TO
 TO
@@ -67951,6 +67971,16 @@ kh
 kh
 kU
 kU
+bw
+kU
+kU
+kU
+TO
+TO
+TO
+TO
+bw
+TO
 TO
 kU
 kU
@@ -67959,17 +67989,7 @@ TO
 TO
 TO
 TO
-TO
-TO
-TO
-kU
-kU
-kU
-TO
-TO
-TO
-TO
-TO
+bt
 TO
 TO
 kU
@@ -68734,7 +68754,7 @@ TO
 TO
 TO
 TO
-kU
+bB
 TO
 TO
 TO
@@ -69252,12 +69272,12 @@ kU
 TO
 TO
 TO
-kU
+bB
 kU
 kU
 TO
 TO
-TO
+bw
 TO
 TO
 TO
@@ -69494,7 +69514,7 @@ kX
 kU
 kU
 TO
-TO
+bw
 TO
 TO
 TO
@@ -70014,7 +70034,7 @@ TO
 TO
 TO
 TO
-TO
+bw
 TO
 kU
 kU
@@ -70028,7 +70048,7 @@ TO
 TO
 TO
 TO
-TO
+bt
 TO
 kU
 kU

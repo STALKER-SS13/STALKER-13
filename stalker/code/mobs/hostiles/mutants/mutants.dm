@@ -543,7 +543,7 @@
 	real_name = "poltergeist"
 	icon = 'stalker/icons/anomalies.dmi'
 	density = FALSE
-//	anchored = TRUE
+	anchored = TRUE
 	maxHealth = 500
 	incorporeal_move = 1
 	layer = 4

@@ -2544,7 +2544,8 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater)
 "ks" = (
-/turf/open/stalker/floor/digable/grass,
+/obj/structure/stalker/blocks/vanish/block1/r,
+/turf/open/stalker/floor/tropa,
 /area/stalker/buildings/renegade)
 "kt" = (
 /obj/structure/chair/wood/normal{
@@ -16260,7 +16261,7 @@ cs
 GB
 GB
 dB
-GB
+ks
 eC
 Je
 Hq
@@ -16771,15 +16772,15 @@ cs
 cs
 aP
 aP
-ks
+cV
 Oi
 Tc
 Ok
 DP
 cV
-cs
-bd
-be
+cV
+aS
+aR
 aQ
 fc
 aQ

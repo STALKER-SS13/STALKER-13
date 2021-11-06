@@ -419,7 +419,7 @@
 	icon_state = "face_flask"
 	materials = list(MAT_METAL=500)
 	volume = 60
-	list_reagents = list("water" = 60)
+	list_reagents = list("vodka" = 40, "water" = 20)
 
 /obj/item/reagent_containers/food/drinks/flask/cylinder
 	name = "metal flask"
@@ -427,7 +427,22 @@
 	icon_state = "cylinder_flask"
 	materials = list(MAT_METAL=500)
 	volume = 80
-	list_reagents = list("water" = 80)
+	list_reagents = list("vodka" = 60, "water" = 20)
+
+/obj/item/reagent_containers/food/drinks/flask/jerrycan
+	name = "jerrycan"
+	desc = "A large green metal jerrycan. It appears to hold quite a lot!."
+	icon_state = "jerrycan"
+	materials = list(MAT_SILVER=500)
+	volume = 375
+
+/obj/item/reagent_containers/food/drinks/flask/jerrycan/compost
+	name = "jerrycan"
+	desc = "A large green metal jerrycan. It appears to hold quite a lot!."
+	icon_state = "jerrycan"
+	materials = list(MAT_SILVER=500)
+	volume = 375
+	list_reagents = list("compost" = 375)
 
 //////////////////////////soda_cans//
 //These are in their own group to be used as IED's in /obj/item/grenade/ghettobomb.dm

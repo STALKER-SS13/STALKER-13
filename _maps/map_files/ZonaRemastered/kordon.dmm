@@ -2465,7 +2465,7 @@
 /area/stalker/blowout/outdoor)
 "hw" = (
 /obj/structure/table/stalker/wood/bar,
-/obj/item/storage/fancy/cigarettes/cigpack_uplift{
+/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal{
 	pixel_y = 5
 	},
 /turf/open/stalker/floor/wood/oldvert,

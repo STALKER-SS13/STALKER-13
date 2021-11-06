@@ -312,7 +312,7 @@ var/sid_generator = 0
 				sk.fields["money"] = 85000//with enough to buy other people gear,
 				sk.fields["degree"] = 1//and marked as leader on the PDA system.
 			if(J.real_rank == "Bartender")
-				sk.fields["rating"] = 10000//Starts barkeeps at Veteran,
+				sk.fields["rating"] = 40000//Starts barkeeps at Legend,
 				sk.fields["money"] = 1500000//with a load of cash to provide quests and tasks for.
 			if(J.real_rank == "Special")
 				sk.fields["rating"] = 8000//Starts experienced stalkers at Experienced,
@@ -337,14 +337,14 @@ var/sid_generator = 0
 			sk.fields["faction_s"]	= J.faction_s
 		else
 			sk.fields["faction_s"]	= "Loners"
-
+/*
 		if(sk.fields["faction_s"] == "Bandits")
 			sk.fields["money"] = 6000
 		else if(sk.fields["faction_s"] == "Monolith")
 			sk.fields["money"] = 45000//With a lot of extra cash to gear themselves, as they're an antagonist faction.
-/*		else
-			sk.fields["money"] = 5000*/
-
+		else
+			sk.fields["money"] = 5000
+*/
 		stalkers += sk
 	return
 

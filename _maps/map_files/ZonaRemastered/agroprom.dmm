@@ -3423,9 +3423,18 @@
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/agroprom/tunnel)
+"nG" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
+	pixel_x = -4;
+	pixel_y = 32
+	},
+/turf/closed/wall/stalker/beton_agro,
+/area/stalker/agroprom/tunnel)
 "nH" = (
-/obj/effect/landmark/observer_start,
-/turf/open/stalker/floor/road,
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
+	pixel_y = 30
+	},
+/turf/closed/wall/stalker/beton_agro,
 /area/stalker/agroprom/tunnel)
 "nJ" = (
 /obj/structure/table/stalker/wood,
@@ -4138,9 +4147,10 @@
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
 "vN" = (
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	height = 1;
-	id = "TainikStrelka";
+	id = jojo;
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -4539,8 +4549,8 @@
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/agroprom/tunnel)
 "BV" = (
-/obj/anomaly/tramplin,
 /obj/anomaly/holodec,
+/obj/anomaly/karusel,
 /turf/open/floor/plating/foam,
 /area/stalker/agroprom/tunnel)
 "BY" = (
@@ -4761,11 +4771,11 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "Ew" = (
-/obj/structure/fluff/broken_flooring,
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	down = 1;
 	height = 6;
-	id = "TainikStrelka"
+	id = jojo
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
@@ -5717,10 +5727,11 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "MY" = (
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	down = 1;
 	height = 4;
-	id = "TainikStrelka";
+	id = jojo;
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6092,10 +6103,11 @@
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "RS" = (
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	down = 1;
 	height = 3;
-	id = "TainikStrelka";
+	id = jojo;
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6940,10 +6952,11 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/agroprom/tunnel)
 "Xi" = (
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	down = 1;
 	height = 2;
-	id = "TainikStrelka";
+	id = jojo;
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6953,10 +6966,11 @@
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/agroprom/buildings)
 "Xs" = (
-/obj/structure/ladder/unbreakable{
+/obj/structure/ladder/unbreakable/jacob{
+	climbable = 1;
 	down = 1;
 	height = 5;
-	id = "TainikStrelka";
+	id = jojo;
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -54115,12 +54129,12 @@ Qc
 Qc
 hG
 hG
-kX
+Qc
 kX
 kX
 kX
 IZ
-kX
+nH
 kX
 kX
 kX
@@ -54377,7 +54391,7 @@ kX
 Xi
 kX
 LD
-kX
+nG
 aa
 aa
 aa
@@ -61518,7 +61532,7 @@ aa
 aa
 iD
 hG
-nH
+No
 wR
 Rv
 Qc

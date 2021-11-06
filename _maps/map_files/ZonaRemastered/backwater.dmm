@@ -1131,7 +1131,6 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "eD" = (
-/obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/structure/table/stalker/wood,
 /obj/item/stack/medical/gauze/bint,
 /obj/item/reagent_containers/syringe,
@@ -1140,18 +1139,17 @@
 	},
 /area/stalker/buildings/renegade)
 "eE" = (
-/obj/structure/table/reinforced,
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "eF" = (
-/obj/structure/table/reinforced,
+/turf/closed/wall/stalker/bricks,
+/area/stalker)
+"eG" = (
 /obj/machinery/stalker/sidormat{
 	pixel_y = 10
 	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
-"eG" = (
-/obj/structure/table/reinforced,
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "eH" = (
@@ -2481,8 +2479,8 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/shevchenko)
 "kc" = (
-/obj/structure/table/stalker/wood,
 /obj/machinery/light/small,
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "kd" = (
@@ -2545,6 +2543,9 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater)
+"ks" = (
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
 "kt" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
@@ -7527,6 +7528,12 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"DP" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "7"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Ed" = (
 /obj/structure/table/stalker/wood,
 /obj/item/trash/crossnecklace,
@@ -7536,13 +7543,19 @@
 /obj/structure/stalker/blocks/vanish/block2/l,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"EI" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "4"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Fx" = (
 /obj/structure/stalker/list,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "FM" = (
 /obj/structure/stalker/modification_table,
-/turf/open/stalker/floor/wood/oldgor,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
 "Gg" = (
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -7596,7 +7609,9 @@
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "Hq" = (
-/obj/structure/stalker/blocks/vanish/block1/r,
+/obj/structure/stalker/cacheable/cover{
+	pixel_y = 32
+	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/renegade)
 "HB" = (
@@ -7626,6 +7641,12 @@
 "IU" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
+"Je" = (
+/obj/structure/stalker/cacheable/cover{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "JE" = (
 /obj/item/reagent_containers/syringe,
 /turf/open/stalker/floor/wood/oldgor,
@@ -7655,10 +7676,24 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/renegade)
+"JV" = (
+/obj/machinery/stalker/sidormat{
+	pixel_y = 10
+	},
+/obj/structure/table/stalker/wood,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/renegade)
 "Kd" = (
-/obj/effect/landmark/latejoin/renegade,
-/obj/item/chair/wood,
-/turf/open/stalker/floor/wood/oldgor,
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	icon_state = "up";
+	teleport_x = 21;
+	teleport_y = 217;
+	teleport_z = 1
+	},
+/turf/open/floor/plasteel/stairs/right/stalker{
+	dir = 8
+	},
 /area/stalker/buildings/renegade)
 "Kh" = (
 /obj/structure/table/stalker/wood/bar{
@@ -7694,12 +7729,45 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"KL" = (
+/obj/structure/table/stalker/wood,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/renegade)
+"KO" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "2"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Ld" = (
 /obj/structure/sign/skadovsk_bar{
 	pixel_y = 36
 	},
 /turf/closed/wall/stalker/bricks,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"Ll" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	teleport_x = 3;
+	teleport_y = 251;
+	teleport_z = 1
+	},
+/obj/structure/stalker/cacheable/porog,
+/turf/open/floor/plasteel/stairs/right/stalker{
+	dir = 8
+	},
+/area/stalker/buildings/renegade)
+"Lq" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	icon_state = "up";
+	teleport_x = 21;
+	teleport_y = 216
+	},
+/turf/open/floor/plasteel/stairs/right/stalker{
+	dir = 8
+	},
+/area/stalker/buildings/renegade)
 "Lt" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -7803,6 +7871,13 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Nu" = (
+/obj/machinery/light/small{
+	dir = 4;
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/renegade)
 "NJ" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -7828,8 +7903,15 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/kordon/tunnel)
 "Oi" = (
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/renegade)
+/obj/structure/stalker/car/gryzovik_army/south,
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
+"Ok" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "5"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Op" = (
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor/backwater/ironforest)
@@ -7844,6 +7926,12 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
+"OJ" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "6"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "OK" = (
 /obj/structure/stalker/cacheable/porog{
 	dir = 8
@@ -7866,6 +7954,12 @@
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"PW" = (
+/obj/structure/chair/sofa/corner{
+	dir = 1
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "PX" = (
 /obj/machinery/campfire/barrel{
 	pixel_x = 7;
@@ -7886,11 +7980,16 @@
 /obj/structure/stalker/cacheable/porog{
 	dir = 1
 	},
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/item/reagent_containers/syringe,
-/turf/open/stalker/floor/wood/oldgor,
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	teleport_x = 3;
+	teleport_y = 252;
+	teleport_z = 1
+	},
+/turf/open/floor/plasteel/stairs/right/stalker{
+	dir = 8
+	},
 /area/stalker/buildings/renegade)
 "Qm" = (
 /obj/rad/rad_low,
@@ -7913,6 +8012,10 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"RA" = (
+/obj/structure/stalker/okno/window2,
+/turf/closed/wall/stalker/bricks,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "RI" = (
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7932,7 +8035,9 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "SO" = (
-/obj/structure/table/stalker/wood,
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "SS" = (
@@ -7944,6 +8049,12 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Tc" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "3"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Th" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -7965,9 +8076,14 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"Tj" = (
+/obj/structure/chair/sofa/corner,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "To" = (
 /obj/item/reagent_containers/pill/happiness,
 /obj/structure/stalker/cacheable/yashik,
+/obj/machinery/light/small,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Tr" = (
@@ -8039,6 +8155,12 @@
 	tag = "icon-border2"
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"Wt" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "WU" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -8137,6 +8259,10 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"Zc" = (
+/obj/structure/chair/sofa,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "ZB" = (
 /obj/structure/bed/stalker/mattress_dirty,
 /obj/structure/stalker/cacheable/porog{
@@ -8168,10 +8294,10 @@
 
 (1,1,1) = {"
 aa
-aa
-aa
-aa
-aa
+eF
+eF
+eF
+eF
 aa
 aa
 aa
@@ -8423,12 +8549,12 @@ aa
 aa
 "}
 (2,1,1) = {"
-aa
-aa
-aa
-aa
-aa
-aa
+eF
+eF
+Kd
+Lq
+eF
+eF
 aa
 aa
 aa
@@ -8679,12 +8805,12 @@ aa
 aa
 "}
 (3,1,1) = {"
-aa
-aa
-aa
-aa
-aa
-aa
+eF
+Mf
+eC
+eC
+eE
+eF
 aa
 aa
 aa
@@ -8936,11 +9062,11 @@ aa
 "}
 (4,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
+eG
+eC
+eC
+JV
+eF
 aa
 aa
 aa
@@ -9191,12 +9317,12 @@ tC
 tC
 "}
 (5,1,1) = {"
-aa
-aa
-aa
-aa
-aa
-aa
+eF
+Mf
+eC
+Tr
+KL
+eF
 aa
 aa
 aa
@@ -9448,10 +9574,10 @@ tC
 "}
 (6,1,1) = {"
 aa
-aa
-aa
-aa
-aa
+FM
+Nu
+Tr
+FM
 aa
 aa
 aa
@@ -11527,10 +11653,10 @@ aP
 aP
 aP
 aP
-aP
+cV
 GB
 GB
-dl
+GB
 Tr
 er
 er
@@ -12554,8 +12680,8 @@ OT
 eC
 eC
 eC
-Kd
-Mf
+eC
+Nk
 cV
 cV
 cV
@@ -13567,7 +13693,7 @@ cB
 cB
 aP
 cT
-cV
+RA
 db
 de
 Fx
@@ -13581,7 +13707,7 @@ Gg
 Gg
 eC
 Qk
-Mf
+Ll
 Ed
 cV
 eZ
@@ -14091,7 +14217,7 @@ Gg
 Ky
 Gg
 eC
-eF
+Mf
 cV
 cs
 cs
@@ -14347,7 +14473,7 @@ Gn
 Rw
 Gg
 Or
-eG
+Mf
 cV
 eP
 eP
@@ -14603,7 +14729,7 @@ Ye
 Ye
 Lt
 eC
-eH
+Mf
 cV
 eQ
 eQ
@@ -14859,7 +14985,7 @@ XA
 UA
 VZ
 Xa
-FM
+eC
 cV
 cs
 cs
@@ -15114,8 +15240,8 @@ dN
 Ep
 YE
 eC
-eC
-eH
+PW
+Wt
 cV
 cs
 aP
@@ -15370,7 +15496,7 @@ eC
 eC
 eC
 eC
-eC
+Zc
 kc
 cV
 eR
@@ -15626,7 +15752,7 @@ dO
 eC
 eC
 eC
-Gg
+Tj
 SO
 cV
 cs
@@ -15877,7 +16003,7 @@ dk
 aR
 cV
 cV
-cV
+RA
 cV
 eV
 eV
@@ -16131,16 +16257,16 @@ aR
 cs
 cs
 cs
-cs
-cs
+GB
+GB
 dB
-Hq
+GB
 eC
-eC
+Je
 Hq
-cs
-cs
-cs
+GB
+GB
+GB
 cs
 cs
 aQ
@@ -16387,16 +16513,16 @@ aR
 cs
 cs
 cs
-cs
-cs
-cs
+cV
+GB
+GB
 GB
 GB
 eC
 GB
-cs
-cs
-cs
+GB
+GB
+GB
 cs
 aQ
 fb
@@ -16645,12 +16771,12 @@ cs
 cs
 aP
 aP
-aP
+ks
 Oi
+Tc
+Ok
+DP
 cV
-cV
-Oi
-cs
 cs
 bd
 be
@@ -16902,10 +17028,10 @@ aP
 aP
 aP
 aP
-aP
-aP
-aR
-aR
+KO
+EI
+OJ
+cV
 aR
 aP
 aP

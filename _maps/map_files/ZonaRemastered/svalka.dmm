@@ -870,6 +870,18 @@
 /obj/item/clothing/mask/cigarette/pipe/cobpipe,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
+"cJ" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "poddon";
+	tag = "icon-poddon"
+	},
+/obj/machinery/button/door{
+	id = "BanditBar";
+	pixel_x = -25
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/buildings/kordon/banditbar)
 "cK" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/cacheable/televizor,
@@ -3507,18 +3519,6 @@
 	tag = "icon-tube1 (EAST)"
 	},
 /turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/kordon/banditbar)
-"jk" = (
-/obj/effect/turf_decal/stripes/full{
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "poddon";
-	tag = "icon-poddon"
-	},
-/obj/machinery/button{
-	id = "BanditBar";
-	pixel_x = -25
-	},
-/turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/kordon/banditbar)
 "jm" = (
 /obj/effect/turf_decal/stripes/full{
@@ -32699,7 +32699,7 @@ jP
 iV
 rN
 jP
-jk
+cJ
 jE
 qE
 jP

@@ -344,6 +344,32 @@
 	icon_state = "winterhood_kombez"
 	flags_inv = HIDEEARS|HIDEHAIR
 
+//strelok
+/obj/item/clothing/suit/hooded/strelok
+	name = "modified sunrise suit"
+	desc = "A heavily modified sunrise suit, offering all around great protection, better durability and a padded hood."
+	icon_state = "kombez"
+	item_state = "syndicate-green"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	resistance_flags = UNACIDABLE
+	strip_delay = 120
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/strelok
+	durability = 400
+	unique = 1
+
+/obj/item/clothing/head/hooded/stalker/strelok
+	armor = list("melee" = 65, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	icon_state = "winterhood_kombez"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/suit/hooded/kozhanka/cs_hood
 	name = "clear sky coat"
 	desc = "A trenchcoat sporting clear sky camoflauge with light armor plates and shoulder pads strapped on it."

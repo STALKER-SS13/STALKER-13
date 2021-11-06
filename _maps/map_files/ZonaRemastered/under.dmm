@@ -2940,6 +2940,9 @@
 /obj/machinery/shower{
 	dir = 8
 	},
+/obj/machinery/button/door{
+	pixel_x = 32
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "ka" = (
@@ -4224,6 +4227,7 @@
 /area/stalker)
 "pP" = (
 /obj/item/bodypart/chest/monkey,
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "pW" = (
@@ -4344,6 +4348,8 @@
 	pixel_y = 32
 	},
 /obj/rad/rad_high,
+/obj/structure/table/abductor,
+/obj/item/detector,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "rJ" = (
@@ -4535,7 +4541,13 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/krug)
 "vN" = (
-/obj/item/stack/sheet/animalhide/monkey,
+/obj/rad/rad_high,
+/obj/item/clothing/mask/gas/stalker{
+	desc = "Some madman put a monkey's scalp on the gas mask.";
+	icon_state = "monkeymask";
+	name = "monkey mask";
+	unique = 1
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "vU" = (
@@ -4718,6 +4730,8 @@
 	dir = 1
 	},
 /obj/rad/rad_high,
+/obj/structure/table/abductor,
+/obj/item/clothing/suit/hooded/sealed/ecolog,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "zv" = (
@@ -4915,6 +4929,7 @@
 /area/stalker)
 "CR" = (
 /obj/item/bodypart/head/monkey,
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Dd" = (
@@ -4928,7 +4943,7 @@
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/rad/rad_low,
-/obj/item/detector,
+/obj/item/clothing/suit/toggle/labcoat,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "DB" = (
@@ -4982,6 +4997,7 @@
 /area/stalker)
 "Fe" = (
 /obj/item/bodypart/l_arm/monkey,
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Fl" = (
@@ -5218,6 +5234,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "bloodsuckerhome"
 	},
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Lb" = (
@@ -5364,9 +5381,9 @@
 /area/stalker/buildings/backwater/krug)
 "Pc" = (
 /obj/structure/table/abductor,
-/obj/item/clothing/suit/hooded/sealed/ecolog,
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/rad/rad_low,
+/obj/item/clothing/suit/toggle/labcoat,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "Po" = (
@@ -5852,6 +5869,7 @@
 /area/stalker/kordon/tunnel)
 "YN" = (
 /obj/item/bodypart/r_leg/monkey,
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "YZ" = (
@@ -5885,6 +5903,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "ZC" = (
@@ -6530,8 +6549,8 @@ ad
 ad
 fg
 vN
-fJ
-fJ
+Ae
+Ae
 Aq
 AV
 qR
@@ -6786,8 +6805,8 @@ ad
 ad
 ad
 fg
-fJ
-fJ
+Ae
+Ae
 YN
 fq
 VW
@@ -7044,7 +7063,7 @@ ad
 ad
 fg
 Zz
-fJ
+Ae
 CR
 fq
 Wx
@@ -7300,9 +7319,9 @@ ad
 ad
 ad
 fg
-fJ
+Ae
 pP
-fJ
+Ae
 fq
 TA
 FH
@@ -7558,7 +7577,7 @@ ad
 ad
 fg
 Fe
-fJ
+Ae
 CR
 KL
 qV

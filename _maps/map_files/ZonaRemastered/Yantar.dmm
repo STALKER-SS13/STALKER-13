@@ -424,6 +424,16 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"fQ" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	opacity = 1;
+	teleport_x = 201;
+	teleport_y = 224;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/blowout/outdoor)
 "fV" = (
 /obj/rad/rad_medium,
 /obj/structure/flora/stalker/bush,
@@ -785,6 +795,16 @@
 "lX" = (
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/lattice,
+/area/stalker/blowout/outdoor)
+"lZ" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	opacity = 1;
+	teleport_x = 201;
+	teleport_y = 224;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "md" = (
 /obj/rad/rad_low,
@@ -2758,6 +2778,17 @@
 /obj/structure/table/stalker/wood/bar,
 /obj/item/instrument/guitar,
 /turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/blowout/outdoor)
+"Vz" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	opacity = 1;
+	teleport_x = 197;
+	teleport_y = 243;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "VL" = (
 /obj/structure/chair/brevno,
@@ -39039,7 +39070,7 @@ ad
 BL
 ba
 JK
-ui
+fQ
 ao
 JK
 ba
@@ -44694,7 +44725,7 @@ ba
 BL
 BL
 BL
-bf
+Vz
 ba
 ba
 ad
@@ -48809,7 +48840,7 @@ ba
 ba
 ba
 ba
-ba
+lZ
 ba
 BL
 ba

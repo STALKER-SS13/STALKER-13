@@ -46,7 +46,7 @@
 	/obj/item/reagent_containers/food/drinks/flask/russian,
 	/obj/item/dice/d6,
 	/obj/item/clipboard,
-	/obj/item/storage/fancy/cigarettes/cigpack_carp,
+	/obj/item/storage/fancy/cigarettes/cigpack_java,
 	/obj/item/lighter/greyscale,
 	/obj/item/toy/cards/deck)
 
@@ -113,6 +113,6 @@
 	/obj/item/reagent_containers/food/drinks/flask/commie,
 	/obj/item/dice/d6,
 	/obj/item/clipboard,
-	/obj/item/storage/fancy/cigarettes/cigpack_carp,
+	/obj/item/storage/fancy/cigarettes/cigpack_java,
 	/obj/item/lighter/greyscale,
 	/obj/item/toy/cards/deck)

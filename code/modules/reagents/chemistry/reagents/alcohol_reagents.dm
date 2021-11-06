@@ -225,7 +225,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	shot_glass_icon_state = "shotglassclear"
 
 /datum/reagent/consumable/ethanol/vodka/on_mob_life(mob/living/carbon/M)
-	M.radiation = max(M.radiation-12,0)
+	M.radiation = max(M.radiation-4,0)
 	return ..()
 
 /datum/reagent/consumable/ethanol/bilk

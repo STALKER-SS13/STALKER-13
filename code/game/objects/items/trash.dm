@@ -17,6 +17,22 @@
 	name = "cigarettes"
 	icon_state = "cigs_trash2"
 
+/obj/item/trash/ashtray1
+	name = "cigarettes"
+	icon_state = "ashtray1"
+
+/obj/item/trash/ashtray2
+	name = "broken ashtray"
+	icon_state = "ashtray2"
+
+/obj/item/trash/ashtray3
+	name = "ashtray"
+	icon_state = "ashtray3"
+
+/obj/item/trash/ashtray4
+	name = "broken ashtray"
+	icon_state = "ashtray4"
+
 /obj/item/trash/paintcan
 	name = "can of paint"
 	icon_state = "paintcan"

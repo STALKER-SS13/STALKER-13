@@ -33,7 +33,7 @@
 	name = "Stolichnaya vodka"
 	desc = "Vodka which comes from some of Russia's oldest distilleries. Smooth in both flavour and burn. Some Stalkers swear by it's ability to cure radiation poisoning!"
 	icon = 'icons/obj/drinks.dmi'
-	icon_state = "russian_vodka"
+	icon_state = "stolichnaya"
 	list_reagents = list("vodka" = 80, "potass_iodide" = 20)
 	w_class = 2
 

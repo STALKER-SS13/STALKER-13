@@ -40,7 +40,7 @@ Assistant
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
-		/obj/item/storage/fancy/cigarettes/cigpack_robust,
+		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches)
 
 /datum/job/clearsky_leader
@@ -52,7 +52,7 @@ Assistant
 	spawn_positions = 4
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
-	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction without asking up the chain of command."
+	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction or otherwise jeopordize the faction for an insignificant reason."
 	selection_color = "#64B2F7"
 	whitelist_only = 1
 	limit_per_player = 2
@@ -80,6 +80,6 @@ Assistant
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
-		/obj/item/storage/fancy/cigarettes/cigpack_robust,
+		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)

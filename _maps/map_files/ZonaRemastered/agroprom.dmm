@@ -3113,7 +3113,7 @@
 	icon_state = "up";
 	teleport_x = 206;
 	teleport_y = 45;
-	teleport_z = 1
+	teleport_z = 5
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4
@@ -3123,6 +3123,13 @@
 /obj/structure/grille/stalker/beton,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"ly" = (
+/obj/structure/safe,
+/obj/item/clothing/suit/skat,
+/obj/item/clothing/head/skathelmet,
+/obj/item/stalker/usb,
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/agroprom/tunnel)
 "lA" = (
 /obj/structure/stalker/cacheable/porog/porog2{
 	dir = 4;
@@ -3553,12 +3560,10 @@
 /area/stalker/agroprom/tunnel)
 "oG" = (
 /obj/structure/table/stalker/wood,
-/obj/item/clothing/suit/hooded/kombez{
-	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 50, "bomb" = 45, "bio" = 50, "rad" = 65, "fire" = 50, "psy" = 0);
-	durability = 300;
-	eng_desc = "This DIY stalker bodysuit is a combination of a bodysuit of twin-layered rubberized cloth with plexiglass lining and built-in body armor. Despite the fact that the body armor is incapable of protecting the wearer from even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential. Comes with built-in artifact containers. This particular suit has been improved with additional polycarbonate armor plates, increasing its protection without sacrificing mobility.";
-	modifications = null;
-	name = "hardened sunrise";
+/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown{
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 50);
+	desc = "An interesting shabby leather coat, fitted by a past? owner so as to be equally resistant to all the obvious and non-obvious dangers of the Zone.";
+	name = "oldcoat";
 	unique = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -3853,7 +3858,7 @@
 	dir = 8;
 	teleport_x = 204;
 	teleport_y = 47;
-	teleport_z = 1
+	teleport_z = 5
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -4129,10 +4134,10 @@
 /obj/item/ammo_box/stalker/b545ap,
 /obj/item/gun/ballistic/automatic/aksu74{
 	burst_size = 5;
-	desc = "The modified closing system increases the speed of shooting.";
+	desc = "On close inspection you find a modified closing system that increases the rate of fire.";
 	durability = 200;
 	fire_delay = 0.75;
-	name = "Fast-shooting AK 74S";
+	name = "worn AKS-74u";
 	unique = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -5206,7 +5211,7 @@
 	dir = 4;
 	teleport_x = 208;
 	teleport_y = 41;
-	teleport_z = 1
+	teleport_z = 5
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4
@@ -6461,7 +6466,7 @@
 	icon_state = "up";
 	teleport_x = 206;
 	teleport_y = 51;
-	teleport_z = 1
+	teleport_z = 5
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -6971,7 +6976,7 @@
 	dir = 8;
 	teleport_x = 199;
 	teleport_y = 50;
-	teleport_z = 1
+	teleport_z = 5
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8
@@ -56939,7 +56944,7 @@ aa
 kX
 TB
 xW
-Qc
+ly
 Qc
 Vu
 hG

@@ -4150,7 +4150,7 @@
 /obj/structure/ladder/unbreakable/jacob{
 	climbable = 1;
 	height = 1;
-	id = jojo;
+	id = "jojo";
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -4775,7 +4775,7 @@
 	climbable = 1;
 	down = 1;
 	height = 6;
-	id = jojo
+	id = "jojo"
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
@@ -5731,7 +5731,7 @@
 	climbable = 1;
 	down = 1;
 	height = 4;
-	id = jojo;
+	id = "jojo";
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6107,7 +6107,7 @@
 	climbable = 1;
 	down = 1;
 	height = 3;
-	id = jojo;
+	id = "jojo";
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6956,7 +6956,7 @@
 	climbable = 1;
 	down = 1;
 	height = 2;
-	id = jojo;
+	id = "jojo";
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,
@@ -6970,7 +6970,7 @@
 	climbable = 1;
 	down = 1;
 	height = 5;
-	id = jojo;
+	id = "jojo";
 	up = 1
 	},
 /turf/open/stalker/floor/agroprom/beton,

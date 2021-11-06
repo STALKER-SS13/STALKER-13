@@ -331,7 +331,8 @@ var/sid_generator = 0
 			if(J.real_rank == "Bandit")
 				sk.fields["rating"] = 8000//Starts Bandits at Experienced.
 			if(J.real_rank == "Monolith")
-				sk.fields["rating"] = 8000//Starts Monolith at Experienced.
+				sk.fields["rating"] = 8000//Starts Monolith at Experienced,
+				sk.fields["money"] = 45000//with a lot of extra cash to gear themselves, as they're an antagonist faction.
 			if(J.real_rank == "Renegade")
 				sk.fields["rating"] = 8000//Starts Renegade at Experienced.
 			sk.fields["faction_s"]	= J.faction_s

@@ -196,6 +196,7 @@
 	throwforce = 20
 	sharpness = IS_SHARP_ACCURATE
 	slot_flags = ITEM_SLOT_BELT
+	w_class = WEIGHT_CLASS_SMALL
 	hitsound = "sound/weapons/knifeswing.ogg"
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
 
@@ -209,5 +210,6 @@
 	armour_penetration = 35
 	sharpness = IS_SHARP_ACCURATE
 	slot_flags = ITEM_SLOT_BELT
+	w_class = WEIGHT_CLASS_SMALL
 	hitsound = "sound/weapons/knifeswing.ogg"
 	attack_verb = list("penetrated", "stabbed", "punctured", "impaled", "skewered", "pierced")

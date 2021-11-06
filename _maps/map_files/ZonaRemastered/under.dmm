@@ -58,6 +58,11 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/sawmill)
+"aq" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/simple_animal/hostile/mutant/snork,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker)
 "ar" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/backwater/sawmill)
@@ -129,6 +134,16 @@
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/clearsky)
+"aD" = (
+/obj/rad/rad_low,
+/mob/living/simple_animal/hostile/mutant/snork{
+	health = 250;
+	name = "large snork";
+	resize = 1.5;
+	speed = 2
+	},
+/turf/open/floor/plating/dirt,
+/area/stalker)
 "aE" = (
 /turf/closed/mineral,
 /area/stalker/buildings/backwater/ranger)
@@ -226,6 +241,17 @@
 	dir = 8
 	},
 /area/stalker/buildings/clearsky)
+"aZ" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/tracks,
+/mob/living/simple_animal/hostile/mutant/snork{
+	health = 250;
+	name = "large snork";
+	resize = 1.5;
+	speed = 2
+	},
+/turf/open/floor/plating/dirt,
+/area/stalker)
 "ba" = (
 /obj/structure/stalker/doski/doski4,
 /obj/machinery/light/small{
@@ -397,6 +423,11 @@
 /obj/structure/stalker/cacheable/shkaf64,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/waste)
+"bH" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/mob/living/simple_animal/hostile/mutant/snork,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker)
 "bI" = (
 /obj/structure/stalker/okno/window3,
 /turf/closed/wall/stalker/bricks_white,
@@ -557,6 +588,21 @@
 	},
 /turf/open/indestructible/boss/air,
 /area/stalker/buildings/backwater/krug)
+"cn" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/item/stack/spacecash/c500,
+/mob/living/simple_animal/hostile/mutant/bloodsucker{
+	color = null;
+	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
+	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
+	health = 1200;
+	name = " ancient large bloodsucker";
+	resize = 3.4;
+	speed = 1
+	},
+/turf/open/floor/plasteel/chapel,
+/area/stalker)
 "co" = (
 /turf/open/floor/plasteel/stairs,
 /area/stalker/buildings/backwater/waste)
@@ -651,6 +697,21 @@
 "cC" = (
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/clearsky)
+"cD" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/anomaly/tramplin,
+/obj/item/stack/spacecash/c1000,
+/obj/anomaly/tramplin,
+/mob/living/simple_animal/cockroach{
+	faction = list("neutral, stalker_mutants1")
+	},
+/turf/open/floor/plasteel/chapel,
+/area/stalker)
 "cE" = (
 /turf/open/floor/plasteel/stairs,
 /area/stalker/blowout/buildings/backwater/waste)
@@ -748,6 +809,30 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/substation)
+"cV" = (
+/obj/structure/chair/pew/right,
+/obj/item/candle{
+	lit = 1
+	},
+/obj/item/cultivator,
+/mob/living/simple_animal/cockroach{
+	faction = list("neutral, stalker_mutants1")
+	},
+/turf/open/floor/plasteel/chapel,
+/area/stalker)
+"cW" = (
+/obj/rad/rad_low,
+/obj/rad/rad_low,
+/mob/living/simple_animal/hostile/mutant/bloodsucker{
+	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
+	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
+	health = 800;
+	name = "large bloodsucker";
+	resize = 2.4;
+	speed = 1
+	},
+/turf/open/floor/holofloor/wood,
+/area/stalker)
 "cX" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -995,6 +1080,18 @@
 /obj/machinery/light/small,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ranger)
+"dR" = (
+/obj/rad/rad_low,
+/mob/living/simple_animal/hostile/mutant/bloodsucker{
+	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
+	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
+	health = 800;
+	name = "large bloodsucker";
+	resize = 2.4;
+	speed = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/stalker)
 "dS" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/adminspace)
@@ -4241,11 +4338,6 @@
 	},
 /turf/open/floor/holofloor/wood,
 /area/stalker)
-"rv" = (
-/mob/living/simple_animal/hostile/mutant/snork,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
 "rw" = (
 /obj/effect/step_trigger/teleporter{
 	icon_state = "up";
@@ -4561,17 +4653,6 @@
 "vU" = (
 /turf/closed/wall/stalker/bricks_yellow,
 /area/stalker/buildings/backwater/claw)
-"wh" = (
-/mob/living/simple_animal/hostile/mutant/snork{
-	health = 250;
-	name = "large snork";
-	resize = 1.50;
-	speed = 2
-	},
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/plating/dirt,
-/area/stalker)
 "wm" = (
 /obj/effect/decal/cleanable/blood,
 /obj/rad/rad_low,
@@ -4727,7 +4808,7 @@
 	lit = 1
 	},
 /obj/item/melee/flyswatter{
-	attack_verb = list("swatted","smacked", "collides");
+	attack_verb = list("swatted","smacked","collides");
 	desc = "Useful for killing humans and mutants of all sizes.";
 	force = 27;
 	name = "splatter master"
@@ -4793,19 +4874,6 @@
 /obj/item/storage/firstaid/stalker/civillian,
 /obj/item/storage/firstaid/stalker/civillian,
 /turf/open/floor/plasteel/chapel,
-/area/stalker)
-"yQ" = (
-/mob/living/simple_animal/hostile/mutant/bloodsucker{
-	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
-	health = 800;
-	name = "large bloodsucker";
-	resize = 2.4;
-	speed = 1
-	},
-/obj/rad/rad_low,
-/obj/rad/rad_low,
-/turf/open/floor/holofloor/wood,
 /area/stalker)
 "yS" = (
 /obj/effect/step_trigger/teleporter{
@@ -5017,7 +5085,7 @@
 	name = "ancient robes"
 	},
 /obj/item/melee/flyswatter{
-	attack_verb = list("swatted","smacked", "collides");
+	attack_verb = list("swatted","smacked","collides");
 	desc = "Useful for killing humans and mutants of all sizes.";
 	force = 27;
 	name = "splatter master"
@@ -5089,21 +5157,6 @@
 "Eo" = (
 /turf/closed/wall/rust,
 /area/stalker/buildings/backwater/claw)
-"EC" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/blood/gibs/up,
-/mob/living/simple_animal/hostile/mutant/bloodsucker{
-	color = null;
-	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
-	health = 1200;
-	name = " ancient large bloodsucker";
-	resize = 3.4;
-	speed = 1
-	},
-/obj/item/stack/spacecash/c500,
-/turf/open/floor/plasteel/chapel,
-/area/stalker)
 "EJ" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plasteel/dark,
@@ -5296,37 +5349,11 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"Jy" = (
-/obj/structure/chair/pew/right,
-/obj/item/candle{
-	lit = 1
-	},
-/mob/living/simple_animal/cockroach{
-	faction = list("neutral, stalker_mutants1")
-	},
-/obj/item/cultivator,
-/turf/open/floor/plasteel/chapel,
-/area/stalker)
 "JE" = (
 /mob/living/simple_animal/cockroach{
 	faction = list("neutral, stalker_mutants1")
 	},
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"JH" = (
-/obj/effect/decal/cleanable/blood/gibs/torso,
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/blood/footprints,
-/obj/anomaly/tramplin,
-/obj/item/stack/spacecash/c1000,
-/mob/living/simple_animal/cockroach{
-	faction = list("neutral, stalker_mutants1")
-	},
-/obj/anomaly/tramplin,
-/turf/open/floor/plasteel/chapel,
 /area/stalker)
 "JS" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -5347,7 +5374,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt/dark,
@@ -5458,7 +5485,7 @@
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
 	name = "large snork";
-	resize = 1.50;
+	resize = 1.5;
 	speed = 2
 	},
 /turf/open/floor/plating/dirt,
@@ -5598,7 +5625,7 @@
 	dir = 1;
 	teleport_x = 11;
 	teleport_y = 159;
-	teleport_z = 02
+	teleport_z = 2
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings/backwater/krug)
@@ -5627,11 +5654,6 @@
 /area/stalker/buildings/backwater/ironforest)
 "St" = (
 /obj/item/storage/firstaid/stalker/civillian,
-/turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"Sv" = (
-/mob/living/simple_animal/hostile/mutant/snork,
-/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "SB" = (
@@ -5663,16 +5685,6 @@
 "SQ" = (
 /obj/effect/decal/cleanable/blood/gibs/torso,
 /turf/open/floor/plating/dirt/dark,
-/area/stalker)
-"SR" = (
-/mob/living/simple_animal/hostile/mutant/snork{
-	health = 250;
-	name = "large snork";
-	resize = 1.50;
-	speed = 2
-	},
-/obj/rad/rad_low,
-/turf/open/floor/plating/dirt,
 /area/stalker)
 "SS" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker{
@@ -5741,18 +5753,6 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/stalker)
-"TS" = (
-/mob/living/simple_animal/hostile/mutant/bloodsucker{
-	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one is exceptionally large!";
-	health = 800;
-	name = "large bloodsucker";
-	resize = 2.4;
-	speed = 1
-	},
-/obj/rad/rad_low,
-/turf/open/floor/plasteel/dark,
-/area/stalker)
 "TT" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5764,7 +5764,7 @@
 	lit = 1
 	},
 /obj/item/melee/flyswatter{
-	attack_verb = list("swatted","smacked", "collides");
+	attack_verb = list("swatted","smacked","collides");
 	desc = "Useful for killing humans and mutants of all sizes.";
 	force = 27;
 	name = "splatter master"
@@ -6161,7 +6161,7 @@
 	name = "ancient robes"
 	},
 /obj/item/melee/flyswatter{
-	attack_verb = list("swatted","smacked", "collides");
+	attack_verb = list("swatted","smacked","collides");
 	desc = "Useful for killing humans and mutants of all sizes.";
 	force = 27;
 	name = "splatter master"
@@ -34571,7 +34571,7 @@ Wd
 AA
 Tq
 Tq
-Sv
+bH
 Wd
 Wd
 Wd
@@ -34819,7 +34819,7 @@ da
 di
 ag
 af
-rv
+aq
 Wd
 Wd
 Ww
@@ -35083,7 +35083,7 @@ Wd
 af
 JE
 Po
-wh
+aZ
 pn
 Wd
 Wd
@@ -35593,7 +35593,7 @@ yM
 rJ
 rJ
 Tq
-SR
+aD
 qv
 rJ
 Wd
@@ -36121,15 +36121,15 @@ af
 UJ
 xL
 xk
-Jy
+cV
 Un
 BR
-yQ
+cW
 xo
 DT
 rJ
 qv
-TS
+dR
 xo
 GP
 BR
@@ -36376,7 +36376,7 @@ JS
 AA
 yM
 pE
-EC
+cn
 sc
 Fx
 Un
@@ -36634,7 +36634,7 @@ Tq
 af
 UU
 rg
-JH
+cD
 Vu
 Un
 BR

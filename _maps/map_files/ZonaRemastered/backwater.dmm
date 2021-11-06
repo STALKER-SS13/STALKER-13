@@ -776,6 +776,15 @@
 /obj/structure/stalker/blocks/vanish/block2/m,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"dd" = (
+/obj/effect/turf_decal/stripes/line{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "poddon";
+	tag = "icon-poddon"
+	},
+/mob/living/simple_animal/hostile/mutant/poltergeist,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/ironforest)
 "de" = (
 /turf/open/stalker/floor/lattice{
 	icon_state = "lattice_new2"
@@ -12989,7 +12998,7 @@ vF
 vF
 vB
 wz
-wI
+dd
 fj
 xf
 wI

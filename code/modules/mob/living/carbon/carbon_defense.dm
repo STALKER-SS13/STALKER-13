@@ -270,9 +270,9 @@
 		M.visible_message("<span class='notice'>[M] shakes [src] trying to get [p_them()] up!</span>", \
 						"<span class='notice'>You shake [src] trying to get [p_them()] up!</span>")
 	else
-		M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>", \
-					"<span class='notice'>You hug [src] to make [p_them()] feel better!</span>")
-		SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "hug", /datum/mood_event/hug)
+		M.visible_message("<span class='notice'>[M] pats [src] shoulder to make [p_them()] feel better!</span>", \
+					"<span class='notice'>You pat [src] shoulder to make [p_them()] feel better!</span>")
+		SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pat", /datum/mood_event/pat)
 		for(var/datum/brain_trauma/trauma in M.get_traumas())
 			trauma.on_hug(M, src)
 	AdjustStun(-60)

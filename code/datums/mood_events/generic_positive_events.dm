@@ -1,5 +1,5 @@
-/datum/mood_event/hug
-	description = "<span class='nicegreen'>Hugs are nice.</span>\n"
+/datum/mood_event/pat
+	description = "<span class='nicegreen'>Shoulder pats are nice.</span>\n"
 	mood_change = 1
 	timeout = 1200
 

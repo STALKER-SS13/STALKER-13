@@ -87,11 +87,11 @@
 	sharpness = IS_SHARP_ACCURATE
 	//butcher_speed = 1.25
 
-/obj/item/kitchen/knife/ancienthatchet
-	name = "woodhatchet"
-	desc = "An old looking hand axe, still seems sturdy and sharp."
+/obj/item/kitchen/knife/woodhatchet
+	name = "wooden hatchet"
+	desc = "An old wooden hand axe, still seems sturdy and sharp."
 	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "ancienthatchet"
+	icon_state = "woodhatchet"
 	item_state = "hatchet"
 	slot_flags = ITEM_SLOT_BELT
 	force = 27
@@ -104,7 +104,7 @@
 
 /obj/item/melee/halliganbar
 	name = "tire iron"
-	desc = "A rusty metal tire iron which can be used to beat mutants and stalkers. The end is bent and unusable."
+	desc = "A rusty metal halligan bar which can be used to beat mutants and stalkers. The end is bent and unusable to use it properly."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "halliganbar"
 	item_state = "crowbar"

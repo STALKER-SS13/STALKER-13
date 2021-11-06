@@ -10,7 +10,7 @@ Assistant
 	total_positions = -1
 	spawn_positions = -1
 	description = "The State Security Services, often referred to as the Military or the Army, are Ukrainian soldiers that have been sent into the Zone by the Ukrainian government to maintain security along the borders of the Zone, in order to prevent unauthorized incursions by Stalkers, and by extension, distribution of artifacts to the outside world without government supervision."
-	enforces = "Protect the military checkpoint by default, escort the Ecologists if they leave the checkpoint, be aware of orders from superiors and executing them with precision."
+	enforces = "Protect the military checkpoint by default, be aware of orders from superiors and executing them with precision, communicate with those in the Zone so they know the military has a presence."
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
 	supervisors = "Military Commander"
 	selection_color = "#2E8B57"
@@ -28,7 +28,7 @@ Assistant
 	total_positions = 2
 	spawn_positions = 2
 	description = "The State Security Services, often referred to as the Military or the Army, are Ukrainian soldiers that have been sent into the Zone by the Ukrainian government to maintain security along the borders of the Zone, in order to prevent unauthorized incursions by Stalkers, and by extension, distribution of artifacts to the outside world without government supervision."
-	enforces = "Protect the military checkpoint by default, escort the Ecologists if they leave the checkpoint, be aware of orders from superiors and executing them with precision."
+	enforces = "Protect the military checkpoint by default, be aware of orders from superiors and executing them with precision, taking leadership when the Commander isn't present."
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
 	supervisors = "Military Commander"
 	selection_color = "#2E8B57"
@@ -85,7 +85,7 @@ Assistant
 	locked = 1
 	spawn_positions = 2
 	description = "The State Security Services, often referred to as the Military or the Army, are Ukrainian soldiers that have been sent into the Zone by the Ukrainian government to maintain security along the borders of the Zone, in order to prevent unauthorized incursions by Stalkers, and by extension, distribution of artifacts to the outside world without government supervision."
-	enforces = "Protect the military checkpoint by default, ensure that the Ecologists are safe and coordinate supervised visitation from stalkers to their bunker, create and rotate outbound squads to patrol and homebound squads to defend the base."
+	enforces = "Protect the military checkpoint by default, create and rotate outbound squads to patrol and homebound squads to defend the base."
 	forbids = "Leave the base independently for any reason, order normal military personnel to leave the base alone, and avoid communicating with your troops."
 	supervisors = "High Command"
 	selection_color = "#2E8B57"

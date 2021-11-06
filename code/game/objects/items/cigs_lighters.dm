@@ -283,25 +283,28 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 // Cigarette brands.
 
-/obj/item/clothing/mask/cigarette/space_cigarette
-	desc = "A Space Cigarette brand cigarette."
+/obj/item/clothing/mask/cigarette/soviet_cigarette
+	desc = "An Old Soviet Cigarette brand cigarette."
 
 /obj/item/clothing/mask/cigarette/dromedary
 	desc = "A DromedaryCo brand cigarette."
 
-/obj/item/clothing/mask/cigarette/uplift
-	desc = "An Uplift Smooth brand cigarette."
+/obj/item/clothing/mask/cigarette/belomorkanal
+	desc = "An Belomorkanal brand cigarette."
 	list_reagents = list("nicotine" = 13, "menthol" = 5)
 
-/obj/item/clothing/mask/cigarette/robust
-	desc = "A Robust brand cigarette."
+/obj/item/clothing/mask/cigarette/marlboro
+	desc = "A Marlboro brand cigarette. Come to where the flavor is. Come to Marlboro country."
 
-/obj/item/clothing/mask/cigarette/robustgold
+/obj/item/clothing/mask/cigarette/marlborogold
 	desc = "A Robust Gold brand cigarette."
 	list_reagents = list("nicotine" = 15, "gold" = 3) // Just enough to taste a hint of expensive metal.
 
-/obj/item/clothing/mask/cigarette/carp
-	desc = "A Carp Classic brand cigarette."
+/obj/item/clothing/mask/cigarette/java
+	desc = "A Java brand cigarette."
+
+/obj/item/clothing/mask/cigarette/laika
+	desc = "A Laika brand cigarette."
 
 /obj/item/clothing/mask/cigarette/syndicate
 	desc = "An unknown brand cigarette."
@@ -414,7 +417,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /////////////////
 /obj/item/clothing/mask/cigarette/pipe
 	name = "smoking pipe"
-	desc = "A pipe, for smoking. Probably made of meerschaum or something."
+	desc = "A pipe, for smoking. It looks like it has been used recently."
 	icon_state = "pipeoff"
 	item_state = "pipeoff"
 	icon_on = "pipeon"  //Note - these are in masks.dmi
@@ -499,7 +502,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/cigarette/pipe/cobpipe
 	name = "corn cob pipe"
-	desc = "A nicotine delivery system popularized by folksy backwoodsmen and kept popular in the modern age and beyond by space hipsters. Can be loaded with objects."
+	desc = "A pipe made of corn on the cob. It is surprisingly well crafted and sturdy."
 	icon_state = "cobpipeoff"
 	item_state = "cobpipeoff"
 	icon_on = "cobpipeon"  //Note - these are in masks.dmi

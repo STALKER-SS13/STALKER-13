@@ -706,8 +706,9 @@
 	force = 15
 	pin = /obj/item/firing_pin
 	w_class = 4
-	spread = 2
-	recoil = 0.3
+	randomspread = 0//As below.
+	spread = 0//For reason to use it over the SVD and Enfield.
+	recoil = 0.1//This too. Ten round mag, so it's not that big of a deal.
 	damagelose = 0
 	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM

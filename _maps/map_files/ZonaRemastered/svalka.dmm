@@ -5619,7 +5619,7 @@
 /area/stalker/blowout/outdoor)
 "tN" = (
 /obj/structure/table/stalker/wood,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow,
+/obj/item/reagent_containers/food/snacks/grown/cannabis/violetriot,
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/wood/grey,
 /area/stalker)
@@ -7300,7 +7300,7 @@
 /area/stalker/blowout/outdoor)
 "Jj" = (
 /obj/structure/table/stalker/wood,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate,
+/obj/item/reagent_containers/food/snacks/grown/cannabis/neonpeon,
 /obj/rad/rad_medium,
 /obj/item/cultivator,
 /turf/open/stalker/floor/wood/grey,

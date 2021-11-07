@@ -10,8 +10,8 @@ Assistant
 	total_positions = -1
 	spawn_positions = -1
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
-	enforces = "Form a group and find people to rob and antagonize, cause chaos between and exploit all the other factions, work with Freedom to destabalize the order in the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, cause major issues with factions without consulting the Bandit Boss."
+	enforces = "Form a group and find people to rob and antagonize, cause chaos between and exploit all the other factions, work with others to destabalize the order in the Zone."
+	forbids = "Work with Duty except under extraordinary circumstances, go off alone when there are fellow Bandits about, be non-antagonistic unless there is self interest involved, and cause major issues with factions without consulting the Bandit Boss."
 	supervisors = "Bandit Boss or Bandit Barman"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -29,8 +29,8 @@ Assistant
 	locked = 1
 	spawn_positions = 2
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
-	enforces = "Organize your fellow bandits and coordinate outbound groups and homebound groups, cause chaos between and exploit all the other factions, work with Freedom to destabalize the order in the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
+	enforces = "Organize your fellow bandits and coordinate outbound groups and homebound groups, cause chaos between and exploit all the other factions, work with others to destabalize the order in the Zone."
+	forbids = "Work with Duty except under extraordinary circumstances, go off alone when there are fellow Bandits about, and be non-antagonistic unless there is self interest involved."
 	supervisors = "Sultan"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -48,7 +48,7 @@ Assistant
 	spawn_positions = 1
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
 	enforces = "Help organize the bandits if the Bandit Boss isn't present and act as second-in-command, rip off anyone who isn't a Bandit however you can, arm your fellow bandits and provide them tools to further antagonize the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
+	forbids = "Work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
 	supervisors = "Bandit Boss"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()

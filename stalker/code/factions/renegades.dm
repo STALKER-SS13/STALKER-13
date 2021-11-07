@@ -5,8 +5,8 @@
 	total_positions = -1
 	spawn_positions = -1
 	description = "Renegades are bandits that decided to leave the bandit faction. Most stalkers consider renegades a joke due to their lack of equipment and poor leadership."
-	enforces = "Form a group and find people to rob and exploit all the other factions."
-	forbids = "Randomly, worldessly murder others unless they're Clear Sky and instead escalate on them, try to team up and work together all the time in the same way, be anything but a bandit loner.."
+	enforces = "Be a bad person who does bad things to good people. Form a group and find people to rob and exploit all the other factions."
+	forbids = "Be a loner plus; you're a Renegade, ACT LIKE IT!"
 	selection_color = "#003D06"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()

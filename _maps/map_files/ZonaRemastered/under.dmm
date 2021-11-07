@@ -4489,7 +4489,6 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "tZ" = (
-/obj/anomaly/holodec,
 /obj/anomaly/karusel,
 /obj/rad/rad_low,
 /turf/open/floor/plating/foam,
@@ -5332,6 +5331,11 @@
 /obj/item/gun/ballistic/revolver/nagant,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
+"NL" = (
+/obj/rad/rad_low,
+/obj/anomaly/holodec,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/backwater/krug)
 "NR" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
@@ -6536,7 +6540,7 @@ up
 Pr
 Tj
 OD
-rS
+NL
 pg
 fg
 io

@@ -1265,17 +1265,8 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor/backwater/sawmill)
 "fb" = (
-/obj/structure/stalker/blocks/vanish/block1/l,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"fc" = (
-/obj/structure/stalker/blocks/vanish/block1,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"fd" = (
-/obj/structure/stalker/blocks/vanish/block1/r,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
 "fe" = (
 /obj/structure/stalker/cacheable/polka,
 /turf/open/stalker/floor/lattice,
@@ -7624,12 +7615,6 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
-"Hq" = (
-/obj/structure/stalker/cacheable/cover{
-	pixel_y = 32
-	},
-/turf/open/stalker/floor/tropa,
-/area/stalker/buildings/renegade)
 "HB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -7658,9 +7643,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
 "Je" = (
-/obj/structure/stalker/cacheable/cover{
-	pixel_y = 32
-	},
+/obj/structure/stalker/cacheable/cover,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "JE" = (
@@ -11397,10 +11380,10 @@ bK
 bK
 bK
 bK
-bK
-bK
-bK
-bK
+cV
+cV
+cV
+cV
 bK
 bK
 bK
@@ -11651,8 +11634,8 @@ aP
 aP
 aP
 aP
-aP
-cV
+fb
+fb
 GB
 GB
 GB
@@ -11908,11 +11891,11 @@ aQ
 aP
 aP
 cs
-cs
+GB
+HM
 GB
 GB
-GB
-GB
+HM
 cs
 aP
 aP
@@ -12164,7 +12147,7 @@ aQ
 cs
 cs
 cs
-cs
+GB
 HM
 eC
 eC
@@ -16260,9 +16243,9 @@ GB
 GB
 dB
 ks
-eC
 Je
-Hq
+Je
+ks
 GB
 GB
 GB
@@ -16521,10 +16504,10 @@ eC
 GB
 GB
 GB
-GB
+cV
 cs
 aQ
-fb
+aQ
 aQ
 aQ
 aQ
@@ -16776,11 +16759,11 @@ Tc
 Ok
 DP
 cV
-cV
+aR
 aS
 aR
 aQ
-fc
+aQ
 aQ
 aQ
 aQ
@@ -17036,7 +17019,7 @@ aP
 aP
 aP
 aQ
-fd
+aQ
 aQ
 aQ
 aQ

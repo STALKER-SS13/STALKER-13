@@ -920,6 +920,21 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/backwater/sawmill)
+"dz" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/obj/rad/rad_medium,
+/obj/anomaly/tramplin,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ironforest)
 "dA" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a{
 	cache_quality = 0
@@ -7844,24 +7859,6 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
-"OK" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/rad/rad_medium,
-/obj/anomaly/tramplin,
-/obj/machinery/button/door{
-	pixel_x = 16
-	},
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/ironforest)
 "OT" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/wood/oldgor,
@@ -25806,7 +25803,7 @@ tV
 xH
 tV
 fu
-OK
+dz
 Qm
 Yl
 vP

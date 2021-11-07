@@ -1797,6 +1797,18 @@
 /obj/structure/table/reinforced,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/ranger)
+"fW" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ranger)
 "fX" = (
 /obj/structure/closet/crate/stalker/blue,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -2348,6 +2360,18 @@
 /obj/structure/stalker/blocks/block3,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
+"ia" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "ib" = (
 /obj/structure/barricade/stalker/wood,
 /obj/structure/grille/stalker{
@@ -2384,6 +2408,16 @@
 	dir = 5
 	},
 /turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/backwater/ranger)
+"ig" = (
+/obj/structure/stalker/doski/doski4,
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ranger)
 "ih" = (
 /obj/structure/table/stalker,
@@ -3226,6 +3260,16 @@
 	dir = 1
 	},
 /area/stalker/buildings/backwater/ironforest)
+"kX" = (
+/obj/structure/stalker/doski/doski4,
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "kY" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 26;
@@ -4824,21 +4868,6 @@
 /obj/structure/closet/crate/stalker/blue/stash/high,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
-"yG" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = 16
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
 "yI" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4909,19 +4938,6 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
-"zv" = (
-/obj/structure/stalker/doski/doski4,
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = -15
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/ranger)
 "zE" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -5030,15 +5046,6 @@
 	},
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"Bo" = (
-/obj/machinery/button/door{
-	pixel_x = 32
-	},
-/obj/machinery/shower{
-	dir = 8
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Bu" = (
 /obj/rad/rad_low,
@@ -5697,19 +5704,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"ST" = (
-/obj/structure/stalker/doski/doski4,
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = -15
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
 "Tj" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -6170,21 +6164,6 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"Yv" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = 16
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/ranger)
 "YC" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -9454,7 +9433,7 @@ fJ
 is
 jZ
 Ks
-Bo
+jZ
 fJ
 fg
 ad
@@ -11014,7 +10993,7 @@ ge
 iY
 gM
 fg
-yG
+ia
 gr
 fj
 jp
@@ -43567,7 +43546,7 @@ ai
 ad
 ad
 bf
-Yv
+fW
 eh
 dd
 dd
@@ -54651,7 +54630,7 @@ bK
 dd
 dd
 bf
-zv
+ig
 eh
 dd
 dd
@@ -64420,7 +64399,7 @@ Wo
 fg
 ai
 tZ
-ST
+kX
 Cv
 fn
 ai
@@ -64917,7 +64896,7 @@ ai
 ai
 ai
 fg
-yG
+ia
 gr
 ai
 rt

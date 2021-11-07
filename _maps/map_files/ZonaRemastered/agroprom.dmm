@@ -3574,12 +3574,7 @@
 /area/stalker/agroprom/tunnel)
 "oG" = (
 /obj/structure/table/stalker/wood,
-/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown{
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 50);
-	desc = "An interesting shabby leather coat, fitted by a past? owner so as to be equally resistant to all the obvious and non-obvious dangers of the Zone.";
-	name = "oldcoat";
-	unique = 1
-	},
+/obj/item/clothing/suit/hooded/strelok,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "oL" = (
@@ -4237,14 +4232,7 @@
 "vp" = (
 /obj/structure/table/stalker/wood,
 /obj/item/ammo_box/stalker/b545ap,
-/obj/item/gun/ballistic/automatic/aksu74{
-	burst_size = 5;
-	desc = "On close inspection you find a modified closing system that increases the rate of fire.";
-	durability = 200;
-	fire_delay = 0.75;
-	name = "worn AKS-74u";
-	unique = 1
-	},
+/obj/item/gun/ballistic/automatic/strelok_ak,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/agroprom/tunnel)
 "vD" = (

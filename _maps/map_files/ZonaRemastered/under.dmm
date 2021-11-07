@@ -1789,6 +1789,18 @@
 /obj/structure/table/reinforced,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/ranger)
+"fW" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ranger)
 "fX" = (
 /obj/structure/closet/crate/stalker/blue,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -2340,6 +2352,16 @@
 /obj/structure/stalker/blocks/block3,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
+"ia" = (
+/obj/structure/stalker/doski/doski4,
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/ranger)
 "ib" = (
 /obj/structure/barricade/stalker/wood,
 /obj/structure/grille/stalker{
@@ -2377,6 +2399,12 @@
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/backwater/ranger)
+"ig" = (
+/obj/machinery/shower{
+	dir = 8
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "ih" = (
 /obj/structure/table/stalker,
 /obj/structure/stalker/cacheable/televizor/broken,
@@ -2937,11 +2965,17 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "jZ" = (
-/obj/machinery/shower{
+/obj/effect/turf_decal/stripes/full{
+	density = 1;
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border8";
+	tag = "icon-border8"
+	},
+/obj/structure/stalker/cacheable/porog{
 	dir = 8
 	},
-/obj/machinery/button/door{
-	pixel_x = 32
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
@@ -3221,6 +3255,18 @@
 	dir = 1
 	},
 /area/stalker/buildings/backwater/ironforest)
+"kX" = (
+/obj/structure/stalker/cacheable/porog{
+	dir = 4
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 8
+	},
+/obj/structure/stalker/cacheable/porog{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
 "kY" = (
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 26;
@@ -4391,24 +4437,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"sL" = (
-/obj/effect/turf_decal/stripes/full{
-	density = 1;
-	icon = 'stalker/icons/warning_stripes.dmi';
-	icon_state = "border8";
-	tag = "icon-border8"
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = -15
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
 "sM" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/rad/rad_low,
@@ -4659,21 +4687,6 @@
 /obj/structure/closet/crate/stalker/blue/stash/high,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
-"yG" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = 16
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/krug)
 "yI" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -4734,19 +4747,6 @@
 /obj/item/clothing/suit/hooded/sealed/ecolog,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
-"zv" = (
-/obj/structure/stalker/doski/doski4,
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = -15
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/ranger)
 "zE" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -4854,15 +4854,6 @@
 	},
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/backwater/krug)
-"Bo" = (
-/obj/machinery/button/door{
-	pixel_x = 32
-	},
-/obj/machinery/shower{
-	dir = 8
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Bu" = (
 /obj/rad/rad_low,
@@ -5847,21 +5838,6 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
-"Yv" = (
-/obj/structure/stalker/cacheable/porog{
-	dir = 4
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 8
-	},
-/obj/structure/stalker/cacheable/porog{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = 16
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/backwater/ranger)
 "YC" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
@@ -9128,9 +9104,9 @@ ad
 fg
 fJ
 is
-jZ
+ig
 Ks
-Bo
+ig
 fJ
 fg
 ad
@@ -10176,7 +10152,7 @@ gM
 ge
 ge
 fg
-sL
+jZ
 Lr
 fj
 ge
@@ -10690,7 +10666,7 @@ ge
 iY
 gM
 fg
-yG
+kX
 gr
 fj
 jp
@@ -43243,7 +43219,7 @@ ai
 ad
 ad
 bf
-Yv
+fW
 eh
 dd
 dd
@@ -54327,7 +54303,7 @@ bK
 dd
 dd
 bf
-zv
+ia
 eh
 dd
 dd

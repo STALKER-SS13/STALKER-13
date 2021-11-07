@@ -557,6 +557,7 @@
 	robust_searching = 1
 	melee_damage_upper = 25
 	melee_damage_lower = 15
+	loot = list(/obj/item/stalker/loot/poltergeist_skin)
 	attack_sound = 	list('stalker/sound/mobs/mutants/special/poltergeist/attack_0.ogg',
 						'stalker/sound/mobs/mutants/special/poltergeist/attack_1.ogg',
 						'stalker/sound/mobs/mutants/special/poltergeist/attack_2.ogg',

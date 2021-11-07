@@ -37,4 +37,10 @@
 	desc = "A brain. You can feel the psy-waves unconfortably pushing into your thoughts when you hold it."
 	icon_state = "controller_brain"
 
+
+/obj/item/stalker/loot/poltergeist_skin
+	name = "poltergeist flesh"
+	desc = "A chunk of flesh taken from a Poltergeist. It seems to be very slightly moving on its own, somehow."
+	icon_state = "myaso"
+
 	// Meat for cooking after this soon.

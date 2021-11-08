@@ -387,7 +387,7 @@
 		if("Ecologist")
 			character.faction = list("ecologist_forces", "stalker_forces")
 		if("State Security Service")
-			character.faction = list("ecologist_forces", "military_forces")
+			character.faction = list("ecologist_forces", "military_forces",  "stalker_forces")
 		else
 			character.faction = list("stalker_forces")
 	var/equip = SSjob.EquipRank(character, rank, TRUE)

@@ -7904,10 +7904,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"NW" = (
-/obj/anomaly/holodec,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/kordon/tunnel)
 "NX" = (
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/agroprom/beton,
@@ -40037,7 +40033,7 @@ ab
 "}
 (125,1,1) = {"
 lM
-NW
+Xz
 Xz
 lM
 aw

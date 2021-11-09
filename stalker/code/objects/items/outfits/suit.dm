@@ -860,6 +860,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = UNACIDABLE
 	armor = list("melee" = 50, "bullet" = 55, "laser" = 45, "energy" = 30, "bomb" = 60, "bio" = 20, "rad" = 20, "fire" = 20, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 190
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0)
 

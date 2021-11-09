@@ -2160,7 +2160,7 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "hn" = (
-/obj/structure/closet/crate/stalker/blue/stash/medium,
+/obj/effect/landmark/mobspawner/snork_spawner,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "ho" = (
@@ -4405,6 +4405,10 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"qy" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker)
 "qA" = (
 /obj/structure/table/stalker,
 /obj/item/pen/fountain,
@@ -4449,6 +4453,16 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"re" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8;
+	name = "vater vent"
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "rg" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -4481,7 +4495,7 @@
 /area/stalker/blowout/outdoor)
 "rt" = (
 /obj/rad/rad_medium,
-/obj/effect/landmark/mobspawner/bloodsucker_spawner,
+/obj/anomaly/jarka,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "ru" = (
@@ -4597,10 +4611,7 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ironforest)
 "tt" = (
-/obj/structure/stalker/rustymachine/transformator,
-/obj/structure/sign/warning/electricshock{
-	pixel_y = 32
-	},
+/obj/structure/closet/crate/stalker/blue,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "tw" = (
@@ -4654,6 +4665,9 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"tN" = (
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/kordon/tunnel)
 "tR" = (
 /obj/structure/table/stalker/wood,
 /obj/item/storage/box/matches,
@@ -4703,9 +4717,10 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4;
 	name = "vater vent"
 	},
-/turf/open/stalker/floor/lattice,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "uo" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
@@ -4752,8 +4767,8 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "vv" = (
-/obj/structure/toilet/secret,
-/turf/open/stalker/floor/lattice,
+/obj/machinery/washing_machine,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "vz" = (
 /obj/structure/table/stalker,
@@ -4839,6 +4854,12 @@
 /obj/effect/decal/cleanable/blood/gibs/up,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ranger)
+"wy" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/kordon/tunnel)
 "wz" = (
 /obj/structure/stalker/bunker{
 	icon_state = "25"
@@ -4867,6 +4888,18 @@
 	},
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
+"xb" = (
+/turf/open/floor/plating/foam,
+/area/stalker/buildings/backwater/ironforest)
+"xg" = (
+/obj/machinery/button/door{
+	id = "ironforestend";
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/stalker/buildings/backwater/ironforest)
 "xk" = (
 /obj/structure/chair/pew/right,
 /obj/item/stack/spacecash/c1000,
@@ -4932,7 +4965,7 @@
 	dir = 8;
 	pixel_x = -12
 	},
-/turf/open/stalker/floor/lattice,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "yg" = (
 /obj/structure/table/stalker/wood/bar100rentgen{
@@ -4965,7 +4998,8 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "yA" = (
-/obj/structure/closet/crate/stalker/blue/stash/high,
+/obj/rad/rad_medium,
+/obj/anomaly/electro,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "yD" = (
@@ -5000,6 +5034,12 @@
 	id = "bunkerwatchman";
 	name = "watchman's room button";
 	pixel_x = -5;
+	pixel_y = -9
+	},
+/obj/machinery/button/door{
+	id = "bunkerguest";
+	name = "guest door button";
+	pixel_x = 6;
 	pixel_y = -9
 	},
 /turf/open/stalker/floor/lattice,
@@ -5190,6 +5230,10 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"Bn" = (
+/obj/structure/stalker/cacheable/brokenmachine13,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "Bu" = (
 /obj/rad/rad_low,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -5318,6 +5362,10 @@
 	},
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/blowout/outdoor)
+"Co" = (
+/obj/structure/bed/stalker/mattress_bloodstain,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "Cx" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/clothing/suit/cultrobes{
@@ -5462,6 +5510,13 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
+"Fk" = (
+/obj/machinery/door/poddoor/sidor{
+	id = "bunkerguest";
+	name = "guest door"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "Fl" = (
 /obj/structure/closet/stalker/shkaf,
 /obj/item/gun/ballistic/automatic/pistol/fort12,
@@ -5733,11 +5788,14 @@
 /turf/open/floor/plating/dirt,
 /area/stalker)
 "Ic" = (
-/obj/machinery/light{
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8;
-	tag = "icon-tube1 (WEST)"
+	name = "vater vent"
 	},
-/turf/open/stalker/floor/lattice,
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/kordon/tunnel)
 "In" = (
 /obj/structure/window/reinforced/tinted{
@@ -5871,7 +5929,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "JG" = (
-/obj/machinery/light{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/stalker/floor/lattice,
@@ -5991,6 +6049,12 @@
 	icon_state = "r_table";
 	name = "reinforced table"
 	},
+/obj/machinery/button/door{
+	id = "bunkerguest";
+	name = "guest door button";
+	pixel_x = 6;
+	pixel_y = -9
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "KL" = (
@@ -5999,6 +6063,10 @@
 	},
 /obj/rad/rad_high,
 /turf/open/stalker/floor/lattice,
+/area/stalker/buildings/backwater/krug)
+"KM" = (
+/obj/structure/closet/crate/stalker/blue/stash/medium,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "KW" = (
 /obj/machinery/light/small,
@@ -6050,6 +6118,12 @@
 	use_power = 0
 	},
 /turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
+"Mv" = (
+/obj/machinery/light/small{
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "My" = (
 /obj/rad/rad_low,
@@ -6227,6 +6301,10 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
+"OZ" = (
+/obj/structure/toilet/secret,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "Pc" = (
 /obj/structure/table/abductor,
 /obj/structure/window/reinforced/tinted/frosted,
@@ -6234,6 +6312,14 @@
 /obj/item/clothing/suit/toggle/labcoat,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
+"Pn" = (
+/obj/machinery/door/poddoor/shutters{
+	auto_close = 50;
+	autoclose = 50;
+	id = "ironforestend"
+	},
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/buildings/backwater/ironforest)
 "Po" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/dirt,
@@ -6453,6 +6539,9 @@
 	pixel_x = 1;
 	pixel_y = 6
 	},
+/obj/structure/stalker/okno/window3{
+	pixel_y = 32
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "TF" = (
@@ -6629,14 +6718,17 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
-"VP" = (
-/obj/machinery/washing_machine,
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
+"VM" = (
+/obj/structure/stalker/rustymachine/transformator,
+/obj/structure/sign/warning/electricshock{
+	pixel_y = 32
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
+"VP" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker)
 "VQ" = (
 /obj/rad/rad_low,
 /obj/effect/step_trigger/teleporter{
@@ -6665,6 +6757,9 @@
 /obj/structure/stalker/cacheable/oldcomputer/dirty{
 	pixel_x = 1;
 	pixel_y = 6
+	},
+/obj/structure/stalker/okno/window3{
+	pixel_y = 32
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
@@ -6712,14 +6807,15 @@
 /obj/item/pizzabox/vegetable{
 	pixel_y = 7
 	},
+/obj/structure/stalker/okno/window3{
+	pixel_y = 32
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "WF" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/effect/landmark/mobspawner/bloodsucker_spawner,
-/turf/open/stalker/floor/gryaz,
+/obj/rad/rad_high,
+/obj/anomaly/electro,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "WO" = (
 /obj/anomaly/electro,
@@ -6945,6 +7041,11 @@
 /obj/item/kitchen/knife/throwing,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"XL" = (
+/obj/structure/bed/stalker/mattress_bloodblots,
+/obj/item/stack/medical/gauze/bint,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "XU" = (
 /obj/structure/stalker/doski,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -6956,9 +7057,9 @@
 /turf/open/floor/plasteel/dark,
 /area/stalker)
 "Yj" = (
-/obj/rad/rad_low,
-/obj/effect/landmark/mobspawner/bloodsucker_spawner,
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/rad/rad_high,
+/obj/anomaly/jarka,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "Yo" = (
 /obj/structure/table/reinforced,
@@ -7791,7 +7892,7 @@ ad
 ad
 fg
 vN
-Ae
+qR
 Ae
 Aq
 rt
@@ -8050,10 +8151,10 @@ fg
 Ae
 qR
 YN
-fq
+fg
 VW
 yT
-AV
+rt
 LF
 Pr
 yI
@@ -8307,9 +8408,9 @@ fg
 Zz
 qR
 CR
-fq
+fg
 Wx
-FY
+yA
 up
 AV
 Uw
@@ -8340,7 +8441,7 @@ fj
 fj
 fg
 fr
-gM
+ka
 gM
 gM
 gM
@@ -8564,10 +8665,10 @@ fg
 Ae
 pP
 Ae
-fq
+fg
 TA
 FH
-Ae
+WF
 cm
 Fw
 WY
@@ -8819,7 +8920,7 @@ ad
 ad
 fg
 Fe
-Ae
+qR
 CR
 KL
 qV
@@ -8829,7 +8930,7 @@ cm
 zZ
 In
 IB
-Yj
+rS
 Pc
 fg
 HP
@@ -9080,10 +9181,10 @@ fg
 fg
 fg
 rC
-Ae
+WF
 Ae
 gf
-fj
+qV
 fg
 fg
 fg
@@ -9337,12 +9438,12 @@ ad
 ad
 fg
 zq
-Ae
+Yj
 Ae
 WO
 AV
 fg
-WF
+kt
 IN
 jr
 fg
@@ -11649,7 +11750,7 @@ ad
 ad
 ad
 fA
-hn
+YZ
 ge
 ge
 ge
@@ -12431,7 +12532,7 @@ hW
 fg
 gE
 ik
-yA
+YZ
 kt
 gA
 iG
@@ -13570,7 +13671,7 @@ lr
 kg
 ad
 ad
-kg
+kG
 kG
 kG
 ki
@@ -13796,7 +13897,7 @@ kk
 kg
 lG
 kk
-lw
+ks
 kk
 kV
 kV
@@ -13827,9 +13928,9 @@ lr
 kg
 ad
 ad
-kg
-ks
-ks
+kG
+kG
+kG
 kg
 kg
 kg
@@ -14053,7 +14154,7 @@ kg
 kg
 kk
 kk
-lw
+ks
 kk
 kk
 kk
@@ -14085,8 +14186,8 @@ kg
 ad
 ad
 kg
-kk
-kk
+kG
+kG
 kg
 ad
 ad
@@ -14223,7 +14324,7 @@ fg
 fg
 fg
 hz
-ge
+fA
 ge
 hz
 ge
@@ -14342,8 +14443,8 @@ kg
 kg
 kg
 kg
-kk
-kk
+kG
+lg
 kg
 ad
 ad
@@ -14482,7 +14583,7 @@ fg
 hz
 ge
 ge
-ge
+fA
 ge
 fg
 ij
@@ -14738,7 +14839,7 @@ ad
 fg
 fg
 ge
-ge
+fA
 ge
 ge
 fg
@@ -15110,9 +15211,9 @@ kg
 mv
 kg
 kg
-kg
-kg
-kg
+xb
+xb
+xb
 kk
 kk
 kg
@@ -15254,7 +15355,7 @@ ge
 ge
 ge
 fg
-ge
+KM
 ge
 fg
 ge
@@ -15367,9 +15468,9 @@ mA
 ki
 ki
 kg
-kG
-kG
 kg
+kg
+xb
 kk
 kk
 kg
@@ -15595,7 +15696,7 @@ kk
 kg
 lG
 kk
-ks
+lw
 kk
 ns
 ns
@@ -15625,7 +15726,7 @@ ki
 ki
 ki
 Px
-kG
+kg
 kg
 kk
 kk
@@ -15881,8 +15982,8 @@ ki
 ki
 kr
 kg
-kG
-kG
+kg
+kg
 kg
 lv
 kk
@@ -16282,7 +16383,7 @@ ge
 ge
 ge
 ge
-ge
+hm
 fA
 fA
 ad
@@ -16524,7 +16625,7 @@ ge
 ge
 fJ
 fJ
-fJ
+gl
 fJ
 fJ
 fr
@@ -16605,7 +16706,7 @@ ki
 ki
 ki
 lf
-kk
+lB
 kk
 kk
 mS
@@ -16910,8 +17011,8 @@ ki
 kg
 zP
 kW
-kW
-ki
+xg
+Pn
 ki
 ki
 lw
@@ -17168,7 +17269,7 @@ kg
 Ox
 kW
 kW
-ki
+Pn
 ki
 ki
 mN
@@ -17941,7 +18042,7 @@ ki
 kG
 kG
 kG
-ki
+lj
 kG
 ad
 kg
@@ -18067,7 +18168,7 @@ fJ
 fJ
 fJ
 ge
-ge
+hn
 ge
 fr
 fr
@@ -22263,7 +22364,7 @@ ai
 ad
 kg
 kE
-kk
+kL
 kg
 kN
 sm
@@ -50783,7 +50884,7 @@ LQ
 CP
 IH
 rz
-rT
+Ia
 we
 we
 IL
@@ -51037,11 +51138,11 @@ pb
 JD
 rL
 wh
+VM
 ry
-ry
-ry
-IH
-ry
+zS
+qi
+OZ
 ya
 VE
 ai
@@ -51294,12 +51395,12 @@ pb
 vR
 QW
 IK
+Bn
 ry
 ry
-ry
-wz
-VP
-ry
+IH
+rL
+Mv
 VE
 ai
 ai
@@ -51551,10 +51652,10 @@ pb
 tD
 EC
 IK
+VM
 ry
 ry
-ry
-pb
+wz
 vv
 un
 VE
@@ -52835,11 +52936,11 @@ qi
 Xk
 JJ
 Ic
-ZP
+Ic
 TK
 ZP
 ZP
-ZP
+Co
 rR
 LQ
 rn
@@ -53091,12 +53192,12 @@ Zs
 yD
 XA
 Cj
-ZP
-ZP
+tN
+wy
 TK
 ZP
 ZP
-ZP
+XL
 LQ
 VU
 ai
@@ -53346,13 +53447,13 @@ ai
 pV
 HD
 sQ
-os
+rT
 zA
-QQ
+Fk
 LQ
-os
-os
-os
+CP
+IH
+LQ
 os
 rn
 ai
@@ -53602,14 +53703,14 @@ ai
 ai
 ai
 ai
-ai
-ai
+VP
+qy
 CJ
 ZP
 CJ
-ai
-ai
-ai
+re
+ry
+pb
 ai
 ai
 ai
@@ -53860,13 +53961,13 @@ ai
 ai
 ai
 ai
-ai
+VP
 PS
 QQ
-PS
-ai
-ai
-ai
+rz
+CP
+IH
+qi
 ai
 ai
 ai

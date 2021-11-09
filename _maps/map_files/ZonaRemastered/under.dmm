@@ -4291,6 +4291,8 @@
 	desc = "An empty sample containment solution.";
 	name = "Sample Containment Solution"
 	},
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "oL" = (
@@ -4352,7 +4354,6 @@
 /turf/open/floor/holofloor/wood,
 /area/stalker)
 "pL" = (
-/obj/structure/table/stalker/wood,
 /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki{
 	pixel_x = -10;
 	pixel_y = 14
@@ -4360,6 +4361,7 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
 	pixel_y = 8
 	},
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "pP" = (
@@ -4524,23 +4526,7 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "rR" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "rS" = (
@@ -4611,15 +4597,12 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/ironforest)
 "tt" = (
-/obj/structure/stalker/bunker{
-	icon_state = "5"
-	},
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big{
-	pixel_x = -32;
-	pixel_y = -20
+/obj/structure/stalker/rustymachine/transformator,
+/obj/structure/sign/warning/electricshock{
+	pixel_y = 32
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "tw" = (
 /obj/machinery/light{
 	dir = 4
@@ -4673,6 +4656,7 @@
 /area/stalker)
 "tR" = (
 /obj/structure/table/stalker/wood,
+/obj/item/storage/box/matches,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "tS" = (
@@ -4715,13 +4699,11 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "un" = (
-/obj/structure/toilet/secret{
+/obj/machinery/shower{
 	dir = 8
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 10;
-	tag = "icon-bulb1 (NORTH)"
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	name = "vater vent"
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -4770,9 +4752,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "vv" = (
-/obj/machinery/shower{
-	dir = 8
-	},
+/obj/structure/toilet/secret,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "vz" = (
@@ -4821,9 +4801,11 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "wh" = (
-/obj/structure/bodycontainer/morgue,
+/obj/structure/stalker/bunker{
+	icon_state = "1"
+	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/blowout/outdoor)
 "wm" = (
 /obj/effect/decal/cleanable/blood,
 /obj/rad/rad_low,
@@ -4837,7 +4819,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
 "wp" = (
-/obj/machinery/campfire/barrel,
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "wr" = (
@@ -4946,7 +4928,10 @@
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "ya" = (
-/obj/machinery/washing_machine,
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "yg" = (
@@ -4967,7 +4952,10 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "yo" = (
-/obj/machinery/campfire/barrel,
+/obj/structure/table/stalker/wood/bar,
+/obj/item/reagent_containers/food/snacks/pie/cream{
+	pixel_y = 7
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "yr" = (
@@ -5014,7 +5002,6 @@
 	pixel_x = -5;
 	pixel_y = -9
 	},
-/obj/item/radio,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "yI" = (
@@ -5115,9 +5102,8 @@
 	},
 /area/stalker/buildings/backwater/ironforest)
 "zS" = (
-/obj/machinery/light{
-	dir = 8;
-	tag = "icon-tube1 (WEST)"
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -5167,16 +5153,6 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
-"AC" = (
-/obj/structure/table/stalker,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/item/hand_labeler,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "AH" = (
 /obj/structure/table/stalker,
 /obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier2,
@@ -5304,6 +5280,8 @@
 	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
 	name = "Mobile Analysis Suite"
 	},
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Cd" = (
@@ -5466,34 +5444,7 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/backwater/krug)
 "ET" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Fb" = (
@@ -5564,7 +5515,18 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/krug)
 "Ga" = (
-/obj/structure/bed/stalker/mattress_filthy,
+/obj/structure/bed/stalker/mattress_dirty{
+	pixel_y = 12
+	},
+/obj/structure/bed/stalker/mattress_holes{
+	pixel_y = -4
+	},
+/obj/item/bedsheet{
+	pixel_y = 14
+	},
+/obj/item/bedsheet{
+	pixel_y = -2
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Gj" = (
@@ -5708,7 +5670,7 @@
 /obj/structure/chair/sofa{
 	dir = 8
 	},
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 4
 	},
 /turf/open/stalker/floor/lattice,
@@ -5720,139 +5682,34 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "HN" = (
-/obj/structure/table/stalker,
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
-/obj/item/beacon{
-	desc = "This thing transmits valuable anomaly data to the eggheads.";
-	name = "Anomaly Field Analyzer"
-	},
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "HP" = (
@@ -5919,9 +5776,11 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "IK" = (
-/obj/machinery/light,
+/obj/structure/stalker/bunker{
+	icon_state = "8"
+	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/blowout/outdoor)
 "IL" = (
 /obj/structure/stalker/bunker{
 	icon_state = "3"
@@ -5964,7 +5823,7 @@
 	id = "ecoshutters2"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist_entrance)
+/area/stalker/kordon/tunnel)
 "Jp" = (
 /obj/machinery/button{
 	id = "DoorToOut"
@@ -5989,7 +5848,7 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "JA" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/left{
 	dir = 8
 	},
 /turf/open/stalker/floor/lattice,
@@ -6132,7 +5991,6 @@
 	icon_state = "r_table";
 	name = "reinforced table"
 	},
-/obj/item/radio,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "KL" = (
@@ -6143,11 +6001,7 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "KW" = (
-/obj/machinery/light{
-	dir = 1;
-	status = 2;
-	tag = "icon-tube1 (EAST)"
-	},
+/obj/machinery/light/small,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Lb" = (
@@ -6269,7 +6123,15 @@
 	},
 /obj/item/bodypart/head/monkey{
 	pixel_x = -2;
-	pixel_y = 4
+	pixel_y = 6
+	},
+/obj/item/bodypart/l_arm/monkey{
+	pixel_x = 3;
+	pixel_y = 1
+	},
+/obj/item/bodypart/r_arm/monkey{
+	pixel_x = -8;
+	pixel_y = 1
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -6346,9 +6208,23 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/krug)
 "OR" = (
-/obj/structure/chair/sofa/left{
-	dir = 8
-	},
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "Pc" = (
@@ -6415,7 +6291,9 @@
 /area/stalker)
 "Qc" = (
 /obj/structure/table/stalker,
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/reagent_containers/food/snacks/deadmouse{
+	desc = "Banana creampie diet."
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Qq" = (
@@ -6436,6 +6314,10 @@
 /obj/machinery/door/airlock/stalker,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
+"QW" = (
+/obj/machinery/light/small,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "Rd" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/lattice,
@@ -6458,6 +6340,7 @@
 /obj/item/hand_labeler,
 /obj/item/hand_labeler,
 /obj/item/hand_labeler,
+/obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "RV" = (
@@ -6510,6 +6393,8 @@
 	desc = "Holds tachyons not fully understood by science.";
 	name = "Portable Tachyon Containment"
 	},
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "SK" = (
@@ -6695,8 +6580,8 @@
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "UK" = (
-/obj/structure/table/stalker/wood,
 /obj/item/instrument/guitar,
+/obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "UR" = (
@@ -6744,6 +6629,14 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"VP" = (
+/obj/machinery/washing_machine,
+/obj/machinery/light/small{
+	dir = 1;
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "VQ" = (
 /obj/rad/rad_low,
 /obj/effect/step_trigger/teleporter{
@@ -6801,7 +6694,7 @@
 "Wq" = (
 /obj/structure/table/stalker,
 /obj/item/hand_labeler,
-/obj/structure/sign/poster/official/science{
+/obj/structure/sign/poster/official/safety_eye_protection{
 	pixel_y = -32
 	},
 /turf/open/stalker/floor/lattice,
@@ -6843,11 +6736,149 @@
 	id = "ecoshutters2"
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist_entrance)
+/area/stalker/kordon/tunnel)
 "WT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"WX" = (
+/obj/structure/table/stalker,
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/item/beacon{
+	desc = "This thing transmits valuable anomaly data to the eggheads.";
+	name = "Anomaly Field Analyzer"
+	},
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "WY" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -6890,11 +6921,17 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "XE" = (
-/obj/structure/bed/stalker/mattress_bloody,
-/obj/machinery/light{
-	dir = 1;
-	status = 2;
-	tag = "icon-tube1 (EAST)"
+/obj/structure/bed/stalker/mattress_plain{
+	pixel_y = 12
+	},
+/obj/structure/bed/stalker/mattress_withered{
+	pixel_y = -4
+	},
+/obj/item/bedsheet{
+	pixel_y = 14
+	},
+/obj/item/bedsheet{
+	pixel_y = -2
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -6962,6 +6999,9 @@
 "YL" = (
 /obj/machinery/light/broken{
 	dir = 1
+	},
+/obj/structure/sign/poster/official/help_others{
+	pixel_y = 32
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
@@ -49968,7 +50008,7 @@ ry
 ry
 ry
 ry
-ry
+WX
 sh
 SF
 qi
@@ -50219,7 +50259,7 @@ ai
 ai
 pb
 XE
-ry
+KW
 wz
 Wr
 yo
@@ -50739,11 +50779,11 @@ os
 Ia
 CP
 IH
-ZV
-Zs
+LQ
+CP
 IH
 rz
-os
+rT
 we
 we
 IL
@@ -50997,10 +51037,10 @@ pb
 JD
 rL
 wh
-Ev
 ry
 ry
 ry
+IH
 ry
 ya
 VE
@@ -51252,14 +51292,14 @@ ry
 xw
 pb
 vR
-rL
+QW
 IK
-Ev
-KW
+ry
+ry
 ry
 wz
-OB
-OB
+VP
+ry
 VE
 ai
 ai
@@ -51510,11 +51550,11 @@ CM
 pb
 tD
 EC
-AC
-Ev
+IK
 ry
 ry
-Ev
+ry
+pb
 vv
 un
 VE
@@ -51767,8 +51807,8 @@ ZV
 Kj
 rT
 rT
-os
-tt
+Kj
+CP
 At
 At
 rz
@@ -52017,7 +52057,7 @@ ai
 ai
 ai
 Ev
-ZP
+tt
 ZP
 ZP
 ZP
@@ -52274,7 +52314,7 @@ ai
 ai
 ai
 Ev
-ZP
+tt
 ZP
 ZP
 tw

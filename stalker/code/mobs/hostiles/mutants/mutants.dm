@@ -1,4 +1,6 @@
 /mob/living/simple_animal/hostile/mutant
+	vision_range = 9
+	aggro_vision_range = 9
 	stat_attack = 2
 	stat_exclusive = 0
 	fearless = 0
@@ -10,7 +12,6 @@
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
-
 /*
 /mob/living/simple_animal/hostile/mutant/death(gibbed)
 	..()
@@ -56,8 +57,7 @@
 
 /mob/living/simple_animal/hostile/mutant/dog
 	name = "dog mutant"
-	desc = "A mutated blind wild dog."
-	eng_desc = "This dog became blind because of the radiation, allowing it to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage. The tail is edible and taking it would be a good idea to make a soup or to sell."
+	desc = "This dog became blind because of the radiation, allowing it to develop a more precise sense of smell. Its skin is of a maroon color, and the lack of food shows the bones of its ribcage. The tail is edible and taking it would be a good idea to make a soup or to sell."
 	turns_per_move = 15
 	speed = 1
 	a_intent = "harm"
@@ -85,7 +85,7 @@
 	robust_searching = 1
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	see_in_dark = 4
-	deathmessage = "The dog lets out a pained whine before falling on its side!"
+	deathmessage = "lets out a pained whine before falling on its side!"
 	del_on_death = 0
 	minbodytemp = 0
 	maxbodytemp = 1500
@@ -95,9 +95,16 @@
 	//random_butcher_results = 1
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
-	rating_add = 15
-	vision_range = 7
-	aggro_vision_range = 7
+	rating_add = 25
+	vision_range = 15
+	aggro_vision_range = 15
+
+/mob/living/simple_animal/hostile/mutant/dog/New()
+	..()
+	if(prob(50))
+		icon_state = "stalker_dog2"
+		icon_living = "stalker_dog2"
+		icon_dead = "stalker_dog2_dead"
 
 /mob/living/simple_animal/hostile/mutant/dog/AttackingTarget()
 	..()
@@ -110,7 +117,6 @@
 /mob/living/simple_animal/hostile/mutant/snork
 	name = "snork"
 	desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
-	eng_desc = "The Snork is wearing remains of military clothes and a broken gas mask with a hanging breathing tube. Its lips have been shredded, probably by itself, and their skin has a greenish hue. It moves on all fours and the lithe physique allows it to jump up to 10 meters. Their nails are as sharp as claws. The lenses of the gas mask do not allow us to say whether it is blind or not."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -139,7 +145,7 @@
 	del_on_death = 0
 	//environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The snork seizes up and falls limp!"
+	deathmessage = "seizes up and falls limp!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/snork_leg = 1)
 	//random_butcher_results = 1
@@ -152,8 +158,8 @@
 	var/leaping = 0
 	move_to_delay = 2
 	rating_add = 50
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/snork/New()
 	..()
@@ -201,7 +207,6 @@
 /mob/living/simple_animal/hostile/mutant/flesh
 	name = "flesh"
 	desc = "This abomination is a horribly mutated pig affected by radiation. Its three eyes have lost all the vigor of life and stare blankly. Despite the large and heavy legs, it seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
-	eng_desc = "This abomination is a horribly mutated pig affected by radiation. Its three eyes have lost all the vigor of life and stare blankly. Despite the large and heavy legs, it seems to be able to move at a decent speed, and is apparently able to catch up with a running human."
 	turns_per_move = 15
 	speed = 5
 	a_intent = "harm"
@@ -229,21 +234,20 @@
 	del_on_death = 0
 	environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The flesh stops dead and falls over itself!"
+	deathmessage = "stops dead and falls over itself!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/flesh_eye = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
 	move_to_delay = 3
-	rating_add = 10
-	vision_range = 7
-	aggro_vision_range = 7
+	rating_add = 25
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/kaban
 	name = "boar"
 	desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome. The smell coming from its mouth smells of carrion and grass. Its posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him."
-	eng_desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome. The smell coming from its mouth smells of carrion and grass. Its posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him."
 	turns_per_move = 15
 	speed = 5
 	a_intent = "harm"
@@ -272,7 +276,7 @@
 	del_on_death = 0
 	environment_smash = 1
 	robust_searching = 1
-	deathmessage = "The boar collapses to the ground!"
+	deathmessage = "collapses to the ground!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/boar_leg = 1)
 	//random_butcher_results = 1
@@ -280,8 +284,8 @@
 	attack_type = "smash"
 	move_to_delay = 3
 	rating_add = 50
-	vision_range = 7
-	aggro_vision_range = 7
+	vision_range = 15
+	aggro_vision_range = 15
 
 	/*Код крашера с колониал маринов
 	Раскидывает мобов с дороги в стороны
@@ -293,11 +297,11 @@
 /mob/living/simple_animal/hostile/mutant/bloodsucker
 	name = "bloodsucker"
 	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
-	eng_desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
 	search_objects = 0
+	icon = 'stalker/icons/bloodsucker.dmi'
 	icon_state = "bloodsucker"
 	icon_living = "bloodsucker"
 	icon_dead = "bloodsucker_dead"
@@ -320,7 +324,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "The bloodsucker chokes up blood and falls to the ground!"
+	deathmessage = "chokes up blood and falls to the ground!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/bloodsucker = 1, /obj/item/stalker/loot/bloodsucker = 1)
 	//random_butcher_results = 1
@@ -328,9 +332,9 @@
 	attack_type = "claw"
 	move_to_delay = 1.8
 	speak_chance = 0.5
-	rating_add = 150
-	vision_range = 7
-	aggro_vision_range = 7
+	rating_add = 500
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/bloodsucker/Life()
 	if(..())
@@ -371,7 +375,6 @@
 /mob/living/simple_animal/hostile/mutant/pseudog
 	name = "pseudodog"
 	desc = "A disgusting animal with wolf, bear, and human DNA. Their faces are almost human-like and constantly snarling to show their sharpened teeth. The eyes appear to glow almost eerily in the dark."
-	eng_desc = "A disgusting animal with wolf, bear, and human DNA. Their faces are almost human-like and constantly snarling to show their sharpened teeth. The eyes appear to glow almost eerily in the dark."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -401,7 +404,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "The pseudodog makes a sinister howl before falling on its side!"
+	deathmessage = "makes a sinister howl before falling on its side!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/pseudo_tail = 1)
 	//random_butcher_results = 1
@@ -409,12 +412,13 @@
 	attack_type = "bite"
 	move_to_delay = 1.4
 	speak_chance = 10
-	rating_add = 100
+	rating_add = 250
+	vision_range = 15
+	aggro_vision_range = 15
 
 /mob/living/simple_animal/hostile/mutant/controller
 	name = "Controller"
 	desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties. It has barely any clothes besides torn rags displayed randomly on the chest. Looking at him sends chills down your spine."
-	eng_desc = "A rare type of mutant with the appearance of a deformed human with ridiculous physical properties. It has barely any clothes besides torn rags displayed randomly on the chest. Looking at him sends chills down your spine."
 	turns_per_move = 15
 	speed = 3
 	a_intent = "harm"
@@ -442,7 +446,7 @@
 	faction = list("stalker_mutants1")
 	del_on_death = 0
 	robust_searching = 1
-	deathmessage = "Controller screams in agony, straining your mind with its last breath!"
+	deathmessage = "screams in agony, straining your mind with its last breath!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/controller_brain = 1)
 	//random_butcher_results = 1
@@ -458,7 +462,7 @@
 	var/attack_stage = 0
 	var/last_attack_time = 0
 	//see_through_walls = 1
-	rating_add = 350
+	rating_add = 800
 	//long_attack = 1
 
 /mob/living/simple_animal/hostile/mutant/controller/Life()
@@ -532,3 +536,93 @@
 			ranged_cooldown = max(0, ranged_cooldown_time - attack_stage)
 			attack_stage = 0
 	return
+
+/////////////////
+// Poltergeist!//
+/////////////////
+/mob/living/simple_animal/hostile/mutant/poltergeist
+	name = "poltergeist"
+	real_name = "poltergeist"
+	icon = 'stalker/icons/anomalies.dmi'
+	density = TRUE
+	anchored = TRUE
+	maxHealth = 500
+	incorporeal_move = INCORPOREAL_MOVE_SHADOW
+	layer = 4
+	minimum_distance = 12//Beyond sight, normally.
+	vision_range = 15
+	aggro_vision_range = 15
+	see_invisible = SEE_INVISIBLE_MINIMUM
+	see_in_dark = 15
+	robust_searching = 1
+	melee_damage_upper = 25
+	melee_damage_lower = 15
+	loot = list(/obj/item/stalker/loot/poltergeist_skin)
+	attack_sound = 	list('stalker/sound/mobs/mutants/special/poltergeist/attack_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_1.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_2.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_3.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_4.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_5.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_6.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_7.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/attack_8.ogg'
+						)
+	idle_sounds =	list('stalker/sound/mobs/mutants/special/poltergeist/tele_idle_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_1.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_2.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/idle_3.ogg'
+						)
+	deathsound =	list('stalker/sound/mobs/mutants/special/poltergeist/death_0.ogg',
+						'stalker/sound/mobs/mutants/special/poltergeist/death_1.ogg'
+						)
+
+	var/timer = 0
+	var/flick_timer = 0
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/Initialize()
+	. = ..()
+	icon_state = "electra0"
+	icon_living = icon_state
+//	status_flags |= GODMODE
+	timer = rand(1,5)
+	flick_timer = rand(1,15)
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/Life()
+	..()
+	timer--
+	flick_timer--
+	if(timer == 0)
+		polter()
+		timer = rand(1,5)
+	if(flick_timer == 0)
+		flick("electra1", src)
+		flick_timer = rand(1,15)
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/proc/polter()
+	..()
+	if(stat != DEAD)
+		for(var/mob/living/carbon/human/H in view(15, src))
+			var/most_violent = -1
+			var/obj/item/throwing
+			for(var/obj/item/I in view(15, get_turf(H)))
+				if(I.anchored)
+					continue
+				if(I.throwforce > most_violent)
+					most_violent = I.throwforce
+					throwing = I
+			if(throwing)
+				playsound(src, pick('stalker/sound/mobs/mutants/special/poltergeist/tele_damage_0.ogg',
+							'stalker/sound/mobs/mutants/special/poltergeist/tele_damage_1.ogg'))
+				throwing.throw_at(H, 8, 2)
+/*
+/mob/living/simple_animal/hostile/mutant/poltergeist/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
+	. = 0
+
+/mob/living/simple_animal/hostile/mutant/poltergeist/CanPass(atom/movable/mover, turf/target)
+	return 1
+*/
+/mob/living/simple_animal/hostile/mutant/poltergeist/death()
+	..()
+	gib()

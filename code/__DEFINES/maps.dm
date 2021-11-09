@@ -78,8 +78,15 @@ require only minor tweaks.
 // must correspond to _basemap.dm for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
     DECLARE_LEVEL("CentCom", ZTRAITS_CENTCOM), \
-    DECLARE_LEVEL("Under", list()), \
-    DECLARE_LEVEL("Zona", list()), \
+    DECLARE_LEVEL("Agroprom", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Backwater", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Bar", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Kordon", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Radar", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Svalka", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Under", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Yantar", ZTRAITS_STATION), \
+    DECLARE_LEVEL("ArmyWarehouses", ZTRAITS_STATION), \
 )
 
 // Camera lock flags

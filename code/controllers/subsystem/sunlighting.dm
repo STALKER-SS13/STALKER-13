@@ -12,8 +12,7 @@ GLOBAL_LIST_EMPTY(sunlighting_update_corners) 	// List of lighting corners  queu
 GLOBAL_LIST_EMPTY(sunlighting_update_overlays)	// List of lighting overlays queued for update.
 
 var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/morning(), new /datum/time_of_day/day(), \
-                                 new /datum/time_of_day/evening(), new /datum/time_of_day/night())
-
+								new /datum/time_of_day/evening(), new /datum/time_of_day/night())
 
 SUBSYSTEM_DEF(sunlight)
 	name = "Sun Lighting"
@@ -109,8 +108,7 @@ proc/set_time_of_day(var/step)
 	if(step > time_cycle_steps.len)
 		step = STEP_DAY
 		dodaychange()
-		/*
-	switch(step)
+/*	switch(step)
 		if(STEP_MORNING)
 			if(prob(10)) //Sunrise brings hope for a new better day
 				sandstorm()
@@ -122,8 +120,7 @@ proc/set_time_of_day(var/step)
 				sandstorm()
 		if(STEP_NIGHT)
 			if(prob(5)) //The darkness of a night shouldn't be any worse
-				sandstorm()
-				*/
+				sandstorm()*/
 	step_started = world.time
 	current_step = step
 	current_step_datum = time_cycle_steps[current_step]
@@ -195,9 +192,11 @@ proc/set_time_of_day(var/step)
 #if defined(LIGHTING_ANIMATION)
 		O.animate_color()
 #endif
+
 		if (MC_TICK_CHECK)
 			return
 	resuming_stage = 0
+
 
 
 /datum/controller/subsystem/sunlight/Recover()

@@ -351,6 +351,61 @@
 	soundloop.stop()
 	update_icon()
 
+/obj/machinery/microwave/stove
+	name = "stove"
+	desc = "A nice white stove for cooking."
+	icon_state = "stove"
+
+/obj/machinery/microwave/stove/attackby(obj/item/O, mob/user, params)
+	if(istype(O, /obj/item/screwdriver))
+		return
+	..()
+
+/obj/machinery/microwave/stove/update_icon()
+	if(broken)
+		icon_state = "stoveb"
+	else if(dirty_anim_playing)
+		icon_state = "stovebloody1"
+	else if(dirty == 100)
+		icon_state = "stovebloody"
+	else if(operating)
+		icon_state = "stove1"
+	else if(panel_open)
+		icon_state = "stove"
+	else
+		icon_state = "stove"
+
+/obj/machinery/microwave/potbelly
+	name = "wide potbelly stove"
+	desc = "A warm stove for cooking food, or keeping warm in the winter. It's really old fashioned, but works wonders when there's no electricity."
+	icon = 'stalker/icons/bochka.dmi'
+	icon_state = "potbelly0"
+
+/obj/machinery/microwave/potbelly/attackby(obj/item/O, mob/user, params)
+	if(istype(O, /obj/item/screwdriver))
+		return
+	..()
+
+/obj/machinery/microwave/potbelly/update_icon()
+	if(operating)
+		icon_state = "potbelly1"
+	else
+		icon_state = "potbelly0"
+
+
+/obj/machinery/microwave/barrelstove
+	name = "barrel stove"
+	desc = "A warm stove for cooking food, or keeping warm in the winter. It's a barrel with slits cut into it, and it works wonders when there's no electricity."
+	icon = 'stalker/icons/bochka.dmi'
+	icon_state = "barrelstove0"
+	density = 1
+
+/obj/machinery/microwave/barrelstove/update_icon()
+	if(operating)
+		icon_state = "barrelstove1"
+	else
+		icon_state = "barrelstove0"
+
 #undef MICROWAVE_NORMAL
 #undef MICROWAVE_MUCK
 #undef MICROWAVE_PRE

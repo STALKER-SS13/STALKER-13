@@ -283,6 +283,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	switch(name)
 		if ("JoinLateBandit")
 			SSjob.latejoin_bandit += loc
+		if ("JoinLateBandit Boss")
+			SSjob.latejoin_banditboss += loc
 		if ("JoinLateBandit Barman")
 			SSjob.latejoin_bandit_barman += loc
 		if ("JoinLateMilitary Soldier")
@@ -313,16 +315,22 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 			SSjob.latejoin_trader += loc
 		if ("JoinLateOld Stalker")
 			SSjob.latejoin_stalker += loc
-		if ("JoinLateMonolith" || "JoinLateMonolith Hegumen")
+		if ("JoinLateMonolith")
 			SSjob.latejoin_monolith += loc
+		if ("JoinLateMonolith Preacher")
+			SSjob.latejoin_monolith_hegumen += loc
 		if ("JoinLateEcologist")
 			SSjob.latejoin_ecologist += loc
+		if ("JoinLateEcologist Guard")
+			SSjob.latejoin_ecologistguard += loc
 		if ("JoinLateChief Ecologist")
 			SSjob.latejoin_chief_ecologist += loc
 		if ("JoinLateClear Sky Soldier")
 			SSjob.latejoin_clearsky += loc
 		if ("JoinLateClear Sky Leader")
 			SSjob.latejoin_clearsky_leader += loc
+		if ("JoinLateRenegade")
+			SSjob.latejoin_renegade += loc
 		else
 			SSjob.latejoin_trackers += loc
 	return INITIALIZE_HINT_QDEL

@@ -148,6 +148,18 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	icon_state = "matter_bin"
 	materials = list(MAT_METAL=80)
 
+/obj/item/stock_parts/rom1
+	name = "rom"
+	desc = "A tiny little rom used in the construction of certain devices"
+	icon_state = "rom1"
+	materials = list(MAT_METAL=80)
+
+/obj/item/stock_parts/hdd1
+	name = "hdd"
+	desc = "A tiny little hdd used in the construction of certain devices."
+	icon_state = "hdd1"
+	materials = list(MAT_METAL=80)
+
 //Rating 2
 
 /obj/item/stock_parts/capacitor/adv
@@ -262,7 +274,7 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 // Subspace stock parts
 
 /obj/item/stock_parts/subspace/ansible
-	name = "subspace ansible"
+	name = "subwave ansible"
 	icon_state = "subspace_ansible"
 	desc = "A compact module capable of sensing extradimensional activity."
 	materials = list(MAT_METAL=30, MAT_GLASS=10)

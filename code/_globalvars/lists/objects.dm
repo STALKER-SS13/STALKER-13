@@ -41,3 +41,5 @@ GLOBAL_LIST_EMPTY(ai_status_displays)
 
 GLOBAL_LIST_EMPTY(mob_spawners) 		    // All mob_spawn objects
 GLOBAL_LIST_EMPTY(alert_consoles)			// Station alert consoles, /obj/machinery/computer/station_alert
+
+var/global/list/all_faction_keypads = list()		//list of all faction keypads. Used to give keypad codes to players on spawn.

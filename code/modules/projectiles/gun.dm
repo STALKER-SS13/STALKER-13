@@ -133,7 +133,7 @@
 		pin = new pin(src)
 	if(gun_light)
 		alight = new(src)
-	build_zooming()
+//	build_zooming()
 
 /obj/item/gun/Destroy()
 	QDEL_NULL(pin)
@@ -190,9 +190,9 @@
 	if(durability)
 		percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/gun/equipped(mob/living/user, slot)
 	. = ..()
@@ -657,6 +657,9 @@
 	gun.zoom(L, FALSE)
 	..()
 
+/obj/item/gun/shiftv(mob/user)
+	if(zoomable)
+		zoom(user)
 
 /obj/item/gun/proc/zoom(mob/living/user, forced_zoom)
 	if(!user || !user.client)

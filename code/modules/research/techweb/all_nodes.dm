@@ -834,14 +834,14 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
-/datum/techweb_node/mech_taser
-	id = "mech_taser"
-	display_name =  "Exosuit Weapon (PBT \"Pacifier\" Mounted Taser)"
-	description = "A basic piece of mech weaponry"
-	prereq_ids = list("electronic_weapons")
-	design_ids = list("mech_taser")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 5000
+///datum/techweb_node/mech_taser
+//	id = "mech_taser"
+//	display_name =  "Exosuit Weapon (PBT \"Pacifier\" Mounted Taser)"
+//	description = "A basic piece of mech weaponry"
+//	prereq_ids = list("electronic_weapons")
+//	design_ids = list("mech_taser")
+//	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+//	export_price = 5000
 
 /datum/techweb_node/mech_lmg
 	id = "mech_lmg"

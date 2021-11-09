@@ -36,7 +36,7 @@
 	name = "Bread"
 	description = "Problems with central planning have led to bread prices skyrocketing. Ship some bread to ease tensions."
 	reward = 1000
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/store/bread, /obj/item/reagent_containers/food/snacks/breadslice, /obj/item/reagent_containers/food/snacks/bun, /obj/item/reagent_containers/food/snacks/pizzabread, /obj/item/reagent_containers/food/snacks/rawpastrybase) 
+	wanted_types = list(/obj/item/reagent_containers/food/snacks/store/bread, /obj/item/reagent_containers/food/snacks/breadslice, /obj/item/reagent_containers/food/snacks/bun, /obj/item/reagent_containers/food/snacks/pizzabread, /obj/item/reagent_containers/food/snacks/rawpastrybase)
 
 /datum/bounty/item/chef/pie
 	name = "Pie"
@@ -114,14 +114,14 @@
 	description = "CentCom has heard wonderful things about the product 'Soylent Green', and would love to try some. If you endulge them, expect a pleasant bonus."
 	reward = 5000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/soylentgreen)
-
+/*
 /datum/bounty/item/chef/pancakes
 	name = "Pancakes"
 	description = "Here at Nanotrasen we consider employees to be family. And you know what families love? Pancakes. Ship a baker's dozen."
 	reward = 5000
 	required_count = 13
 	wanted_types = list(/datum/crafting_recipe/food/pancakes)
-
+*/
 /datum/bounty/item/chef/nuggies
 	name = "Chicken Nuggets"
 	description = "The vice president's son won't shut up about chicken nuggies. Would you mind shipping some?"

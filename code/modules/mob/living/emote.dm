@@ -63,6 +63,13 @@
 	if(user.has_trait(TRAIT_SOOTHED_THROAT))
 		return FALSE
 
+/datum/emote/living/cough/get_sound(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
+			return pick('stalker/sound/voice/male_cough1.ogg', 'stalker/sound/voice/male_cough2.ogg', 'stalker/sound/voice/male_cough3.ogg', \
+			'stalker/sound/voice/male_cough4.ogg')
+
 /datum/emote/living/dance
 	key = "dance"
 	key_third_person = "dances"
@@ -92,7 +99,7 @@
 			var/mob/living/L = user
 			if(!L.can_speak_vocal() || L.oxyloss >= 50)
 				return //stop the sound if oxyloss too high/cant speak
-		playsound(user, user.deathsound, 200, TRUE, TRUE)
+		playsound(user, user.deathsound, 800, TRUE, TRUE)
 
 /datum/emote/living/drool
 	key = "drool"
@@ -155,6 +162,20 @@
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
 
+/datum/emote/living/gasp/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/gasp/get_sound(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
+			return pick('stalker/sound/voice/gasp_male1.ogg', 'stalker/sound/voice/gasp_male2.ogg', 'stalker/sound/voice/gasp_male3.ogg', \
+			'stalker/sound/voice/gasp_male4.ogg', 'stalker/sound/voice/gasp_male5.ogg', 'stalker/sound/voice/gasp_male6.ogg', \
+			'stalker/sound/voice/gasp_male7.ogg')
+
 /datum/emote/living/giggle
 	key = "giggle"
 	key_third_person = "giggles"
@@ -216,10 +237,8 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
-			if(user.gender == FEMALE)
-				return 'sound/voice/human/womanlaugh.ogg'
-			else
-				return pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg')
+			return pick('stalker/sound/voice/male_laugh1.ogg', 'stalker/sound/voice/male_laugh1b.ogg', 'stalker/sound/voice/male_laugh2.ogg', 'stalker/sound/voice/male_laugh2b.ogg', \
+			'stalker/sound/voice/male_laugh3.ogg', 'stalker/sound/voice/male_laugh3b.ogg')
 
 /datum/emote/living/look
 	key = "look"
@@ -266,6 +285,18 @@
 	message_mime = "acts out a scream!"
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/scream/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/scream/get_sound(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
+			return pick('stalker/sound/voice/male_scream1b.ogg', 'stalker/sound/voice/male_scream2b.ogg', 'stalker/sound/voice/male_scream3b.ogg')
+
 /datum/emote/living/scowl
 	key = "scowl"
 	key_third_person = "scowls"
@@ -289,6 +320,18 @@
 	key_third_person = "sighs"
 	message = "sighs."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/sigh/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/sigh/get_sound(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
+			return pick('stalker/sound/voice/sigh_male.ogg')
 
 /datum/emote/living/sit
 	key = "sit"
@@ -393,6 +436,18 @@
 	key_third_person = "yawns"
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/yawn/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/yawn/get_sound(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.dna.species.id == "human" && (!H.mind || !H.mind.miming))
+			return pick('stalker/sound/voice/male_yawn1.ogg', 'stalker/sound/voice/male_yawn2.ogg')
 
 /datum/emote/living/custom
 	key = "me"

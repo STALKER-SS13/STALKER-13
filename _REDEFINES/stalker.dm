@@ -6,10 +6,10 @@
 #define SHOESPICK_TOURIST (pick(/obj/item/clothing/shoes/sneakers/black, /obj/item/clothing/shoes/sneakers/brown, /obj/item/clothing/shoes/sandal, /obj/item/clothing/shoes/laceup))
 
 ///////////////РЕЙТИНГ
-#define ZONE_LEGEND							10000
-#define EXPERT								7000
-#define VETERAN								5000
-#define EXPERIENCED							3000
+#define ZONE_LEGEND							40000
+#define EXPERT								20000
+#define VETERAN								10000
+#define EXPERIENCED							8000
 #define ROOKIE								0
 
 ///////////////РЕПУТАЦИЯ

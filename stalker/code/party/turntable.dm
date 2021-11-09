@@ -73,6 +73,7 @@
 	var/list/turntable_soundtracks = list(
 
 		new /datum/data/turntable_soundtrack ("5nizza",				"Ya Soldat",						'stalker/sound/turntable/5nizza_ya_soldat.ogg',						2110),
+		new /datum/data/turntable_soundtrack ("Zhaman",				"Brother don't fall asleep",		'stalker/sound/turntable/dontfallasleep.ogg',						2110),
 		new /datum/data/turntable_soundtrack ("7B",					"Molodie Vetra",					'stalker/sound/turntable/semb_molodie_vetra.ogg',					2610),
 		new /datum/data/turntable_soundtrack ("Addaraya",			"Gurza Dreaming",					'stalker/sound/turntable/gurza_dreaming.ogg',						2420),
 		new /datum/data/turntable_soundtrack ("Afganistan",			"Pil Glotayu",						'stalker/sound/turntable/afganistan_pil_glotayu.ogg',				3290),

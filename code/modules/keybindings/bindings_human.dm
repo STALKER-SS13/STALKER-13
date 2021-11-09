@@ -1,6 +1,11 @@
 /mob/living/carbon/human/key_down(_key, client/user)
 	if(client.keys_held["Shift"])
 		switch(_key)
+
+			if("V")
+				if(get_active_held_item() != null)
+					get_active_held_item().shiftv(src)
+
 			if("E") // Put held thing in belt or take out most recent thing from belt
 				var/obj/item/thing = get_active_held_item()
 				var/obj/item/equipped_belt = get_item_by_slot(SLOT_BELT)

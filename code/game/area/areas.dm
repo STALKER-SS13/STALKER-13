@@ -67,6 +67,15 @@
 	var/list/related
 	var/environment = 0
 	var/safezone = 0
+	var/ecosafezone = 0
+	var/banditsafezone = 0
+	var/dutysafezone = 0
+	var/freedomsafezone = 0
+	var/renegadesafezone = 0
+	var/cssafezone = 0
+	var/monolithsafezone = 0
+	var/militarysafezone = 0
+	var/mercenarysafezone = 0
 	var/controlled_by = null
 	var/blowout = 0
 	var/ambient_music_cooldown				= 6000

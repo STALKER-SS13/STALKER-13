@@ -111,6 +111,9 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/list/modifications = list()
 	var/unique = 0
 
+/obj/item/proc/shiftv(mob/user)
+	return
+
 /obj/item/Initialize()
 
 	materials =	typelist("materials", materials)
@@ -299,11 +302,11 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		var/obj/item/storage/S = src.loc
 		var/obj/item/gun/G = src
 		playsound(src.loc, "rustle", 50, 1, -5)
-		user.visible_message("<span class='danger'>[user] начинает вытаскивать [G] из [S]!</span>", "<span class='notice'>Вы начинаете вытаскивать [G] из [S]...</span>")
+		user.visible_message("<span class='danger'>[user] starts pulling out [G] from [S]!</span>", "<span class='notice'>You start to pull out [G] from [S]...</span>")
 		if(do_after(user, (G.weapon_weight * 15 + 5)*S.takeout_speed, 1, G))
 			playsound(src, G.draw_sound, 30, 1)
 			SEND_SIGNAL(loc, COMSIG_TRY_STORAGE_TAKE, src, user.loc, TRUE)
-			user.visible_message("<span class='danger'>[user] вытащил [G] из [S]!</span>", "<span class='notice'>Вы вытащили [G] из [S].</span>")
+			user.visible_message("<span class='danger'>[user] pulled out [G] from [S]!</span>", "<span class='notice'> pulled out [G] from [S].</span>")
 
 	if(throwing)
 		throwing.finalize(FALSE)

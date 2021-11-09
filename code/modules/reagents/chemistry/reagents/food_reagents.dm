@@ -380,6 +380,7 @@
 	taste_description = "mushroom"
 
 /datum/reagent/mushroomhallucinogen/on_mob_life(mob/living/carbon/M)
+	M.adjustPsyLoss(-10)
 	if(!M.slurring)
 		M.slurring = 1
 	switch(current_cycle)

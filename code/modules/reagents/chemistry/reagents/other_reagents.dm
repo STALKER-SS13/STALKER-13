@@ -1387,11 +1387,13 @@
 	color = "#9D9D00" // RBG: 157, 157, 0
 	tox_prob = 15
 
-
-
-
-
-
+/datum/reagent/plantnutriment/compost
+	name = "compost"
+	id = "compost"
+	description = "A mixture of waste and rotten plant matter that nurtures plants and keeps them free of pests."
+	color = "#44341F"
+	taste_description = "rot"
+	reagent_state = "SOLID"
 
 // GOON OTHERS
 

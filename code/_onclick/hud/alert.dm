@@ -154,7 +154,7 @@
 
 /obj/screen/alert/fat
 	name = "Fat"
-	desc = "You ate too much food, lardass. Run around the station and lose some weight."
+	desc = "You ate too much food, lardass. Run around and lose some weight."
 	icon_state = "fat"
 
 /obj/screen/alert/hungry
@@ -169,7 +169,7 @@
 
 /obj/screen/alert/gross
 	name = "Grossed out."
-	desc = "That was kind of gross..."
+	desc = "That was disgusting..."
 	icon_state = "gross"
 
 /obj/screen/alert/verygross
@@ -184,12 +184,12 @@
 
 /obj/screen/alert/hot
 	name = "Too Hot"
-	desc = "You're flaming hot! Get somewhere cooler and take off any insulating clothing!"
+	desc = "You're flaming hot! Get somewhere cooler before you have heat stroke!"
 	icon_state = "hot"
 
 /obj/screen/alert/cold
 	name = "Too Cold"
-	desc = "You're freezing cold! Get somewhere warmer and take off any insulating clothing!"
+	desc = "You're freezing cold! Get somewhere warmer before you freeze!"
 	icon_state = "cold"
 
 /obj/screen/alert/lowpressure
@@ -204,13 +204,13 @@
 
 /obj/screen/alert/blind
 	name = "Blind"
-	desc = "You can't see! This may be caused by a genetic defect, eye trauma, being unconscious, \
+	desc = "You can't see! This may be caused by eye trauma, being unconscious, \
 or something covering your eyes."
 	icon_state = "blind"
 
 /obj/screen/alert/high
 	name = "High"
-	desc = "Whoa man, you're tripping balls! Careful you don't get addicted... if you aren't already."
+	desc = "You start feeling more euphoric and see coolors more vibrantly. Details which you would once overlook stick out to you. You start to wonder how beautiful and incredible it is that you and everything else exists at all."
 	icon_state = "high"
 
 /obj/screen/alert/drunk //Not implemented
@@ -220,8 +220,8 @@ or something covering your eyes."
 
 /obj/screen/alert/embeddedobject
 	name = "Embedded Object"
-	desc = "Something got lodged into your flesh and is causing major bleeding. It might fall out with time, but surgery is the safest way. \
-If you're feeling frisky, examine yourself and click the underlined item to pull the object out."
+	desc = "Something got lodged into your flesh and is causing major bleeding as well as pain. It might fall out with time, but surgery is the safest way. \
+If you want to be risky, examine yourself and click the underlined item to pull the object out."
 	icon_state = "embeddedobject"
 
 /obj/screen/alert/embeddedobject/Click()

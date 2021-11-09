@@ -41,7 +41,7 @@
 		else
 			user.visible_message("<span class='warning'>[user] waves around blank sign.</span>")
 		user.changeNext_move(CLICK_CD_MELEE)
-
+/*
 /datum/crafting_recipe/picket_sign
 	name = "Picket Sign"
 	result = /obj/item/picket_sign
@@ -49,3 +49,4 @@
 				/obj/item/stack/sheet/cardboard = 2)
 	time = 80
 	category = CAT_MISC
+*/

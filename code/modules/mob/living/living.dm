@@ -570,6 +570,77 @@
 		else
 			to_chat(src, "<span class='warning'>You can't be here!</span>")
 		return 0
+//Ecologist safezone stuff
+	if((stat != DEAD) && get_area(newloc).ecosafezone && !("ecologist_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Bandit safezone stuff
+	if((stat != DEAD) && get_area(newloc).banditsafezone && !("bandit_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Renegade safezone stuff
+	if((stat != DEAD) && get_area(newloc).renegadesafezone && !("renegade_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Duty safezone stuff
+	if((stat != DEAD) && get_area(newloc).dutysafezone && !("duty_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Freedom safezone stuff
+	if((stat != DEAD) && get_area(newloc).freedomsafezone && !("freedom_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Clear Sky safezone stuff
+	if((stat != DEAD) && get_area(newloc).cssafezone && !("cs_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Military safezone stuff
+	if((stat != DEAD) && get_area(newloc).militarysafezone && !("military_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Mercenary safezone stuff
+	if((stat != DEAD) && get_area(newloc).mercenarysafezone && !("mercenary_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
+
+//Monolith safezone stuff
+	if((stat != DEAD) && get_area(newloc).monolithsafezone && !("monolith_forces" in faction))
+		if(src.client && (src.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		else
+			to_chat(src, "<span class='warning'>You can't be here!</span>")
+		return 0
 
 	if (buckled && buckled.loc != newloc) //not updating position
 		if (!buckled.anchored)

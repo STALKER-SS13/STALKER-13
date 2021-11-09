@@ -56,11 +56,11 @@
 		var/obj/item/repair_kit/RK = A
 
 		if(src.loc == user)
-			user << "<span class='warning'>Place [src] on the floor or table.</span>"
+			user << "<span class='warning'>Place [src] on the floor or a table.</span>"
 			return 0
 
 		if((src.durability/initial(durability)*100) < RK.min_durability)
-			user << "<span class='warning'>[src] durability is too low. You can't repair it with kit of this type.</span>"
+			user << "<span class='warning'>[src]'s durability is too low. You can't repair it with kit of this type.</span>"
 			return 0
 
 		playsound(user.loc, 'stalker/sound/inv_repair_spray_oil.ogg', 50, 1)
@@ -97,7 +97,7 @@
 			return 0
 
 		if((src.durability/initial(durability)*100) < RK.min_durability)
-			user << "<span class='warning'>[src] durability is too low. You can't repair it with kit of this type.</span>"
+			user << "<span class='warning'>[src]'s durability is too low. You can't repair it with kit of this type.</span>"
 			return 0
 
 		playsound(user.loc, 'stalker/sound/inv_repair_spray_oil.ogg', 50, 1)

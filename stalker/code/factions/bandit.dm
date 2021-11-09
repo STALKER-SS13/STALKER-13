@@ -10,14 +10,16 @@ Assistant
 	total_positions = -1
 	spawn_positions = -1
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
-	enforces = "Form a group and find people to rob and antagonize, cause chaos between and exploit all the other factions, work with Freedom to destabalize the order in the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, cause major issues with factions without consulting the Bandit Boss."
+	enforces = "Form a group and find people to rob and antagonize, cause chaos between and exploit all the other factions, work with others to destabalize the order in the Zone."
+	forbids = "Work with Duty except under extraordinary circumstances, go off alone when there are fellow Bandits about, be non-antagonistic unless there is self interest involved, and cause major issues with factions without consulting the Bandit Boss."
 	supervisors = "Bandit Boss or Bandit Barman"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
+	locked = 1
 	outfit = /datum/outfit/job/bandit
+	real_rank = "Bandit"
 
 /datum/job/banditboss
 	title = "Bandit Boss"
@@ -27,8 +29,8 @@ Assistant
 	locked = 1
 	spawn_positions = 2
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
-	enforces = "Organize your fellow bandits and coordinate outbound groups and homebound groups, cause chaos between and exploit all the other factions, work with Freedom to destabalize the order in the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
+	enforces = "Organize your fellow bandits and coordinate outbound groups and homebound groups, cause chaos between and exploit all the other factions, work with others to destabalize the order in the Zone."
+	forbids = "Work with Duty except under extraordinary circumstances, go off alone when there are fellow Bandits about, and be non-antagonistic unless there is self interest involved."
 	supervisors = "Sultan"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -46,13 +48,14 @@ Assistant
 	spawn_positions = 1
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
 	enforces = "Help organize the bandits if the Bandit Boss isn't present and act as second-in-command, rip off anyone who isn't a Bandit however you can, arm your fellow bandits and provide them tools to further antagonize the Zone."
-	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
+	forbids = "Work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
 	supervisors = "Bandit Boss"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/bandit_barman
+	real_rank = "Bartender"
 
 /datum/outfit/job/bandit
 	name = "Bandit"
@@ -72,23 +75,16 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
-	l_pocket = pick(
-	/obj/item/megaphone,
-	/obj/item/restraints/handcuffs,
-	/obj/item/lighter/greyscale,
-	/obj/item/storage/fancy/cigarettes,
-	/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
-	/obj/item/reagent_containers/food/drinks/bottle/vodka)
+	l_pocket = /obj/item/storage/wallet/stalker
 
 /datum/outfit/job/banditboss
 	name = "Bandit Boss"
@@ -106,20 +102,13 @@ Assistant
 		/obj/item/clothing/mask/balaclava)
 	id = /obj/item/stalker_pda
 	belt = pick(
-		/obj/item/melee/baseball_bat,
 		/obj/item/kitchen/knife/butcher,
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/restraints/legcuffs/bola,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
-	l_pocket = pick(
-	/obj/item/megaphone,
-	/obj/item/restraints/handcuffs,
-	/obj/item/lighter/greyscale,
-	/obj/item/storage/fancy/cigarettes,
-	/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
-	/obj/item/reagent_containers/food/drinks/bottle/vodka)
+	l_pocket = /obj/item/storage/wallet/stalker
 
 /datum/outfit/job/bandit_barman
 	name = "Bandit Barman"
@@ -139,7 +128,7 @@ Assistant
 						/obj/item/ammo_box/stalker/b12x70 = 2,
 						/obj/item/flashlight/seclite = 1,
 						/obj/item/clothing/accessory/patch/bandits)
-	l_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti
+	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
 
 /datum/outfit/bandit  // For select_equipment

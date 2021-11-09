@@ -1,13 +1,12 @@
 /obj/machinery/campfire
 	name = "Campfire"
 	desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
-	eng_desc = "A barrel with a couple of logs inside it. If you light it, you can heal by sitting near it."
-	icon = 'stalker/icons/stalker.dmi'
+	icon = 'stalker/icons/bochka.dmi'
 	icon_state = "campfire0"
 	anchored = 1
 	var/firecolor = "#FFAA33"
 	var/sound_playing = 0
-	var/cooldown = 5 					//Кулдаун в секундах
+	var/cooldown = 5 					//In seconds
 	var/incooldown = 0
 	var/active = 0
 	var/list/mob/living/carbon/campers = list()
@@ -42,12 +41,13 @@ obj/machinery/campfire/barrel
 	icon_state = "barrel0"
 	density = 1
 
+
 /obj/machinery/campfire/attack_hand(mob/user)
 	..()
 	if(!active || do_after_check)
 		return
 
-	user.visible_message("<span class='notice'>[user] started extinguishing a fire...</span>", "<span class='notice'>You started extinguishing a fire...</span>")
+	user.visible_message("<span class='notice'>[user] started extinguishing the fire...</span>", "<span class='notice'>You started extinguishing the fire...</span>")
 	do_after_check = 1
 
 	if(!do_after(user, 10, 1, src))
@@ -56,9 +56,8 @@ obj/machinery/campfire/barrel
 
 	do_after_check = 0
 
-	user.visible_message("<span class='green'>[user] extinguished a fire.</span>", "<span class='green'>You extinguished a fire.</span>")
+	user.visible_message("<span class='green'>[user] extinguished the fire.</span>", "<span class='green'>You extinguished the fire.</span>")
 	desc = initial(desc)
-	eng_desc = initial(eng_desc)
 
 	active = !active
 	update_icon()
@@ -114,7 +113,6 @@ obj/machinery/campfire/process()
 				update_icon()
 				soundloop.start()
 				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)
@@ -133,7 +131,6 @@ obj/machinery/campfire/process()
 				update_icon()
 				soundloop.start()
 				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
-				eng_desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)
@@ -144,3 +141,4 @@ obj/machinery/campfire/process()
 		if(active)
 			I.fire_act()
 			return
+

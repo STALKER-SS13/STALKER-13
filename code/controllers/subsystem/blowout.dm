@@ -155,6 +155,11 @@ SUBSYSTEM_DEF(blowout)
 			H.apply_damage(200, PSY)
 		CHECK_TICK
 
+/datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
+	for(var/datum/controller/subsystem/zona/MS)
+		MS.SpawnMobs()
+		CHECK_TICK
+
 /datum/controller/subsystem/blowout/proc/StopBlowout()
 
 	if(blowoutphase == 2)
@@ -175,6 +180,11 @@ SUBSYSTEM_DEF(blowout)
 		An.SpawnArtifact()
 		CHECK_TICK
 
+	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
+
+		Ms.SpawnMobs()
+		CHECK_TICK
+
 	for(var/datum/job/J in SSjob.occupations)
 
 		J.total_positions = initial(J.total_positions)
@@ -188,7 +198,7 @@ SUBSYSTEM_DEF(blowout)
 	for(var/obj/structure/stalker/cacheable/C in world)
 
 		C.internal_cache = null
-		C.cache_chance = rand(7, 12)
+		C.cache_chance = rand(3, 7)
 		C.RefreshContents()
 		CHECK_TICK
 
@@ -222,15 +232,17 @@ SUBSYSTEM_DEF(blowout)
 		KPK.lentahtml = ""
 
 	blowout_count++
-	add_lenta_message(null, "0", "Sidorovich", "Loners", "The emmission is over! You can safely leave the shelter.")
+	add_lenta_message(null, "0", "Sidorovich", "Loners", "The emmission is over! You can safely leave shelter.")
 
 	for(var/datum/data/record/sk in GLOB.data_core.stalkers)
 		if(sk.fields["reputation"] <= VERYBAD)
 			var/name_ = sk.fields["name"]
 			var/rep_ = sk.fields["reputation"]
 			add_lenta_message(null, "0", "Sidorovich", "Loners", "For PDA [name_] get [GetCostBasedOnReputation(rep_)] roubles.")
-	add_lenta_message(null, "0", "Sidorovich", "Loners", "Search, kill and sell the PDAs of stalkers with bad reputations!")
+	add_lenta_message(null, "0", "Sidorovich", "Loners", "Don't go wandering alone and die, you have much more to buy from me!")
 
+
+//	BlowoutMobSpawns()//Calls 'SpawnMobs' on all active mob spawners. Disabled for now.
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)

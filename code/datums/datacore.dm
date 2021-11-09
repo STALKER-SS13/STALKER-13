@@ -308,19 +308,44 @@ var/sid_generator = 0
 
 		if(J)
 			if(J.real_rank == "Lieutenant")
-				sk.fields["rating"] = 1000
-				sk.fields["degree"] = 1
+				sk.fields["rating"] = 10000//Starts faction leaders at Veteran,
+				sk.fields["money"] = 85000//with enough to buy other people gear,
+				sk.fields["degree"] = 1//and marked as leader on the PDA system.
+			if(J.real_rank == "Bartender")
+				sk.fields["rating"] = 40000//Starts barkeeps at Legend,
+				sk.fields["money"] = 1500000//with a load of cash to provide quests and tasks for.
+			if(J.real_rank == "Special")
+				sk.fields["rating"] = 8000//Starts experienced stalkers at Experienced,
+				sk.fields["money"] = 45000//with a bit of extra cash to gear themselves.
+			if(J.real_rank == "Duty")
+				sk.fields["rating"] = 8000//Starts Duty at Experienced.
+			if(J.real_rank == "Freedom")
+				sk.fields["rating"] = 8000//Starts Freedom at Experienced.
+			if(J.real_rank == "Ecologist")
+				sk.fields["rating"] = 8000//Starts Ecologists at Experienced,
+				sk.fields["money"] = 45000//with a lot of extra cash to gear themselves.
+			if(J.real_rank == "Army")
+				sk.fields["rating"] = 8000//Starts Army Soldiers at Experienced.
+			if(J.real_rank == "ClearSky")
+				sk.fields["rating"] = 8000//Starts CS at Experienced.
+			if(J.real_rank == "Bandit")
+				sk.fields["rating"] = 8000//Starts Bandits at Experienced.
+			if(J.real_rank == "Monolith")
+				sk.fields["rating"] = 8000//Starts Monolith at Experienced,
+				sk.fields["money"] = 45000//with a lot of extra cash to gear themselves, as they're an antagonist faction.
+			if(J.real_rank == "Renegade")
+				sk.fields["rating"] = 8000//Starts Renegade at Experienced.
 			sk.fields["faction_s"]	= J.faction_s
 		else
 			sk.fields["faction_s"]	= "Loners"
-
+/*
 		if(sk.fields["faction_s"] == "Bandits")
-			sk.fields["money"] = 2000
+			sk.fields["money"] = 6000
 		else if(sk.fields["faction_s"] == "Monolith")
-			sk.fields["money"] = 2000
+			sk.fields["money"] = 45000//With a lot of extra cash to gear themselves, as they're an antagonist faction.
 		else
 			sk.fields["money"] = 5000
-
+*/
 		stalkers += sk
 	return
 

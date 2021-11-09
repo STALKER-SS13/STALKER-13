@@ -523,7 +523,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	attack_verb = list("beat", "smacked", "bonked", "bludgened", "battered")
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = ITEM_SLOT_BELT
-	var/homerun_ready = 0
+/*	var/homerun_ready = 0
 	var/homerun_able = 0
 
 obj/item/melee/baseball_bat/homerun
@@ -558,7 +558,7 @@ obj/item/melee/baseball_bat/homerun
 		return
 	else if(!target.anchored)
 		target.throw_at(throw_target, rand(1,2), 7, user)
-
+*/
 /obj/item/melee/baseball_bat/ablative
 	name = "metal baseball bat"
 	desc = "This bat is made of highly reflective, highly armored material."

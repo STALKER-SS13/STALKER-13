@@ -19,7 +19,7 @@
 
 	if(src.loc && istype(src.loc, /turf/open/stalker/floor/water))
 
-		var/image/standing //= image('icons/stalker/water.dmi', "water_overlay")
+		var/image/standing //= image('stalker/icons/water.dmi', "water_overlay")
 		var/icon/I
 		if(lying != 0)
 			I = turn(icon('stalker/icons/water.dmi', "water_overlay_turned"), - lying)
@@ -140,7 +140,6 @@
 /obj/structure/chair/brevno
 	name = "log"
 	desc = "A simple log."
-	eng_desc = "A simple log."
 	icon = 'stalker/icons/decor.dmi'
 	icon_state = "log1"
 
@@ -149,6 +148,9 @@
 
 /obj/effect/landmark/latejoin/bandit
 	name = "JoinLateBandit"
+
+/obj/effect/landmark/latejoin/banditboss
+	name = "JoinLateBandit Boss"
 
 /obj/effect/landmark/latejoin/bandit_barman
 	name = "JoinLateBandit Barman"
@@ -196,10 +198,13 @@
 	name = "JoinLateMonolith"
 
 /obj/effect/landmark/latejoin/monolith_hegumen
-	name = "JoinLateMonolith Hegumen"
+	name = "JoinLateMonolith Preacher"
 
 /obj/effect/landmark/latejoin/ecologist
 	name = "JoinLateEcologist"
+
+/obj/effect/landmark/latejoin/ecologistguard
+	name = "JoinLateEcologist Guard"
 
 /obj/effect/landmark/latejoin/chief_ecologist
 	name = "JoinLateChief Ecologist"
@@ -209,6 +214,9 @@
 
 /obj/effect/landmark/latejoin/clearsky_leader
 	name = "JoinLateClear Sky Leader"
+
+/obj/effect/landmark/latejoin/renegade
+	name = "JoinLateRenegade"
 
 /turf/open/floor/plasteel/stairs/stalker
 	icon = 'stalker/icons/floor.dmi'

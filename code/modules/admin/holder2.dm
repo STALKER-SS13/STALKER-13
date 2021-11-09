@@ -163,7 +163,7 @@ generally it would be used like so:
 NOTE: it checks usr! not src! So if you're checking somebody's rank in a proc which they did not call
 you will have to do something like if(client.rights & R_ADMIN) yourself.
 */
-/proc/check_rights(rights_required, show_msg=1)
+/proc/check_rights(rights_required, show_msg=0)//Set to 0 because of the spawn check for rights. It's hacky and stupid, but it works. Sorry. -Carl
 	if(usr && usr.client)
 		if (check_rights_for(usr.client, rights_required))
 			return 1

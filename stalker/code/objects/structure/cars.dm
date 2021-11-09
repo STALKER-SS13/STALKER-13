@@ -3,8 +3,7 @@
 
 /obj/structure/stalker/car/gryzovik
 	name = "Gruzovik"
-	desc = "Old soviet truck."
-	eng_desc = "Old soviet truck."
+	desc = "An old soviet truck."
 
 /obj/structure/stalker/car/gryzovik/south
 	icon = 'stalker/icons/cars/gruzovik_south.dmi'
@@ -24,7 +23,7 @@
 
 /obj/structure/stalker/car/gryzovik2
 	name = "Gruzovik"
-	desc = "Old Soviet grukhovik with flat tires."
+	desc = "An old Soviet grukhovik with flat tires."
 
 /obj/structure/stalker/car/gryzovik2/south
 	icon = 'stalker/icons/cars/gruzovik2_south.dmi'
@@ -40,8 +39,7 @@
 /obj/structure/stalker/car/uaz
 	name = "UAZ"
 	icon = 'stalker/icons/cars/uaz-469_south.dmi'
-	desc = "Rusty, but still working. Only the gasoline ran out."
-	eng_desc = "Old UAZ."
+	desc = "Rusty, but still working. The gas tank is empty."
 
 /obj/structure/stalker/car/mi24
 	name = "MI24"
@@ -49,8 +47,7 @@
 
 /obj/structure/stalker/car/gryzovik_army
 	name = "Gruzovik"
-	desc = "Old Soviet army gruen with flat tires."
-	eng_desc = "Old soviet truck."
+	desc = "An old Soviet army gruen with flat tires."
 
 /obj/structure/stalker/car/gryzovik_army/south
 	icon = 'stalker/icons/cars/gruzovik_army_south.dmi'
@@ -58,4 +55,12 @@
 
 /obj/structure/stalker/car/gryzovik_army/north
 	icon = 'stalker/icons/cars/gruzovik_army_north.dmi'
+	icon_state = "1"
+
+/obj/structure/stalker/car/btrgrimy
+	icon = 'stalker/icons/cars/btrgrimy.dmi'
+	icon_state = "1"
+
+/obj/structure/stalker/car/btrclean
+	icon = 'stalker/icons/cars/btrclean.dmi'
 	icon_state = "1"

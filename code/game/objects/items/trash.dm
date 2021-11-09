@@ -13,6 +13,26 @@
 	name = "cigarettes"
 	icon_state = "cigs_trash"
 
+/obj/item/trash/cigs_trash2
+	name = "cigarettes"
+	icon_state = "cigs_trash2"
+
+/obj/item/trash/ashtray1
+	name = "cigarettes"
+	icon_state = "ashtray1"
+
+/obj/item/trash/ashtray2
+	name = "broken ashtray"
+	icon_state = "ashtray2"
+
+/obj/item/trash/ashtray3
+	name = "ashtray"
+	icon_state = "ashtray3"
+
+/obj/item/trash/ashtray4
+	name = "broken ashtray"
+	icon_state = "ashtray4"
+
 /obj/item/trash/paintcan
 	name = "can of paint"
 	icon_state = "paintcan"
@@ -25,9 +45,9 @@
 	name = "rusty pincers"
 	icon_state = "artifactholder"
 
-/obj/item/trash/carkey
+/obj/item/trash/oldkey
 	name = "old key"
-	icon_state = "gruzkey"
+	icon_state = "oldkey"
 
 /obj/item/trash/crossnecklace
 	name = "cross necklace"
@@ -57,17 +77,25 @@
 	name = "steel wire"
 	icon_state = "steelwire1"
 
+/obj/item/trash/metaljunk
+	name = "metal junk"
+	icon_state = "metaljunk"
+
 /obj/item/trash/oldcircuitboard
 	name = "circuit board"
 	icon_state = "circuitboard"
 
-/obj/item/trash/oldcircuitboard0
+/obj/item/trash/oldcircuitboard/alt
 	name = "circuit board"
 	icon_state = "circuitboard0"
 
 /obj/item/trash/oldchembottle
 	name = "chemical bottle"
 	icon_state = "chembottle"
+
+/obj/item/trash/brokenpocketwatch
+	name = "broken pocket watch"
+	icon_state = "brokenpocketwatch"
 
 // Porn Mags
 

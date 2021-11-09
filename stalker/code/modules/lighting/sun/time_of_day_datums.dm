@@ -13,10 +13,12 @@
 	color = "#808599"
 	duration = 4500
 
+
 /datum/time_of_day/evening
 	name = "Evening"
 	color = "#FFA891"
 	duration = 4500
+
 
 /datum/time_of_day/night
 	name = "Night"

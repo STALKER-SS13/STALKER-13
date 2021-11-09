@@ -318,3 +318,54 @@
 	w_class = 2
 	list_reagents = list("nutriment" = 20, "omnizine" = 1, "vitamin" = 5)
 	tastes = list("bland meat and vegetables. It's barely food" = 1)
+
+
+// STALKER NEW-FOODS
+
+// Generic Goulash (will be replaced with Monster-Type foods later)
+
+/obj/item/reagent_containers/food/snacks/stalker/lowgradestew
+	name = "Low-Grade Goulash"
+	desc = "Pieces of scrap meat cooked in a thin-gruel made of mushroom stock. It isn't very tasty, but it'll keep you from starving to death!"
+	icon_state = "lowgrade_goulash"
+	w_class = 2
+	list_reagents = list("nutriment" = 20, "omnizine" = 1)
+	tastes = list("gritty and chewy meat with a overly earthy broth. This isn't very enjoyable.." = 1)
+
+/obj/item/reagent_containers/food/snacks/stalker/shroomstew
+	name = "Mushroom Goulash"
+	desc = "A grueling meal offered by barkeeps for those down on their luck. Consisting of whatever crap just barely fits for human-consumption."
+	icon_state = "lowgrade_goulash"
+	w_class = 2
+	list_reagents = list("nutriment" = 15)
+	tastes = list("sand-textured grit with a overbearing earthy flavour. This is horrible.." = 1)
+
+/obj/item/reagent_containers/food/snacks/stalker/meatstew
+	name = "Meat Goulash"
+	desc = "Pieces of braised Flesh meat cooked with tons of pepper n' salt with quality cultured mushrooms! Nothing warms a Stalkers belly better!"
+	icon_state = "lowgrade_goulash"
+	w_class = 2
+	list_reagents = list("nutriment" = 30, "omnizine" = 10, "vitamin" = 5)
+	tastes = list("flavourful chunks of chewy pork-meat in a broth of thick gravy with veggies. This is wonderful!" = 1)
+
+// Candy-Bars and King-Ass Rippers Snack
+
+/obj/item/reagent_containers/food/snacks/stalker/konserva/snack/thebar
+	name = "Sugar-Free Candy Bar"
+	desc = "Brought in during the later years by Stalkers who clearly understood what a diet of bread, meat and vodka does to ones stomach. It'll make you... 'Clear-Sky' your bowels!"
+	icon_state = "thebar"
+	icon_state_opened = "thebar1"
+	list_reagents = list("lipolicide" = 10, "omnizine" = 1)
+	trash = /obj/item/trash/konserva/snikers
+	desc_opened = "Brought in during the later years by Stalkers who clearly understood what a diet of bread, meat and vodka does to ones stomach. It'll make you... 'Clear-Sky' your bowels! This one has been opened!"
+	tastes = list("Oddly satisfactory chocolate that seems to make your... Stomach.. Grumble.. Oh No..." = 1)
+
+/obj/item/reagent_containers/food/snacks/stalker/konserva/snack/thebar
+	name = "Russian Chocolate Bar"
+	desc = "A reminder of the life abandoned on the outside world by the locals.. This chocolate bar is rich with both flavour and homely vibes!"
+	icon_state = "choco1"
+	icon_state_opened = "choco2"
+	list_reagents = list("nutriment" = 5, "omnizine" = 1, "psicodine" = 1)
+	trash = /obj/item/trash/konserva/snikers
+	desc_opened =  "A reminder of the life abandoned on the outside world by the locals.. This chocolate bar is rich with both flavour and homely vibes! This one has been opened."
+	tastes = list("Delicious chocolate and a reminder of a more peaceful life.." = 1)

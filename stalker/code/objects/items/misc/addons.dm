@@ -34,7 +34,6 @@
 /obj/item/attachment/scope/SUSAT
 	name = "SUSAT"
 	desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
-	eng_desc = "A 4x fixed zoom scope produced primarily in Western countries. Attached to weapons by means of the NATO-standard Picatinny rail. Often used for accurate fire from small arms at medium to long range."
 	icon = 'stalker/icons/weapon_mods.dmi'
 	icon_state = "susat"
 	types = list(/obj/item/gun/ballistic/automatic/tpc301,
@@ -74,9 +73,9 @@
 
 /obj/item/attachment/scope/rifle
 	name = "rifle scope"
-	desc = "WWII rifle scope"
+	desc = "A rifle scope designed some time around the advent of WWII."
 	icon_state = "rifle"
-	types = list(/obj/item/gun/ballistic/shotgun/boltaction/enfield,
+	types = list(/obj/item/gun/ballistic/rifle/boltaction/enfield,
 				/obj/item/gun/ballistic/shotgun/bm16,
 				/obj/item/gun/ballistic/shotgun/bm16/toz34)
 	zoom_add = 6
@@ -89,11 +88,11 @@
 
 /obj/item/attachment/grenadelauncher
 	name = "grenade launcher"
-	desc = "Underbarrel grenade launcher."
+	desc = "A grenade launcher to be mounted on an underslung rail or other mounting system."
 	icon_state = ""
 	types = list()
 
 /obj/item/attachment/grenadelauncher/fnf2000
 	name = "fn-f2000 grenade launcher"
-	desc = "Underbarrel grenade launcher for FN-F2000"
+	desc = "A grenade launcher to be mounted on the FN-F2000's mounting system."
 	icon_state = "fnf2000-gl"

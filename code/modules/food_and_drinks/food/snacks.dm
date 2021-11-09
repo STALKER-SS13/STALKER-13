@@ -187,7 +187,7 @@ All foods are distributed among various categories. Use common sense.
 			return 1
 	else
 		..()
-
+/*
 //Called when you finish tablecrafting a snack.
 /obj/item/reagent_containers/food/snacks/CheckParts(list/parts_list, datum/crafting_recipe/food/R)
 	..()
@@ -210,7 +210,7 @@ All foods are distributed among various categories. Use common sense.
 				reagents.add_reagent(r_id, amount, tastes)
 			else
 				reagents.add_reagent(r_id, amount)
-
+*/
 /obj/item/reagent_containers/food/snacks/proc/slice(accuracy, obj/item/W, mob/user)
 	if((slices_num <= 0 || !slices_num) || !slice_path) //is the food sliceable?
 		return FALSE

@@ -17,7 +17,7 @@
 						/obj/item/seeds/cannabis/death,
 						/obj/item/seeds/cannabis/white,
 						/obj/item/seeds/cannabis/neonpeon)
-	reagents_add = list("lsd" = 0.15, "lipolicide" = 0.35) // gives u the munchies
+	reagents_add = list("space_drugs" = 0.15, "lipolicide" = 0.35) // gives u the munchies
 
 
 /obj/item/seeds/cannabis/violetriot
@@ -39,7 +39,7 @@
 	plantname = "Deathweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/death
 	mutatelist = list()
-	reagents_add = list("cyanide" = 0.35, "lsd" = 0.15, "lipolicide" = 0.15)
+	reagents_add = list("cyanide" = 0.35, "space_drugs" = 0.15, "lipolicide" = 0.15)
 	rarity = 40
 
 /obj/item/seeds/cannabis/white
@@ -50,19 +50,19 @@
 	plantname = "Lifeweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/white
 	mutatelist = list()
-	reagents_add = list("omnizine" = 0.35, "lsd" = 0.15, "lipolicide" = 0.15)
+	reagents_add = list("omnizine" = 0.35, "space_drugs" = 0.15, "lipolicide" = 0.15)
 	rarity = 40
 
 
 /obj/item/seeds/cannabis/neonpeon
-	name = "pack of neon peon weed seeds"
-	desc = "These seeds grow into neon peon weed."
+	name = "pack of neo peon weed seeds"
+	desc = "These seeds grow into neo peon weed."
 	icon_state = "seed-neonpeoncannabis"
 	species = "neonpeoncannabis"
 	plantname = "Neon Peon Weed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/neonpeon
 	mutatelist = list()
-	reagents_add = list("lsd" = 0.15,
+	reagents_add = list("space_drugs" = 0.15,
 						"mercury" = 0.15,
 						"lithium" = 0.15,
 						"atropine" = 0.15,

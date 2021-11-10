@@ -388,7 +388,7 @@
 		/obj/item/reagent_containers/food/snacks/rofflewaffles,
 		/obj/item/reagent_containers/food/snacks/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,
-		/obj/item/reagent_containers/food/drinks/soda_cans/mountain_wind,
+		/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind,
 		/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb,
 		/obj/item/reagent_containers/food/drinks/soda_cans/starkist,
 		/obj/item/reagent_containers/food/drinks/soda_cans/space_up,

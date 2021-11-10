@@ -1,7 +1,7 @@
-/datum/chemical_reaction/lsd
+/datum/chemical_reaction/space_drugs
 	name = "LSD"
-	id = "lsd"
-	results = list("lsd" = 3)
+	id = "space_drugs"
+	results = list("space_drugs" = 3)
 	required_reagents = list("mercury" = 1, "sugar" = 1, "lithium" = 1)
 
 /datum/chemical_reaction/crank
@@ -11,6 +11,7 @@
 	required_reagents = list("diphenhydramine" = 1, "ammonia" = 1, "lithium" = 1, "sacid" = 1, "welding_fuel" = 1)
 	mix_message = "The mixture violently reacts, leaving behind a few crystalline shards."
 	required_temp = 390
+
 
 /datum/chemical_reaction/krokodil
 	name = "Krokodil"
@@ -46,4 +47,3 @@
 	results = list("happiness" = 4)
 	required_reagents = list("nitrous_oxide" = 2, "epinephrine" = 1, "ethanol" = 1)
 	required_catalysts = list("plasma" = 5)
-

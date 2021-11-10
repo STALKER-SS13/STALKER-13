@@ -1560,7 +1560,6 @@
 #include "code\modules\crafting\craft.dm"
 #include "code\modules\crafting\guncrafting.dm"
 #include "code\modules\crafting\recipes.dm"
-#include "code\modules\crafting\recipes_stalker.dm"
 #include "code\modules\crafting\tailoring.dm"
 #include "code\modules\detectivework\detective_work.dm"
 #include "code\modules\detectivework\evidence.dm"

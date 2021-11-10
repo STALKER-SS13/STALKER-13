@@ -4377,9 +4377,9 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "pW" = (
+/obj/item/weapon/kitchen/knife/m9,
 /obj/rad/rad_low,
 /obj/item/cultivator,
-/obj/item/katana,
 /turf/open/floor/plasteel/dark,
 /area/stalker)
 "qi" = (
@@ -4947,12 +4947,17 @@
 /obj/item/candle{
 	lit = 1
 	},
+/obj/item/melee/flyswatter{
+	attack_verb = list("swatted","smacked","collides");
+	desc = "Useful for killing humans and mutants of all sizes.";
+	force = 27;
+	name = "splatter master"
+	},
 /obj/item/gun/ballistic/automatic/vintorez,
 /obj/structure/window{
 	dir = 4
 	},
 /obj/structure/window,
-/obj/item/melee/splattermaster,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "ya" = (
@@ -5368,9 +5373,14 @@
 	desc = "A ragged, dusty set of robes.";
 	name = "ancient robes"
 	},
+/obj/item/melee/flyswatter{
+	attack_verb = list("swatted","smacked","collides");
+	desc = "Useful for killing humans and mutants of all sizes.";
+	force = 27;
+	name = "splatter master"
+	},
 /obj/item/gun/ballistic/automatic/gp37,
 /obj/structure/window,
-/obj/item/melee/splattermaster,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "CA" = (
@@ -6568,12 +6578,17 @@
 /obj/item/candle{
 	lit = 1
 	},
+/obj/item/melee/flyswatter{
+	attack_verb = list("swatted","smacked","collides");
+	desc = "Useful for killing humans and mutants of all sizes.";
+	force = 27;
+	name = "splatter master"
+	},
 /obj/item/gun/ballistic/automatic/fnf2000s,
 /obj/structure/window,
 /obj/structure/window{
 	dir = 8
 	},
-/obj/item/melee/splattermaster,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "TV" = (
@@ -7062,9 +7077,14 @@
 	desc = "A ragged, dusty set of robes.";
 	name = "ancient robes"
 	},
+/obj/item/melee/flyswatter{
+	attack_verb = list("swatted","smacked","collides");
+	desc = "Useful for killing humans and mutants of all sizes.";
+	force = 27;
+	name = "splatter master"
+	},
 /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted,
 /obj/structure/window,
-/obj/item/melee/splattermaster,
 /turf/open/floor/plasteel/chapel,
 /area/stalker)
 "YC" = (

@@ -205,7 +205,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/katana
 	name = "katana"
-	desc = "An ancient Japanese sword... This one looks razor sharp, and has a glimmer to it."
+	desc = "Woefully underpowered in D20."
 	icon_state = "katana"
 	item_state = "katana"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -217,7 +217,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	w_class = WEIGHT_CLASS_HUGE
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-//	block_chance = 50
+	block_chance = 50
 	sharpness = IS_SHARP
 	max_integrity = 200
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)
@@ -280,7 +280,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	force = 2
 	throwforce = 20 //20 + 2 (WEIGHT_CLASS_SMALL) * 4 (EMBEDDED_IMPACT_PAIN_MULTIPLIER) = 28 damage on hit due to guaranteed embedding
 	throw_speed = 4
-	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 35, "embedded_fall_chance" = 0)
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 100, "embedded_fall_chance" = 0)
 	w_class = WEIGHT_CLASS_SMALL
 	sharpness = IS_SHARP
 	materials = list(MAT_METAL=500, MAT_GLASS=500)
@@ -613,46 +613,6 @@ obj/item/melee/baseball_bat/homerun
 				bug.death(1)
 			else
 				qdel(target)
-
-/obj/item/melee/splattermaster
-	name = "splatter master"
-	desc = "Useful for killing humans and mutants of all sizes."
-	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "flyswatter"
-	item_state = "flyswatter"
-	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 26
-	throwforce = 15
-	attack_verb = list("swatted","smacked","collided","whacked","spanked")
-	hitsound = 'sound/effects/snap.ogg'
-	w_class = WEIGHT_CLASS_SMALL
-	//Things in this list will be instantly splatted.  Flyman weakness is handled in the flyman species weakness proc.
-	var/list/strong_against
-
-/obj/item/melee/flyswatter/Initialize()
-	. = ..()
-	strong_against = typecacheof(list(
-					/mob/living/simple_animal/hostile/poison/bees/,
-					/mob/living/simple_animal/butterfly,
-					/mob/living/simple_animal/cockroach,
-					/obj/item/queen_bee,
-					/mob/living/simple_animal/hostile/mutant/flesh
-	))
-
-
-/obj/item/melee/flyswatter/afterattack(atom/target, mob/user, proximity_flag)
-	. = ..()
-	if(proximity_flag)
-		if(is_type_in_typecache(target, strong_against))
-			new /obj/effect/decal/cleanable/insectguts(target.drop_location())
-			to_chat(user, "<span class='warning'>You easily splatter the [target].</span>")
-			if(istype(target, /mob/living/))
-				var/mob/living/bug = target
-				bug.death(1)
-			else
-				qdel(target)
-
 
 /obj/item/circlegame
 	name = "circled hand"

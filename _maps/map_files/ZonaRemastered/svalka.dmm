@@ -3530,7 +3530,6 @@
 	dir = 1;
 	tag = "icon-tube1 (EAST)"
 	},
-/obj/machinery/vending/cigarette/beach,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/kordon/banditbar)
 "jp" = (
@@ -4639,10 +4638,6 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"mU" = (
-/obj/machinery/vending/cigarette/bustedtwo,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/kordon/banditbar)
 "mX" = (
 /obj/structure/stalker/car/gryzovik2/south,
 /turf/open/stalker/floor/gryaz,
@@ -4836,10 +4831,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"nH" = (
-/obj/machinery/vending/cigarette/bustedtwo,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "nI" = (
 /obj/rad/rad_high,
 /obj/structure/stalker/cacheable/televizor/broken,
@@ -4879,7 +4870,9 @@
 	pixel_x = 0;
 	tag = "icon-border8"
 	},
-/obj/structure/reagent_dispensers/compostbin,
+/obj/structure/reagent_dispensers/compostbin{
+	tank_volume = 0
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/svalka/buildings)
 "nP" = (
@@ -4887,11 +4880,6 @@
 /obj/structure/stalker/doski/doski3,
 /turf/open/floor/wood/cold,
 /area/stalker)
-"nS" = (
-/obj/structure/barricade/stalker/box,
-/obj/structure/stalker/tree,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "nW" = (
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/lattice,
@@ -6102,10 +6090,6 @@
 /obj/effect/landmark/mobspawner/dog_spawner,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"xS" = (
-/obj/structure/stalker/cacheable/vendmachine7,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "xT" = (
 /obj/structure/stalker/cacheable/musor_yashik/red,
 /turf/open/stalker/floor/gryaz,
@@ -6245,7 +6229,8 @@
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "zl" = (
-/obj/effect/spawner/lootdrop/stalker/junk,
+/obj/structure/stalker/tree/leafless,
+/obj/item/trash/teapot,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "zq" = (
@@ -6498,10 +6483,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"Cb" = (
-/obj/structure/stalker/cacheable/vendmachine4,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "Cc" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -6577,10 +6558,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
-"CB" = (
-/obj/item/reagent_containers/food/drinks/flask/jerrycan/compost,
-/turf/open/floor/plating/dirt,
-/area/stalker)
 "CE" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/asphalt,
@@ -6657,10 +6634,6 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Dc" = (
-/obj/structure/stalker/cacheable/vendmachine6,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "Df" = (
 /obj/structure/stalker/cacheable/bochka{
 	layer = 2;
@@ -6733,7 +6706,8 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "DE" = (
-/obj/structure/stalker/cacheable/vendmachine23,
+/obj/rad/rad_medium,
+/obj/item/trash/teapot,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "DU" = (
@@ -6751,12 +6725,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/svalka/buildings)
-"Ea" = (
-/obj/effect/spawner/lootdrop/stalker/junk,
-/turf/open/stalker/floor/gryaz{
-	layer = 1.8
-	},
-/area/stalker/blowout/outdoor)
 "Eb" = (
 /mob/living/simple_animal/hostile/mutant/bloodsucker{
 	desc = "A rather disgusting-looking type of mutant with the same physical properties as a human besides the absence of genital organs,thus making the difference between male or female more difficult to tell. Tentacles covered with blood seem to have replaced the lower part of the jaw, and sharp claws have replaced the end of the fingers. The guttural breathing of the mutant freezes your blood. This one seems larger than usual!";
@@ -7737,14 +7705,6 @@
 /obj/anomaly/jarka,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"MM" = (
-/obj/structure/grille/stalker/beton{
-	icon_state = "l4";
-	tag = "icon-l4"
-	},
-/obj/structure/stalker/tree,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "MN" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
@@ -8207,7 +8167,7 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "Qo" = (
-/obj/structure/stalker/cacheable/vendmachine9,
+/obj/item/trash/teapot,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "Qq" = (
@@ -8314,10 +8274,6 @@
 "Rj" = (
 /turf/open/stalker/floor/lattice,
 /area/stalker/svalka/cellar)
-"Rm" = (
-/obj/machinery/vending/medical/busted,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
 "Rn" = (
 /obj/structure/grille/stalker{
 	icon_state = "fence3"
@@ -28094,7 +28050,7 @@ Gv
 Gv
 ez
 eQ
-MM
+eQ
 eQ
 fC
 fT
@@ -28352,7 +28308,7 @@ Gv
 af
 af
 af
-aI
+af
 fq
 fT
 go
@@ -28606,9 +28562,9 @@ dO
 ao
 Gv
 Gv
-aI
 af
-aI
+af
+af
 af
 af
 fT
@@ -28856,18 +28812,18 @@ af
 aN
 af
 aD
-af
-af
-af
 aI
+af
+af
+af
 af
 af
 bD
-aI
 af
 af
 af
-aI
+af
+af
 fT
 go
 gG
@@ -29114,7 +29070,7 @@ af
 af
 aD
 af
-aI
+af
 cs
 cu
 dW
@@ -29372,12 +29328,12 @@ af
 aD
 af
 af
-aI
 af
 af
-nS
+af
+eb
 ay
-aI
+af
 af
 af
 fp
@@ -29627,16 +29583,16 @@ af
 af
 af
 aD
-aI
-aI
-af
-aI
 af
 af
 af
 af
 af
-aI
+af
+af
+af
+af
+af
 fq
 af
 fT
@@ -30656,7 +30612,7 @@ af
 aN
 aD
 af
-aI
+af
 af
 ad
 ad
@@ -30914,7 +30870,7 @@ af
 aD
 af
 af
-aI
+af
 ad
 ad
 ad
@@ -31683,7 +31639,7 @@ af
 af
 af
 aD
-aI
+af
 af
 af
 ad
@@ -32198,7 +32154,7 @@ af
 af
 aD
 af
-aI
+af
 af
 dT
 bC
@@ -33225,7 +33181,7 @@ af
 af
 af
 aD
-aI
+af
 af
 af
 af
@@ -33742,7 +33698,7 @@ aD
 af
 aI
 af
-aI
+af
 bC
 iB
 uW
@@ -34510,7 +34466,7 @@ af
 af
 af
 aD
-aI
+af
 af
 aI
 af
@@ -35025,7 +34981,7 @@ af
 af
 Gl
 af
-aI
+af
 af
 af
 bC
@@ -35238,7 +35194,7 @@ af
 cl
 aX
 af
-aN
+af
 af
 af
 af
@@ -35284,7 +35240,7 @@ aD
 af
 af
 af
-aI
+af
 bC
 EX
 rr
@@ -35495,8 +35451,8 @@ af
 cl
 aV
 af
+aN
 af
-Qo
 af
 af
 af
@@ -35752,7 +35708,7 @@ af
 cl
 aM
 af
-DE
+af
 af
 af
 af
@@ -35795,7 +35751,7 @@ af
 af
 af
 aD
-aI
+af
 af
 af
 aI
@@ -35825,7 +35781,7 @@ ad
 ad
 ad
 jP
-mU
+Wh
 Wh
 pJ
 jT
@@ -36824,7 +36780,7 @@ af
 af
 aD
 af
-aI
+af
 af
 af
 bC
@@ -36858,7 +36814,7 @@ ad
 ad
 af
 br
-aI
+af
 af
 af
 aI
@@ -37113,7 +37069,7 @@ ad
 ad
 ad
 ad
-aI
+af
 af
 af
 af
@@ -37631,7 +37587,7 @@ aI
 mS
 mS
 af
-aI
+af
 af
 aD
 bo
@@ -38139,7 +38095,7 @@ iS
 ad
 ad
 ad
-aI
+af
 mS
 mS
 bs
@@ -39355,7 +39311,7 @@ af
 tv
 Kz
 YF
-aM
+OZ
 af
 Yx
 af
@@ -39395,7 +39351,7 @@ af
 aD
 af
 af
-aI
+af
 af
 bC
 bC
@@ -39943,7 +39899,7 @@ bs
 bs
 mS
 mS
-aI
+af
 af
 aM
 aD
@@ -40164,12 +40120,12 @@ af
 af
 af
 aD
-aI
-af
-aI
 af
 af
 aI
+af
+af
+af
 af
 af
 aI
@@ -40377,7 +40333,7 @@ xa
 pj
 cl
 aM
-zl
+af
 af
 xa
 QJ
@@ -40385,7 +40341,7 @@ WL
 Wm
 xa
 af
-Ea
+aM
 aM
 tv
 Kn
@@ -40431,7 +40387,7 @@ af
 af
 af
 af
-aI
+af
 af
 aI
 ad
@@ -40446,7 +40402,7 @@ ad
 ad
 ad
 ad
-ad
+aM
 ad
 mS
 mS
@@ -40485,7 +40441,7 @@ bs
 Al
 TV
 qb
-CB
+WQ
 WQ
 Rx
 qB
@@ -40900,7 +40856,7 @@ af
 af
 VZ
 af
-af
+Qo
 aM
 aM
 aM
@@ -40952,6 +40908,7 @@ gv
 ad
 ad
 ad
+aM
 ad
 ad
 ad
@@ -40959,8 +40916,7 @@ ad
 ad
 ad
 ad
-ad
-ad
+aM
 ad
 ad
 ad
@@ -40970,7 +40926,7 @@ af
 af
 af
 af
-aP
+aM
 aM
 af
 af
@@ -41148,7 +41104,7 @@ af
 xa
 GG
 af
-af
+Qo
 af
 pj
 oa
@@ -41174,7 +41130,7 @@ af
 af
 af
 Go
-nH
+af
 af
 af
 wj
@@ -41215,13 +41171,13 @@ af
 af
 af
 af
-aI
 af
 af
 af
 af
 af
-aI
+af
+af
 af
 af
 aI
@@ -41406,7 +41362,7 @@ xa
 LL
 af
 af
-zl
+af
 xa
 xa
 wj
@@ -41432,7 +41388,7 @@ af
 af
 af
 af
-Dc
+af
 wj
 af
 af
@@ -41669,7 +41625,7 @@ af
 af
 af
 af
-af
+Qo
 af
 af
 af
@@ -41922,7 +41878,7 @@ af
 af
 xa
 pj
-aN
+zl
 xa
 af
 af
@@ -42180,7 +42136,7 @@ af
 xa
 xa
 af
-zl
+af
 af
 OW
 UP
@@ -42437,8 +42393,8 @@ af
 xa
 af
 af
-af
-xa
+Qo
+DE
 af
 Ih
 af
@@ -42692,7 +42648,7 @@ ck
 xa
 xa
 pj
-Cb
+af
 af
 af
 af
@@ -42950,7 +42906,7 @@ QS
 QQ
 xa
 af
-Rm
+af
 af
 af
 af
@@ -43208,10 +43164,10 @@ cl
 af
 af
 af
-xS
+af
 Go
 af
-zl
+af
 af
 af
 bt
@@ -43463,7 +43419,7 @@ af
 af
 GG
 af
-zl
+af
 af
 af
 af
@@ -43722,7 +43678,7 @@ rq
 xa
 af
 af
-af
+VZ
 af
 af
 af
@@ -43981,7 +43937,7 @@ QQ
 af
 af
 af
-zl
+VZ
 af
 aM
 YF

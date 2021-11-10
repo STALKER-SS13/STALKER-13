@@ -13,20 +13,20 @@
 	icon_grow = "cannabis-grow" // Uses one growth icons set for all the subtypes
 	icon_dead = "cannabis-dead" // Same for the dead icon
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/cannabis/rainbow,
+	mutatelist = list(/obj/item/seeds/cannabis/violetriot,
 						/obj/item/seeds/cannabis/death,
 						/obj/item/seeds/cannabis/white,
-						/obj/item/seeds/cannabis/ultimate)
-	reagents_add = list("space_drugs" = 0.15, "lipolicide" = 0.35) // gives u the munchies
+						/obj/item/seeds/cannabis/neonpeon)
+	reagents_add = list("lsd" = 0.15, "lipolicide" = 0.35) // gives u the munchies
 
 
-/obj/item/seeds/cannabis/rainbow
-	name = "pack of rainbow weed seeds"
-	desc = "These seeds grow into rainbow weed. Groovy."
-	icon_state = "seed-megacannabis"
-	species = "megacannabis"
-	plantname = "Rainbow Weed"
-	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow
+/obj/item/seeds/cannabis/violetriot
+	name = "pack of violet riot weed seeds"
+	desc = "These seeds grow into the violent riot strain of weed. Groovy."
+	icon_state = "seed-violetriotcannabis"
+	species = "violetriotcannabis"
+	plantname = "Violet Riot Weed"
+	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/violetriot
 	mutatelist = list()
 	reagents_add = list("mindbreaker" = 0.15, "lipolicide" = 0.35)
 	rarity = 40
@@ -39,7 +39,7 @@
 	plantname = "Deathweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/death
 	mutatelist = list()
-	reagents_add = list("cyanide" = 0.35, "space_drugs" = 0.15, "lipolicide" = 0.15)
+	reagents_add = list("cyanide" = 0.35, "lsd" = 0.15, "lipolicide" = 0.15)
 	rarity = 40
 
 /obj/item/seeds/cannabis/white
@@ -50,20 +50,19 @@
 	plantname = "Lifeweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/white
 	mutatelist = list()
-	reagents_add = list("omnizine" = 0.35, "space_drugs" = 0.15, "lipolicide" = 0.15)
+	reagents_add = list("omnizine" = 0.35, "lsd" = 0.15, "lipolicide" = 0.15)
 	rarity = 40
 
 
-/obj/item/seeds/cannabis/ultimate
-	name = "pack of omega weed seeds"
-	desc = "These seeds grow into omega weed."
-	icon_state = "seed-ocannabis"
-	species = "ocannabis"
-	plantname = "Omega Weed"
-	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate
+/obj/item/seeds/cannabis/neonpeon
+	name = "pack of neon peon weed seeds"
+	desc = "These seeds grow into neon peon weed."
+	icon_state = "seed-neonpeoncannabis"
+	species = "neonpeoncannabis"
+	plantname = "Neon Peon Weed"
+	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/neonpeon
 	mutatelist = list()
-	reagents_add = list("space_drugs" = 0.3,
-						"mindbreaker" = 0.3,
+	reagents_add = list("lsd" = 0.15,
 						"mercury" = 0.15,
 						"lithium" = 0.15,
 						"atropine" = 0.15,
@@ -85,20 +84,20 @@
 /obj/item/reagent_containers/food/snacks/grown/cannabis
 	seed = /obj/item/seeds/cannabis
 	icon = 'goon/icons/obj/hydroponics.dmi'
-	name = "cannabis leaf"
-	desc = "Recently legalized in most galaxies."
-	icon_state = "cannabis"
+	name = "cannabis nug"
+	desc = "It has a pungent, earthy smell."
+	icon_state = "cannabisnug"
 	filling_color = "#00FF00"
 	bitesize_mod = 2
 	foodtype = VEGETABLES //i dont really know what else weed could be to be honest
 	tastes = list("cannabis" = 1)
 	wine_power = 20
 
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow
-	seed = /obj/item/seeds/cannabis/rainbow
-	name = "rainbow cannabis leaf"
-	desc = "Is it supposed to be glowing like that...?"
-	icon_state = "megacannabis"
+/obj/item/reagent_containers/food/snacks/grown/cannabis/violetriot
+	seed = /obj/item/seeds/cannabis/violetriot
+	name = "violet riot cannabis nug"
+	desc = "It has a soothing earthy stench to it that has a hint of lavender."
+	icon_state = "violetriotcannabisnug"
 	wine_power = 60
 
 /obj/item/reagent_containers/food/snacks/grown/cannabis/death
@@ -115,10 +114,10 @@
 	icon_state = "whitecannabis"
 	wine_power = 10
 
-/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate
-	seed = /obj/item/seeds/cannabis/ultimate
-	name = "omega cannabis leaf"
-	desc = "You feel dizzy looking at it. What the fuck?"
-	icon_state = "ocannabis"
+/obj/item/reagent_containers/food/snacks/grown/cannabis/neonpeon
+	seed = /obj/item/seeds/cannabis/neonpeon
+	name = "neon peon nug"
+	desc = "The nug emits a thin, wispy, green vapor that smells of sulfur married to a sickly sweet odor."
+	icon_state = "neonpeoncannabisnug"
 	volume = 420
 	wine_power = 90

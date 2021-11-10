@@ -34,45 +34,45 @@
 
 /obj/item/stack/spacecash/c1
 	icon_state = "spacecash"
-	singular_name = "one credit bill"
+	singular_name = "one ruble bill"
 	value = 1
 
 /obj/item/stack/spacecash/c10
 	icon_state = "spacecash10"
-	singular_name = "ten credit bill"
+	singular_name = "ten ruble bill"
 	value = 10
 
 /obj/item/stack/spacecash/c20
 	icon_state = "spacecash20"
-	singular_name = "twenty credit bill"
+	singular_name = "twenty ruble bill"
 	value = 20
 
 /obj/item/stack/spacecash/c50
 	icon_state = "spacecash50"
-	singular_name = "fifty credit bill"
+	singular_name = "fifty ruble bill"
 	value = 50
 
 /obj/item/stack/spacecash/c100
 	icon_state = "spacecash100"
-	singular_name = "one hundred credit bill"
+	singular_name = "one ruble bill"
 	value = 100
 
 /obj/item/stack/spacecash/c200
 	icon_state = "spacecash200"
-	singular_name = "two hundred credit bill"
+	singular_name = "two ruble bill"
 	value = 200
 
 /obj/item/stack/spacecash/c500
 	icon_state = "spacecash500"
-	singular_name = "five hundred credit bill"
+	singular_name = "five ruble bill"
 	value = 500
 
 /obj/item/stack/spacecash/c1000
 	icon_state = "spacecash1000"
-	singular_name = "one thousand credit bill"
+	singular_name = "one ruble bill"
 	value = 1000
 
 /obj/item/stack/spacecash/c5000
 	icon_state = "spacecash5000"
-	singular_name = "five thousand credit bill"
+	singular_name = "five ruble bill"
 	value = 5000

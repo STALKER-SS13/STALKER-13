@@ -96,6 +96,24 @@
 	..()
 	return
 
+/obj/item/clothing/head/hardhat/tactical/guardian_of_freedom
+	name = "Guardian of Freedom helmet"
+	desc = "A British MK VI model of a tactical helmet modified by the Freedom faction. It is not known how it made its way into the Zone. Comes with multi-layered Kevlar protection and armored elements to protect electronic components."
+	icon_state = "hardhat0_gof"
+	item_state = "hardhat0_gof"
+	item_color = "guardian_of_freedom"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
+	brightness_on = 3 //luminosity when on
+	flags_cover = HEADCOVERSEYES
+	resistance_flags = UNACIDABLE
+	durability = 200
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/head/hardhat/tactical/guardian_of_freedom/New()
+	..()
+	return
+
 /obj/item/clothing/head/assaultmerc
 	name = "Mercenary helmet"
 	desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City."

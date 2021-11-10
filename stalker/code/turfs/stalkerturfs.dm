@@ -96,7 +96,7 @@ obj/structure/grille/stalker/beton/CanPass(atom/movable/mover, turf/target, heig
 	flags_1 |= GLOBAL_LIGHT_TURF_1
 
 /turf/open/stalker/floor
-	name = "Grass"
+	name = "grass"
 	icon = 'stalker/icons/grass.dmi'
 	icon_state = "grass1"
 	layer = TURF_LAYER

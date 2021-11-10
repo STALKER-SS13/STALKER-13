@@ -174,7 +174,7 @@ To add a crossbreed:
 	name = "peaceful distillation"
 	desc = "A light pink gooey sphere. Simply touching it makes you a little dizzy."
 	color = "#DDAAAA"
-	list_reagents = list("synthpax" = 10, "space_drugs" = 15) //Peace, dudes
+	list_reagents = list("synthpax" = 10, "lsd" = 15) //Peace, dudes
 
 /obj/item/slimecrossbeaker/autoinjector/peaceandlove/Initialize()
 	. = ..()

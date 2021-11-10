@@ -269,12 +269,42 @@
 				/obj/item/storage/firstaid/stalker/military = 30,
 				/obj/item/storage/firstaid/stalker/scientific = 20)
 
+/obj/effect/spawner/lootdrop/stalker/medicine/pills
+	name = "stalker medicine"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/pill/potassium_iodide = 20,
+/obj/item/reagent_containers/pill/radioprotectant = 20,
+/obj/item/reagent_containers/pill/vinca = 5,
+/obj/item/reagent_containers/pill/psyblock = 5,
+/obj/item/reagent_containers/pill/cocaine = 5,
+/obj/item/reagent_containers/pill/analgesic = 15,
+/obj/item/reagent_containers/pill/caffeine = 10,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/medicine/hypospray
+	name = "stalker medicine"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/hypospray/medipen/stalker/anabiotic = 5,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/hercules = 5,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/metamizole = 30,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 30,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/axyltallisal = 5,
+				/obj/nothing = 25)
+
 /obj/effect/spawner/lootdrop/stalker/food
 	name = "stalker food"
 	lootcount = 1
 	loot = list(/obj/item/reagent_containers/food/snacks/stalker/baton = 50,
 				/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 30,
 				/obj/item/reagent_containers/food/snacks/stalker/konserva = 20)
+
+
+/obj/effect/spawner/lootdrop/stalker/stews
+	name = "stalker food"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/food/snacks/stalker/lowgradestew = 50,
+				/obj/item/reagent_containers/food/snacks/stalker/shroomstew = 25,
+				/obj/item/reagent_containers/food/snacks/stalker/meatstew = 25)
 
 
 /obj/effect/spawner/lootdrop/stalker/gravy
@@ -371,7 +401,10 @@ obj/nothing/New()
 					/obj/item/storage/fancy/cigarettes/cigpack_midori = 10,
 					/obj/item/storage/fancy/cigarettes/cigpack_laika = 10,
 					/obj/item/storage/fancy/cigarettes/cigpack_marlborogold = 10,
-				/obj/nothing = 40)
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_newports = 10,
+				/obj/nothing = 10)
 
 /obj/effect/spawner/lootdrop/stalker/vodka
 	name = "stalker vodka"

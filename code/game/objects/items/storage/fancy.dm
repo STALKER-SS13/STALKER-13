@@ -206,10 +206,22 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/dromedary
 
 /obj/item/storage/fancy/cigarettes/cigpack_belomorkanal
-	name = "\improper Belomorkanal Smooth packet"
-	desc = "Your favorite brand, now menthol flavored."
+	name = "\improper Belomorkanal packet"
+	desc = "An exceedingly ancient pack of cigarettes. Seems to smoke just fine!"
 	icon_state = "belomorkanal"
 	spawn_type = /obj/item/clothing/mask/cigarette/belomorkanal
+
+/obj/item/storage/fancy/cigarettes/cigpack_newports
+	name = "\improper Newports packet"
+	desc = "An pack of cigarettes imported from the west. Seems to smoke just fine!"
+	icon_state = "newports"
+	spawn_type = /obj/item/clothing/mask/cigarette/newports
+
+/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg
+	name = "\improper Lucky Strikes Green packet"
+	desc = "An pack of cigarettes imported from the west. Seems to smoke just fine! This one has special ingredients."
+	icon_state = "luckystrikesg"
+	spawn_type = /obj/item/clothing/mask/cigarette/luckystrikesg
 
 /obj/item/storage/fancy/cigarettes/cigpack_marlboro
 	name = "\improper Marlboro packet"
@@ -228,6 +240,12 @@
 	desc = "The pack is a white and red with the brand name in the middle. It seems quite old and smells stale."
 	icon_state = "java"
 	spawn_type = /obj/item/clothing/mask/cigarette/java
+
+/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes
+	name = "\improper Lucky Strikes packet"
+	desc = "The pack is a white and red with the brand name in the middle. It seems quite stale and smells old."
+	icon_state = "luckystrikes"
+	spawn_type = /obj/item/clothing/mask/cigarette/luckystrikes
 
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	name = "cigarette packet"
@@ -339,7 +357,7 @@
 /obj/item/storage/fancy/cigarettes/cigpack/maxim
 	name = "\improper Ancient Soviet cigarette packet"
 	desc = "An absolutely decrepid box of ancient cigarettes."
-	icon_state = "cigs"
+	icon_state = "cig"
 
 /*
  * Heart Shaped Box w/ Chocolates

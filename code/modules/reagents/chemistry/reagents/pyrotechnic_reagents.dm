@@ -1,11 +1,11 @@
 
-/datum/reagent/thermite
-	name = "Thermite"
-	id = "thermite"
-	description = "Thermite produces an aluminothermic reaction known as a thermite reaction. Can be used to melt walls."
-	reagent_state = SOLID
-	color = "#550000"
-	taste_description = "sweet tasting metal"
+///datum/reagent/thermite
+//	name = "Thermite"
+//	id = "thermite"
+//	description = "Thermite produces an aluminothermic reaction known as a thermite reaction. Can be used to melt walls."
+//	reagent_state = SOLID
+//	color = "#550000"
+//	taste_description = "sweet tasting metal"
 
 /datum/reagent/thermite/reaction_turf(turf/T, reac_volume)
 	if(reac_volume >= 1)
@@ -31,14 +31,14 @@
 	color = "#FFFF00"
 	taste_description = "metal"
 
-/datum/reagent/clf3
-	name = "Chlorine Trifluoride"
-	id = "clf3"
-	description = "Makes a temporary 3x3 fireball when it comes into existence, so be careful when mixing. ClF3 applied to a surface burns things that wouldn't otherwise burn, sometimes through the very floors of the station and exposing it to the vacuum of space."
-	reagent_state = LIQUID
-	color = "#FFC8C8"
-	metabolization_rate = 4
-	taste_description = "burning"
+///datum/reagent/clf3
+//	name = "Chlorine Trifluoride"
+//	id = "clf3"
+//	description = "Makes a temporary 3x3 fireball when it comes into existence, so be careful when mixing. ClF3 applied to a surface burns things that wouldn't otherwise burn, sometimes through the very floors of the station and exposing it to the vacuum of space."
+//	reagent_state = LIQUID
+//	color = "#FFC8C8"
+//	metabolization_rate = 4
+//	taste_description = "burning"
 
 /datum/reagent/clf3/on_mob_life(mob/living/carbon/M)
 	M.adjust_fire_stacks(2)

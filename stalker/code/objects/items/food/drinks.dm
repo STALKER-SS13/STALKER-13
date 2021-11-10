@@ -1,19 +1,25 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/energetic
 	name = "energy drink"
 	desc = "Excellent energy drink Non-Stop. Contains caffeine, taurine, and a powerful vitamin complex that relieves fatigue and adds strength. Feel like you need a boost? Then this is exactly what you need."
-	eng_desc = "Great energy drink. Contains caffeine, taurine and lots of vitamines. Can't make a step? Then it's what you need."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "nonstop"
 	list_reagents = list("energetic" = 10, "water" = 20)
 	w_class = 2
 
+/obj/item/reagent_containers/food/drinks/soda_cans/crunk
+	name = "crunk energy drink"
+	desc = "Great energy drink. Contains caffeine, taurine and lots of vitamines. Can't make a step? Then it's what you need. WARNING: Potentially hazardous to your health!"
+	icon = 'stalker/icons/food.dmi'
+	icon_state = "crunk"
+	list_reagents = list("crank" = 25, "energetic" = 15)
+	w_class = 2
 
 // Alcoholism redoes drinks below here. Above needs to be redone if still exists.
 // FROM WORST TO BEST (If that exists!)
 
-
 // VODKA
 /* ////// REMOVED SO MARRONES POTATO UPDATE CAN BE SHIFTED
+
 /obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka
 	name = "Zone-Produced vodka"
 	desc = "Vodka produced by the desperation of some 'ingenious' stalkers using local mushrooms and wild-grasses. It tastes and smells like filthy piss, but it'll do the job cheap!"

@@ -18,10 +18,15 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 /datum/data/vending_product
 	name = "generic"
+	///Typepath of the product that is created when this record "sells"
 	var/product_path = null
+	///How many of this product we currently have
 	var/amount = 0
+	///How many we can store at maximum
 	var/max_amount = 0
+	///Does the item have a custom price override
 	var/custom_price
+	///Does the item have a custom premium price override
 	var/custom_premium_price
 
 /obj/machinery/vending
@@ -39,49 +44,49 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 70)
 	circuit = /obj/item/circuitboard/machine/vendor
 	payment_department = ACCOUNT_SRV
-	var/active = 1		//No sales pitches if off!
-	var/vend_ready = 1	//Are we ready to vend?? Is it time??
+	var/active = 1 //No sales pitches if off!
+	var/vend_ready = 1 //Are we ready to vend?? Is it time??
 
 	// To be filled out at compile time
-	var/list/products	= list()	//For each, use the following pattern:
-	var/list/contraband	= list()	//list(/type/path = amount, /type/path2 = amount2)
-	var/list/premium 	= list()	//No specified amount = only one in stock
+	var/list/products = list() //For each, use the following pattern:
+	var/list/contraband = list() //list(/type/path = amount, /type/path2 = amount2)
+	var/list/premium  = list() //No specified amount = only one in stock
 
-	var/product_slogans = ""	//String of slogans separated by semicolons, optional
-	var/product_ads = ""		//String of small ad messages in the vending screen - random chance
+	var/product_slogans = "" //String of slogans separated by semicolons, optional
+	var/product_ads = "" //String of small ad messages in the vending screen - random chance
 	var/list/product_records = list()
 	var/list/hidden_records = list()
 	var/list/coin_records = list()
 	var/list/slogan_list = list()
-	var/list/small_ads = list()	//Small ad messages in the vending screen - random chance of popping up whenever you open it
-	var/vend_reply				//Thank you for shopping!
+	var/list/small_ads = list() //Small ad messages in the vending screen - random chance of popping up whenever you open it
+	var/vend_reply //Thank you for shopping!
 	var/last_reply = 0
-	var/last_slogan = 0			//When did we last pitch?
-	var/slogan_delay = 6000		//How long until we can pitch again?
-	var/icon_vend				//Icon_state when vending!
-	var/icon_deny				//Icon_state when vending!
+	var/last_slogan = 0 //When did we last pitch?
+	var/slogan_delay = 6000 //How long until we can pitch again?
+	var/icon_vend //Icon_state when vending!
+	var/icon_deny //Icon_state when vending!
 	var/seconds_electrified = MACHINE_NOT_ELECTRIFIED	//Shock customers like an airlock.
-	var/shoot_inventory = 0		//Fire items at customers! We're broken!
+	var/shoot_inventory = 0 //Fire items at customers! We're broken!
 	var/shoot_inventory_chance = 2
-	var/shut_up = 0				//Stop spouting those godawful pitches!
-	var/extended_inventory = 0	//can we access the hidden inventory?
-	var/scan_id = 1
+	var/shut_up = 0 //Stop spouting those godawful pitches!
+	var/extended_inventory = 0 //can we access the hidden inventory?
+	var/scan_id = 0
 	var/obj/item/coin/coin
-	var/obj/item/stack/spacecash/bill
+	var/obj/item/stack/spacecash/C
 	var/chef_price = 10
-	var/default_price = 25
-	var/extra_price = 50
-	var/onstation = TRUE //if it doesn't originate from off-station during mapload, everything is free
+	var/default_price = 0
+	var/extra_price = 0
+	var/onstation = FALSE //if it doesn't originate from off-station during mapload, everything is free
 
 	var/dish_quants = list()  //used by the snack machine's custom compartment to count dishes.
 
 	var/obj/item/vending_refill/refill_canister = null		//The type of refill canisters used by this machine.
 
 /obj/item/circuitboard
-	var/onstation = TRUE //if the circuit board originated from a vendor off station or not.
+	var/onstation = FALSE //if the circuit board originated from a vendor off station or not.
 
 /obj/machinery/vending/Initialize(mapload)
-	var/build_inv = FALSE
+	var/build_inv = TRUE
 	if(!refill_canister)
 		circuit = null
 		build_inv = TRUE
@@ -110,7 +115,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 /obj/machinery/vending/Destroy()
 	QDEL_NULL(wires)
 	QDEL_NULL(coin)
-	QDEL_NULL(bill)
+	QDEL_NULL(C)
 	return ..()
 
 /obj/machinery/vending/can_speak()
@@ -344,16 +349,16 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			display_records = product_records + coin_records + hidden_records
 		dat += "<table>"
 		for (var/datum/data/vending_product/R in display_records)
-			var/price_listed = "$[default_price]"
+			var/price_listed = "RU[default_price]"
 			var/is_hidden = hidden_records.Find(R)
 			if(is_hidden && !extended_inventory)
 				continue
 			if(R.custom_price)
-				price_listed = "$[R.custom_price]"
+				price_listed = "RU[R.custom_price]"
 			if(!onstation || account && account.account_job && account.account_job.paycheck_department == payment_department)
-				price_listed = "FREE"
+				price_listed = "0"
 			if(coin_records.Find(R) || is_hidden)
-				price_listed = "$[R.custom_premium_price ? R.custom_premium_price : extra_price]"
+				price_listed = "RU[R.custom_premium_price ? R.custom_premium_price : extra_price]"
 			dat += "<tr><td><img src='data:image/jpeg;base64,[GetIconForProduct(R)]'/></td>"
 			dat += "<td style=\"width: 100%\"><b>[sanitize(R.name)]  ([price_listed])</b></td>"
 			if(R.amount > 0 && ((C && C.registered_account && onstation) || (!onstation && isliving(user))))
@@ -364,7 +369,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 		dat += "</table>"
 	dat += "</div>"
 	if(onstation && C && C.registered_account)
-		dat += "<b>Balance: $[account.account_balance]</b>"
+		dat += "<b>Balance: RU[account.account_balance]</b>"
 	if(istype(src, /obj/machinery/vending/snack))
 		dat += "<h3>Chef's Food Selection</h3>"
 		dat += "<div class='statusDisplay'>"
@@ -372,7 +377,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			if(dish_quants[O] > 0)
 				var/N = dish_quants[O]
 				dat += "<a href='byond://?src=[REF(src)];dispense=[sanitize(O)]'>Dispense</A> "
-				dat += "<B>[capitalize(O)] ($[default_price]): [N]</B><br>"
+				dat += "<B>[capitalize(O)] (RU[default_price]): [N]</B><br>"
 		dat += "</div>"
 
 	var/datum/browser/popup = new(user, "vending", (name))

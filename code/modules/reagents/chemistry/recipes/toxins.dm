@@ -10,7 +10,7 @@
 	name = "fentanyl"
 	id = "fentanyl"
 	results = list("fentanyl" = 1)
-	required_reagents = list("space_drugs" = 1)
+	required_reagents = list("lsd" = 1)
 	required_temp = 674
 
 /datum/chemical_reaction/cyanide

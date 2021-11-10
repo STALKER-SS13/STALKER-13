@@ -5003,6 +5003,19 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"sB" = (
+/obj/machinery/door/poddoor/shutters{
+	id = 422
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
+"sX" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 4;
+	icon_state = "centers"
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "th" = (
 /obj/structure/grille/stalker{
 	icon_state = "fence3"
@@ -5034,6 +5047,17 @@
 "uq" = (
 /obj/structure/stalker/stolb_double,
 /turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
+"uF" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 4;
+	icon_state = "centers"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
+"uQ" = (
+/obj/machinery/vending/cigarette/busted,
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "uS" = (
 /obj/structure/stalker/bigyashik{
@@ -5080,6 +5104,23 @@
 /obj/structure/stalker/doski/doski_alt4,
 /turf/open/floor/plating/dirt,
 /area/stalker/buildings)
+"wV" = (
+/obj/structure/stalker/rails{
+	icon_state = "spr12";
+	tag = "icon-spr12"
+	},
+/obj/structure/stalker/blocks/vanish/pipe/pipe2{
+	dir = 1;
+	tag = "icon-truba2 (NORTH)"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"xl" = (
+/obj/machinery/door/poddoor/shutters{
+	id = 422
+	},
+/turf/open/space/basic,
+/area/stalker/blowout/outdoor)
 "xp" = (
 /obj/structure/stalker/doski/doski_alt3,
 /turf/open/stalker/floor/gryaz,
@@ -5434,6 +5475,20 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/bar/rentgen)
+"Lb" = (
+/obj/machinery/door/poddoor/shutters{
+	id = 422
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"Lj" = (
+/obj/structure/stalker/rails{
+	icon_state = "spr12";
+	tag = "icon-spr12"
+	},
+/obj/structure/stalker/blocks/vanish/pipe/pipe2,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "Lu" = (
 /obj/structure/grille/stalker/beton{
 	icon_state = "|";
@@ -5481,9 +5536,26 @@
 /obj/structure/fermenting_barrel,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/bar/rentgen)
+"NF" = (
+/obj/effect/turf_decal/stripes/full{
+	icon = 'stalker/icons/warning_stripes.dmi';
+	icon_state = "border2";
+	tag = "icon-border2"
+	},
+/obj/machinery/vending/cigarette/busted,
+/obj/machinery/vending/cigarette/busted,
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "NT" = (
 /turf/open/floor/plating/dirt,
 /area/stalker/buildings)
+"Ou" = (
+/obj/machinery/button/door{
+	id = 422;
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/road,
+/area/stalker/buildings/mercenary)
 "OR" = (
 /obj/machinery/button/door{
 	id = "rentgenbarmanvault";
@@ -5542,11 +5614,27 @@
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/floor/plating/dirt,
 /area/stalker/buildings)
+"PW" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 6;
+	icon_state = "corners";
+	tag = "icon-corners (SOUTHEAST)"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "QF" = (
 /obj/structure/table/stalker/wood,
 /obj/item/reagent_containers/food/snacks/stalker/konserva,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"QG" = (
+/obj/structure/grille/stalker/beton{
+	icon_state = "|";
+	tag = "icon-|"
+	},
+/obj/machinery/vending/cigarette/bustedtwo,
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "QL" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/digable/grass,
@@ -5575,6 +5663,13 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/buildings/mercenary)
+"Rg" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 5;
+	icon_state = "corners"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "RA" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/wood/oldvert,
@@ -8546,7 +8641,7 @@ je
 je
 je
 li
-aI
+xl
 aF
 aF
 aF
@@ -8803,7 +8898,7 @@ je
 je
 je
 je
-pa
+sB
 pb
 aF
 aF
@@ -9060,7 +9155,7 @@ yz
 je
 je
 je
-pa
+sB
 aF
 aF
 aF
@@ -9317,7 +9412,7 @@ Re
 je
 je
 Go
-aL
+Lb
 pb
 aF
 aF
@@ -9816,7 +9911,7 @@ aF
 aF
 aF
 aI
-je
+Ou
 iy
 iU
 je
@@ -11103,17 +11198,17 @@ cJ
 aI
 aI
 aI
-pa
-pa
-pa
-pa
+sB
+sB
+sB
+sB
 aI
 aI
 aI
-pa
-pa
-pa
-pa
+sB
+sB
+sB
+sB
 aI
 aI
 aI
@@ -11359,14 +11454,14 @@ aF
 al
 al
 al
-al
+Rg
+sX
 aF
 aF
-aF
-aF
-al
-al
-al
+sX
+uF
+uF
+PW
 aF
 aF
 aF
@@ -11626,8 +11721,8 @@ cK
 cK
 cK
 cK
-cK
-cK
+wV
+Lj
 cK
 cK
 cK
@@ -50419,10 +50514,10 @@ au
 fN
 au
 aI
-ha
+NF
 aF
 pb
-aF
+uQ
 aF
 aF
 aF
@@ -65121,7 +65216,7 @@ al
 rV
 al
 fY
-oG
+QG
 oG
 oG
 aI

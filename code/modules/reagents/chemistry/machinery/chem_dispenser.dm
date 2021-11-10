@@ -59,7 +59,7 @@
 		"diethylamine"
 	)
 	var/list/emagged_reagents = list(
-		"space_drugs",
+		"lsd",
 		"morphine",
 		"carpotoxin",
 		"mine_salve",

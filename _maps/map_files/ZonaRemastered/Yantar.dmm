@@ -1027,14 +1027,6 @@
 /obj/structure/stalker/doski/doski4,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"pU" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 4;
-	teleport_y = 253;
-	teleport_z = 3
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "pZ" = (
 /turf/closed/wall/stalker/bricks_yellow,
 /area/stalker/blowout/outdoor)
@@ -1709,11 +1701,7 @@
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "Be" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 5;
-	teleport_y = 253;
-	teleport_z = 3
-	},
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier3,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Bm" = (
@@ -1744,11 +1732,12 @@
 /area/stalker/blowout/outdoor)
 "BG" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 2;
-	teleport_y = 253;
+	opacity = 1;
+	teleport_x = 14;
+	teleport_y = 239;
 	teleport_z = 3
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "BH" = (
 /obj/effect/landmark/latejoin/ecologist,
@@ -2626,11 +2615,12 @@
 /area/stalker/blowout/outdoor)
 "Qt" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 3;
-	teleport_y = 253;
+	opacity = 1;
+	teleport_x = 14;
+	teleport_y = 239;
 	teleport_z = 3
 	},
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "Qx" = (
 /obj/structure/flora/stalker/bush,
@@ -20689,7 +20679,7 @@ ba
 ba
 BL
 BL
-ba
+BL
 ba
 Zl
 Zl
@@ -20945,9 +20935,9 @@ BL
 ba
 ba
 BL
-LI
+BL
+BL
 ba
-LI
 Zl
 Zl
 "}
@@ -21203,10 +21193,10 @@ ba
 ba
 cp
 BL
-Bs
+BL
+ba
+ba
 Zl
-Bs
-Bs
 "}
 (70,1,1) = {"
 ba
@@ -21460,10 +21450,10 @@ ba
 ba
 ad
 ad
+BL
 ba
 ba
 BG
-Bs
 "}
 (71,1,1) = {"
 ad
@@ -21715,12 +21705,12 @@ ad
 ba
 ba
 ba
-LI
-ad
+BL
+Ql
 ad
 ba
+ba
 Qt
-Bs
 "}
 (72,1,1) = {"
 ad
@@ -21972,12 +21962,12 @@ ad
 ba
 ba
 BL
-LI
+BL
+BL
+BL
 ba
 ba
-ba
-pU
-Bs
+Qt
 "}
 (73,1,1) = {"
 ba
@@ -22230,11 +22220,11 @@ ba
 ba
 BL
 BL
-LI
+Om
+BL
 ba
 ba
-Be
-Bs
+Qt
 "}
 (74,1,1) = {"
 ba
@@ -22487,11 +22477,11 @@ ba
 ba
 BL
 BL
-LI
-Bs
-Bs
+BL
+BL
+ba
+ba
 Zl
-Bs
 "}
 (75,1,1) = {"
 BL
@@ -22746,8 +22736,8 @@ BW
 Mw
 ad
 ad
-LI
-LI
+ba
+ba
 Zl
 "}
 (76,1,1) = {"

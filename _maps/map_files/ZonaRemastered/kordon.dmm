@@ -4758,6 +4758,7 @@
 /obj/structure/stalker/cacheable/shina3{
 	pixel_x = -5;
 	pixel_y = 5
+	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "zp" = (
@@ -4779,10 +4780,6 @@
 /obj/item/trash/cigs_trash2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-
-
-
->>>> vending+reagent-update
 "zH" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/stalker/floor/wood/oldvert,

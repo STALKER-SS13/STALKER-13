@@ -274,7 +274,7 @@
 	if(!..()) return 0
 	if(istype(user, /mob/living/carbon))
 		var/mob/living/carbon/mob = user
-		mob.adjustBruteLoss(1) //temporary until bleeding weakness is added
+		mob.bleed(1)
 	return 1
 
 /obj/item/artifact/urchin
@@ -289,27 +289,74 @@
 	if(!..()) return 0
 	if(istype(user, /mob/living/carbon))
 		var/mob/living/carbon/mob = user
-		mob.adjustBruteLoss(1) //Temporary until bleeding weakness is added
+		mob.bleed(1)
 	return 1
 
-/obj/item/artifact/slug //needs code to apply it's effects; don't implement yet
+/obj/item/artifact/slug 
 	name = "slug"
 	desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
 	eng_desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
 	icon_state = "slug"
-	art_armor = list() // -10% burn, -10% bio, -267% bleeding
+	art_armor = list(laser = -10, bio = -10)
 	radiation = 0
 	level_s = 2
 
-/obj/item/artifact/slime //needs code to apply it's effects; don't implement yet
+/obj/item/artifact/slug/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		if(!H.bleedsuppress) //so you can't stack bleed suppression
+			H.suppress_bloodloss(0.20)
+
+			if(H.stat != DEAD && H.bodytemperature >= 170)
+
+				var/blood_volume = round(H.reagents.get_reagent_amount("blood"))
+				if(blood_volume < 560 && blood_volume)
+
+					var/datum/reagent/blood/B = locate() in H.reagents.reagent_list
+					if(B)
+						if(B.data["donor"] != src) //If it's not theirs, then we look for theirs
+							for(var/datum/reagent/blood/D in H.reagents.reagent_list)
+								if(D.data["donor"] == src)
+									B = D
+									break
+
+						B.volume += 0.5
+	return 1
+
+/obj/item/artifact/slime
 	name = "slime"
 	desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
 	eng_desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
 	icon_state = "slime"
+	art_armor = list(laser = -10, bio = -10)
 	radiation = 0
 	level_s = 1
 
-	//ПОЯС
+/obj/item/artifact/slime/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		if(!H.bleedsuppress) //so you can't stack bleed suppression
+			H.suppress_bloodloss(0.20)
+
+			if(H.stat != DEAD && H.bodytemperature >= 170)
+
+				var/blood_volume = round(H.reagents.get_reagent_amount("blood"))
+				if(blood_volume < 560 && blood_volume)
+
+					var/datum/reagent/blood/B = locate() in H.reagents.reagent_list
+					if(B)
+						if(B.data["donor"] != src) //If it's not theirs, then we look for theirs
+							for(var/datum/reagent/blood/D in H.reagents.reagent_list)
+								if(D.data["donor"] == src)
+									B = D
+									break
+
+						B.volume += 0.5
+	return 1
+
+	//BELTS
 /obj/item/storage/belt/stalker
 	name = "artifact belt"
 	desc = "Special belt for artifacts."

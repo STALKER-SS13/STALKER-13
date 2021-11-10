@@ -98,11 +98,11 @@
 	sleep(rand(50,100))
 	..()
 
-/datum/chemical_reaction/thermite
-	name = "Thermite"
-	id = "thermite"
-	results = list("thermite" = 3)
-	required_reagents = list("aluminium" = 1, "iron" = 1, "oxygen" = 1)
+///datum/chemical_reaction/thermite
+//	name = "Thermite"
+//	id = "thermite"
+//	results = list("thermite" = 3)
+//	required_reagents = list("aluminium" = 1, "iron" = 1, "oxygen" = 1)
 
 /datum/chemical_reaction/emp_pulse
 	name = "EMP Pulse"
@@ -147,12 +147,12 @@
 	results = list("stabilizing_agent" = 3)
 	required_reagents = list("iron" = 1, "oxygen" = 1, "hydrogen" = 1)
 
-/datum/chemical_reaction/clf3
-	name = "Chlorine Trifluoride"
-	id = "clf3"
-	results = list("clf3" = 4)
-	required_reagents = list("chlorine" = 1, "fluorine" = 3)
-	required_temp = 424
+///datum/chemical_reaction/clf3
+//	name = "Chlorine Trifluoride"
+//	id = "clf3"
+//	results = list("clf3" = 4)
+//	required_reagents = list("chlorine" = 1, "fluorine" = 3)
+//	required_temp = 424
 
 /datum/chemical_reaction/clf3/on_reaction(datum/reagents/holder, created_volume)
 	var/turf/T = get_turf(holder.my_atom)

@@ -285,9 +285,23 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/cigarette/soviet_cigarette
 	desc = "An Old Soviet Cigarette brand cigarette."
+	list_reagents = list("nicotine" = 12)
+
+/obj/item/clothing/mask/cigarette/newports
+	desc = "A Newports brand cigarette."
+	list_reagents = list("nicotine" = 15, "menthol" = 5)
+
+/obj/item/clothing/mask/cigarette/luckystrikesg
+	desc = "An Lucky Strikes Green brand cigarette."
+	list_reagents = list("nicotine" = 12, "cannabis" = 5, "menthol" = 6)
+
+/obj/item/clothing/mask/cigarette/luckystrikes
+	desc = "An Lucky Strikes brand cigarette."
+	list_reagents = list("nicotine" = 15)
 
 /obj/item/clothing/mask/cigarette/dromedary
 	desc = "A DromedaryCo brand cigarette."
+	list_reagents = list("nicotine" = 15)
 
 /obj/item/clothing/mask/cigarette/belomorkanal
 	desc = "An Belomorkanal brand cigarette."
@@ -295,6 +309,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/cigarette/marlboro
 	desc = "A Marlboro brand cigarette. Come to where the flavor is. Come to Marlboro country."
+	list_reagents = list("nicotine" = 15)
 
 /obj/item/clothing/mask/cigarette/marlborogold
 	desc = "A Robust Gold brand cigarette."
@@ -302,6 +317,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/cigarette/java
 	desc = "A Java brand cigarette."
+	list_reagents = list("nicotine" = 15)
+
+/obj/item/clothing/mask/cigarette/luckystrikes
+	desc = "A Lucky Strikes brand cigarette."
+	list_reagents = list("nicotine" = 15)
 
 /obj/item/clothing/mask/cigarette/laika
 	desc = "A Laika brand cigarette."
@@ -346,7 +366,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	starts_lit = TRUE
 
 /obj/item/clothing/mask/cigarette/rollie/cannabis
-	list_reagents = list("space_drugs" = 15, "lipolicide" = 35)
+	list_reagents = list("lsd" = 15, "lipolicide" = 35)
 
 /obj/item/clothing/mask/cigarette/rollie/mindbreaker
 	list_reagents = list("mindbreaker" = 35, "lipolicide" = 15)

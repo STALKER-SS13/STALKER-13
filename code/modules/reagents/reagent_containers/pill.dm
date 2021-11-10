@@ -206,7 +206,7 @@
 /obj/item/reagent_containers/pill/happy
 	name = "happy pill"
 	desc = "They have little happy faces on them, and they smell like marker pens."
-	list_reagents = list("sugar" = 10, "space_drugs" = 10)
+	list_reagents = list("sugar" = 10, "lsd" = 10)
 	icon_state = "pill_happy"
 
 

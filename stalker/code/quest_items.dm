@@ -5,7 +5,7 @@
 
 /obj/item/stalker/docs
 	icon_state = "docs0"
-	name = "Documents"
+	name = "documents"
 	desc = "Old documents. Trader may pay a big price for this."
 
 /obj/item/stalker/usb
@@ -15,5 +15,5 @@
 
 /obj/item/stalker/blue_box
 	icon_state = "blue_box"
-	name = "Box"
+	name = "box"
 	desc = "Closed blue blox. Trader may pay a big price for this."

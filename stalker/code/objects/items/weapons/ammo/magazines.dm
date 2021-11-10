@@ -120,7 +120,7 @@
 
 
 /obj/item/ammo_box/magazine/stalker/m556x45
-	name = "rifle magazine (5.556x45)"
+	name = "rifle magazine (5.56x45)"
 	icon_state = "556x45"
 	ammo_type = /obj/item/ammo_casing/c556x45
 	caliber = "5.56x45"

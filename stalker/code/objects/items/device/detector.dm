@@ -18,6 +18,7 @@
 	var/kostil = 0
 	var/timer_detector = 0
 	var/list/fakearts = list()
+	var/range = 1
 
 /obj/item/detector/blink
 	name = "echo"
@@ -44,6 +45,25 @@
 	icon_state_active = "veles_on"
 	icon_state_null = "veles_null"
 	level_s = 4
+
+/obj/item/detector/svarog
+	name = "svarog"
+	desc = "A prototype of an expanded functionality anomalous frequency scanner. This device comes with a program used to identify static areas of anomalous activity stored in its database, while retaining the ability to locate artifacts. The position of anomalous areas and artifacts is displayed on a special screen. The artifact search mode, which can be activated by opening the front LED display, has been modified to detect anomalous formations currently unknown to science."
+	eng_desc = "A prototype of an expanded functionality anomalous frequency scanner. This device comes with a program used to identify static areas of anomalous activity stored in its database, while retaining the ability to locate artifacts. The position of anomalous areas and artifacts is displayed on a special screen. The artifact search mode, which can be activated by opening the front LED display, has been modified to detect anomalous formations currently unknown to science."
+	icon_state = "veles_off"
+	icon_state_inactive = "veles_off"
+	icon_state_active = "veles_on"
+	icon_state_null = "veles_null"
+	level_s = 4
+	var/draw_anomaly = 0
+	range = 8
+
+/*
+/obj/item/detector/svarog/proc/detect_anomaly()
+	if(kostil = 1)
+		draw_anomaly = 1
+		return
+*/
 
 /obj/item/detector/New()
 	..()
@@ -102,7 +122,7 @@
 		min_dist = 1
 
 	for (var/obj/item/artifact/a in arts)
-		if(a in range(1, user))
+		if(a in range(range, user))
 			if(isnull(a.phantom) && a.invisibility != 0)
 				user.handle_artifact(a)
 		else

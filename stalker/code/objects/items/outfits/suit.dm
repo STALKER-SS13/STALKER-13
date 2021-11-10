@@ -907,6 +907,23 @@
 	//МОДИФИКАЦИИ//
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
+/obj/item/clothing/suit/guardian_of_freedom
+	name = "Guardian of Freedom"
+	desc = "A military Berill-5M suit 'liberated' from the military and modified for the freedom faction. Designed for assault operations in highly radioactive areas, it is ineffective in areas of high anomalous activity. The suit makes its way to stalkers through the military, who exchange it for loot. Does not come with an artifact container."
+	icon_state = "guardian_of_freedom"
+	item_state = "syndicate-green"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 40, "bullet" = 60, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 35, "rad" = 40, "fire" = 35, "psy" = 0)
+	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+	durability = 150
+	//МОДИФИКАЦИИ//
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
 /obj/item/clothing/suit/hooded/kombez/monolith
 	name = "monolith armor"
 	desc = "Stalker suit worn by the Monolith. The producer is unknown. Its protective properties are slightly worse then those of the PSZ-9a military bulletproof vest. Its structure is similar to the suit popular with neutral stalkers which combines a bulletproof vest and a radiation protection suit. It provides good protection from gunfire. Its level of anomaly protection is low due to the absence of an air filtering system."
@@ -1083,7 +1100,7 @@
 	icon_state = "winterhood_eco_merc"
 
 /obj/item/clothing/suit/hooded/kombez/veter
-	name = "guardian of freedom"
+	name = "sentinel of freedom"
 	desc = "This lightweight stalker bodysuit is made by Freedom craftsmen. The suit's fabric is treated with Horizon, a special solution developed by the faction by trial and error to increase resistance to anomalies. Like the Sunrise suit, the Wind of Freedom comes with built-in body armor and artifact containers."
 	icon_state = "veter"
 	item_state = "syndicate-green"

@@ -1801,7 +1801,7 @@
 	teleport_y = 239;
 	teleport_z = 3
 	},
-/turf/open/stalker/floor/digable/grass/dump,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "BH" = (
 /obj/effect/landmark/latejoin/ecologist,
@@ -21059,9 +21059,9 @@ BL
 ba
 ba
 BL
-BL
-BL
+LI
 ba
+LI
 Zl
 Zl
 "}
@@ -21317,10 +21317,10 @@ ba
 ba
 cp
 BL
-BL
-ba
-ba
+Bs
 Zl
+Bs
+Bs
 "}
 (70,1,1) = {"
 ba
@@ -21576,8 +21576,8 @@ ad
 ad
 BL
 ba
-ba
 BG
+Bs
 "}
 (71,1,1) = {"
 ad
@@ -21829,12 +21829,12 @@ ad
 ba
 ba
 ba
-BL
-Ql
+LI
+ad
 ad
 ba
-ba
 Qt
+Bs
 "}
 (72,1,1) = {"
 ad
@@ -22086,12 +22086,12 @@ ad
 ba
 ba
 BL
-BL
-BL
-BL
+LI
+LI
 ba
 ba
 Qt
+Bs
 "}
 (73,1,1) = {"
 ba
@@ -22344,11 +22344,11 @@ ba
 ba
 BL
 BL
-Om
-BL
+LI
 ba
 ba
 Qt
+Bs
 "}
 (74,1,1) = {"
 ba
@@ -22602,10 +22602,10 @@ ba
 BL
 BL
 BL
-BL
-ba
-ba
+Bs
+Bs
 Zl
+Bs
 "}
 (75,1,1) = {"
 BL
@@ -22860,8 +22860,8 @@ BW
 Mw
 ad
 ad
-ba
-ba
+LI
+LI
 Zl
 "}
 (76,1,1) = {"

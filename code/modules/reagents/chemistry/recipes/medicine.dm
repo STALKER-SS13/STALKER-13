@@ -42,7 +42,7 @@
 	name = "Silver Sulfadiazine"
 	id = "silver_sulfadiazine"
 	results = list("silver_sulfadiazine" = 5)
-	required_reagents = list("ammonia" = 1, "silver" = 1, "sulfur" = 1, "oxygen" = 1, "chlorine" = 1, "unknownsubstance" = 1)
+	required_reagents = list("ammonia" = 1, "silver" = 1, "sulfur" = 1, "oxygen" = 1, "chlorine" = 1)
 
 /datum/chemical_reaction/salglu_solution
 	name = "Saline-Glucose Solution"
@@ -72,7 +72,7 @@
 	name = "Styptic Powder"
 	id = "styptic_powder"
 	results = list("styptic_powder" = 4)
-	required_reagents = list("aluminium" = 1, "hydrogen" = 1, "oxygen" = 1, "sacid" = 1, "unknownsubstance" = 1)
+	required_reagents = list("aluminium" = 1, "hydrogen" = 1, "oxygen" = 1, "sacid" = 1)
 	mix_message = "The solution yields an astringent powder."
 
 /datum/chemical_reaction/calomel
@@ -92,7 +92,7 @@
 	name = "Pentetic Acid"
 	id = "pen_acid"
 	results = list("pen_acid" = 6)
-	required_reagents = list("welding_fuel" = 1, "chlorine" = 1, "ammonia" = 1, "formaldehyde" = 1, "sodium" = 1, "cyanide" = 1, "unknownsubstancetwo" = 1)
+	required_reagents = list("welding_fuel" = 1, "chlorine" = 1, "ammonia" = 1, "formaldehyde" = 1, "sodium" = 1, "cyanide" = 1)
 
 /datum/chemical_reaction/sal_acid
 	name = "Salicyclic Acid"
@@ -163,9 +163,9 @@
 	name = "Mannitol"
 	id = "mannitol"
 	results = list("mannitol" = 3)
-	required_reagents = list("sugar" = 1, "hydrogen" = 1, "water" = 1, "unknownsubstancefour" = 1)
+	required_reagents = list("sugar" = 1, "hydrogen" = 1, "water" = 1)
 	mix_message = "The solution slightly bubbles, becoming thicker."
-
+	
 /datum/chemical_reaction/neurine
 	name = "Neurine"
 	id = "neurine"
@@ -213,25 +213,25 @@
 	name = "Bicaridine"
 	id = "bicaridine"
 	results = list("bicaridine" = 3)
-	required_reagents = list("carbon" = 1, "oxygen" = 1, "sugar" = 1, "unknownsubstance" = 1)
+	required_reagents = list("carbon" = 1, "oxygen" = 1, "sugar" = 1)
 
 /datum/chemical_reaction/kelotane
 	name = "Kelotane"
 	id = "kelotane"
 	results = list("kelotane" = 2)
-	required_reagents = list("carbon" = 1, "silicon" = 1, "unknownsubstance" = 1)
+	required_reagents = list("carbon" = 1, "silicon" = 1)
 
 /datum/chemical_reaction/antitoxin
 	name = "Antitoxin"
 	id = "antitoxin"
 	results = list("antitoxin" = 3)
-	required_reagents = list("nitrogen" = 1, "silicon" = 1, "potassium" = 1, "unknownsubstancetwo" = 1)
+	required_reagents = list("nitrogen" = 1, "silicon" = 1, "potassium" = 1)
 
 /datum/chemical_reaction/tricordrazine
 	name = "Tricordrazine"
 	id = "tricordrazine"
 	results = list("tricordrazine" = 3)
-	required_reagents = list("bicaridine" = 1, "kelotane" = 1, "antitoxin" = 1, "unknownsubstancefour" = 1)
+	required_reagents = list("bicaridine" = 1, "kelotane" = 1, "antitoxin" = 1)
 
 /datum/chemical_reaction/regen_jelly
 	name = "Regenerative Jelly"
@@ -246,6 +246,7 @@
 	required_reagents = list("phenol" = 2, "lithium" = 1)
 
 /datum/chemical_reaction/morphine
+	name = "Morphine"
 	id = "morphine"
 	results = list("morphine" = 2)
 	required_reagents = list("carbon" = 2, "hydrogen" = 2, "ethanol" = 1, "oxygen" = 1)
@@ -263,51 +264,3 @@
 	id = "psicodine"
 	results = list("psicodine" = 5)
 	required_reagents = list( "mannitol" = 2, "water" = 2, "impedrezene" = 1)
-
-/datum/chemical_reaction/psyblock
-	name = "Psyblock"
-	id = "psyblock"
-	results = list("psyblock" = 5)
-	required_reagents = list( "carbon" = 2, "water" = 2, "lithium" = 1, "unknownsubstancefour")
-
-/datum/chemical_reaction/cocaine
-	name = "Cocaine"
-	id = "cocaine"
-	results = list("cocaine" = 1)
-	required_reagents = list( "carbon" = 2, "nitrogen" = 2, "sugar" = 1, "unknownsubstancefour" = 2)
-
-/datum/chemical_reaction/indraline
-	name = "Indraline"
-	id = "indraline"
-	results = list("indraline" = 5)
-	required_reagents = list( "carbon" = 2, "sugar" = 2, "hydrogen" = 1, "											unknownsubstancetwo" = 2)
-
-/datum/chemical_reaction/hercules
-	name = "Hercules"
-	id = "hercules"
-	results = list("hercules" = 5)
-	required_reagents = list( "radium" = 2, "weldingfuel" = 2, "diphenhydramine" = 1, "unknownsubstancefour" = 5)
-
-/datum/chemical_reaction/anabiotic
-	name = "Anabiotic"
-	id = "anabiotic"
-	results = list("anabiotic" = 5)
-	required_reagents = list( "ethanol" = 2, "antihol" = 2, "lithium" = 1, "unknownsubstancetwo" = 2)
-
-/datum/chemical_reaction/analgesic
-	name = "Analgesic"
-	id = "analgesic"
-	results = list("analgesic" = 5)
-	required_reagents = list( "nitrogen" = 2, "carbon" = 2, "mercury" = 1, "unknownsubstance" = 2)
-
-/datum/chemical_reaction/viksolum
-	name = "Viksolum"
-	id = "viksolum"
-	results = list("viksolum" = 5)
-	required_reagents = list( "silicon" = 2, "carbon" = 2, "sodium" = 1, "silver_sulfadiazine" = 2, "unknownsubstancefour" = 1)
-
-/datum/chemical_reaction/axyltallisal
-	name = "Axyltallisal"
-	id = "axyltallisal"
-	results = list("axyltallisal" = 2.5)
-	required_reagents = list( "nitrogen" = 2, "sodium" = 2, "chlorine" = 2, "silicon" = 1, "unknownsubstancethree" = 1)

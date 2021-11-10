@@ -9,14 +9,14 @@
 	if(trippy)
 		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[id]_high")
 
-/datum/reagent/drug/lsd
+/datum/reagent/drug/space_drugs
 	name = "LSD"
-	id = "lsd"
+	id = "space_drugs"
 	description = "Lysergic acid diethylamide, an odorless and colorless substance with a slightly bitter taste. Makes you feel euphoric and beyond your own perception."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 30
 
-/datum/reagent/drug/lsd/on_mob_life(mob/living/carbon/M)
+/datum/reagent/drug/space_drugs/on_mob_life(mob/living/carbon/M)
 	M.set_drugginess(15)
 	if(isturf(M.loc) && !isspaceturf(M.loc))
 		if(M.mobility_flags & MOBILITY_MOVE)
@@ -26,13 +26,13 @@
 		M.emote(pick("twitch","drool","moan","giggle"))
 	..()
 
-/datum/reagent/drug/lsd/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You see fractals, patterns, shapes, and colors of all kinds! Your heart starts to race as you realize the absurdity of your existence!</span>")
+/datum/reagent/drug/space_drugs/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>You start tripping hard! You see fractals, patterns, shapes, and colors of all kinds!</span>")
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[id]_overdose", /datum/mood_event/overdose, name)
 
-/datum/reagent/drug/lsd/overdose_process(mob/living/M)
-	if(M.hallucination < volume && prob(60))
-		M.hallucination += 10
+/datum/reagent/drug/space_drugs/overdose_process(mob/living/M)
+	if(M.hallucination < volume && prob(20))
+		M.hallucination += 5
 	..()
 
 /datum/reagent/drug/nicotine
@@ -446,123 +446,3 @@
 		M.emote(pick("twitch","laugh","frown"))
 	..()
 	. = 1
-
-/datum/reagent/drug/unknownsubstance
-	name = "Unknown Substance"
-	id = "unknownsubstance"
-	description = "This substance is not yet identified, this seems important!"
-	color = "#002579" // rgb: 96, 165, 132
-	overdose_threshold = 5
-	metabolization_rate = 1
-	taste_description = "instant regret"
-
-/datum/reagent/drug/unknownsubstance/on_mob_life(mob/living/carbon/M)
-	if(prob(75))
-		M.adjustBrainLoss(4)
-		M.hallucination += 75
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		step(M, pick(GLOB.cardinals))
-		step(M, pick(GLOB.cardinals))
-	..()
-	. = 1
-
-/datum/reagent/drug/unknownsubstance/overdose_process(mob/living/M)
-	M.hallucination += 100
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		for(var/i in 1 to 8)
-			step(M, pick(GLOB.cardinals))
-	if(prob(20))
-		M.emote(pick("twitch","drool","wretches","looks like they may vomit at any moment","is in clear consternation","whimpers","cries","is in clear panic"))
-	if(prob(33))
-		M.drop_all_held_items()
-	..()
-
-/datum/reagent/drug/unknownsubstancetwo
-	name = "Unknown Substance"
-	id = "unknownsubstancetwo"
-	description = "This substance is not yet identified, this seems important!"
-	color = "#efdc71"
-	overdose_threshold = 5
-	metabolization_rate = 1
-	taste_description = "instant regret"
-
-/datum/reagent/drug/unknownsubstancetwo/on_mob_life(mob/living/carbon/M)
-	if(prob(75))
-		M.adjustBrainLoss(4)
-		M.hallucination += 75
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		step(M, pick(GLOB.cardinals))
-		step(M, pick(GLOB.cardinals))
-	..()
-	. = 1
-
-/datum/reagent/drug/unknownsubstancetwo/overdose_process(mob/living/M)
-	M.hallucination += 100
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		for(var/i in 1 to 8)
-			step(M, pick(GLOB.cardinals))
-	if(prob(20))
-		M.emote(pick("twitch","drool","wretches","may vomit at any moment","is in clear consternation","whimpers","cries","is in clear panic"))
-	if(prob(33))
-		M.drop_all_held_items()
-	..()
-
-/datum/reagent/drug/unknownsubstancethree
-	name = "Unknown Substance"
-	id = "unknownsubstancethree"
-	description = "This substance is not yet identified, this seems important!"
-	color = "#bdc5d6"
-	overdose_threshold = 5
-	metabolization_rate = 1
-	taste_description = "instant regret"
-
-/datum/reagent/drug/unknownsubstancethree/on_mob_life(mob/living/carbon/M)
-	if(prob(75))
-		M.adjustBrainLoss(4)
-		M.hallucination += 75
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		step(M, pick(GLOB.cardinals))
-		step(M, pick(GLOB.cardinals))
-	..()
-	. = 1
-
-/datum/reagent/drug/unknownsubstancethree/overdose_process(mob/living/M)
-	M.hallucination += 100
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		for(var/i in 1 to 8)
-			step(M, pick(GLOB.cardinals))
-	if(prob(20))
-		M.emote(pick("twitch","drool","wretches","may vomit at any moment","is in clear consternation","whimpers","cries","is in clear panic"))
-	if(prob(33))
-		M.drop_all_held_items()
-	..()
-
-/datum/reagent/drug/unknownsubstancefour
-	name = "Unknown Substance"
-	id = "unknownsubstancefour"
-	description = "This substance is not yet identified, this seems important!"
-	color = "#8c8473"
-	overdose_threshold = 5
-	metabolization_rate = 1
-	taste_description = "instant regret"
-
-/datum/reagent/drug/unknownsubstancefour/on_mob_life(mob/living/carbon/M)
-	if(prob(75))
-		M.adjustBrainLoss(4)
-		M.hallucination += 75
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		step(M, pick(GLOB.cardinals))
-		step(M, pick(GLOB.cardinals))
-	..()
-	. = 1
-
-/datum/reagent/drug/unknownsubstancefour/overdose_process(mob/living/M)
-	M.hallucination += 100
-	if((M.mobility_flags & MOBILITY_MOVE) && !ismovableatom(M.loc))
-		for(var/i in 1 to 8)
-			step(M, pick(GLOB.cardinals))
-	if(prob(20))
-		M.emote(pick("twitch","drool","wretches","may vomit at any moment","is in clear consternation","whimpers","cries","is in clear panic"))
-	if(prob(33))
-		M.drop_all_held_items()
-	..()

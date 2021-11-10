@@ -431,14 +431,14 @@
 
 /obj/item/reagent_containers/food/drinks/flask/jerrycan
 	name = "jerrycan"
-	desc = "A large green metal jerrycan. It appears to hold quite a lot!"
+	desc = "A large green metal jerrycan. It appears to hold quite a lot!."
 	icon_state = "jerrycan"
 	materials = list(MAT_SILVER=500)
 	volume = 375
 
 /obj/item/reagent_containers/food/drinks/flask/jerrycan/compost
 	name = "jerrycan"
-	desc = "A large green metal jerrycan. It appears to hold quite a lot!"
+	desc = "A large green metal jerrycan. It appears to hold quite a lot!."
 	icon_state = "jerrycan"
 	materials = list(MAT_SILVER=500)
 	volume = 375
@@ -498,15 +498,15 @@
 	return ..()
 
 /obj/item/reagent_containers/food/drinks/soda_cans/cola
-	name = "cola"
-	desc = "Cola. in the Zone."
+	name = "Space Cola"
+	desc = "Cola. in space."
 	icon_state = "cola"
 	list_reagents = list("cola" = 30)
 	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic
-	name = "tonic water"
-	desc = "Quinine tastes funny, but at least it'll keep that Malaria away."
+	name = "T-Borg's tonic water"
+	desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
 	icon_state = "tonic"
 	list_reagents = list("tonic" = 50)
 	foodtype = ALCOHOL
@@ -530,28 +530,28 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/space_up
 	name = "Space-Up!"
-	desc = "Tastes like an anomaly in your mouth."
+	desc = "Tastes like a hull breach in your mouth."
 	icon_state = "space-up"
 	list_reagents = list("space_up" = 30)
 	foodtype = SUGAR | JUNKFOOD
 
 /obj/item/reagent_containers/food/drinks/soda_cans/starkist
 	name = "Star-kist"
-	desc = "Its orange soda, with... a bit of tuna...?"
+	desc = "The taste of a star in liquid form. And, a bit of tuna...?"
 	icon_state = "starkist"
 	list_reagents = list("cola" = 15, "orangejuice" = 15)
 	foodtype = SUGAR | FRUIT | JUNKFOOD
 
-/obj/item/reagent_containers/food/drinks/soda_cans/mountain_wind
-	name = "Mountain Wind"
-	desc = "Blows right through you like a whirlwind anomaly!."
-	icon_state = "mountain_wind"
+/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind
+	name = "Space Mountain Wind"
+	desc = "Blows right through you like a space wind."
+	icon_state = "space_mountain_wind"
 	list_reagents = list("spacemountainwind" = 30)
 	foodtype = SUGAR | JUNKFOOD
 
 /obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko
 	name = "Thirteen Loko"
-	desc = "There is an advisory that consumption of Thirteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly."
+	desc = "The CMO has advised crew members that consumption of Thirteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly."
 	icon_state = "thirteen_loko"
 	list_reagents = list("thirteenloko" = 30)
 	foodtype = SUGAR | JUNKFOOD
@@ -565,7 +565,7 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/pwr_game
 	name = "Pwr Game"
-	desc = "The only drink with the PWRtm that true winners crave."
+	desc = "The only drink with the PWR that true gamers crave."
 	icon_state = "purple_can"
 	list_reagents = list("pwr_game" = 30)
 
@@ -578,7 +578,7 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/grey_bull
 	name = "Grey Bull"
-	desc = "Grey Bull, it gives you energy!"
+	desc = "Grey Bull, it gives you gloves!"
 	icon_state = "energy_drink"
 	list_reagents = list("grey_bull" = 20)
 	foodtype = SUGAR | JUNKFOOD

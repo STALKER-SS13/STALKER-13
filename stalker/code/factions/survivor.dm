@@ -79,7 +79,7 @@ Assistant
 	mask = pick(
 		/obj/item/clothing/mask/bandana/black,
 		/obj/item/clothing/mask/cigarette/cigar,
-		/obj/item/clothing/mask/cigarette/robustgold,
+		/obj/item/clothing/mask/cigarette/marlborogold,
 		/obj/item/clothing/mask/cigarette/rollie/cannabis)
 	ears = null
 	id = /obj/item/stalker_pda

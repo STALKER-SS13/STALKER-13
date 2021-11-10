@@ -86,6 +86,7 @@ require only minor tweaks.
     DECLARE_LEVEL("Svalka", ZTRAITS_STATION), \
     DECLARE_LEVEL("Under", ZTRAITS_STATION), \
     DECLARE_LEVEL("Yantar", ZTRAITS_STATION), \
+    DECLARE_LEVEL("ArmyWarehouses", ZTRAITS_STATION), \
 )
 
 // Camera lock flags

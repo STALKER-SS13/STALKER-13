@@ -9,8 +9,8 @@ Assistant
 	spawn_positions = -1
 	//limit_per_player = 2
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
-	enforces = "Work with your teammates to neutralize anarchists and mutants, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom on sight and escalate on everyone else where appropriate."
-	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and start a fight with a neutral faction without asking up the chain of command."
+	enforces = "Work with your teammates to neutralize anarchists and mutants, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom whenever possible."
+	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom, Renegades or the Bandits, and start a fight with a neutral faction without asking up the chain of command."
 	supervisors = "Lieutenant"
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -45,7 +45,8 @@ Assistant
 	suit = /obj/item/clothing/suit/hooded/kombez/ps5m
 	mask = pick(
 		/obj/item/clothing/mask/cigarette/cigar/havana,
-		/obj/item/clothing/mask/bandana/black)
+		/obj/item/clothing/mask/bandana/black,
+		/obj/item/clothing/mask/cigarette/marlboro)
 	ears = null
 	belt = /obj/item/kitchen/knife/bayonet
 	gloves = /obj/item/clothing/gloves/color/black
@@ -58,7 +59,7 @@ Assistant
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
-		/obj/item/storage/fancy/cigarettes/cigpack_robust,
+		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
 
@@ -103,8 +104,8 @@ Assistant
 	spawn_positions = 4
 	limit_per_player = 2
 	description = "Duty is a paramilitary clan of stalkers operating in the Zone with members living according to a code. Their ranks are composed of ex-military and stalkers who wish to bring order to the Zone and keep it from spreading further. They are contrasted by other factions, such as Freedom or the Ecologists, who see the Zone as a miracle. Its members consider protecting the outside world from the Zone's dangers their primary objective."
-	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom on sight and escalate on everyone else where appropriate."
-	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom or the Bandits, and jeopordize the faction for an insignificant reason."
+	enforces = "Organizing the soldiers into teams by designating responsibilities, save stalkers from death and help them get back on their feet, confisccate anomalies and giving them to the ecologists if they are being waved around, shoot Freedom on sight whenever possible."
+	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom, Renegades, or the Bandits, and jeopordize the faction for an insignificant reason."
 	supervisors = "Major"
 	selection_color = "#601919"
 	whitelist_only = 1
@@ -135,6 +136,6 @@ Assistant
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
-		/obj/item/storage/fancy/cigarettes/cigpack_robust,
+		/obj/item/clothing/mask/cigarette/marlboro
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)

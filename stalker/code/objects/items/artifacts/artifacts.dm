@@ -66,7 +66,7 @@
 	art_armor = list()
 	radiation = -2
 	level_s = 1
-
+/*
 /obj/item/artifact/stoneflower
 	name = "stone flower"
 	desc = "Born in gravitional anomalies. This artifact is found in only a few areas of the Zone. The bits of metallic compounds create a beautiful light play."
@@ -82,7 +82,7 @@
 	art_armor = list(bullet = 20)
 	radiation = 3
 	level_s = 3
-
+*/
 /obj/item/artifact/stoneflower_depleted
 	name = "depleted stone flower"
 	desc = "Born in gravitional anomalies. This artifact is found in only a few areas of the Zone. The bits of metallic compounds create a beautiful light play."

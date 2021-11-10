@@ -40,7 +40,7 @@
 		/obj/item/scalpel, /obj/item/reagent_containers/syringe, /obj/item/dnainjector,
 		/obj/item/reagent_containers/hypospray/medipen, /obj/item/reagent_containers/dropper,
 		/obj/item/implanter, /obj/item/screwdriver, /obj/item/weldingtool/mini,
-		/obj/item/firing_pin
+		/obj/item/firing_pin, /obj/item/weapon/kitchen/knife/hunting, /obj/item/weapon/kitchen/knife/m9
 		))
 
 /datum/component/storage/concrete/pockets/shoes/clown/Initialize()

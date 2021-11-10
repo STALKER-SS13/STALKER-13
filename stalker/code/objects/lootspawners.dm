@@ -218,18 +218,40 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/melee
 	name = "stalker melee"
 	loot = list(/obj/item/kitchen/knife = 20,
-				/obj/item/kitchen/knife/butcher = 15,
-				/obj/item/kitchen/knife/tourist = 15,
-				/obj/item/melee/tireiron = 15,
-				/obj/item/melee/pipe = 15,
+				/obj/item/kitchen/knife/butcher = 10,
+				/obj/item/kitchen/knife/tourist = 10,
+				/obj/item/melee/tireiron = 10,
+				/obj/item/melee/tireiron2 = 10,
+				/obj/item/melee/pipe = 10,
+				/obj/item/melee/pipe2 = 10,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/meleetier2
-	name = "stalker melee tier 2"
-	loot = list(/obj/item/kitchen/knife/throwing = 25,
+	name = "stalker melee"
+	loot = list(/obj/item/kitchen/knife/bayonet = 20,
+				/obj/item/kitchen/knife/ancienthatchet = 15,
+				/obj/item/kitchen/knife/woodhatchet = 15,
+				/obj/item/melee/halliganbar = 5,
+				/obj/item/kitchen/knife/ancienthatchet = 10,
+				/obj/item/melee/largewrench = 10,
+				/obj/item/melee/redwrench = 10,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/meleetier3
+	name = "stalker melee"
+	loot = list(/obj/item/kitchen/knife/machete	 = 20,
+				/obj/item/kitchen/knife/throwing = 20,
+				/obj/item/kitchen/knife/machete2 = 15,
 				/obj/item/weapon/kitchen/knife/hunting = 15,
 				/obj/item/weapon/kitchen/knife/m9 = 15,
-				/obj/item/kitchen/knife/bayonet = 25,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/meleetwohand
+	name = "stalker melee tier 2"
+	loot = list(/obj/item/twohanded/oldaxe = 20,
+				/obj/item/twohanded/fireaxe = 20,
+				/obj/item/twohanded/pitchfork = 20,
+				/obj/item/twohanded/bostaff = 20,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/medicine
@@ -240,12 +262,49 @@
 				/obj/item/storage/firstaid/stalker/scientific = 10,
 				/obj/nothing = 40)
 
+/obj/effect/spawner/lootdrop/stalker/medicineguarentee
+	name = "stalker medicine"
+	lootcount = 1
+	loot = list(/obj/item/storage/firstaid/stalker/civillian = 50,
+				/obj/item/storage/firstaid/stalker/military = 30,
+				/obj/item/storage/firstaid/stalker/scientific = 20)
+
+/obj/effect/spawner/lootdrop/stalker/medicine/pills
+	name = "stalker medicine"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/pill/potassium_iodide = 20,
+/obj/item/reagent_containers/pill/radioprotectant = 20,
+/obj/item/reagent_containers/pill/vinca = 5,
+/obj/item/reagent_containers/pill/psyblock = 5,
+/obj/item/reagent_containers/pill/cocaine = 5,
+/obj/item/reagent_containers/pill/analgesic = 15,
+/obj/item/reagent_containers/pill/caffeine = 10,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/medicine/hypospray
+	name = "stalker medicine"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/hypospray/medipen/stalker/anabiotic = 5,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/hercules = 5,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/metamizole = 30,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 30,
+	/obj/item/reagent_containers/hypospray/medipen/stalker/axyltallisal = 5,
+				/obj/nothing = 25)
+
 /obj/effect/spawner/lootdrop/stalker/food
 	name = "stalker food"
 	lootcount = 1
 	loot = list(/obj/item/reagent_containers/food/snacks/stalker/baton = 50,
 				/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 30,
 				/obj/item/reagent_containers/food/snacks/stalker/konserva = 20)
+
+
+/obj/effect/spawner/lootdrop/stalker/stews
+	name = "stalker food"
+	lootcount = 1
+	loot = list(/obj/item/reagent_containers/food/snacks/stalker/lowgradestew = 50,
+				/obj/item/reagent_containers/food/snacks/stalker/shroomstew = 25,
+				/obj/item/reagent_containers/food/snacks/stalker/meatstew = 25)
 
 
 /obj/effect/spawner/lootdrop/stalker/gravy
@@ -289,7 +348,7 @@ obj/nothing/New()
 */
 
 /obj/effect/spawner/lootdrop/stalker/pornmag
-	name = "porn mags"
+	name = "stalker porn mags"
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/trash/pornmagazine = 30,
@@ -300,7 +359,7 @@ obj/nothing/New()
 				/obj/nothing = 70)
 
 /obj/effect/spawner/lootdrop/stalker/junk
-	name = "junk items"
+	name = "stalker junk items"
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/trash/paintcan = 20,
@@ -322,7 +381,7 @@ obj/nothing/New()
 				/obj/nothing = 80)
 
 /obj/effect/spawner/lootdrop/stalker/flasks
-	name = "flasks"
+	name = "stalker flasks"
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/reagent_containers/food/drinks/flask/cylinder = 10,
@@ -332,8 +391,58 @@ obj/nothing/New()
 				/obj/item/reagent_containers/food/drinks/flask/commie = 5,
 				/obj/nothing = 80)
 
+/obj/effect/spawner/lootdrop/stalker/cigarettes
+	name = "stalker cigarettes"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlboro = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_java = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_midori = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_laika = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlborogold = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 10,
+					/obj/item/storage/fancy/cigarettes/cigpack_newports = 10,
+				/obj/nothing = 10)
+
+/obj/effect/spawner/lootdrop/stalker/vodka
+	name = "stalker vodka"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/reagent_containers/food/drinks/bottle/vodka/stolichnaya = 10,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki = 30,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/blacklabelvodka = 10,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka = 20,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka = 10,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/seeds
+	name = "stalker seeds"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/seeds/potato = 30,
+					/obj/item/seeds/tobacco = 30,
+					/obj/item/seeds/cannabis = 10,
+					/obj/item/seeds/cannabis/violetriot = 5,
+					/obj/item/seeds/cannabis/neonpeon = 5,
+					/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/bureaucracy
+	name = "stalker bureaucracy"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/camera = 10,
+					/obj/item/taperecorder = 10,
+					/obj/item/clothing/accessory/pocketprotector/full = 10,
+					/obj/item/clipboard = 10,
+					/obj/item/flashlight/pen = 10,
+					/obj/item/hand_labeler = 10,
+					/obj/item/modular_computer/tablet/preset/cheap = 10,
+					/obj/nothing = 30)
+
 /obj/effect/spawner/lootdrop/stalker/books
-	name = "books"
+	name = "stalker books"
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/book/manual/allquietonthewesternfront = 10,
@@ -347,7 +456,7 @@ obj/nothing/New()
 				/obj/nothing = 80)
 
 /obj/effect/spawner/lootdrop/stalker/equipment
-	name = "equipment"
+	name = "stalker equipment"
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/flashlight/flare/torch = 10,

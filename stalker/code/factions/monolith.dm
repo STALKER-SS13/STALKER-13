@@ -5,7 +5,7 @@
 	total_positions = 5//6 total, prior to the introduction of Radar.
 	spawn_positions = 5
 	locked = 1
-	supervisors = "Major"
+	supervisors = "Monolith Preacher"
 	enforces = "We thank you, oh Monolith, for revealing the cunning plans of your enemies to us. May your light shine down on the souls of the brave soldiers who gave their lives in service to your will. Onward warriors of the Monolith, avenge your fallen brothers, blessed as they are in their eternal union with the Monolith."
 	forbids = "Allowing the continued existance of all who oppose the holy monolith. (Every other faction but your own)"
 	selection_color = "#601919"

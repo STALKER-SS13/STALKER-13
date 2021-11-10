@@ -125,8 +125,8 @@
 //CIG PACK//
 ////////////
 /obj/item/storage/fancy/cigarettes
-	name = "\improper Space Cigarettes packet"
-	desc = "The most popular brand of cigarettes, sponsors of the Space Olympics."
+	name = "\improper Old Soviet Cigarettes packet"
+	desc = "An old cigarette packet which is indescribably old."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig"
 	item_state = "cigpacket"
@@ -134,7 +134,7 @@
 	throwforce = 0
 	slot_flags = ITEM_SLOT_BELT
 	icon_type = "cigarette"
-	spawn_type = /obj/item/clothing/mask/cigarette/space_cigarette
+	spawn_type = /obj/item/clothing/mask/cigarette/soviet_cigarette
 
 /obj/item/storage/fancy/cigarettes/ComponentInitialize()
 	. = ..()
@@ -205,29 +205,47 @@
 	icon_state = "dromedary"
 	spawn_type = /obj/item/clothing/mask/cigarette/dromedary
 
-/obj/item/storage/fancy/cigarettes/cigpack_uplift
-	name = "\improper Uplift Smooth packet"
-	desc = "Your favorite brand, now menthol flavored."
-	icon_state = "uplift"
-	spawn_type = /obj/item/clothing/mask/cigarette/uplift
+/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal
+	name = "\improper Belomorkanal packet"
+	desc = "An exceedingly ancient pack of cigarettes. Seems to smoke just fine!"
+	icon_state = "belomorkanal"
+	spawn_type = /obj/item/clothing/mask/cigarette/belomorkanal
 
-/obj/item/storage/fancy/cigarettes/cigpack_robust
-	name = "\improper Robust packet"
-	desc = "Smoked by the robust."
-	icon_state = "robust"
-	spawn_type = /obj/item/clothing/mask/cigarette/robust
+/obj/item/storage/fancy/cigarettes/cigpack_newports
+	name = "\improper Newports packet"
+	desc = "An pack of cigarettes imported from the west. Seems to smoke just fine!"
+	icon_state = "newports"
+	spawn_type = /obj/item/clothing/mask/cigarette/newports
 
-/obj/item/storage/fancy/cigarettes/cigpack_robustgold
-	name = "\improper Robust Gold packet"
-	desc = "Smoked by the truly robust."
-	icon_state = "robustg"
-	spawn_type = /obj/item/clothing/mask/cigarette/robustgold
+/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg
+	name = "\improper Lucky Strikes Green packet"
+	desc = "An pack of cigarettes imported from the west. Seems to smoke just fine! This one has special ingredients."
+	icon_state = "luckystrikesg"
+	spawn_type = /obj/item/clothing/mask/cigarette/luckystrikesg
 
-/obj/item/storage/fancy/cigarettes/cigpack_carp
-	name = "\improper Carp Classic packet"
-	desc = "Since 2313."
-	icon_state = "carp"
-	spawn_type = /obj/item/clothing/mask/cigarette/carp
+/obj/item/storage/fancy/cigarettes/cigpack_marlboro
+	name = "\improper Marlboro packet"
+	desc = "Smoked by the robust. Come to where the flavor is. Come to Marlboro country."
+	icon_state = "marlboro"
+	spawn_type = /obj/item/clothing/mask/cigarette/marlboro
+
+/obj/item/storage/fancy/cigarettes/cigpack_marlborogold
+	name = "\improper Marlboro Gold packet"
+	desc = "Smoked by the truly robust. Come to where the flavor is. Come to Marlboro country. This ones got some gold in it!"
+	icon_state = "marlborog"
+	spawn_type = /obj/item/clothing/mask/cigarette/marlborogold
+
+/obj/item/storage/fancy/cigarettes/cigpack_java
+	name = "\improper Java packet"
+	desc = "The pack is a white and red with the brand name in the middle. It seems quite old and smells stale."
+	icon_state = "java"
+	spawn_type = /obj/item/clothing/mask/cigarette/java
+
+/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes
+	name = "\improper Lucky Strikes packet"
+	desc = "The pack is a white and red with the brand name in the middle. It seems quite stale and smells old."
+	icon_state = "luckystrikes"
+	spawn_type = /obj/item/clothing/mask/cigarette/luckystrikes
 
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	name = "cigarette packet"
@@ -247,6 +265,12 @@
 	icon_state = "shadyjim"
 	spawn_type = /obj/item/clothing/mask/cigarette/shadyjims
 
+/obj/item/storage/fancy/cigarettes/cigpack_laika
+	name = "\improper Laika cigarette packet"
+	desc = "An old box of Laika brand cigarettes. The pack features the space dog Laika on the front of the pack, as well as the Sputnik 2, the Hammer and sickle which is placed on the rocket she was in."
+	icon_state = "laika"
+	spawn_type = /obj/item/clothing/mask/cigarette/laika
+
 /obj/item/storage/fancy/cigarettes/cigpack_xeno
 	name = "\improper Xeno Filtered packet"
 	desc = "Loaded with 100% pure slime. And also nicotine."
@@ -254,8 +278,8 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/xeno
 
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis
-	name = "\improper Freak Brothers' Special packet"
-	desc = "A label on the packaging reads, \"Endorsed by Phineas, Freddy and Franklin.\""
+	name = "\improper Freedom Brothers' Special packet"
+	desc = "A label on the packaging reads, \"Endorsed by Pavel, Nikolay and Konstantin.\""
 	icon_state = "midori"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/cannabis
 
@@ -331,9 +355,9 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/cigar/havana
 
 /obj/item/storage/fancy/cigarettes/cigpack/maxim
-	name = "\improper Maxim packet"
-	desc = "Maxim cigarette brand."
-	icon_state = "robust"
+	name = "\improper Ancient Soviet cigarette packet"
+	desc = "An absolutely decrepid box of ancient cigarettes."
+	icon_state = "cig"
 
 /*
  * Heart Shaped Box w/ Chocolates

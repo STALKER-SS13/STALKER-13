@@ -967,12 +967,6 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/buildings/backwater/burntfarm)
-"ec" = (
-/obj/structure/stalker/car/btrgrimy{
-	icon_state = "2"
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
 "ed" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -1066,10 +1060,6 @@
 "eA" = (
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/blowout/outdoor/backwater)
-"eB" = (
-/obj/structure/grille/stalker,
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/backwater/sawmill)
 "eC" = (
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
@@ -7334,10 +7324,6 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/substation)
-"Co" = (
-/obj/structure/flora/stalker/bush,
-/turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor/backwater/sawmill)
 "Cp" = (
 /obj/structure/table/stalker/wood,
 /obj/structure/stalker/cacheable/televizor/broken,
@@ -7449,9 +7435,9 @@
 /obj/structure/chair/stool/bar,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"Dj" = (
-/obj/machinery/light/small{
-	dir = 8
+"CV" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "rengeast"
 	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
@@ -7464,6 +7450,13 @@
 	},
 /turf/open/floor/plasteel/stairs,
 /area/stalker/buildings/renegade)
+"Du" = (
+/obj/machinery/button/door{
+	id = "rengsouth";
+	pixel_y = -23
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
 "DK" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -7474,13 +7467,28 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"DL" = (
+/obj/machinery/light/small,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/renegade)
+"DO" = (
+/obj/structure/stalker/car/btrgrimy,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
+/area/stalker/buildings/backwater/sawmill)
 "DP" = (
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor/backwater/sawmill)
-"DU" = (
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/renegade)
+"DT" = (
+/obj/structure/stalker/bar_plitka,
+/obj/structure/chair/brevno{
+	dir = 1;
+	tag = "icon-log1 (NORTH)"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
 "Ed" = (
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/gryaz,
@@ -7491,30 +7499,44 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/blowout/outdoor/backwater/sawmill)
-"EA" = (
-/obj/structure/stalker/cacheable/bochka,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
-"ED" = (
-/obj/structure/stalker/car/btrgrimy,
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/backwater/sawmill)
-"ES" = (
+"Fh" = (
 /obj/structure/stalker/bar_plitka,
-/obj/structure/chair/brevno{
+/obj/structure/chair/brevno/log2{
 	dir = 1;
-	tag = "icon-log1 (NORTH)"
+	tag = "icon-log2 (NORTH)"
 	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
+"Fo" = (
+/obj/structure/stalker/car/btrgrimy{
+	icon_state = "2"
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
+"Fp" = (
+/obj/structure/stalker/tree/leafless,
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
+"Fz" = (
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/structure/table/stalker/wood/bar100rentgen{
+	dir = 8
+	},
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
+/area/stalker/buildings/renegade)
+"FI" = (
+/obj/machinery/light/small,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
 "FM" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
-"Gj" = (
-/obj/structure/mineral_door/wood,
+"FU" = (
+/obj/structure/table/stalker/wood,
+/obj/item/instrument/guitar,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Gn" = (
@@ -7534,20 +7556,6 @@
 "Gv" = (
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/buildings/clearsky)
-"Gy" = (
-/obj/structure/stalker/cacheable/bochka,
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/backwater/sawmill)
-"Gz" = (
-/obj/structure/table/stalker/wood,
-/obj/machinery/button/door{
-	id = "reganotherway";
-	pixel_x = 25
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "GB" = (
 /obj/structure/stalker/bar_plitka,
 /obj/structure/chair/stalker/divan/divan2,
@@ -7562,20 +7570,6 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
-"GE" = (
-/obj/machinery/button/door{
-	id = "rengeast";
-	pixel_x = -25
-	},
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/renegade)
-"GL" = (
-/obj/machinery/button/door{
-	id = "rengeast";
-	pixel_x = 25
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/renegade)
 "GQ" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "regsafe"
@@ -7585,11 +7579,9 @@
 "GT" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
-"GU" = (
-/obj/structure/bed/stalker/mattress_bloody,
-/obj/effect/landmark/latejoin/renegade,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/renegade)
+"Hh" = (
+/turf/open/floor/plasteel/stairs/left/stalker,
+/area/stalker/buildings/backwater/sawmill)
 "HB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -7600,19 +7592,17 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"HH" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "rengeast"
+"HG" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "3"
 	},
-/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
 "HI" = (
-/obj/structure/stalker/bar_plitka,
-/obj/structure/chair/wood/normal{
-	dir = 8;
-	tag = "icon-wooden_chair (WEST)"
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "7"
 	},
-/turf/open/stalker/floor/tropa,
+/turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
 "HL" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -7627,76 +7617,26 @@
 /obj/item/storage/toolbox/mechanical/old,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
-"HZ" = (
-/obj/structure/stalker/car/btrgrimy{
-	icon_state = "7"
-	},
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/backwater/sawmill)
-"Ir" = (
-/obj/structure/stalker/cacheable/painting/gorbachev{
-	desc = "A true Renegade";
-	eng_desc = null;
-	name = "Vladimir Putin"
-	},
-/turf/closed/wall/stalker/bricks,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"It" = (
-/obj/structure/chair/stool/bar,
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
+"HO" = (
+/turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/renegade)
-"IA" = (
-/obj/structure/stalker/bar_plitka,
-/obj/structure/chair/stool,
-/turf/open/stalker/floor/tropa,
-/area/stalker/buildings/backwater/sawmill)
+"Ib" = (
+/obj/structure/chair/sofa,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "IM" = (
 /obj/structure/grille/stalker,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/ironforest)
-"IS" = (
-/obj/structure/stalker/bar_plitka,
-/obj/structure/toilet{
-	dir = 8;
-	pixel_x = -6
-	},
-/turf/open/stalker/floor/tropa,
-/area/stalker/buildings/backwater/sawmill)
 "IU" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor/backwater/ironforest)
-"IZ" = (
-/obj/structure/stalker/car/btrgrimy{
-	icon_state = "4"
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
-"Jd" = (
-/obj/machinery/button/door{
-	id = "regbar";
-	pixel_x = 25
-	},
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "Je" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
-"Jr" = (
-/obj/machinery/button/door{
-	id = "rengsouth";
-	pixel_y = -23
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/renegade)
-"Js" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "rengeast"
-	},
+"Jg" = (
+/obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "JM" = (
@@ -7712,9 +7652,14 @@
 	},
 /turf/closed/mineral,
 /area/stalker/blowout/outdoor/backwater/ironforest)
+"JR" = (
+/obj/structure/stalker/water/bochka/kap,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "JT" = (
-/obj/item/cigbutt,
-/turf/closed/wall/stalker/bricks,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
 /area/stalker/blowout/outdoor/backwater/sawmill)
 "JV" = (
 /obj/machinery/stalker/sidormat{
@@ -7723,18 +7668,6 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
-"JX" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/backwater/sawmill)
-"Kb" = (
-/obj/structure/stalker/bar_plitka,
-/obj/structure/chair/brevno/log2{
-	dir = 1;
-	tag = "icon-log2 (NORTH)"
-	},
-/turf/open/stalker/floor/tropa,
-/area/stalker/buildings/backwater/sawmill)
 "Kd" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
@@ -7769,6 +7702,7 @@
 	},
 /area/stalker/buildings/backwater/sawmill)
 "Ky" = (
+/obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/lattice{
 	icon_state = "lattice_new2"
 	},
@@ -7777,29 +7711,24 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
+"KM" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
 "KO" = (
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/backwater/sawmill)
-"KX" = (
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/structure/table/stalker/wood/bar100rentgen{
-	dir = 8
-	},
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/renegade)
-"Ll" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"Lo" = (
+"La" = (
 /obj/structure/table/stalker/wood,
 /obj/item/stack/cable_coil/red,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
+"Ll" = (
+/obj/structure/stalker/stolb,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Lq" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
@@ -7812,10 +7741,34 @@
 	dir = 8
 	},
 /area/stalker/buildings/renegade)
-"LL" = (
-/obj/structure/chair/sofa/right,
-/turf/open/stalker/floor/wood/oldgor,
+"Lv" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "rengeast"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"LE" = (
+/obj/structure/bed/stalker/mattress_bloody,
+/obj/effect/landmark/latejoin/renegade,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/renegade)
+"LK" = (
+/turf/closed/wall/stalker/beton_agro,
+/area/stalker/buildings/renegade)
+"LR" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "rengsouth"
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
+"LT" = (
+/obj/structure/stalker/bar_plitka,
+/obj/structure/chair/wood/normal{
+	dir = 8;
+	tag = "icon-wooden_chair (WEST)"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
 "Ma" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
@@ -7843,9 +7796,17 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Mh" = (
-/obj/structure/stalker/stolb,
-/turf/open/stalker/floor/digable/grass,
+/obj/structure/stalker/cacheable/shitok/shitok2{
+	pixel_y = 27
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"Mm" = (
+/obj/structure/stalker/car/btrgrimy{
+	icon_state = "6"
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
 "Mo" = (
 /obj/structure/stalker/car/gryzovik_army/south{
 	icon_state = "6"
@@ -7858,16 +7819,26 @@
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/ironforest)
-"MC" = (
-/obj/structure/stalker/car/gryzovik_army/south{
-	icon_state = "5"
+"Mz" = (
+/obj/structure/stalker/cacheable/bochka,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
+"Nb" = (
+/obj/structure/stalker/cacheable/bochka,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
+/area/stalker/buildings/backwater/sawmill)
+"Nc" = (
+/obj/structure/chair/sofa/corner,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"Ne" = (
+/obj/structure/stalker/cacheable/shitok/shitok2{
+	pixel_y = 27
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
-"ME" = (
-/obj/structure/grille/stalker,
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/renegade)
 "Nk" = (
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/structure/table/stalker/wood/bar100rentgen{
@@ -7875,6 +7846,10 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Nt" = (
+/obj/structure/flora/stalker/bush,
+/turf/open/stalker/floor/tropa,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Nu" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -7895,6 +7870,10 @@
 /obj/structure/stalker/cacheable/shina3,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
+"NY" = (
+/obj/structure/mineral_door/wood,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "NZ" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/ironforest)
@@ -7903,29 +7882,29 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/kordon/tunnel)
 "Oi" = (
-/obj/structure/stalker/cacheable/shitok/shitok2{
-	pixel_y = 27
-	},
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"Ok" = (
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/blowout/outdoor/backwater/sawmill)
-"Ol" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
-"Op" = (
-/turf/open/floor/plating/dirt,
-/area/stalker/blowout/outdoor/backwater/ironforest)
-"Or" = (
+"Ok" = (
 /obj/structure/grille/stalker{
 	icon_state = "fence3"
 	},
 /turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/backwater/sawmill)
+"Om" = (
+/obj/machinery/button/door{
+	id = "rengeast";
+	pixel_x = 25
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/renegade)
+"Op" = (
+/turf/open/floor/plating/dirt,
+/area/stalker/blowout/outdoor/backwater/ironforest)
+"Or" = (
+/turf/closed/wall/stalker/beton_agro,
 /area/stalker/buildings/backwater/sawmill)
 "OC" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big{
@@ -7934,33 +7913,40 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater/sawmill)
 "OJ" = (
-/turf/closed/wall/stalker/beton_agro,
+/obj/machinery/light/small{
+	dir = 1;
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/backwater/sawmill)
 "OT" = (
 /obj/structure/stalker/car/gryzovik_army/south,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
-"Pf" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/renegade)
-"Pi" = (
-/turf/closed/wall/stalker/beton_agro,
-/area/stalker/buildings/renegade)
-"Pr" = (
-/obj/machinery/light/small{
-	dir = 4
+"Pb" = (
+/obj/machinery/button/door{
+	id = "rengsouth";
+	pixel_y = 25
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/renegade)
-"Pt" = (
-/turf/open/stalker/floor/gryaz/gryaz2,
+"Pf" = (
+/obj/structure/grille/stalker,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/backwater/sawmill)
+"Po" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/button/door{
+	id = "reganotherway";
+	pixel_x = 25
+	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"PB" = (
+/obj/structure/chair/sofa/right,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "PH" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/renegade)
-"PI" = (
 /obj/structure/stalker/car/gryzovik_army/south{
 	icon_state = "8"
 	},
@@ -7968,10 +7954,6 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
-"PM" = (
-/obj/structure/chair/sofa/corner,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "PW" = (
 /obj/structure/table/stalker/wood,
 /obj/item/storage/box/matches,
@@ -7983,9 +7965,11 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/sawmill)
-"Qa" = (
-/obj/structure/stalker/water/bochka/kap,
-/turf/open/stalker/floor/gryaz,
+"Qb" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
 "Qg" = (
 /obj/structure/stalker/car/gryzovik/east{
@@ -7996,12 +7980,17 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
-"Qk" = (
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
+"Qh" = (
+/obj/structure/stalker/bar_plitka,
+/obj/structure/toilet{
+	dir = 8;
+	pixel_x = -6
 	},
-/turf/open/stalker/floor/digable/grass,
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
+"Qk" = (
+/obj/structure/flora/stalker/bush,
+/turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/buildings/backwater/sawmill)
 "Qm" = (
 /obj/rad/rad_low,
@@ -8011,25 +8000,15 @@
 "QE" = (
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
-"QM" = (
-/obj/machinery/light/small,
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/renegade)
-"Rc" = (
-/obj/structure/table/stalker/wood,
-/obj/item/instrument/guitar,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "Rw" = (
-/obj/structure/flora/stalker/bush,
-/turf/open/stalker/floor/gryaz/gryaz3,
-/area/stalker/buildings/backwater/sawmill)
-"Ry" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "rengsouth"
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 2;
+	teleport_y = 245;
+	teleport_z = 1
 	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
+/turf/open/floor/plasteel/stairs,
+/area/stalker/buildings/renegade)
 "RA" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "regbar"
@@ -8040,41 +8019,33 @@
 /obj/structure/stalker/propane/dual,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
+"RL" = (
+/obj/structure/stalker/car/btrgrimy{
+	icon_state = "4"
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
 "RP" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 2;
+	teleport_x = 3;
 	teleport_y = 245;
 	teleport_z = 1
 	},
 /turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/backwater/sawmill)
-"Sa" = (
-/obj/machinery/door/poddoor/shutters{
-	auto_close = 50;
-	autoclose = 50;
-	id = "reganotherway"
+/area/stalker/buildings/renegade)
+"SD" = (
+/obj/structure/bed/stalker/mattress_bloodstain,
+/obj/effect/landmark/latejoin/renegade,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/renegade)
+"SK" = (
+/obj/machinery/button/door{
+	id = "regbar";
+	pixel_x = 25
 	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"Sk" = (
-/obj/structure/stalker/car/gryzovik_army/south{
-	icon_state = "7"
-	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
-"St" = (
-/obj/structure/stalker/tree/leafless,
-/turf/open/stalker/floor/tropa,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"Sx" = (
-/obj/structure/stalker/car/btrgrimy{
-	icon_state = "3"
-	},
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/backwater/sawmill)
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
 "SL" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/sawmill)
@@ -8092,14 +8063,22 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
+"Tb" = (
+/obj/structure/stalker/bar_plitka,
+/obj/structure/chair/stool,
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
 "Tc" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 3;
-	teleport_y = 245;
-	teleport_z = 1
+/obj/structure/stalker/stolb,
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/blowout/outdoor/backwater/sawmill)
+"Td" = (
+/obj/structure/stalker/car/btrgrimy{
+	icon_state = "7"
 	},
-/turf/open/floor/plasteel/stairs,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
 /area/stalker/buildings/backwater/sawmill)
 "Th" = (
 /obj/effect/turf_decal/stripes/full{
@@ -8135,11 +8114,9 @@
 "Tr" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/renegade)
-"TG" = (
-/obj/structure/grille/stalker{
-	icon_state = "fence3"
-	},
-/turf/open/stalker/floor/gryaz/gryaz2,
+"Tt" = (
+/obj/machinery/door/poddoor/shutters,
+/turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
 "TM" = (
 /obj/structure/stalker/car/btrgrimy{
@@ -8154,14 +8131,34 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
-"Ul" = (
-/obj/structure/stalker/bar_plitka,
-/turf/open/stalker/floor/tropa,
+"Um" = (
+/obj/structure/stalker/car/gryzovik_army/south{
+	icon_state = "5"
+	},
+/turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
+"Uo" = (
+/obj/structure/grille/stalker,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/renegade)
+"UI" = (
+/obj/machinery/door/poddoor/shutters{
+	auto_close = 50;
+	autoclose = 50;
+	id = "reganotherway"
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "UK" = (
 /obj/structure/stalker/cacheable/bochka/red,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"Vd" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/backwater/sawmill)
 "Vi" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/agroprom/beton,
@@ -8170,12 +8167,14 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/clearsky)
-"Vm" = (
-/obj/structure/stalker/car/gryzovik_army/south{
-	icon_state = "3"
+"Vt" = (
+/obj/structure/stalker/cacheable/painting/gorbachev{
+	desc = "A true Renegade";
+	eng_desc = null;
+	name = "Vladimir Putin"
 	},
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
+/turf/closed/wall/stalker/bricks,
+/area/stalker/blowout/outdoor/backwater/sawmill)
 "Vu" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -8191,37 +8190,45 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"VD" = (
+/obj/structure/bed/stalker/mattress_bloodblots,
+/obj/effect/landmark/latejoin/renegade,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/renegade)
+"VF" = (
+/obj/structure/stalker/bar_plitka,
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
 "VZ" = (
-/obj/structure/stalker/stolb,
+/obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/blowout/outdoor/backwater/sawmill)
-"Wh" = (
-/obj/machinery/light/small{
-	dir = 8
+/area/stalker/buildings/backwater/sawmill)
+"Wd" = (
+/obj/structure/chair/stool/bar,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
 	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/buildings/backwater/sawmill)
-"Wk" = (
-/obj/structure/table/stalker/wood,
-/obj/item/wrench/brass,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
+/area/stalker/buildings/renegade)
 "Wt" = (
 /turf/open/stalker/floor/lattice{
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/renegade)
-"Wy" = (
-/obj/structure/stalker/cacheable/shitok/shitok2{
-	pixel_y = 27
+"Wu" = (
+/obj/structure/stalker/car/btrgrimy{
+	icon_state = "5"
 	},
-/turf/open/stalker/floor/asphalt,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
 /area/stalker/buildings/backwater/sawmill)
 "Xa" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
 "Xb" = (
-/obj/structure/flora/stalker/bush,
+/obj/machinery/door/poddoor/shutters{
+	id = "rengeast"
+	},
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/backwater/sawmill)
 "Xi" = (
@@ -8232,11 +8239,6 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
-"Xo" = (
-/obj/structure/bed/stalker/mattress_bloodstain,
-/obj/effect/landmark/latejoin/renegade,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/renegade)
 "Xz" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
@@ -8244,20 +8246,23 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor/backwater/ironforest)
-"XY" = (
-/obj/structure/bed/stalker/mattress_bloodblots,
-/obj/effect/landmark/latejoin/renegade,
-/turf/open/stalker/floor/wood/oldgor,
+"XS" = (
+/obj/structure/grille/stalker{
+	icon_state = "fence3"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
+"XT" = (
+/obj/structure/table/stalker/wood,
+/obj/item/wrench/brass,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/buildings/backwater/sawmill)
 "Ye" = (
 /turf/open/floor/plating/foam,
 /area/stalker/buildings/renegade)
 "Yf" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "rengeast"
-	},
-/turf/open/stalker/floor/gryaz/gryaz2,
-/area/stalker/buildings/backwater/sawmill)
+/turf/open/floor/plasteel/stairs,
+/area/stalker/buildings/renegade)
 "Yl" = (
 /obj/structure/stalker/lift{
 	dir = 8
@@ -8268,31 +8273,22 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
-"Yy" = (
-/obj/structure/stalker/car/btrgrimy{
-	icon_state = "5"
-	},
-/turf/open/stalker/floor/lattice{
-	icon_state = "lattice_new2"
-	},
-/area/stalker/buildings/backwater/sawmill)
 "YE" = (
-/turf/open/floor/plasteel/stairs,
+/obj/machinery/door/poddoor/shutters/preopen,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater/sawmill)
-"YF" = (
-/obj/machinery/door/poddoor/shutters,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/renegade)
 "YP" = (
 /turf/open/stalker/floor/lattice{
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
-"YY" = (
+"YQ" = (
 /obj/structure/stalker/car/btrgrimy{
-	icon_state = "6"
+	icon_state = "3"
 	},
-/turf/open/stalker/floor/asphalt,
+/turf/open/stalker/floor/lattice{
+	icon_state = "lattice_new2"
+	},
 /area/stalker/buildings/backwater/sawmill)
 "Zc" = (
 /obj/machinery/campfire/barrel,
@@ -8300,24 +8296,24 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/renegade)
-"Zm" = (
-/turf/open/floor/plasteel/stairs/left/stalker,
+"Zq" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
-"Zv" = (
+"Zs" = (
+/turf/open/stalker/floor/gryaz/gryaz2,
+/area/stalker/buildings/renegade)
+"Zt" = (
 /obj/machinery/button/door{
-	id = "rengsouth";
-	pixel_y = 25
+	id = "rengeast";
+	pixel_x = -25
 	},
-/turf/open/stalker/floor/digable/grass,
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/buildings/renegade)
 "ZB" = (
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/backwater/sawmill)
-"ZE" = (
-/obj/structure/chair/sofa,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/renegade)
 "ZK" = (
 /obj/item/cigbutt,
 /turf/open/stalker/floor/lattice{
@@ -12196,19 +12192,19 @@ aQ
 aQ
 aQ
 cV
-RP
-YE
+Rw
+Yf
 cm
 Xa
 Xa
 Xa
-Lo
-Wk
+La
+XT
 Xa
 HM
-Wk
-EA
-Ol
+XT
+Mz
+Zq
 cV
 cs
 cs
@@ -12452,21 +12448,21 @@ aQ
 aQ
 aQ
 cV
-Tc
-YE
+RP
+Yf
 cm
 Xa
 cV
-Wy
+Ne
 YP
 YP
 YP
 YP
 YP
 YP
-Gy
+Nb
 cV
-Co
+Nt
 aR
 aR
 cs
@@ -12716,9 +12712,9 @@ Xa
 Xa
 YP
 OT
-Vm
-MC
-Sk
+HG
+Um
+HI
 Xa
 Xa
 ZB
@@ -12967,14 +12963,14 @@ cV
 cm
 cm
 cm
-Zm
+Hh
 Xa
-Qa
+JR
 Kh
 Xi
 SS
 Mo
-PI
+PH
 YP
 YP
 ZB
@@ -13223,7 +13219,7 @@ SL
 SL
 SL
 cm
-Zm
+Hh
 Xa
 PX
 Kh
@@ -13728,8 +13724,8 @@ aQ
 aQ
 aQ
 cV
-JT
-JT
+cV
+cV
 cV
 cV
 cm
@@ -13741,10 +13737,10 @@ Xa
 YP
 Wt
 Wt
-HZ
-Yy
-Sx
-ED
+Td
+Wu
+YQ
+DO
 cV
 aR
 cs
@@ -13998,9 +13994,9 @@ Xa
 GT
 Ue
 TM
-YY
-IZ
-ec
+Mm
+RL
+Fo
 cV
 aR
 cs
@@ -14245,8 +14241,8 @@ cN
 aP
 cV
 cV
-JX
-JX
+YE
+YE
 cV
 cV
 cV
@@ -14255,8 +14251,8 @@ GQ
 cV
 cV
 cV
-Pf
-Pf
+Jg
+Jg
 cV
 cV
 cs
@@ -14752,9 +14748,9 @@ aP
 cb
 cO
 Ep
-Ky
+JT
 cO
-Oi
+Mh
 cV
 cm
 dh
@@ -14769,7 +14765,7 @@ Ye
 Ye
 Wt
 Wt
-GU
+LE
 cV
 eQ
 cs
@@ -15008,9 +15004,9 @@ aP
 aP
 cO
 Gs
-Ky
+JT
 cO
-Ok
+Oi
 cV
 cm
 GC
@@ -15018,17 +15014,17 @@ Kq
 cm
 cV
 CQ
-It
-It
+Wd
+Wd
 Ye
 Ye
 eC
 Wt
 Wt
-Xo
+SD
 cV
 cs
-St
+Fp
 cs
 bd
 aP
@@ -15264,8 +15260,8 @@ aP
 aP
 cO
 Ep
+JT
 Ky
-Ll
 cs
 cV
 cm
@@ -15274,14 +15270,14 @@ Kw
 cm
 cV
 Nk
-KX
+Fz
 dN
 eC
 cV
-LL
+PB
 PW
 Wt
-XY
+VD
 cV
 aP
 cs
@@ -15531,18 +15527,18 @@ cm
 cV
 du
 Wt
-Ir
-Gj
+Vt
+NY
 cV
-ZE
+Ib
 Zc
 Wt
-Rc
+FU
 cV
 aP
 cs
 cs
-Mh
+Ll
 aP
 fK
 bq
@@ -15788,21 +15784,21 @@ cV
 Ma
 GT
 GT
-Jd
+SK
 cV
-PM
+Nc
 Tj
 SO
-Gz
+Po
 cV
 aP
 cs
 cs
-OJ
+Or
 KO
-eB
+Pf
 KO
-OJ
+Or
 aP
 aP
 bq
@@ -16033,7 +16029,7 @@ aP
 aR
 aS
 aP
-Mh
+Ll
 cs
 cV
 cV
@@ -16047,18 +16043,18 @@ RA
 cV
 cV
 cV
-Sa
-Sa
+UI
+UI
 cV
 cV
 cs
 cs
 cs
-Dj
+Qb
 KO
-OJ
+Or
 KO
-Wh
+Vd
 aP
 aP
 bq
@@ -16301,7 +16297,7 @@ Je
 ks
 ks
 Je
-ES
+DT
 cs
 aQ
 aQ
@@ -16312,7 +16308,7 @@ aQ
 aQ
 Xa
 Xa
-Ry
+LR
 Xa
 Xa
 aQ
@@ -16552,12 +16548,12 @@ aR
 cs
 cs
 cs
-Ul
-IA
-IS
-HI
-HI
-Kb
+VF
+Tb
+Qh
+LT
+LT
+Fh
 cs
 cs
 cs
@@ -16568,7 +16564,7 @@ aQ
 aQ
 Xa
 Xa
-Ry
+LR
 Xa
 Xa
 aQ
@@ -16824,7 +16820,7 @@ aQ
 aQ
 Xa
 Xa
-Ry
+LR
 Xa
 Xa
 aQ
@@ -17074,13 +17070,13 @@ aR
 aR
 aP
 aP
-Mh
+Ll
 aQ
 aQ
 aQ
 GT
 GT
-YF
+Tt
 GT
 GT
 aQ
@@ -17316,16 +17312,16 @@ aR
 aR
 be
 cs
-VZ
+Tc
 cs
 cs
 aP
-Mh
+Ll
 aP
 aP
 aP
 aP
-Mh
+Ll
 aR
 aP
 eI
@@ -17334,11 +17330,11 @@ aP
 aQ
 aQ
 aQ
-Pr
-Jr
-Pi
-Zv
-Pr
+KM
+Du
+LK
+Pb
+KM
 aQ
 aQ
 ad
@@ -17590,11 +17586,11 @@ aP
 aQ
 aQ
 aQ
-Pi
-DU
-ME
-DU
-Pi
+LK
+HO
+Uo
+HO
+LK
 aQ
 aQ
 ad
@@ -19620,7 +19616,7 @@ cm
 cP
 bo
 aP
-Mh
+Ll
 cX
 dc
 dk
@@ -21155,13 +21151,13 @@ bn
 bo
 bn
 bn
-Qk
-Xb
+OJ
+VZ
 ch
 ch
 GT
-PH
-Pi
+DL
+LK
 aQ
 aQ
 aQ
@@ -21411,12 +21407,12 @@ cw
 cL
 cS
 KO
-Rw
+Qk
 ds
 ch
 Xa
 GT
-GL
+Om
 GT
 aQ
 aQ
@@ -21666,14 +21662,14 @@ bp
 bp
 bp
 bp
+Ok
 Or
-OJ
-Yf
-HH
-HH
-Js
-Pi
-TG
+Xb
+CV
+CV
+Lv
+LK
+XS
 bF
 bp
 bp
@@ -21927,9 +21923,9 @@ KO
 ds
 ch
 Xa
-Pt
-GE
-DU
+Zs
+Zt
+HO
 bq
 bg
 bg
@@ -22178,14 +22174,14 @@ bq
 bq
 bG
 ay
+Or
 OJ
-Qk
 ds
 Xa
 Xa
 GT
-QM
-Pi
+FI
+LK
 bq
 bg
 bg

@@ -214,13 +214,13 @@
 /obj/structure/reagent_dispensers/compostbinmetal/update_icon()
 	var/percent = round((reagents.total_volume / 12000 * 100))
 	switch(percent)
-		if(0 to 2400)
+		if(0 to 24)
 			icon_state = "[initial(icon_state)]-4"
-		if(25 to 4900)
+		if(25 to 49)
 			icon_state = "[initial(icon_state)]-3"
-		if(50 to 7400)
+		if(50 to 74)
 			icon_state = "[initial(icon_state)]-2"
-		if(75 to 9900)
+		if(75 to 99)
 			icon_state = "[initial(icon_state)]-1"
 		if(100)
 			icon_state = "[initial(icon_state)]"

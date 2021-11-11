@@ -1,10 +1,14 @@
 /turf/closed
 	layer = CLOSED_TURF_LAYER
+	plane = WALL_PLANE
 	opacity = 1
 	density = TRUE
 	blocks_air = TRUE
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	rad_insulation = RAD_MEDIUM_INSULATION
+
+/turf/closed/Initialize()
+	. = ..()
 
 /turf/closed/AfterChange()
 	. = ..()

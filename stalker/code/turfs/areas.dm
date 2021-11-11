@@ -3,52 +3,17 @@
 	name = "Strange Location"
 	icon_state = "away"
 	has_gravity = STANDARD_GRAVITY
-	//dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 /area/stalker/blowout
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_DAY
+	ambient_environment_night = DEFAULT_AMBIENT_ENVIRONMENT_NIGHT
 
 /area/stalker/blowout/outdoor
 	name = "Outdoor"
 	icon = 'stalker/icons/areas_outdoor_blowout.dmi'
 	icon_state = "outdoor"
 	open_space = TRUE
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
-	ambient_music = list('stalker/sound/ambience/rnd_outdoor/rnd_bird_1.ogg','stalker/sound/ambience/rnd_outdoor/rnd_bird_2.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_bird_3.ogg','stalker/sound/ambience/rnd_outdoor/rnd_bird_4.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_bird_5.ogg','stalker/sound/ambience/rnd_outdoor/rnd_bird_6.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_bird_7.ogg','stalker/sound/ambience/rnd_outdoor/rnd_bird_8.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_bird_9.ogg','stalker/sound/ambience/rnd_outdoor/rnd_bird_10.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_bird_11.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_dog1.ogg','stalker/sound/ambience/rnd_outdoor/rnd_dog2.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_dog3.ogg','stalker/sound/ambience/rnd_outdoor/rnd_dog4.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_dog5.ogg','stalker/sound/ambience/rnd_outdoor/rnd_dog6.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_dog7.ogg','stalker/sound/ambience/rnd_outdoor/rnd_dog8.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_dog9.ogg','stalker/sound/ambience/rnd_outdoor/rnd_dog10.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_1.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_2.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_3.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_4.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_5.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_6.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_7.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_8.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_9.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_10.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_crow_11.ogg','stalker/sound/ambience/rnd_outdoor/rnd_crow_12.ogg',
-					'stalker/sound/ambience/rnd_outdoor/ambient_wind_1.ogg','stalker/sound/ambience/rnd_outdoor/ambient_wind_2.ogg',
-					'stalker/sound/ambience/rnd_outdoor/ambient_wind_3.ogg','stalker/sound/ambience/rnd_outdoor/ambient_wind_4.ogg',
-					'stalker/sound/ambience/rnd_outdoor/rnd_insect_8.ogg',
-					)
-	ambient_environment_night = list('stalker/sound/ambience/rnd_outdoor_night/rnd_moan.ogg','stalker/sound/ambience/rnd_outdoor_night/rnd_moan2.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/rnd_moan3.ogg','stalker/sound/ambience/rnd_outdoor_night/rnd_moan4.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/rnd_moan5.ogg','stalker/sound/ambience/rnd_outdoor_night/rnd_moan6.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/ambient_night_1.ogg','stalker/sound/ambience/rnd_outdoor_night/ambient_night_2.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/ambient_night_3.ogg','stalker/sound/ambience/rnd_outdoor_night/ambient_night_4.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/ambient_night_5.ogg','stalker/sound/ambience/rnd_outdoor_night/ambient_night_6.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/ambient_night_7.ogg','stalker/sound/ambience/rnd_outdoor_night/ambient_night_8.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/ambient_night_9.ogg','stalker/sound/ambience/rnd_outdoor_night/ambient_night_10.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_01.ogg','stalker/sound/ambience/rnd_outdoor_night/wolf_howl_02.ogg',
-					'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_03.ogg','stalker/sound/ambience/rnd_outdoor_night/wolf_howl_04.ogg',
-					)
-	ambient_environment_cooldown = 420
-	ambient_background = list(null, null,'stalker/sound/ambience/rnd_outdoor_night/zat_bkg_tuman.ogg', 'stalker/sound/ambience/rnd_outdoor_night/ambient_night_11.ogg', null) // 'stalker/sound/ambience/rnd_outdoor/rnd_insect_5.ogg' - evening
-	ambient_background_cooldown = list(null, null, 220, 420, null) //280 - evening
 	environment = 15
 
 /area/stalker/sidor
@@ -56,9 +21,6 @@
 	icon = 'stalker/icons/areas_buildings.dmi'
 	icon_state = "sidor"
 	requires_power = 1
-	//ambient_music = list()
-	//ambient_background = list('stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg', 'stalker/sound/ambience/sidor_music2.ogg')//list('stalker/sound/ambience/sidor_music.ogg','stalker/sound/ambience/sidor_music2.ogg')
-	//ambient_background_cooldown = list(700, 700, 700, 700)
 	environment = 5
 	safezone = 1
 
@@ -180,46 +142,10 @@
 /area/stalker/buildings/backwater/ironforest
 	name = "Backwater - Iron Forest \[NB\]"
 	icon_state = "ironforest"
-	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg')
-	ambient_background_cooldown = list(270, 270, 270, 270)
-	ambient_environment = list('stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_1.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_2.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_3.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_4.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_5.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_5.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_11.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_11.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_12.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_4.ogg',
-				)
+	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg')
+	ambient_background_cooldown = list(270)
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_UNDERGROUND
+	ambient_environment_night = list()
 	ambient_environment_cooldown = 800
 	environment = 8
 
@@ -237,46 +163,10 @@
 	name = "Backwater - Krug Antenna Complex \[NB\]"
 	icon_state = "krug"
 	environment = 5
-	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg')
-	ambient_background_cooldown = list(270, 270, 270, 270)
-	ambient_environment = list('stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_1.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_2.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_3.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_4.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_5.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_5.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_11.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_11.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_12.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_4.ogg',
-				)
+	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg')
+	ambient_background_cooldown = list(270)
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_UNDERGROUND
+	ambient_environment_night = list()
 	ambient_environment_cooldown = 800
 	environment = 8
 
@@ -366,46 +256,10 @@
 /area/stalker/buildings/backwater/plateau
 	name = "Backwater - Southern Plateau \[NB\]"
 	icon_state = "plateau"
-	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg')
-	ambient_background_cooldown = list(270, 270, 270, 270)
-	ambient_environment = list('stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_1.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_2.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_3.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_4.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_5.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_5.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_11.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_11.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_12.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_4.ogg',
-				)
+	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg')
+	ambient_background_cooldown = list(270)
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_UNDERGROUND
+	ambient_environment_night = list()
 	ambient_environment_cooldown = 800
 	environment = 8
 
@@ -440,44 +294,8 @@
 	name = "Tunnel"
 	icon_state = "tunnel_s"
 	environment = 13
-	ambient_environment = list('stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_1.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_2.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_3.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_4.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_5.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_5.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_11.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_11.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_12.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_4.ogg',
-				)
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_UNDERGROUND
+	ambient_environment_night = list()
 	ambient_environment_cooldown = 800
 
 /area/stalker/blowout/kordon/tunnel
@@ -548,49 +366,12 @@
 	icon_state = "caves"
 	requires_power = 1
 	ambient_music = null
-	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg', 'stalker/sound/ambience/ugrnd/howled_4.ogg')
-	ambient_background_cooldown = list(270, 270, 270, 270)
-	ambient_environment = list('stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_1.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_2.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_3.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_4.ogg',
-				'stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_5.ogg','stalker/sound/ambience/ugrnd/rnd_ugrnd_amb_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_banging_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_ambient_machine_5.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_drip_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drip_11.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_drone_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_drone_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_lab_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_lab_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_metal_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_metal_7.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_4.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_5.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_6.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_7.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_8.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_9.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_10.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_noise_11.ogg','stalker/sound/ambience/ugrnd/ugrnd_noise_12.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_1.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_2.ogg',
-				'stalker/sound/ambience/ugrnd/ugrnd_whispers_3.ogg','stalker/sound/ambience/ugrnd/ugrnd_whispers_4.ogg',
-				)
+	ambient_background = list('stalker/sound/ambience/ugrnd/howled_4.ogg')
+	ambient_background_cooldown = list(270)
+	ambient_environment = DEFAULT_AMBIENT_ENVIRONMENT_UNDERGROUND
+	ambient_environment_night = list()
 	ambient_environment_cooldown = 800
 	environment = 8
-
 
 /area/stalker/byadt
 	requires_power = 1

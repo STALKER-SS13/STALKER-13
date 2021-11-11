@@ -5763,8 +5763,7 @@
 /area/stalker/buildings/backwater/krug)
 "HZ" = (
 /obj/effect/decal/cleanable/cobweb,
-/obj/rad/rad_medium,
-/turf/open/floor/plating/dirt,
+/turf/closed/wall/rust,
 /area/stalker)
 "Ia" = (
 /obj/structure/stalker/bunker{
@@ -6148,6 +6147,12 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"Nf" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/closed/wall/rust,
+/area/stalker)
 "Np" = (
 /mob/living/simple_animal/hostile/mutant/snork{
 	health = 250;
@@ -6717,7 +6722,7 @@
 "VQ" = (
 /obj/rad/rad_low,
 /obj/effect/step_trigger/teleporter{
-	dir = 8;
+	dir = 4;
 	teleport_x = 129;
 	teleport_y = 5;
 	teleport_z = 6
@@ -6820,7 +6825,7 @@
 /area/stalker/kordon/tunnel)
 "WT" = (
 /obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/plating/dirt/dark,
+/turf/closed/wall/stalker/bricks_yellow,
 /area/stalker)
 "WX" = (
 /obj/structure/table/stalker,
@@ -30416,10 +30421,10 @@ ad
 ad
 ad
 yM
-yM
-yM
-yM
-yM
+oD
+My
+oD
+My
 dP
 dT
 dT
@@ -30675,8 +30680,8 @@ ag
 yM
 HZ
 VQ
-Bc
-yM
+Nf
+My
 dP
 dT
 dU
@@ -30931,9 +30936,9 @@ cZ
 ag
 Wd
 oD
-qv
-Wg
 yM
+Wg
+My
 dP
 dT
 dT
@@ -34553,10 +34558,10 @@ dT
 dP
 dP
 dP
-dP
-dP
-dP
-ai
+vU
+vU
+vU
+BR
 ai
 ai
 ai
@@ -34810,11 +34815,11 @@ dT
 dT
 dP
 BR
+rJ
+rJ
+rJ
+rJ
 BR
-BR
-BR
-BR
-ai
 ai
 ai
 ai
@@ -35067,11 +35072,11 @@ dT
 dT
 dP
 BR
-rJ
+BR
 ND
+BR
 rJ
 BR
-ai
 ai
 ai
 ai
@@ -35327,8 +35332,8 @@ BR
 rJ
 WT
 rJ
+rJ
 BR
-ai
 ai
 ai
 ai

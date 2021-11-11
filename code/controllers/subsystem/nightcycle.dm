@@ -11,38 +11,59 @@
 #define CYCLE_SUNSET 	783000
 #define CYCLE_NIGHTTIME 810000
 
+GLOBAL_LIST_INIT(nightcycle_turfs, list())
+
 SUBSYSTEM_DEF(nightcycle)
 	name = "Day/Night Cycle"
-	wait = 50
-	runlevels = RUNLEVEL_LOBBY|RUNLEVEL_SETUP|RUNLEVEL_GAME
+	wait = 5 //5 ticks in between checks, this thing doesn't need to fire so fast, as it's tied to gameclock not its own ticker
+	//This will also give the game time to light up the columns and not choke
 	//var/flags = 0			//see MC.dm in __DEFINES Most flags must be set on world start to take full effect. (You can also restart the mc to force them to process again
 	can_fire = TRUE
 	//var/list/timeBrackets = list("SUNRISE" = , "MORNING" = , "DAYTIME" = , "EVENING" = , "" = ,)
 	var/currentTime
 	var/sunColour
-	var/sunPower = 0.75
-	var/sunRange = 3
-	//var/currentColumn
-	var/working = 3
-	var/preparing = TRUE
-	var/list/OT
-	var/list/BT
-	//var/doColumns //number of columns to do at a time
+	var/sunPower
+	var/sunRange
+	var/currentColumn
+	var/currentZLevel
+	var/working = 0
+	var/doColumns //number of columns to do at a time
+	var/newTime
+	var/list/day_night_levels = list()
+
+//used to initialize the subsystem AFTER the map has loaded
+/datum/controller/subsystem/nightcycle/Initialize(start_timeofday)
+
+	//loop over all blowout areas and set them up to use the day night cycle
+	for(var/area/stalker/blowout/B in world)
+
+		//grab all floors in this area
+		for(var/turf/open/stalker/floor/F in B)
+
+			//enable the day night effects on this turf
+			F.turf_light_range = 3
+			F.turf_light_range = 0.75
+
+			//make sure this zlevel is included
+			var/cur_z = "[F.z]"
+			day_night_levels |= cur_z
+
+	return ..(start_timeofday)
 
 /datum/controller/subsystem/nightcycle/fire(resumed = FALSE)
-	if (preparing)
-		collectTurfs()
-	//if (working)
-	//	doWork()
-	//	return
-	if (nextBracket())
+	//message_admins("/datum/controller/subsystem/nightcycle/fire([resumed]) check1")
+	if(nextBracket())
 		working = 1
-		//currentColumn = 1
+		currentColumn = 1
+		currentZLevel = 1
 
+	CHECK_TICK
+	if (working)
+		//message_admins("/datum/controller/subsystem/nightcycle/fire([resumed]) working tick")
+		doWork()
 
 /datum/controller/subsystem/nightcycle/proc/nextBracket()
 	var/Time = station_time()
-	var/newTime
 
 	switch (Time)
 		if (CYCLE_SUNRISE 	to CYCLE_MORNING - 1)
@@ -59,52 +80,106 @@ SUBSYSTEM_DEF(nightcycle)
 			newTime = "NIGHTTIME"
 
 	if (newTime != currentTime)
+		//message_admins("new time bracket triggered /datum/controller/subsystem/nightcycle/proc/nextBracket() Time:[Time] newTime:[newTime]")
 		currentTime = newTime
 		updateLight(currentTime)
+		/*if(newTime == "MORNING") //Only change lamps when we need to
+			for(var/obj/structure/lamp_post/LP in GLOB.lamppost)
+				LP.icon_state = "[initial(LP.icon_state)]"
+				LP.set_light(0)
+		else if(newTime == "SUNSET")
+			for(var/obj/structure/lamp_post/LP in GLOB.lamppost)
+				LP.icon_state = "[initial(LP.icon_state)]-on"
+				LP.set_light(LP.on_range,LP.on_power,LP.light_color)*/
 		. = TRUE
+	else
+		//message_admins("/datum/controller/subsystem/nightcycle/proc/nextBracket() Time:[Time] newTime:[newTime]")
 
-/datum/controller/subsystem/nightcycle/proc/collectTurfs()
-	OT = get_area_turfs(/area/stalker/blowout/outdoor, 2, subtypes = TRUE)
-	BT = get_area_turfs(/area/stalker/blowout/buildings, 2, subtypes = TRUE)
-	preparing = FALSE
+/datum/controller/subsystem/nightcycle/proc/doWork()
+	update_line(currentZLevel)
+	/*for(var/curz = 1, curz <= world.maxz, curz++)
+		update_line(curz)*/
+
+/datum/controller/subsystem/nightcycle/proc/update_line(var/z_level)
+	var/list/currentTurfs = list()
+	var/x = min(currentColumn + doColumns, world.maxx)
+//	for (var/z in SSmapping.levels_by_trait(ZTRAIT_STATION))
+	//HACK. Z level 2 is always surface and nobody sets their fucking traits correctly.
+	//This should be done with a ztrait for surface/subsurface
+	var/start_turf = locate(x,world.maxy,z_level)
+	var/end_turf = locate(x,1,z_level)
+
+//	currentTurfs = block(locate(currentColumn,1,z), locate(x,world.maxy,z)) //this is probably brutal on the overhead
+	currentTurfs = getline(start_turf,end_turf)
+	for (var/turf/T in currentTurfs)
+		if(T.turf_light_range && !QDELETED(T)) //Turfs are qdeleted on changeturf
+			T.set_light(T.turf_light_range, sunPower, sunColour)
+
+	currentColumn = x + 1
+	if (currentColumn > world.maxx)
+		currentColumn = 1
+		currentZLevel = z_level + 1
+
+	if (currentZLevel > world.maxz)
+		currentZLevel = 1
+		working = 0
+		return
+
+/datum/controller/subsystem/nightcycle/proc/set_time_of_day(time_name)
+	var/new_time = 0
+	switch (time_name)
+		if ("SUNRISE")
+			new_time = CYCLE_SUNRISE
+		if ("MORNING")
+			new_time = CYCLE_MORNING
+		if ("DAYTIME")
+			new_time = CYCLE_DAYTIME
+		if ("AFTERNOON")
+			new_time = CYCLE_AFTERNOON
+		if ("SUNSET")
+			new_time = CYCLE_SUNSET
+		if("NIGHTTIME")
+			new_time = CYCLE_NIGHTTIME
+
+	if(new_time != 0)
+		var/old_time = station_time()
+		SSticker.gametime_offset += new_time - old_time
 
 /datum/controller/subsystem/nightcycle/proc/updateLight(newTime)
 	switch (newTime)
 		if ("SUNRISE")
-			to_chat(world, "<b>6:00</b> - Dawn")
-			sunColour = "#ddd1b3"
-			//sunPower = 0.3
+			sunColour = "#ffd1b3"
+			sunPower = 0.3
 		if ("MORNING")
-			to_chat(world, "<b>6:45</b> - Morning comes")
-			sunColour = "#ddd2e6"
-			//sunPower = 0.5
+			sunColour = "#fff2e6"
+			sunPower = 0.5
 		if ("DAYTIME")
-			to_chat(world, "<b>11:45</b> - The day is coming")
-			sunColour = "#dddddd"
-			//sunPower = 0.75
+			sunColour = "#FFFFFF"
+			sunPower = 0.75
 		if ("AFTERNOON")
-			to_chat(world, "<b>15:45</b> - Dusk")
-			sunColour = "#ddd2e6"
-			//sunPower = 0.5
+			sunColour = "#fff2e6"
+			sunPower = 0.5
 		if ("SUNSET")
-			to_chat(world, "<b>21:45</b> - Sunset")
-			sunColour = "#ddaaaa"
-			//sunPower = 0.3
+			sunColour = "#ffcccc"
+			sunPower = 0.3
 		if("NIGHTTIME")
-			to_chat(world, "<b>22:30</b> - The night is coming")
 			sunColour = "#00111a"
-			//sunPower = 0.15
-		if("BLOWOUT")
-			sunColour = "#ff3333"
+			sunPower = 0.20
 
-	if (SSblowout.isblowout)
-		sunColour = "#ff3333"
-
-	for(var/turf/open/stalker/T in OT)
-		T.set_light(sunRange, sunPower, sunColour)
-	for(var/turf/open/stalker/T in BT)
-		T.set_light(sunPower - 0.4, sunRange - 2, sunColour)
-	return
+/datum/controller/subsystem/nightcycle/proc/is_daylight()
+	switch (currentTime)
+		if ("SUNRISE")
+			return 0
+		if ("MORNING")
+			return 1
+		if ("DAYTIME")
+			return 1
+		if ("AFTERNOON")
+			return 1
+		if ("SUNSET")
+			return 0
+		if("NIGHTTIME")
+			return 0
 
 #undef CYCLE_SUNRISE
 #undef CYCLE_MORNING

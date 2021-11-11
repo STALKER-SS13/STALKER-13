@@ -150,8 +150,8 @@
 				else
 					continue
 
-			else if(T.lighting_object || T.sunlighting_object)
-				if(((T.lighting_object.invisibility <= M.see_invisible) || (T.sunlighting_object.invisibility <= M.see_invisible)) && T.is_softly_lit()) //the light object is dark and not invisible to us
+			else if(T.lighting_object)
+				if((T.lighting_object.invisibility <= M.see_invisible) && T.is_softly_lit()) //the light object is dark and not invisible to us
 					if(blind_message)
 						msg = blind_message
 					else
@@ -918,20 +918,9 @@
 
 /mob/proc/sync_lighting_plane_alpha()
 	if(hud_used)
-		/*
 		var/obj/screen/plane_master/lighting/L = hud_used.plane_masters["[LIGHTING_PLANE]"]
-		var/obj/screen/plane_master/sunlighting/SL = hud_used.plane_masters["[SUNLIGHTING_PLANE]"]
 		if (L)
 			L.alpha = lighting_alpha
-		if (SL)
-			SL.alpha = lighting_alpha
-		*/
-		var/obj/screen/plane_master/game_world/G = hud_used.plane_masters["[GAME_PLANE]"]
-		if(G)
-			if(lighting_alpha)
-				G.invisibility = 0
-			else
-				G.invisibility = 101
 
 /mob/proc/update_mouse_pointer()
 	if (!client)

@@ -880,26 +880,16 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set name = "Set Time of Day"
 	set category = "Stalker"
 
-	var/daytime = input(usr, "Choose time of day to set)", "S.T.A.L.K.E.R.") as null|anything in list("Morning", "Day", "Evening", "Night")
+	var/daytime = input(usr, "Choose time of day to set)", "S.T.A.L.K.E.R.") as null|anything in list("SUNRISE", "MORNING", "DAYTIME", "AFTERNOON","SUNSET","NIGHTTIME")
 
 	if(!daytime)
 		return
 
-	switch(daytime)
-		if("Morning")
-			daytime = 1//"MORNING"
-		if("Day")
-			daytime = 2//"DAYTIME"
-		if("Evening")
-			daytime = 3//"AFTERNOON"
-		if("Night")
-			daytime = 4//"NIGHTTIME"
+	SSnightcycle.set_time_of_day(daytime)
 
-	//SSnightcycle.updateLight(daytime)
-	set_time_of_day(daytime)
 	to_chat(usr, "<span class='interface'>Time of day successfully updated.</span>")
-	log_admin("[key_name(usr)] changed time of day to [daytime].")
-	message_admins("[key_name_admin(usr)] changed time of day to [daytime].")
+	log_admin("[key_name(usr)] changed time of day to [daytime] [station_time_timestamp()].")
+	message_admins("[key_name_admin(usr)] changed time of day to [daytime] [station_time_timestamp()].")
 
 /client/proc/SetAverageCooldownBlowout()
 	set name = "Set Blowout Cooldown"

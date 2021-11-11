@@ -1028,7 +1028,7 @@
 "es" = (
 /obj/structure/bed/stalker/mattress_bloody,
 /obj/effect/landmark/latejoin/renegade,
-/turf/open/stalker/floor/gryaz,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "eu" = (
 /obj/structure/stalker/bigyashik/melkiy,
@@ -1981,10 +1981,6 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/shevchenko)
-"it" = (
-/obj/structure/chair/sofa,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/sawmill)
 "ix" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/lattice,
@@ -7450,12 +7446,16 @@
 /obj/structure/chair/stool/bar,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Da" = (
+/obj/structure/chair/sofa,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "Dl" = (
 /obj/machinery/door/poddoor/shutters/preopen,
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big{
 	pixel_x = -2
 	},
-/turf/open/stalker/floor/gryaz/gryaz2,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
 "Ds" = (
 /obj/effect/step_trigger/teleporter{
@@ -7600,6 +7600,11 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/buildings/backwater/sawmill)
+"Hr" = (
+/obj/machinery/campfire,
+/obj/anomaly/jarka,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "HB" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
@@ -7654,6 +7659,10 @@
 	tag = "icon-log1 (NORTH)"
 	},
 /turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
+"IL" = (
+/obj/structure/closet/crate/stalker/blue,
+/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/backwater/sawmill)
 "IM" = (
 /obj/structure/grille/stalker,
@@ -7728,6 +7737,10 @@
 	dir = 8
 	},
 /area/stalker/buildings/renegade)
+"Ke" = (
+/obj/structure/chair/sofa/right,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "Kh" = (
 /turf/open/stalker/floor/water,
 /area/stalker/buildings/backwater/sawmill)
@@ -7787,19 +7800,11 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
-"KR" = (
-/obj/structure/closet/crate/stalker/blue,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/backwater/sawmill)
 "KY" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/stalker/floor/tropa,
-/area/stalker/buildings/backwater/sawmill)
-"Li" = (
-/obj/structure/chair/sofa/left,
-/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/sawmill)
 "Ll" = (
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -7839,6 +7844,10 @@
 	},
 /turf/closed/wall/stalker/bricks,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"LA" = (
+/obj/anomaly/puh,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/backwater/sawmill)
 "LB" = (
 /obj/structure/stalker/car/btrgrimy{
 	icon_state = "7"
@@ -8079,10 +8088,6 @@
 /obj/structure/chair/sofa/right,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
-"Ro" = (
-/obj/structure/chair/sofa/right,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/sawmill)
 "Rp" = (
 /obj/structure/stalker/car/btrgrimy{
 	icon_state = "6"
@@ -8200,10 +8205,6 @@
 	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
-"TB" = (
-/obj/anomaly/puh,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/backwater/sawmill)
 "TM" = (
 /obj/structure/stalker/car/btrgrimy{
 	icon_state = "8"
@@ -8231,11 +8232,6 @@
 /obj/structure/stalker/cacheable/bochka/red,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
-"Vc" = (
-/obj/machinery/campfire,
-/obj/anomaly/jarka,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/buildings/backwater/sawmill)
 "Vi" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/agroprom/beton,
@@ -8295,6 +8291,10 @@
 /area/stalker/buildings/renegade)
 "WD" = (
 /obj/structure/stalker/water/bochka/kap,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
+"WV" = (
+/obj/structure/chair/sofa/left,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/sawmill)
 "Xa" = (
@@ -13013,11 +13013,11 @@ aQ
 aQ
 aQ
 cV
-TB
+LA
 SL
 PX
 cV
-KR
+IL
 cm
 cm
 GK
@@ -13529,7 +13529,7 @@ cB
 cm
 cm
 cV
-Ro
+Ke
 SL
 SL
 Xa
@@ -13785,8 +13785,8 @@ cV
 cV
 cV
 cV
-it
-Vc
+Da
+Hr
 SL
 cm
 cV
@@ -14041,7 +14041,7 @@ cJ
 cb
 aP
 cV
-Li
+WV
 SL
 SL
 SL
@@ -14565,7 +14565,7 @@ Gn
 cV
 KL
 Tr
-cC
+cx
 Wv
 cV
 eP

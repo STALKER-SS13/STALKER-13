@@ -1981,6 +1981,10 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/backwater/shevchenko)
+"it" = (
+/obj/structure/chair/sofa,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "ix" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/lattice,
@@ -7783,11 +7787,19 @@
 /obj/structure/flora/stalker/bush,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"KR" = (
+/obj/structure/closet/crate/stalker/blue,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/backwater/sawmill)
 "KY" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
+"Li" = (
+/obj/structure/chair/sofa/left,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/sawmill)
 "Ll" = (
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -7916,7 +7928,9 @@
 	},
 /area/stalker/buildings/backwater/sawmill)
 "NF" = (
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters{
+	id = "rengsouth"
+	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/buildings/renegade)
 "NJ" = (
@@ -8065,6 +8079,10 @@
 /obj/structure/chair/sofa/right,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"Ro" = (
+/obj/structure/chair/sofa/right,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "Rp" = (
 /obj/structure/stalker/car/btrgrimy{
 	icon_state = "6"
@@ -8182,6 +8200,10 @@
 	},
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
+"TB" = (
+/obj/anomaly/puh,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/backwater/sawmill)
 "TM" = (
 /obj/structure/stalker/car/btrgrimy{
 	icon_state = "8"
@@ -8209,6 +8231,11 @@
 /obj/structure/stalker/cacheable/bochka/red,
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"Vc" = (
+/obj/machinery/campfire,
+/obj/anomaly/jarka,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings/backwater/sawmill)
 "Vi" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/agroprom/beton,
@@ -12986,11 +13013,11 @@ aQ
 aQ
 aQ
 cV
-cm
+TB
 SL
 PX
 cV
-cm
+KR
 cm
 cm
 GK
@@ -13247,7 +13274,7 @@ cm
 SL
 SL
 SL
-SL
+cm
 cm
 GK
 Xa
@@ -13502,7 +13529,7 @@ cB
 cm
 cm
 cV
-SL
+Ro
 SL
 SL
 Xa
@@ -13758,13 +13785,13 @@ cV
 cV
 cV
 cV
-cm
-cm
+it
+Vc
 SL
-SL
+cm
 cV
-Xa
-YP
+GT
+Wt
 Wt
 Wt
 LB
@@ -14014,13 +14041,13 @@ cJ
 cb
 aP
 cV
-cm
-cm
+Li
 SL
 SL
 SL
-Xa
-Xa
+SL
+GT
+GT
 GT
 Ue
 TM

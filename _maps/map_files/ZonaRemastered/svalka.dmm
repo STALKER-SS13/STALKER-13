@@ -4899,7 +4899,7 @@
 "nX" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 93;
+	teleport_x = 91;
 	teleport_y = 240;
 	teleport_z = 2
 	},
@@ -5525,14 +5525,6 @@
 	layer = 1.8
 	},
 /area/stalker/blowout/outdoor)
-"sN" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 117;
-	teleport_y = 247;
-	teleport_z = 3
-	},
-/turf/closed/mineral,
-/area/stalker)
 "sO" = (
 /obj/structure/stalker/car/moskvich/south{
 	icon_state = "4";
@@ -6314,8 +6306,8 @@
 /area/stalker/blowout/svalka/buildings)
 "zZ" = (
 /obj/effect/step_trigger/teleporter{
-	dir = 4;
-	teleport_x = 110;
+	dir = 8;
+	teleport_x = 108;
 	teleport_y = 215;
 	teleport_z = 2
 	},
@@ -21722,7 +21714,7 @@ MN
 aa
 VK
 aa
-sN
+aa
 aa
 aa
 MN

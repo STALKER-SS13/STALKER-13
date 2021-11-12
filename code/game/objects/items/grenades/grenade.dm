@@ -74,6 +74,7 @@
 		if(msg)
 			to_chat(user, "<span class='warning'>You prime [src]! [DisplayTimeText(det_time)]!</span>")
 	playsound(src, pick('stalker/sound/voice/grenade/grenade_1.ogg','stalker/sound/voice/grenade/grenade_2.ogg','stalker/sound/voice/grenade/grenade_3.ogg','stalker/sound/voice/grenade/grenade_4.ogg'), volume, 1)
+	playsound(src, pick('stalker/sound/weapons/grenade/grenadepull1.ogg','stalker/sound/weapons/grenade/grenadepull2.ogg','stalker/sound/weapons/grenade/grenadepull3.ogg'), volume, 1)
 	active = TRUE
 	icon_state = initial(icon_state) + "_active"
 	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)

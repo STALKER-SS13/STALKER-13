@@ -51,7 +51,7 @@
 				H.dropItemToGround(H.back)
 				H.dropItemToGround(H.wear_id)
 			L.gib()
-			visible_message("<span class='danger'>[src] Breaks [L] into pieces!</span>")
+			visible_message("<span class='danger'>[src] breaks [L] into pieces!</span>")
 			to_chat(src, "<span class='userdanger'>You devour [L] and regain your health!</span>")
 			src.revive()
 

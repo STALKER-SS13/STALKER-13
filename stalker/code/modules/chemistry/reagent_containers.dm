@@ -77,7 +77,7 @@
 	list_reagents = list("sal_acid" = 20, "iron" = 5)
 
 /obj/item/reagent_containers/hypospray/medipen/stalker/antirad
-	name = "Anti-rad"
+	name = "anti-rad syrette"
 	desc = "Mexaminum radiation protection drugs are common in the Zone. When used, this drug induces contraction of peripheral blood vessels and oxygen deprivation, which serves to treat and prevent radiation exposure. The drug does not have severe side effects, although isolated cases of mild nausea, dizziness, cramps and stomach pain have been reported. Can be used twice."
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "antirad"
@@ -87,7 +87,7 @@
 	list_reagents = list("pen_acid" = 18)
 
 /obj/item/reagent_containers/hypospray/medipen/stalker/axyltallisal
-	name = "Axyltallisal \"The Rebirth\""
+	name = "axyltallisal \"The Rebirth\""
 	desc = "Warning! Do not use in combination with any other drug as this may prove lethal. This powerful mixture contained in a small syringe will make you lose consciousness. But when you wake up (if you wake up), you will feel reborn. Inject the syringe into your thigh when sitting down."
 	icon_state = "stimpen"
 	volume = 20

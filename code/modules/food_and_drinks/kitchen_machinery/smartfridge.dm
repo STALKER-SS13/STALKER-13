@@ -382,7 +382,7 @@
 /obj/machinery/smartfridge/drying_rackfan/update_icon()
 	..()
 	if(drying)
-		add_overlay("drying_rackfan")
+		add_overlay("drying_rackfan_o")
 	if(contents.len)
 		add_overlay("drying_rackfan-complete")
 

@@ -2477,7 +2477,7 @@
 "ks" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/asphalt,
-/area/stalker/buildings/backwater/sawmill)
+/area/stalker/buildings/renegade)
 "kt" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
@@ -7522,6 +7522,14 @@
 /obj/structure/chair/sofa/corner,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/renegade)
+"EX" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/buildings/backwater/sawmill)
 "FM" = (
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/gryaz,
@@ -7533,6 +7541,7 @@
 /area/stalker/buildings/backwater/sawmill)
 "FY" = (
 /obj/structure/stalker/bar_plitka,
+/obj/structure/chair/stalker/divan/divan2,
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
 "Gn" = (
@@ -7560,7 +7569,7 @@
 /area/stalker/buildings/backwater/sawmill)
 "GB" = (
 /obj/structure/stalker/bar_plitka,
-/obj/structure/chair/stalker/divan/divan2,
+/obj/structure/chair/stalker/divan,
 /turf/open/stalker/floor/tropa,
 /area/stalker/buildings/backwater/sawmill)
 "GC" = (
@@ -7647,6 +7656,14 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/renegade)
+"Ic" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/turf/open/stalker/floor/tropa,
+/area/stalker/buildings/backwater/sawmill)
 "If" = (
 /obj/structure/table/stalker/wood,
 /obj/item/instrument/guitar,
@@ -7684,7 +7701,7 @@
 "Je" = (
 /obj/structure/table/stalker/wood/bar,
 /turf/open/stalker/floor/tropa,
-/area/stalker/buildings/backwater/sawmill)
+/area/stalker/buildings/renegade)
 "JI" = (
 /obj/structure/grille/stalker{
 	icon_state = "fence3"
@@ -16861,12 +16878,12 @@ aR
 cs
 cs
 cs
-KO
+EX
 KO
 ds
 ch
 ch
-ch
+Ic
 cs
 aR
 aR

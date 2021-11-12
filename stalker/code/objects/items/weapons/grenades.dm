@@ -18,6 +18,6 @@
 	qdel(src)
 
 /obj/item/grenade/syndieminibomb/concussion/stalker/frag
-	name = "frag grenade"
-	desc = "Fire in the hole."
-	icon_state = "frag"
+	name = "RGD-5 grenade"
+	desc = "An offensive hand grenade with a small radius of splinter damage."
+	icon_state = "rgd5grenade"

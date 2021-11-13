@@ -447,6 +447,12 @@
 /obj/structure/stalker/car/gryzovik_army/south,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"gl" = (
+/obj/structure/stalker/bunker{
+	icon_state = "24"
+	},
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/kordon/tunnel)
 "go" = (
 /obj/structure/stalker/car/gryzovik_army/south{
 	icon_state = "4"
@@ -641,7 +647,7 @@
 /obj/effect/landmark/latejoin/chief_ecologist,
 /obj/item/stack/medical/gauze/bint,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "iK" = (
 /obj/structure/chair/sofa/corner,
 /turf/open/stalker/floor/lattice,
@@ -704,7 +710,7 @@
 	icon_state = "10"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "jo" = (
 /obj/structure/stalker/doski/doski4,
 /turf/open/floor/plating/dirt,
@@ -1019,6 +1025,12 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"on" = (
+/obj/structure/stalker/bunker{
+	icon_state = "25"
+	},
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/kordon/tunnel)
 "or" = (
 /obj/structure/bed/stalker/metal/matras,
 /turf/open/stalker/floor/wood/oldgor,
@@ -1094,7 +1106,7 @@
 	pixel_x = -12
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "pI" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -1163,7 +1175,7 @@
 	icon_state = "22"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "qW" = (
 /obj/structure/flora/stalker/bush,
 /obj/anomaly/holodec,
@@ -1296,7 +1308,7 @@
 	icon_state = "3"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "ss" = (
 /obj/effect/landmark/mobspawner/kaban_spawner,
 /turf/open/stalker/floor/asphalt,
@@ -1339,7 +1351,7 @@
 	name = "vater vent"
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "sT" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "1,4"
@@ -1650,7 +1662,7 @@
 	icon_state = "porog2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "vX" = (
 /obj/structure/reagent_dispensers/watertank2{
 	icon_state = "watertank2 1,0"
@@ -1786,7 +1798,7 @@
 	icon_state = "9"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "yU" = (
 /obj/structure/stalker/tree,
 /obj/structure/stalker/tree,
@@ -2048,7 +2060,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 1
 	},
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ec" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/ecologist_entrance)
@@ -2102,7 +2114,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 8
 	},
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "EA" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/stalker/bush,
@@ -2118,7 +2130,7 @@
 	tag = "icon-bulb1 (NORTH)"
 	},
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "EI" = (
 /obj/structure/grille/stalker/beton{
 	icon_state = "l4";
@@ -2259,7 +2271,7 @@
 	icon_state = "26"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Fg" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/stalker/tree,
@@ -2304,7 +2316,7 @@
 	icon_state = "17"
 	},
 /turf/closed/indestructible/oldshuttle/corner,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "FY" = (
 /obj/structure/stalker/doski,
 /turf/open/stalker/floor/water,
@@ -2545,7 +2557,7 @@
 	icon_state = "21"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Jk" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -2824,6 +2836,14 @@
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"ME" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "bunkerpersonal"
+	},
+/turf/open/floor/plasteel/stairs/left/stalker{
+	dir = 8
+	},
+/area/stalker/kordon/tunnel)
 "MS" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /obj/rad/rad_low,
@@ -2946,7 +2966,7 @@
 	icon_state = "5"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "OC" = (
 /obj/structure/table/stalker/wood/bar100rentgen{
 	desc = "You're looking at the table, and the table is looking at you?";
@@ -3052,7 +3072,7 @@
 	icon_state = "porog2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Qq" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -3131,7 +3151,7 @@
 	icon_state = "8"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Rq" = (
 /obj/structure/fence{
 	pixel_y = -30
@@ -3150,11 +3170,11 @@
 "RJ" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "RQ" = (
 /obj/machinery/washing_machine,
 /turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "RU" = (
 /obj/rad/rad_low,
 /obj/structure/flora/stalker/bush,
@@ -3293,7 +3313,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 4
 	},
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ud" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/wood/oldgor,
@@ -3303,13 +3323,13 @@
 	icon_state = "2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ug" = (
 /obj/structure/stalker/bunker{
 	icon_state = "1"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Uk" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,1"
@@ -3642,7 +3662,7 @@
 	icon_state = "27"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "VS" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/riflestier3,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -3669,7 +3689,7 @@
 	icon_state = "23"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Wm" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a{
 	pixel_x = 1;
@@ -3706,7 +3726,7 @@
 	icon_state = "29"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "WQ" = (
 /turf/open/stalker/floor/digable,
 /area/stalker/blowout/outdoor)
@@ -3727,7 +3747,7 @@
 	icon_state = "28"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Xg" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /turf/open/stalker/floor/asphalt,
@@ -31857,7 +31877,7 @@ nV
 UZ
 uK
 Sd
-JM
+gl
 pI
 Ly
 WP
@@ -32106,7 +32126,7 @@ ad
 Ug
 Gt
 KV
-HF
+on
 Sr
 lO
 rt
@@ -32886,7 +32906,7 @@ Ug
 wi
 Zj
 rA
-JM
+gl
 iH
 pG
 Rp
@@ -33142,9 +33162,9 @@ bk
 Rp
 KL
 Zj
-Zj
-Em
-hK
+Sv
+cu
+hA
 EG
 Rp
 oW
@@ -33399,8 +33419,8 @@ Iu
 Rp
 wi
 Zj
-Zj
-HF
+Sv
+on
 RQ
 sQ
 Rp
@@ -33656,7 +33676,7 @@ Ue
 VP
 Jj
 dC
-dC
+ME
 WP
 Ue
 Ue
@@ -35707,12 +35727,12 @@ Ey
 Ey
 Ey
 Xk
-JM
+gl
 cu
 WP
 Jj
 Em
-JM
+gl
 ba
 ba
 ba

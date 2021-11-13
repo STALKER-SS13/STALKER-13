@@ -6022,6 +6022,15 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"RY" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 71;
+	teleport_y = 3;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker)
 "RZ" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/wood/oldgor,
@@ -6300,6 +6309,15 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
+"Wc" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	teleport_x = 73;
+	teleport_y = 3;
+	teleport_z = 8
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker)
 "We" = (
 /obj/item/trash/cigs_trash,
 /turf/open/stalker/floor/tropa,
@@ -6448,15 +6466,6 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/military)
-"Yd" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 71;
-	teleport_y = 3;
-	teleport_z = 8
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
 "Ye" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "3";
@@ -6593,15 +6602,6 @@
 /obj/item/stack/spacecash/c1000,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/backwater/skadovsk)
-"ZC" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	teleport_x = 73;
-	teleport_y = 3;
-	teleport_z = 8
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker)
 "ZH" = (
 /obj/effect/spawner/lootdrop/stalker/pornmag,
 /turf/open/floor/plating/dirt/dark,
@@ -7649,7 +7649,7 @@ aa
 "}
 (5,1,1) = {"
 dX
-Yd
+RY
 UA
 un
 un
@@ -8163,7 +8163,7 @@ aa
 "}
 (7,1,1) = {"
 dX
-ZC
+Wc
 UA
 UA
 un

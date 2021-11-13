@@ -97,6 +97,11 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"bk" = (
+/obj/machinery/light/small,
+/obj/effect/landmark/latejoin/ecologist,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "bl" = (
 /obj/structure/flora/stalker/bush,
 /obj/anomaly/holodec,
@@ -224,6 +229,10 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"cu" = (
+/obj/machinery/door/airlock/stalker,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "cv" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/stalker/bush,
@@ -371,23 +380,18 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"fo" = (
-/obj/structure/chair/office/dark,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "fq" = (
 /obj/structure/stalker/doski/doski2,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/outdoor)
-"fr" = (
-/obj/structure/stalker/blocks/vanish/block2/l,
-/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "fx" = (
 /obj/structure/flora/stalker/bush,
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
+"fC" = (
+/obj/structure/chair/brevno,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "fD" = (
 /obj/structure/flora/tree/jungle/small,
@@ -441,12 +445,6 @@
 /obj/structure/stalker/car/gryzovik_army/south,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"gl" = (
-/obj/structure/stalker/bunker{
-	icon_state = "7"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "go" = (
 /obj/structure/stalker/car/gryzovik_army/south{
 	icon_state = "4"
@@ -479,6 +477,10 @@
 /obj/structure/grille/stalker/beton,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"gN" = (
+/obj/machinery/campfire/barrel,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "gO" = (
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -546,10 +548,26 @@
 /obj/structure/stalker/doski/doski_alt3,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"hz" = (
+/obj/structure/table/stalker,
+/obj/item/surgicaldrill,
+/obj/item/scalpel,
+/obj/item/surgical_drapes,
+/obj/item/cautery,
+/obj/item/hemostat,
+/obj/item/retractor,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
+"hA" = (
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/kordon/tunnel)
 "hC" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/stockparts,
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
+"hK" = (
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "hM" = (
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
@@ -623,95 +641,35 @@
 /obj/anomaly/electro,
 /turf/closed/indestructible/rock,
 /area/stalker/blowout/outdoor)
-"iK" = (
-/obj/structure/table/stalker,
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle/happy,
-/obj/item/storage/pill_bottle/epinephrine{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/storage/pill_bottle{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/turf/open/stalker/floor/lattice,
+"iH" = (
+/obj/structure/toilet/secret,
+/obj/effect/landmark/latejoin/chief_ecologist,
+/turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
+"iK" = (
+/obj/structure/chair/sofa/corner,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
+"iL" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "iO" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/stalker/bush,
@@ -741,6 +699,10 @@
 /obj/structure/stalker/cacheable/metalthing,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"jm" = (
+/obj/structure/stalker/cacheable/vendmachine20,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "jn" = (
 /obj/structure/stalker/bunker{
 	icon_state = "10"
@@ -757,12 +719,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"ju" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bunkerwest"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "jw" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/stalker/tree,
@@ -770,10 +726,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"jz" = (
-/obj/structure/chair/sofa/corner,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "jB" = (
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
@@ -799,64 +751,12 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"ka" = (
-/obj/structure/table/stalker,
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
+"jY" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "bunkerwest"
 	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/item/analyzer{
-	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
-	name = "Mobile Analysis Suite"
-	},
-/obj/structure/window/plasma/reinforced/spawner/west,
-/obj/structure/window/plasma/reinforced/spawner,
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/kordon/tunnel)
 "kb" = (
 /obj/structure/stalker/doski/doski_alt4,
 /turf/open/stalker/floor/asphalt,
@@ -889,6 +789,10 @@
 /obj/rad/rad_low,
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
+"kp" = (
+/obj/machinery/campfire,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "kq" = (
 /obj/structure/stalker/car/gryzovik/west{
@@ -947,18 +851,11 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
-"lr" = (
-/obj/structure/chair/sofa/right,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "lu" = (
 /obj/structure/flora/stalker/bush,
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"lH" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/kordon/tunnel)
 "lJ" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/tree/jungle,
@@ -1041,11 +938,6 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/ecologist_entrance)
-"mu" = (
-/obj/structure/table/stalker/wood/bar,
-/obj/item/instrument/guitar,
-/turf/open/stalker/floor/agroprom/gryaz,
-/area/stalker/blowout/outdoor)
 "mz" = (
 /obj/structure/flora/stalker/bush,
 /obj/effect/landmark/mobspawner/snork_spawner,
@@ -1099,6 +991,11 @@
 /obj/anomaly/tramplin,
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
+"nN" = (
+/obj/structure/chair/office/dark,
+/obj/effect/landmark/latejoin/ecologist,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "nT" = (
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
@@ -1262,24 +1159,11 @@
 /obj/effect/landmark/mobspawner/kaban_spawner,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"qB" = (
-/obj/structure/table/optable,
-/obj/structure/sign/poster/official/cleanliness{
-	pixel_y = 32
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "qC" = (
 /obj/structure/stalker/car/moskvich/south{
 	icon_state = "6"
 	},
 /turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
-"qN" = (
-/obj/structure/stalker/bunker{
-	icon_state = "24"
-	},
-/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "qU" = (
 /obj/structure/stalker/bunker{
@@ -1351,6 +1235,12 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"rt" = (
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "ry" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/stockparts,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1494,6 +1384,37 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"tc" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/reagent_containers/food/snacks/pie/cream,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "th" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/gryaz,
@@ -1508,12 +1429,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"tj" = (
-/obj/structure/chair/sofa/right{
-	dir = 1
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "to" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/stalker/bush,
@@ -1595,6 +1510,10 @@
 /obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
+"up" = (
+/obj/structure/chair/sofa/right,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "uu" = (
 /obj/structure/stalker/car/moskvich/south/hyi{
 	icon_state = "20"
@@ -1611,20 +1530,31 @@
 /obj/effect/landmark/mobspawner/snork_spawner,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"uC" = (
+/obj/machinery/chem_master{
+	use_power = 0
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "uJ" = (
 /obj/structure/stalker/tree,
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"uK" = (
+/obj/structure/chair/office/dark,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
+"uN" = (
+/obj/structure/stalker/bunker{
+	icon_state = "9"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "uR" = (
 /obj/item/trash/cigs_trash,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"uY" = (
-/obj/structure/chair/sofa,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "uZ" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1640,10 +1570,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"vo" = (
-/obj/machinery/washing_machine,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "vp" = (
 /obj/structure/stalker/car/gryzovik_army/north{
 	icon_state = "3"
@@ -1669,13 +1595,66 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
-"vC" = (
-/obj/machinery/chem_heater{
-	use_power = 0
+"vF" = (
+/obj/structure/stalker/blocks/vanish/block2/l,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"vJ" = (
+/obj/structure/table/stalker,
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
 	},
-/obj/structure/sign/poster/official/science{
-	pixel_y = -32
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
 	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/item/analyzer{
+	desc = "An expensive-looking hand-held integrated analysis suite. It can probably analyze a lot of data.";
+	name = "Mobile Analysis Suite"
+	},
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "vN" = (
@@ -1784,21 +1763,6 @@
 /obj/anomaly/electro,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"xz" = (
-/obj/machinery/light/small,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
-"xD" = (
-/obj/structure/table/stalker,
-/obj/item/surgicaldrill,
-/obj/item/scalpel,
-/obj/item/surgical_drapes,
-/obj/item/cautery,
-/obj/item/hemostat,
-/obj/item/retractor,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "xO" = (
 /obj/structure/stalker/car/uaz{
 	icon_state = "1,0";
@@ -1810,6 +1774,11 @@
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"xW" = (
+/obj/structure/chair/sofa,
+/obj/effect/landmark/latejoin/ecologist,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "ye" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/melee,
 /turf/open/stalker/floor/lattice,
@@ -1906,21 +1875,10 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
-"zP" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "zS" = (
 /obj/structure/stalker/doski/doski_alt4,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"zT" = (
-/obj/structure/toilet/secret,
-/obj/effect/landmark/latejoin/ecologist,
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "Ac" = (
 /obj/structure/chair/stalker/divan{
 	desc = "I hate criminal scum like you.";
@@ -1962,10 +1920,6 @@
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Ba" = (
-/obj/structure/stalker/cacheable/brokenmachine13,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "Bc" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1981,10 +1935,6 @@
 	pixel_y = -15
 	},
 /turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
-"Bp" = (
-/obj/structure/chair/brevno,
-/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Bs" = (
 /turf/closed/wall/stalker/beton,
@@ -2071,6 +2021,13 @@
 /obj/structure/stalker/blocks/vanish/block2/m,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Cv" = (
+/obj/structure/table/optable,
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "Cw" = (
 /obj/item/trash/metaljunk,
 /turf/open/stalker/floor/gryaz,
@@ -2106,6 +2063,10 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Dg" = (
+/obj/structure/stalker/cacheable/junk_bench,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "Dj" = (
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -2118,13 +2079,15 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"Dn" = (
-/obj/structure/bed/stalker/mattress_bloodstain,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "Dx" = (
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt,
+/area/stalker/blowout/outdoor)
+"DM" = (
+/obj/structure/stalker/bunker{
+	icon_state = "7"
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "DW" = (
 /obj/structure/stalker/bunker{
@@ -2148,90 +2111,6 @@
 /area/stalker/blowout/outdoor)
 "Em" = (
 /obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
-"En" = (
-/obj/structure/table/stalker,
-/obj/item/storage/box/syringes{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/obj/item/storage/box/syringes{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/obj/item/storage/box/syringes{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 3
-	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "Eo" = (
@@ -2278,6 +2157,12 @@
 /obj/structure/stalker/woodlogs/big,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"EG" = (
+/obj/machinery/light/small{
+	tag = "icon-bulb1 (NORTH)"
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "EI" = (
 /obj/structure/grille/stalker/beton{
 	icon_state = "l4";
@@ -2303,6 +2188,95 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
+"EP" = (
+/obj/structure/table/stalker,
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle/happy,
+/obj/item/storage/pill_bottle/epinephrine{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "EX" = (
 /obj/structure/flora/rock/pile,
 /turf/open/stalker/floor/gryaz,
@@ -2379,6 +2353,16 @@
 /obj/structure/stalker/doski,
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
+"Gl" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8;
+	name = "vater vent"
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "Gp" = (
 /obj/anomaly/tramplin,
 /turf/open/stalker/floor/gryaz,
@@ -2417,10 +2401,6 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"GF" = (
-/obj/machinery/campfire,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "GM" = (
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/kordon/tunnel)
@@ -2428,9 +2408,6 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
-"GR" = (
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "GX" = (
 /obj/structure/bed/stalker/mattress_dirty{
 	pixel_y = 12
@@ -2505,12 +2482,6 @@
 /obj/structure/barricade/stalker/woodalt,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"HI" = (
-/obj/machinery/chem_dispenser{
-	use_power = 0
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "HK" = (
 /obj/rad/rad_medium,
 /obj/anomaly/holodec,
@@ -2574,12 +2545,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"Ic" = (
-/obj/structure/stalker/bunker{
-	icon_state = "9"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
 "Id" = (
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "7";
@@ -2609,10 +2574,6 @@
 /obj/item/defibrillator/loaded,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
-"IF" = (
-/obj/structure/chair/office/dark,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "IJ" = (
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt/dark,
@@ -2621,35 +2582,6 @@
 /obj/structure/flora/tree/jungle/small,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
-"IS" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
-"IT" = (
-/obj/effect/step_trigger/teleporter{
-	opacity = 1;
-	teleport_x = 6;
-	teleport_y = 253;
-	teleport_z = 3
-	},
-/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "Jf" = (
 /obj/structure/stalker/bar_plitka,
@@ -2670,21 +2602,104 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
+"Jv" = (
+/obj/structure/stalker/bunker{
+	icon_state = "2"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "Jz" = (
 /obj/structure/stalker/tree,
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"JG" = (
+"JB" = (
 /obj/structure/table/stalker,
-/obj/item/circular_saw,
-/obj/item/taperecorder,
-/obj/item/taperecorder,
-/obj/structure/sink/kitchen{
-	layer = 3.1;
-	pixel_y = 28
+/obj/item/storage/box/syringes{
+	pixel_x = 5;
+	pixel_y = 6
 	},
-/turf/open/stalker/floor/plasteel/plitka,
+/obj/item/storage/box/syringes{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
+"JH" = (
+/obj/machinery/campfire/barrel,
+/turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "JI" = (
 /obj/structure/stalker/bigyashik{
@@ -2695,6 +2710,12 @@
 /area/stalker/blowout/outdoor)
 "JK" = (
 /turf/closed/wall/stalker/bricks,
+/area/stalker/blowout/outdoor)
+"JM" = (
+/obj/structure/stalker/bunker{
+	icon_state = "24"
+	},
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "JS" = (
 /obj/structure/stalker/car/moskvich/south{
@@ -2731,39 +2752,8 @@
 /obj/item/storage/box/matches,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
-"Kw" = (
-/obj/structure/stalker/cacheable/junk_bench,
-/turf/open/stalker/floor/asphalt,
-/area/stalker/blowout/outdoor)
-"KM" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
+"KL" = (
+/obj/structure/stalker/cacheable/brokenmachine13,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "KR" = (
@@ -2794,16 +2784,25 @@
 /obj/effect/landmark/latejoin/ecologist,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
+"Lk" = (
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "Ln" = (
 /obj/structure/stalker/car/gryzovik_army/south{
 	icon_state = "2"
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"Lq" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
+"Ly" = (
+/obj/machinery/chem_heater{
+	use_power = 0
+	},
+/obj/structure/sign/poster/official/science{
+	pixel_y = -32
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "LB" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/water,
@@ -2827,6 +2826,15 @@
 	},
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"LO" = (
+/obj/effect/step_trigger/teleporter{
+	opacity = 1;
+	teleport_x = 6;
+	teleport_y = 253;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/blowout/outdoor)
 "LP" = (
 /obj/structure/flora/stalker/bush,
 /obj/rad/rad_low,
@@ -2848,15 +2856,20 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"Ma" = (
+/obj/effect/step_trigger/teleporter{
+	opacity = 1;
+	teleport_x = 7;
+	teleport_y = 253;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/blowout/outdoor)
 "Mb" = (
 /obj/structure/reagent_dispensers/watertank2{
 	icon_state = "watertank2 1,1"
 	},
 /turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
-"Mi" = (
-/obj/structure/stalker/cacheable/vendmachine20,
-/turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "Mw" = (
 /obj/structure/stalker/blocks/vanish/block2/r,
@@ -2872,10 +2885,6 @@
 	},
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
-"MP" = (
-/obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "MS" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /obj/rad/rad_low,
@@ -2968,6 +2977,10 @@
 /obj/structure/stalker/blocks/vanish/pipe/pipe3,
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
+"Oi" = (
+/obj/structure/bed/stalker/mattress_bloodstain,
+/turf/open/stalker/floor/lattice,
+/area/stalker/kordon/tunnel)
 "Om" = (
 /obj/structure/stalker/tree,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -3006,12 +3019,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
-"OH" = (
-/obj/structure/stalker/bunker{
-	icon_state = "25"
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "OL" = (
 /obj/structure/stalker/car/gryzovik_army/north{
 	icon_state = "2"
@@ -3036,12 +3043,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
-"Pd" = (
-/obj/structure/stalker/bunker{
-	icon_state = "2"
-	},
-/turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
 "Pi" = (
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
@@ -3052,10 +3053,6 @@
 "Pu" = (
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
-"PB" = (
-/obj/machinery/door/airlock/stalker,
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "PO" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -3216,6 +3213,16 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/armortier2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"RJ" = (
+/obj/structure/stalker/bunker{
+	icon_state = "25"
+	},
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"RQ" = (
+/obj/machinery/washing_machine,
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "RU" = (
 /obj/rad/rad_low,
 /obj/structure/flora/stalker/bush,
@@ -3237,6 +3244,28 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"Sd" = (
+/obj/structure/table/stalker,
+/obj/item/am_containment{
+	desc = "Holds tachyons not fully understood by science.";
+	name = "Portable Tachyon Containment"
+	},
+/obj/item/am_containment{
+	desc = "Holds tachyons not fully understood by science.";
+	name = "Portable Tachyon Containment"
+	},
+/obj/item/am_containment{
+	desc = "Holds tachyons not fully understood by science.";
+	name = "Portable Tachyon Containment"
+	},
+/obj/item/am_containment{
+	desc = "Holds tachyons not fully understood by science.";
+	name = "Portable Tachyon Containment"
+	},
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "Sl" = (
 /obj/structure/stalker/cacheable/vendmachine4,
 /turf/open/stalker/floor/gryaz,
@@ -3254,14 +3283,9 @@
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"Sx" = (
-/obj/effect/step_trigger/teleporter{
-	opacity = 1;
-	teleport_x = 7;
-	teleport_y = 253;
-	teleport_z = 3
-	},
-/turf/open/stalker/floor/agroprom/gryaz,
+"SB" = (
+/obj/structure/chair/brevno/log2,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "SL" = (
 /obj/structure/stalker/doski/doski_alt4,
@@ -3298,6 +3322,12 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"Tt" = (
+/obj/machinery/chem_dispenser{
+	use_power = 0
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "TC" = (
 /obj/rad/rad_low,
 /obj/rad/rad_low,
@@ -3330,12 +3360,6 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"Ua" = (
-/obj/machinery/chem_master{
-	use_power = 0
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "Ud" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/wood/oldgor,
@@ -3370,6 +3394,17 @@
 /obj/structure/stone_tile/burnt,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"Uy" = (
+/obj/structure/table/stalker,
+/obj/item/circular_saw,
+/obj/item/taperecorder,
+/obj/item/taperecorder,
+/obj/structure/sink/kitchen{
+	layer = 3.1;
+	pixel_y = 28
+	},
+/turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/buildings/ecologist)
 "UC" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bunkereast"
@@ -3480,15 +3515,6 @@
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
 "UZ" = (
-/obj/machinery/campfire/barrel,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
-"Va" = (
-/obj/structure/stalker/tree,
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/digable/grass/dump,
-/area/stalker/blowout/outdoor)
-"Vd" = (
 /obj/structure/table/stalker,
 /obj/item/beacon{
 	desc = "This thing transmits valuable anomaly data to the eggheads.";
@@ -3626,6 +3652,11 @@
 /obj/structure/window/plasma/reinforced/spawner/east,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
+"Va" = (
+/obj/structure/stalker/tree,
+/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
+/turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
 "Vj" = (
 /obj/structure/stalker/tree,
 /obj/rad/rad_low,
@@ -3703,12 +3734,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
-"Wl" = (
-/obj/machinery/light/small{
-	tag = "icon-bulb1 (NORTH)"
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "Wm" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a{
 	pixel_x = 1;
@@ -3719,10 +3744,6 @@
 "Wq" = (
 /obj/structure/stalker/doski/doski_alt,
 /turf/open/floor/plating/dirt,
-/area/stalker/blowout/outdoor)
-"Wr" = (
-/obj/structure/chair/brevno/log2,
-/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Ww" = (
 /obj/structure/table/stalker,
@@ -3784,6 +3805,12 @@
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/water,
 /area/stalker/blowout/outdoor)
+"Xj" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/ecologist)
 "Xk" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a,
 /turf/open/stalker/floor/digable/grass,
@@ -3801,28 +3828,6 @@
 /obj/structure/chair/stalker/divan/divan2,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Xw" = (
-/obj/structure/table/stalker,
-/obj/item/am_containment{
-	desc = "Holds tachyons not fully understood by science.";
-	name = "Portable Tachyon Containment"
-	},
-/obj/item/am_containment{
-	desc = "Holds tachyons not fully understood by science.";
-	name = "Portable Tachyon Containment"
-	},
-/obj/item/am_containment{
-	desc = "Holds tachyons not fully understood by science.";
-	name = "Portable Tachyon Containment"
-	},
-/obj/item/am_containment{
-	desc = "Holds tachyons not fully understood by science.";
-	name = "Portable Tachyon Containment"
-	},
-/obj/structure/window/plasma/reinforced/spawner,
-/obj/structure/window/plasma/reinforced/spawner/east,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
 "XD" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "1,2"
@@ -3864,6 +3869,11 @@
 "Yq" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
+"Yw" = (
+/obj/structure/table/stalker/wood/bar,
+/obj/item/instrument/guitar,
+/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "YB" = (
 /obj/structure/barricade/wooden,
@@ -3929,16 +3939,6 @@
 /obj/structure/stalker/antitank,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"ZE" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8;
-	name = "vater vent"
-	},
-/obj/machinery/shower{
-	dir = 4
-	},
-/turf/open/stalker/floor/plasteel/plitka,
-/area/stalker/buildings/ecologist)
 "ZF" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/stalker/floor/gryaz,
@@ -22457,7 +22457,7 @@ LI
 LI
 ba
 ba
-IT
+LO
 Bs
 "}
 (73,1,1) = {"
@@ -22714,7 +22714,7 @@ BL
 LI
 ba
 ba
-Sx
+Ma
 Bs
 "}
 (74,1,1) = {"
@@ -31149,8 +31149,8 @@ Pu
 Pu
 Ee
 qd
-Kw
-Mi
+Dg
+jm
 Og
 ba
 ba
@@ -31408,11 +31408,11 @@ Ue
 Ue
 sg
 Ue
-Pd
+Jv
 yQ
 yQ
 WZ
-Ic
+uN
 TR
 Ey
 Pu
@@ -31663,11 +31663,11 @@ VP
 OB
 pq
 gW
-UZ
-KM
+JH
+tc
 UL
 un
-ka
+vJ
 BX
 lk
 WP
@@ -31922,12 +31922,12 @@ Zj
 Zj
 Zj
 Zj
-Vd
-IF
-Xw
+UZ
+uK
+Sd
 Wy
 pI
-vC
+Ly
 WP
 TR
 tJ
@@ -32177,15 +32177,15 @@ KV
 nV
 Sr
 lO
-tj
+rt
 Zj
 Zj
 Zj
 Zj
 Em
 Zj
-fo
-Ua
+nN
+uC
 Rp
 SM
 ba
@@ -32437,12 +32437,12 @@ id
 dZ
 Zj
 Zj
-zP
+Xj
 Zj
-OH
-iK
-En
-HI
+RJ
+EP
+JB
+Tt
 Rp
 Bm
 ba
@@ -32948,14 +32948,14 @@ Zj
 rA
 Ww
 DW
-JG
-GR
+Uy
+hK
 Ug
 wi
 Zj
 rA
-qN
-zT
+JM
+iH
 pG
 Rp
 Pu
@@ -33205,15 +33205,15 @@ Zj
 Zj
 VL
 DW
-qB
-xz
+Cv
+bk
 MC
-Ba
+KL
 Zj
 Zj
 Em
-GR
-Wl
+hK
+EG
 Rp
 oW
 ba
@@ -33462,14 +33462,14 @@ Lj
 Zj
 Ww
 DW
-xD
+hz
 Iu
 MC
 wi
 Zj
 Zj
-OH
-vo
+RJ
+RQ
 sQ
 Rp
 Pu
@@ -33976,13 +33976,13 @@ Sv
 Sv
 Sv
 Sv
-ju
+jY
 Sv
 Sv
 Sv
 Sv
 Sv
-lr
+up
 QN
 Cj
 Rp
@@ -34233,13 +34233,13 @@ Sv
 Sv
 rY
 Sv
-ju
+jY
 Sv
 Sv
 Sv
 Sv
 Sv
-uY
+xW
 Kv
 BH
 Rp
@@ -34496,9 +34496,9 @@ Ue
 Ib
 Jk
 Sv
-jz
+iK
 WA
-IS
+iL
 Rp
 ga
 BL
@@ -34753,10 +34753,10 @@ ij
 UC
 Sv
 Sv
-Dn
-MP
+Oi
+gN
 uz
-gl
+DM
 lb
 BL
 Wm
@@ -35005,7 +35005,7 @@ qU
 rb
 ZQ
 Qn
-lH
+hA
 EK
 UC
 Sv
@@ -35268,7 +35268,7 @@ Ib
 Em
 uz
 yQ
-gl
+DM
 ba
 ba
 BL
@@ -35517,11 +35517,11 @@ Ey
 Ey
 Ey
 Xk
-Lq
+Lk
 KY
 Sv
 KY
-ZE
+Gl
 Zj
 KY
 ba
@@ -35775,12 +35775,12 @@ Ey
 Ey
 Ey
 Xk
-qN
-PB
+JM
+cu
 WP
 Ib
 Em
-qN
+JM
 ba
 ba
 ba
@@ -36545,8 +36545,8 @@ ba
 om
 ba
 Xr
-mu
-Bp
+Yw
+fC
 ad
 wV
 ba
@@ -36802,13 +36802,13 @@ BL
 BL
 ba
 Xu
-GF
-Wr
+kp
+SB
 ba
 ba
 BL
 BL
-fr
+vF
 BW
 Mw
 ba

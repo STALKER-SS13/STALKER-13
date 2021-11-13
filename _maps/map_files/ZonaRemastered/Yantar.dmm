@@ -493,19 +493,12 @@
 	pixel_y = 2
 	},
 /obj/structure/stalker/cacheable/televizor{
+	desc = "An old soviet TV-set. Shows one channel with a monkey's head! Or not.";
 	pixel_y = 8
 	},
 /obj/item/bodypart/head/monkey{
 	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/bodypart/l_arm/monkey{
-	pixel_x = 3;
-	pixel_y = 1
-	},
-/obj/item/bodypart/r_arm/monkey{
-	pixel_x = -8;
-	pixel_y = 1
+	pixel_y = 4
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -646,6 +639,7 @@
 "iH" = (
 /obj/structure/toilet/secret,
 /obj/effect/landmark/latejoin/chief_ecologist,
+/obj/item/stack/medical/gauze/bint,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "iK" = (
@@ -710,7 +704,7 @@
 	icon_state = "10"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "jo" = (
 /obj/structure/stalker/doski/doski4,
 /turf/open/floor/plating/dirt,
@@ -1006,11 +1000,9 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
 "nV" = (
-/obj/structure/stalker/bunker{
-	icon_state = "25"
-	},
+/obj/item/storage/box/matches,
 /turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/ecologist)
 "oc" = (
 /obj/structure/stalker/doski/doski_alt,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1077,6 +1069,7 @@
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/instrument/violin{
+	name = "ear bomb";
 	pixel_x = 12
 	},
 /turf/open/stalker/floor/lattice,
@@ -1097,7 +1090,7 @@
 /area/stalker/blowout/outdoor)
 "pG" = (
 /obj/structure/sink{
-	dir = 1;
+	dir = 8;
 	pixel_x = -12
 	},
 /turf/open/stalker/floor/plasteel/plitka,
@@ -1169,8 +1162,8 @@
 /obj/structure/stalker/bunker{
 	icon_state = "22"
 	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/kordon/tunnel)
 "qW" = (
 /obj/structure/flora/stalker/bush,
 /obj/anomaly/holodec,
@@ -1217,7 +1210,7 @@
 	pixel_y = -9
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "rg" = (
 /obj/structure/stone_tile/burnt,
 /turf/open/floor/plating/dirt,
@@ -1303,7 +1296,7 @@
 	icon_state = "3"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "ss" = (
 /obj/effect/landmark/mobspawner/kaban_spawner,
 /turf/open/stalker/floor/asphalt,
@@ -1407,6 +1400,7 @@
 /obj/item/reagent_containers/food/snacks/pie/cream,
 /obj/item/reagent_containers/food/snacks/pie/cream,
 /obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/kitchen/knife,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "th" = (
@@ -1439,12 +1433,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
-"tw" = (
-/obj/structure/stalker/bunker{
-	icon_state = "5"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "tz" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1662,7 +1650,7 @@
 	icon_state = "porog2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "vX" = (
 /obj/structure/reagent_dispensers/watertank2{
 	icon_state = "watertank2 1,0"
@@ -1798,7 +1786,7 @@
 	icon_state = "9"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "yU" = (
 /obj/structure/stalker/tree,
 /obj/structure/stalker/tree,
@@ -1860,12 +1848,8 @@
 	desc = "I hate criminal scum like you.";
 	name = "watchman's seat"
 	},
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "Ag" = (
 /obj/anomaly/jarka,
 /turf/open/stalker/floor/gryaz,
@@ -1989,6 +1973,7 @@
 /area/stalker/blowout/outdoor)
 "Cj" = (
 /obj/structure/table/stalker/wood,
+/obj/item/trash/pornmagazine/three,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "Cq" = (
@@ -2027,7 +2012,7 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/kordon/tunnel)
 "Dc" = (
-/obj/structure/bed/stalker/mattress_bloodblots,
+/obj/structure/closet/crate/stalker/blue,
 /obj/item/stack/medical/gauze/bint,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
@@ -2057,13 +2042,6 @@
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
-"DC" = (
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "DM" = (
 /obj/structure/stalker/bunker{
 	icon_state = "6"
@@ -2071,13 +2049,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 1
 	},
-/area/stalker/blowout/outdoor)
-"DW" = (
-/obj/structure/stalker/bunker{
-	icon_state = "1"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ec" = (
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/ecologist_entrance)
@@ -2131,7 +2103,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 8
 	},
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "EA" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/flora/stalker/bush,
@@ -2288,7 +2260,7 @@
 	icon_state = "26"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Fg" = (
 /obj/structure/flora/stalker/bush,
 /obj/structure/stalker/tree,
@@ -2333,7 +2305,7 @@
 	icon_state = "17"
 	},
 /turf/closed/indestructible/oldshuttle/corner,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "FY" = (
 /obj/structure/stalker/doski,
 /turf/open/stalker/floor/water,
@@ -2375,12 +2347,6 @@
 /obj/structure/bed/stalker/mattress_withered{
 	pixel_y = -4
 	},
-/obj/item/bedsheet{
-	pixel_y = 14
-	},
-/obj/item/bedsheet{
-	pixel_y = -2
-	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "GB" = (
@@ -2402,12 +2368,6 @@
 	},
 /obj/structure/bed/stalker/mattress_holes{
 	pixel_y = -4
-	},
-/obj/item/bedsheet{
-	pixel_y = 14
-	},
-/obj/item/bedsheet{
-	pixel_y = -2
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -2449,8 +2409,14 @@
 /area/stalker/blowout/outdoor)
 "Hr" = (
 /obj/structure/table/stalker,
+/obj/structure/stalker/shina{
+	desc = "Better than nothing.";
+	pixel_y = 8
+	},
 /obj/item/reagent_containers/food/snacks/deadmouse{
-	desc = "Banana creampie diet."
+	desc = "That's what the banana creampie and vodka diet has done.";
+	pixel_x = -2;
+	pixel_y = 8
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -2475,7 +2441,7 @@
 	icon_state = "25"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "HK" = (
 /obj/rad/rad_medium,
 /obj/anomaly/holodec,
@@ -2580,7 +2546,7 @@
 	icon_state = "21"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Jk" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -2677,6 +2643,8 @@
 	pixel_x = -7;
 	pixel_y = 3
 	},
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "JH" = (
@@ -2698,7 +2666,7 @@
 	icon_state = "24"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "JS" = (
 /obj/structure/stalker/car/moskvich/south{
 	icon_state = "5"
@@ -2726,7 +2694,7 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
 "Kr" = (
-/obj/structure/closet/crate/stalker/blue,
+/obj/structure/chair/sofa/left,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "Kv" = (
@@ -2735,7 +2703,9 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "KL" = (
-/obj/structure/stalker/cacheable/brokenmachine13,
+/obj/structure/stalker/cacheable/brokenmachine13{
+	desc = "Some incomprehensible thing that is very important to spin next to the two transformers. Interesting!"
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "KR" = (
@@ -2977,9 +2947,10 @@
 	icon_state = "5"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "OC" = (
 /obj/structure/table/stalker/wood/bar100rentgen{
+	desc = "You're looking at the table, and the table is looking at you?";
 	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
 	icon_state = "r_table";
 	name = "reinforced table"
@@ -3082,7 +3053,7 @@
 	icon_state = "porog2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Qq" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -3161,7 +3132,7 @@
 	icon_state = "8"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Rq" = (
 /obj/structure/fence{
 	pixel_y = -30
@@ -3180,7 +3151,7 @@
 "RJ" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "RQ" = (
 /obj/machinery/washing_machine,
 /turf/open/stalker/floor/plasteel/plitka,
@@ -3323,7 +3294,7 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 4
 	},
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ud" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/wood/oldgor,
@@ -3333,13 +3304,13 @@
 	icon_state = "2"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Ug" = (
 /obj/structure/stalker/bunker{
 	icon_state = "1"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Uk" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "3,1"
@@ -3460,6 +3431,7 @@
 "US" = (
 /obj/machinery/light,
 /obj/structure/table/stalker/wood/bar100rentgen{
+	desc = "You're looking at the table, and the table is looking at you?";
 	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
 	icon_state = "r_table";
 	name = "reinforced table"
@@ -3654,6 +3626,7 @@
 /area/stalker/blowout/outdoor)
 "VL" = (
 /obj/machinery/stalker/sidormat{
+	desc = "Thinning of the ozone layer is a pressing problem of our time...";
 	layer = 3.1;
 	name = "ECOLOGMAT";
 	pixel_y = 13
@@ -3670,7 +3643,7 @@
 	icon_state = "27"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "VS" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/riflestier3,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -3697,7 +3670,7 @@
 	icon_state = "23"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Wm" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a{
 	pixel_x = 1;
@@ -3713,12 +3686,6 @@
 /obj/structure/table/stalker,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
-"Wy" = (
-/obj/structure/stalker/bunker{
-	icon_state = "24"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "WA" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
@@ -3740,7 +3707,7 @@
 	icon_state = "29"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "WQ" = (
 /turf/open/stalker/floor/digable,
 /area/stalker/blowout/outdoor)
@@ -3761,7 +3728,7 @@
 	icon_state = "28"
 	},
 /turf/closed/wall/stalker/bricks_white,
-/area/stalker/blowout/outdoor)
+/area/stalker/kordon/tunnel)
 "Xg" = (
 /obj/effect/landmark/mobspawner/snork_spawner,
 /turf/open/stalker/floor/asphalt,
@@ -3832,7 +3799,7 @@
 	state_open = 1
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "Yq" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -3915,9 +3882,8 @@
 	desc = "I hate criminal scum like you.";
 	name = "watchman's seat"
 	},
-/obj/effect/landmark/latejoin/ecologistguard,
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "ZZ" = (
 /obj/rad/rad_low,
 /turf/closed/wall/rust,
@@ -31627,7 +31593,7 @@ ba
 ad
 Ez
 VP
-tw
+OB
 pq
 gW
 JH
@@ -31888,7 +31854,7 @@ ts
 Zj
 Zj
 Zj
-Zj
+nV
 UZ
 uK
 Sd
@@ -32914,7 +32880,7 @@ Hr
 Zj
 rA
 Ww
-DW
+Ug
 Uy
 hK
 Ug
@@ -33171,7 +33137,7 @@ HB
 Zj
 Zj
 VL
-DW
+Ug
 Cv
 bk
 Rp
@@ -33428,7 +33394,7 @@ HX
 Lj
 Zj
 Ww
-DW
+Ug
 hz
 Iu
 Rp
@@ -33938,7 +33904,7 @@ Da
 ba
 ba
 Rp
-Kr
+up
 Sv
 Sv
 Sv
@@ -34455,7 +34421,7 @@ Fe
 qU
 PY
 PY
-nV
+HF
 Yf
 We
 Ue
@@ -34712,7 +34678,7 @@ FR
 sp
 Qr
 Vu
-Wy
+JM
 Ac
 vN
 ij
@@ -35486,7 +35452,7 @@ ad
 Xk
 Lk
 Ug
-DC
+Sv
 Ug
 Gl
 Zj

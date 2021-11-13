@@ -828,13 +828,6 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
-"kV" = (
-/obj/structure/stalker/bunker{
-	icon_state = "25"
-	},
-/obj/machinery/smartfridge/chemistry,
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
 "lb" = (
 /obj/machinery/vending/sovietsoda,
 /turf/open/stalker/floor/asphalt,
@@ -1439,6 +1432,10 @@
 	teleport_z = 8
 	},
 /turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"tl" = (
+/obj/machinery/smartfridge/chemistry,
+/turf/closed/wall/stalker/bricks_white,
 /area/stalker/blowout/outdoor)
 "to" = (
 /obj/structure/flora/stalker/bush,
@@ -32450,7 +32447,7 @@ Zj
 Zj
 Xj
 Zj
-kV
+tl
 EP
 JB
 Tt
@@ -32707,7 +32704,7 @@ Em
 We
 Jj
 Em
-WP
+jn
 WZ
 yQ
 yQ

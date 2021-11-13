@@ -493,19 +493,12 @@
 	pixel_y = 2
 	},
 /obj/structure/stalker/cacheable/televizor{
+	desc = "An old soviet TV-set. Shows one channel with a monkey's head! Or not.";
 	pixel_y = 8
 	},
 /obj/item/bodypart/head/monkey{
 	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/bodypart/l_arm/monkey{
-	pixel_x = 3;
-	pixel_y = 1
-	},
-/obj/item/bodypart/r_arm/monkey{
-	pixel_x = -8;
-	pixel_y = 1
+	pixel_y = 4
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -646,6 +639,7 @@
 "iH" = (
 /obj/structure/toilet/secret,
 /obj/effect/landmark/latejoin/chief_ecologist,
+/obj/item/stack/medical/gauze/bint,
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/ecologist)
 "iK" = (
@@ -1006,11 +1000,9 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
 "nV" = (
-/obj/structure/stalker/bunker{
-	icon_state = "25"
-	},
+/obj/item/storage/box/matches,
 /turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
+/area/stalker/buildings/ecologist)
 "oc" = (
 /obj/structure/stalker/doski/doski_alt,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1077,6 +1069,7 @@
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/instrument/violin{
+	name = "ear bomb";
 	pixel_x = 12
 	},
 /turf/open/stalker/floor/lattice,
@@ -1097,7 +1090,7 @@
 /area/stalker/blowout/outdoor)
 "pG" = (
 /obj/structure/sink{
-	dir = 1;
+	dir = 8;
 	pixel_x = -12
 	},
 /turf/open/stalker/floor/plasteel/plitka,
@@ -1169,7 +1162,7 @@
 /obj/structure/stalker/bunker{
 	icon_state = "22"
 	},
-/turf/open/stalker/floor/lattice,
+/turf/closed/wall/stalker/bricks_white,
 /area/stalker/blowout/outdoor)
 "qW" = (
 /obj/structure/flora/stalker/bush,
@@ -1217,7 +1210,7 @@
 	pixel_y = -9
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "rg" = (
 /obj/structure/stone_tile/burnt,
 /turf/open/floor/plating/dirt,
@@ -1407,6 +1400,7 @@
 /obj/item/reagent_containers/food/snacks/pie/cream,
 /obj/item/reagent_containers/food/snacks/pie/cream,
 /obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/kitchen/knife,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "th" = (
@@ -1439,12 +1433,6 @@
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
-"tw" = (
-/obj/structure/stalker/bunker{
-	icon_state = "5"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "tz" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1860,12 +1848,8 @@
 	desc = "I hate criminal scum like you.";
 	name = "watchman's seat"
 	},
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "Ag" = (
 /obj/anomaly/jarka,
 /turf/open/stalker/floor/gryaz,
@@ -1989,6 +1973,7 @@
 /area/stalker/blowout/outdoor)
 "Cj" = (
 /obj/structure/table/stalker/wood,
+/obj/item/trash/pornmagazine/three,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "Cq" = (
@@ -2028,7 +2013,6 @@
 /area/stalker/kordon/tunnel)
 "Dc" = (
 /obj/structure/bed/stalker/mattress_bloodblots,
-/obj/item/stack/medical/gauze/bint,
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "Df" = (
@@ -2057,13 +2041,6 @@
 /obj/anomaly/tramplin,
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/outdoor)
-"DC" = (
-/obj/machinery/light/small{
-	dir = 1;
-	tag = "icon-bulb1 (NORTH)"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/kordon/tunnel)
 "DM" = (
 /obj/structure/stalker/bunker{
 	icon_state = "6"
@@ -2071,12 +2048,6 @@
 /turf/closed/indestructible/oldshuttle/corner{
 	dir = 1
 	},
-/area/stalker/blowout/outdoor)
-"DW" = (
-/obj/structure/stalker/bunker{
-	icon_state = "1"
-	},
-/turf/open/stalker/floor/lattice,
 /area/stalker/blowout/outdoor)
 "Ec" = (
 /turf/open/stalker/floor/gryaz,
@@ -2375,12 +2346,6 @@
 /obj/structure/bed/stalker/mattress_withered{
 	pixel_y = -4
 	},
-/obj/item/bedsheet{
-	pixel_y = 14
-	},
-/obj/item/bedsheet{
-	pixel_y = -2
-	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "GB" = (
@@ -2402,12 +2367,6 @@
 	},
 /obj/structure/bed/stalker/mattress_holes{
 	pixel_y = -4
-	},
-/obj/item/bedsheet{
-	pixel_y = 14
-	},
-/obj/item/bedsheet{
-	pixel_y = -2
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -2449,8 +2408,14 @@
 /area/stalker/blowout/outdoor)
 "Hr" = (
 /obj/structure/table/stalker,
+/obj/structure/stalker/shina{
+	desc = "Better than nothing.";
+	pixel_y = 8
+	},
 /obj/item/reagent_containers/food/snacks/deadmouse{
-	desc = "Banana creampie diet."
+	desc = "That's what the banana creampie and vodka diet has done.";
+	pixel_x = -2;
+	pixel_y = 8
 	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
@@ -2677,6 +2642,8 @@
 	pixel_x = -7;
 	pixel_y = 3
 	},
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "JH" = (
@@ -2735,7 +2702,9 @@
 /turf/open/stalker/floor/lattice,
 /area/stalker/kordon/tunnel)
 "KL" = (
-/obj/structure/stalker/cacheable/brokenmachine13,
+/obj/structure/stalker/cacheable/brokenmachine13{
+	desc = "Some incomprehensible thing that is very important to spin next to the two transformers. Interesting!"
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "KR" = (
@@ -2980,6 +2949,7 @@
 /area/stalker/blowout/outdoor)
 "OC" = (
 /obj/structure/table/stalker/wood/bar100rentgen{
+	desc = "You're looking at the table, and the table is looking at you?";
 	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
 	icon_state = "r_table";
 	name = "reinforced table"
@@ -3460,6 +3430,7 @@
 "US" = (
 /obj/machinery/light,
 /obj/structure/table/stalker/wood/bar100rentgen{
+	desc = "You're looking at the table, and the table is looking at you?";
 	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
 	icon_state = "r_table";
 	name = "reinforced table"
@@ -3654,6 +3625,7 @@
 /area/stalker/blowout/outdoor)
 "VL" = (
 /obj/machinery/stalker/sidormat{
+	desc = "Thinning of the ozone layer is a pressing problem of our time...";
 	layer = 3.1;
 	name = "ECOLOGMAT";
 	pixel_y = 13
@@ -3713,12 +3685,6 @@
 /obj/structure/table/stalker,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
-"Wy" = (
-/obj/structure/stalker/bunker{
-	icon_state = "24"
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/blowout/outdoor)
 "WA" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
@@ -3832,7 +3798,7 @@
 	state_open = 1
 	},
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "Yq" = (
 /obj/structure/stalker/doski/doski_alt2,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -3915,9 +3881,8 @@
 	desc = "I hate criminal scum like you.";
 	name = "watchman's seat"
 	},
-/obj/effect/landmark/latejoin/ecologistguard,
 /turf/open/stalker/floor/lattice,
-/area/stalker/buildings/ecologist)
+/area/stalker/buildings/ecologist_entrance)
 "ZZ" = (
 /obj/rad/rad_low,
 /turf/closed/wall/rust,
@@ -31627,7 +31592,7 @@ ba
 ad
 Ez
 VP
-tw
+OB
 pq
 gW
 JH
@@ -31888,7 +31853,7 @@ ts
 Zj
 Zj
 Zj
-Zj
+nV
 UZ
 uK
 Sd
@@ -32914,7 +32879,7 @@ Hr
 Zj
 rA
 Ww
-DW
+Ug
 Uy
 hK
 Ug
@@ -33171,7 +33136,7 @@ HB
 Zj
 Zj
 VL
-DW
+Ug
 Cv
 bk
 Rp
@@ -33428,7 +33393,7 @@ HX
 Lj
 Zj
 Ww
-DW
+Ug
 hz
 Iu
 Rp
@@ -34455,7 +34420,7 @@ Fe
 qU
 PY
 PY
-nV
+HF
 Yf
 We
 Ue
@@ -34712,7 +34677,7 @@ FR
 sp
 Qr
 Vu
-Wy
+JM
 Ac
 vN
 ij
@@ -35486,7 +35451,7 @@ ad
 Xk
 Lk
 Ug
-DC
+Sv
 Ug
 Gl
 Zj

@@ -828,6 +828,13 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
+"kV" = (
+/obj/structure/stalker/bunker{
+	icon_state = "25"
+	},
+/obj/machinery/smartfridge/chemistry,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "lb" = (
 /obj/machinery/vending/sovietsoda,
 /turf/open/stalker/floor/asphalt,
@@ -845,10 +852,14 @@
 /area/stalker/blowout/outdoor)
 "lk" = (
 /obj/structure/table/stalker,
-/obj/item/hand_labeler,
+/obj/item/hand_labeler{
+	pixel_x = 10;
+	pixel_y = -10
+	},
 /obj/structure/sign/poster/official/safety_eye_protection{
 	pixel_y = -32
 	},
+/obj/machinery/reagentgrinder,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/ecologist)
 "lu" = (
@@ -32439,7 +32450,7 @@ Zj
 Zj
 Xj
 Zj
-RJ
+kV
 EP
 JB
 Tt

@@ -293,7 +293,7 @@
 	var/req_defib = TRUE
 	var/combat = FALSE //If it penetrates armor and gives additional functionality
 	var/grab_ghost = FALSE
-	var/tlimit = DEFIB_TIME_LIMIT * 10000
+	var/tlimit = DEFIB_TIME_LIMIT * 10
 
 	var/datum/component/mobhook
 

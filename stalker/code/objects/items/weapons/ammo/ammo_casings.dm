@@ -92,12 +92,17 @@
 	projectile_type = /obj/item/projectile/bullet/bullet762x54
 
 /obj/item/ammo_casing/c762x51
-    desc = "A 7.62x51 bullet casing."
-    caliber = "7.62x51mm"
-    projectile_type = /obj/item/projectile/bullet/bullet762x51 //Someone had this here twice?
+	desc = "A 7.62x51 bullet casing."
+	caliber = "7.62x51mm"
+	projectile_type = /obj/item/projectile/bullet/bullet762x51 //Someone had this here twice?
 
 /obj/item/ammo_casing/tungsten_slug
-    desc = "A 2mm ferromagnetic tungsten slug casing."
-    caliber = "2mm"
-    icon_state = "pshell"
-    projectile_type = /obj/item/projectile/bullet/tungsten_slug
+	desc = "A 2mm ferromagnetic tungsten slug casing."
+	caliber = "2mm"
+	icon_state = "pshell"
+	projectile_type = /obj/item/projectile/bullet/tungsten_slug
+
+/obj/item/ammo_casing/c57x28
+	desc = "A 5.7×28mm casing."
+	caliber = "5.7×28mm"
+	projectile_type = /obj/item/projectile/bullet/p90

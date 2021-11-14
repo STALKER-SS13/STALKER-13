@@ -446,6 +446,26 @@
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/berettam38_open.ogg'
 
+/obj/item/gun/ballistic/automatic/p90
+	name = "\improper FN P90"
+	desc = "An incredibly odd, albeit effecient, submachine gun. Chambered in FN 5.7×28mm."
+	icon_state = "p90"
+	item_state = "p90"
+	mag_type = /obj/item/ammo_box/magazine/smg57
+	fire_delay = 0.8
+	burst_size = 3
+	automatic = 1
+	tac_reloads = TRUE//tacticool
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+/*	mag_display = TRUE
+
+/obj/item/gun/ballistic/automatic/p90/Initialize()
+	. = ..()
+	update_icon()*/
+
 /obj/item/gun/ballistic/automatic/tpc301  // Эмка
 	name = "LR-300"
 	desc = "A new step in the development of this famous weapon family. The changes were made to the upper half of the steel construction comprising the barrel, gas tube and bolt assembly, reducing the weapon's weight, improving ergonomics and its gas system. The weapon is highly accurate, although its propensity to catch dirt makes it a poor choice for the Zone's difficult conditions."

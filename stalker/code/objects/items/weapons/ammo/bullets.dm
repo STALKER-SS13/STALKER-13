@@ -137,3 +137,10 @@
 	armour_penetration = 25
 	range = 6
 	spread = 15
+
+/obj/item/projectile/bullet/p90
+	name = "5.7×28mm bullet"
+	damage = 28
+	armour_penetration = 5
+	range = 50
+	spread = 5

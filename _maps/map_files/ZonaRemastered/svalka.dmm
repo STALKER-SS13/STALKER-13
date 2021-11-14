@@ -1324,6 +1324,16 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"dR" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 216;
+	teleport_y = 105;
+	teleport_z = 6
+	},
+/turf/open/floor/plasteel/stairs,
+/area/stalker/buildings/mercenary)
 "dS" = (
 /obj/structure/stalker/cacheable/musor_yashik/red/full,
 /turf/open/stalker/floor/asphalt,
@@ -1398,6 +1408,14 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"ef" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 233;
+	teleport_y = 111;
+	teleport_z = 6
+	},
+/turf/open/floor/plasteel/stairs,
+/area/stalker/buildings/mercenary)
 "eg" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -5905,14 +5923,6 @@
 	},
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/kordon/banditbar)
-"vM" = (
-/obj/effect/step_trigger/teleporter{
-	teleport_x = 233;
-	teleport_y = 111;
-	teleport_z = 1
-	},
-/turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/mercenary)
 "vP" = (
 /obj/rad/rad_low,
 /turf/open/stalker/floor/wood/grey,
@@ -6767,16 +6777,6 @@
 /obj/rad,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Di" = (
-/obj/effect/step_trigger/teleporter{
-	dir = 1;
-	icon_state = "up";
-	teleport_x = 216;
-	teleport_y = 105;
-	teleport_z = 1
-	},
-/turf/open/floor/plasteel/stairs,
-/area/stalker/buildings/mercenary)
 "Dj" = (
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/rad/rad_low,
@@ -65213,7 +65213,7 @@ Rj
 Rj
 QF
 sr
-vM
+ef
 cw
 aa
 aa
@@ -69574,7 +69574,7 @@ aa
 aa
 aa
 YH
-Di
+dR
 sr
 SF
 SF

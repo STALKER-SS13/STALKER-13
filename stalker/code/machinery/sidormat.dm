@@ -24,15 +24,19 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("USP-match",		"USP-match",		/obj/item/gun/ballistic/automatic/pistol/usp_match, 		16000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Colt Anaconda",	"Colt Anaconda",	/obj/item/gun/ballistic/revolver/anaconda,					25000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Desert Eagle",	"Desert Eagle",		/obj/item/gun/ballistic/automatic/pistol/desert,			30000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("MAC10 Ingram",	"MAC10 Ingram",		/obj/item/gun/ballistic/automatic/mac10,					35000,	EXPERIENCED)
+		),
+
+	"Submachine Guns" = list(
+		new /datum/data/stalker_equipment("Beretta M38",	"Beretta M38",		/obj/item/gun/ballistic/automatic/berettam38,				10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Kiparis",		"Kiparis",			/obj/item/gun/ballistic/automatic/kiparis,					12000,	ROOKIE),
+		new /datum/data/stalker_equipment("PPSh",			"PPSh",				/obj/item/gun/ballistic/automatic/ppsh,						15000,	ROOKIE),
+		new /datum/data/stalker_equipment("MP-5",			"MP-5",				/obj/item/gun/ballistic/automatic/mp5,						18000,	ROOKIE),
+		new /datum/data/stalker_equipment("MAC10 Ingram",	"MAC10 Ingram",		/obj/item/gun/ballistic/automatic/mac10,					24000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("FN P90",			"FN P90",			/obj/item/gun/ballistic/automatic/p90,						38000,	ROOKIE,faction = "Mercenaries"),
 		),
 
 	"Automatic Weapons" = list(
 		///////////////////////////// **Автоматы, ПП** /////////////////////////////////////
-		new /datum/data/stalker_equipment("Beretta M38",	"Beretta M38",		/obj/item/gun/ballistic/automatic/berettam38,				10000,	ROOKIE),
-		new /datum/data/stalker_equipment("Kiparis",		"Kiparis",			/obj/item/gun/ballistic/automatic/kiparis,					10000,	ROOKIE),
-		new /datum/data/stalker_equipment("PPSh",			"PPSh",				/obj/item/gun/ballistic/automatic/ppsh,						15000,	ROOKIE),
-		new /datum/data/stalker_equipment("MP-5",			"MP-5",				/obj/item/gun/ballistic/automatic/mp5,						18000,	ROOKIE),
 		new /datum/data/stalker_equipment("AK-74S",			"AK-74S",			/obj/item/gun/ballistic/automatic/aksu74 ,					24000,	ROOKIE),
 		new /datum/data/stalker_equipment("AK-74",			"AK-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("AS-96",			"AS-96",			/obj/item/gun/ballistic/automatic/abakan,					40000,	EXPERIENCED),
@@ -82,6 +86,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("7.62x25mm Box",				"7.62x25mm Box",							/obj/item/ammo_box/stalker/b762x25,						2500,	ROOKIE,			sale_price =400),
 		new /datum/data/stalker_equipment("9x19mm Box",					"9x19mm Box",								/obj/item/ammo_box/stalker/b9x19,						3500,	ROOKIE,			sale_price =450),
 		new /datum/data/stalker_equipment("9x19mm AP Box",				"9x19mm AP Box",							/obj/item/ammo_box/stalker/b9x19P,						5750,	EXPERIENCED,	sale_price =500),
+		new /datum/data/stalker_equipment("5.7×28mm Box",				"5.7×28mm Box",								/obj/item/ammo_box/stalker/b5728,						16000,	ROOKIE,			sale_price =550),
 		new /datum/data/stalker_equipment(".45 ACP Box",				".45 ACP Box",								/obj/item/ammo_box/stalker/bacp45,						8000,	ROOKIE,			sale_price =550),
 		new /datum/data/stalker_equipment(".45 ACP Hydroshock Box",		".45 ACP Hydroshock Box",					/obj/item/ammo_box/stalker/bacp45ap,					15000,	EXPERIENCED,	sale_price =600),
 		new /datum/data/stalker_equipment(".44 Magnum Box",				".44 Magnum Box",							/obj/item/ammo_box/stalker/bmag44,						14000,	EXPERIENCED,	sale_price =650),
@@ -107,6 +112,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("MP-5 Magazine",							"MP-5 Magazine",				/obj/item/ammo_box/magazine/stalker/m9x19mp5,			3000,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("MAC10 Magazine",							"MAC10 Magazine",				/obj/item/ammo_box/magazine/stalker/mac10,				3500,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("PPSh Drum",								"PPSh Drum",					/obj/item/ammo_box/magazine/stalker/ppsh,				7000,	ROOKIE,		sale_price =500),
+		new /datum/data/stalker_equipment("5.7×28mm Magazine",						"5.7×28mm Magazine",			/obj/item/ammo_box/magazine/smg57,						8000,	ROOKIE,		sale_price =550),
 		new /datum/data/stalker_equipment("5.45x39mm Magazine",						"5.45x39mm Magazine",			/obj/item/ammo_box/magazine/stalker/m545,				5250,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("5.56x45mm Magazine",						"5.56x45mm Magazine",			/obj/item/ammo_box/magazine/stalker/m556x45,			6500,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("AS \"Val\" Magazine",					"AS \"Val\" Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39val,			6000,	VETERAN,	sale_price =500),

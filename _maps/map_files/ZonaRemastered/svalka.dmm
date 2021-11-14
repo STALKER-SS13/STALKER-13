@@ -1503,6 +1503,12 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/svalka/buildings)
+"er" = (
+/obj/machinery/door/poddoor/shutters{
+	id = 422
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/svalka/cellar)
 "es" = (
 /obj/structure/stalker/doski/doski3,
 /turf/open/stalker/floor/gryaz,
@@ -1554,6 +1560,14 @@
 /obj/structure/stalker/doski/doski2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/svalka/buildings)
+"ew" = (
+/obj/structure/table/stalker/wood,
+/obj/machinery/stalker/sidormat{
+	dir = 1;
+	pixel_y = 8
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/mercenary)
 "ex" = (
 /obj/structure/bed/stalker/metal/matras{
 	dir = 8;
@@ -5670,15 +5684,6 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
-"tR" = (
-/obj/structure/table/stalker/wood,
-/obj/machinery/stalker/sidormat{
-	dir = 1;
-	pixel_y = 8
-	},
-/obj/machinery/light/floor,
-/turf/open/stalker/floor/lattice,
-/area/stalker/buildings/mercenary)
 "tS" = (
 /obj/structure/stalker/car/gryzovik/east{
 	icon_state = "7";
@@ -8850,12 +8855,6 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"SR" = (
-/obj/machinery/door/poddoor/shutters{
-	id = 422
-	},
-/turf/open/space/basic,
-/area/stalker/svalka/cellar)
 "ST" = (
 /obj/structure/stalker/doski/doski_alt3,
 /turf/open/stalker/floor/gryaz,
@@ -63659,14 +63658,14 @@ ad
 nz
 ad
 LP
-SR
+er
 Rj
 Rj
 ue
 xt
 nV
 ba
-tR
+ew
 SF
 Oo
 cw
@@ -63916,7 +63915,7 @@ ad
 nz
 ad
 LP
-SR
+er
 Rj
 JW
 Rj
@@ -64173,7 +64172,7 @@ ad
 nz
 ad
 Me
-SR
+er
 Rj
 Rj
 Rj

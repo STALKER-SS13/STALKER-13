@@ -207,6 +207,7 @@
 	icon_state = "maska_1"
 	item_state = "maska_1"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE

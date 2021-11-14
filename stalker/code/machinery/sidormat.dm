@@ -43,8 +43,8 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("SIG SG 550",		"SIG SG 550",		/obj/item/gun/ballistic/automatic/sigsg550,					50000,	VETERAN),
 		new /datum/data/stalker_equipment("FN F2000",		"FN F2000",			/obj/item/gun/ballistic/automatic/fnf2000,					65000,	EXPERT),
 		new /datum/data/stalker_equipment("GP 37",			"GP 37",			/obj/item/gun/ballistic/automatic/gp37,						75000,	EXPERT),
-		new /datum/data/stalker_equipment("FN F2000S",		"FN F2000S",		/obj/item/gun/ballistic/automatic/fnf2000s,					100000,	EXPERT)
-		//new /datum/data/stalker_equipment("PKM",			"PKM",				/obj/item/gun/ballistic/automatic/l6_saw/pkm,				200000,	EXPERT)
+		new /datum/data/stalker_equipment("FN F2000S",		"FN F2000S",		/obj/item/gun/ballistic/automatic/fnf2000s,					100000,	EXPERT),
+		//new /datum/data/stalker_equipment("PKM",			"PKM",				/obj/item/gun/ballistic/automatic/l6_saw/pkm,				600000,	EXPERT)
 		),
 
 	"Shotguns" = list(
@@ -61,7 +61,8 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		/////////////////////////////// **Винтовки** /////////////////////////////////////
 		new /datum/data/stalker_equipment("Lee Enfield",	"Lee Enfield",		/obj/item/gun/ballistic/rifle/boltaction/enfield,			15000,	ROOKIE),
 		new /datum/data/stalker_equipment("Vintorez", 		"Vintorez",			/obj/item/gun/ballistic/automatic/vintorez,					60000,	EXPERT),
-		new /datum/data/stalker_equipment("SVD", 	    	"SVD",			    /obj/item/gun/ballistic/semiauto/svd,					    75000,	EXPERT)
+		new /datum/data/stalker_equipment("SVD", 	    	"SVD",			    /obj/item/gun/ballistic/semiauto/svd,					    75000,	EXPERT),
+		new /datum/data/stalker_equipment("AWSM",			"AWSM",				/obj/item/gun/ballistic/awm,								400000,	EXPERT)
 		),
 
 	"Melee Weapons" = list(
@@ -95,6 +96,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("7.62x51 Box",				"7.62x51 Box",								/obj/item/ammo_box/stalker/b762x51,						10000,	ROOKIE,			sale_price =480),
 		new /datum/data/stalker_equipment("7.62x54mmR Box",				"7.62x54mmR Box",							/obj/item/ammo_box/stalker/b762x54r,					12000,	ROOKIE,			sale_price =480),
 		new /datum/data/stalker_equipment("9x39 PAB-9 Box",				"9x39 PAB-9 Box",							/obj/item/ammo_box/stalker/b939,						30000,	EXPERIENCED,	sale_price =700),
+		new /datum/data/stalker_equipment(".338 Lapua Magnum Box",		".338 Lapua Magnum Box",					/obj/item/ammo_box/stalker/b338,						100000,	EXPERIENCED,	sale_price =700),
 		),
 
 	"Ammo Magazines and Clips" = list(

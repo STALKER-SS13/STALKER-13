@@ -184,3 +184,11 @@
 	name = "SPSA-14 shotgun internal magazine"
 	ammo_type = /obj/item/ammo_casing/shotgun/c12x70
 	max_ammo = 8
+
+/obj/item/ammo_box/stalker/b338
+	name = "ammo box (.338 Lapua Magnum)"
+	desc = "A massive cartridge. This won't stop short of anything. Given how rare the ammunition is, however, not to mention expensive, don't miss."
+	ammo_type = /obj/item/ammo_casing/p338
+	icon_state = "338"//temp
+	max_ammo = 15//3 reloads of a single mag.
+	multiple_sprites = 2

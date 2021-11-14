@@ -97,10 +97,10 @@
 	uniform = UNIFORMPICK
 	head = /obj/item/clothing/head/assaultmerc
 	suit = /obj/item/clothing/suit/assaultmerc
-	suit_store = /obj/item/gun/ballistic/automatic/mp5
+	suit_store = /obj/item/gun/ballistic/automatic/tpc301
 	backpack_contents = list(
 		/obj/item/storage/firstaid/stalker/military = 1,
-		/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
+		/obj/item/ammo_box/magazine/stalker/m556x45 = 2,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/clothing/accessory/patch/mercenaries)

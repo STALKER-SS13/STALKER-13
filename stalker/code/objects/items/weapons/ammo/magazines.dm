@@ -203,3 +203,21 @@
 	caliber = "7.62x54mm"
 	max_ammo = 10
 	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/saiga
+	name = "saiga magazine (12x70mm)"
+	icon = 'icons/stalker/ammo.dmi'
+	icon_state = "saiga"
+	ammo_type = /obj/item/ammo_casing/shotgun/c12x70
+	caliber = "shotgun"
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/sks
+	name = "ammo pouch (7.62x39mm)"
+	icon = 'icons/stalker/ammo.dmi'
+	icon_state = "sks"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39mm"
+	max_ammo = 10
+	multiple_sprites = 2

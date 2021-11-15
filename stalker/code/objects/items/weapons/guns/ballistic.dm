@@ -331,6 +331,30 @@
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
+/obj/item/gun/ballistic/automatic/akm
+	name = "AKM"
+	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
+	eng_desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
+	icon_state = "akm"
+	item_state = "akm"
+	slot_flags = SLOT_BACK
+	force = 15
+	origin_tech = "combat=3;materials=1"
+	mag_type = /obj/item/ammo_box/magazine/stalker/a762x39
+	fire_sound = 'sound/stalker/weapons/ak74u_shot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	pin = /obj/item/device/firing_pin
+	durability = 150
+	w_class = 4
+	spread = 12
+	recoil = 0.9
+	damagelose = 0.25
+	can_scope = 0
+	weapon_weight = WEAPON_MEDIUM
+	drawsound = 'sound/stalker/weapons/draw/ak74u_draw.ogg'
+
 /*
 /obj/item/gun/ballistic/automatic/aksu74/black  // АКС74У - черный цвет
 	colored = "black"
@@ -452,6 +476,32 @@
 	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m16a1  //M16A1
+	name = "M16A1"
+	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
+	eng_desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
+	icon_state = "m16a1"
+	item_state = "m16a1"
+	slot_flags = SLOT_BACK
+	force = 15
+	origin_tech = "combat=6"
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'sound/stalker/weapons/tpc301_shoot.ogg'
+	can_suppress = 0
+	burst_size = 2
+	fire_delay = 1.7
+	pin = /obj/item/device/firing_pin
+	durability = 70
+	w_class = 4
+	spread = 5
+	recoil = 0.6
+	damagelose = 0.2
+	can_scope = 0
+	weapon_weight = WEAPON_MEDIUM
+	drawsound = 'sound/stalker/weapons/draw/tpc301_draw.ogg'
+	loadsound = 'sound/stalker/weapons/load/tpc301_load.ogg'
+	opensound = 'sound/stalker/weapons/unload/tpc301_open.ogg'
 
 /obj/item/gun/ballistic/automatic/abakan  // Абакан
 	name = "AN-94"

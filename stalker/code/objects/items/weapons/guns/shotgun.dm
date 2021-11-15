@@ -169,3 +169,80 @@
 	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
 	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
 	can_scope = 1
+
+/obj/item/weapon/gun/projectile/shotgun/automatic/sks  // SKS
+	name = "SKS"
+	desc = "The SKS is a Soviet semi-automatic carbine chambered for the 7.62x39mm round, designed in 1943 by Sergei Gavrilovich Simonov. The SKS-45 was manufactured at Tula Arsenal from 1949 to 1958 and at Izhevsk Arsenal in just 1953 and 1954, resulting in a total Soviet production of about 2.7 million carbines. In the early 1950s, the Soviets took the SKS carbine out of front-line service and replaced it with the AK-47; however, the SKS remained in second-line service for decades."
+	eng_desc = "The SKS is a Soviet semi-automatic carbine chambered for the 7.62x39mm round, designed in 1943 by Sergei Gavrilovich Simonov. The SKS-45 was manufactured at Tula Arsenal from 1949 to 1958 and at Izhevsk Arsenal in just 1953 and 1954, resulting in a total Soviet production of about 2.7 million carbines. In the early 1950s, the Soviets took the SKS carbine out of front-line service and replaced it with the AK-47; however, the SKS remained in second-line service for decades."
+	icon_state = "sks"
+	item_state = "sks"
+	fire_sound = 'sound/stalker/weapons/sks_shot.ogg'
+	durability = 200
+	slot_flags = SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/sks
+	can_suppress = 0
+	fire_delay = 1.2
+	durability = 150
+	slot_flags = SLOT_BACK
+	force = 15
+	origin_tech = "combat=5;materials=1"
+	pin = /obj/item/device/firing_pin
+	recoil = 0.5
+	w_class = 4
+	randomspread = 0
+	spread = 2
+	damagelose = 0.1
+	can_scope = 1
+	weapon_weight = WEAPON_MEDIUM
+	loadsound = 'sound/stalker/weapons/load/bolt_load.ogg'
+	drawsound = 'sound/stalker/weapons/draw/shotgun_draw.ogg'
+
+/obj/item/gun/ballistic/rifle/boltaction/mosin/sawnoff
+	name = "Mosin obrez"
+	desc = "The Mosin system rifle is a magazine-loaded weapon with manual reloading. A fairly typical example of the Russian and Soviet weapons idea, when convenience in handling weapons and ergonomics were sacrificed to reliability, ease of production, development and cheapness. This one's barrel and stock has been sawn-off for ease of transportation, albeit at the cost of accuracy and comfortability."
+	eng_desc = "The Mosin system rifle is a magazine-loaded weapon with manual reloading. A fairly typical example of the Russian and Soviet weapons idea, when convenience in handling weapons and ergonomics were sacrificed to reliability, ease of production, development and cheapness. This one's barrel and stock has been sawn-off for ease of transportation, albeit at the cost of accuracy and comfortability."
+	sawn_state = SAWN_OFF
+	weapon_weight = WEAPON_LIGHT
+	icon_state = "sawnmosin"
+	item_state = "moistnugget"
+	slot_flags = SLOT_BELT
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	w_class = 3
+	durability = 100
+	force = 15
+	spread = 25
+	recoil = 4.5
+	damagelose = 0.15
+	can_suppress = 0
+	can_scope = 0
+	fire_sound = 'sound/stalker/weapons/enfield_shot.ogg'
+	loadsound = 'sound/stalker/weapons/load/bolt_load.ogg'
+	drawsound = 'sound/stalker/weapons/draw/shotgun_draw.ogg'
+
+
+/obj/item/gun/ballistic/semiauto/saiga  // Saiga-12
+	name = "Saiga-12"
+	desc = "Semi-automatic 12ga shotgun with folding stock and firing mechanism safety lock that only allows firing from extended stock position. Features short 430mm barrel."
+	eng_desc = "Semi-automatic 12ga shotgun with folding stock and firing mechanism safety lock that only allows firing from extended stock position. Features short 430mm barrel."
+	icon_state = "saiga"
+	item_state = "saiga"
+	colored = 0//"normal"
+	slot_flags = SLOT_BACK//|SLOT_BELT
+	force = 15
+	origin_tech = "combat=5;materials=1"
+	mag_type = /obj/item/ammo_box/magazine/stalker/saiga
+	fire_sound = 'sound/stalker/weapons/spsa_shot.ogg'
+	can_suppress = 0
+	can_unsuppress = 0
+	fire_delay = 2.5
+	pin = /obj/item/device/firing_pin
+	durability = 120
+	w_class = 4
+	spread = 6
+	recoil = 0.5
+	randomspread = 0
+	damagelose = 0.45
+	distro = 15
+	can_scope = 1
+	weapon_weight = WEAPON_MEDIUM
+	drawsound = 'sound/stalker/weapons/draw/ak74_draw.ogg'

@@ -3,7 +3,7 @@
 	w_class = 2
 	possible_transfer_amounts = list()
 	volume = 60
-	apply_type = PATCH
+	apply_type = INJECT
 	apply_method = "apply"
 	self_delay = 30
 

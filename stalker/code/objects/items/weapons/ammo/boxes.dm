@@ -197,5 +197,5 @@
 	name = "ammo box (5.7×28mm)"
 	ammo_type = /obj/item/ammo_casing/c57x28
 	icon_state = "57×28"//temp
-	max_ammo = 15//3 reloads of a single mag.
+	max_ammo = 150//3 reloads of a single mag.
 	multiple_sprites = 2

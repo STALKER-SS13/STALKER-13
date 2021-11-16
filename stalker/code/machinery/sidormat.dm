@@ -145,7 +145,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Ecologist Mercenary Outfit",	"Ecologist Mercenary Outfit",/obj/item/clothing/suit/hooded/kombez/eco_mercenary,		25000,		ROOKIE,		faction = "Ecologist"),
 		new /datum/data/stalker_equipment("Bandit Outfit",				"Bandit Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_bandit,		25000,		ROOKIE,		faction = "Bandits"),
 		new /datum/data/stalker_equipment("Renegade Outfit",			"Renegade Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_renegade,		25000,		ROOKIE,		faction = "Renegades"),
-		new /datum/data/stalker_equipment("Renegade Vest",              "Renegade Vest",            /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2  25000,      ROOKIE,     faction = "Renegades"),
+		new /datum/data/stalker_equipment("Renegade Vest",              "Renegade Vest",            /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2, 25000,      ROOKIE,     faction = "Renegades"),
 		new /datum/data/stalker_equipment("Black Trenchcoat",			"Black Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat,		12500,		ROOKIE,		faction = "Bandits"),
 		new /datum/data/stalker_equipment("Brown Trenchcoat",			"Brown Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown,12500,		ROOKIE),
 		new /datum/data/stalker_equipment("Ghillie Suit",				"Ghillie Suit",				/obj/item/clothing/suit/hooded/kozhanka/ghillie,			30000,		ROOKIE),

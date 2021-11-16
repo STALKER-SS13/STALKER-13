@@ -305,7 +305,7 @@
 	item_state = "renegade_helm"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
-	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 0, "bio" = 20, "rad" = 30, "fire" = 20, "acid" = 0, "psy" = 0)
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 10, "bio" = 20, "rad" = 30, "fire" = 20, "acid" = 0, "psy" = 0)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
 	durability = 300

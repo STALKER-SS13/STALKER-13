@@ -85,6 +85,7 @@
 	item_state = "hardhat0_lighttactical"
 	item_color = "lighttactical"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 5)
 	brightness_on = 3 //luminosity when on
 	flags_cover = HEADCOVERSEYES

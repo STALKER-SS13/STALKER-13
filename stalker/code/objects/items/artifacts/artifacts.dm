@@ -264,8 +264,8 @@
 
 /obj/item/artifact/thorn
 	name = "thorn"
-	desc = "A relatively rare artifact which forms in areas contaminated with chemicals, Kolobok is highly valued for its ability to heal wounds of any kind in mere minutes. For unknown reasons, scientists are spreading rumors among stalkers that the artifact interacts with the bearer's genetic code. Emits radiation."
-	eng_desc = "A relatively rare artifact which forms in areas contaminated with chemicals, Kolobok is highly valued for its ability to heal wounds of any kind in mere minutes. For unknown reasons, scientists are spreading rumors among stalkers that the artifact interacts with the bearer's genetic code. Emits radiation."
+	desc = "The result of the interaction between the anomaly Burnt Fuzz and the body of a careless stalker. The Thorn artifact pokes the body of its owner, no matter what. But it also helps clean the body of radionucliodes. Quite widespread and cheap."
+	eng_desc = "The result of the interaction between the anomaly Burnt Fuzz and the body of a careless stalker. The Thorn artifact pokes the body of its owner, no matter what. But it also helps clean the body of radionucliodes. Quite widespread and cheap."
 	icon_state = "thorn"
 	radiation = -1
 	level_s = 1

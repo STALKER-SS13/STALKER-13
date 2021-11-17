@@ -7,6 +7,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 1
 	//limit_per_player = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
@@ -50,6 +51,7 @@ Assistant
 	total_positions = 4
 	locked = 1
 	spawn_positions = 4
+	limit_per_player = 1
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction or otherwise jeopordize the faction for an insignificant reason."

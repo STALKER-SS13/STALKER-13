@@ -280,6 +280,7 @@
 	fire_sound = 'stalker/sound/weapons/mac10_shoot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/mac10
 	can_suppress = 1
+	can_unsuppress = 1
 	burst_size = 4
 	fire_delay = 0.8
 	slot_flags = ITEM_SLOT_BELT
@@ -746,7 +747,6 @@
 	recoil = 0.5
 	damagelose = 0
 	can_scope = 0
-    fire_delay = 35
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'

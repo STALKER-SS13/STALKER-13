@@ -12,6 +12,7 @@
 	locked = 1
 	outfit = /datum/outfit/job/renegade
 
+
 /datum/outfit/job/renegade
 	name = "Renegade"
 	faction_s = "Renegades"

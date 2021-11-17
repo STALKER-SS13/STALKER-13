@@ -687,3 +687,32 @@
 /obj/item/storage/belt/sabre/PopulateContents()
 	new /obj/item/melee/sabre(src)
 	update_icon()
+
+
+
+/obj/item/storage/belt/military/tactibelt/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	icon_state = "tactibelt"
+	item_state = "tactibelt"
+	STR.max_items = 4
+	desc = "A tactical belt for holding combat supplies, such as grenades, spare mags or knives.:"
+
+
+
+/obj/item/storage/belt/military/webbing/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	icon_state = "webbing"
+	item_state = "webbing"
+	STR.max_items = 6
+	desc = "A set of tactical webbing, layered over body armor for expanded carrying capacity."
+
+
+/obj/item/storage/belt/military/chestrig/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	icon_state = "chestrig"
+	item_state = "chestrig"
+	STR.max_items = 8
+	desc = "A cumbersome chest rig with multiple pouch slots, this rig allows the wearer to carry no less than a boat-load of tactical equipment."

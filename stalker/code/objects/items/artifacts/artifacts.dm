@@ -243,7 +243,7 @@
 									B = D
 									break
 
-						B.volume += 0.5
+						B.volume += 4
 	return 1
 
 /obj/item/artifact/firefly
@@ -292,7 +292,7 @@
 		mob.bleed(1)
 	return 1
 
-/obj/item/artifact/slug 
+/obj/item/artifact/slug
 	name = "slug"
 	desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
 	eng_desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
@@ -321,7 +321,7 @@
 									B = D
 									break
 
-						B.volume += 0.5
+						B.volume += 2.6
 	return 1
 
 /obj/item/artifact/slime
@@ -353,7 +353,7 @@
 									B = D
 									break
 
-						B.volume += 0.5
+						B.volume += 2.6
 	return 1
 
 	//BELTS

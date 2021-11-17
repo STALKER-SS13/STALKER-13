@@ -4,6 +4,7 @@
 	faction = "Station"
 	total_positions = 5//6 total, prior to the introduction of Radar.
 	spawn_positions = 5
+	limit_per_player = 1
 	locked = 1
 	supervisors = "Monolith Preacher"
 	enforces = "We thank you, oh Monolith, for revealing the cunning plans of your enemies to us. May your light shine down on the souls of the brave soldiers who gave their lives in service to your will. Onward warriors of the Monolith, avenge your fallen brothers, blessed as they are in their eternal union with the Monolith."
@@ -67,6 +68,7 @@
 	faction = "Station"
 	total_positions = 1//6 total, prior to the introduction of Radar.
 	spawn_positions = 1
+	limit_per_player = 1
 	locked = 1
 	supervisors = "Monolith"
 	selection_color = "#601919"

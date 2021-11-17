@@ -44,7 +44,7 @@ Assistant
 	locked = 1
 	total_positions = -1
 	spawn_positions = -1
-	limit_per_player = 2
+	limit_per_player = 1
 	description = "The Loners are those who aren't part of any faction and inhabit the Zone as nomadic, independent stalkers. Even though they are not a proper faction of their own as per se, they often look out for eachother and are friendly with eachother in order to cohabitate the Zone."
 	enforces = "Explore the Zone for artifacts, survive and fight off mutants and extraordinary threats, and make discoveries beyond your imagination."
 	forbids = "Harm or steal from fellow Loners independently or as a result of joining along with other factions."
@@ -244,6 +244,7 @@ Assistant
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
+	limit_per_player = 1
 	supervisors = ""
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -275,6 +276,7 @@ Assistant
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
+	limit_per_player = 1
 	supervisors = ""
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()

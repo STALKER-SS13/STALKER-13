@@ -457,6 +457,8 @@
 			to_chat(usr, "<span class='boldnotice'>You will be able to respawn in [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] Minutes.</span>")
 		return
 
+		usr.client.pastcharacters += usr.real_name
+
 	log_game("[key_name(usr)] used abandon mob.")
 
 	to_chat(usr, "<span class='boldnotice'>Be kind to other players!</span>")

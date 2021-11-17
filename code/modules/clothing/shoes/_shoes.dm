@@ -7,6 +7,7 @@
 
 	body_parts_covered = FEET
 	slot_flags = ITEM_SLOT_FEET
+	clothing_flags = NOSLIP//fuck you
 
 	permeability_coefficient = 0.5
 	slowdown = SHOES_SLOWDOWN

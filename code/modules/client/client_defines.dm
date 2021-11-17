@@ -79,3 +79,5 @@
 	var/country = null
 
 	mouse_pointer_icon = 'stalker/icons/cursors.dmi'
+
+	var/list/pastcharacters = list()

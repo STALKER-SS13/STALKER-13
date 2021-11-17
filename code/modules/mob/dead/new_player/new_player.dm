@@ -121,6 +121,10 @@
 			LateChoices()
 			return
 
+		if(client.prefs.real_name in client.pastcharacters)
+			to_chat(usr, "<span class='notice'>You cannot play the same character twice in one round!</span>")
+			return
+
 		if(SSticker.queued_players.len || (relevant_cap && living_player_count() >= relevant_cap && !(ckey(key) in GLOB.admin_datums)))
 			to_chat(usr, "<span class='danger'>[CONFIG_GET(string/hard_popcap_message)]</span>")
 

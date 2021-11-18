@@ -27,7 +27,7 @@
 	var/req_one_access_txt = "0"
 
 	var/renamedByPlayer = FALSE //set when a player uses a pen on a renamable object
-	var/eng_desc = "No Desc, sorry."
+	var/eng_desc = "This is deprecated. Do not use me for descriptions."
 
 /obj/vv_edit_var(vname, vval)
 	switch(vname)

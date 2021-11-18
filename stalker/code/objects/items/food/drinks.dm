@@ -30,7 +30,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
 	name = "Cossacks vodka"
 	desc = "Vodka by ukrainian company GSC. Easy to drink. Can reduce radiation from human's body."
-	eng_desc = "Vodka by ukrainian company GSC. Easy to drink. Can reduce radiation from human's body."
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "gsc_vodka"
 	list_reagents = list("vodka" = 90, "potass_iodide" = 10)

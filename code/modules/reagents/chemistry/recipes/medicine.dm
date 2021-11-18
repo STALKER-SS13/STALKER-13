@@ -280,7 +280,7 @@
 	name = "Indraline"
 	id = "indraline"
 	results = list("indraline" = 5)
-	required_reagents = list( "carbon" = 2, "sugar" = 2, "hydrogen" = 1, "											unknownsubstancetwo" = 2)
+	required_reagents = list( "carbon" = 2, "sugar" = 2, "hydrogen" = 1, "unknownsubstancetwo" = 2)
 
 /datum/chemical_reaction/hercules
 	name = "Hercules"
@@ -311,3 +311,9 @@
 	id = "axyltallisal"
 	results = list("axyltallisal" = 2.5)
 	required_reagents = list( "nitrogen" = 2, "sodium" = 2, "chlorine" = 2, "silicon" = 1, "unknownsubstancethree" = 1)
+
+/datum/chemical_reaction/zolpidem
+	name = "Zolpidem"
+	id = "zolpidem"
+	results = list("zolpidem" = 5)
+	required_reagents = list( "nitrogen" = 2, "chlorine" = 2, "silicon" = 1, "unknownsubstance" = 1)//grind dog tails

@@ -186,3 +186,12 @@
 	desc = "All-purpose snail medicine! Do not use on non-snails!"
 	list_reagents = list("snailserum" = 10)
 	icon_state = "snail"
+
+//admin abuse pen
+/obj/item/reagent_containers/hypospray/medipen/zolpidem
+	name = "zolpidem pen"
+	desc = "A pen designed to revert certain catatonic states in individuals. This is incredibly dangerous."
+	icon_state = "lepopen"
+	volume = 5
+	amount_per_transfer_from_this = 5
+	list_reagents = list("zolpidem" = 5)

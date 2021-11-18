@@ -141,7 +141,7 @@
 	see_in_dark = 4
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("stalker_mutants1")
+	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	//environment_smash = 1
 	robust_searching = 1
@@ -321,7 +321,7 @@
 	see_in_dark = 4
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("stalker_mutants1")
+	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	robust_searching = 1
 	deathmessage = "chokes up blood and falls to the ground!"
@@ -401,7 +401,7 @@
 	see_in_dark = 4
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("stalker_mutants1")
+	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	robust_searching = 1
 	deathmessage = "makes a sinister howl before falling on its side!"
@@ -443,7 +443,7 @@
 	see_in_dark = 4
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("stalker_mutants1")
+	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	robust_searching = 1
 	deathmessage = "screams in agony, straining your mind with its last breath!"
@@ -543,6 +543,7 @@
 /mob/living/simple_animal/hostile/mutant/poltergeist
 	name = "poltergeist"
 	real_name = "poltergeist"
+	faction = list("stalker_mutants1", "monolith_forces")
 	icon = 'stalker/icons/anomalies.dmi'
 	density = TRUE
 	anchored = TRUE

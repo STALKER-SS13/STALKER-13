@@ -71,6 +71,14 @@
 	max_ammo = 10
 	multiload = 1
 
+/obj/item/ammo_box/magazine/internal/boltaction/mosin_obrez
+	name = "mosin obrez internal magazine"
+	desc = "Oh god, this shouldn't be here"
+	ammo_type = /obj/item/ammo_casing/c762x54
+	caliber = "7.62x54mm"
+	max_ammo = 5
+	multiload = 1
+
 /obj/item/ammo_box/magazine/stalker/usp45
 	name = "pistol magazine (.45)"
 	icon_state = "usp45"
@@ -120,7 +128,7 @@
 
 
 /obj/item/ammo_box/magazine/stalker/m556x45
-	name = "rifle magazine (5.556x45)"
+	name = "rifle magazine (5.56x45)"
 	icon_state = "556x45"
 	ammo_type = /obj/item/ammo_casing/c556x45
 	caliber = "5.56x45"
@@ -206,7 +214,7 @@
 
 /obj/item/ammo_box/magazine/stalker/saiga
 	name = "saiga magazine (12x70mm)"
-	icon = 'icons/stalker/ammo.dmi'
+	icon = 'stalker/icons/ammo.dmi'
 	icon_state = "saiga"
 	ammo_type = /obj/item/ammo_casing/shotgun/c12x70
 	caliber = "shotgun"
@@ -215,9 +223,24 @@
 
 /obj/item/ammo_box/magazine/stalker/sks
 	name = "ammo pouch (7.62x39mm)"
-	icon = 'icons/stalker/ammo.dmi'
+	icon = 'stalker/icons/ammo.dmi'
 	icon_state = "sks"
 	ammo_type = /obj/item/ammo_casing/c762x39
 	caliber = "7.62x39mm"
 	max_ammo = 10
 	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/a762x39
+	name = "AKM magazine (7.62x39mm)"
+	icon = 'stalker/icons/ammo.dmi'
+	icon_state = "akm"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39mm"
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/internal/boltaction/sks
+	name = "internal sks magazine"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39mm"
+	max_ammo = 10

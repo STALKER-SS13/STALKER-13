@@ -334,18 +334,16 @@
 /obj/item/gun/ballistic/automatic/akm
 	name = "AKM"
 	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
-	eng_desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
 	icon_state = "akm"
 	item_state = "akm"
 	slot_flags = SLOT_BACK
 	force = 15
-	origin_tech = "combat=3;materials=1"
 	mag_type = /obj/item/ammo_box/magazine/stalker/a762x39
-	fire_sound = 'sound/stalker/weapons/ak74u_shot.ogg'
+	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
 	can_suppress = 0
 	burst_size = 3
 	fire_delay = 1.7
-	pin = /obj/item/device/firing_pin
+	pin = /obj/item/firing_pin
 	durability = 150
 	w_class = 4
 	spread = 12
@@ -353,7 +351,7 @@
 	damagelose = 0.25
 	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM
-	drawsound = 'sound/stalker/weapons/draw/ak74u_draw.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
 /*
 /obj/item/gun/ballistic/automatic/aksu74/black  // АКС74У - черный цвет
@@ -485,13 +483,12 @@
 	item_state = "m16a1"
 	slot_flags = SLOT_BACK
 	force = 15
-	origin_tech = "combat=6"
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
-	fire_sound = 'sound/stalker/weapons/tpc301_shoot.ogg'
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
 	can_suppress = 0
 	burst_size = 2
 	fire_delay = 1.7
-	pin = /obj/item/device/firing_pin
+	pin = /obj/item/firing_pin
 	durability = 70
 	w_class = 4
 	spread = 5
@@ -499,9 +496,9 @@
 	damagelose = 0.2
 	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM
-	drawsound = 'sound/stalker/weapons/draw/tpc301_draw.ogg'
-	loadsound = 'sound/stalker/weapons/load/tpc301_load.ogg'
-	opensound = 'sound/stalker/weapons/unload/tpc301_open.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
 
 /obj/item/gun/ballistic/automatic/abakan  // Абакан
 	name = "AN-94"

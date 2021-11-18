@@ -112,7 +112,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/stalker/bacp45
-	name = "ammo box (11.43×23mm)"
+	name = "ammo box (11.43x23mm)"
 	desc = "Outdated Full Metal Jacket handgun cartridge from the USA with high tissue damage but lacks armor penetration, also known as .45 ACP (11.43×23mm)."
 	ammo_type = /obj/item/ammo_casing/acp45
 	icon_state = "45_ACP"
@@ -120,7 +120,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/stalker/bacp45ap
-	name = "ammo box (11.43×23mm Hydroshock)"
+	name = "ammo box (11.43x23mm Hydroshock)"
 	desc = "Expanding hollow point handgun cartridge from the USA with high tissue damage, also known as .45 ACP Hydroshock (11.43×23mm Hydroshock)."
 	ammo_type = /obj/item/ammo_casing/acp45/P
 	icon_state = "45_ACP_hydroshock"
@@ -174,6 +174,14 @@
 	icon_state = "303"
 	max_ammo = 5
 	multiple_sprites = 1
+
+/obj/item/ammo_box/stalker/b76239
+	name = "ammo box (7.62x39mm)"
+	desc = "Outdated intermediate cartridge of Western Pact, Full Metal Jacket (7.62x39mm PS gzh)."
+	ammo_type = /obj/item/ammo_casing/c762x39
+	icon_state = "762x39"
+	max_ammo = 90
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/internal/shot/chaser
 	name = "chaser shotgun internal magazine"

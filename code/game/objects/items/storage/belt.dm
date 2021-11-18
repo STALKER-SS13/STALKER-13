@@ -692,22 +692,22 @@
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_items = 4
-	icon_state : "tactibelt"
-	item_state : "tactibelt"
-	desc : "A tactical holster-belt, for holding spare ammo, grenades, knives and sidearms."
+	icon_state = "tactibelt"
+	item_state = "tactibelt"
+	desc = "A tactical holster-belt, for holding spare ammo, grenades, knives and sidearms."
 
 /obj/item/storage/belt/military/webbing/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_items = 6
-	icon_state : "webbing"
-	item_state : "webbing"
-	desc : "A set of pouches, typically worn on top of armor to increase carrying capacity."
+	icon_state = "webbing"
+	item_state = "webbing"
+	desc = "A set of pouches, typically worn on top of armor to increase carrying capacity."
 
 /obj/item/storage/belt/military/chestrig/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_items = 8
-	icon_state : "chestrig"
-	item_state : "chestrig"
-	desc : "A hefty chestrig with a numerous amount of pouch slots. Ideal for carrying important equipment."
+	icon_state = "chestrig"
+	item_state = "chestrig"
+	desc = "A hefty chestrig with a numerous amount of pouch slots. Ideal for carrying important equipment."

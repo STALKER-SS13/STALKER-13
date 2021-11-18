@@ -1595,3 +1595,34 @@
 	M.adjust_fire_stacks(2)
 	M.IgniteMob()
 	..()
+
+//Literally Ambien. I can't be assed to find something else to steal the name of, not to mention that I'm creatively bankrupt.
+//This reverts stage one zombification.
+/datum/reagent/medicine/zolpidem
+	name = "Zolpidem"
+	id = "zolpidem"
+	description = "Clears the mind of horrible thoughts, at a cost."
+	color = "#5096C8"
+	taste_description = "acid"
+	overdose_threshold = 2//You need no more than one unit. Otherwise, the 'body' has a bad reaction.
+	metabolization_rate = 0.15 * REAGENTS_METABOLISM
+
+/datum/reagent/medicine/zolpidem/on_mob_add(mob/living/carbon/human/H)
+	..()
+	if(H.zombified == 1)
+		H.zombified = 0
+		H.add_trait(TRAIT_DEATHCOMA, id)
+	else
+		to_chat(H, "<span class = 'notice'>You don't feel any effect.</span>")
+		return FALSE
+
+/datum/reagent/medicine/zolpidem/on_mob_delete(mob/living/carbon/human/H)
+	if(H.has_trait(TRAIT_DEATHCOMA))
+		H.remove_trait(TRAIT_DEATHCOMA, id)
+	..()
+
+/datum/reagent/medicine/zolpidem/overdose_process(mob/living/carbon/human/H)
+	if(prob(50))
+		H.Dizzy(2)
+		H.Jitter(2)
+	..()

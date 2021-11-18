@@ -218,11 +218,17 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("MRE",						"MRE",						/obj/item/storage/box/MRE,												2500,	EXPERIENCED)
 		),
 
-	"Bacpacks" = list(
+	"Backpacks" = list(
 		new /datum/data/stalker_equipment("Cheap satchel",					"Cheap satchel",			/obj/item/storage/backpack/satchel/stalker/civilian,				2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Cheap backpack",					"Cheap backpack",			/obj/item/storage/backpack/stalker/civilian,						2500,	ROOKIE),
-		new /datum/data/stalker_equipment("Tourist backpack",				"Tourist backpack",			/obj/item/storage/backpack/stalker/tourist,							10000,	ROOKIE, sale_price = 3000),
-		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					35000,	ROOKIE, sale_price = 10000)
+		new /datum/data/stalker_equipment("Tourist backpack",				"Tourist backpack",			/obj/item/storage/backpack/stalker/tourist,							10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					20000,	ROOKIE),
+		),
+
+	"Rigs" = list(
+		new /datum/data/stalker_equipment("Tactical belt",					"Tactical belt",			/obj/item/storage/belt/military/tactibelt	,						8000,	ROOKIE),
+		new /datum/data/stalker_equipment("Carry webbing",					"Carry webbing",			/obj/item/storage/belt/military/webbing,							14000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Chestrig",						"Chestrig",					/obj/item/storage/belt/military/chestrig,							20000,	VETERAN),
 		),
 
 	"Misc" = list(

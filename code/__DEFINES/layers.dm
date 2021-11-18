@@ -1,15 +1,46 @@
 //Defines for atom layers and planes
 //KEEP THESE IN A NICE ACSCENDING ORDER, PLEASE
 
+#define PLANE_VOID -100
+
 #define CLICKCATCHER_PLANE -99
 
 #define PLANE_SPACE -95
+#define PLANE_SPACE_RENDER_TARGET "PLANE_SPACE"
 #define PLANE_SPACE_PARALLAX -90
+#define PLANE_SPACE_PARALLAX_RENDER_TARGET "PLANE_SPACE_PARALLAX"
 
-#define FLOOR_PLANE -1
+#define OPENSPACE_LAYER 17 //Openspace layer over all
+#define OPENSPACE_PLANE -10 //Openspace plane below all turfs
+#define OPENSPACE_BACKDROP_PLANE -9 //Black square just over openspace plane to guaranteed cover all in openspace turf
 
-#define GAME_PLANE -1
+#define FLOOR_PLANE -8
+#define FLOOR_PLANE_RENDER_TARGET "FLOOR_PLANE"
+
+#define WALL_PLANE -7
+#define WALL_PLANE_RENDER_TARGET "WALL_PLANE"
+
+#define ABOVE_WALL_PLANE -6
+#define ABOVE_WALL_PLANE_RENDER_TARGET "ABOVE_WALL_PLANE"
+
+#define FIELD_OF_VISION_BLOCKER_PLANE -5
+#define FIELD_OF_VISION_BLOCKER_RENDER_TARGET "*FIELD_OF_VISION_BLOCKER_PLANE"
+
+#define FIELD_OF_VISION_PLANE -4
+#define FIELD_OF_VISION_RENDER_TARGET "*FIELD_OF_VISION_PLANE"
+#define FIELD_OF_VISION_LAYER 17 //used to place the visual (not the mask) shadow cone above any other floor plane stuff.
+
+#define GAME_PLANE -3
+#define GAME_PLANE_RENDER_TARGET "GAME_PLANE"
+
+#define FIELD_OF_VISION_VISUAL_PLANE -2 //Yea, FoV does require quite a few planes to work with 513 filters to a decent degree.
+#define FIELD_OF_VISION_VISUAL_RENDER_TARGET "FIELD_OF_VISION_VISUAL_PLANE"
+
+#define CHAT_PLANE -1 //We don't want heard messages to be hidden by FoV.
+#define CHAT_LAYER 12.1 //Legacy, it doesn't matter that much because we are displayed above the game plane anyway.
+
 #define BLACKNESS_PLANE 0 //To keep from conflicts with SEE_BLACKNESS internals
+#define BLACKNESS_PLANE_RENDER_TARGET "BLACKNESS_PLANE"
 
 #define SPACE_LAYER 1.8
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
@@ -81,13 +112,31 @@
 #define MASSIVE_OBJ_LAYER 11
 #define POINT_LAYER 12
 
-#define LIGHTING_PLANE -3
-#define LIGHTING_LAYER 15
+#define EMISSIVE_BLOCKER_PLANE 12
+#define EMISSIVE_BLOCKER_LAYER 12
+#define EMISSIVE_BLOCKER_RENDER_TARGET "*EMISSIVE_BLOCKER_PLANE"
 
-#define SUNLIGHTING_PLANE -2
+#define EMISSIVE_PLANE 13
+#define EMISSIVE_LAYER 13
+#define EMISSIVE_RENDER_TARGET "*EMISSIVE_PLANE"
+
+#define EMISSIVE_UNBLOCKABLE_PLANE 14
+#define EMISSIVE_UNBLOCKABLE_LAYER 14
+#define EMISSIVE_UNBLOCKABLE_RENDER_TARGET "*EMISSIVE_UNBLOCKABLE_PLANE"
+
+#define LIGHTING_PLANE 15
+#define LIGHTING_LAYER 15
+#define LIGHTING_RENDER_TARGET "LIGHT_PLANE"
+
+#define RAD_TEXT_LAYER 15.1
 
 #define ABOVE_LIGHTING_PLANE 16
 #define ABOVE_LIGHTING_LAYER 16
+#define ABOVE_LIGHTING_RENDER_TARGET "ABOVE_LIGHTING_PLANE"
+
+#define BYOND_LIGHTING_PLANE 18
+#define BYOND_LIGHTING_LAYER 18
+#define BYOND_LIGHTING_RENDER_TARGET "BYOND_LIGHTING_PLANE"
 
 #define FLOOR_OPENSPACE_PLANE 17
 #define OPENSPACE_LAYER 17
@@ -113,5 +162,6 @@
 #define ABOVE_HUD_PLANE 22
 #define ABOVE_HUD_LAYER 22
 
-#define SPLASHSCREEN_LAYER 23
-#define SPLASHSCREEN_PLANE 23
+#define SPLASHSCREEN_LAYER 90
+#define SPLASHSCREEN_PLANE 90
+#define SPLASHSCREEN_RENDER_TARGET "SPLASHSCREEN_PLANE"

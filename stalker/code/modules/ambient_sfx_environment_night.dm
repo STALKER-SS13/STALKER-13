@@ -1,0 +1,34 @@
+
+#define DEFAULT_AMBIENT_ENVIRONMENT_NIGHT list(\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_1.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_2.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_3.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_4.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_5.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_6.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_7.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_8.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_9.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_10.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_11.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_12.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/ambient_night_13.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan1.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan2.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan3.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan4.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan5.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_moan6.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_night_amb_1.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_night_amb_2.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/rnd_night_amb_3.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_01.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_02.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_03.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_04.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_05.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_06.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/wolf_howl_07.ogg',\
+	'stalker/sound/ambience/rnd_outdoor_night/zat_bkg_tuman.ogg'\
+	)

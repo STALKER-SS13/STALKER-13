@@ -77,7 +77,7 @@ var/id_ = 0
 	name = "modification"
 	var/cost = 5000
 	var/desc = "This is a modification"
-	var/eng_desc = "This is modification"
+	var/eng_desc = "This is deprecated. Do not use me for descriptions."
 	var/list/add_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "psy" = 0)
 	var/id = null
 	var/tier = 1

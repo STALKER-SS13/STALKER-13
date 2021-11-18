@@ -9,6 +9,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 1
 	description = "The State Security Services, often referred to as the Military or the Army, are Ukrainian soldiers that have been sent into the Zone by the Ukrainian government to maintain security along the borders of the Zone, in order to prevent unauthorized incursions by Stalkers, and by extension, distribution of artifacts to the outside world without government supervision."
 	enforces = "Protect the military checkpoint by default, be aware of orders from superiors and executing them with precision, communicate with those in the Zone so they know the military has a presence."
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
@@ -25,6 +26,7 @@ Assistant
 	title = "Military Spetsnaz"
 	faction = "Station"
 	faction_s = "State Security Service"
+	limit_per_player = 1
 	total_positions = 2
 	spawn_positions = 2
 	description = "The State Security Services, often referred to as the Military or the Army, are Ukrainian soldiers that have been sent into the Zone by the Ukrainian government to maintain security along the borders of the Zone, in order to prevent unauthorized incursions by Stalkers, and by extension, distribution of artifacts to the outside world without government supervision."
@@ -81,6 +83,7 @@ Assistant
 	faction_s = "State Security Service"
 	outfit = /datum/outfit/job/militarycommander
 	faction = "Station"
+	limit_per_player = 1
 	total_positions = 2
 	locked = 1
 	spawn_positions = 2

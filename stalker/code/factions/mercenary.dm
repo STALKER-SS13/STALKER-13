@@ -6,6 +6,7 @@
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 1
 	description = "Mercenaries are experienced fighters from all walks of life who offer their services as hired soldiers. They are perhaps ex-military soldiers, ex-special forces operators, or possibly underground fighters such as elite resistance/guerrilla troops, a private military company or notorious terrorists of various nations who offer their services to the highest bidder. Because mercenaries have no established code of ethics to abide to, each mercenary group's sense of morality could be quite different from another."
 	enforces = "Maintain good relations with most factions so that you can take contracts from them, let everyone you are going after that 'its just business' and that you exclusively work for pay, only do things for others when they agree to transfer you roubles."
 	forbids = "Randomly go around trying to kill or rob stalkers or other faction members, disobey orders from the Mercenary Commander, and go off independently without communicating with your fellow mercenaries."
@@ -76,6 +77,7 @@
 	total_positions = 4
 	locked = 1
 	spawn_positions = 4
+	limit_per_player = 1
 	description = "Mercenaries are experienced fighters from all walks of life who offer their services as hired soldiers. They are perhaps ex-military soldiers, ex-special forces operators, or possibly underground fighters such as elite resistance/guerrilla troops, a private military company or notorious terrorists of various nations who offer their services to the highest bidder. Because mercenaries have no established code of ethics to abide to, each mercenary group's sense of morality could be quite different from another."
 	enforces = "Coordinate and organize the mercenaries and make sure they have the support they need to complete objectives, let everyone you are going after that 'its just business' and that you exclusively work for pay, only do things for others when they agree to transfer you roubles."
 	forbids = "Randomly go around trying to kill or rob stalkers or other faction members, jeopordize the standing of the mercenaries over something insignificant, and go off independently without communicating with your fellow mercenaries."
@@ -97,10 +99,10 @@
 	uniform = UNIFORMPICK
 	head = /obj/item/clothing/head/assaultmerc
 	suit = /obj/item/clothing/suit/assaultmerc
-	suit_store = /obj/item/gun/ballistic/automatic/mp5
+	suit_store = /obj/item/gun/ballistic/automatic/tpc301
 	backpack_contents = list(
 		/obj/item/storage/firstaid/stalker/military = 1,
-		/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
+		/obj/item/ammo_box/magazine/stalker/m556x45 = 2,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/clothing/accessory/patch/mercenaries)

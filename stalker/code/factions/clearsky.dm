@@ -7,6 +7,7 @@ Assistant
 	faction = "Station"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 1
 	//limit_per_player = 2
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
@@ -50,6 +51,7 @@ Assistant
 	total_positions = 4
 	locked = 1
 	spawn_positions = 4
+	limit_per_player = 1
 	description = "The Clear Sky faction is an independent scientific/military organization focusing on understanding the Zone."
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction or otherwise jeopordize the faction for an insignificant reason."
@@ -68,14 +70,14 @@ Assistant
 	head = /obj/item/clothing/head/maska_1
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/cs_heavy
+	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	ears = null
 	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/tourist
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,

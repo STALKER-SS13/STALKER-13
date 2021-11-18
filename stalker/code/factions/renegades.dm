@@ -4,6 +4,7 @@
 	faction_s = "Renegades"
 	total_positions = -1
 	spawn_positions = -1
+	limit_per_player = 1
 	description = "Renegades are bandits that decided to leave the bandit faction. Most stalkers consider renegades a joke due to their lack of equipment and poor leadership."
 	enforces = "Be a bad person who does bad things to good people. Form a group and find people to rob and exploit all the other factions."
 	forbids = "Be a loner plus; you're a Renegade, ACT LIKE IT!"

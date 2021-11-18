@@ -99,10 +99,14 @@
 /obj/item/ammo_casing/c762x39
 	desc = "A 7.62x39mm bullet casing."
 	caliber = "7.62x39mm"
-	projectile_type = /obj/item/projectile/bullet/bullet762x39
 
 /obj/item/ammo_casing/tungsten_slug
 	desc = "A 2mm ferromagnetic tungsten slug casing."
 	caliber = "2mm"
 	icon_state = "pshell"
 	projectile_type = /obj/item/projectile/bullet/tungsten_slug
+
+/obj/item/ammo_casing/c57x28
+	desc = "A 5.7×28mm casing."
+	caliber = "5.7×28mm"
+	projectile_type = /obj/item/projectile/bullet/p90

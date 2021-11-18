@@ -388,7 +388,7 @@
 		/obj/item/reagent_containers/food/snacks/rofflewaffles,
 		/obj/item/reagent_containers/food/snacks/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,
-		/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind,
+		/obj/item/reagent_containers/food/drinks/soda_cans/mountain_wind,
 		/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb,
 		/obj/item/reagent_containers/food/drinks/soda_cans/starkist,
 		/obj/item/reagent_containers/food/drinks/soda_cans/space_up,
@@ -687,3 +687,27 @@
 /obj/item/storage/belt/sabre/PopulateContents()
 	new /obj/item/melee/sabre(src)
 	update_icon()
+
+/obj/item/storage/belt/military/tactibelt/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_items = 4
+	icon_state = "tactibelt"
+	item_state = "tactibelt"
+	desc = "A tactical holster-belt, for holding spare ammo, grenades, knives and sidearms."
+
+/obj/item/storage/belt/military/webbing/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_items = 6
+	icon_state = "webbing"
+	item_state = "webbing"
+	desc = "A set of pouches, typically worn on top of armor to increase carrying capacity."
+
+/obj/item/storage/belt/military/chestrig/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_items = 8
+	icon_state = "chestrig"
+	item_state = "chestrig"
+	desc = "A hefty chestrig with a numerous amount of pouch slots. Ideal for carrying important equipment."

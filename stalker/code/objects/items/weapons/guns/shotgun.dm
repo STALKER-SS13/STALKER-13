@@ -240,3 +240,35 @@
 	can_scope = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+
+///
+// AWP - Alternative to SVD.
+// Here because why not.
+///
+
+/obj/item/gun/ballistic/awm
+	name = "AWSM"
+	desc = "A heavy and versatile rifle, rechambered in the massive .338 Lapua cartridge. \
+	Both incredibly precise and hard hitting, the only drawback is the slow projectile travel time."
+	icon_state = "awp"//temp
+	item_state = "svd"//temp
+	durability = 50//Heavily increases chance of jamming or explosion of round in chamber. Required due to power of rifle.
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/awp
+	recoil = 3
+	w_class = 4
+	randomspread = 0.2
+	spread = 0.2
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_HEAVY
+	bolt_type = BOLT_TYPE_LOCKING//Lets try this.
+	semi_auto = FALSE
+	casing_ejector = FALSE
+	bolt_wording = "bolt"
+	fire_sound = 'stalker/sound/weapons/awp_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/awp_reload.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 16

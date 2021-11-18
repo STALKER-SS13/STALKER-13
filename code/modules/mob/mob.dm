@@ -150,8 +150,8 @@
 				else
 					continue
 
-			else if(T.lighting_object || T.sunlighting_object)
-				if(((T.lighting_object.invisibility <= M.see_invisible) || (T.sunlighting_object.invisibility <= M.see_invisible)) && T.is_softly_lit()) //the light object is dark and not invisible to us
+			else if(T.lighting_object)
+				if((T.lighting_object.invisibility <= M.see_invisible) && T.is_softly_lit()) //the light object is dark and not invisible to us
 					if(blind_message)
 						msg = blind_message
 					else
@@ -419,6 +419,9 @@
 
 	to_chat(usr, "<span class='boldnotice'>Be kind to other players!</span>")
 
+	usr.client.pastcharacters += usr.real_name
+	to_chat(usr, "<span class='boldnotice'>You may no longer respawn as this character.</span>")
+
 	if(!client)
 		log_game("[key_name(usr)] AM failed due to disconnect.")
 		return
@@ -456,6 +459,9 @@
 		else
 			to_chat(usr, "<span class='boldnotice'>You will be able to respawn in [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] Minutes.</span>")
 		return
+
+	usr.client.pastcharacters += usr.real_name
+	to_chat(usr, "<span class='boldnotice'>You may no longer respawn as this character.</span>")
 
 	log_game("[key_name(usr)] used abandon mob.")
 
@@ -918,20 +924,9 @@
 
 /mob/proc/sync_lighting_plane_alpha()
 	if(hud_used)
-		/*
 		var/obj/screen/plane_master/lighting/L = hud_used.plane_masters["[LIGHTING_PLANE]"]
-		var/obj/screen/plane_master/sunlighting/SL = hud_used.plane_masters["[SUNLIGHTING_PLANE]"]
 		if (L)
 			L.alpha = lighting_alpha
-		if (SL)
-			SL.alpha = lighting_alpha
-		*/
-		var/obj/screen/plane_master/game_world/G = hud_used.plane_masters["[GAME_PLANE]"]
-		if(G)
-			if(lighting_alpha)
-				G.invisibility = 0
-			else
-				G.invisibility = 101
 
 /mob/proc/update_mouse_pointer()
 	if (!client)

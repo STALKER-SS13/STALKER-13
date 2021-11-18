@@ -709,7 +709,7 @@ Proc for attack log creation, because really why not
 		target.log_message(reverse_message, LOG_ATTACK, color="orange", log_globally=FALSE)
 
 // Filter stuff
-/atom/movable/proc/add_filter(name,priority,list/params)
+/atom/proc/add_filter(name,priority,list/params)
 	if(!filter_data)
 		filter_data = list()
 	var/list/p = params.Copy()
@@ -717,7 +717,7 @@ Proc for attack log creation, because really why not
 	filter_data[name] = p
 	update_filters()
 
-/atom/movable/proc/update_filters()
+/atom/proc/update_filters()
 	filters = null
 	sortTim(filter_data,associative = TRUE)
 	for(var/f in filter_data)
@@ -726,9 +726,15 @@ Proc for attack log creation, because really why not
 		arguments -= "priority"
 		filters += filter(arglist(arguments))
 
-/atom/movable/proc/get_filter(name)
+/atom/proc/get_filter(name)
 	if(filter_data && filter_data[name])
 		return filters[filter_data.Find(name)]
+
+/atom/proc/remove_filter(name)
+	if(filter_data && filter_data[name])
+		filter_data -= name
+		update_filters()
+		return TRUE
 
 /atom/proc/intercept_zImpact(atom/movable/AM, levels = 1)
 	return FALSE

@@ -6,6 +6,9 @@
 	var/sound/ambient/psy			= null		//Пси-звук
 	var/sound/ambient/campfire		= null		//Звук от костра - campfire.dm
 
+/area/stalker/blowout
+	//var/ambient_environment_cooldown		= 666	//in case you want to override this
+
 /sound/ambient
 	var/last_time = 0
 	var/real_cooldown = 0
@@ -20,11 +23,11 @@
 
 	var/area/A = get_area(src)
 
-	if	(client.music && !client.music.transition && (!A.ambient_music || (client.music_juke && client.music_juke.volume > 0)))
+	if(client.music && !client.music.transition && (!A.ambient_music || (client.music_juke && client.music_juke.volume > 0)))
 		client.music.Transition(src)
 		client.music = null
 
-	if(client.background && !client.background.transition && !(client.background.file in A.ambient_background))//[SSsunlight.current_step]))
+	if(client.background && !client.background.transition && !(client.background.file in A.ambient_background))
 
 		client.background.Transition(src)
 		client.background = null
@@ -47,38 +50,49 @@
 			client.music.Set_Sound(AMBIENT_MUSIC_CHANNEL, 10, 0, -1)
 			src << client.music
 
+	//dont play nice environmental ambience in a blowout
+	if(SSblowout.isblowout)
+		return 1
+
 	if(!client.environment || (world.time >= client.environment.last_time + client.environment.real_cooldown))
 
-		if(A.ambient_environment)
+		var/list/environment_ambience
 
-			if(A.ambient_environment_night && (SSsunlight.current_step == 243000 || SSsunlight.current_step == 810000))
-				client.environment = new/sound/ambient(file = safepick(A.ambient_environment_night))
+		if(SSnightcycle.is_daylight())
+			environment_ambience = A.ambient_environment
+		else
+			if(A.ambient_environment_night && A.ambient_environment_night.len > 0)
+				environment_ambience = A.ambient_environment_night
 			else
-				client.environment = new/sound/ambient(file = safepick(A.ambient_environment))
+				environment_ambience = A.ambient_environment
 
-			if(client.environment)
+		if(environment_ambience != null && environment_ambience.len > 0)
+			client.environment = new/sound/ambient(file = safepick(environment_ambience))
 
-				////////////////////////
-				client.environment.last_time = world.time
-				client.environment.real_cooldown = rand(A.ambient_environment_cooldown * 0.3, A.ambient_environment_cooldown * 1.5)
-				////////////////////////
-				client.environment.Set_Sound(AMBIENT_ENVIRONMENT_CHANNEL, rand(25, 60), rand(-100, 100), A.environment)
-				src << client.environment
+			////////////////////////
+			client.environment.last_time = world.time
+			client.environment.real_cooldown = rand(A.ambient_environment_cooldown * 0.3, A.ambient_environment_cooldown * 1.5)
+			////////////////////////
+			client.environment.Set_Sound(AMBIENT_ENVIRONMENT_CHANNEL, rand(25, 60), rand(-100, 100), A.environment)
+			src << client.environment
 
 	if(!client.background || (!client.background.transition && (world.time >= client.background.last_time + client.background.real_cooldown)))
 
 		if(A.ambient_background)
+			var/file = safepick(A.ambient_background)
+			client.background = new/sound/ambient(file)
+			client.background.real_cooldown = A.ambient_background[file]
+			if(!isnum(client.background.real_cooldown))
+				message_admins("Error: ambient background sfx \'[file]\' for \type[A] has no cooldown set, defaulting to 100...")
+				client.background.real_cooldown = 100
+				A.ambient_background[file] = 100
 
-			if(A.ambient_background[SSsunlight.current_step])
-				client.background = new/sound/ambient(file = A.ambient_background[SSsunlight.current_step])
-				client.background.real_cooldown = A.ambient_background_cooldown[SSsunlight.current_step]
-
-			if(client.background)
-				////////////////////////
-				client.background.last_time = world.time
-				////////////////////////
-				client.background.Set_Sound(AMBIENT_BACKGROUND_CHANNEL, 35, 0, A.environment)
-				src << client.background
+		if(client.background)
+			////////////////////////
+			client.background.last_time = world.time
+			////////////////////////
+			client.background.Set_Sound(AMBIENT_BACKGROUND_CHANNEL, 35, 0, A.environment)
+			src << client.background
 
 	return 1
 

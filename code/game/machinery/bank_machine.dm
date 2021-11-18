@@ -33,7 +33,7 @@
 		var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 		if(D)
 			D.adjust_money(value)
-			to_chat(user, "<span class='notice'>You deposit [I]. The Cargo Budget is now $[D.account_balance].</span>")
+			to_chat(user, "<span class='notice'>You deposit [I]. The Cargo Budget is now RU[D.account_balance].</span>")
 		qdel(I)
 		return
 	return ..()
@@ -69,7 +69,7 @@
 	var/dat = "[station_name()] secure vault. Authorized personnel only.<br>"
 	var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	if(D)
-		dat += "Current Balance: $[D.account_balance]<br>"
+		dat += "Current Balance: RU[D.account_balance]<br>"
 	if(!siphoning)
 		dat += "<A href='?src=[REF(src)];siphon=1'>Siphon Credits</A><br>"
 	else

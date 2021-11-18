@@ -357,8 +357,32 @@
 /obj/item/gun/ballistic/automatic/aksu74/black  // АКС74У - черный цвет
 	colored = "black"
 	item_state = "aksu74-black"
-	mag_type = /obj/item/ammo_box/magazine/stalker/m545
 */
+/obj/item/gun/ballistic/automatic/strelok_ak  // АКС74У
+	name = "Fast-Firing AK 74S"
+	desc = "Looks like this has seen incredible modifications. It has reduced recoil, a faster firing rate and better durability."
+	icon = 'stalker/icons/weapons.dmi'
+	icon_state = "ak74-green"
+	item_state = "ak74-green"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+
+	mag_type = /obj/item/ammo_box/magazine/stalker/m545
+	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	can_suppress = 1
+	burst_size = 5
+	fire_delay = 1
+	pin = /obj/item/firing_pin
+	durability = 200
+	w_class = 4
+	spread = 9
+	recoil = 0.3
+	damagelose = 0.5
+	can_scope = 1
+	automatic = 1
+	unique = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
 /obj/item/gun/ballistic/automatic/mp5  // MP5
 	name = "MP-5"
@@ -449,6 +473,26 @@
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/berettam38_open.ogg'
+
+/obj/item/gun/ballistic/automatic/p90
+	name = "\improper FN P90"
+	desc = "An incredibly odd, albeit effecient, submachine gun. Chambered in FN 5.7×28mm."
+	icon_state = "p90"
+	item_state = "p90"
+	mag_type = /obj/item/ammo_box/magazine/smg57
+	fire_delay = 0.8
+	burst_size = 3
+	automatic = 1
+	tac_reloads = TRUE//tacticool
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+	mag_display = TRUE
+
+/obj/item/gun/ballistic/automatic/p90/Initialize()
+	. = ..()
+	update_icon()
 
 /obj/item/gun/ballistic/automatic/tpc301  // Эмка
 	name = "LR-300"
@@ -735,8 +779,9 @@
 	force = 15
 	pin = /obj/item/firing_pin
 	w_class = 4
-	spread = 2
-	recoil = 0.3
+	randomspread = 0//As below.
+	spread = 0//For reason to use it over the SVD and Enfield.
+	recoil = 0.1//This too. Ten round mag, so it's not that big of a deal.
 	damagelose = 0
 	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM

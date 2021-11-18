@@ -68,6 +68,7 @@
 	item_state = "hardhat0_tactical"
 	item_color = "tactical"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -85,6 +86,7 @@
 	item_state = "hardhat0_lighttactical"
 	item_color = "lighttactical"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 5)
 	brightness_on = 3 //luminosity when on
 	flags_cover = HEADCOVERSEYES
@@ -96,12 +98,32 @@
 	..()
 	return
 
+/obj/item/clothing/head/hardhat/tactical/guardian_of_freedom
+	name = "Guardian of Freedom helmet"
+	desc = "A British MK VI model of a tactical helmet modified by the Freedom faction. It is not known how it made its way into the Zone. Comes with multi-layered Kevlar protection and armored elements to protect electronic components."
+	icon_state = "hardhat0_gof"
+	item_state = "hardhat0_gof"
+	item_color = "gof"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
+	brightness_on = 3 //luminosity when on
+	flags_cover = HEADCOVERSEYES
+	resistance_flags = UNACIDABLE
+	durability = 200
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
+
+/obj/item/clothing/head/hardhat/tactical/guardian_of_freedom/New()
+	..()
+	return
+
 /obj/item/clothing/head/assaultmerc
 	name = "Mercenary helmet"
 	desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City."
 	icon_state = "assaultmerc"
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 50, "bullet" = 75, "laser" = 25, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "psy" = 5)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -127,6 +149,7 @@
 	desc = "An aluminum/titanium helmet with a cloth exterior that comes with pockets for additional steel armor pieces and an armor face mask. Sphera M12 are normally used as part of a combination that includes PSZ series Spetsnaz body armor. Quite popular in the Zone thanks to its respirator and built-in first generation night vision device, as well as providing the maximum head protection possible. Comes with electronics slots."
 	icon_state = "sphera"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 0, "energy" = 35, "bomb" = 0, "bio" = 30, "rad" = 60, "fire" = 35, "acid" = 0, "psy" = 20)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -144,6 +167,7 @@
 	desc = "A slightly advanced version of the Sphera M12. Normally used as part of a combination that includes PSZ series Spetsnaz body armor. Quite popular in the Zone thanks to its respirator and built-in first generation night vision device, as well as providing the maximum head protection possible. Comes with electronics slots."
 	icon_state = "helmet_skat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 10)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -189,6 +213,7 @@
 	icon_state = "maska_1"
 	item_state = "maska_1"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -278,3 +303,16 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = FIRE_PROOF
 	durability = 50
+
+/obj/item/clothing/head/renegadehelmet
+	name = "renegade helmet"
+	desc = "Made by basement craftsmen from SSH helmets and torn visors of MASKA-1 SCH, which Renegades managed to collect from the corpses of stalkers and members of the group Clear Sky. Was repainted and washed before sale."
+	icon_state = "renegade_helm"
+	item_state = "renegade_helm"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 10, "bio" = 20, "rad" = 30, "fire" = 20, "acid" = 0, "psy" = 0)
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = UNACIDABLE
+	durability = 300
+	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)

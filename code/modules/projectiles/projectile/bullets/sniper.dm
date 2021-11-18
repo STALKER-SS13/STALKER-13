@@ -44,3 +44,13 @@
 	damage = 25
 	speed = 0.3
 	range = 16
+
+// .338
+
+/obj/item/projectile/bullet/p338
+	name =".338 bullet"
+	speed = 1//.2 slower than a normal bullet, due to how powerful it is.
+	icon_state = "gaussstrong"
+	damage = 70
+	dismemberment = 25//You're damn right you're going to lose a limb.
+	armour_penetration = 80//Strongest round in the game so far.

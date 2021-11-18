@@ -419,6 +419,9 @@
 
 	to_chat(usr, "<span class='boldnotice'>Be kind to other players!</span>")
 
+	usr.client.pastcharacters += usr.real_name
+	to_chat(usr, "<span class='boldnotice'>You may no longer respawn as this character.</span>")
+
 	if(!client)
 		log_game("[key_name(usr)] AM failed due to disconnect.")
 		return
@@ -457,7 +460,8 @@
 			to_chat(usr, "<span class='boldnotice'>You will be able to respawn in [max(1, round((timeofdeath + CONFIG_GET(number/respawn_timer) - world.time)/600))] Minutes.</span>")
 		return
 
-		usr.client.pastcharacters += usr.real_name
+	usr.client.pastcharacters += usr.real_name
+	to_chat(usr, "<span class='boldnotice'>You may no longer respawn as this character.</span>")
 
 	log_game("[key_name(usr)] used abandon mob.")
 

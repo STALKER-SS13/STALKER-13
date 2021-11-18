@@ -51,7 +51,7 @@
 	var/lose_patience_timer_id //id for a timer to call LoseTarget(), used to stop mobs fixating on a target they can't reach
 	var/lose_patience_timeout = 300 //30 seconds by default, so there's no major changes to AI behaviour, beyond actually bailing if stuck forever
 
-	var/eng_desc = "Sorry, no Desc."
+	var/eng_desc = "This is deprecated. Do not use me for descriptions."
 	var/fearless = 1
 	var/fearborder = 20
 

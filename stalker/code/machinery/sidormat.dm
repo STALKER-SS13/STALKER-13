@@ -145,6 +145,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Ecologist Mercenary Outfit",	"Ecologist Mercenary Outfit",/obj/item/clothing/suit/hooded/kombez/eco_mercenary,		25000,		ROOKIE,		faction = "Ecologist"),
 		new /datum/data/stalker_equipment("Bandit Outfit",				"Bandit Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_bandit,		25000,		ROOKIE,		faction = "Bandits"),
 		new /datum/data/stalker_equipment("Renegade Outfit",			"Renegade Outfit",			/obj/item/clothing/suit/hooded/kombez/kombez_renegade,		25000,		ROOKIE,		faction = "Renegades"),
+		new /datum/data/stalker_equipment("Renegade Vest",              "Renegade Vest",            /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2, 25000,      ROOKIE,     faction = "Renegades"),
 		new /datum/data/stalker_equipment("Black Trenchcoat",			"Black Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat,		12500,		ROOKIE,		faction = "Bandits"),
 		new /datum/data/stalker_equipment("Brown Trenchcoat",			"Brown Trenchcoat",			/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown,12500,		ROOKIE),
 		new /datum/data/stalker_equipment("Ghillie Suit",				"Ghillie Suit",				/obj/item/clothing/suit/hooded/kozhanka/ghillie,			30000,		ROOKIE),
@@ -188,7 +189,8 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Assault Helmet",	    		"Assault Helmet",				/obj/item/clothing/head/assaultmerc,							30000,	EXPERIENCED,	faction = "Mercenaries"),
 		new /datum/data/stalker_equipment("Sphera-M12",			 		"Sphera-M12",					/obj/item/clothing/head/spheram,								30000,	EXPERIENCED,	faction = "State Security Service"),
 		new /datum/data/stalker_equipment("SKAT-9M Helmet",				"SKAT-9M Helmet",				/obj/item/clothing/head/skathelmet,								90000,	VETERAN, 		faction = "State Security Service"),
-		new /datum/data/stalker_equipment("MASKA-1 SCH Helmet",			"MASKA-1 SCH Helmet",			/obj/item/clothing/head/maska_1,								12500,	EXPERIENCED, 		faction = "Clear Sky")
+		new /datum/data/stalker_equipment("MASKA-1 SCH Helmet",			"MASKA-1 SCH Helmet",			/obj/item/clothing/head/maska_1,								12500,	EXPERIENCED, 	faction = "Clear Sky"),
+		new /datum/data/stalker_equipment("Renegate Helmet",            "Renegate Helmet",              /obj/item/clothing/head/renegadehelmet,                         12500,  EXPERIENCED,    faction = "Renegades")
 	),
 
 

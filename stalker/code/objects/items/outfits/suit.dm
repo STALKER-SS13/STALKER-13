@@ -1240,3 +1240,17 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	icon_state = "ghillie"
 
+/obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2
+	name = "renegade vest"
+	desc = "The Defender II is an expensive piece of equipment, and to protect guts from a stray bullet the Renegades have to scavenge for defective, broken, or simply worn samples taken from a corpse. Obviously, such body armor won't offer the same protection as a new model, but it's better than nothing. Besides,the armor is worn over the suit."
+	icon_state = "combez_renegade_worn_d2"
+	item_state = "combez_renegade_worn_d2"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	strip_delay = 80
+	flags_inv = HIDEJUMPSUIT
+	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/bandit
+	durability = 150

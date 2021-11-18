@@ -7545,6 +7545,17 @@
 /obj/structure/stalker/modification_table,
 /turf/open/stalker/floor/gryaz,
 /area/stalker)
+"DT" = (
+/obj/rad/rad_low,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 76;
+	teleport_y = 3;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/water,
+/area/stalker)
 "DV" = (
 /obj/item/throwing_star/ninja,
 /obj/item/throwing_star/ninja,
@@ -7903,6 +7914,17 @@
 	icon_state = "lattice_new2"
 	},
 /area/stalker/blowout/outdoor/backwater/sawmill)
+"JU" = (
+/obj/rad/rad_low,
+/obj/effect/step_trigger/teleporter{
+	dir = 1;
+	icon_state = "up";
+	teleport_x = 77;
+	teleport_y = 3;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/water,
+/area/stalker)
 "JV" = (
 /obj/machinery/stalker/sidormat{
 	pixel_y = 10
@@ -8155,6 +8177,10 @@
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings/backwater/ironforest)
+"MD" = (
+/obj/rad/rad_low,
+/turf/open/stalker/floor/water,
+/area/stalker)
 "MU" = (
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -8712,6 +8738,12 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/buildings/renegade)
+"Wl" = (
+/obj/anomaly/holodec,
+/obj/anomaly/karusel,
+/obj/rad/rad_low,
+/turf/open/stalker/floor/water,
+/area/stalker)
 "Wt" = (
 /turf/open/stalker/floor/lattice{
 	icon_state = "lattice_new2"
@@ -49604,17 +49636,17 @@ aa
 aa
 aa
 aa
+XO
+XO
+XO
 aa
 aa
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+XO
+XO
 aa
 aa
 ab
@@ -49851,32 +49883,32 @@ yP
 "}
 (161,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-ab
-ab
+DT
+MD
+MD
+MD
+Wl
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+fX
+aw
 ac
 ac
 ac
@@ -50107,33 +50139,33 @@ yP
 "}
 (162,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-ab
-ab
+JU
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+Wl
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+aw
+aw
 ac
 ac
 ac
@@ -50366,6 +50398,9 @@ aa
 aa
 aa
 aa
+XO
+XO
+XO
 aa
 aa
 aa
@@ -50376,11 +50411,8 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+XO
+XO
 aa
 aa
 aa

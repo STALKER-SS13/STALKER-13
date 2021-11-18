@@ -76,9 +76,8 @@ Assistant
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/tourist
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = pick(
 		/obj/item/flashlight/flare,

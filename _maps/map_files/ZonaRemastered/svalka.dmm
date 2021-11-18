@@ -17,10 +17,10 @@
 /area/stalker/blowout/outdoor)
 "ae" = (
 /obj/structure/grille/stalker/beton{
-	icon_state = "|";
-	tag = "icon-|"
+	icon_state = "|6";
+	tag = "icon-|6"
 	},
-/turf/open/stalker/floor/asphalt,
+/turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "af" = (
 /turf/open/stalker/floor/digable/grass/dump,
@@ -5151,6 +5151,16 @@
 "qn" = (
 /turf/closed/wall/rust,
 /area/stalker)
+"qr" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 62;
+	teleport_y = 253;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/kordon/tunnel)
 "qw" = (
 /obj/rad/rad_medium,
 /obj/rad/rad_low,
@@ -6452,6 +6462,13 @@
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
+"Av" = (
+/turf/open/stalker/floor/water,
+/area/stalker/kordon/tunnel)
+"AB" = (
+/obj/anomaly/holodec,
+/turf/open/stalker/floor/water,
+/area/stalker/kordon/tunnel)
 "AC" = (
 /obj/structure/sign/map/right{
 	desc = "A drawing of the known areas of the Zone.";
@@ -6855,6 +6872,13 @@
 /obj/structure/stalker/cacheable/vendmachine23,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"DK" = (
+/obj/structure/grille/stalker/beton{
+	icon_state = "=1";
+	tag = "icon-=1"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "DP" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/cigarettes/cigars,
@@ -7037,6 +7061,16 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Fh" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 63;
+	teleport_y = 253;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/kordon/tunnel)
 "Fk" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -7306,6 +7340,17 @@
 /obj/item/ammo_casing/shotgun/dart,
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Hq" = (
+/obj/structure/grille/stalker/beton{
+	icon_state = "|";
+	tag = "icon-|"
+	},
+/obj/structure/grille/stalker/beton{
+	icon_state = "=1";
+	tag = "icon-=1"
+	},
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "Hw" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/dirt/dark,
@@ -8328,6 +8373,11 @@
 	},
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/outdoor)
+"Po" = (
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/kordon/tunnel)
 "Pp" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/dirt/dark,
@@ -8697,6 +8747,16 @@
 	layer = 1.8
 	},
 /area/stalker/blowout/outdoor)
+"RO" = (
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 64;
+	teleport_y = 253;
+	teleport_z = 3
+	},
+/turf/open/stalker/floor/gryaz{
+	layer = 1.8
+	},
+/area/stalker/kordon/tunnel)
 "RR" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,4"
@@ -9683,6 +9743,13 @@
 	tag = "icon-radio (WEST)"
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/blowout/outdoor)
+"YU" = (
+/obj/structure/grille/stalker/beton{
+	icon_state = "-|3";
+	tag = "icon--|3"
+	},
+/turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "YX" = (
 /obj/structure/stalker/doski/doski_alt4,
@@ -35492,15 +35559,15 @@ af
 ag
 aa
 aa
+ye
+ye
+ye
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+ye
+ye
 aa
 aa
 aa
@@ -35746,20 +35813,20 @@ af
 af
 af
 af
-ag
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Po
+Po
+Po
+Po
+qr
 aa
 "}
 (102,1,1) = {"
@@ -36003,20 +36070,20 @@ af
 af
 af
 af
-ag
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Po
+Av
+AB
+Av
+Av
+Av
+Av
+Av
+Av
+AB
+Av
+Av
+Po
+Fh
 aa
 "}
 (103,1,1) = {"
@@ -36260,20 +36327,20 @@ aM
 af
 af
 af
-ag
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Po
+Po
+Av
+Av
+Po
+Po
+AB
+Av
+Av
+Av
+Av
+Po
+Po
+RO
 aa
 "}
 (104,1,1) = {"
@@ -36525,8 +36592,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+ye
+ye
 aa
 aa
 aa
@@ -46558,7 +46625,7 @@ aa
 "}
 (144,1,1) = {"
 ab
-ab
+DK
 ab
 ab
 ab
@@ -46815,20 +46882,20 @@ aa
 "}
 (145,1,1) = {"
 ac
+Hq
+af
+af
+af
+af
+af
+bB
+ab
+af
+ab
+ab
 ac
-ah
-ah
-ah
-ah
-ah
-ah
 ac
-ah
-ac
-ac
-ac
-ac
-aE
+YU
 af
 af
 aI
@@ -48100,15 +48167,15 @@ aa
 "}
 (150,1,1) = {"
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+hf
+af
+af
+bB
+af
+af
+af
+bB
+af
 ae
 ae
 ae
@@ -48357,7 +48424,7 @@ ag
 "}
 (151,1,1) = {"
 af
-af
+hf
 af
 af
 af
@@ -48614,7 +48681,7 @@ af
 "}
 (152,1,1) = {"
 af
-af
+hf
 af
 af
 ag

@@ -127,7 +127,7 @@ Assistant
 	ears = null
 	mask = /obj/item/clothing/mask/gas/stalker
 	head = /obj/item/clothing/head/steel
-	belt = /obj/item/storage/belt/stalker/artifact_belt
+	belt = /obj/item/gun/ballistic/automatic/pistol/usp_match
 	id = /obj/item/stalker_pda
 	gloves = pick(
 		/obj/item/clothing/gloves/color/brown,
@@ -142,7 +142,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/professional)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/usp_match,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
 	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/twohanded/binoculars
 	r_hand = /obj/item/weapon/kitchen/knife/hunting
@@ -153,7 +153,7 @@ Assistant
 	suit = /obj/item/clothing/suit/hooded/kombez
 	ears = null
 	id = /obj/item/stalker_pda
-	belt = /obj/item/kitchen/knife/tourist
+	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1)

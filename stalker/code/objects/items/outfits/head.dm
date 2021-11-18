@@ -123,6 +123,7 @@
 	icon_state = "assaultmerc"
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 50, "bullet" = 75, "laser" = 25, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "psy" = 5)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE

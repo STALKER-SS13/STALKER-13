@@ -1242,7 +1242,7 @@
 
 /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2
 	name = "renegade vest"
-	desc = ""
+	desc = "A revised version of the old suit. Nevertheless, it does not give any guarantees."
 	icon_state = "combez_renegade_worn_d2"
 	item_state = "combez_renegade_worn_d2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS

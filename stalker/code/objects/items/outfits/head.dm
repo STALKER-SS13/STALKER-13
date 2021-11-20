@@ -306,7 +306,7 @@
 
 /obj/item/clothing/head/renegadehelmet
 	name = "renegade ballistic mask"
-	desc = ""
+	desc = "This heavy mask, because of its weight, is jokingly called a helmet among the scum who use it to protect their heads. One can only hope that a stray bullet hits it and not the exposed part of the back of the head."
 	icon_state = "renegade_helm"
 	item_state = "renegade_helm"
 	flags_inv = HIDEMASK|HIDEEARS

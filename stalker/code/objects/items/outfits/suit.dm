@@ -274,7 +274,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 15, "energy" = 30, "bomb" = 0, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
 	hoodtype = /obj/item/clothing/head/hooded/stalker/tancoat
@@ -1193,7 +1193,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
-	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez_renegade
 	durability = 150
 
@@ -1242,7 +1242,7 @@
 
 /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2
 	name = "renegade vest"
-	desc = "The Defender II is an expensive piece of equipment, and to protect guts from a stray bullet the Renegades have to scavenge for defective, broken, or simply worn samples taken from a corpse. Obviously, such body armor won't offer the same protection as a new model, but it's better than nothing. Besides,the armor is worn over the suit."
+	desc = ""
 	icon_state = "combez_renegade_worn_d2"
 	item_state = "combez_renegade_worn_d2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -1252,5 +1252,5 @@
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
-	hoodtype = /obj/item/clothing/head/hooded/stalker/bandit
+	hoodtype = /obj/item/clothing/head/hooded/stalker/banditbrown
 	durability = 150

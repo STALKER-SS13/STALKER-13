@@ -305,13 +305,13 @@
 	durability = 50
 
 /obj/item/clothing/head/renegadehelmet
-	name = "renegade helmet"
-	desc = "Made by basement craftsmen from SSH helmets and torn visors of MASKA-1 SCH, which Renegades managed to collect from the corpses of stalkers and members of the group Clear Sky. Was repainted and washed before sale."
+	name = "renegade ballistic mask"
+	desc = ""
 	icon_state = "renegade_helm"
 	item_state = "renegade_helm"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
+	flags_inv = HIDEMASK|HIDEEARS
 	dynamic_hair_suffix = ""
-	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 10, "bio" = 20, "rad" = 30, "fire" = 20, "acid" = 0, "psy" = 0)
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 10, "bio" = 20, "rad" = 30, "fire" = 15, "acid" = 0, "psy" = 0)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
 	durability = 300

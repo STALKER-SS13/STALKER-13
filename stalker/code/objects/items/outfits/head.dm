@@ -304,15 +304,17 @@
 	resistance_flags = FIRE_PROOF
 	durability = 50
 
-/obj/item/clothing/head/renegadehelmet
+/obj/item/clothing/mask/gas/stalker/renegademask
 	name = "renegade ballistic mask"
-	desc = "This heavy mask, because of its weight, is jokingly called a helmet among the scum who use it to protect their heads. One can only hope that a stray bullet hits it and not the exposed part of the back of the head."
-	icon_state = "renegade_helm"
-	item_state = "renegade_helm"
-	flags_inv = HIDEMASK|HIDEEARS
+	desc = "A mask of lightweight but durable material that gives you a chance to survive a stray bullet to the face. It has two non-bullet holes."
+	icon_state = "renegade_mask"
+	item_state = "renegade_mask"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
+	flags_inv = HIDEEARS
 	dynamic_hair_suffix = ""
-	armor = list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 20, "bomb" = 10, "bio" = 20, "rad" = 30, "fire" = 15, "acid" = 0, "psy" = 0)
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 0, "energy" = 20, "bomb" = 15, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 1)
 	resistance_flags = UNACIDABLE
 	durability = 300
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)

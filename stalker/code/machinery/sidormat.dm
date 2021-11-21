@@ -190,7 +190,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Sphera-M12",			 		"Sphera-M12",					/obj/item/clothing/head/spheram,								30000,	EXPERIENCED,	faction = "State Security Service"),
 		new /datum/data/stalker_equipment("SKAT-9M Helmet",				"SKAT-9M Helmet",				/obj/item/clothing/head/skathelmet,								90000,	VETERAN, 		faction = "State Security Service"),
 		new /datum/data/stalker_equipment("MASKA-1 SCH Helmet",			"MASKA-1 SCH Helmet",			/obj/item/clothing/head/maska_1,								12500,	EXPERIENCED, 	faction = "Clear Sky"),
-		new /datum/data/stalker_equipment("Renegade Ballistic Mask",            "Renegade Ballistic Mask",              /obj/item/clothing/head/renegadehelmet,                         12500,  EXPERIENCED,    faction = "Renegades")
+		new /datum/data/stalker_equipment("Renegade Ballistic Mask",    "Renegade Ballistic Mask",      /obj/item/clothing/mask/gas/stalker/renegademask,               3000,   EXPERIENCED,    faction = "Renegades")
 	),
 
 

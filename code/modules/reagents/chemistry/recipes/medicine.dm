@@ -268,7 +268,7 @@
 	name = "Psyblock"
 	id = "psyblock"
 	results = list("psyblock" = 5)
-	required_reagents = list( "carbon" = 2, "water" = 2, "lithium" = 1, "unknownsubstancefour")
+	required_reagents = list( "carbon" = 2, "water" = 2, "lithium" = 1, "unknownsubstancefour" = 1)
 
 /datum/chemical_reaction/cocaine
 	name = "Cocaine"

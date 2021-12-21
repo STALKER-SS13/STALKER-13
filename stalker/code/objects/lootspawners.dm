@@ -471,6 +471,7 @@
 				/obj/item/kitchen/knife/bolo = 15,
 				/obj/item/kitchen/knife/bowie = 15,
 				/obj/item/kitchen/knife/trench = 15,
+				/obj/item/shovel/entrenching_tool = 15,
 				/obj/item/kitchen/knife/sickle = 15,
 				/obj/item/kitchen/knife/rapier0 = 15,
 				/obj/item/kitchen/knife/foreignsabre = 15,

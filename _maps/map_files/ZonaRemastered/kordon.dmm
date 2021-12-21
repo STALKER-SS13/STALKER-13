@@ -5058,8 +5058,8 @@
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "zr" = (
-/obj/machinery/vending/cigarette/vendor,
-/turf/open/stalker/floor/digable/grass,
+/obj/effect/spawner/lootdrop/bustedcigs,
+/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "zt" = (
 /obj/effect/step_trigger/teleporter{
@@ -39512,7 +39512,7 @@ Tu
 np
 Nk
 an
-mq
+Jr
 ad
 ad
 ad
@@ -57667,7 +57667,7 @@ Wh
 aE
 GI
 ac
-af
+zr
 mq
 aJ
 aJ
@@ -57924,8 +57924,8 @@ ac
 hK
 ik
 ac
+Jr
 mq
-zr
 aJ
 aJ
 aJ

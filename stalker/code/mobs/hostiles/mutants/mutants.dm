@@ -700,7 +700,7 @@
 	icon_state = "zombiesimp"
 	icon_living = "zombiesimp"
 	icon_dead = "zombiesimp_dead"
-	ranged = 1
+	ranged = 0
 	retreat_distance = 5
 	minimum_distance = 5
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
@@ -755,117 +755,117 @@
 	dodging = TRUE
 	rapid_melee = 2
 	do_footstep = TRUE
-	casingtype = /obj/item/ammo_casing/c45
-	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/New()
 	..()
 	if(prob(5))
 		icon_state = "zombiesimp1"
 		icon_living = "zombiesimp1"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp1_dead"
 	if(prob(5))
 		icon_state = "zombiesimp2"
 		icon_living = "zombiesimp2"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp2_dead"
 	if(prob(5))
 		icon_state = "zombiesimp3"
 		icon_living = "zombiesimp3"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp3_dead"
 	if(prob(5))
 		icon_state = "zombiesimp4"
 		icon_living = "zombiesimp4"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp4_dead"
 	if(prob(5))
 		icon_state = "zombiesimp5"
 		icon_living = "zombiesimp5"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp5_dead"
 	if(prob(5))
 		icon_state = "zombiesimp6"
 		icon_living = "zombiesimp6"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp6_dead"
 	if(prob(5))
 		icon_state = "zombiesimp7"
 		icon_living = "zombiesimp7"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp7_dead"
 	if(prob(5))
 		icon_state = "zombiesimp8"
 		icon_living = "zombiesimp8"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp8_dead"
 	if(prob(5))
 		icon_state = "zombiesimp9"
 		icon_living = "zombiesimp9"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp9_dead"
 	if(prob(5))
 		icon_state = "zombiesimp10"
 		icon_living = "zombiesimp10"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp10_dead"
 	if(prob(5))
 		icon_state = "zombiesimp11"
 		icon_living = "zombiesimp11"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp11_dead"
 	if(prob(5))
 		icon_state = "zombiesimp12"
 		icon_living = "zombiesimp12"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp12_dead"
 	if(prob(5))
 		icon_state = "zombiesimp13"
 		icon_living = "zombiesimp13"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp13_dead"
 	if(prob(5))
 		icon_state = "zombiesimp14"
 		icon_living = "zombiesimp14"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp14_dead"
 	if(prob(5))
 		icon_state = "zombiesimp15"
 		icon_living = "zombiesimp15"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp15_dead"
 	if(prob(5))
 		icon_state = "zombiesimp16"
 		icon_living = "zombiesimp16"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp16_dead"
 	if(prob(5))
 		icon_state = "zombiesimp17"
 		icon_living = "zombiesimp17"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp17_dead"
 	if(prob(5))
 		icon_state = "zombiesimp18"
 		icon_living = "zombiesimp18"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp18_dead"
 	if(prob(5))
 		icon_state = "zombiesimp19"
 		icon_living = "zombiesimp19"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp19_dead"
 	if(prob(5))
 		icon_state = "zombiesimp20"
 		icon_living = "zombiesimp20"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp20_dead"
 	if(prob(5))
 		icon_state = "zombiesimp21"
 		icon_living = "zombiesimp21"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp21_dead"
 	if(prob(5))
 		icon_state = "zombiesimp22"
 		icon_living = "zombiesimp22"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp22_dead"
 
-/mob/living/simple_animal/hostile/mutant/zombiesimp/melee
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged
 	name = "zombie"
 	desc = "A shambling hollow corpse who is forever lost to the Zone."
 	icon_state = "zombiesimp"
 	icon_living = "zombiesimp"
 	icon_dead = "zombiesimp_dead"
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
-	speak_chance = 1
+	speak_chance = 80
 	turns_per_move = 5
+	ranged = 1
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 0
 	stat_attack = UNCONSCIOUS
 	robust_searching = 1
-	maxHealth = 150
-	health = 150
+	maxHealth = 125
+	health = 125
 	harm_intent_damage = 10
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -907,94 +907,99 @@
 	dodging = TRUE
 	rapid_melee = 2
 	do_footstep = TRUE
+	ranged_cooldown = 1
+	ranged_cooldown_time = 2
+	casingtype = /obj/item/ammo_casing/c45
+	projectilesound = 'sound/weapons/gunshot_smg.ogg'
 
-/mob/living/simple_animal/hostile/mutant/zombiesimp/New()
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/New()
 	..()
 	if(prob(5))
 		icon_state = "zombiesimp1"
 		icon_living = "zombiesimp1"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp1_dead"
 	if(prob(5))
 		icon_state = "zombiesimp2"
 		icon_living = "zombiesimp2"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp2_dead"
 	if(prob(5))
 		icon_state = "zombiesimp3"
 		icon_living = "zombiesimp3"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp3_dead"
 	if(prob(5))
 		icon_state = "zombiesimp4"
 		icon_living = "zombiesimp4"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp4_dead"
 	if(prob(5))
 		icon_state = "zombiesimp5"
 		icon_living = "zombiesimp5"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp5_dead"
 	if(prob(5))
 		icon_state = "zombiesimp6"
 		icon_living = "zombiesimp6"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp6_dead"
 	if(prob(5))
 		icon_state = "zombiesimp7"
 		icon_living = "zombiesimp7"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp7_dead"
 	if(prob(5))
 		icon_state = "zombiesimp8"
 		icon_living = "zombiesimp8"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp8_dead"
 	if(prob(5))
 		icon_state = "zombiesimp9"
 		icon_living = "zombiesimp9"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp9_dead"
 	if(prob(5))
 		icon_state = "zombiesimp10"
 		icon_living = "zombiesimp10"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp10_dead"
 	if(prob(5))
 		icon_state = "zombiesimp11"
 		icon_living = "zombiesimp11"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp11_dead"
 	if(prob(5))
 		icon_state = "zombiesimp12"
 		icon_living = "zombiesimp12"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp12_dead"
 	if(prob(5))
 		icon_state = "zombiesimp13"
 		icon_living = "zombiesimp13"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp13_dead"
 	if(prob(5))
 		icon_state = "zombiesimp14"
 		icon_living = "zombiesimp14"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp14_dead"
 	if(prob(5))
 		icon_state = "zombiesimp15"
 		icon_living = "zombiesimp15"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp15_dead"
 	if(prob(5))
 		icon_state = "zombiesimp16"
 		icon_living = "zombiesimp16"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp16_dead"
 	if(prob(5))
 		icon_state = "zombiesimp17"
 		icon_living = "zombiesimp17"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp17_dead"
 	if(prob(5))
 		icon_state = "zombiesimp18"
 		icon_living = "zombiesimp18"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp18_dead"
 	if(prob(5))
 		icon_state = "zombiesimp19"
 		icon_living = "zombiesimp19"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp19_dead"
 	if(prob(5))
 		icon_state = "zombiesimp20"
 		icon_living = "zombiesimp20"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp20_dead"
 	if(prob(5))
 		icon_state = "zombiesimp21"
 		icon_living = "zombiesimp21"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp21_dead"
 	if(prob(5))
 		icon_state = "zombiesimp22"
 		icon_living = "zombiesimp22"
-		icon_dead = "zombiesimp_dead"
+		icon_dead = "zombiesimp22_dead"
+

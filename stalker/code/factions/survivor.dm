@@ -176,7 +176,7 @@ Assistant
 	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1)
+	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1,/obj/item/storage/firstaid/stalker/civillian)
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva

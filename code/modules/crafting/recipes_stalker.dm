@@ -86,7 +86,7 @@
 				/obj/item/trash/oldplank = 3,
 				/obj/item/trash/nail = 3
 				)
-	result = /obj/item/gun/ballistic/automatic/makeshiftbolt
+	result = /obj/item/gun/ballistic/rifle/boltaction/makeshiftbolt
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
@@ -98,6 +98,7 @@
 	name = "mutant meat and vegetable stew"
 	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 1,
 				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/beet = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1
 				)
 	result = /obj/item/reagent_containers/food/snacks/stalker/stew
@@ -108,7 +109,9 @@
 	name = "vegetable stew"
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
-				/obj/item/reagent_containers/food/snacks/grown/onion = 1
+				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1,
+				/obj/item/reagent_containers/food/snacks/grown/carrot = 1,
 				)
 	result = /obj/item/reagent_containers/food/snacks/stalker/veggiestew
 	category = CAT_FOOD
@@ -126,8 +129,8 @@
 
 /datum/crafting_recipe/putridstew
 	name = "putrid goulash"
-	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 2,
-				/obj/item/reagent_containers/food/snacks/stalker/fermented/tomaty = 1
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/tato = 4,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1
 				)
 	result = /obj/item/reagent_containers/food/snacks/stalker/putridstew
 	category = CAT_FOOD
@@ -136,16 +139,17 @@
 /datum/crafting_recipe/putrescentstew
 	name = "putrescent goulash"
 	reqs = list(/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 2,
-				/obj/item/reagent_containers/food/snacks/stalker/fermented/tomaty = 1
+				/obj/item/reagent_containers/food/snacks/stalker/fermented/tomaty = 1,
+				/obj/item/reagent_containers/food/snacks/grown/bayleaf = 1
 				)
 	result = /obj/item/reagent_containers/food/snacks/stalker/putrescentstew
 	category = CAT_FOOD
 //	subcategory = CAT_SOUPS
 
 /datum/crafting_recipe/shroomstew
-	name = "mushroom goulash"
-	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 2
+	name = "mushroom stew"
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/mushroom = 6,
+				/obj/item/reagent_containers/food/snacks/grown/bayleaf = 1
 				)
 	result = /obj/item/reagent_containers/food/snacks/stalker/shroomstew
 	category = CAT_FOOD
@@ -207,6 +211,7 @@
 		/obj/item/reagent_containers/food/snacks/grown/citrus/lemon = 1,
 		/obj/item/reagent_containers/food/snacks/grown/onion = 1,
 		/obj/item/reagent_containers/food/snacks/grown/potato = 1,
+		/obj/item/reagent_containers/food/snacks/grown/bayleaf = 1,
 		/obj/item/reagent_containers/food/snacks/stalker/konserva/fish = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/stalker/ukha
@@ -221,7 +226,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/rat
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -234,7 +240,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/dog
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -247,7 +254,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/flesh
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -260,7 +268,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/boar
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -273,7 +282,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/snork
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -286,7 +296,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/pseudo
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -299,7 +310,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/bloodsucker
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -312,7 +324,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/controller
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH
@@ -328,7 +341,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
 				/obj/item/reagent_containers/food/snacks/grown/carrot = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1)
+				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/garlic = 1)
 	result = /obj/item/reagent_containers/food/snacks/stalker/meatstew/mutantdelight
 	category = CAT_FOOD
 //	subcategory = CAT_GOULASH

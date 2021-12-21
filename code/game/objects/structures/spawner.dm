@@ -7,13 +7,17 @@
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
 	anchored = TRUE
 	density = TRUE
-
+	var/list/spawned_mobs = list()
 	var/max_mobs = 5
 	var/spawn_time = 300 //30 seconds default
 	var/mob_types = list(/mob/living/simple_animal/hostile/carp)
 	var/spawn_text = "emerges from"
 	var/faction = list("hostile")
 	var/spawner_type = /datum/component/spawner
+	var/health = 100
+	var/maxHealth = 100
+	var/wander = 1
+	var/del_on_death = TRUE
 
 /obj/structure/spawner/Initialize()
 	. = ..()
@@ -23,7 +27,6 @@
 	if(faction_check(faction, M.faction, FALSE)&&!M.client)
 		return
 	..()
-
 
 /obj/structure/spawner/syndicate
 	name = "warp beacon"
@@ -99,7 +102,7 @@
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
 	max_integrity = 200
-	max_mobs = 10
+	max_mobs = 8
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/flesh)
@@ -176,19 +179,18 @@
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
 	max_integrity = 200
-	max_mobs = 8
+	max_mobs = 5
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
-	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/melee)
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged)
 	faction = list("stalker_mutants1", "monolith_forces")
 
 /obj/structure/spawner/stalker/allmutants
 	name = "mutant den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
-	max_mobs = 8
+	max_mobs = 5
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
-	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/melee,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker,/mob/living/simple_animal/hostile/mutant/controller)
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker,/mob/living/simple_animal/hostile/mutant/controller)
 	faction = list("stalker_mutants1", "monolith_forces")

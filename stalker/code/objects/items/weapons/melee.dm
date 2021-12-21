@@ -20,7 +20,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
@@ -51,7 +51,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -68,7 +68,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -85,7 +85,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -102,7 +102,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -119,7 +119,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -136,7 +136,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -153,7 +153,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
@@ -170,13 +170,13 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
-	bayonet = TRUE
+//	bayonet = TRUE
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/bowie
@@ -188,13 +188,13 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
-	bayonet = TRUE
+//	bayonet = TRUE
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/bolo
@@ -206,13 +206,13 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
-	bayonet = TRUE
+//	bayonet = TRUE
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/kukri
@@ -224,14 +224,32 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
-	bayonet = TRUE
+//	bayonet = TRUE
 	//butcher_speed = 1.25
+
+/obj/item/shovel/entrenching_tool
+	name = "entrenching tool"
+	desc = "The most useful tool in the trenches!"
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "entrenching_tool"
+	item_state = "entrenching_tool"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 15
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+
 
 /obj/item/hatchet/ancienthatchet
 	name = "ancienthatchet"
@@ -276,7 +294,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 28
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -290,9 +308,9 @@
 	icon_state = "largewrench"
 	item_state = "bigwrench"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -306,9 +324,9 @@
 	icon_state = "redwrench"
 	item_state = "bigwrench"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -322,9 +340,9 @@
 	icon_state = "tireiron"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -338,9 +356,9 @@
 	icon_state = "tireiron2"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -356,7 +374,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
@@ -371,7 +389,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'

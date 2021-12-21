@@ -303,7 +303,7 @@
 	desc = "Pieces of meat with vegetables in a bowl. It doesn't look very edible."
 	icon_state = "stew"
 	w_class = 2
-	list_reagents = list("nutriment" = 20, "omnizine" = 1, "vitamin" = 5)
+	list_reagents = list("nutriment" = 25, "omnizine" = 1, "vitamin" = 5)
 	tastes = list("bland meat and vegetables. It's barely food" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/veggiestew
@@ -311,7 +311,7 @@
 	desc = "Pieces of vegetables in a bowl. It doesn't look very edible."
 	icon_state = "stew"
 	w_class = 2
-	list_reagents = list("nutriment" = 10, "omnizine" = 1, "vitamin" = 5)
+	list_reagents = list("nutriment" = 25, "omnizine" = 1, "vitamin" = 5)
 	tastes = list("bland vegetables. It's barely food" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/kolbasa/doctorsausage
@@ -329,18 +329,18 @@
 
 /obj/item/reagent_containers/food/snacks/stalker/putridstew
 	name = "putrid goulash"
-	desc = "Pieces of scrap meat cooked in a thick-gruel made of pickled tomato stock. It isn't very tasty, to say the least!"
+	desc = "Pieces of scrap meat cooked in a thick-gruel made of mutant tato stock. It isn't very tasty, to say the least!"
 	icon_state = "stew"
 	w_class = 2
-	list_reagents = list("nutriment" = 10, "omnizine" = 1, "sodiumchloride" = 2)
-	tastes = list("gritty and chewy meat with a overly vinegar-tomato broth. This is absolutely putrid.." = 1)
+	list_reagents = list("nutriment" = 17, "omnizine" = 1, "sodiumchloride" = 2)
+	tastes = list("gritty and chewy meat with a overly bitter broth. This is absolutely putrid.." = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/putrescentstew
 	name = "putrescent goulash"
 	desc = "Pieces of diet sausage meat cooked in a thick-gruel made of pickled tomato stock. It isn't very tasty, to say the least!"
 	icon_state = "stew"
 	w_class = 2
-	list_reagents = list("nutriment" = 10, "omnizine" = 1, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 25, "omnizine" = 5, "sodiumchloride" = 2)
 	tastes = list("gritty and chewy meat with a overly vinegar-tomato broth. This is absolutely putrid.." = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/lowgradestew
@@ -348,7 +348,7 @@
 	desc = "Pieces of scrap meat cooked in a thin-gruel made of mushroom stock. It isn't very tasty, but it'll keep you from starving to death!"
 	icon_state = "lowgrade_goulash"
 	w_class = 2
-	list_reagents = list("nutriment" = 20, "omnizine" = 1, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 20, "omnizine" = 5, "sodiumchloride" = 2)
 	tastes = list("gritty and chewy meat with a overly earthy broth. This isn't very enjoyable.." = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/shroomstew
@@ -365,7 +365,7 @@
 	desc = "A sour soup common in Eastern Europe and Northern Asia. In English, the word 'borscht' is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color."
 	icon_state = "beetsoup"
 	w_class = 2
-	list_reagents = list("nutriment" = 30, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 20, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
 	tastes = list("sand-textured grit with a overbearing earthy flavour. This is horrible.." = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/borscht
@@ -373,7 +373,7 @@
 	desc = "A sour soup common in Eastern Europe and Northern Asia. In English, the word 'borscht' is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color."
 	icon_state = "beetsoup"
 	w_class = 2
-	list_reagents = list("nutriment" = 35, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 25, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
 	tastes = list("root-textured grit with a overbearing earthy flavour. This is palatable..." = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/luxuryborscht
@@ -381,7 +381,7 @@
 	desc = "A sour soup common in Eastern Europe and Northern Asia. In English, the word 'borscht' is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color."
 	icon_state = "beetsoup"
 	w_class = 2
-	list_reagents = list("nutriment" = 35, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 30, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
 	tastes = list("flavorful seasoned veggies with a slight earthy flavour. This is wonderful!" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/okroshkasoup
@@ -397,7 +397,7 @@
 	desc = "Ukha started to be used as a term for fish broth in Russian cuisine in the late 17th to early 18th centuries. In earlier times, this term referred to thick meat broths, and then later chicken. Beginning in the 15th century, fish was more and more often used to prepare ukha, thus creating a dish that had a distinctive taste among soups. In the 19th century, many travellers visiting Russia claimed ukha to be one of the best dishes in Russian cuisine."
 	icon_state = "stew"
 	w_class = 2
-	list_reagents = list("nutriment" = 30, "omnizine" = 10, "vitamin" = 10, "sodiumchloride" = 2)
+	list_reagents = list("nutriment" = 35, "omnizine" = 10, "vitamin" = 10, "sodiumchloride" = 2)
 	tastes = list("flavourful chunks of chewy fish meat in a broth of thin clear broth. This is wonderful!" = 1)
 
 /obj/item/reagent_containers/food/snacks/stalker/meatstew/rat

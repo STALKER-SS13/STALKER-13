@@ -56,12 +56,16 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = /obj/item/storage/wallet/stalker
-	r_pocket = pick(
+	r_pocket = pick(/obj/item/flashlight/lantern,
+		/obj/item/flashlight/seclite,
+		/obj/item/flashlight,
+		/obj/item/flashlight/flare/torch,
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
 		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
+
 
 /datum/job/barman2
 	title = "Barman2"
@@ -140,3 +144,7 @@ Assistant
 		/obj/item/clothing/mask/cigarette/marlboro
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch)

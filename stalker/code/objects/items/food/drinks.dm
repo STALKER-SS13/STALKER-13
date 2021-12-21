@@ -11,21 +11,20 @@
 	desc = "Great energy drink. Contains caffeine, taurine and lots of vitamines. Can't make a step? Then it's what you need. WARNING: Potentially hazardous to your health!"
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "crunk"
-	list_reagents = list("crank" = 25, "energetic" = 15)
+	list_reagents = list("grey_bull" = 25, "energetic" = 15)
 	w_class = 2
 
 // Alcoholism redoes drinks below here. Above needs to be redone if still exists.
 // FROM WORST TO BEST (If that exists!)
 
 // VODKA
-/* ////// REMOVED SO MARRONES POTATO UPDATE CAN BE SHIFTED
 
 /obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka
 	name = "Zone-Produced vodka"
 	desc = "Vodka produced by the desperation of some 'ingenious' stalkers using local mushrooms and wild-grasses. It tastes and smells like filthy piss, but it'll do the job cheap!"
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "stalker_vodka"
-	list_reagents = list("stalkervodka" = 100) */
+	list_reagents = list("stalkervodka" = 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
 	name = "Cossacks vodka"

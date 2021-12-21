@@ -379,6 +379,50 @@
 	else if(subjectjob)
 		S.name = "[subjectjob] [initial(S.name)]"
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant
+
+	tastes = list("meat" = 1)
+	foodtype = MEAT | RAW | GROSS
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant
+	name = "raw mutant cutlet"
+	desc = "A raw mutant meat cutlet."
+	list_reagents = list("nutriment" = 5)
+	bonus_reagents = list("nutriment" = 5, "vitamin" = 5)
+	filling_color = "#C43C20"
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/flesh
+	name = "raw flesh cutlet"
+	desc = "A raw flesh meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/boar
+	name = "raw mutant boar cutlet"
+	desc = "A raw mutant boar meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/dog
+	name = "raw mutant dog cutlet"
+	desc = "A raw mutant dog meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/pseudo
+	name = "raw pseudog cutlet"
+	desc = "A raw pseudo meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/snork
+	name = "raw snork cutlet"
+	desc = "A raw snork meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/bloodsucker
+	name = "raw mutant bloodsucker cutlet"
+	desc = "A raw bloodsucker meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/controller
+	name = "rawcontroller cutlet"
+	desc = "A raw controller meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/rat
+	name = "raw rat cutlet"
+	desc = "A raw rat meat cutlet."
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/killertomato
 	name = "raw killer tomato cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/killertomato
@@ -422,6 +466,46 @@
 	filling_color = "#B22222"
 	tastes = list("meat" = 1)
 	foodtype = MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant
+	name = "mutant cutlet"
+	desc = "A cooked mutant meat cutlet."
+	icon_state = "cutlet"
+	list_reagents = list("nutriment" = 5)
+	bonus_reagents = list("nutriment" = 5, "vitamin" = 5)
+	filling_color = "#8A5639"
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/flesh
+	name = "flesh cutlet"
+	desc = "A cooked flesh meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/boar
+	name = "mutant boar cutlet"
+	desc = "A cooked mutant boar meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/dog
+	name = "mutant dog cutlet"
+	desc = "A cooked mutant dog meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/pseudo
+	name = "pseudog cutlet"
+	desc = "A cooked pseudo meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/snork
+	name = "snork cutlet"
+	desc = "A cooked snork meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/bloodsucker
+	name = "mutant bloodsucker cutlet"
+	desc = "A cooked bloodsucker meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/controller
+	name = "controller cutlet"
+	desc = "A cooked controller meat cutlet."
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/rat
+	name = "rat cutlet"
+	desc = "A cooked rat meat cutlet."
 
 /obj/item/reagent_containers/food/snacks/meat/cutlet/plain
 

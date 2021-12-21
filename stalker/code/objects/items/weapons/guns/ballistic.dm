@@ -173,7 +173,7 @@
 	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
-/obj/item/gun/ballistic/revolver/anaconda
+/obj/item/gun/ballistic/revolver/anaconda // Colt Anaconda .44
 	name = "Colt Anaconda .44"
 	desc = "You feeling lucky today, gopnik?"
 	icon_state = "anaconda"
@@ -192,6 +192,222 @@
 	draw_sound = 'stalker/sound/weapons/draw/usp_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/obrez_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/obrez_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/luger  // Luger P08 pistol
+	name = "luger P08 pistol"
+	desc = "Luger P08 pistols are a toggle-locked recoil-operated semi-automatic pistol. It was widely used in other countries as a military service pistol and by police forces since the turn of the 20th century."
+	icon_state = "luger"
+	item_state = "marta-silenced"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/luger_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19luger
+	force = 10
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 7
+	recoil = 0.25
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/luger_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/walther  // Walther P38
+	name = "walther P38"
+	desc = "The Walther P38 is a semi-automatic pistol that was developed by Carl Walther GmbH as the service pistol of the Wehrmacht at the beginning of World War II. The P.38 was a cutting edge semi-automatic pistol design, which introduced technical features still used today in current commercial and military semi-automatic pistols, such as the Beretta92FS. This pistol has seen better days."
+	icon_state = "waltherp38"
+	item_state = "marta-silenced"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pistol_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19waltherp38
+	force = 10
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 7
+	recoil = 0.25
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/val_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/aps  // Stechkin APS
+	name = "stechkin automatic pistol"
+	desc = "The APS or stechkin automatic pistol was designed by the Soviets and introduced into service in 1951 for use with artillery and mortar crews, tank crews and aircraft personnel, where a cumbersome assault rifle was deemed unnecessary. It was later favored by special forces such as the Spetsnaz, who needed a more effective sidearm than the Makarov PM. It has seen service in a number of wars such as the Vietnam war, War in Donbas and Syrian Civil War... and now resides in the Zone."
+	icon_state = "aps"
+	item_state = "cora"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pm_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18aps
+	force = 10
+	automatic = 1
+	burst_size = 5
+	fire_delay = 1.7
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 12
+	recoil = 5
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/pernach  // OTs-33 Pernach
+	name = "OTs-33 Pernach"
+	desc = "The Pernach is a selective fire blowback-operated pistol designed to replace the Stechkin APS in various special OMON units within the Russian police, the Russian Ministry of Internal Affairs (MVD) and other paramilitary units. The OTs-33 was developed in 1995 by Igor Stechkin at the TsKIB SOO design bureau, and it went into limited production at the KBP Instrument Design Bureau."
+	icon_state = "pernach"
+	item_state = "cora"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pm_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18aps
+	force = 10
+	automatic = 1
+	burst_size = 5
+	fire_delay = 1.5
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 4
+	recoil = 3.5
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/mauser  // Mauser C96
+	name = "mauser C96"
+	desc = "The Mauser C96 is a semi-automatic pistol that was originally produced by German arms manufacturer Mauser from 1896 to 1937. The distinctive characteristics of the C96 are the box magazine in front of the trigger, the long barrel, and a grip shaped like the handle of a broom. It looks like it is in miraculous condition."
+	icon_state = "mauser"
+	item_state = "mauser"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/mauser_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/mauser
+	force = 10
+	vary_fire_sound = 1
+	can_suppress = 1
+	can_unsuppress = 1
+	burst_size = 3
+	fire_delay = 1
+	spread = 10
+	recoil = 3
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mauser_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mauser_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/glock  // Glock 17
+	name = "glock G17"
+	desc = "The Glock 17 is the original 9×19mm Parabellum model, with a standard magazine capacity of 17 rounds, introduced in 1982. It is a polymer-framed, short recoil-operated, locked-breech semi-automatic pistol designed and produced by Austrian manufacturer Glock Ges.m.b.H. This one looks like it has seen better days."
+	icon_state = "glock"
+	item_state = "marta"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pistol_shot2.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19glock
+	force = 10
+	can_suppress = 1
+	can_unsuppress = 1
+	durability = 85
+	spread = 6
+	recoil = 0.4
+	damagelose = 0.2
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/tt30   // TT-30
+	name = "TT-30"
+	desc = "An old soviet pistol made for similiarly old soviet ammo. Extremely widespread because of large numbers of those pistols left in USSR army stashes around Pripyat. Isn't very powerful, but bullets penetrate armor well enough."
+	icon_state = "tt30"
+	item_state = "sip"
+	w_class = 2
+	fire_sound = 'stalker/sound/weapons/tt33_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/tt
+	force = 10
+	can_suppress = 0
+	can_unsuppress = 0
+	fire_delay = 0.5
+	durability = 50
+	spread = 8
+	recoil = 0.15
+	damagelose = 0.1
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/fiveseven // Five Seven
+	name = "five seven"
+	desc = "The Five Seven Pistol was designed by the FN company (Belgium) as a complimentary sidearm for the P90 submachine gun. The P90 and Five Seven share the same ammunition, the 5.7x28mm SS190 cartridge."
+	icon_state = "fiveseven"
+	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
+	w_class = 2
+	mag_type = /obj/item/ammo_box/magazine/stalker/m57x28fiveseven
+	force = 10
+	can_suppress = 0
+	can_unsuppress = 0
+	spread = 7
+	recoil = 0.50
+	durability = 100
+	damagelose = 0.2
+	draw_sound = 'stalker/sound/weapons/draw/fort_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/waltherpp  // Walther PP
+	name = "walther PP"
+	desc = "The Walther PP (Polizeipistole, or police pistol) is a semi-automatic pistol that was developed by Carl Walther GmbH and was one of the first successful double action semi-automatic pistols.  The design inspired other pistols, among them the Soviet Makarov. This one looks like its in good shape!"
+	icon_state = "waltherpp"
+	item_state = "marta"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pistol_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19waltherpp
+	force = 10
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 7
+	recoil = 0.25
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/val_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/cz83  // CZ 83
+	name = "CZ 83"
+	desc = ""
+	icon_state = "cz83"
+	item_state = "marta"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/pistol_shot2.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18cz83
+	force = 10
+	durability = 85
+	spread = 3
+	recoil = 0.4
+	damagelose = 0.2
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pistol/silvermarta  // Silver Beretta92FS
+	name = "silver beretta 92FS"
+	desc = "Beretta M9 pistols enjoy the reputation of a relatively reliable, albeit somewhat cumbersome weapon, around the world. In service with armed forces and police across the ocean, as well as various military and law enforcement organizations worldwide. The pistol is equally popular with members of the underworld, thanks to its powerful round and magazine capacity. Berettas found in the Zone are usually dated, probably from retired stock."
+	icon_state = "martasilver"
+	item_state = "marta"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/marta_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19marta
+	force = 10
+	can_suppress = 1
+	can_unsuppress = 1
+	spread = 7
+	recoil = 0.25
+	damagelose = 0.2
+	durability = 75
+	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/pm_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 
 ///////////////////////////// Автоматы, ПП //////////////////////////////////////////
@@ -261,6 +477,271 @@
 /obj/item/gun/ballistic/automatic
 	modifications = list("barrel_automatic" = 0, "frame_automatic" = 0, "grip_automatic" = 0, "compensator_automatic" = 0)
 
+/obj/item/gun/ballistic/automatic/sten  // Sten MK II
+	name = "Sten MK II"
+	desc = "The STEN (or Sten gun) is a family of British submachine guns chambered in 9×19mm which were used extensively by British and Commonwealth forces throughout World War II and the Korean War. They had a simple design and very low production cost, making them effective insurgency weapons for resistance groups, and they continue to see usage to this day by irregular military forces."
+	icon_state = "sten"
+	item_state = "sterling"
+	fire_sound = 'stalker/sound/weapons/mac10_shoot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/sten
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 1.8
+	slot_flags = ITEM_SLOT_BACK
+	durability = 80
+	w_class = 3
+	spread = 10
+	recoil = 1.4
+	damagelose = 0.05
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
+
+/obj/item/gun/ballistic/automatic/sterling  // Sterling Submachine Gun
+	name = "sterling submachine gun"
+	desc = "The Sterling submachine gun is a British submachine gun. It was tested with the British Army in 1944-1945 as a replacement for the Sten but it did not start to replace it until 1953."
+	icon_state = "sterling"
+	item_state = "sterling"
+	fire_sound = 'stalker/sound/weapons/mac10_shoot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/sterling
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 1.8
+	slot_flags = ITEM_SLOT_BACK
+	durability = 80
+	w_class = 3
+	spread = 8
+	recoil = 1.7
+	damagelose = 0.05
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m3a1  // M3A1 Grease Gun
+	name = "M3A1 Grease Gun"
+	desc = "The M3 is an American .45-caliber submachine gun adopted for the U.S. Army service on 12 December 1942, as the United States Submachine Gun, Cal. .45, M3. The M3 was chambered for the same .45 ACP round fired by the Thompson submachine gun, but was cheaper to produce and lighter, although, contrary to popular belief, it was less accurate."
+	icon_state = "m3a1"
+	item_state = "greasegun"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m3a1
+	fire_sound = 'stalker/sound/weapons/abakan_shoot.ogg'
+	can_suppress = 0
+	burst_size = 5
+	fire_delay = 2.5
+	pin = /obj/item/firing_pin
+	durability = 200
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/abakan_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/abakan_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
+
+/obj/item/gun/ballistic/automatic/reising  // Reising Model 55
+	name = "Reising Model 55"
+	desc = "The .45 Reising submachine gun was manufactured by Harrington & Richardson (H&R) Arms Company in Worcester, Massachusetts, USA, and was designed and patented by Eugene Reising in 1940. Over 100,000 Reisings were ordered during World War II, and were initially used by the United States Navy, Marine Corps, and the United States Coast Guard, though some were shipped to Canadian, Soviet, and other allied forces to fight the Axis powers. Now its evidently here in the Zone."
+	icon_state = "reising"
+	item_state = "mat49"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/reising
+	fire_sound = 'stalker/sound/weapons/abakan_shoot.ogg'
+	can_suppress = 0
+	burst_size = 5
+	fire_delay = 2.5
+	pin = /obj/item/firing_pin
+	durability = 200
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/abakan_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/abakan_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m76  // Smith & Wesson M76
+	name = "smith & wesson M76"
+	desc = "The Smith & Wesson M76 submachine gun (SMG) was produced by Smith & Wesson from 1967 to 1974. It was used in conflicts such as the Vietnam War."
+	icon_state = "m76"
+	item_state = "mat49"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19m76
+	fire_sound = 'stalker/sound/weapons/abakan_shoot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 2
+	pin = /obj/item/firing_pin
+	durability = 200
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/abakan_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/abakan_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
+
+/obj/item/gun/ballistic/automatic/mp40  // MP-40
+	name = "MP-40"
+	desc = "A submachine gun chambered for the 9×19mm Parabellum cartridge. It was developed in Nazi Germany and used extensively by the Axis powers during World War II."
+	icon_state = "mp40"
+	item_state = "mp40"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/mp40
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	can_suppress = 1
+	burst_size = 3
+	fire_delay = 1.4
+	pin = /obj/item/firing_pin
+	durability = 80
+	w_class = 4
+	spread = 6.5
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/mp3008  // MP 3008
+	name = "MP 3008"
+	desc = "A German last ditch submachine gun manufactured towards the end of World War II in early 1945. After the war it was distributed across the world for proxy conflicts."
+	icon_state = "mp3008"
+	item_state = "mat49"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/mp40
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 2
+	pin = /obj/item/firing_pin
+	durability = 80
+	w_class = 4
+	spread = 8.5
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/pps43  // PPS-43
+	name = "PPS-43"
+	desc = "A Soviet submachine gun chambered in 7.62×25mm Tokarev, developed by Alexei Sudayev as a low-cost personal defense weapon for reconnaissance units, vehicle crews and support service personnel. It was highly cost effective and easy to manufacture due to its efficient and simple, largely sheet metal design. It was produced from 1942-1946 and they gave an output of approximately two million."
+	icon_state = "pps43"
+	item_state = "pps"
+	fire_sound = 'stalker/sound/weapons/ppsh_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/pps43
+	can_suppress = 0
+	slowdown = 0.15
+	burst_size = 5
+	fire_delay = 1.5
+	slot_flags = ITEM_SLOT_BACK
+	durability = 50
+	w_class = 4
+	spread = 4
+	recoil = 0.35
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
+/obj/item/gun/ballistic/automatic/bizon  // PP-19 Bizon
+	name = "PP-19 bizon"
+	desc = "The Bizon was developed at the request of the Russian Ministry of Internal Affairs and is primarily intended for counter-terrorist and law enforcement units that need fast and accurate fire at close ranges. The Bizon is issued to armed response units of the Federal Security Service (FSB) and Ministry of Justice in Russia."
+	icon_state = "bizon"
+	item_state = "vz58"
+	fire_sound = 'stalker/sound/weapons/ppsh_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18bizon
+	can_suppress = 0
+	slowdown = 0.15
+	burst_size = 3
+	fire_delay = 0.8
+	slot_flags = ITEM_SLOT_BACK
+	durability = 50
+	w_class = 4
+	spread = 4
+	recoil = 0.35
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
+/obj/item/gun/ballistic/automatic/skorpion  // Skorpion
+	name = "skorpion vz. 61"
+	desc = "A Czechoslovak machine pistol developed in 1959 by Miroslav Rybá. Although it was developed for use with security forces, the weapon was also accepted into service with the Czechoslovak Army as a personal sidearm for lower-ranking army staff, vehicle drivers, armoured vehicle personnel and special forces."
+	icon_state = "skorpion"
+	item_state = "arg"
+	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19skorpion
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1
+	slot_flags = ITEM_SLOT_BELT
+	durability = 80
+	w_class = 3
+	spread = 7
+	recoil = 0.15
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
+/obj/item/gun/ballistic/automatic/mat49  // MAT-49
+	name = "MAT-49"
+	desc = "The MAT-49 was a submachine gun which was developed by French arms factory Manufacture Nationale d'Armes de Tulle (MAT) for use by the French Army and was first produced in 1949."
+	icon_state = "mat49"
+	item_state = "mat49"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m9x19mat49
+	fire_sound = 'stalker/sound/weapons/abakan_shoot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1
+	pin = /obj/item/firing_pin
+	durability = 200
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/abakan_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/abakan_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'
+
 /obj/item/gun/ballistic/automatic/mac10  // MAC10
 	name = "MAC10 Ingram"
 	desc = "An american submachinegun developed in the 70s of the previous century, notable for its high rate of fire and reliability. Chambered in 9x19."
@@ -283,6 +764,30 @@
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
 
+/obj/item/gun/ballistic/automatic/sks // SKS
+	name = "SKS"
+	desc = "The SKS is a Soviet semi-automatic carbine chambered for the 7.62x39mm round, designed in 1943 by Sergei Gavrilovich Simonov. The SKS-45 was manufactured at Tula Arsenal from 1949 to 1958 and at Izhevsk Arsenal in just 1953 and 1954, resulting in a total Soviet production of about 2.7 million carbines. In the early 1950s, the Soviets took the SKS carbine out of front-line service and replaced it with the AK-47; however, the SKS remained in second-line service for decades."
+	icon_state = "sks"
+	item_state = "rifle"
+	fire_sound = 'stalker/sound/weapons/sks_shot.ogg'
+	durability = 200
+	slot_flags = SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/stalker/sks
+	can_suppress = 0
+	slowdown = 0.15
+	fire_delay = 1.2
+	durability = 150
+	slot_flags = SLOT_BACK
+	force = 15
+	recoil = 0.5
+	w_class = 4
+	randomspread = 0
+	spread = 2
+	damagelose = 0.1
+	can_scope = 1
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+
 /obj/item/gun/ballistic/automatic/ak74  // AK-74
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable."
@@ -295,6 +800,7 @@
 	fire_sound = 'stalker/sound/weapons/ak74_shot.ogg'
 	can_suppress = 1
 	can_unsuppress = 1
+	slowdown = 0.15
 	burst_size = 3
 	fire_delay = 1.6
 	pin = /obj/item/firing_pin
@@ -307,6 +813,37 @@
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+// Work in Progress
+/*	var/overlay_state
+	var/overlay_list = list(
+		"classic",
+		"camo",
+		"black",
+		"blackout"
+		)
+
+/obj/item/gun/ballistic/automatic/ak74/Initialize()
+	. = ..()
+	if(!overlay_state)
+		overlay_state = pick(overlay_list)
+	update_icon()
+
+	*/
+
+/obj/item/gun/ballistic/automatic/ak74/camo
+	name = "AK 74"
+	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one has camo paint."
+	icon_state = "ak74_camo"
+
+/obj/item/gun/ballistic/automatic/ak74/black
+	name = "AK 74"
+	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The metal parts are black."
+	icon_state = "ak74_black"
+
+/obj/item/gun/ballistic/automatic/ak74/blackout
+	name = "AK 74"
+	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The entire gun is black."
+	icon_state = "ak74_blackout"
 
 /obj/item/gun/ballistic/automatic/aksu74  // АКС74У
 	name = "AK 74S"
@@ -318,6 +855,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m545
 	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
 	can_suppress = 1
+	slowdown = 0.15
 	burst_size = 3
 	fire_delay = 1.5
 	pin = /obj/item/firing_pin
@@ -342,6 +880,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m545
 	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
 	can_suppress = 1
+	slowdown = 0.15
 	burst_size = 5
 	fire_delay = 1
 	pin = /obj/item/firing_pin
@@ -355,6 +894,310 @@
 	unique = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
+
+/obj/item/gun/ballistic/automatic/fnfal  // FN FAL
+	name = "FN FAL"
+	desc = "During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. Because of its prevalence and widespread usage among the militaries of many NATO and first world countries during the Cold War, it received the title 'The right arm of the Free World'. This one is set to double tap."
+	icon_state = "fnfal"
+	item_state = "fnfal"
+	colored = 0//"normal"
+	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/fnfal
+	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
+	can_suppress = 1
+	can_unsuppress = 1
+	slowdown = 0.15
+	burst_size = 2
+	fire_delay = 1.6
+	pin = /obj/item/firing_pin
+	durability = 120
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+
+/obj/item/gun/ballistic/automatic/woodfnfal  // FN FAL with wooden furniture
+	name = "FN FAL"
+	desc = "During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. Because of its prevalence and widespread usage among the militaries of many NATO and first world countries during the Cold War, it received the title 'The right arm of the Free World'. This one has wooden furniture."
+	icon_state = "fnfalwood"
+	item_state = "fnfalwood"
+	colored = 0//"normal"
+	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/fnfal
+	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
+	can_suppress = 1
+	can_unsuppress = 1
+	slowdown = 0.15
+	burst_size = 5
+	fire_delay = 1.6
+	pin = /obj/item/firing_pin
+	durability = 120
+	w_class = 4
+	spread = 4
+	recoil = 1
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
+
+/obj/item/gun/ballistic/automatic/famas  // FAMAS
+	name = "FAMAS"
+	desc = "The FAMAS is a bullpup assault rifle designed and manufactured in France by MAS in 1978, a year after the Austrian Steyr AUG. The FAMAS is recognised for its high rate of fire at 1,100 rounds per minute, and has participated in many conflicts throughout time."
+	icon_state = "famas"
+	item_state = "famas"
+	slot_flags = ITEM_SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'stalker/sound/weapons/il86_shoot.ogg'
+	can_suppress = 1
+	slowdown = 0.15
+	burst_size = 3
+	fire_delay = 1.8
+	pin = /obj/item/firing_pin
+	durability = 75
+	w_class = 4
+	spread = 4
+	recoil = 0.4
+	damagelose = 0.1
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/l85_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/groza_open.ogg'
+
+/obj/item/gun/ballistic/automatic/aug // Steyr AUG
+	name = "Steyr AUG"
+	desc = "an Austrian bullpup assault rifle chambered for the 5.56×45mm NATO intermediate cartridge, designed in the 1960s by Steyr-Daimler-Puch, and now manufactured by Steyr Mannlicher GmbH & Co KG. is a selective-fire, bullpup weapon with a conventional gas-piston-operated action that fires from a closed bolt. It is designed as a Modular Weapon System that could be quickly configured as a rifle, a carbine, a sniper rifle, a sub-machine gun and even an open-bolt squad automatic weapon."
+	icon_state = "aug"
+	item_state = "aug"
+	slot_flags = ITEM_SLOT_BACK
+	fire_sound = 'stalker/sound/weapons/sigsg550_shoot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	can_suppress = 0
+	slowdown = 0.15
+	durability = 125
+	burst_size = 4
+	fire_delay = 1.3
+	w_class = 4
+	spread = 3
+	recoil = 0.3
+	damagelose = 0.2
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/fnf2000_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/fnf2000_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/fnf2000_open.ogg'
+
+/obj/item/gun/ballistic/automatic/akm // AKM
+	name = "AKM"
+	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
+	icon_state = "akm"
+	item_state = "akm"
+	slot_flags = SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/akm
+	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 150
+	w_class = 4
+	spread = 12
+	slowdown = 0.15
+	recoil = 0.9
+	damagelose = 0.25
+	can_scope = 0
+	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
+
+/obj/item/gun/ballistic/automatic/vz58 // vz. 58
+	name = "AKM"
+	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
+	icon_state = "akm"
+	item_state = "akm"
+	slot_flags = SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 150
+	w_class = 4
+	spread = 12
+	slowdown = 0.15
+	recoil = 0.9
+	damagelose = 0.25
+	can_scope = 0
+	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
+
+/obj/item/gun/ballistic/automatic/m16  //M16A1
+	name = "M16A1"
+	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
+	icon_state = "m16"
+	item_state = "m16"
+	slot_flags = SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 70
+	slowdown = 0.15
+	w_class = 4
+	spread = 5
+	recoil = 0.6
+	damagelose = 0.2
+	can_scope = 0
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m16a4 //M16A4
+	name = "M16A1"
+	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
+	icon_state = "m16a4"
+	item_state = "m16a4"
+	slot_flags = SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 70
+	slowdown = 0.15
+	w_class = 4
+	spread = 5
+	recoil = 0.6
+	damagelose = 0.2
+	can_scope = 0
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m14  // M14 Carbine
+	name = "M14"
+	desc = "The M14 Carbine was designed and developed the US military during WWII and has seen widespread distribution throughout the world. Now it is in the Zone!"
+	icon_state = "m14"
+	item_state = "m14"
+	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m14
+	can_suppress = 0
+	slot_flags = ITEM_SLOT_BACK
+	durability = 75
+	w_class = 4
+	spread = 2
+	slowdown = 0.15
+	recoil = 0.3
+	damagelose = 0.15
+	can_scope = 0
+	automatic = 0
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/berettam38_open.ogg'
+
+/obj/item/gun/ballistic/automatic/m4  // M4 Carbine
+	name = "M4 carbine"
+	desc = "The M4 Carbine is a 5.56×45mm NATO, air-cooled, gas-operated, direct impingement, magazine-fed, select fire carbine. It has a 14.5 in (370 mm) barrel and a telescoping stock. It is essentially a lighter and shorter variant of the M16A2 assault rifle."
+	icon_state = "m4"
+	item_state = "m4"
+	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	can_suppress = 0
+	slot_flags = ITEM_SLOT_BACK
+	durability = 75
+	w_class = 4
+	spread = 2
+	recoil = 0.3
+	slowdown = 0.15
+	damagelose = 0.15
+	can_scope = 0
+	automatic = 1
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/berettam38_open.ogg'
+
+/obj/item/gun/ballistic/automatic/ar10 // ArmaLite AR-15
+	name = "AR-15"
+	desc = "The ArmaLite AR-15 was designed to be a lightweight rifle and to fire a new high-velocity, lightweight, small-caliber cartridge to allow infantrymen to carry more ammunition."
+	icon_state = "ar10"
+	item_state = "m16"
+	slot_flags = SLOT_BACK
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
+	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 70
+	slowdown = 0.15
+	w_class = 4
+	spread = 5
+	recoil = 0.6
+	damagelose = 0.2
+	can_scope = 0
+	draw_sound = 'stalker/sound/weapons/draw/tpc301_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/tpc301_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
+
+/obj/item/gun/ballistic/automatic/scarh // FN SCAR-H
+	name = "FN SCAR-H"
+	icon_state = "scarh"
+	item_state = "scarh"
+	desc = "A Belgian-designed automatic rifle, chambered in 7.62x51mm."
+	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/scarh
+	slowdown = 0.15
+	force = 15
+	can_suppress = 0
+	burst_size = 3
+	fire_delay = 1.7
+	durability = 70
+	slowdown = 0.15
+	w_class = 4
+	spread = 5
+	recoil = 0.6
+	damagelose = 0.2
+	can_scope = 0
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/gun/ballistic/automatic/makeshiftak  // Makeshift AK
+	name = "makeshift ak"
+	desc = "A kalashnakov made of junk parts. Very unreliable."
+	icon_state = "makeshiftak"
+	item_state = "ak74"
+	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/stalker/m545
+	fire_sound = 'stalker/sound/weapons/ak74_shot.ogg'
+	slowdown = 0.15
+	burst_size = 3
+	fire_delay = 1.8
+	pin = /obj/item/firing_pin
+	durability = 40
+	w_class = 4
+	spread = 18
+	recoil = 3
+	randomspread = 6
+	damagelose = 0.25
+	can_scope = 0
+	automatic = 1
+	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 
 /obj/item/gun/ballistic/automatic/mp5  // MP5
 	name = "MP-5"
@@ -377,6 +1220,7 @@
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
+
 
 /obj/item/gun/ballistic/automatic/kiparis  // Кипарис
 	name = "Kiparis"
@@ -450,7 +1294,7 @@
 	name = "\improper FN P90"
 	desc = "An incredibly odd, albeit effecient, submachine gun. Chambered in FN 5.7×28mm."
 	icon_state = "p90"
-	item_state = "p90"
+	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/smg57
 	fire_delay = 0.8
 	burst_size = 3
@@ -461,6 +1305,8 @@
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
 /*	mag_display = TRUE
+
+
 
 /obj/item/gun/ballistic/automatic/p90/Initialize()
 	. = ..()
@@ -501,6 +1347,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m545
 	fire_sound = 'stalker/sound/weapons/abakan_shoot.ogg'
 	can_suppress = 1
+	slowdown = 0.15
 	burst_size = 2
 	fire_delay = 1.5
 	pin = /obj/item/firing_pin
@@ -526,6 +1373,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/il86_shoot.ogg'
 	can_suppress = 1
+	slowdown = 0.15
 	zoomable = 1
 	zoom_amt = 9
 	zoom_out_amt = 12
@@ -553,6 +1401,7 @@
 	fire_sound = 'stalker/sound/weapons/sigsg550_shoot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	can_suppress = 0
+	slowdown = 0.15
 	durability = 125
 	burst_size = 3
 	fire_delay = 1.3
@@ -577,6 +1426,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/il86_shoot.ogg'
 	can_suppress = 1
+	slowdown = 0.15
 	zoomable = 1
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -605,6 +1455,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/fnf2000_shoot.ogg'
 	can_suppress = 0
+	slowdown = 0.15
 	burst_size = 3
 	fire_delay = 1.4
 	pin = /obj/item/firing_pin
@@ -630,6 +1481,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/fnf2000_shoot.ogg'
 	can_suppress = 0
+	slowdown = 0.15
 	burst_size = 3
 	fire_delay = 1.4
 	zoomable = 1
@@ -660,6 +1512,7 @@
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'stalker/sound/weapons/pkm_shot.ogg'
 	can_suppress = 0
+	slowdown = 0.40
 	can_scope = 0
 	automatic = 1
 	burst_size = 5
@@ -689,6 +1542,7 @@
 	suppressed = 1
 	can_suppress = 0
 	can_unsuppress = 0
+	slowdown = 0.15
 	durability = 150
 	slot_flags = ITEM_SLOT_BACK
 	force = 15
@@ -716,6 +1570,7 @@
 	suppressed = 1
 	can_suppress = 0
 	can_unsuppress = 0
+	slowdown = 0.15
 	zoomable = 1
 	zoom_amt = 7
 	zoom_out_amt = 10
@@ -745,6 +1600,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/svd
 	can_suppress = 0
 	can_unsuppress = 0
+	slowdown = 0.15
 	zoomable = 1
 	zoom_amt = 9
 	zoom_out_amt = 11
@@ -771,6 +1627,7 @@
 	fire_sound = 'stalker/sound/weapons/groza_shot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/sp9x39groza
 	can_suppress = 0
+	slowdown = 0.15
 	durability = 125
 	slot_flags = ITEM_SLOT_BACK
 	fire_delay = 1
@@ -802,6 +1659,7 @@
 	fire_sound = 'stalker/sound/weapons/gauss_shoot.ogg'
 	can_suppress = 0
 	can_unsuppress = 0
+	slowdown = 0.15
 	fire_delay = 80
 	pin = /obj/item/firing_pin
 	durability = 120
@@ -815,6 +1673,9 @@
 	zoom_amt = 8
 	zoom_out_amt = 10
 	weapon_weight = WEAPON_MEDIUM
+	empty_alarm = TRUE
+	casing_ejector = FALSE
+	magazine_wording = "battery"
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 	load_sound = 'stalker/sound/weapons/gauss_reload.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/abakan_open.ogg'

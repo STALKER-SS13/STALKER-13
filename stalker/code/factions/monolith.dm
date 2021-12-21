@@ -60,8 +60,12 @@
 	..()
 	uniform = UNIFORMPICK
 	ears = null
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
-
+	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian)
+	r_pocket = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 /datum/job/monolith_hegumen
 	title = "Monolith Preacher"
 	faction_s = "Monolith"

@@ -43,6 +43,16 @@
 	name = "bulrush"
 	icon = 'stalker/icons/fallout/flora.dmi'
 
+/obj/structure/flora/stalker/smallbush
+	icon_state = "tall_grass_8"
+	layer = 4.01
+	anchored = 1
+	opacity = 1
+
+/obj/structure/flora/stalker/bush/Initialize()
+	..()
+	icon_state = "tall_grass_[rand(1,8)]"
+
 /obj/structure/flora/stalker/bush
 	icon_state = "very_tall_grass_8"
 	layer = 4.01

@@ -429,6 +429,38 @@
 	volume = 80
 	list_reagents = list("vodka" = 60, "water" = 20)
 
+/obj/item/reagent_containers/food/drinks/flask/bar
+	name = "metal flask"
+	desc = "A sturdy metal flask with a chain attached to the cap, and black leather wrapped around it."
+	icon_state = "barflask"
+	materials = list(MAT_METAL=500)
+	volume = 60
+	list_reagents = list("whiskey" = 40, "cream" = 20)
+
+/obj/item/reagent_containers/food/drinks/flask/german
+	name = "brown canteen"
+	desc = "A sturdy canteen with a chain attached to the cap, with leather surrounding the metal body."
+	icon_state = "canteen_german"
+	materials = list(MAT_METAL=500)
+	volume = 60
+	list_reagents = list("vodka" = 40, "water" = 20)
+
+/obj/item/reagent_containers/food/drinks/flask/jap
+	name = "brown canteen"
+	desc = "A sturdy canteen with a chain attached to the cap, with leather surrounding the metal body."
+	icon_state = "canteen_jap"
+	materials = list(MAT_METAL=500)
+	volume = 60
+	list_reagents = list("vodka" = 40, "water" = 20)
+
+/obj/item/reagent_containers/food/drinks/flask/large
+	name = "metal flask"
+	desc = "A cylindrical metal flask with a chain attached to the cap. Relatively larger than most flasks."
+	icon_state = "canteen_large"
+	materials = list(MAT_METAL=500)
+	volume = 80
+	list_reagents = list("vodka" = 60, "water" = 20)
+
 /obj/item/reagent_containers/food/drinks/flask/jerrycan
 	name = "jerrycan"
 	desc = "A large green metal jerrycan. It appears to hold quite a lot!"
@@ -499,7 +531,7 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/cola
 	name = "cola"
-	desc = "Cola. in the Zone."
+	desc = "Cola... in the Zone."
 	icon_state = "cola"
 	list_reagents = list("cola" = 30)
 	foodtype = SUGAR

@@ -57,6 +57,10 @@
 	icon = 'stalker/icons/cars/gruzovik_army_north.dmi'
 	icon_state = "1"
 
+/obj/structure/stalker/car/gryzovik_civ/south
+	icon = 'stalker/icons/cars/gruzovik_civ_south.dmi'
+	icon_state = "1"
+
 /obj/structure/stalker/car/btrgrimy
 	icon = 'stalker/icons/cars/btrgrimy.dmi'
 	icon_state = "1"

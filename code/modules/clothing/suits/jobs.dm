@@ -127,10 +127,17 @@
 
 //Mime
 /obj/item/clothing/suit/suspenders
-	name = "suspenders"
-	desc = "They suspend the illusion of the mime's play."
+	name = "red suspenders"
+	desc = "Red suspenders to hang from your pants around your shoulder."
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "suspenders"
+	blood_overlay_type = "armor" //it's the less thing that I can put here
+
+/obj/item/clothing/suit/blacksuspenders
+	name = "black suspenders"
+	desc = "Black suspenders to hang from your pants around your shoulder."
+	icon = 'icons/obj/clothing/belts.dmi'
+	icon_state = "suspendersblack"
 	blood_overlay_type = "armor" //it's the less thing that I can put here
 
 //Security

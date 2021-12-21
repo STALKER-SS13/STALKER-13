@@ -83,7 +83,7 @@ Assistant
 		/obj/item/clothing/mask/cigarette/rollie/cannabis)
 	ears = null
 	id = /obj/item/stalker_pda
-	belt = /obj/item/storage/belt/stalker/artifact_belt/small
+	belt = /obj/item/gun/ballistic/automatic/pistol/tt
 	gloves = pick(
 		/obj/item/clothing/gloves/color/brown,
 		/obj/item/clothing/gloves/color/black,
@@ -97,11 +97,16 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/civilian)
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/loner)
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
 	l_pocket = /obj/item/storage/wallet/stalker
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 
 /datum/outfit/stalker  // For select_equipment
 	name = "Loner"
@@ -125,8 +130,14 @@ Assistant
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez
 	ears = null
-	mask = /obj/item/clothing/mask/gas/stalker
-	head = /obj/item/clothing/head/steel
+	mask = pick(
+		/obj/item/clothing/mask/cigarette/cigar,
+		/obj/item/clothing/mask/gas/stalker,
+		/obj/item/clothing/mask/cigarette/marlborogold,
+		/obj/item/clothing/mask/cigarette/rollie/cannabis)
+	head = pick(/obj/item/clothing/head/ssh,
+				/obj/item/clothing/head/steel,
+				/obj/item/clothing/head/tsh)
 	belt = /obj/item/gun/ballistic/automatic/pistol/usp_match
 	id = /obj/item/stalker_pda
 	gloves = pick(
@@ -143,9 +154,18 @@ Assistant
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/professional)
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/ammo_box/magazine/stalker/usp45,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/flashlight/flare = 3,/obj/item/clothing/accessory/patch/loner)
+	suit_store = pick(/obj/item/gun/ballistic/automatic/ak74/blackout,
+				/obj/item/gun/ballistic/automatic/ak74/black,
+				/obj/item/gun/ballistic/automatic/ak74/camo,
+				/obj/item/gun/ballistic/automatic/ak74)
 	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/twohanded/binoculars
 	r_hand = /obj/item/weapon/kitchen/knife/hunting
+	l_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 
 /datum/outfit/stalkervolk  // For select_equipment
 	name = "Old Stalker"
@@ -266,6 +286,11 @@ Assistant
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
+	r_pocket = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 
 /datum/job/barman
 	title = "Barman"
@@ -299,3 +324,8 @@ Assistant
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)

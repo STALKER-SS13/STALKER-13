@@ -92,6 +92,54 @@
 	STR.max_combined_w_class = 20
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/storage/backpack/stalker/stalker
+	name = "backpack"
+	desc = "You wear this on your back and put items into it."
+	icon_state = "backpack-stalker"
+	item_state = "backpack-stalker"
+	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/storage/backpack/stalker/stalker/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_combined_w_class = 30
+	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.max_items = 21
+	STR.display_numerical_stacking = TRUE
+
+/obj/item/storage/backpack/stalker/stalker/duffel
+	name = "duffelbag"
+	desc = "You wear this over your back and put items into it."
+	icon_state = "duffelbag-stalker"
+	item_state = "duffelbag-stalker"
+	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/storage/backpack/stalker/stalker/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_combined_w_class = 30
+	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.max_items = 35
+	STR.display_numerical_stacking = TRUE
+
+/obj/item/storage/backpack/stalker/stalker/rucksack
+	name = "rucksack"
+	desc = "You wear this over your back and put items into it."
+	icon_state = "backpack-rucksack"
+	item_state = "backpack-rucksack"
+	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/storage/backpack/stalker/stalker/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_combined_w_class = 55
+	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.max_items = 30
+	STR.display_numerical_stacking = TRUE
+
 /*
 /obj/item/storage/backpack/stalker/attackby(obj/item/W, mob/user, params)
 	playsound(src.loc, "sound/stalker/objects/inv_open.ogg", 50, 1, -5)

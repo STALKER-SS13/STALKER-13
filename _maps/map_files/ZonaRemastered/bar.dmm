@@ -647,7 +647,7 @@
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "ch" = (
-/obj/effect/landmark/mobspawner/kaban_spawner,
+/obj/effect/landmark/mobspawner/boar_spawner,
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "ci" = (
@@ -3098,7 +3098,7 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "kq" = (
-/obj/effect/landmark/mobspawner/kaban_spawner,
+/obj/effect/landmark/mobspawner/boar_spawner,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "kr" = (
@@ -3907,6 +3907,7 @@
 /area/stalker/blowout/outdoor/bar)
 "mY" = (
 /obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/cigarettes,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings)
 "mZ" = (
@@ -4707,6 +4708,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"py" = (
+/obj/effect/spawner/lootdrop/stalker/cigs_trash,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "pC" = (
 /obj/structure/stalker/cacheable/krest/bereza,
 /turf/open/stalker/floor/digable/grass,
@@ -4953,6 +4958,10 @@
 /obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings)
+"rA" = (
+/obj/effect/spawner/lootdrop/stalker/seeds,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/buildings)
 "rD" = (
 /obj/effect/spawner/lootdrop/stalker/flasks,
 /turf/open/stalker/floor/gryaz,
@@ -4983,6 +4992,14 @@
 	},
 /turf/open/stalker/floor/digable/grass,
 /area/stalker)
+"tq" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/seeds,
+/obj/effect/spawner/lootdrop/stalker/seeds,
+/obj/effect/spawner/lootdrop/stalker/seeds,
+/obj/effect/spawner/lootdrop/stalker/seeds,
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/bar/rentgen)
 "tM" = (
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/asphalt,
@@ -5011,10 +5028,6 @@
 	icon_state = "centers"
 	},
 /turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"uQ" = (
-/obj/machinery/vending/cigarette/busted,
-/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "uS" = (
 /obj/structure/stalker/bigyashik{
@@ -5131,6 +5144,10 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"yU" = (
+/obj/effect/spawner/lootdrop/stalker/cigs_trash,
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker/buildings)
 "za" = (
 /obj/structure/chair/stalker/divan/divan2,
 /obj/effect/landmark/latejoin/duty,
@@ -5165,6 +5182,10 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"Au" = (
+/obj/structure/spawner/stalker/dog,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "Az" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/gryaz,
@@ -5193,6 +5214,10 @@
 "Cs" = (
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/buildings)
+"CQ" = (
+/obj/effect/spawner/lootdrop/stalker/cigs_trash,
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "CZ" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -5354,7 +5379,7 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings)
 "Jk" = (
-/obj/item/trash/cigs_trash2,
+/obj/effect/spawner/lootdrop/stalker/cigs_trash,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/buildings)
 "Jp" = (
@@ -5370,6 +5395,15 @@
 	icon_state = "border2";
 	tag = "icon-border2"
 	},
+/turf/open/stalker/floor/wood/oldgor,
+/area/stalker/buildings/bar/rentgen)
+"Kd" = (
+/obj/effect/spawner/lootdrop/stalker/nail,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
+"Ko" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/weapon/ak74,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
 "KB" = (
@@ -5474,8 +5508,7 @@
 	icon_state = "border2";
 	tag = "icon-border2"
 	},
-/obj/machinery/vending/cigarette/busted,
-/obj/machinery/vending/cigarette/busted,
+/obj/effect/spawner/lootdrop/bustedcigs,
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "NT" = (
@@ -5491,6 +5524,10 @@
 	},
 /turf/open/stalker/floor/road,
 /area/stalker/buildings)
+"OI" = (
+/obj/structure/spawner/stalker/rat,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "OR" = (
 /obj/machinery/button/door{
 	id = "rentgenbarmanvault";
@@ -5563,7 +5600,7 @@
 	icon_state = "|";
 	tag = "icon-|"
 	},
-/obj/machinery/vending/cigarette/bustedtwo,
+/obj/effect/spawner/lootdrop/bustedcigs,
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "QL" = (
@@ -5814,6 +5851,10 @@
 /obj/effect/spawner/lootdrop/three_course_meal,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/bar/rentgen)
+"ZL" = (
+/obj/structure/spawner/stalker/zombiesimp,
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "ZP" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
 	dir = 4;
@@ -34489,7 +34530,7 @@ aF
 aF
 aF
 aF
-aF
+ZL
 al
 be
 pF
@@ -47860,7 +47901,7 @@ in
 au
 au
 au
-au
+Jk
 au
 au
 au
@@ -48391,7 +48432,7 @@ aF
 aF
 aF
 aF
-aF
+CQ
 aF
 be
 be
@@ -50426,7 +50467,7 @@ aI
 NF
 aF
 pb
-uQ
+aF
 aF
 aF
 aF
@@ -52250,7 +52291,7 @@ jn
 au
 au
 au
-au
+rA
 mX
 nh
 nh
@@ -53794,7 +53835,7 @@ aF
 aF
 aF
 aF
-aF
+CQ
 aF
 nF
 cm
@@ -54301,7 +54342,7 @@ aI
 aI
 aI
 aI
-al
+Kd
 aF
 aF
 aF
@@ -59160,7 +59201,7 @@ pr
 fD
 oQ
 aF
-aF
+ZL
 aF
 al
 bp
@@ -60220,7 +60261,7 @@ aI
 au
 au
 qH
-Ot
+yU
 Ot
 Ot
 ni
@@ -60463,7 +60504,7 @@ ei
 eD
 aF
 aD
-aD
+py
 aD
 aD
 aD
@@ -60490,7 +60531,7 @@ al
 al
 oQ
 al
-al
+OI
 al
 ov
 al
@@ -61825,7 +61866,7 @@ aD
 aD
 al
 al
-aD
+Au
 al
 al
 al
@@ -62254,7 +62295,7 @@ jc
 aD
 aD
 rr
-aD
+py
 aD
 aD
 aD
@@ -64335,7 +64376,7 @@ Ji
 aI
 rV
 al
-aF
+CQ
 aF
 aF
 aF
@@ -68915,7 +68956,7 @@ aj
 aj
 cT
 dV
-dX
+tq
 oV
 oV
 oV
@@ -69433,7 +69474,7 @@ ex
 GV
 oV
 ex
-dX
+Ko
 cT
 aj
 aj

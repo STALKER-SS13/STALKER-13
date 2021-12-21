@@ -255,17 +255,17 @@
 
 /sidoritem/dogtail
 	name = "Dog tail"
-	itemtype = /obj/item/weapon/stalker/loot/dog_tail
+	itemtype = /obj/item/weapon/stalker/loot/mutantparts/dog_tail
 	cost = 1000
 
 /sidoritem/flesheye
 	name = "Flesh Eye"
-	itemtype = /obj/item/weapon/stalker/loot/flesh_eye
+	itemtype = /obj/item/weapon/stalker/loot/mutantparts/flesh_eye
 	cost = 2000
 
 /sidoritem/boarleg
 	name = "Boar Leg"
-	itemtype = /obj/item/weapon/stalker/loot/boar_leg
+	itemtype = /obj/item/weapon/stalker/loot/mutantparts/boar_leg
 	cost = 4000
 
 /sidoritem/konserva

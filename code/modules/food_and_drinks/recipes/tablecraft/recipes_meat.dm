@@ -197,3 +197,116 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricepork
 	subcategory = CAT_MEAT
+/*
+// STALKER Foods
+
+/datum/crafting_recipe/food/mutantmeatkebab
+	name = "mutant meat kebab"
+	reqs = list(
+		/obj/item/trash/metalparts = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantmeat
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/mutantonionmeatkebab
+	name = "mutant meat kebab"
+	reqs = list(
+		/obj/item/trash/metalparts = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 1,
+		/obj/item/reagent_containers/food/snacks/grown/onion =1
+	)
+	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantonionmeat
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricepork
+	name = "rice and flesh"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/flesh_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/riceflesh
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/riceboar
+	name = "rice and boar"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/boar_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/riceboar
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricedog
+	name = "rice and mutant dog"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricedog
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricepseudo
+	name = "rice and mutant pseudog"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/pseudo_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricepseudog
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricesnork
+	name = "rice and snork"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/snork_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricesnork
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricebloodsucker
+	name = "rice and bloodsucker"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/bloodsucker_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricebloodsucker
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricecontroller
+	name = "rice and controller"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/controller_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricecontroller
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/ricerat
+	name = "rice and rat"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/rat_meat/cooked = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/salad/ricerat
+	subcategory = CAT_MEAT
+
+/datum/crafting_recipe/food/cornedmutantmeat
+	name = "Corned mutant meat"
+	reqs = list(
+		/datum/reagent/consumable/sodiumchloride = 5,
+		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat = 1,
+		/obj/item/reagent_containers/food/snacks/grown/cabbage = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/mutantcornedbeef
+	subcategory = CAT_MEAT
+*/
+/datum/crafting_recipe/food/cornedbeef
+	name = "Corned beef"
+	reqs = list(
+		/datum/reagent/consumable/sodiumchloride = 5,
+		/obj/item/reagent_containers/food/snacks/meat/steak = 1,
+		/obj/item/reagent_containers/food/snacks/grown/cabbage = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/cornedbeef
+	subcategory = CAT_MEAT

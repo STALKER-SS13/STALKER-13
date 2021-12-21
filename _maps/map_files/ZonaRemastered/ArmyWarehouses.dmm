@@ -451,6 +451,10 @@
 /obj/structure/stalker/antitank2,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"iB" = (
+/obj/structure/spawner/stalker/rat,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "iL" = (
 /obj/structure/stalker/blocks/vanish/sandbags{
 	dir = 8;
@@ -632,10 +636,6 @@
 "lR" = (
 /obj/structure/stalker/tree/leafless,
 /turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"lS" = (
-/obj/item/trash/metaljunk,
-/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "lV" = (
 /obj/rad/rad_high,
@@ -1667,6 +1667,11 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"FG" = (
+/obj/structure/stalker/tree/leafless,
+/obj/structure/spawner/stalker/rat,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "FY" = (
 /obj/structure/table/stalker/wood,
 /obj/item/shovel,
@@ -2337,6 +2342,10 @@
 "Xq" = (
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"Xt" = (
+/obj/structure/spawner/stalker/zombiesimp,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "Xu" = (
 /obj/effect/turf_decal/stripes/full{
 	density = 1;
@@ -2359,10 +2368,6 @@
 	opacity = 1
 	},
 /turf/closed/mineral,
-/area/stalker/blowout/outdoor)
-"XN" = (
-/obj/item/trash/metaljunk,
-/turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Ya" = (
 /obj/structure/grille/stalker,
@@ -2466,10 +2471,6 @@
 	tag = "icon-0,2"
 	},
 /turf/open/stalker/floor/digable/grass,
-/area/stalker/blowout/outdoor)
-"Zx" = (
-/obj/item/trash/metaljunk,
-/turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "ZB" = (
 /obj/machinery/light{
@@ -15008,7 +15009,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+Xt
 Ld
 Ld
 Ld
@@ -16256,7 +16257,7 @@ Ld
 Ld
 Ld
 Ld
-lR
+FG
 Ld
 Ld
 Ld
@@ -18427,7 +18428,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Rf
 Ld
 Ld
@@ -19660,7 +19661,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -20989,7 +20990,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+gu
 Ld
 Ld
 Ld
@@ -26775,7 +26776,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -27320,7 +27321,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -34866,7 +34867,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -38143,7 +38144,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -41313,7 +41314,7 @@ Xq
 Xq
 Xq
 Xq
-lS
+Xq
 Xq
 Xq
 Rd
@@ -41950,7 +41951,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -42319,7 +42320,7 @@ Rd
 Rd
 gu
 gu
-lS
+Xq
 Xq
 gu
 gu
@@ -42547,7 +42548,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -43368,7 +43369,7 @@ Il
 gu
 gu
 gu
-XN
+gu
 gu
 gu
 gu
@@ -44369,7 +44370,7 @@ Ll
 em
 AL
 Rd
-Zx
+Rd
 Rd
 Rd
 Rd
@@ -45663,8 +45664,20 @@ gu
 gu
 gu
 Xq
-lS
 Xq
+Xq
+Xq
+Xq
+Xq
+Xq
+Xq
+gu
+gu
+gu
+gu
+gu
+gu
+gu
 Xq
 Xq
 Xq
@@ -45673,18 +45686,6 @@ Xq
 gu
 gu
 gu
-gu
-gu
-gu
-gu
-Xq
-Xq
-Xq
-Xq
-Xq
-gu
-gu
-XN
 Rd
 Rd
 Rd
@@ -46202,7 +46203,7 @@ Xq
 Rd
 Rd
 Rd
-Zx
+Rd
 Rd
 Ld
 Ld
@@ -47458,7 +47459,7 @@ Rd
 Rd
 Rd
 Xq
-lS
+Xq
 Xq
 gu
 Bc
@@ -49258,7 +49259,7 @@ Rd
 Rd
 Xq
 Xq
-lS
+Xq
 Xq
 Bc
 Bc
@@ -49662,7 +49663,7 @@ gu
 Vg
 Ld
 Ld
-Ld
+Xt
 Ld
 Ld
 Ld
@@ -52606,7 +52607,7 @@ bB
 MQ
 Bc
 gu
-XN
+gu
 gu
 mN
 mN
@@ -54426,7 +54427,7 @@ Xq
 Rd
 Rd
 Rd
-Zx
+Rd
 Rd
 Ld
 Ld
@@ -54617,7 +54618,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld
@@ -55573,7 +55574,7 @@ gu
 Vg
 Ld
 Ld
-Ld
+Xt
 Ld
 Ld
 Ld
@@ -58702,7 +58703,7 @@ nZ
 Ld
 Ld
 Ld
-Ld
+iB
 Ld
 Ld
 Ld

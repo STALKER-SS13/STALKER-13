@@ -56,7 +56,7 @@
 // Ghost Chili
 /obj/item/seeds/chili/ghost
 	name = "pack of ghost chili seeds"
-	desc = "These seeds grow into a chili said to be the hottest in the galaxy."
+	desc = "These seeds grow into a chili said to be the hottest in the Zone."
 	icon_state = "seed-chilighost"
 	species = "chilighost"
 	plantname = "Ghost Chili Plants"

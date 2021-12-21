@@ -109,7 +109,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
 	l_pocket = /obj/item/storage/wallet/stalker
 
@@ -130,9 +130,17 @@ Assistant
 	backpack_contents = list(/obj/item/stack/spacecash/c5000 = 40,
 						/obj/item/ammo_box/stalker/b12x70 = 2,
 						/obj/item/flashlight/seclite = 1,
+						/obj/item/storage/firstaid/stalker/civillian,
 						/obj/item/clothing/accessory/patch/bandits)
 	l_pocket = /obj/item/storage/wallet/stalker
-	r_pocket = /obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki
+	r_pocket = pick(/obj/item/reagent_containers/food/drinks/bottle/vodka/stolichnaya,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/blacklabelvodka,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/bluegoose,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka)
+
 
 /datum/outfit/bandit  // For select_equipment
 	name = "Bandit"

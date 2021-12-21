@@ -310,14 +310,14 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Biscuits",						"Biscuits",						/obj/item/reagent_containers/food/snacks/stalker/konserva/galets,			400,	ROOKIE),
 		/////////////////////////////////	Лут с мутантов	///////////////////////////////////////////
 
-				new /datum/data/stalker_equipment("Dog Tail",					"Dog Tail",				/obj/item/stalker/loot/dog_tail,			1000,		ROOKIE, sale_price = 600),
-		new /datum/data/stalker_equipment("Flesh Eye",					"Flesh Eye",			/obj/item/stalker/loot/flesh_eye,			1800,		ROOKIE, sale_price = 1050),
-		new /datum/data/stalker_equipment("Boar Hoof",					"Boar Hoof",			/obj/item/stalker/loot/boar_leg,			6000,		ROOKIE, sale_price = 1800),
-		new /datum/data/stalker_equipment("Snork Leg",					"Snork Leg",			/obj/item/stalker/loot/snork_leg,			7000,		ROOKIE, sale_price = 3000),
-		new /datum/data/stalker_equipment("Bloodsucker Tendrils",		"Bloodsucker Tendrils",	/obj/item/stalker/loot/bloodsucker,			16000,		ROOKIE, sale_price = 8000),
-		new /datum/data/stalker_equipment("Pseudodog Tail",				"Pseudodog Tail",		/obj/item/stalker/loot/pseudo_tail,			8000,		ROOKIE, sale_price = 7000),
-		new /datum/data/stalker_equipment("Controller Brain",			"Controller Brain",	/obj/item/stalker/loot/controller_brain,	40000,		ROOKIE, sale_price = 20000),
-		new /datum/data/stalker_equipment("Poltergeist Skin",			"Poltergeist Skin",	/obj/item/stalker/loot/poltergeist_skin,	80000,		ROOKIE, sale_price = 40000),
+				new /datum/data/stalker_equipment("Dog Tail",					"Dog Tail",				/obj/item/stalker/loot/mutantparts/dog_tail,			1000,		ROOKIE, sale_price = 600),
+		new /datum/data/stalker_equipment("Flesh Eye",					"Flesh Eye",			/obj/item/stalker/loot/mutantparts/flesh_eye,			1800,		ROOKIE, sale_price = 1050),
+		new /datum/data/stalker_equipment("Boar Hoof",					"Boar Hoof",			/obj/item/stalker/loot/mutantparts/boar_leg,			6000,		ROOKIE, sale_price = 1800),
+		new /datum/data/stalker_equipment("Snork Leg",					"Snork Leg",			/obj/item/stalker/loot/mutantparts/snork_leg,			7000,		ROOKIE, sale_price = 3000),
+		new /datum/data/stalker_equipment("Bloodsucker Tendrils",		"Bloodsucker Tendrils",	/obj/item/stalker/loot/mutantparts/bloodsucker,			16000,		ROOKIE, sale_price = 8000),
+		new /datum/data/stalker_equipment("Pseudodog Tail",				"Pseudodog Tail",		/obj/item/stalker/loot/mutantparts/pseudo_tail,			8000,		ROOKIE, sale_price = 7000),
+		new /datum/data/stalker_equipment("Controller Brain",			"Controller Brain",	/obj/item/stalker/loot/mutantparts/controller_brain,	40000,		ROOKIE, sale_price = 20000),
+		new /datum/data/stalker_equipment("Poltergeist Skin",			"Poltergeist Skin",	/obj/item/stalker/loot/mutantparts/poltergeist_skin,	80000,		ROOKIE, sale_price = 40000),
 		/////////////////////////////////	Артефакты	///////////////////////////////////////////
 		new /datum/data/stalker_equipment("Jellyfish",			"Jellyfish",						/obj/item/artifact/meduza,					5000,	ROOKIE,	sale_price = 2500),
 //		new /datum/data/stalker_equipment("Stone Flower",		"Stone Flower",						/obj/item/artifact/stoneflower,				10000,	ROOKIE,	sale_price = 3000),

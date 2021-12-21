@@ -13,7 +13,7 @@
 		for(var/path in items)
 			new path(T)
 	return INITIALIZE_HINT_QDEL
-
+/*
 /obj/effect/spawner/bundle/costume/chicken
 	name = "chicken costume spawner"
 	items = list(
@@ -168,3 +168,4 @@
 	items = list(
 		/obj/item/clothing/mask/gas/sexymime,
 		/obj/item/clothing/under/sexymime)
+*/

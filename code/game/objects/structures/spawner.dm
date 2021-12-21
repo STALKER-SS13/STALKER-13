@@ -80,3 +80,115 @@
 	name = "wumborian fugu den"
 	desc = "A den housing a nest of wumborian fugus, how do they all even fit in there?"
 	mob_types = list(/mob/living/simple_animal/hostile/asteroid/fugu)
+
+// STALKER Variants
+
+/obj/structure/spawner/stalker/rat
+	name = "rat den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 10
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/rat)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/flesh
+	name = "flesh den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 10
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/flesh)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/boar
+	name = "boar den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 3
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/boar)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/snork
+	name = "snork den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 4
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/snork)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/dog
+	name = "dog den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 8
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/dog)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/pseudo
+	name = "pseudo den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 4
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/pseudog)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/bloodsucker
+	name = "bloodsucker den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 4
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/bloodsucker)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/controller
+	name = "controller den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 2
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/controller)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/zombiesimp
+	name = "zombie den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 8
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/melee)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/allmutants
+	name = "mutant den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
+	max_integrity = 200
+	max_mobs = 8
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "crawls out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/melee,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker,/mob/living/simple_animal/hostile/mutant/controller)
+	faction = list("stalker_mutants1", "monolith_forces")

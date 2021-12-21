@@ -50,3 +50,14 @@
 /obj/structure/stalker/tree/leafless/bereza2
 	icon_state = "bereza2ll"
 */
+
+/obj/structure/stalker/tree/leaflessred/
+	name = "dead tree"
+	icon = 'stalker/icons/derevya.dmi'
+	icon_state = "derevored1l"
+	density = 0
+	opacity = 1
+	layer = 9
+
+/obj/structure/stalker/tree/leaflessred/New()
+	icon_state = "derevored[rand(1, 5)]l"

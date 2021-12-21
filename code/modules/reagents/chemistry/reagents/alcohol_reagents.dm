@@ -228,6 +228,22 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	M.radiation = max(M.radiation-4,0)
 	return ..()
 
+/datum/reagent/consumable/ethanol/stalkervodka
+	name = "Vodka"
+	id = "vodka"
+	description = "Number one drink AND fueling choice for Russians worldwide. This one smells off..."
+	color = "#0064C8" // rgb: 0, 100, 200
+	boozepwr = 75
+	taste_description = "putrid grain alcohol"
+	glass_icon_state = "ginvodkaglass"
+	glass_name = "glass of dirty vodka"
+	glass_desc = "The glass contain wodka. Xynta."
+	shot_glass_icon_state = "shotglassclear"
+
+/datum/reagent/consumable/ethanol/stalkervodka/on_mob_life(mob/living/carbon/M)
+	M.radiation = max(M.radiation-6,0)
+	return ..()
+
 /datum/reagent/consumable/ethanol/bilk
 	name = "Bilk"
 	id = "bilk"

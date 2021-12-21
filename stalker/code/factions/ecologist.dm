@@ -39,6 +39,11 @@
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
+	r_hand = pick(/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
+
 	faction_s = "Ecologist"
 
 /datum/outfit/ecologist  // For select_equipment
@@ -103,6 +108,11 @@
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 
 /datum/outfit/ecologistguard  // For select_equipment
 	name = "Ecologist Guard"
@@ -123,7 +133,7 @@
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
-
+	r_hand = /obj/item/flashlight/seclite
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"

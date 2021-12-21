@@ -1,8 +1,8 @@
 /obj/item/storage/firstaid/stalker
-	name = "first-aid kit for Stalker13 (you shouldn't see  this)"
-	desc = "It's an emergency medical kit for those serious boo-boos, but slav and NEVER FUCKING ACQUIRABLE. Report in dev channel if you get one."
+	name = "first-aid kit"
+	desc = "It's an emergency medical kit for those serious boo-boos."
 	icon = 'stalker/icons/items.dmi'
-	icon_state = "aptechkar"
+	icon_state = "firstaid"
 	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3
 	throw_range = 7
@@ -16,6 +16,16 @@
 		/obj/item/reagent_containers/pill/patch,
 		/obj/item/stack/medical,
 		/obj/item/reagent_containers/pill/stalker/injector))
+
+/obj/item/storage/firstaid/stalker/civillian/PopulateContents()
+	if(empty)
+		return
+	var/static/items_inside = list(
+		/obj/item/stack/medical/gauze/bint = 1,
+		/obj/item/stack/medical/ointment = 1,
+		/obj/item/stack/medical/bruise_pack = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 1)
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/firstaid/stalker/civillian
 	name = "civillian medkit"

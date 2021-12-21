@@ -962,6 +962,46 @@
 	density = 0
 	cache_size = 0
 
+/obj/structure/stalker/cacheable/oldcover
+	name = "carpet"
+	icon = 'stalker/icons/cover.dmi'
+	icon_state = "oldcover"
+	desc = "An old carpet. You usually see this on the wall."
+	density = 0
+	cache_size = 0
+
+/obj/structure/stalker/cacheable/oldcoverblue
+	name = "carpet"
+	icon = 'stalker/icons/cover.dmi'
+	icon_state = "oldcoverblue"
+	desc = "An old carpet. You usually see this on the wall."
+	density = 0
+	cache_size = 0
+
+/obj/structure/stalker/cacheable/oldcovertattered
+	name = "tattered carpet"
+	icon = 'stalker/icons/cover.dmi'
+	icon_state = "oldcovertattered"
+	desc = "An old carpet. This one is all ripped up."
+	density = 0
+	cache_size = 0
+
+/obj/structure/stalker/cacheable/oldcovertatteredtwo
+	name = "tattered carpet"
+	icon = 'stalker/icons/cover.dmi'
+	icon_state = "oldcovertatteredtwo"
+	desc = "An old carpet. This one is all ripped up."
+	density = 0
+	cache_size = 0
+
+/obj/structure/stalker/cacheable/box
+	name = "box"
+	icon = 'stalker/icons/decor.dmi'
+	icon_state = "box"
+	desc = "A rusted metal box."
+	density = 0
+	cache_size = 0
+
 /obj/structure/stalker/cacheable/porog
 	name = "step"
 	icon = 'stalker/icons/decor.dmi'

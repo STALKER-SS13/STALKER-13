@@ -693,7 +693,7 @@
 	name = "Men's White"
 	icon_state = "male_white"
 	gender = MALE
-
+/*
 /datum/sprite_accessory/underwear/female_babydoll
 	name = "Babydoll"
 	icon_state = "female_babydoll"
@@ -808,7 +808,7 @@
 	name = "Ladies' Yellow"
 	icon_state = "female_yellow"
 	gender = FEMALE
-
+*/
 ////////////////////////////
 // Undershirt Definitions //
 ////////////////////////////
@@ -857,12 +857,12 @@
 	name = "Shirt (Alien)"
 	icon_state = "shirt_alien"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/mondmondjaja
 	name = "Shirt (Band)"
 	icon_state = "band"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/shirt_black
 	name = "Shirt (Black)"
 	icon_state = "shirt_black"
@@ -872,12 +872,12 @@
 	name = "Shirt (Blue)"
 	icon_state = "shirt_blue"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/clownshirt
 	name = "Shirt (Clown)"
 	icon_state = "shirt_clown"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/commie
 	name = "Shirt (Commie)"
 	icon_state = "shirt_commie"
@@ -892,7 +892,7 @@
 	name = "Shirt (Grey)"
 	icon_state = "shirt_grey"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/ian
 	name = "Shirt (Ian)"
 	icon_state = "ian"
@@ -902,7 +902,7 @@
 	name = "Shirt (I Love NT)"
 	icon_state = "ilovent"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/lover
 	name = "Shirt (Lover)"
 	icon_state = "lover"
@@ -917,22 +917,22 @@
 	name = "Shirt (Meat)"
 	icon_state = "shirt_meat"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/nano
 	name = "Shirt (Nanotrasen)"
 	icon_state = "shirt_nano"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/peace
 	name = "Shirt (Peace)"
 	icon_state = "peace"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/pacman
 	name = "Shirt (Pogoman)"
 	icon_state = "pogoman"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/question
 	name = "Shirt (Question)"
 	icon_state = "shirt_question"
@@ -947,12 +947,12 @@
 	name = "Shirt (Skull)"
 	icon_state = "shirt_skull"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/ss13
 	name = "Shirt (SS13)"
 	icon_state = "shirt_ss13"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/stripe
 	name = "Shirt (Striped)"
 	icon_state = "shirt_stripes"
@@ -966,6 +966,16 @@
 /datum/sprite_accessory/undershirt/uk
 	name = "Shirt (UK)"
 	icon_state = "uk"
+	gender = NEUTER
+
+/datum/sprite_accessory/undershirt/ukraine
+	name = "Shirt (Ukraine)"
+	icon_state = "ukraine"
+	gender = NEUTER
+
+/datum/sprite_accessory/undershirt/russia
+	name = "Shirt (Russia)"
+	icon_state = "russia"
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/usa
@@ -1002,7 +1012,7 @@
 	name = "Short-sleeved Shirt (White)"
 	icon_state = "whiteshortsleeve"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/sports_bra
 	name = "Sports Bra"
 	icon_state = "sports_bra"
@@ -1012,7 +1022,7 @@
 	name = "Sports Bra (Alt)"
 	icon_state = "sports_bra_alt"
 	gender = NEUTER
-
+*/
 /datum/sprite_accessory/undershirt/blueshirtsport
 	name = "Sports Shirt (Blue)"
 	icon_state = "blueshirtsport"
@@ -1042,12 +1052,12 @@
 	name = "Tank Top (Grey)"
 	icon_state = "tank_grey"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/female_midriff
 	name = "Tank Top (Midriff)"
 	icon_state = "tank_midriff"
 	gender = FEMALE
-
+*/
 /datum/sprite_accessory/undershirt/tank_red
 	name = "Tank Top (Red)"
 	icon_state = "tank_red"
@@ -1062,7 +1072,7 @@
 	name = "Tank Top (White)"
 	icon_state = "tank_white"
 	gender = NEUTER
-
+/*
 /datum/sprite_accessory/undershirt/redtop
 	name = "Top (Red)"
 	icon_state = "redtop"
@@ -1072,7 +1082,7 @@
 	name = "Top (White)"
 	icon_state = "whitetop"
 	gender = FEMALE
-
+*/
 /datum/sprite_accessory/undershirt/tshirt_blue
 	name = "T-Shirt (Blue)"
 	icon_state = "blueshirt"
@@ -1086,6 +1096,11 @@
 /datum/sprite_accessory/undershirt/tshirt_red
 	name = "T-Shirt (Red)"
 	icon_state = "redshirt"
+	gender = NEUTER
+
+/datum/sprite_accessory/undershirt/tshirt_white
+	name = "T-Shirt (White)"
+	icon_state = "whiteshirt"
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/yellowshirt
@@ -1109,7 +1124,7 @@
 /datum/sprite_accessory/socks/black_knee
 	name = "Knee-high (Black)"
 	icon_state = "black_knee"
-
+/*
 /datum/sprite_accessory/socks/commie_knee
 	name = "Knee-High (Commie)"
 	icon_state = "commie_knee"
@@ -1121,11 +1136,11 @@
 /datum/sprite_accessory/socks/rainbow_knee
 	name = "Knee-high (Rainbow)"
 	icon_state = "rainbow_knee"
-
+*/
 /datum/sprite_accessory/socks/striped_knee
 	name = "Knee-high (Striped)"
 	icon_state = "striped_knee"
-
+/*
 /datum/sprite_accessory/socks/thin_knee
 	name = "Knee-high (Thin)"
 	icon_state = "thin_knee"
@@ -1133,7 +1148,7 @@
 /datum/sprite_accessory/socks/uk_knee
 	name = "Knee-High (UK)"
 	icon_state = "uk_knee"
-
+*/
 /datum/sprite_accessory/socks/white_knee
 	name = "Knee-high (White)"
 	icon_state = "white_knee"
@@ -1145,11 +1160,11 @@
 /datum/sprite_accessory/socks/white_norm
 	name = "Normal (White)"
 	icon_state = "white_norm"
-
+/*
 /datum/sprite_accessory/socks/pantyhose
 	name = "Pantyhose"
 	icon_state = "pantyhose"
-
+*/
 /datum/sprite_accessory/socks/black_short
 	name = "Short (Black)"
 	icon_state = "black_short"
@@ -1157,7 +1172,7 @@
 /datum/sprite_accessory/socks/white_short
 	name = "Short (White)"
 	icon_state = "white_short"
-
+/*
 /datum/sprite_accessory/socks/black_thigh
 	name = "Thigh-high (Black)"
 	icon_state = "black_thigh"
@@ -1189,7 +1204,7 @@
 /datum/sprite_accessory/socks/white_thigh
 	name = "Thigh-high (White)"
 	icon_state = "white_thigh"
-
+*/
 //////////.//////////////////
 // MutantParts Definitions //
 /////////////////////////////

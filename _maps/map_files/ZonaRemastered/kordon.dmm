@@ -5132,6 +5132,10 @@
 /obj/structure/stalker/cacheable/truba,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/buildings)
+"Ag" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/stalker/floor/gryaz,
+/area/stalker)
 "Ah" = (
 /mob/living/simple_animal/hostile/tree/festivus,
 /turf/open/stalker/floor/gryaz,
@@ -6926,11 +6930,9 @@
 /turf/open/floor/plasteel,
 /area/stalker/buildings/backwater/skadovsk)
 "Va" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/stalker/floor/gryaz,
-/area/stalker/blowout/outdoor)
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/stalker/floor/asphalt,
+/area/stalker)
 "Vf" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/stalker/floor/gryaz,
@@ -7354,6 +7356,10 @@
 "Zk" = (
 /obj/structure/stalker/cacheable/oldcovertattered,
 /turf/open/stalker/floor/asphalt,
+/area/stalker)
+"Zw" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker)
 "Zx" = (
 /obj/structure/chair/brevno/log2,
@@ -24032,7 +24038,7 @@ Se
 af
 af
 OP
-Va
+af
 mq
 af
 mq
@@ -54888,7 +54894,7 @@ Wn
 Wn
 Wn
 Wn
-pK
+Zw
 MX
 MX
 LR
@@ -54903,7 +54909,7 @@ MX
 MX
 MX
 MX
-MX
+Ag
 MX
 MX
 MX
@@ -55156,14 +55162,14 @@ pK
 pK
 pK
 pK
-MX
+Ag
 MX
 MX
 MX
 YK
 MX
 MX
-MX
+Ag
 MX
 Wn
 Wn
@@ -55399,7 +55405,7 @@ MX
 rx
 Dg
 Wn
-Wn
+Va
 Wn
 rx
 pK
@@ -55424,7 +55430,7 @@ MX
 Wn
 Wn
 Wn
-pK
+Zw
 pK
 pK
 pK
@@ -55652,7 +55658,7 @@ rx
 wt
 MX
 MX
-MX
+Ag
 rx
 PC
 Wn
@@ -55662,7 +55668,7 @@ rx
 pK
 pK
 MX
-MX
+Ag
 HO
 rx
 MO
@@ -56690,14 +56696,14 @@ rx
 Dz
 zF
 Wn
-MX
+Ag
 BN
 rx
 nX
 nX
 pK
 Wn
-Wn
+Va
 Wn
 rx
 MX
@@ -56937,7 +56943,7 @@ rx
 Yq
 MX
 MX
-MX
+Ag
 rx
 MX
 LR
@@ -57198,7 +57204,7 @@ MX
 rx
 MX
 LR
-MX
+Ag
 MX
 rx
 Wn
@@ -57227,7 +57233,7 @@ AI
 MX
 MX
 MX
-MX
+Ag
 MX
 Wn
 qr
@@ -57966,7 +57972,7 @@ pK
 pK
 zF
 Wn
-MX
+Ag
 MX
 MX
 LR
@@ -58232,7 +58238,7 @@ rx
 Pq
 Wn
 Hz
-Wn
+Va
 MX
 rx
 wU
@@ -58494,7 +58500,7 @@ Wn
 rx
 Ud
 MX
-MX
+Ag
 MX
 MX
 pK
@@ -58515,7 +58521,7 @@ MX
 MX
 MX
 MX
-MX
+Ag
 rx
 aa
 aa
@@ -59259,7 +59265,7 @@ MX
 MX
 MX
 MX
-MX
+Ag
 pK
 QG
 rx
@@ -59512,7 +59518,7 @@ pK
 pK
 Wn
 Wn
-MX
+Ag
 MX
 MX
 MX
@@ -59523,7 +59529,7 @@ rx
 Ud
 MX
 MX
-MX
+Ag
 MX
 nX
 rx
@@ -59766,7 +59772,7 @@ pK
 pK
 Pq
 pK
-pK
+Zw
 Wn
 zF
 MX
@@ -59796,7 +59802,7 @@ Wn
 AQ
 Wn
 Wn
-Wn
+Va
 MX
 MX
 wt
@@ -60306,7 +60312,7 @@ Wn
 Wn
 Wn
 Wn
-Wn
+Va
 Wn
 Wn
 Wn
@@ -60534,7 +60540,7 @@ aa
 rx
 Wn
 Wn
-Wn
+Va
 Wn
 Wn
 Wn
@@ -61062,7 +61068,7 @@ MX
 ne
 MX
 MX
-MX
+Ag
 Wn
 Wn
 pK
@@ -61074,7 +61080,7 @@ MX
 MX
 Wn
 Wn
-Wn
+Va
 Wn
 rx
 Wn
@@ -61311,11 +61317,11 @@ pK
 pK
 pK
 pK
-pK
+Zw
 Wn
 Wn
 MX
-MX
+Ag
 MX
 MX
 MX
@@ -62339,11 +62345,11 @@ pK
 Wn
 Wn
 Kt
+Va
 Wn
-Wn
 MX
 MX
-MX
+Ag
 XY
 XY
 XY
@@ -62617,7 +62623,7 @@ rx
 MX
 ZP
 ZP
-MX
+Ag
 MX
 XY
 XY
@@ -63107,7 +63113,7 @@ Wn
 Wn
 Wn
 Wn
-Wn
+Va
 Wn
 zh
 Wn
@@ -63630,7 +63636,7 @@ rx
 EL
 pK
 MX
-MX
+Ag
 MX
 MX
 MX
@@ -63877,7 +63883,7 @@ MX
 MX
 MX
 MX
-Wn
+Va
 Wn
 xo
 pK
@@ -63906,7 +63912,7 @@ MX
 MX
 MX
 MX
-MX
+Ag
 MX
 MX
 MX
@@ -64134,7 +64140,7 @@ Rf
 MX
 JH
 MX
-Wn
+Va
 zh
 pK
 pK
@@ -64904,7 +64910,7 @@ rx
 Wn
 pK
 pK
-MX
+Ag
 MX
 MX
 PI
@@ -65163,14 +65169,14 @@ pK
 pK
 MX
 MX
-MX
+YK
 MX
 rx
 pK
 Wk
 pL
 Wn
-MX
+Ag
 MX
 Wn
 Wn
@@ -65707,7 +65713,7 @@ Wn
 ne
 MX
 MX
-MX
+Ag
 MX
 MX
 MX
@@ -66712,7 +66718,7 @@ MX
 qr
 qr
 Wn
-Wn
+Va
 Wn
 zh
 Wn
@@ -66981,7 +66987,7 @@ MX
 MX
 MX
 MX
-MX
+Ag
 MX
 Wn
 Wn
@@ -67242,7 +67248,7 @@ XY
 MX
 rx
 vf
-Wn
+Va
 Wn
 Wn
 yg
@@ -67253,7 +67259,7 @@ xQ
 xQ
 xQ
 Wn
-MX
+Ag
 rx
 aa
 aa
@@ -67997,7 +68003,7 @@ MX
 Mr
 Fx
 MX
-Wn
+Va
 Dz
 LD
 Dz
@@ -68264,7 +68270,7 @@ Wm
 Wn
 Wn
 zF
-Wn
+Va
 MX
 MX
 MX
@@ -69049,7 +69055,7 @@ rx
 rx
 rx
 MX
-MX
+Ag
 rx
 rx
 rx
@@ -69539,7 +69545,7 @@ Dz
 LD
 Lx
 Wn
-MX
+Ag
 MX
 TJ
 MX
@@ -69555,7 +69561,7 @@ HO
 MX
 rx
 MX
-MX
+Ag
 MX
 HO
 MX
@@ -69805,7 +69811,7 @@ rx
 zI
 Wn
 Wn
-Wn
+Va
 Wn
 Wn
 Wn
@@ -70557,7 +70563,7 @@ aa
 rx
 rx
 rx
-rx
+MX
 rx
 rx
 rx
@@ -70588,7 +70594,7 @@ MX
 MX
 MX
 Wn
-MX
+Ag
 MX
 MX
 nX
@@ -70819,7 +70825,7 @@ MX
 MX
 Wn
 Wn
-Wn
+rx
 Wn
 Wn
 Wn
@@ -70831,7 +70837,7 @@ TJ
 MX
 MX
 MX
-MX
+Ag
 JH
 MX
 MX
@@ -71084,7 +71090,7 @@ Wn
 Wn
 Dz
 MX
-MX
+Ag
 MX
 MX
 MX

@@ -149,7 +149,7 @@
 	desc = "Great for hacking your problems away. All you need is a hammer now!"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "sickle"
-	item_state = "gladius"
+	item_state = "sickle"
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 20

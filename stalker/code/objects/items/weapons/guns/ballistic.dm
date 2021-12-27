@@ -781,6 +781,7 @@
 	force = 15
 	recoil = 0.5
 	w_class = 4
+	burst_size = 1
 	randomspread = 0
 	spread = 2
 	damagelose = 0.1
@@ -834,16 +835,25 @@
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one has camo paint."
 	icon_state = "ak74_camo"
+	item_state = "ak74_camo"
 
 /obj/item/gun/ballistic/automatic/ak74/black
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The metal parts are black."
 	icon_state = "ak74_black"
+	item_state = "ak74_black"
 
 /obj/item/gun/ballistic/automatic/ak74/blackout
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The entire gun is black."
 	icon_state = "ak74_blackout"
+	item_state = "ak74_blackout"
+
+/obj/item/gun/ballistic/automatic/ak74/unfurnished
+	name = "AK 74"
+	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one is stripped of its wooden furniture."
+	icon_state = "ak74_furnitureless"
+	item_state = "ak74_furnitureless"
 
 /obj/item/gun/ballistic/automatic/aksu74  // АКС74У
 	name = "AK 74S"
@@ -1129,10 +1139,10 @@
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/berettam38_open.ogg'
 
-/obj/item/gun/ballistic/automatic/ar10 // ArmaLite AR-15
+/obj/item/gun/ballistic/automatic/ar15 // ArmaLite AR-15
 	name = "AR-15"
 	desc = "The ArmaLite AR-15 was designed to be a lightweight rifle and to fire a new high-velocity, lightweight, small-caliber cartridge to allow infantrymen to carry more ammunition."
-	icon_state = "ar10"
+	icon_state = "ar15"
 	item_state = "m16"
 	slot_flags = SLOT_BACK
 	force = 15

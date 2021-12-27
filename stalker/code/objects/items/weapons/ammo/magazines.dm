@@ -168,7 +168,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/scarh
-	name = "M14 magazine (7.62x51)"
+	name = "SCAR magazine (7.62x51)"
 	icon_state = "scarh"
 	ammo_type = /obj/item/ammo_casing/c762x51
 	caliber = "7.62x51mm"
@@ -269,7 +269,7 @@
 	max_ammo = 6
 
 /obj/item/ammo_box/magazine/stalker/pps43
-	name = "PPS43 magazine"
+	name = "PPS43 magazine (7.62x25)"
 	icon_state = "pps43"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c762x25
@@ -278,7 +278,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/mp40
-	name = "MP-40 magazine"
+	name = "MP-40 magazine (9x19mm)"
 	icon_state = "mp40"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c9x19
@@ -287,7 +287,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/sten
-	name = "sten MK II magazine"
+	name = "sten MK II magazine (9x19mm)"
 	icon_state = "sten"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c9x19
@@ -296,7 +296,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/sterling
-	name = "sterling magazine"
+	name = "sterling magazine (9x19mm)"
 	icon_state = "sterling"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c9x19
@@ -305,7 +305,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/m3a1
-	name = "M3A1 grease gun magazine"
+	name = "M3A1 grease gun magazine (9x19mm)"
 	icon_state = "m3a1"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c9x19
@@ -330,7 +330,7 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/ppsh
-	name = "PPSh drum magazine"
+	name = "PPSh drum magazine (7.62x25)"
 	icon_state = "ppsh"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c762x25

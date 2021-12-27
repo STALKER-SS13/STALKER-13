@@ -3,9 +3,11 @@
 	var/debriss_type
 	var/loot = list()
 	var/lootcount = 0
+	var/list/hit_sounds = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg')
 
 /obj/structure/barricade/stalker/take_damage(damage, leave_debris=1, message)
 	obj_integrity -= damage
+	playsound(loc, pick(hit_sounds), 25, 1, -1)
 	if(obj_integrity > 0)
 		return
 
@@ -37,6 +39,7 @@
 	desc = "A barricaded passage."
 	icon_state = "zabitiy_proxod_alt"
 	debriss_type = /obj/structure/stalker/doski
+
 
 /obj/structure/barricade/stalker/box
 	name = "wooden box"

@@ -40,7 +40,9 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = pick(
 	/obj/item/restraints/handcuffs,
 	/obj/item/camera,
@@ -108,7 +110,9 @@
 		/obj/item/clothing/accessory/patch/mercenaries)
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	l_hand = /obj/item/storage/wallet/stalker
+	l_hand = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = pick(
 	/obj/item/restraints/handcuffs,
 	/obj/item/camera,

@@ -101,7 +101,9 @@ Assistant
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_hand = pick(/obj/item/flashlight/lantern,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
@@ -157,8 +159,11 @@ Assistant
 	suit_store = pick(/obj/item/gun/ballistic/automatic/ak74/blackout,
 				/obj/item/gun/ballistic/automatic/ak74/black,
 				/obj/item/gun/ballistic/automatic/ak74/camo,
-				/obj/item/gun/ballistic/automatic/ak74)
-	l_pocket = /obj/item/storage/wallet/stalker
+				/obj/item/gun/ballistic/automatic/ak74,
+				/obj/item/gun/ballistic/automatic/ak74/unfurnished)
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/twohanded/binoculars
 	r_hand = /obj/item/weapon/kitchen/knife/hunting
 	l_hand = pick(/obj/item/flashlight/lantern,
@@ -225,7 +230,10 @@ Assistant
 		/obj/item/storage/backpack/stalker/tourist,
 		/obj/item/storage/backpack/satchel/stalker/civilian,
 		/obj/item/storage/backpack/satchel/leather)
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(
+				/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_hand = pick(
 		/obj/item/camera,
 		/obj/item/taperecorder,
@@ -286,6 +294,9 @@ Assistant
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = pick(/obj/item/flashlight/lantern,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
@@ -324,6 +335,9 @@ Assistant
 	id = /obj/item/stalker_pda
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	back = null
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_hand = pick(/obj/item/flashlight/lantern,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,

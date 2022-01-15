@@ -1260,6 +1260,7 @@
 	..()
 	pixel_x = rand(-2, 2)
 	pixel_y = rand(-2, 2)
+	icon_state = "bar_plate[rand(1, 20)]"
 
 /obj/structure/stalker/bunker
 	name = "bunker"

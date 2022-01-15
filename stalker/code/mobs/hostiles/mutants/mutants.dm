@@ -85,7 +85,7 @@
 	fearborder = 10
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	healable = 1
-	robust_searching = 1
+	robust_searching = 0
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	see_in_dark = 4
 	deathmessage = "lets out a pained whine before falling on its side!"
@@ -94,9 +94,8 @@
 	maxbodytemp = 1500
 	environment_smash = 0
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
+	random_butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
 							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat = 1)
-	random_butcher_results = 1
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
 	rating_add = 25
@@ -151,7 +150,7 @@
 	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	//environment_smash = 1
-	robust_searching = 1
+	robust_searching = 0
 	deathmessage = "seizes up and falls limp!"
 	layer = MOB_LAYER - 0.1
 	butcher_results = list(/obj/item/stalker/loot/mutantparts/snork_leg = 1,
@@ -210,7 +209,6 @@
 		if(leaping)
 			leaping = 0
 			update_icons()
-			//update_canmove()
 
 /mob/living/simple_animal/hostile/mutant/flesh
 	name = "flesh"
@@ -714,6 +712,10 @@
 	robust_searching = 1
 	maxHealth = 125
 	health = 125
+	fearless = 1
+	fearborder = 20
+	search_objects = 1
+	AIStatus = AI_ON
 	harm_intent_damage = 10
 	melee_damage_lower = 15
 	melee_damage_upper = 15

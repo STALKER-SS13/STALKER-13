@@ -113,7 +113,7 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/milo
 	subcategory = CAT_SOUP
-
+/*
 /datum/crafting_recipe/food/bloodsoup
 	name = "Blood soup"
 	reqs = list(
@@ -123,7 +123,7 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/blood
 	subcategory = CAT_SOUP
-
+*/
 /datum/crafting_recipe/food/slimesoup
 	name = "Slime soup"
 	reqs = list(

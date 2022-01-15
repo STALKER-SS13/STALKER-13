@@ -794,6 +794,7 @@
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable."
 	icon_state = "ak74"
 	item_state = "ak74"
+	var/worn_icon = "icons/mob/back.dmi"
 	colored = 0//"normal"
 	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
 	force = 15
@@ -836,24 +837,29 @@
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one has camo paint."
 	icon_state = "ak74_camo"
 	item_state = "ak74_camo"
+	worn_icon = "icons/mob/back/ak74_camo.dmi"
 
 /obj/item/gun/ballistic/automatic/ak74/black
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The metal parts are black."
 	icon_state = "ak74_black"
 	item_state = "ak74_black"
+	worn_icon = "icons/mob/back.dmi"
+
 
 /obj/item/gun/ballistic/automatic/ak74/blackout
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The entire gun is black."
 	icon_state = "ak74_blackout"
 	item_state = "ak74_blackout"
+	worn_icon = "icons/mob/back.dmi"
 
 /obj/item/gun/ballistic/automatic/ak74/unfurnished
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one is stripped of its wooden furniture."
 	icon_state = "ak74_furnitureless"
 	item_state = "ak74_furnitureless"
+	worn_icon = "icons/mob/back.dmi"
 
 /obj/item/gun/ballistic/automatic/aksu74  // АКС74У
 	name = "AK 74S"

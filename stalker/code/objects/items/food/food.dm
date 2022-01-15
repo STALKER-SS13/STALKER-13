@@ -359,8 +359,9 @@
 	list_reagents = list("nutriment" = 15, "sodiumchloride" = 5, "mushroomhallucinogen" = 0.05)
 	tastes = list("sand-textured grit with a overbearing earthy flavour. This is horrible.." = 1)
 
+/// BORSCHT
 
-/obj/item/reagent_containers/food/snacks/stalker/poorborscht
+/obj/item/reagent_containers/food/snacks/stalker/borscht/poor
 	name = "poor mans borscht"
 	desc = "A sour soup common in Eastern Europe and Northern Asia. In English, the word 'borscht' is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color."
 	icon_state = "beetsoup"
@@ -376,7 +377,7 @@
 	list_reagents = list("nutriment" = 25, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)
 	tastes = list("root-textured grit with a overbearing earthy flavour. This is palatable..." = 1)
 
-/obj/item/reagent_containers/food/snacks/stalker/luxuryborscht
+/obj/item/reagent_containers/food/snacks/stalker/borscht/luxury
 	name = "luxury borscht"
 	desc = "A sour soup common in Eastern Europe and Northern Asia. In English, the word 'borscht' is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color."
 	icon_state = "beetsoup"
@@ -387,6 +388,7 @@
 /obj/item/reagent_containers/food/snacks/stalker/okroshkasoup
 	name = "okroshka soup"
 	desc = "Okróshka is a cold soup of Russian origin and probably originated in the Volga region. The classic soup is a mix of mostly raw vegetables, boiled potatoes, eggs, and a cooked meat such as beef, veal, sausages, or ham with kvass, which is a non-alcoholic beverage made from fermented black or rye bread."
+	icon = 'stalker/icons/food.dmi'
 	icon_state = "lowgrade_goulash"
 	w_class = 2
 	list_reagents = list("nutriment" = 35, "omnizine" = 10, "vitamin" = 5, "sodiumchloride" = 2)

@@ -78,7 +78,7 @@
 	desc = "Stringy, gamey meat from a mutant dog."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/dog_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -88,7 +88,7 @@
 	desc = "This is rat meat... It does not appear to be too appetizing as it is."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstance" = 2.5, "nutriment" = 5, "blood" = 5)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/rat_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/rat_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -98,7 +98,7 @@
 	desc = "Meat from a flesh; it has a strong rotten and putrescent odor."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/flesh_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/flesh_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -108,7 +108,7 @@
 	desc = "The meat of a wild mutated boar; it seems thick and hard to bend."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/boar_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/boar_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -118,7 +118,7 @@
 	desc = "Snork meat, it is extremely lean and tough."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/snork_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/snork_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -128,7 +128,7 @@
 	desc = "Stringy, gamey meat from a pseudodog."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/pseudo_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/pseudo_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -138,7 +138,7 @@
 	desc = "Bloodsucker meat, it smells putrescent and seems to twitch every once and a while."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 7.5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/bloodsucker_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/bloodsucker_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -148,7 +148,7 @@
 	desc = "Mutant meat from a controller. You can feel pulsating coming from this sticky slab of flesh."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 7.5, "nutriment" = 10, "blood" = 10)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/controller_meat/cooked
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/controller_meat
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 	bitesize = 3
@@ -164,7 +164,7 @@
 	foodtype = MEAT
 	bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/dog_meat
 	name = "cooked dog meat"
 	desc = "Stringy, gamey meat from a mutant dog."
 	icon_state = "mutantmeatcooked"
@@ -173,43 +173,43 @@
 	foodtype = MEAT
 	bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/rat_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/rat_meat
 	name = "cooked rat meat"
 	desc = "This is rat meat... It does not appear to be too appetizing as it is."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 5, "unknownsubstance" = 2.5, "nutriment" = 5, "blood" = 5)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/flesh_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/flesh_meat
 	name = "cooked flesh meat"
 	desc = "Meat from a flesh; it has a strong rotten and putrescent odor."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/boar_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/boar_meat
 	name = "cooked boar meat"
 	desc = "The meat of a wild mutated boar; it seems thick and hard to bend."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/snork_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/snork_meat
 	name = "cooked snork meat"
 	desc = "Snork meat, it is extremely lean and tough."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 5, "nutriment" = 10, "blood" = 10)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/pseudo_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/pseudo_meat
 	name = "cooked pseudodog meat"
 	desc = "Stringy, gamey meat from a pseudodog."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/bloodsucker_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/bloodsucker_meat
 	name = "cooked bloodsucker meat"
 	desc = "Bloodsucker meat, it smells putrescent and seems to twitch every once and a while."
 	icon_state = "mutantmeatcooked"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 7.5, "nutriment" = 10, "blood" = 10)
 
-/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/controller_meat/cooked
+/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/controller_meat
 	name = "cooked controller meat"
 	desc = "Mutant meat from a controller. You can feel pulsating coming from this sticky slab of flesh."
 	icon_state = "mutantmeatcooked"

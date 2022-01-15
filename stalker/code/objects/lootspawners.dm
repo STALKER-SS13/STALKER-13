@@ -3,7 +3,6 @@
 	name = "khabar loot spawner"
 	lootdoubles = 1
 	lootcount = 5
-
 	loot = list(
 				/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 20,
 				/obj/item/storage/firstaid/stalker/civillian = 20,
@@ -42,6 +41,7 @@
 					/obj/item/seeds/cannabis = 10,
 					/obj/item/seeds/cannabis/violetriot = 5,
 					/obj/item/seeds/cannabis/neonpeon = 5,
+					/obj/item/seeds/tobacco/strong = 5,
 				/obj/item/trash/paintcan = 5,
 				/obj/item/trash/teapot = 5,
 				/obj/item/trash/pincers = 5,
@@ -486,6 +486,8 @@
 				/obj/item/twohanded/pitchfork = 20,
 				/obj/item/twohanded/bostaff = 20,
 				/obj/item/twohanded/rake = 20,
+				/obj/item/twohanded/required/chainsaw/old = 5,
+				/obj/item/twohanded/required/chainsaw = 5,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/medicine
@@ -897,6 +899,7 @@ obj/nothing/New()
 					/obj/item/seeds/cannabis = 10,
 					/obj/item/seeds/cannabis/violetriot = 5,
 					/obj/item/seeds/cannabis/neonpeon = 5,
+					/obj/item/seeds/tobacco/strong = 10,
 					/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/bureaucracy

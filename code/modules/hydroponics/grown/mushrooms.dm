@@ -312,7 +312,7 @@
 	icon_state = "seed-fungus"
 	species = "cave fungus"
 	plantname = "Cave fungi"
-	product = /obj/item/reagent_containers/food/snacks/grown/fungus
+	product = /obj/item/reagent_containers/food/snacks/grown/mushroom/fungus
 	growing_icon = 'icons/obj/hydroponics/growing_mushrooms.dmi'
 	icon_grow = "cave_fungus-grow"
 	icon_dead = "cave_fungus-dead"
@@ -327,10 +327,10 @@
 	reagents_add = list(/datum/reagent/medicine/mutadone = 0.05)
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 
-/obj/item/reagent_containers/food/snacks/grown/fungus
+/obj/item/reagent_containers/food/snacks/grown/mushroom/fungus
 	seed = /obj/item/seeds/fungus
 	name = "cave fungus"
-	desc = "Cave fungus is an edible mushroom which has the ability to purge bodily toxins."
+	desc = "Cave fungus is an edible mushroom which may have the ability to purge bodily toxins."
 	icon_state = "cavefungus"
 	filling_color = "#FF6347"
 

@@ -2,8 +2,8 @@
 	name = "monster nest"
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "hole"
-	max_integrity = 100
-
+	obj_integrity = 400
+	max_integrity = 400
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
 	anchored = TRUE
 	density = TRUE
@@ -14,10 +14,9 @@
 	var/spawn_text = "emerges from"
 	var/faction = list("hostile")
 	var/spawner_type = /datum/component/spawner
-	var/health = 100
-	var/maxHealth = 100
 	var/wander = 1
 	var/del_on_death = TRUE
+	var/list/hit_sounds = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg')
 
 /obj/structure/spawner/Initialize()
 	. = ..()
@@ -27,6 +26,20 @@
 	if(faction_check(faction, M.faction, FALSE)&&!M.client)
 		return
 	..()
+
+/obj/structure/spawner/take_damage(damage, message)
+	obj_integrity -= damage
+	playsound(loc, pick(hit_sounds), 25, 1, -1)
+	if(obj_integrity > 0)
+		return
+
+	//if(message)
+	//	visible_message(message)
+	//else
+
+	visible_message("<span class='warning'>\The [src] collapses into itself!</span>")
+
+	qdel(src)
 
 /obj/structure/spawner/syndicate
 	name = "warp beacon"
@@ -90,10 +103,19 @@
 	name = "rat den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
+	max_mobs = 6
+	icon = 'icons/mob/nest.dmi'
+	spawn_text = "scurries out of"
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/rat)
+	faction = list("stalker_mutants1", "monolith_forces")
+
+/obj/structure/spawner/stalker/rat/swarm
+	name = "rat den"
+	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
+	icon_state = "hole"
 	max_mobs = 10
 	icon = 'icons/mob/nest.dmi'
-	spawn_text = "crawls out of"
+	spawn_text = "scurries out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/rat)
 	faction = list("stalker_mutants1", "monolith_forces")
 
@@ -101,7 +123,6 @@
 	name = "flesh den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 8
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -112,7 +133,6 @@
 	name = "boar den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 3
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -123,7 +143,6 @@
 	name = "snork den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 4
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -134,8 +153,7 @@
 	name = "dog den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
-	max_mobs = 8
+	max_mobs = 6
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/dog)
@@ -145,7 +163,6 @@
 	name = "pseudo den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 4
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -156,7 +173,6 @@
 	name = "bloodsucker den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 4
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -167,7 +183,6 @@
 	name = "controller den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 2
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -178,7 +193,6 @@
 	name = "zombie den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_integrity = 200
 	max_mobs = 5
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -192,5 +206,5 @@
 	max_mobs = 5
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
-	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker,/mob/living/simple_animal/hostile/mutant/controller)
+	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker)
 	faction = list("stalker_mutants1", "monolith_forces")

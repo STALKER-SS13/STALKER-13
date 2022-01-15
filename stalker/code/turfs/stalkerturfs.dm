@@ -115,8 +115,8 @@ obj/structure/grille/stalker/beton/CanPass(atom/movable/mover, turf/target, heig
 	..()
 	if (prob(30))
 		new /obj/structure/flora/ausbushes/fullgrass(get_turf(src))
-		if (prob(30))
-			new /obj/structure/flora/ausbushes/fullgrass(get_turf(src))
+	if (prob(30))
+		new /obj/structure/flora/ausbushes/sparsegrass(get_turf(src))
 	if (prob(15))
 		new /obj/structure/flora/ausbushes/grassybush(get_turf(src))
 	if (prob(15))
@@ -149,15 +149,35 @@ obj/structure/grille/stalker/beton/CanPass(atom/movable/mover, turf/target, heig
 /turf/open/stalker/floor/digable/grass/dump
 	icon = 'stalker/icons/zemlya.dmi'
 	icon_state = "dump_grass1"
-/*
+
 /turf/open/stalker/floor/digable/grass/dump/New()
 	icon_state = "dump_grass[rand(1, 3)]"
-*/
+
 /turf/open/stalker/floor/digable/gryaz_rocky
+	name = "rocky dirt"
+	icon = 'stalker/icons/zemlya.dmi'
 	icon_state = "gryaz_rocky1"
 
 /turf/open/stalker/floor/digable/gryaz_rocky/New()
-	icon_state = "gryaz_rocky[rand(1, 3)]"
+	icon_state = "gryaz_rocky[rand(1, 8)]"
+	if(!GryazEdgeCache || !GryazEdgeCache.len)
+		GryazEdgeCache = list()
+		GryazEdgeCache.len = 10
+		GryazEdgeCache[NORTH] = image('stalker/icons/zemlya.dmi', "gryaz_side_n", layer = HIGH_TURF_LAYER)
+		GryazEdgeCache[SOUTH] = image('stalker/icons/zemlya.dmi', "gryaz_side_s", layer = HIGH_TURF_LAYER)
+		GryazEdgeCache[EAST] = image('stalker/icons/zemlya.dmi', "gryaz_side_e", layer = HIGH_TURF_LAYER)
+		GryazEdgeCache[WEST] = image('stalker/icons/zemlya.dmi', "gryaz_side_w", layer = HIGH_TURF_LAYER)
+
+	spawn(1)
+		var/turf/T
+		for(var/i = 0, i <= 3, i++)
+			if(!get_step(src, 2**i))
+				continue
+			if(layer > get_step(src, 2**i).layer)
+				T = get_step(src, 2**i)
+				if(T)
+					T.overlays += GryazEdgeCache[2**i]
+	return
 
 /turf/open/stalker/floor/sidor
 	name = "floor"
@@ -173,6 +193,56 @@ obj/structure/grille/stalker/beton/CanPass(atom/movable/mover, turf/target, heig
 	icon_state = "road1"
 	layer = MID_TURF_LAYER
 	//overlay_priority = 1
+
+/turf/open/stalker/floor/digable/swamp
+	icon = 'stalker/icons/zemlya.dmi'
+	icon_state = "swamp_grass1"
+
+/turf/open/stalker/floor/digable/grass/swamp/New()
+	icon_state = "swamp_grass[rand(1, 3)]"
+
+/turf/open/stalker/floor/digable/swamp/Initialize()
+	..()
+	if (prob(30))
+		new /obj/structure/flora/ausbushes/fullgrass(get_turf(src))
+	if (prob(30))
+		new /obj/structure/flora/ausbushes/sparsegrass(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/stalkybush(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/reedbush(get_turf(src))
+	if (prob(30))
+		new /obj/structure/flora/stalker/smallbush(get_turf(src))
+	if (prob(20))
+		new /obj/structure/flora/stalker/bush(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/fernybush(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/leafybush(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/wildplant/root(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_potato(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_tato(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/wild_fungus(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/wild_berries(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/wild_bayleaf(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_carrot(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_parsnip(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_whitebeet(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_redbeet(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_onion(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/root/wild_garlic(get_turf(src))
 
 var/global/list/AsphaltEdgeCache
 
@@ -296,6 +366,15 @@ var/global/list/GryazEdgeCache
 				if(T)
 					T.overlays += GryazEdgeCache[2**i]
 	return
+
+/turf/open/stalker/floor/gryaz/Initialize()
+	..()
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/wildplant/root(get_turf(src))
+	if (prob(15))
+		new /obj/structure/flora/ausbushes/sparsegrass(get_turf(src))
+	if (prob(1))
+		new /obj/structure/flora/ausbushes/wildplant/wild_fungus(get_turf(src))
 
 /turf/open/stalker/floor/gryaz/gryaz2
 	icon_state = "gryaz2"
@@ -509,8 +588,64 @@ var/global/list/WaterEdgeCache
 /turf/open/stalker/floor/wood/oldgor
 	icon_state = "wood1"
 
+/turf/open/stalker/floor/wood/oldgor/New()
+	switch(rand(1, 100))
+		if(1 to 5)
+			icon_state = "wood1"
+		if(6 to 11)
+			icon_state = "wood2"
+		if(12 to 17)
+			icon_state = "wood13"
+		if(18 to 23)
+			icon_state = "wood14"
+		if(24 to 29)
+			icon_state = "wood15"
+		if(30 to 35)
+			icon_state = "wood16"
+		if(36 to 41)
+			icon_state = "wood17"
+		if(42 to 47)
+			icon_state = "wood18"
+		if(48 to 53)
+			icon_state = "wood19"
+		if(54 to 54)
+			icon_state = "wood20"
+		if(55 to 57)
+			icon_state = "wood21"
+		if(58 to 60)
+			icon_state = "wood22"
+		if(61 to 63)
+			icon_state = "wood23"
+		if(64 to 66)
+			icon_state = "wood24"
+		if(67 to 69)
+			icon_state = "wood25"
+		if(70 to 82)
+			icon_state = "wood3"
+		if(83 to 84)
+			icon_state = "wood4"
+		if(85 to 86)
+			icon_state = "wood5"
+		if(87 to 88)
+			icon_state = "wood6"
+		if(89 to 90)
+			icon_state = "wood7"
+		if(91 to 92)
+			icon_state = "wood8"
+		if(93 to 94)
+			icon_state = "wood9"
+		if(95 to 96)
+			icon_state = "wood10"
+		if(97 to 98)
+			icon_state = "wood11"
+		if(99 to 100)
+			icon_state = "wood12"
+
 /turf/open/stalker/floor/wood/oldvert
 	icon_state = "woodd1"
+
+/turf/open/stalker/floor/wood/oldvert/New()
+	icon_state = "woodd[rand(1, 70)]"
 
 /turf/open/stalker/floor/agroprom/beton
 	name = "floor"
@@ -533,12 +668,30 @@ var/global/list/WaterEdgeCache
 /turf/open/stalker/floor/lattice
 	name = "lattice"
 	icon = 'stalker/icons/floor.dmi'
-	icon_state = "lattice_new"
+	icon_state = "lattice_new1"
 	overlay_priority = HIGH_TURF_LAYER
-/*
+
 /turf/open/stalker/floor/lattice/New()
+	icon_state = "lattice_new[rand(1, 21)]"
+
+/turf/open/stalker/floor/lattice/brokeone
+	name = "lattice"
+	icon = 'stalker/icons/floor.dmi'
+	icon_state = "lattice1"
+
+/turf/open/stalker/floor/lattice/brokeone/New()
 	icon_state = "lattice[rand(1, 4)]"
-*/
+
+/turf/open/stalker/floor/lattice/broketwo
+	name = "lattice"
+	icon = 'stalker/icons/floor.dmi'
+	icon_state = "lattice2_1"
+
+/turf/open/stalker/floor/lattice/broketwo/New()
+	icon_state = "lattice2_[rand(1, 7)]"
 
 /turf/open/stalker/floor/plasteel/plita/orange
-	icon_state = "plita_orange"
+	icon_state = "plita_or1"
+
+/turf/open/stalker/floor/plasteel/plita/orange/New()
+	icon_state = "plita_or[rand(1, 9)]"

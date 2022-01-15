@@ -142,6 +142,10 @@
 	pixel_x = -32
 	icon = 'icons/obj/flora/jungletreesmall.dmi'
 
+/obj/structure/flora/tree/jungle/small/Initialize()
+	icon_state = "[icon_state][rand(1, 6)]"
+	. = ..()
+
 //grass
 /obj/structure/flora/grass
 	name = "grass"
@@ -360,37 +364,37 @@
 /obj/structure/flora/ausbushes/wildplant/root/wild_garlic
 	name = "wild garlic roots"
 	desc = "A hardy, delicious vegetable used to flavor many dishes. You can never have enough."
-	produce = /obj/item/reagent_containers/food/snacks/grown/garlic
+	produce = /obj/item/reagent_containers/food/snacks/grown/garlic/zona
 	icon_state = "wild_root1"
 
 /obj/structure/flora/ausbushes/wildplant/root/wild_onion
 	name = "wild onion"
 	desc = "This onion is not cultivated, just out growing on its own."
-	produce = /obj/item/reagent_containers/food/snacks/grown/onion
+	produce = /obj/item/reagent_containers/food/snacks/grown/onion/zona
 	icon_state = "wild_root1"
 
 obj/structure/flora/ausbushes/wildplant/root/wild_redbeet
 	name = "wild beet"
 	desc = "Nothing beats beets."
-	produce = /obj/item/reagent_containers/food/snacks/grown/beet/red
+	produce = /obj/item/reagent_containers/food/snacks/grown/beet/red/zona
 	icon_state = "wild_root1"
 
 obj/structure/flora/ausbushes/wildplant/root/wild_whitebeet
 	name = "wild beet"
 	desc = "Nothing beats beets."
-	produce = /obj/item/reagent_containers/food/snacks/grown/beet/white
+	produce = /obj/item/reagent_containers/food/snacks/grown/beet/white/zona
 	icon_state = "wild_root1"
 
 /obj/structure/flora/ausbushes/wildplant/root/wild_parsnip
 	name = "wild parsnip"
 	desc = "Some free range parsnips!"
-	produce = /obj/item/reagent_containers/food/snacks/grown/carrot/parsnip
+	produce = /obj/item/reagent_containers/food/snacks/grown/carrot/parsnip/zona
 	icon_state = "wild_root1"
 
 /obj/structure/flora/ausbushes/wildplant/root/wild_carrot
 	name = "wild carrot"
 	desc = "Some free range carrots!"
-	produce = /obj/item/reagent_containers/food/snacks/grown/carrot
+	produce = /obj/item/reagent_containers/food/snacks/grown/carrot/zona
 	icon_state = "wild_root1"
 
 /obj/structure/flora/ausbushes/wildplant/root/wild_tato
@@ -402,13 +406,13 @@ obj/structure/flora/ausbushes/wildplant/root/wild_whitebeet
 /obj/structure/flora/ausbushes/wildplant/root/wild_potato
 	name = "wild potato"
 	desc = "An essential ingredient to any slavic diet."
-	produce = /obj/item/reagent_containers/food/snacks/grown/potato
+	produce = /obj/item/reagent_containers/food/snacks/grown/potato/zona
 	icon_state = "wild_root1"
 
 /obj/structure/flora/ausbushes/wildplant/wild_fungus
 	name = "cave fungi"
 	desc = "This edible strain of fungus usually grows in dark places and is said to have anti-toxic properties."
-	produce = /obj/item/reagent_containers/food/snacks/grown/fungus
+	produce = /obj/item/reagent_containers/food/snacks/grown/mushroom/fungus
 	icon_state = "wild_fungus"
 
 /obj/structure/flora/ausbushes/wildplant/wild_fungus/Initialize()

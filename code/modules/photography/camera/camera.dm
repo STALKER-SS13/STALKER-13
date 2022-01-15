@@ -219,21 +219,21 @@
 			picture.log_to_file()
 
 /obj/item/camera/old
-	name = "camera"
+	name = "ancient camera"
 	desc = "An ancient polaroid camera."
 	icon_state = "camera_old"
 	state_on = "camera_old"
 	state_off = "camera_old_off"
 
 /obj/item/camera/ww2
-	name = "camera"
+	name = "ancient camera"
 	desc = "A very old polaroid camera."
 	icon_state = "camera_ww2"
 	state_on = "camera_ww2"
 	state_off = "camera_ww2_off"
 
 /obj/item/camera/coldwar
-	name = "camera_coldwar"
+	name = "old camera"
 	desc = "A dated polaroid camera."
 	icon_state = "camera_coldwar"
 	state_on = "camera_coldwar"

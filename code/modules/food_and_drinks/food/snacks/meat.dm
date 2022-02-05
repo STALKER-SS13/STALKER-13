@@ -379,33 +379,36 @@
 	else if(subjectjob)
 		S.name = "[subjectjob] [initial(S.name)]"
 
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant
-
-	tastes = list("meat" = 1)
-	foodtype = MEAT | RAW | GROSS
-
+//Stalker
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant
 	name = "raw mutant cutlet"
 	desc = "A raw mutant meat cutlet."
 	list_reagents = list("nutriment" = 5)
 	bonus_reagents = list("nutriment" = 5, "vitamin" = 5)
+	tastes = list("meat" = 1)
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant
+	foodtype = MEAT | RAW | GROSS
 	filling_color = "#C43C20"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/flesh
 	name = "raw flesh cutlet"
 	desc = "A raw flesh meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/flesh
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/boar
 	name = "raw mutant boar cutlet"
 	desc = "A raw mutant boar meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/boar
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/dog
 	name = "raw mutant dog cutlet"
 	desc = "A raw mutant dog meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/dog
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/pseudo
 	name = "raw pseudog cutlet"
 	desc = "A raw pseudo meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/pseudo
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/snork
 	name = "raw snork cutlet"
@@ -414,14 +417,17 @@
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/bloodsucker
 	name = "raw mutant bloodsucker cutlet"
 	desc = "A raw bloodsucker meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/bloodsucker
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/controller
-	name = "rawcontroller cutlet"
+	name = "raw controller cutlet"
 	desc = "A raw controller meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/controller
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/mutant/rat
 	name = "raw rat cutlet"
 	desc = "A raw rat meat cutlet."
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/rat
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/killertomato
 	name = "raw killer tomato cutlet"
@@ -474,6 +480,8 @@
 	list_reagents = list("nutriment" = 5)
 	bonus_reagents = list("nutriment" = 5, "vitamin" = 5)
 	filling_color = "#8A5639"
+	tastes = list("meat" = 1)
+	foodtype = MEAT
 
 /obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/flesh
 	name = "flesh cutlet"

@@ -96,7 +96,7 @@
 
 /datum/crafting_recipe/stew
 	name = "mutant meat and vegetable stew"
-	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1,
+	reqs = list(/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1,
 				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1,
 				/obj/item/reagent_containers/food/snacks/grown/beet = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1
@@ -119,7 +119,7 @@
 
 /datum/crafting_recipe/lowgradestew
 	name = "low-grade goulash"
-	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 2,
+	reqs = list(/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 2,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/mushroom = 1
 				)
@@ -193,7 +193,7 @@
 	name = "okroshka soup"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 		//datum/reagent/consumable/blackpepper = 5,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/flesh_meat = 1,
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant/flesh = 1,
 		/obj/item/reagent_containers/food/snacks/grown/onion = 1,
 		/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 		/obj/item/reagent_containers/food/snacks/boiledegg = 2,
@@ -222,7 +222,7 @@
 	name = "rat meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/rat_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/rat = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -236,7 +236,7 @@
 	name = "dog meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/dog_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/dog = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -250,7 +250,7 @@
 	name = "flesh meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/flesh_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/flesh = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -264,7 +264,7 @@
 	name = "boar meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/boar_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/boar = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -278,7 +278,7 @@
 	name = "snork meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/snork_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/snork = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -292,7 +292,7 @@
 	name = "pseudo dog meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/pseudo_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/pseudo = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -306,7 +306,7 @@
 	name = "bloodsucker meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/bloodsucker_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/bloodsucker = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -320,7 +320,7 @@
 	name = "controller meat goulash"
 	reqs = list(//datum/reagent/consumable/sodiumchloride = 5,
 				//datum/reagent/consumable/blackpepper = 5,
-				/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/controller_meat = 1,
+				/obj/item/reagent_containers/food/snacks/meat/steak/mutant/controller = 1,
 				/obj/item/reagent_containers/food/snacks/grown/potato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
 				/obj/item/reagent_containers/food/snacks/grown/onion = 1,
@@ -353,7 +353,7 @@
 	name = "mutant meat shishkebab"
 	reqs = list(
 		/obj/item/trash/metalparts = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantmeat
 	category = CAT_FOOD
@@ -363,7 +363,7 @@
 	name = "mutant meat shishkebab"
 	reqs = list(
 		/obj/item/trash/metalparts = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1,
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1,
 		/obj/item/reagent_containers/food/snacks/grown/onion =1
 	)
 	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantonionmeat
@@ -458,7 +458,7 @@
 	name = "corned mutant meat"
 	reqs = list(
 		/obj/item/reagent_containers/food/condiment/saltshaker,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1,
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1,
 		/obj/item/reagent_containers/food/snacks/grown/cabbage = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/corned/mutantmeat
@@ -520,7 +520,7 @@
 		/obj/item/reagent_containers/food/condiment/saltshaker,
 		/obj/item/trash/konserva,
 		/obj/item/stalker/loot/mutantparts = 2,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/pashtet/mutantmix
 	category = CAT_FOOD
@@ -531,7 +531,7 @@
 	reqs = list(
 		/obj/item/reagent_containers/food/condiment/saltshaker,
 		/obj/item/trash/konserva,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 3
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 3
 	)
 	result = /obj/item/reagent_containers/food/snacks/pashtet/mutantmeatmix
 	category = CAT_FOOD

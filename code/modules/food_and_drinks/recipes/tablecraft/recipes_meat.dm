@@ -204,7 +204,7 @@
 	name = "mutant meat kebab"
 	reqs = list(
 		/obj/item/trash/metalparts = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantmeat
 	subcategory = CAT_MEAT
@@ -213,7 +213,7 @@
 	name = "mutant meat kebab"
 	reqs = list(
 		/obj/item/trash/metalparts = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1,
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1,
 		/obj/item/reagent_containers/food/snacks/grown/onion =1
 	)
 	result = /obj/item/reagent_containers/food/snacks/stalker/kebab/mutantonionmeat
@@ -223,7 +223,7 @@
 	name = "rice and flesh"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/flesh_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/flesh = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/riceflesh
 	subcategory = CAT_MEAT
@@ -232,7 +232,7 @@
 	name = "rice and boar"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/boar_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/boar = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/riceboar
 	subcategory = CAT_MEAT
@@ -241,7 +241,7 @@
 	name = "rice and mutant dog"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/dog_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/dog = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricedog
 	subcategory = CAT_MEAT
@@ -250,7 +250,7 @@
 	name = "rice and mutant pseudog"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/pseudo_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/pseudo = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricepseudog
 	subcategory = CAT_MEAT
@@ -259,7 +259,7 @@
 	name = "rice and snork"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/snork_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/snork = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricesnork
 	subcategory = CAT_MEAT
@@ -268,7 +268,7 @@
 	name = "rice and bloodsucker"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/bloodsucker_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/bloodsucker = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricebloodsucker
 	subcategory = CAT_MEAT
@@ -277,7 +277,7 @@
 	name = "rice and controller"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/controller_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/controller = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricecontroller
 	subcategory = CAT_MEAT
@@ -286,7 +286,7 @@
 	name = "rice and rat"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/salad/boiledrice = 1,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked/rat_meat = 2
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/mutant/rat = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/ricerat
 	subcategory = CAT_MEAT
@@ -295,7 +295,7 @@
 	name = "Corned mutant meat"
 	reqs = list(
 		/datum/reagent/consumable/sodiumchloride = 5,
-		/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/cooked = 1,
+		/obj/item/reagent_containers/food/snacks/meat/steak/mutant = 1,
 		/obj/item/reagent_containers/food/snacks/grown/cabbage = 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/corned/mutantmeat

@@ -37,12 +37,19 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/kiparis
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/kiparis = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
+		/obj/item/flashlight/lantern,
+		/obj/item/flashlight/seclite,
+		/obj/item/flashlight,
+		/obj/item/flashlight/flare/torch,
 		/obj/item/lighter/greyscale,
 		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches)
+
 
 /datum/job/clearsky_leader
 	title = "Clear Sky Leader"
@@ -77,11 +84,17 @@ Assistant
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/tourist
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,,/obj/item/clothing/accessory/patch/clearsky)
-	l_pocket = /obj/item/storage/wallet/stalker
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = pick(
 		/obj/item/flashlight/flare,
 		/obj/item/lighter/greyscale,
 		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch)

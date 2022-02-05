@@ -306,6 +306,34 @@
 	if(.)
 		investigate_log("was planted by [key_name(user)] at [AREACOORD(user)]", INVESTIGATE_BOTANY)
 
+/obj/item/seeds/fungus
+	name = "pack of cave fungus mycelium"
+	desc = "This mycelium grows into cave fungi, an edible variety of mushroom with potential anti-toxic properties."
+	icon_state = "seed-fungus"
+	species = "cave fungus"
+	plantname = "Cave fungi"
+	product = /obj/item/reagent_containers/food/snacks/grown/mushroom/fungus
+	growing_icon = 'icons/obj/hydroponics/growing_mushrooms.dmi'
+	icon_grow = "cave_fungus-grow"
+	icon_dead = "cave_fungus-dead"
+	icon_harvest = "cave_fungus-harvest"
+	lifespan = 50
+	endurance = 10
+	maturation = 8
+	production = 3
+	yield = 6
+	potency = 20
+	growthstages = 2
+	reagents_add = list(/datum/reagent/medicine/mutadone = 0.05)
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
+
+/obj/item/reagent_containers/food/snacks/grown/mushroom/fungus
+	seed = /obj/item/seeds/fungus
+	name = "cave fungus"
+	desc = "Cave fungus is an edible mushroom which may have the ability to purge bodily toxins."
+	icon_state = "cavefungus"
+	filling_color = "#FF6347"
+
 //// LAVALAND MUSHROOMS ////
 
 // Bracket (Shaving mushroom)

@@ -63,9 +63,8 @@
 
 /mob/living/carbon/human/proc/handle_tension(type = "default")
 	if (setup_tension)
-		var/sound/S = sound(pick("stalker/sound/battletension.ogg", "stalker/sound/battletension2.ogg", "stalker/sound/battletension3.ogg", \
-		"stalker/sound/battletension4.ogg", "stalker/sound/battletension5.ogg", "stalker/sound/battletension6.ogg", "stalker/sound/battletension7.ogg", \
-		"stalker/sound/battletension8.ogg", "stalker/sound/battletension9.ogg"))
+		var/sound/S = sound(pick("stalker/sound/battletension1.ogg", "stalker/sound/battletension2.ogg", "stalker/sound/battletension3.ogg", \
+		"stalker/sound/battletension4.ogg", "stalker/sound/battletension5.ogg"))
 		S.repeat = 1
 		S.channel = CHANNEL_BATTLE
 		S.falloff = 1
@@ -209,7 +208,10 @@
 					Into battle! Let us avenge our fallen brothers, may their eternal union with the Monolith be blessed. \
 					Death.... Fierce death themes, who rejects His sacred power...", "Kill all infidels."))
 				else
-					brainwash(src, list("Spring is coming... warm-oh-oh... like do-o-o-oma...", "Kill..."))
+					brainwash(src, list("Thank you for that, that he revealed to Thy servants the machinations of our enemies. \
+					Illuminate with Thy radiance the souls of those, who gave his life in fulfillment of thy will. Into battle, defenders of the Monolith! \
+					Into battle! Let us avenge our fallen brothers, may their eternal union with the Monolith be blessed. \
+					Death.... Fierce death themes, who rejects His sacred power...", "Kill all infidels."))
 			return
 		if(150 to 199)
 			if(slurring < 100)

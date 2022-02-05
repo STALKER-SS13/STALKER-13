@@ -43,6 +43,16 @@
 	name = "bulrush"
 	icon = 'stalker/icons/fallout/flora.dmi'
 
+/obj/structure/flora/stalker/smallbush
+	icon_state = "tall_grass_8"
+	layer = 4.01
+	anchored = 1
+	opacity = 1
+
+/obj/structure/flora/stalker/bush/Initialize()
+	..()
+	icon_state = "tall_grass_[rand(1,8)]"
+
 /obj/structure/flora/stalker/bush
 	icon_state = "very_tall_grass_8"
 	layer = 4.01
@@ -59,7 +69,12 @@
 	/turf/closed/wall/stalker/bricks,
 	/turf/closed/wall/stalker/bricks_yellow,
 	/turf/closed/wall/stalker/bricks_white,
-	/turf/closed/wall/stalker/beton_agro
+	/turf/closed/wall/stalker/beton_agro,
+	/turf/closed/wall/stalker/brick,
+	/turf/closed/wall/stalker/brickdark,
+	/turf/closed/wall/stalker/superstore,
+	/turf/closed/wall/stalker/store,
+	/turf/closed/wall/stalker/log
 	///obj/structure/stalker/okno/whitebrick/odin,
 	///obj/structure/stalker/okno/whitebrick/dva,
 	///obj/structure/stalker/okno/whitebrick/tri,
@@ -136,6 +151,41 @@
 	icon = 'stalker/icons/barzha.dmi'
 	icon_state = "hull"
 	canSmoothWith = list(/turf/closed/wall/stalker/ship)
+
+/turf/closed/wall/stalker/log
+	name = "log wall"
+	desc = "A log wall"
+	icon = 'icons/turf/walls/log.dmi'
+	icon_state = "log"
+	canSmoothWith = list(/turf/closed/wall/stalker/log)
+
+/turf/closed/wall/stalker/store
+	name = "concrete wall"
+	desc = "A concrete wall"
+	icon = 'icons/turf/walls/store.dmi'
+	icon_state = "store"
+	canSmoothWith = list(/turf/closed/wall/stalker/store)
+
+/turf/closed/wall/stalker/superstore
+	name = "concrete wall"
+	desc = "A concrete wall"
+	icon = 'icons/turf/walls/superstore.dmi'
+	icon_state = "supermart"
+	canSmoothWith = list(/turf/closed/wall/stalker/superstore)
+
+/turf/closed/wall/stalker/brickdark
+	name = "brick wall"
+	desc = "A dark brick wall"
+	icon = 'icons/turf/walls/brick_walldark.dmi'
+	icon_state = "brickwall"
+	canSmoothWith = list(/turf/closed/wall/stalker/brickdark)
+
+/turf/closed/wall/stalker/brick
+	name = "brick wall"
+	desc = "A brick wall"
+	icon = 'icons/turf/walls/brick_wall.dmi'
+	icon_state = "brickwall"
+	canSmoothWith = list(/turf/closed/wall/stalker/brick)
 
 /obj/structure/chair/brevno
 	name = "log"

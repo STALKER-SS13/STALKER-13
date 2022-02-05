@@ -17,11 +17,18 @@
 						CAT_NONE, //Misc subcategories
 						CAT_NONE, //Tribal subcategories
 						list(	//Food subcategories
+							CAT_GOULASH,
+							CAT_SHISHKEBAB,
+							CAT_RICEDISH,
+							CAT_FERMENTED,
+							CAT_PASHTET,
+							CAT_CORNED,
+							CAT_SOUPS,
+							CAT_MEAT,
 							/*CAT_BREAD,
 							CAT_BURGER,
 							CAT_CAKE,
 							CAT_EGG,
-							CAT_MEAT,
 							CAT_MISCFOOD,
 							CAT_PASTRY,
 							CAT_PIE,

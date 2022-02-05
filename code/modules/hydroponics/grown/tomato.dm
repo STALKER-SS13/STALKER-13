@@ -11,7 +11,7 @@
 	icon_grow = "tomato-grow"
 	icon_dead = "tomato-dead"
 	genes = list(/datum/plant_gene/trait/squash, /datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/tomato/blue, /obj/item/seeds/tomato/blood, /obj/item/seeds/tomato/killer)
+//	mutatelist = list(/obj/item/seeds/tomato/blue, /obj/item/seeds/tomato/blood, /obj/item/seeds/tomato/killer)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/tomato
@@ -26,7 +26,7 @@
 	grind_results = list("ketchup" = 0)
 	juice_results = list("tomatojuice" = 0)
 	distill_reagent = "enzyme"
-
+/*
 // Blood Tomato
 /obj/item/seeds/tomato/blood
 	name = "pack of blood-tomato seeds"
@@ -144,3 +144,4 @@
 			K.health = K.maxHealth
 			K.visible_message("<span class='notice'>The Killer Tomato growls as it suddenly awakens.</span>")
 			qdel(src)
+*/

@@ -16,7 +16,7 @@
 /obj/item/reagent_containers/food/snacks/sosjerky
 	name = "\improper Scaredy's Private Reserve Beef Jerky"
 	icon_state = "sosjerky"
-	desc = "Beef jerky made from the finest space cows."
+	desc = "Beef jerky made from the finest cows."
 	trash = /obj/item/trash/sosjerky
 	list_reagents = list("nutriment" = 1, "sugar" = 3, "sodiumchloride" = 2)
 	junkiness = 25
@@ -26,8 +26,14 @@
 
 /obj/item/reagent_containers/food/snacks/sosjerky/healthy
 	name = "homemade beef jerky"
-	desc = "Homemade beef jerky made from the finest space cows."
+	desc = "Homemade beef jerky made from the finest cows."
 	list_reagents = list("nutriment" = 3, "vitamin" = 1)
+	junkiness = 0
+
+/obj/item/reagent_containers/food/snacks/sosjerky/mutant
+	name = "homemade mutant jerky"
+	desc = "Homemade mutant jerky made from the finest in the Zone."
+	list_reagents = list("nutriment" = 25, "vitamin" = 5, "omnizine" = 5, "sugar" = 3, "sodiumchloride" = 2)
 	junkiness = 0
 
 /obj/item/reagent_containers/food/snacks/chips

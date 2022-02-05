@@ -182,7 +182,7 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/pineapple)
 	bonus_desc = "Not for human consumption."
 	foodtype = "ashtray"
-
+/*
 /datum/bounty/item/botany/tomato
 	name = "Tomatoes"
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato)
@@ -192,7 +192,7 @@
 	name = "Bluespace Tomatoes"
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato/blue/bluespace)
 	multiplier = 4
-
+*/
 /datum/bounty/item/botany/oatz
 	name = "Oats"
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/oat)

@@ -5,7 +5,7 @@
 	name = "camera"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	desc = "A polaroid camera."
-	icon_state = "camera"
+	icon_state = "camera_modern"
 	item_state = "camera"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
@@ -16,8 +16,8 @@
 	slot_flags = ITEM_SLOT_NECK
 	materials = list(MAT_METAL = 50, MAT_GLASS = 150)
 	var/flash_enabled = TRUE
-	var/state_on = "camera"
-	var/state_off = "camera_off"
+	var/state_on = "camera_modern"
+	var/state_off = "camera_modern_off"
 	var/pictures_max = 10
 	var/pictures_left = 10
 	var/on = TRUE
@@ -217,3 +217,24 @@
 		p.set_picture(picture, TRUE, TRUE)
 		if(CONFIG_GET(flag/picture_logging_camera))
 			picture.log_to_file()
+
+/obj/item/camera/old
+	name = "ancient camera"
+	desc = "An ancient polaroid camera."
+	icon_state = "camera_old"
+	state_on = "camera_old"
+	state_off = "camera_old_off"
+
+/obj/item/camera/ww2
+	name = "ancient camera"
+	desc = "A very old polaroid camera."
+	icon_state = "camera_ww2"
+	state_on = "camera_ww2"
+	state_off = "camera_ww2_off"
+
+/obj/item/camera/coldwar
+	name = "old camera"
+	desc = "A dated polaroid camera."
+	icon_state = "camera_coldwar"
+	state_on = "camera_coldwar"
+	state_off = "camera_coldwar_off"

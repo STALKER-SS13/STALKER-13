@@ -19,6 +19,7 @@
 	damagelose = 0.3
 	distro = 25
 	can_scope = 1
+	slowdown = 0.15
 	weapon_weight = WEAPON_MEDIUM
 	semi_auto = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
@@ -57,6 +58,7 @@
 	force = 15
 	durability = 150
 	spread = 6
+	slowdown = 0.15
 	damagelose = 0.15
 	distro = 10
 	can_scope = 1
@@ -75,6 +77,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/stalker/ithaca
 	recoil = 1
 	w_class = 4
+	slowdown = 0.15
 	randomspread = 0
 	spread = 12
 	force = 15
@@ -97,6 +100,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/chaser
 	recoil = 0.8
 	w_class = 4
+	slowdown = 0.15
 	randomspread = 0
 	spread = 10
 	force = 15
@@ -137,6 +141,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/spsa
 	recoil = 0.8
 	w_class = 4
+	slowdown = 0.15
 	randomspread = 0
 	spread = 8
 	force = 15
@@ -160,6 +165,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enfield
 	recoil = 1
 	w_class = 4
+	slowdown = 0.15
 	randomspread = 1
 	spread = 3
 	force = 15
@@ -169,6 +175,112 @@
 	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
 	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
 	can_scope = 1
+
+/obj/item/gun/ballistic/rifle/boltaction/mosin
+	name = "mosin-nagant"
+	desc = "A heavy and versatile rifle which has served the Soviet Union for over a century, chambered in 7.62×54mm cartridge."
+	icon_state = "mosin"
+	item_state = "rifle"
+	durability = 200
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 1
+	w_class = 4
+	slowdown = 0.15
+	randomspread = 1
+	spread = 4
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 1
+
+/obj/item/gun/ballistic/rifle/boltaction/arisaka
+	name = "arisaka"
+	desc = "A versatile bolt-action service rifle that was used by the Empire of Japan predominantly during the Second Sino-Japanese War and Second World War."
+	icon_state = "arisaka"
+	item_state = "rifle"
+	durability = 200
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 1
+	w_class = 4
+	randomspread = 1
+	spread = 4
+	slowdown = 0.15
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 1
+
+/obj/item/gun/ballistic/rifle/boltaction/karabiner
+	name = "karabiner 98K"
+	desc = "A versatile bolt-action service rifle that was used by Germany predominantly during the Second World War."
+	icon_state = "karabiner"
+	item_state = "rifle"
+	durability = 200
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 1
+	w_class = 4
+	randomspread = 1
+	spread = 4
+	slowdown = 0.15
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 1
+
+/obj/item/gun/ballistic/rifle/boltaction/springfield
+	name = "M1903 springfield"
+	desc = "The M1903 Springfield, officially the United States Rifle, Caliber .30-06, Model 1903, is an American five-round magazine-fed, bolt-action service repeating rifle, used primarily during the first half of the 20th century. The M1903 was first used in combat during the Philippine American War, and it was officially adopted by the United States as the standard infantry rifle on June 19, 1903, where it saw service in World War I, and was replaced by the faster-firing semi-automatic eight-round M1 Garand starting in 1936."
+	icon_state = "springfield"
+	item_state = "rifle"
+	durability = 200
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 1
+	w_class = 4
+	randomspread = 1
+	spread = 4
+	slowdown = 0.15
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 1
+
+/obj/item/gun/ballistic/rifle/boltaction/makeshiftbolt
+	name = "makeshift bolt action rifle"
+	desc = "A cobbled together bolt action rifle made out of junk. Maybe this wasn't such a good idea..."
+	icon_state = "makeshiftbolt"
+	item_state = "rifle"
+	durability = 200
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 3
+	w_class = 4
+	randomspread = 6
+	spread = 9
+	slowdown = 0.15
+	force = 15
+	damagelose = 0.1
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 1
+
 
 ///
 // AWP - Alternative to SVD.

@@ -41,7 +41,7 @@
 	output = /obj/item/reagent_containers/food/snacks/tortilla
 
 /datum/food_processor_process/parsnip
-	input = /obj/item/reagent_containers/food/snacks/grown/parsnip
+	input = /obj/item/reagent_containers/food/snacks/grown/carrot/parsnip
 	output = /obj/item/reagent_containers/food/snacks/roastparsnip
 
 /datum/food_processor_process/mob/slime

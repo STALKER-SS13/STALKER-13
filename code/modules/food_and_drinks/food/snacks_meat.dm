@@ -91,6 +91,36 @@
 	tastes = list("meat" = 1, "cabbage" = 1)
 	foodtype = MEAT | VEGETABLES
 
+/obj/item/reagent_containers/food/snacks/corned/mutantmeat
+	name = "corned mutant meat and cabbage"
+	desc = "An aquired taste for sure, the meat palatable with the crunchy cabbage."
+	icon_state = "cornedbeef"
+	trash = /obj/item/trash/plate
+	bonus_reagents = list("nutriment" = 12, "vitamin" = 10, "omnizine" = 5)
+	list_reagents = list("nutriment" = 25)
+	tastes = list("meat" = 1, "cabbage" = 1)
+	foodtype = MEAT | VEGETABLES
+
+/obj/item/reagent_containers/food/snacks/corned/sausage
+	name = "corned sausage and cabbage"
+	desc = "An aquired taste for sure, the meat palatable with the crunchy cabbage."
+	icon_state = "cornedbeef"
+	trash = /obj/item/trash/plate
+	bonus_reagents = list("nutriment" = 12, "vitamin" = 10, "omnizine" = 5)
+	list_reagents = list("nutriment" = 25)
+	tastes = list("sausage" = 1, "cabbage" = 1)
+	foodtype = MEAT | VEGETABLES
+
+/obj/item/reagent_containers/food/snacks/corned/cannedpork
+	name = "corned pork and cabbage"
+	desc = "An aquired taste for sure, the meat palatable with the crunchy cabbage."
+	icon_state = "cornedbeef"
+	trash = /obj/item/trash/plate
+	bonus_reagents = list("nutriment" = 12, "vitamin" = 10, "omnizine" = 5)
+	list_reagents = list("nutriment" = 25)
+	tastes = list("sausage" = 1, "cabbage" = 1)
+	foodtype = MEAT | VEGETABLES
+
 /obj/item/reagent_containers/food/snacks/bearsteak
 	name = "Filet migrawr"
 	desc = "Because eating bear wasn't manly enough."

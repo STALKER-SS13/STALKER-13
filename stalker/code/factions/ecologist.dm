@@ -29,7 +29,9 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
@@ -39,6 +41,11 @@
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
+	r_hand = pick(/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
+
 	faction_s = "Ecologist"
 
 /datum/outfit/ecologist  // For select_equipment
@@ -95,7 +102,9 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
@@ -103,6 +112,11 @@
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
+	r_hand = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 
 /datum/outfit/ecologistguard  // For select_equipment
 	name = "Ecologist Guard"
@@ -115,7 +129,7 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt/small
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = /obj/item/storage/wallet
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
@@ -123,7 +137,7 @@
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
-
+	r_hand = /obj/item/flashlight/seclite
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"
@@ -153,7 +167,9 @@
 	id = /obj/item/stalker_pda
 	belt = /obj/item/storage/belt/stalker/artifact_belt
 	back = /obj/item/storage/backpack/stalker/tourist
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/radio/off
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,

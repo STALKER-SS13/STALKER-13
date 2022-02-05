@@ -29,7 +29,7 @@
 						spawned_loot.pixel_x = spawned_loot.pixel_y = ((!(loot_spawned%2)*loot_spawned/2)*-1)+((loot_spawned%2)*(loot_spawned+1)/2*1)
 			loot_spawned++
 	return INITIALIZE_HINT_QDEL
-
+/*
 /obj/effect/spawner/lootdrop/armory_contraband
 	name = "armory contraband gun spawner"
 	lootdoubles = FALSE
@@ -54,15 +54,16 @@
 				/obj/item/bikehorn/golden,
 				/obj/item/grenade/clusterbuster,
 				/obj/item/storage/box/syndie_kit/throwing_weapons = 3)
-
+*/
 /obj/effect/spawner/lootdrop/gambling
 	name = "gambling valuables spawner"
 	loot = list(
 				/obj/item/gun/ballistic/revolver/russian = 5,
-				/obj/item/storage/box/syndie_kit/throwing_weapons = 1,
-				/obj/item/toy/cards/deck/syndicate = 2
+				/obj/item/toy/cards/deck = 25,
+				/obj/item/dice/d6 = 15,
+				/obj/item/storage/pill_bottle/dice = 10
 				)
-
+/*
 /obj/effect/spawner/lootdrop/grille_or_trash
 	name = "maint grille or trash spawner"
 	loot = list(/obj/structure/grille = 5,
@@ -77,7 +78,7 @@
 			/obj/item/trash/raisins = 1,
 			/obj/item/trash/sosjerky = 1,
 			/obj/item/trash/syndi_cakes = 1)
-
+*/
 /obj/effect/spawner/lootdrop/three_course_meal
 	name = "three course meal spawner"
 	lootcount = 3
@@ -106,7 +107,7 @@
 /obj/effect/spawner/lootdrop/three_course_meal/Initialize(mapload)
 	loot = list(pick(soups) = 1,pick(salads) = 1,pick(mains) = 1)
 	. = ..()
-
+/*
 /obj/effect/spawner/lootdrop/maintenance
 	name = "maintenance loot spawner"
 	// see code/_globalvars/lists/maintenance_loot.dm for loot table
@@ -204,7 +205,7 @@
 		/obj/item/clothing/head/kitty = 1,
 		/obj/item/clothing/head/rabbitears = 1)
 
-/obj/effect/spawner/lootdrop/minor/pirate_or_bandana
+obj/effect/spawner/lootdrop/minor/pirate_or_bandana
 	name = "pirate hat or bandana spawner"
 	loot = list(
 		/obj/item/clothing/head/pirate = 1,
@@ -355,4 +356,22 @@
 				/obj/item/circuitboard/computer/mecha_control,
 				/obj/item/circuitboard/computer/apc_control,
 				/obj/item/circuitboard/computer/robotics
+				)
+
+*/
+/obj/effect/spawner/lootdrop/bustedcigs
+	name = "busted cig spawner"
+	loot = list(
+				/obj/machinery/vending/cigarette/busted,
+				/obj/machinery/vending/cigarette/bustedtwo,
+				/obj/machinery/vending/cigarette/bustedthree,
+				/obj/machinery/vending/cigarette/bustedfour
+				)
+
+/obj/effect/spawner/lootdrop/bustedsovietsoda
+	name = "busted soviet soda spawner"
+	loot = list(
+				/obj/machinery/vending/sovietsoda/busted,
+				/obj/machinery/vending/sovietsoda/bustedtwo,
+				/obj/machinery/vending/sovietsoda/bustedthree
 				)

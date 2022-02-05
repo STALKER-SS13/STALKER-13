@@ -292,8 +292,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list("nicotine" = 15, "menthol" = 5)
 
 /obj/item/clothing/mask/cigarette/luckystrikesg
-	desc = "An Lucky Strikes Green brand cigarette."
-	list_reagents = list("nicotine" = 12, "cannabis" = 5, "menthol" = 6)
+	desc = "An Lucky Strikes Green brand cigarette. It appears to be a spliff."
+	list_reagents = list("nicotine" = 7, "lsd" = 8, "lipolicide" = 15, "menthol" = 6)
 
 /obj/item/clothing/mask/cigarette/luckystrikes
 	desc = "An Lucky Strikes brand cigarette."

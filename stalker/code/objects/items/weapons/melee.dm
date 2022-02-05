@@ -20,7 +20,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
@@ -51,14 +51,16 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/machete2
-	name = "machete2"
+	name = "machete"
 	desc = "Great for hacking your problems away."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "machete2"
@@ -66,28 +68,207 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 20
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
 	//butcher_speed = 1.25
 
-/obj/item/kitchen/knife/ancienthatchet
+/obj/item/kitchen/knife/machete3
+	name = "machete"
+	desc = "Great for hacking your problems away."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "machete3"
+	item_state = "scrapsabre"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/knifeswing.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/machete4
+	name = "machete"
+	desc = "Great for hacking your problems away."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "machete4"
+	item_state = "salvagedmachete"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/knifeswing.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/foreignsabre
+	name = "foreign sabre"
+	desc = "Great for hacking your problems away. This seems to be a genuine sabre, it is heavy and has seen a lot of use."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "foreignsabre"
+	item_state = "sabre"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/knifeswing.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/rapier0
+	name = "rapier"
+	desc = "Great for stabbing your problems away. This seems to be a genuine rapier, it is heavy and has seen a lot of use."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "rapier0"
+	item_state = "rapier"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_BULKY
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/knifeswing.ogg'
+	attack_verb = list("attacked", "stabbed", "penetrated", "pierced")
+	sharpness = IS_SHARP_ACCURATE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/sickle
+	name = "sickle"
+	desc = "Great for hacking your problems away. All you need is a hammer now!"
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "sickle"
+	item_state = "sickle"
+	slot_flags = ITEM_SLOT_BELT
+	force = 20
+	throwforce = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/knifeswing.ogg'
+	attack_verb = list("attacked", "stabbed", "penetrated", "pierced")
+	sharpness = IS_SHARP_ACCURATE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/trench
+	name = "trench knife"
+	desc = "Dangerous, made for the trenches."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "knife_trench"
+	item_state = "knife_trench"
+	slot_flags = ITEM_SLOT_BELT
+	force = 25
+	throwforce = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/bowie
+	name = "bowie knife"
+	desc = "Day bow bow ... chicka chi-kow!"
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "knife_bowie"
+	item_state = "knife_bowie"
+	slot_flags = ITEM_SLOT_BELT
+	force = 25
+	throwforce = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/bolo
+	name = "bolo knife"
+	desc = "A large cutting tool of Filipino origin similar to the machete. It is used particularly in the Philippines, the jungles of Indonesia, Malaysia and Brunei, as well as in the sugar fields of Cuba."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "bolo"
+	item_state = "bolo"
+	slot_flags = ITEM_SLOT_BELT
+	force = 25
+	throwforce = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+	//butcher_speed = 1.25
+
+/obj/item/kitchen/knife/kukri
+	name = "kukri knife"
+	desc = "A type of machete originating from the Indian subcontinent, and is traditionally associated with the Nepali-speaking Gurkhas and Kiratis of Nepal and India. The knife has a distinct recurve in its blade. It serves multiple purposes as a melee weapon and also as a regular cutting tool throughout most of South Asia. The blade has traditionally served the role of a basic utility knife for the Gurkhas."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "kukri"
+	item_state = "kukri"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+	//butcher_speed = 1.25
+
+/obj/item/shovel/entrenching_tool
+	name = "entrenching tool"
+	desc = "The most useful tool in the trenches!"
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "entrenching_tool"
+	item_state = "entrenching_tool"
+	slot_flags = ITEM_SLOT_BELT
+	force = 30
+	throwforce = 15
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "stabbed", "torn", "ripped")
+	sharpness = IS_SHARP_ACCURATE
+//	bayonet = TRUE
+
+
+/obj/item/hatchet/ancienthatchet
 	name = "ancienthatchet"
 	desc = "An old looking hand axe, still seems sturdy and sharp."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ancienthatchet"
 	item_state = "hatchet"
 	slot_flags = ITEM_SLOT_BELT
-	force = 27
+	force = 24
 	throwforce = 20
 	w_class = WEIGHT_CLASS_SMALL
+	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
 	//butcher_speed = 1.25
 
-/obj/item/kitchen/knife/woodhatchet
+/obj/item/hatchet/woodhatchet
 	name = "wooden hatchet"
 	desc = "An old wooden hand axe, still seems sturdy and sharp."
 	icon = 'icons/obj/items_and_weapons.dmi'
@@ -97,6 +278,8 @@
 	force = 27
 	throwforce = 20
 	w_class = WEIGHT_CLASS_SMALL
+	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	hitsound = 'sound/weapons/knifeswing.ogg'
 	attack_verb = list("attacked", "stabbed", "torn", "ripped")
 	sharpness = IS_SHARP_ACCURATE
@@ -111,7 +294,9 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 28
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -123,9 +308,11 @@
 	icon_state = "largewrench"
 	item_state = "bigwrench"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -137,9 +324,11 @@
 	icon_state = "redwrench"
 	item_state = "bigwrench"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -151,9 +340,11 @@
 	icon_state = "tireiron"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -165,9 +356,11 @@
 	icon_state = "tireiron2"
 	item_state = "tireiron"
 	slot_flags = ITEM_SLOT_BELT
-	force = 20
+	force = 24
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -181,7 +374,9 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
@@ -194,7 +389,37 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
 	throwforce = 15
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bluntswing.ogg'
 	attack_verb = list("attacked", "smacked", "beat", "bludgened")
 	sharpness = IS_BLUNT
+
+/obj/item/melee/baseball_bat/nail
+	name = "nail bat"
+	desc = "There ain't a skull in the league that can withstand a swatter. This one has nails through it."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "nailbat"
+	item_state = "nailbat"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	force = 20
+	throwforce = 12
+	attack_verb = list("beat", "smacked", "bonked", "bludgened", "battered")
+	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/melee/baseball_bat/barbed
+	name = "barbed bat"
+	desc = "There ain't a skull in the league that can withstand a swatter. This one has barbed wire wrapped around it."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "barbedbat"
+	item_state = "barbedbat"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	force = 25
+	throwforce = 12
+	attack_verb = list("beat", "smacked", "bonked", "bludgened", "battered")
+	w_class = WEIGHT_CLASS_HUGE
+	slot_flags = ITEM_SLOT_BELT

@@ -977,13 +977,13 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	//The fucking TRAIT_FAT mutation is the dumbest shit ever. It makes the code so difficult to work with
 	if(H.has_trait(TRAIT_FAT))//I share your pain, past coder.
-		if(H.overeatduration < 100)
+		if(H.overeatduration < 50)
 			to_chat(H, "<span class='notice'>You feel fit again!</span>")
 			H.remove_trait(TRAIT_FAT, OBESITY)
 			H.update_inv_w_uniform()
 			H.update_inv_wear_suit()
 	else
-		if(H.overeatduration >= 100)
+		if(H.overeatduration >= 50)
 			to_chat(H, "<span class='danger'>You suddenly feel blubbery!</span>")
 			H.add_trait(TRAIT_FAT, OBESITY)
 			H.update_inv_w_uniform()
@@ -995,7 +995,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		var/hunger_rate = HUNGER_FACTOR
 		GET_COMPONENT_FROM(mood, /datum/component/mood, H)
 		if(mood && mood.sanity > SANITY_DISTURBED)
-			hunger_rate *= max(0.5, 1 - 0.002 * mood.sanity) //0.85 to 0.75
+			hunger_rate *= max(2.5, 1 - 0.002 * mood.sanity) //0.85 to 0.75
 
 		if(H.satiety > 0)
 			H.satiety--

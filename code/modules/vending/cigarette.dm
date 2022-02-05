@@ -48,6 +48,56 @@
 //	extra_price = 0
 //	payment_department = ACCOUNT_SRV
 
+/obj/machinery/vending/cigarette/bustedthree
+	name = "\improper Busted Cigarette Machine"
+	desc = "If you want to get cancer, might as well do it in style. This vending machine looks like its seen better days."
+//	product_slogans = "Cigarettes taste good like a cigarette should.;I'd rather walk right into an anomaly than never toke again! ... Smoke!;Don't believe the reports - smoke today, and smoke regularly!"
+//	product_ads = "Tested and proven by time to help humans overcome anything; Cigarettes. Smoke today, and smoke regularly!!;The cigarette is a versatile tool, and it's good for you!;The latest survey suggests that 7/10 stalkers who smoke survive engagement with psychological threats within the Zone! More information will come as updates arise.;Smoke!;Get a slice of nicotine heaven, no matter where you are in the world!;Most will disappoint, our cigarettes always deliver. Ditch uncertainty, and smoke today!.;Award-winning cigs, for award-winning stalkers!"
+	icon_state = "cigs-broken3"
+	products = list(/obj/item/storage/fancy/cigarettes = 1,
+					/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlboro = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_java = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_midori = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_laika = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlborogold = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_newports = 1,
+					/obj/item/storage/box/matches = 0,
+					/obj/item/lighter/greyscale = 1,
+					/obj/item/storage/fancy/rollingpapers = 0)
+	refill_canister = /obj/item/vending_refill/cigarette
+//	default_price = 0
+//	extra_price = 0
+//	payment_department = ACCOUNT_SRV
+
+/obj/machinery/vending/cigarette/bustedfour
+	name = "\improper Busted Cigarette Machine"
+	desc = "If you want to get cancer, might as well do it in style. This vending machine looks like its seen better days."
+//	product_slogans = "Cigarettes taste good like a cigarette should.;I'd rather walk right into an anomaly than never toke again! ... Smoke!;Don't believe the reports - smoke today, and smoke regularly!"
+//	product_ads = "Tested and proven by time to help humans overcome anything; Cigarettes. Smoke today, and smoke regularly!!;The cigarette is a versatile tool, and it's good for you!;The latest survey suggests that 7/10 stalkers who smoke survive engagement with psychological threats within the Zone! More information will come as updates arise.;Smoke!;Get a slice of nicotine heaven, no matter where you are in the world!;Most will disappoint, our cigarettes always deliver. Ditch uncertainty, and smoke today!.;Award-winning cigs, for award-winning stalkers!"
+	icon_state = "cigs-broken4"
+	products = list(/obj/item/storage/fancy/cigarettes = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlboro = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_java = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_midori = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_laika = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_marlborogold = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 0,
+					/obj/item/storage/fancy/cigarettes/cigpack_newports = 0,
+					/obj/item/storage/box/matches = 1,
+					/obj/item/lighter/greyscale = 2,
+					/obj/item/storage/fancy/rollingpapers = 3)
+	refill_canister = /obj/item/vending_refill/cigarette
+//	default_price = 0
+//	extra_price = 0
+//	payment_department = ACCOUNT_SRV
+
 //obj/machinery/vending/cigarette/syndicate
 //	products = list(/obj/item/storage/fancy/cigarettes/cigpack_syndicate = 7,
 //					/obj/item/storage/fancy/cigarettes/cigpack_belomorkanal = 3,					/obj/item/storage/fancy/cigarettes/cigpack_marlboro = 2,

@@ -28,6 +28,33 @@
 	slices_num = 2
 	wine_power = 30
 
+/obj/item/seeds/onion/zona
+	name = "pack of mutant onion seeds"
+	desc = "These seeds grow into onions."
+	icon_state = "seed-onion"
+	species = "zona onion"
+	plantname = "Onion Sprouts"
+	product = /obj/item/reagent_containers/food/snacks/grown/onion/zona
+	lifespan = 20
+	maturation = 3
+	production = 4
+	yield = 6
+	endurance = 25
+	growthstages = 3
+	weed_chance = 3
+	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'
+	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.1, "uranium" = 0.25)
+
+/obj/item/reagent_containers/food/snacks/grown/onion/zona
+	seed = /obj/item/seeds/onion/zona
+	name = "decrepid onion"
+	desc = "Nothing to cry over. This onion looks disguisting,"
+	icon_state = "zonaonion"
+	filling_color = "#C0C9A0"
+	bitesize_mod = 2
+	tastes = list("onions" = 1)
+	wine_power = 30
+
 /obj/item/seeds/onion/red
 	name = "pack of red onion seeds"
 	desc = "For growing exceptionally potent onions."

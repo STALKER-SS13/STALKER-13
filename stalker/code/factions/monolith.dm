@@ -34,7 +34,9 @@
 	suit_store = /obj/item/gun/ballistic/automatic/abakan
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/flashlight/seclite = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/stalker/frag = 2)
-	l_pocket = /obj/item/storage/wallet/stalker
+	l_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 
 /datum/outfit/job/monolith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -60,8 +62,12 @@
 	..()
 	uniform = UNIFORMPICK
 	ears = null
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
-
+	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian)
+	r_pocket = pick(/obj/item/flashlight/lantern,
+				/obj/item/flashlight/seclite,
+				/obj/item/flashlight,
+				/obj/item/flashlight/flare/torch,
+				/obj/item/flashlight/flare)
 /datum/job/monolith_hegumen
 	title = "Monolith Preacher"
 	faction_s = "Monolith"
@@ -93,7 +99,9 @@
 	suit_store = /obj/item/gun/ballistic/automatic/groza
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sp9x39groza = 2, /obj/item/flashlight/seclite = 1, /obj/item/clothing/accessory/patch/monolith = 1, /obj/item/grenade/syndieminibomb/concussion/stalker/frag = 2)
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	r_pocket = /obj/item/storage/wallet/stalker
+	r_pocket = pick(/obj/item/storage/wallet,
+				/obj/item/storage/wallet/brown,
+				/obj/item/storage/wallet/alt)
 	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton)
 
 /datum/outfit/job/monolith_hegumen/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

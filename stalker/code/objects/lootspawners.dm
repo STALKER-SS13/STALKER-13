@@ -3,7 +3,6 @@
 	name = "khabar loot spawner"
 	lootdoubles = 1
 	lootcount = 5
-
 	loot = list(
 				/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 20,
 				/obj/item/storage/firstaid/stalker/civillian = 20,
@@ -20,15 +19,169 @@
 				/obj/item/ammo_box/stalker/b12x70D = 10,
 				/obj/item/ammo_box/stalker/b9x19 = 10,
 				/obj/item/ammo_box/stalker/b9x19P = 10,
-				/obj/item/clothing/suit/hooded/kombez/mercenary = 1,
-				/obj/item/clothing/suit/hooded/kombez/kombez_bandit = 1,
 				/obj/item/clothing/suit/army = 1,
-				/obj/item/clothing/suit/hooded/kozhanka/banditka/coat = 2,
-				/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown = 2,
 				/obj/item/clothing/mask/gas/stalker = 4,
-				/obj/item/reagent_containers/food/snacks/stalker/tomaty = 18,
+				/obj/item/reagent_containers/food/snacks/stalker/fermented/tomaty = 28,
 				/obj/item/reagent_containers/food/snacks/stalker/stew = 18,
 				/obj/item/detector/blink = 4,
+				/obj/item/seeds/potato = 30,
+					/obj/item/seeds/cabbage = 30,
+					/obj/item/seeds/beet/white = 30,
+					/obj/item/seeds/carrot/parsnip = 30,
+					/obj/item/seeds/beet/red = 30,
+					/obj/item/seeds/kudzu = 1,
+					/obj/item/seeds/onion = 30,
+					/obj/item/seeds/potato/sweet = 20,
+					/obj/item/seeds/wheat = 20,
+					/obj/item/seeds/wheat/rice = 30,
+					/obj/item/seeds/carrot = 20,
+					/obj/item/seeds/tomato = 30,
+					/obj/item/seeds/chili/ghost = 1,
+					/obj/item/seeds/tobacco = 30,
+					/obj/item/seeds/cannabis = 10,
+					/obj/item/seeds/cannabis/violetriot = 5,
+					/obj/item/seeds/cannabis/neonpeon = 5,
+					/obj/item/seeds/tobacco/strong = 5,
+				/obj/item/trash/paintcan = 5,
+				/obj/item/trash/teapot = 5,
+				/obj/item/trash/pincers = 5,
+				/obj/item/trash/oldkey = 5,
+				/obj/item/trash/modernkey = 5,
+				/obj/item/trash/crossnecklace = 5,
+				/obj/item/trash/oldvials = 5,
+				/obj/item/trash/binding_material/steelwire = 10,
+				/obj/item/trash/binding_material/steelwire1 = 10,
+				/obj/item/trash/binding_material/wire = 10,
+				/obj/item/trash/binding_material/duct_tape = 10,
+				/obj/item/trash/oldcircuitboard = 5,
+				/obj/item/trash/oldcircuitboard/alt = 5,
+				/obj/item/trash/oldcircuitboard/two = 5,
+				/obj/item/trash/oldcircuitboard/three = 5,
+				/obj/item/trash/oldcircuitboard/four = 5,
+				/obj/item/trash/oldcircuitboard/five = 5,
+				/obj/item/trash/oldcircuitboard/six = 5,
+				/obj/item/trash/oldcircuitboard/seven = 5,
+				/obj/item/c_tube = 25,
+				/obj/item/newspaper = 20,
+				/obj/item/trash/brokenpocketwatch = 10,
+				/obj/item/trash/oldchembottle = 5,
+				/obj/item/trash/brokenpocketwatch = 5,
+				/obj/item/trash/cigs_trash = 5,
+				/obj/item/trash/cigs_trash2 = 5,
+				/obj/item/trash/cigs_trash3 = 5,
+				/obj/item/trash/cigs_trash4 = 5,
+				/obj/item/trash/cigs_trash5 = 5,
+				/obj/item/trash/ashtray1 = 5,
+				/obj/item/trash/ashtray2 = 5,
+				/obj/item/trash/ashtray3 = 5,
+				/obj/item/trash/ashtray4 = 5,
+				/obj/item/trash/metalparts/metaljunk = 5,
+				/obj/item/trash/metalparts/metaljunk/one = 5,
+				/obj/item/trash/metalparts/metaljunk/two = 5,
+				/obj/item/trash/metalparts/metaljunk/three = 5,
+				/obj/item/trash/metalparts/metaljunk/four = 5,
+				/obj/item/trash/metalparts/metaljunk/five = 5,
+				/obj/item/trash/metalparts/metaljunk/six = 5,
+				/obj/item/trash/metalparts/metaljunk/seven = 5,
+				/obj/item/trash/brokedevice/pdabroke/one = 5,
+				/obj/item/trash/brokedevice/pdabroke/two = 5,
+				/obj/item/trash/brokedevice/echobroke/one = 5,
+				/obj/item/trash/brokedevice/echobroke/two = 5,
+				/obj/item/trash/brokedevice/bearbroken/one = 5,
+				/obj/item/trash/brokedevice/bearbroken/two = 5,
+				/obj/item/trash/brokedevice/velesbroke/one = 5,
+				/obj/item/trash/brokedevice/velesbroke/two = 5,
+				/obj/item/trash/metalparts/metalplate/one = 5,
+				/obj/item/trash/metalparts/metalplate/two = 5,
+				/obj/item/trash/brokelock = 5,
+				/obj/item/trash/glassshard = 5,
+				/obj/item/trash/metalparts/scrap = 5,
+				/obj/item/trash/metalparts = 5,
+				/obj/item/trash/shards = 5,
+				/obj/item/trash/pileofbandages = 5,
+				/obj/item/trash/papershreds = 5,
+				/obj/item/trash/oldplank/moldyplank = 5,
+				/obj/item/trash/wornpermit = 5,
+				/obj/item/trash/brokedevice = 5,
+				/obj/item/trash/brokedevice/brokencellphone/two = 5,
+				/obj/item/trash/brokedevice/brokencellphone/three = 5,
+				/obj/item/trash/brokehandmirror = 5,
+				/obj/item/trash/brokensyringe = 5,
+				/obj/item/trash/brokensyringe/two = 5,
+				/obj/item/trash/brokensyringe/three = 5,
+				/obj/item/trash/rustyscissor = 5,
+				/obj/item/trash/binding_material/vhs = 5,
+				/obj/item/trash/brokenvinyl = 5,
+				/obj/item/trash/brokenvinyl/two = 5,
+				/obj/item/trash/brokenvinyl/three = 5,
+				/obj/item/trash/brokenvinyl/four = 5,
+				/obj/item/trash/brokenvinyl/five = 5,
+				/obj/item/trash/brokenvinyl/six = 5,
+				/obj/item/trash/meshwirepatch = 5,
+				/obj/item/trash/meshwirepatch/two = 5,
+				/obj/item/trash/meshwirepatch/three = 5,
+				/obj/item/trash/woodscrap = 5,
+				/obj/item/trash/woodscrap/two = 5,
+				/obj/item/trash/brokecrate = 5,
+				/obj/item/trash/brokecrate/two = 5,
+				/obj/item/trash/nail = 5,
+				/obj/item/trash/nail/alt = 5,
+				/obj/item/trash/nail/rustynails = 5,
+				/obj/item/trash/nail/largerustynail = 5,
+				/obj/item/trash/metalparts/brokenladder = 5,
+				/obj/item/trash/metalparts/brokenpipes = 5,
+				/obj/item/trash/broketrash = 5,
+				/obj/item/trash/binding_material/brokechain = 5,
+				/obj/item/trash/binding_material/brokehook = 5,
+				/obj/item/trash/rustedbadge = 5,
+				/obj/item/trash/spitchew/one = 5,
+				/obj/item/trash/spitchew/two = 5,
+				/obj/item/trash/binding_material/rope = 5,
+				/obj/item/trash/barbwire/barbedwirejumble = 5,
+				/obj/item/trash/binding_material/coil = 5,
+				/obj/item/trash/barbwire/brokebarbwire = 5,
+				/obj/item/trash/tincan = 5,
+				/obj/item/trash/binding_material/ducttape = 5,
+				/obj/item/trash/slate = 5,
+				/obj/item/trash/chairtrash = 5,
+				/obj/item/trash/brokensink = 5,
+				/obj/item/trash/glue/one = 5,
+				/obj/item/trash/glue/two = 5,
+				/obj/item/trash/metalparts/brokenturbine = 5,
+				/obj/item/trash/woodenrods = 5,
+				/obj/item/trash/binding_material = 5,
+				/obj/item/trash/binding_material/woolyarn = 5,
+				/obj/item/trash/claybricks = 5,
+				/obj/item/trash/binding_material/filmtape = 5,
+				/obj/item/trash/dogtag = 5,
+				/obj/item/trash/grassbundle = 5,
+				/obj/item/trash/fueltank = 5,
+				/obj/item/trash/fueltank/large = 5,
+				/obj/item/trash/fueltank/bike = 5,
+				/obj/item/trash/fueltank/bikelarge = 5,
+				/obj/item/trash/anchor = 5,
+				/obj/item/trash/anchor/small = 5,
+				/obj/item/trash/metalparts/busdoor = 5,
+				/obj/item/trash/metalparts/auto_shaft = 5,
+				/obj/item/trash/blown_shotgun = 5,
+				/obj/item/trash/racecar = 5,
+				/obj/item/trash/horn = 5,
+				/obj/item/trash/horn/two = 5,
+				/obj/item/trash/binding_material/chain = 5,
+				/obj/item/trash/igniter = 5,
+				/obj/item/trash/timer = 5,
+				/obj/item/trash/toaster = 5,
+				/obj/item/trash/iron = 5,
+				/obj/item/trash/gear = 5,
+				/obj/item/trash/baseball = 5,
+				/obj/item/trash/brokemic = 5,
+				/obj/item/trash/brokeseclite = 5,
+				/obj/item/trash/brokeheadset = 5,
+				/obj/item/trash/brokephone = 5,
+				/obj/item/trash/oldplank = 5,
+				/obj/item/trash/oldplank/two = 5,
+				/obj/item/trash/oldplank/three = 5,
+				/obj/item/trash/fermentingjar,
 				/obj/nothing = 10
 				)
 
@@ -215,6 +368,71 @@
 				/obj/item/gun/ballistic/automatic/kiparis = 10,
 				/obj/nothing = 60)
 
+/obj/effect/spawner/lootdrop/stalker/weapon/ak74
+	name = "stalker ak74"
+	loot = list(/obj/item/gun/ballistic/automatic/ak74 = 20,
+				/obj/item/gun/ballistic/automatic/ak74/blackout = 20,
+				/obj/item/gun/ballistic/automatic/ak74/black = 20,
+				/obj/item/gun/ballistic/automatic/ak74/camo = 20,
+				/obj/nothing = 35)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles
+	name = "stalker rare rifles"
+	loot = list(/obj/item/gun/ballistic/automatic/sks = 10,
+				/obj/item/gun/ballistic/automatic/fnfal = 10,
+				/obj/item/gun/ballistic/automatic/woodfnfal = 10,
+				/obj/item/gun/ballistic/automatic/famas = 10,
+				/obj/item/gun/ballistic/automatic/aug = 10,
+				/obj/item/gun/ballistic/automatic/akm = 10,
+				/obj/item/gun/ballistic/automatic/vz58 = 10,
+				/obj/item/gun/ballistic/automatic/m16 = 10,
+				/obj/item/gun/ballistic/automatic/m14 = 10,
+				/obj/item/gun/ballistic/automatic/m16a4 = 10,
+				/obj/item/gun/ballistic/automatic/m4 = 10,
+				/obj/item/gun/ballistic/automatic/ar15 = 10,
+				/obj/item/gun/ballistic/automatic/scarh = 10,
+				/obj/item/gun/ballistic/automatic/ak74/blackout = 20,
+				/obj/item/gun/ballistic/automatic/ak74/black = 20,
+				/obj/item/gun/ballistic/automatic/ak74/camo = 20,
+				/obj/nothing = 35)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rarepistols
+	name = "stalker rare pistols"
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/luger = 10,
+				/obj/item/gun/ballistic/automatic/pistol/walther = 10,
+				/obj/item/gun/ballistic/automatic/pistol/aps = 10,
+				/obj/item/gun/ballistic/automatic/pistol/pernach = 10,
+				/obj/item/gun/ballistic/automatic/pistol/mauser = 10,
+				/obj/item/gun/ballistic/automatic/pistol/glock = 10,
+				/obj/item/gun/ballistic/automatic/pistol/tt30 = 10,
+				/obj/item/gun/ballistic/automatic/pistol/fiveseven = 10,
+				/obj/item/gun/ballistic/automatic/pistol/waltherpp = 10,
+				/obj/item/gun/ballistic/automatic/pistol/cz83 = 10,
+				/obj/item/gun/ballistic/automatic/pistol/silvermarta = 10,
+				/obj/nothing = 35)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/raresmgs
+	name = "stalker rare smgs"
+	loot = list(/obj/item/gun/ballistic/automatic/sten = 10,
+				/obj/item/gun/ballistic/automatic/sterling = 10,
+				/obj/item/gun/ballistic/automatic/m3a1 = 10,
+				/obj/item/gun/ballistic/automatic/reising = 10,
+				/obj/item/gun/ballistic/automatic/mp40 = 10,
+				/obj/item/gun/ballistic/automatic/mp3008 = 10,
+				/obj/item/gun/ballistic/automatic/pps43 = 10,
+				/obj/item/gun/ballistic/automatic/bizon = 10,
+				/obj/item/gun/ballistic/automatic/m76 = 10,
+				/obj/item/gun/ballistic/automatic/skorpion = 10,
+				/obj/nothing = 35)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/rareboltaction
+	name = "stalker rare boltactions"
+	loot = list(/obj/item/gun/ballistic/rifle/boltaction/mosin = 10,
+				/obj/item/gun/ballistic/rifle/boltaction/arisaka = 10,
+				/obj/item/gun/ballistic/rifle/boltaction/karabiner = 10,
+				/obj/item/gun/ballistic/rifle/boltaction/springfield = 10,
+				/obj/nothing = 35)
+
 /obj/effect/spawner/lootdrop/stalker/weapon/melee
 	name = "stalker melee"
 	loot = list(/obj/item/kitchen/knife = 20,
@@ -222,6 +440,7 @@
 				/obj/item/kitchen/knife/tourist = 10,
 				/obj/item/melee/tireiron = 10,
 				/obj/item/melee/tireiron2 = 10,
+				/obj/item/melee/baseball_bat = 10,
 				/obj/item/melee/pipe = 10,
 				/obj/item/melee/pipe2 = 10,
 				/obj/nothing = 20)
@@ -229,10 +448,10 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/meleetier2
 	name = "stalker melee"
 	loot = list(/obj/item/kitchen/knife/bayonet = 20,
-				/obj/item/kitchen/knife/ancienthatchet = 15,
-				/obj/item/kitchen/knife/woodhatchet = 15,
+				/obj/item/hatchet/ancienthatchet = 15,
+				/obj/item/hatchet/woodhatchet = 15,
 				/obj/item/melee/halliganbar = 5,
-				/obj/item/kitchen/knife/ancienthatchet = 10,
+				/obj/item/hatchet/ancienthatchet = 10,
 				/obj/item/melee/largewrench = 10,
 				/obj/item/melee/redwrench = 10,
 				/obj/nothing = 20)
@@ -243,7 +462,21 @@
 				/obj/item/kitchen/knife/throwing = 20,
 				/obj/item/kitchen/knife/machete2 = 15,
 				/obj/item/weapon/kitchen/knife/hunting = 15,
-				/obj/item/weapon/kitchen/knife/m9 = 15,
+				/obj/item/weapon/kitchen/knife/m9 = 5,
+				/obj/nothing = 20)
+
+/obj/effect/spawner/lootdrop/stalker/weapon/meleetierrare
+	name = "stalker melee rare"
+	loot = list(/obj/item/kitchen/knife/kukri = 15,
+				/obj/item/kitchen/knife/bolo = 15,
+				/obj/item/kitchen/knife/bowie = 15,
+				/obj/item/kitchen/knife/trench = 15,
+				/obj/item/shovel/entrenching_tool = 15,
+				/obj/item/kitchen/knife/sickle = 15,
+				/obj/item/kitchen/knife/rapier0 = 15,
+				/obj/item/kitchen/knife/foreignsabre = 15,
+				/obj/item/kitchen/knife/machete4 = 15,
+				/obj/item/kitchen/knife/machete3 = 15,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/meleetwohand
@@ -252,12 +485,16 @@
 				/obj/item/twohanded/fireaxe = 20,
 				/obj/item/twohanded/pitchfork = 20,
 				/obj/item/twohanded/bostaff = 20,
+				/obj/item/twohanded/rake = 20,
+				/obj/item/twohanded/required/chainsaw/old = 5,
+				/obj/item/twohanded/required/chainsaw = 5,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/medicine
 	name = "stalker medicine"
 	lootcount = 1
-	loot = list(/obj/item/storage/firstaid/stalker/civillian = 30,
+	loot = list(/obj/item/storage/firstaid/stalker = 20,
+				/obj/item/storage/firstaid/stalker/civillian = 30,
 				/obj/item/storage/firstaid/stalker/military = 20,
 				/obj/item/storage/firstaid/stalker/scientific = 10,
 				/obj/nothing = 40)
@@ -265,7 +502,8 @@
 /obj/effect/spawner/lootdrop/stalker/medicineguarentee
 	name = "stalker medicine"
 	lootcount = 1
-	loot = list(/obj/item/storage/firstaid/stalker/civillian = 50,
+	loot = list(/obj/item/storage/firstaid/stalker = 20,
+				/obj/item/storage/firstaid/stalker/civillian = 50,
 				/obj/item/storage/firstaid/stalker/military = 30,
 				/obj/item/storage/firstaid/stalker/scientific = 20)
 
@@ -296,6 +534,7 @@
 	lootcount = 1
 	loot = list(/obj/item/reagent_containers/food/snacks/stalker/baton = 50,
 				/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 30,
+				/obj/item/reagent_containers/food/snacks/stalker/kolbasa/doctorsausage = 40,
 				/obj/item/reagent_containers/food/snacks/stalker/konserva = 20)
 
 
@@ -358,26 +597,245 @@ obj/nothing/New()
 				/obj/item/trash/pornmagazine/five = 30,
 				/obj/nothing = 70)
 
-/obj/effect/spawner/lootdrop/stalker/junk
-	name = "stalker junk items"
+/obj/effect/spawner/lootdrop/stalker/binding_materials
+	name = "stalker binding materials"
 	lootcount = 1
 	max_spawned = 1
-	loot = list(/obj/item/trash/paintcan = 20,
-				/obj/item/trash/teapot = 20,
-				/obj/item/trash/pincers = 10,
-				/obj/item/trash/oldkey = 20,
-				/obj/item/trash/crossnecklace = 15,
+	loot = list(/obj/item/trash/binding_material/steelwire = 10,
+				/obj/item/trash/binding_material/steelwire1 = 10,
+				/obj/item/trash/binding_material/wire = 10,
+				/obj/item/trash/binding_material/duct_tape = 10,
+				/obj/item/trash/binding_material/vhs = 10,
+				/obj/item/trash/binding_material/brokechain = 10,
+				/obj/item/trash/binding_material/brokehook = 10,
+				/obj/item/trash/binding_material/rope = 10,
+				/obj/item/trash/binding_material/coil = 10,
+				/obj/item/trash/binding_material/ducttape = 10,
+				/obj/item/trash/binding_material = 10,
+				/obj/item/trash/binding_material/woolyarn = 10,
+				/obj/item/trash/binding_material/filmtape = 10,
+				/obj/item/trash/binding_material/chain = 10,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/nail
+	name = "stalker nails"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/nail = 5,
+				/obj/item/trash/nail/alt = 5,
+				/obj/item/trash/nail/rustynails = 5,
+				/obj/item/trash/nail/largerustynail = 5,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/oldcircuitboard
+	name = "stalker old circuit boards"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/oldcircuitboard = 5,
+				/obj/item/trash/oldcircuitboard/alt = 5,
+				/obj/item/trash/oldcircuitboard/two = 5,
+				/obj/item/trash/oldcircuitboard/three = 5,
+				/obj/item/trash/oldcircuitboard/four = 5,
+				/obj/item/trash/oldcircuitboard/five = 5,
+				/obj/item/trash/oldcircuitboard/six = 5,
+				/obj/item/trash/oldcircuitboard/seven = 5,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/cigs_trash
+	name = "stalker cigs trash"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/cigs_trash = 5,
+				/obj/item/trash/cigs_trash2 = 5,
+				/obj/item/trash/cigs_trash3 = 5,
+				/obj/item/trash/cigs_trash4 = 5,
+				/obj/item/trash/cigs_trash5 = 5,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/brokedevice
+	name = "stalker broken devices"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/brokedevice/pdabroke/one = 5,
+				/obj/item/trash/brokedevice/pdabroke/two = 5,
+				/obj/item/trash/brokedevice/echobroke/one = 5,
+				/obj/item/trash/brokedevice/echobroke/two = 5,
+				/obj/item/trash/brokedevice/bearbroken/one = 5,
+				/obj/item/trash/brokedevice/bearbroken/two = 5,
+				/obj/item/trash/brokedevice/velesbroke/one = 5,
+				/obj/item/trash/brokedevice/velesbroke/two = 5,
+				/obj/item/trash/brokedevice = 5,
+				/obj/item/trash/brokedevice/brokencellphone/two = 5,
+				/obj/item/trash/brokedevice/brokencellphone/three = 5,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/metalparts
+	name = "stalker metal parts"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/metalparts/metaljunk = 5,
+				/obj/item/trash/metalparts/metaljunk/one = 5,
+				/obj/item/trash/metalparts/metaljunk/two = 5,
+				/obj/item/trash/metalparts/metaljunk/three = 5,
+				/obj/item/trash/metalparts/metaljunk/four = 5,
+				/obj/item/trash/metalparts/metaljunk/five = 5,
+				/obj/item/trash/metalparts/metaljunk/six = 5,
+				/obj/item/trash/metalparts/metaljunk/seven = 5,
+				/obj/item/trash/metalparts/metalplate/one = 5,
+				/obj/item/trash/metalparts/metalplate/two = 5,
+				/obj/item/trash/metalparts/scrap = 5,
+				/obj/item/trash/metalparts = 5,
+				/obj/item/trash/metalparts/brokenladder = 5,
+				/obj/item/trash/metalparts/brokenpipes = 5,
+				/obj/item/trash/metalparts/brokenturbine = 5,
+				/obj/item/trash/metalparts/busdoor = 5,
+				/obj/item/trash/metalparts/auto_shaft = 5,
+				/obj/nothing = 70)
+
+/obj/effect/spawner/lootdrop/stalker/junk
+	name = "any stalker junk items"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/trash/paintcan = 5,
+				/obj/item/trash/teapot = 5,
+				/obj/item/trash/pincers = 5,
+				/obj/item/trash/oldkey = 5,
+				/obj/item/trash/modernkey = 5,
+				/obj/item/trash/crossnecklace = 5,
 				/obj/item/trash/oldvials = 5,
-				/obj/item/trash/steelwire = 10,
-				/obj/item/trash/steelwire1 = 10,
-				/obj/item/trash/wire = 10,
-				/obj/item/trash/duct_tape = 10,
-				/obj/item/trash/oldcircuitboard = 15,
-				/obj/item/trash/oldcircuitboard/alt = 15,
+				/obj/item/trash/binding_material/steelwire = 10,
+				/obj/item/trash/binding_material/steelwire1 = 10,
+				/obj/item/trash/binding_material/wire = 10,
+				/obj/item/trash/binding_material/duct_tape = 10,
+				/obj/item/trash/oldcircuitboard = 5,
+				/obj/item/trash/oldcircuitboard/alt = 5,
+				/obj/item/trash/oldcircuitboard/two = 5,
+				/obj/item/trash/oldcircuitboard/three = 5,
+				/obj/item/trash/oldcircuitboard/four = 5,
+				/obj/item/trash/oldcircuitboard/five = 5,
+				/obj/item/trash/oldcircuitboard/six = 5,
+				/obj/item/trash/oldcircuitboard/seven = 5,
 				/obj/item/c_tube = 25,
 				/obj/item/newspaper = 20,
 				/obj/item/trash/brokenpocketwatch = 10,
 				/obj/item/trash/oldchembottle = 5,
+				/obj/item/trash/brokenpocketwatch = 5,
+				/obj/item/trash/cigs_trash = 5,
+				/obj/item/trash/cigs_trash2 = 5,
+				/obj/item/trash/cigs_trash3 = 5,
+				/obj/item/trash/cigs_trash4 = 5,
+				/obj/item/trash/cigs_trash5 = 5,
+				/obj/item/trash/ashtray1 = 5,
+				/obj/item/trash/ashtray2 = 5,
+				/obj/item/trash/ashtray3 = 5,
+				/obj/item/trash/ashtray4 = 5,
+				/obj/item/trash/metalparts/metaljunk = 5,
+				/obj/item/trash/metalparts/metaljunk/one = 5,
+				/obj/item/trash/metalparts/metaljunk/two = 5,
+				/obj/item/trash/metalparts/metaljunk/three = 5,
+				/obj/item/trash/metalparts/metaljunk/four = 5,
+				/obj/item/trash/metalparts/metaljunk/five = 5,
+				/obj/item/trash/metalparts/metaljunk/six = 5,
+				/obj/item/trash/metalparts/metaljunk/seven = 5,
+				/obj/item/trash/brokedevice/pdabroke/one = 5,
+				/obj/item/trash/brokedevice/pdabroke/two = 5,
+				/obj/item/trash/brokedevice/echobroke/one = 5,
+				/obj/item/trash/brokedevice/echobroke/two = 5,
+				/obj/item/trash/brokedevice/bearbroken/one = 5,
+				/obj/item/trash/brokedevice/bearbroken/two = 5,
+				/obj/item/trash/brokedevice/velesbroke/one = 5,
+				/obj/item/trash/brokedevice/velesbroke/two = 5,
+				/obj/item/trash/metalparts/metalplate/one = 5,
+				/obj/item/trash/metalparts/metalplate/two = 5,
+				/obj/item/trash/brokelock = 5,
+				/obj/item/trash/glassshard = 5,
+				/obj/item/trash/metalparts/scrap = 5,
+				/obj/item/trash/metalparts = 5,
+				/obj/item/trash/shards = 5,
+				/obj/item/trash/pileofbandages = 5,
+				/obj/item/trash/papershreds = 5,
+				/obj/item/trash/oldplank/moldyplank = 5,
+				/obj/item/trash/wornpermit = 5,
+				/obj/item/trash/brokedevice = 5,
+				/obj/item/trash/brokedevice/brokencellphone/two = 5,
+				/obj/item/trash/brokedevice/brokencellphone/three = 5,
+				/obj/item/trash/brokehandmirror = 5,
+				/obj/item/trash/brokensyringe = 5,
+				/obj/item/trash/brokensyringe/two = 5,
+				/obj/item/trash/brokensyringe/three = 5,
+				/obj/item/trash/rustyscissor = 5,
+				/obj/item/trash/binding_material/vhs = 5,
+				/obj/item/trash/brokenvinyl = 5,
+				/obj/item/trash/brokenvinyl/two = 5,
+				/obj/item/trash/brokenvinyl/three = 5,
+				/obj/item/trash/brokenvinyl/four = 5,
+				/obj/item/trash/brokenvinyl/five = 5,
+				/obj/item/trash/brokenvinyl/six = 5,
+				/obj/item/trash/meshwirepatch = 5,
+				/obj/item/trash/meshwirepatch/two = 5,
+				/obj/item/trash/meshwirepatch/three = 5,
+				/obj/item/trash/woodscrap = 5,
+				/obj/item/trash/woodscrap/two = 5,
+				/obj/item/trash/brokecrate = 5,
+				/obj/item/trash/brokecrate/two = 5,
+				/obj/item/trash/nail = 5,
+				/obj/item/trash/nail/alt = 5,
+				/obj/item/trash/nail/rustynails = 5,
+				/obj/item/trash/nail/largerustynail = 5,
+				/obj/item/trash/metalparts/brokenladder = 5,
+				/obj/item/trash/metalparts/brokenpipes = 5,
+				/obj/item/trash/broketrash = 5,
+				/obj/item/trash/binding_material/brokechain = 5,
+				/obj/item/trash/binding_material/brokehook = 5,
+				/obj/item/trash/rustedbadge = 5,
+				/obj/item/trash/spitchew/one = 5,
+				/obj/item/trash/spitchew/two = 5,
+				/obj/item/trash/binding_material/rope = 5,
+				/obj/item/trash/barbwire/barbedwirejumble = 5,
+				/obj/item/trash/binding_material/coil = 5,
+				/obj/item/trash/barbwire/brokebarbwire = 5,
+				/obj/item/trash/tincan = 5,
+				/obj/item/trash/binding_material/ducttape = 5,
+				/obj/item/trash/slate = 5,
+				/obj/item/trash/chairtrash = 5,
+				/obj/item/trash/brokensink = 5,
+				/obj/item/trash/glue/one = 5,
+				/obj/item/trash/glue/two = 5,
+				/obj/item/trash/metalparts/brokenturbine = 5,
+				/obj/item/trash/woodenrods = 5,
+				/obj/item/trash/binding_material = 5,
+				/obj/item/trash/binding_material/woolyarn = 5,
+				/obj/item/trash/claybricks = 5,
+				/obj/item/trash/binding_material/filmtape = 5,
+				/obj/item/trash/dogtag = 5,
+				/obj/item/trash/grassbundle = 5,
+				/obj/item/trash/fueltank = 5,
+				/obj/item/trash/fueltank/large = 5,
+				/obj/item/trash/fueltank/bike = 5,
+				/obj/item/trash/fueltank/bikelarge = 5,
+				/obj/item/trash/anchor = 5,
+				/obj/item/trash/anchor/small = 5,
+				/obj/item/trash/metalparts/busdoor = 5,
+				/obj/item/trash/metalparts/auto_shaft = 5,
+				/obj/item/trash/blown_shotgun = 5,
+				/obj/item/trash/racecar = 5,
+				/obj/item/trash/horn = 5,
+				/obj/item/trash/horn/two = 5,
+				/obj/item/trash/binding_material/chain = 5,
+				/obj/item/trash/igniter = 5,
+				/obj/item/trash/timer = 5,
+				/obj/item/trash/toaster = 5,
+				/obj/item/trash/iron = 5,
+				/obj/item/trash/gear = 5,
+				/obj/item/trash/baseball = 5,
+				/obj/item/trash/brokemic = 5,
+				/obj/item/trash/brokeseclite = 5,
+				/obj/item/trash/brokeheadset = 5,
+				/obj/item/trash/brokephone = 5,
+				/obj/item/trash/oldplank = 5,
+				/obj/item/trash/oldplank/two = 5,
+				/obj/item/trash/oldplank/three = 5,
+				/obj/item/trash/fermentingjar = 5,
 				/obj/nothing = 80)
 
 /obj/effect/spawner/lootdrop/stalker/flasks
@@ -415,6 +873,8 @@ obj/nothing/New()
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/blacklabelvodka = 10,
 				/obj/item/reagent_containers/food/drinks/bottle/vodka = 20,
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka = 10,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/bluegoose = 10,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka = 10,
 				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/seeds
@@ -422,10 +882,24 @@ obj/nothing/New()
 	lootcount = 1
 	max_spawned = 1
 	loot = list(/obj/item/seeds/potato = 30,
+					/obj/item/seeds/cabbage = 30,
+					/obj/item/seeds/beet/white = 30,
+					/obj/item/seeds/carrot/parsnip = 30,
+					/obj/item/seeds/beet/red = 30,
+					/obj/item/seeds/kudzu = 1,
+					/obj/item/seeds/onion = 30,
+					/obj/item/seeds/lemon = 10,
+					/obj/item/seeds/potato/sweet = 20,
+					/obj/item/seeds/wheat = 20,
+					/obj/item/seeds/wheat/rice = 30,
+					/obj/item/seeds/carrot = 20,
+					/obj/item/seeds/tomato = 30,
+					/obj/item/seeds/chili/ghost = 1,
 					/obj/item/seeds/tobacco = 30,
 					/obj/item/seeds/cannabis = 10,
 					/obj/item/seeds/cannabis/violetriot = 5,
 					/obj/item/seeds/cannabis/neonpeon = 5,
+					/obj/item/seeds/tobacco/strong = 10,
 					/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/bureaucracy
@@ -455,6 +929,17 @@ obj/nothing/New()
 				/obj/item/book/manual/theprophetfriendship = 10,
 				/obj/nothing = 80)
 
+/obj/effect/spawner/lootdrop/stalker/camera
+	name = "stalker camera"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/camera/old = 20,
+				/obj/item/camera/ww2 = 20,
+				/obj/item/camera/coldwar = 20,
+				/obj/item/camera = 20,
+				/obj/nothing = 30)
+
+
 /obj/effect/spawner/lootdrop/stalker/equipment
 	name = "stalker equipment"
 	lootcount = 1
@@ -468,26 +953,46 @@ obj/nothing/New()
 				/obj/item/flashlight/lantern = 10,
 				/obj/nothing = 80)
 
+/obj/effect/spawner/lootdrop/stalker/kitchencondiments
+	name = "stalker kitchen condiments"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/reagent_containers/food/condiment/sugar = 10,
+				/obj/item/reagent_containers/food/condiment/milk = 5,
+				/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
+				/obj/item/reagent_containers/food/condiment/rice = 10,
+				/obj/item/reagent_containers/food/condiment/flour = 10,
+				/obj/item/reagent_containers/food/condiment/saltshaker = 10,
+				/obj/item/reagent_containers/food/condiment/peppermill = 10,
+				/obj/item/reagent_containers/food/condiment/enzyme = 10,
+				/obj/item/reagent_containers/food/condiment/soysauce = 5,
+				/obj/item/reagent_containers/food/condiment/mayonnaise = 10,
+				/obj/item/reagent_containers/food/condiment/pack/hotsauce = 10,
+				/obj/item/trash/fermentingjar
+				)
+
 /obj/effect/spawner/lootdrop/stalker/weapon/armor
 	name = "stalker armor"
 	loot = list(/obj/item/clothing/suit/sixb2 = 15,
 				/obj/item/clothing/suit/hooded/kombez = 15,
 				/obj/item/clothing/suit/hooded/kozhanka/tancoat = 10,
-				/obj/nothing = 50)
+				/obj/nothing = 35)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/armortier2
 	name = "stalker armor tier 2"
 	loot = list(/obj/item/clothing/suit/hooded/kozhanka/ghillie = 15,
 				/obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown = 15,
 				/obj/item/clothing/suit/d2 = 10,
-				/obj/nothing = 50)
+				/obj/nothing = 35)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/helmet
 	name = "stalker helmet"
 	loot = list(/obj/item/clothing/head/ssh = 20,
 				/obj/item/clothing/head/steel = 20,
 				/obj/item/clothing/head/hardhat/tactical/light = 10,
-				/obj/nothing = 50)
+				/obj/item/clothing/head/spheram = 10,
+				/obj/item/clothing/head/skathelmet = 5,
+				/obj/nothing = 35)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/stockparts
 	name = "stalker stock parts"
@@ -502,3 +1007,32 @@ obj/nothing/New()
 /obj/item/stock_parts/hdd1 = 15,
 /obj/item/stock_parts/capacitor = 15,
 /obj/item/stock_parts/scanning_module = 15)
+
+/obj/effect/spawner/lootdrop/stalker/rarefirearms
+	name = "stalker rare firearms"
+	lootcount = 1
+	max_spawned = 1
+	loot = list(/obj/item/gun/ballistic/automatic/sten = 10,
+				/obj/item/gun/ballistic/automatic/sterling = 10,
+				/obj/item/gun/ballistic/automatic/m3a1 = 10,
+				/obj/item/gun/ballistic/automatic/reising = 10,
+				/obj/item/gun/ballistic/automatic/mp40 = 10,
+				/obj/item/gun/ballistic/automatic/mp3008 = 10,
+				/obj/item/gun/ballistic/automatic/pps43 = 10,
+				/obj/item/gun/ballistic/automatic/bizon = 10,
+				/obj/item/gun/ballistic/automatic/sks = 10,
+				/obj/item/gun/ballistic/automatic/fnfal = 10,
+				/obj/item/gun/ballistic/automatic/woodfnfal = 10,
+				/obj/item/gun/ballistic/automatic/famas = 10,
+				/obj/item/gun/ballistic/automatic/aug = 10,
+				/obj/item/gun/ballistic/automatic/akm = 10,
+				/obj/item/gun/ballistic/automatic/m16 = 10,
+				/obj/item/gun/ballistic/automatic/m14 = 10,
+				/obj/item/gun/ballistic/automatic/m16a4 = 10,
+				/obj/item/gun/ballistic/automatic/m4 = 10,
+				/obj/item/gun/ballistic/automatic/ar15 = 10,
+				/obj/item/gun/ballistic/automatic/scarh = 10,
+				/obj/item/gun/ballistic/automatic/ak74/blackout = 20,
+				/obj/item/gun/ballistic/automatic/ak74/black = 20,
+				/obj/item/gun/ballistic/automatic/ak74/camo = 20,
+				/obj/nothing = 10)

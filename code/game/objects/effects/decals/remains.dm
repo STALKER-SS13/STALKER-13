@@ -2,6 +2,7 @@
 	name = "remains"
 	gender = PLURAL
 	icon = 'icons/effects/blood.dmi'
+	var/random_icon_states
 
 /obj/effect/decal/remains/acid_act()
 	visible_message("<span class='warning'>[src] dissolve[gender==PLURAL?"":"s"] into a puddle of sizzling goop!</span>")
@@ -11,7 +12,7 @@
 
 /obj/effect/decal/remains/human
 	desc = "They look like human remains. They have a strange aura about them."
-	icon_state = "remains"
+	random_icon_states = list("remains1", "remains2", "remains3", "remains4", "remains5", "remains6")
 
 /obj/effect/decal/remains/plasma
 	icon_state = "remainsplasma"

@@ -6,12 +6,92 @@
 	max_ammo = 8
 	multiple_sprites = 1
 
+/obj/item/ammo_box/magazine/stalker/m9x18aps
+	name = "aps pistol magazine (9x18mm)"
+	icon_state = "9x18aps"
+	ammo_type = /obj/item/ammo_casing/c9x18
+	caliber = "9x18mm"
+	max_ammo = 20
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x18bizon
+	name = "bizon magazine (9x18mm)"
+	icon_state = "9x18bizon"
+	ammo_type = /obj/item/ammo_casing/c9x18
+	caliber = "9x18mm"
+	max_ammo = 64
+	multiple_sprites = 2
+
 /obj/item/ammo_box/magazine/stalker/m9x19marta
 	name = "pistol magazine (9x19mm)"
 	icon_state = "p9x19"
 	ammo_type = /obj/item/ammo_casing/c9x19
 	caliber = "9x19mm"
 	max_ammo = 15
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19luger
+	name = "luger pistol magazine (9x19mm)"
+	icon_state = "9x19luger"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 8
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19waltherp38
+	name = "walther P38 pistol magazine (9x19mm)"
+	icon_state = "9x19waltherp38"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 8
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19glock
+	name = "glock pistol magazine (9x19mm)"
+	icon_state = "p9x19"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 17
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m57x28fiveseven
+	name = "five seven pistol magazine (5.7×28mm)"
+	icon_state = "fiveseven"
+	ammo_type = /obj/item/ammo_casing/c57x28
+	caliber = "5.7×28mm"
+	max_ammo = 20
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19waltherpp
+	name = "walther PP pistol magazine (9x19mm)"
+	icon_state = "9x19waltherpp"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x18cz83
+	name = "CZ 83 pistol magazine (9x18mm)"
+	icon_state = "9x18cz83"
+	ammo_type = /obj/item/ammo_casing/c9x18
+	caliber = "9x18mm"
+	max_ammo = 12
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/reising
+	name = "reising magazine (.45)"
+	icon_state = "reising"
+	ammo_type = /obj/item/ammo_casing/acp45
+	caliber = ".45"
+	max_ammo = 12
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19mat49
+	name = "mat 49 magazine (9x19mm)"
+	icon_state = "9x19b"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 20
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/sc45
@@ -71,6 +151,62 @@
 	max_ammo = 10
 	multiload = 1
 
+/obj/item/ammo_box/magazine/internal/boltaction/mosin
+	name = "mosin nagant internal magazine"
+	desc = "Oh god, this shouldn't be here"
+	ammo_type = /obj/item/ammo_casing/c762x54
+	caliber = "7.62x54mm"
+	max_ammo = 5
+	multiload = 1
+
+/obj/item/ammo_box/magazine/stalker/m14
+	name = "M14 magazine (7.62x51)"
+	icon_state = "m14"
+	ammo_type = /obj/item/ammo_casing/c762x51
+	caliber = "7.62x51mm"
+	max_ammo = 20
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/scarh
+	name = "SCAR magazine (7.62x51)"
+	icon_state = "scarh"
+	ammo_type = /obj/item/ammo_casing/c762x51
+	caliber = "7.62x51mm"
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/sks
+	name = "SKS magazine (7.62x51)"
+	icon_state = "sks"
+	ammo_type = /obj/item/ammo_casing/sp9x39
+	caliber = "9x39mm"
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/akm
+	name = "AKM magazine (9x39)"
+	icon_state = "556x45"
+	ammo_type = /obj/item/ammo_casing/sp9x39
+	caliber = "9x39mm"
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/vz58
+	name = "vz. 58 magazine (7.62x51)"
+	icon_state = "556x45"
+	ammo_type = /obj/item/ammo_casing/c762x51
+	caliber = "7.62x51mm"
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/fnfal
+	name = "FN FAL magazine (7.62x51)"
+	icon_state = "fnfalmag"
+	ammo_type = /obj/item/ammo_casing/c762x51
+	caliber = "7.62x51mm"
+	max_ammo = 20
+	multiple_sprites = 2
+
 /obj/item/ammo_box/magazine/stalker/usp45
 	name = "pistol magazine (.45)"
 	icon_state = "usp45"
@@ -118,7 +254,6 @@
 	caliber = "test"
 	max_ammo = 200
 
-
 /obj/item/ammo_box/magazine/stalker/m556x45
 	name = "rifle magazine (5.56x45)"
 	icon_state = "556x45"
@@ -133,8 +268,69 @@
 	caliber = ".44"
 	max_ammo = 6
 
+/obj/item/ammo_box/magazine/stalker/pps43
+	name = "PPS43 magazine (7.62x25)"
+	icon_state = "pps43"
+	w_class = 3
+	ammo_type = /obj/item/ammo_casing/c762x25
+	caliber = "7.62x25mm"
+	max_ammo = 35
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/mp40
+	name = "MP-40 magazine (9x19mm)"
+	icon_state = "mp40"
+	w_class = 3
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 32
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/sten
+	name = "sten MK II magazine (9x19mm)"
+	icon_state = "sten"
+	w_class = 3
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 32
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/sterling
+	name = "sterling magazine (9x19mm)"
+	icon_state = "sterling"
+	w_class = 3
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 32
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m3a1
+	name = "M3A1 grease gun magazine (9x19mm)"
+	icon_state = "m3a1"
+	w_class = 3
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19m76
+	name = "S&W M76 magazine (9x19mm)"
+	icon_state = "m76"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 36
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/m9x19skorpion
+	name = "skorpion magazine (9x19mm)"
+	icon_state = "skorpion"
+	ammo_type = /obj/item/ammo_casing/c9x19
+	caliber = "9x19mm"
+	max_ammo = 20
+	multiple_sprites = 2
+
 /obj/item/ammo_box/magazine/stalker/ppsh
-	name = "PPSh drum magazine"
+	name = "PPSh drum magazine (7.62x25)"
 	icon_state = "ppsh"
 	w_class = 3
 	ammo_type = /obj/item/ammo_casing/c762x25
@@ -162,6 +358,22 @@
 	ammo_type = /obj/item/ammo_casing/c762x25
 	caliber = "7.62x25mm"
 	max_ammo = 8
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/mauser
+	name = "mauser pistol magazine (7.62x25mm)"
+	icon_state = "mausermag"
+	ammo_type = /obj/item/ammo_casing/c762x25
+	caliber = "7.62x25mm"
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/stalker/mauser/ext
+	name = "extended mauser pistol magazine (7.62x25mm)"
+	icon_state = "mausermagext"
+	ammo_type = /obj/item/ammo_casing/c762x25
+	caliber = "7.62x25mm"
+	max_ammo = 20
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/kiparis

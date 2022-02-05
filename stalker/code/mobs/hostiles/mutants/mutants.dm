@@ -12,6 +12,7 @@
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
+	var/random_butcher_results
 /*
 /mob/living/simple_animal/hostile/mutant/death(gibbed)
 	..()
@@ -70,7 +71,9 @@
 	speak_emote = list("whines", "roars")
 	emote_see = list("barks!")
 	faction = list("stalker_mutants1")
-	attack_sound = 'stalker/sound/mobs/mutants/attack/dog_attack.ogg'
+	attack_sound = list('stalker/sound/mobs/mutants/attack/dog_attack.ogg',
+						'stalker/sound/mobs/mutants/attack/dog_attack2.ogg',
+						'stalker/sound/mobs/mutants/attack/dog_attack3.ogg')
 	idle_sounds = list('stalker/sound/mobs/mutants/idle/bdog_idle_1.ogg',
 						'stalker/sound/mobs/mutants/idle/bdog_idle_2.ogg',
 						'stalker/sound/mobs/mutants/idle/bdog_idle_3.ogg',
@@ -82,7 +85,7 @@
 	fearborder = 10
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	healable = 1
-	robust_searching = 1
+	robust_searching = 0
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	see_in_dark = 4
 	deathmessage = "lets out a pained whine before falling on its side!"
@@ -91,8 +94,8 @@
 	maxbodytemp = 1500
 	environment_smash = 0
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/dog_tail = 1)
-	//random_butcher_results = 1
+	random_butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat = 1)
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
 	rating_add = 25
@@ -125,12 +128,15 @@
 	icon_living = "snork"
 	icon_dead = "snork_dead"
 	attacktext = "claws at"
-	speak_emote = list("growls", "roars")
-	emote_see = list("growls!", "roars!")
-	maxHealth = 70
+	speak_emote = list("growls", "roars", "sneers")
+	emote_see = list("growls!", "roars!", "sneers")
+	maxHealth = 120
 	healable = 1
 	melee_damage_lower = 20
-	attack_sound = 'stalker/sound/mobs/mutants/attack/snork_attack.ogg'
+	attack_sound = list('stalker/sound/mobs/mutants/attack/snork_attack.ogg',
+						'stalker/sound/mobs/mutants/attack/snork_attack1.ogg',
+						'stalker/sound/mobs/mutants/attack/snork_attack2.ogg'
+						)
 	idle_sounds = list('stalker/sound/mobs/mutants/idle/snork_idle_1.ogg',
 						'stalker/sound/mobs/mutants/idle/snork_idle_2.ogg',
 						'stalker/sound/mobs/mutants/idle/snork_idle_3.ogg')
@@ -144,15 +150,16 @@
 	faction = list("stalker_mutants1", "monolith_forces")
 	del_on_death = 0
 	//environment_smash = 1
-	robust_searching = 1
+	robust_searching = 0
 	deathmessage = "seizes up and falls limp!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/snork_leg = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/snork_leg = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/snork_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	ranged = 1
 	ranged_cooldown = 1 //By default, start the Goliath with his cooldown off so that people can run away quickly on first sight
-	ranged_cooldown_time = 4
+	ranged_cooldown_time = 2
 
 	attack_type = "claw"
 	var/leaping = 0
@@ -202,7 +209,6 @@
 		if(leaping)
 			leaping = 0
 			update_icons()
-			//update_canmove()
 
 /mob/living/simple_animal/hostile/mutant/flesh
 	name = "flesh"
@@ -217,10 +223,13 @@
 	attacktext = "crashes into"
 	speak_emote = list("grunts")
 	emote_see = list("shrieks aggressively!")
-	maxHealth = 40
+	maxHealth = 60
 	healable = 5
 	melee_damage_lower = 10
-	attack_sound = 'stalker/sound/mobs/mutants/attack/flesh_attack.ogg'
+	attack_sound = list('stalker/sound/mobs/mutants/attack/flesh_attack.ogg',
+						'stalker/sound/mobs/mutants/attack/flesh_attack1.ogg',
+						'stalker/sound/mobs/mutants/attack/flesh_attack2.ogg',
+						'stalker/sound/mobs/mutants/attack/flesh_attack3.ogg')
 	idle_sounds = list('stalker/sound/mobs/mutants/idle/flesh_idle_1.ogg',
 						'stalker/sound/mobs/mutants/idle/flesh_idle_2.ogg')
 	deathsound = 'stalker/sound/mobs/mutants/death/flesh_death.ogg'
@@ -236,7 +245,8 @@
 	robust_searching = 1
 	deathmessage = "stops dead and falls over itself!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/flesh_eye = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/flesh_eye = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/flesh_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
@@ -245,20 +255,20 @@
 	vision_range = 15
 	aggro_vision_range = 15
 
-/mob/living/simple_animal/hostile/mutant/kaban
+/mob/living/simple_animal/hostile/mutant/boar
 	name = "boar"
 	desc = "While less touched by mutation physically, as compared to other mutants, the Boars of the Zone remains ugly and loathsome. The smell coming from its mouth smells of carrion and grass. Its posture shows that he is able to go at full speed towards an enemy, so staying away would be the best option to kill him."
 	turns_per_move = 15
 	speed = 5
 	a_intent = "harm"
 	search_objects = 1
-	icon_state = "kaban"
-	icon_living = "kaban"
-	icon_dead = "kaban_dead"
+	icon_state = "boar"
+	icon_living = "boar"
+	icon_dead = "boar_dead"
 	attacktext = "crashes into"
 	speak_emote = list("grunts")
 	emote_see = list("grunts aggressively!")
-	maxHealth = 150
+	maxHealth = 180
 	healable = 1
 	melee_damage_lower = 25
 	attack_sound = 'stalker/sound/mobs/mutants/attack/boar_attack.ogg'
@@ -278,7 +288,8 @@
 	robust_searching = 1
 	deathmessage = "collapses to the ground!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/boar_leg = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/boar_leg = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/boar_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "smash"
@@ -311,7 +322,11 @@
 	maxHealth = 300
 	healable = 1
 	melee_damage_lower = 30
-	attack_sound = 'stalker/sound/mobs/mutants/attack/bloodsucker_attack.ogg'
+	attack_sound = list('stalker/sound/mobs/mutants/attack/bloodsucker_attack.ogg',
+						'stalker/sound/mobs/mutants/attack/bloodsucker_attack1.ogg',
+						'stalker/sound/mobs/mutants/attack/bloodsucker_attack2.ogg',
+						'stalker/sound/mobs/mutants/attack/bloodsucker_attack3.ogg'
+						)
 	idle_sounds =	list('stalker/sound/mobs/mutants/idle/bloodsucker_idle_1.ogg'
 						)
 	deathsound = 'stalker/sound/mobs/mutants/death/bloodsucker_death.ogg'
@@ -326,7 +341,8 @@
 	robust_searching = 1
 	deathmessage = "chokes up blood and falls to the ground!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/bloodsucker = 1, /obj/item/stalker/loot/bloodsucker = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/bloodsucker = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/bloodsucker_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "claw"
@@ -388,7 +404,11 @@
 	maxHealth = 80
 	healable = 1
 	melee_damage_lower = 15
-	attack_sound = 'stalker/sound/mobs/mutants/attack/pdog_attack.ogg'
+	attack_sound = list('stalker/sound/mobs/mutants/attack/pdog_attack.ogg',
+							'stalker/sound/mobs/mutants/attack/pdog_attack1.ogg',
+							'stalker/sound/mobs/mutants/attack/pdog_attack2.ogg',
+							'stalker/sound/mobs/mutants/attack/pdog_attack3.ogg',
+						)
 	idle_sounds =	list('stalker/sound/mobs/mutants/idle/pdog_idle_1.ogg',
 						'stalker/sound/mobs/mutants/idle/pdog_idle_2.ogg',
 						'stalker/sound/mobs/mutants/idle/pdog_idle_3.ogg',
@@ -406,7 +426,8 @@
 	robust_searching = 1
 	deathmessage = "makes a sinister howl before falling on its side!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/pseudo_tail = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/pseudo_tail = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/pseudo_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "bite"
@@ -448,7 +469,8 @@
 	robust_searching = 1
 	deathmessage = "screams in agony, straining your mind with its last breath!"
 	layer = MOB_LAYER - 0.1
-	butcher_results = list(/obj/item/stalker/loot/controller_brain = 1)
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/controller_brain = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/controller_meat = 1)
 	//random_butcher_results = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	attack_type = "claw"
@@ -558,7 +580,7 @@
 	robust_searching = 1
 	melee_damage_upper = 25
 	melee_damage_lower = 15
-	loot = list(/obj/item/stalker/loot/poltergeist_skin)
+	loot = list(/obj/item/stalker/loot/mutantparts/poltergeist_skin)
 	attack_sound = 	list('stalker/sound/mobs/mutants/special/poltergeist/attack_0.ogg',
 						'stalker/sound/mobs/mutants/special/poltergeist/attack_1.ogg',
 						'stalker/sound/mobs/mutants/special/poltergeist/attack_2.ogg',
@@ -627,3 +649,359 @@
 /mob/living/simple_animal/hostile/mutant/poltergeist/death()
 	..()
 	gib()
+
+/mob/living/simple_animal/hostile/mutant/rat
+	name = "rat mutant"
+	desc = "This rat has become enlarged and pulsing with energy and musculature. Its ragged, decrepid form reeks of putrescent filth and pestilence."
+	turns_per_move = 15
+	speed = 1
+	a_intent = "harm"
+	harm_intent_damage = 5
+	icon_state = "rat"
+	icon_living = "rat"
+	icon_dead = "rat_dead"
+	attacktext = "chomps"
+	search_objects = 1
+	speak_emote = list("squeaks", "SQUEAKS")
+	emote_see = list("squeaks!","SQUEAKS!")
+	faction = list("stalker_mutants1")
+	attack_sound = 'sound/effects/mousesqueek.ogg'
+	idle_sounds = list('sound/effects/mousesqueek.ogg')
+	deathsound = 'sound/effects/mousesqueek.ogg'
+	melee_damage_lower = 5
+	melee_damage_upper = 10
+	maxHealth = 20
+	fearborder = 10
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	healable = 1
+	robust_searching = 1
+	see_invisible = SEE_INVISIBLE_MINIMUM
+	see_in_dark = 4
+	deathmessage = "lets out a pained squeak before falling on its side!"
+	del_on_death = 0
+	minbodytemp = 0
+	maxbodytemp = 1500
+	environment_smash = 0
+	layer = MOB_LAYER - 0.1
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/rat_tail = 1,
+							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/rat_meat = 1)
+	//random_butcher_results = 1
+	attack_type = "bite"
+	move_to_delay = 1.2 //Real speed of a mob
+	rating_add = 25
+	vision_range = 15
+	aggro_vision_range = 15
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp
+	name = "zombie"
+	desc = "A shambling hollow corpse who is forever lost to the Zone."
+	icon_state = "zombiesimp"
+	icon_living = "zombiesimp"
+	icon_dead = "zombiesimp_dead"
+	ranged = 0
+	retreat_distance = 5
+	minimum_distance = 5
+	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
+	speak_chance = 1
+	turns_per_move = 5
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 0
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	maxHealth = 125
+	health = 125
+	fearless = 1
+	fearborder = 20
+	search_objects = 1
+	AIStatus = AI_ON
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 15
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idle_sounds =	list('stalker/sound/mobs/mutants/idle/zombie_idle_1.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_2.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_3.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_4.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_5.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_6.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_7.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_8.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_9.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_10.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_11.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_12.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_13.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_14.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_15.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_16.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_17.ogg'
+						)
+	deathsound = list('stalker/sound/mobs/mutants/death/zombie_die_0.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_1.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_2.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_3.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_4.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_5.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_6.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_7.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_8.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_9.ogg'
+						)
+	a_intent = INTENT_HARM
+	faction = list("stalker_mutants1", "monolith_forces")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	dodging = TRUE
+	rapid_melee = 2
+	do_footstep = TRUE
+
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/New()
+	..()
+	if(prob(5))
+		icon_state = "zombiesimp1"
+		icon_living = "zombiesimp1"
+		icon_dead = "zombiesimp1_dead"
+	if(prob(5))
+		icon_state = "zombiesimp2"
+		icon_living = "zombiesimp2"
+		icon_dead = "zombiesimp2_dead"
+	if(prob(5))
+		icon_state = "zombiesimp3"
+		icon_living = "zombiesimp3"
+		icon_dead = "zombiesimp3_dead"
+	if(prob(5))
+		icon_state = "zombiesimp4"
+		icon_living = "zombiesimp4"
+		icon_dead = "zombiesimp4_dead"
+	if(prob(5))
+		icon_state = "zombiesimp5"
+		icon_living = "zombiesimp5"
+		icon_dead = "zombiesimp5_dead"
+	if(prob(5))
+		icon_state = "zombiesimp6"
+		icon_living = "zombiesimp6"
+		icon_dead = "zombiesimp6_dead"
+	if(prob(5))
+		icon_state = "zombiesimp7"
+		icon_living = "zombiesimp7"
+		icon_dead = "zombiesimp7_dead"
+	if(prob(5))
+		icon_state = "zombiesimp8"
+		icon_living = "zombiesimp8"
+		icon_dead = "zombiesimp8_dead"
+	if(prob(5))
+		icon_state = "zombiesimp9"
+		icon_living = "zombiesimp9"
+		icon_dead = "zombiesimp9_dead"
+	if(prob(5))
+		icon_state = "zombiesimp10"
+		icon_living = "zombiesimp10"
+		icon_dead = "zombiesimp10_dead"
+	if(prob(5))
+		icon_state = "zombiesimp11"
+		icon_living = "zombiesimp11"
+		icon_dead = "zombiesimp11_dead"
+	if(prob(5))
+		icon_state = "zombiesimp12"
+		icon_living = "zombiesimp12"
+		icon_dead = "zombiesimp12_dead"
+	if(prob(5))
+		icon_state = "zombiesimp13"
+		icon_living = "zombiesimp13"
+		icon_dead = "zombiesimp13_dead"
+	if(prob(5))
+		icon_state = "zombiesimp14"
+		icon_living = "zombiesimp14"
+		icon_dead = "zombiesimp14_dead"
+	if(prob(5))
+		icon_state = "zombiesimp15"
+		icon_living = "zombiesimp15"
+		icon_dead = "zombiesimp15_dead"
+	if(prob(5))
+		icon_state = "zombiesimp16"
+		icon_living = "zombiesimp16"
+		icon_dead = "zombiesimp16_dead"
+	if(prob(5))
+		icon_state = "zombiesimp17"
+		icon_living = "zombiesimp17"
+		icon_dead = "zombiesimp17_dead"
+	if(prob(5))
+		icon_state = "zombiesimp18"
+		icon_living = "zombiesimp18"
+		icon_dead = "zombiesimp18_dead"
+	if(prob(5))
+		icon_state = "zombiesimp19"
+		icon_living = "zombiesimp19"
+		icon_dead = "zombiesimp19_dead"
+	if(prob(5))
+		icon_state = "zombiesimp20"
+		icon_living = "zombiesimp20"
+		icon_dead = "zombiesimp20_dead"
+	if(prob(5))
+		icon_state = "zombiesimp21"
+		icon_living = "zombiesimp21"
+		icon_dead = "zombiesimp21_dead"
+	if(prob(5))
+		icon_state = "zombiesimp22"
+		icon_living = "zombiesimp22"
+		icon_dead = "zombiesimp22_dead"
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged
+	name = "zombie"
+	desc = "A shambling hollow corpse who is forever lost to the Zone."
+	icon_state = "zombiesimp"
+	icon_living = "zombiesimp"
+	icon_dead = "zombiesimp_dead"
+	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
+	speak_chance = 80
+	turns_per_move = 5
+	ranged = 1
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 0
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	maxHealth = 125
+	health = 125
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 15
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idle_sounds =	list('stalker/sound/mobs/mutants/idle/zombie_idle_1.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_2.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_3.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_4.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_5.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_6.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_7.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_8.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_9.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_10.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_11.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_12.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_13.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_14.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_15.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_16.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_17.ogg'
+						)
+	deathsound = list('stalker/sound/mobs/mutants/death/zombie_die_0.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_1.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_2.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_3.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_4.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_5.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_6.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_7.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_8.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_9.ogg'
+						)
+	a_intent = INTENT_HARM
+	faction = list("stalker_mutants1", "monolith_forces")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	dodging = TRUE
+	rapid_melee = 2
+	do_footstep = TRUE
+	ranged_cooldown = 1
+	ranged_cooldown_time = 2
+	casingtype = /obj/item/ammo_casing/c45
+	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/New()
+	..()
+	if(prob(5))
+		icon_state = "zombiesimp1"
+		icon_living = "zombiesimp1"
+		icon_dead = "zombiesimp1_dead"
+	if(prob(5))
+		icon_state = "zombiesimp2"
+		icon_living = "zombiesimp2"
+		icon_dead = "zombiesimp2_dead"
+	if(prob(5))
+		icon_state = "zombiesimp3"
+		icon_living = "zombiesimp3"
+		icon_dead = "zombiesimp3_dead"
+	if(prob(5))
+		icon_state = "zombiesimp4"
+		icon_living = "zombiesimp4"
+		icon_dead = "zombiesimp4_dead"
+	if(prob(5))
+		icon_state = "zombiesimp5"
+		icon_living = "zombiesimp5"
+		icon_dead = "zombiesimp5_dead"
+	if(prob(5))
+		icon_state = "zombiesimp6"
+		icon_living = "zombiesimp6"
+		icon_dead = "zombiesimp6_dead"
+	if(prob(5))
+		icon_state = "zombiesimp7"
+		icon_living = "zombiesimp7"
+		icon_dead = "zombiesimp7_dead"
+	if(prob(5))
+		icon_state = "zombiesimp8"
+		icon_living = "zombiesimp8"
+		icon_dead = "zombiesimp8_dead"
+	if(prob(5))
+		icon_state = "zombiesimp9"
+		icon_living = "zombiesimp9"
+		icon_dead = "zombiesimp9_dead"
+	if(prob(5))
+		icon_state = "zombiesimp10"
+		icon_living = "zombiesimp10"
+		icon_dead = "zombiesimp10_dead"
+	if(prob(5))
+		icon_state = "zombiesimp11"
+		icon_living = "zombiesimp11"
+		icon_dead = "zombiesimp11_dead"
+	if(prob(5))
+		icon_state = "zombiesimp12"
+		icon_living = "zombiesimp12"
+		icon_dead = "zombiesimp12_dead"
+	if(prob(5))
+		icon_state = "zombiesimp13"
+		icon_living = "zombiesimp13"
+		icon_dead = "zombiesimp13_dead"
+	if(prob(5))
+		icon_state = "zombiesimp14"
+		icon_living = "zombiesimp14"
+		icon_dead = "zombiesimp14_dead"
+	if(prob(5))
+		icon_state = "zombiesimp15"
+		icon_living = "zombiesimp15"
+		icon_dead = "zombiesimp15_dead"
+	if(prob(5))
+		icon_state = "zombiesimp16"
+		icon_living = "zombiesimp16"
+		icon_dead = "zombiesimp16_dead"
+	if(prob(5))
+		icon_state = "zombiesimp17"
+		icon_living = "zombiesimp17"
+		icon_dead = "zombiesimp17_dead"
+	if(prob(5))
+		icon_state = "zombiesimp18"
+		icon_living = "zombiesimp18"
+		icon_dead = "zombiesimp18_dead"
+	if(prob(5))
+		icon_state = "zombiesimp19"
+		icon_living = "zombiesimp19"
+		icon_dead = "zombiesimp19_dead"
+	if(prob(5))
+		icon_state = "zombiesimp20"
+		icon_living = "zombiesimp20"
+		icon_dead = "zombiesimp20_dead"
+	if(prob(5))
+		icon_state = "zombiesimp21"
+		icon_living = "zombiesimp21"
+		icon_dead = "zombiesimp21_dead"
+	if(prob(5))
+		icon_state = "zombiesimp22"
+		icon_living = "zombiesimp22"
+		icon_dead = "zombiesimp22_dead"
+

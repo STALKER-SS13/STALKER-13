@@ -92,7 +92,7 @@
 #define CAT_BREAD	"Breads"
 #define CAT_BURGER	"Burgers"
 #define CAT_CAKE	"Cakes"
-#define CAT_EGG	"Egg-Based Food"
+#define CAT_EGG		"Egg-Based Food"
 #define CAT_MEAT	"Meats"
 #define CAT_MISCFOOD	"Misc. Food"
 #define CAT_PASTRY	"Pastries"
@@ -102,6 +102,13 @@
 #define CAT_SANDWICH	"Sandwiches"
 #define CAT_SOUP	"Soups"
 #define CAT_SPAGHETTI	"Spaghettis"
+#define CAT_GOULASH	 "Goulashes"
+#define CAT_SHISHKEBAB	 "Shishkebabs"
+#define CAT_FERMENTED	 "Fermented"
+#define CAT_PASHTET	 "Pashtets"
+#define CAT_CORNED	 "Corned"
+#define CAT_SOUPS	 "Soups"
+#define CAT_RICEDISH	 "Rice Dishes"
 
 #define RCD_FLOORWALL 1
 #define RCD_AIRLOCK 2

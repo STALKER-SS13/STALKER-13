@@ -11,6 +11,12 @@
 /obj/item/clothing/under/color/switer/dark
 	icon_state = "switer2"
 
+/obj/item/clothing/under/color/switer/red
+	icon_state = "switer3"
+
+/obj/item/clothing/under/color/switer/jeans
+	icon_state = "switer4"
+
 /obj/item/clothing/under/color/sidor
 	name = "old suit"
 	desc = "Someone who wears this means business."

@@ -340,6 +340,10 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Bubble",				"Bubble",							/obj/item/artifact/bubble,					12000,	ROOKIE,	sale_price = 15000),
 		new /datum/data/stalker_equipment("Mica",				"Mica",								/obj/item/artifact/mica,					30000,	ROOKIE,	sale_price = 20000),
 		new /datum/data/stalker_equipment("Firefly",			"Firefly",							/obj/item/artifact/firefly,					90000,	ROOKIE,	sale_price = 40000),
+		new /datum/data/stalker_equipment("Thorn",				"Thorn",							/obj/item/artifact/thorn,					5000,	ROOKIE,	sale_price = 2500),
+		new /datum/data/stalker_equipment("Urchin",				"Urchin",							/obj/item/artifact/urchin,					15000,	ROOKIE,	sale_price = 7500),
+		new /datum/data/stalker_equipment("Slug",				"Slug",								/obj/item/artifact/slug,					12500,	ROOKIE,	sale_price = 3500),
+		new /datum/data/stalker_equipment("Slime",				"Slime",							/obj/item/artifact/slug,					7500,	ROOKIE,	sale_price = 2500),
   	/////////////////////////////////	Мусор	//////////////////////////////////////////////
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva,						400,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/MREkonserva1,			200,	ROOKIE),

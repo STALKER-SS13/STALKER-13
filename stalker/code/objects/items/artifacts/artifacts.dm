@@ -62,7 +62,7 @@
 /obj/item/artifact/meduza
 	name = "jellyfish"
 	desc = "This gravitational artifact attracts and absorbs radioactive particles, reducing the effects of radiation on the body. Very common in the Zone and is unofficially used outside the Zone for treating acute radiation sickness in exceptional circumstances."
-	icon_state = "meduza"
+	icon_state = "jellyfish"
 	art_armor = list()
 	radiation = -2
 	level_s = 1
@@ -135,7 +135,7 @@
 /obj/item/artifact/pustishka
 	name = "shell"
 	desc = "Degenerate case of the Electra anomaly activity. Apparently, such a remarkable rounded shape can be obtained by subjecting the anomaly to thermal action. Expensive artifact."
-	icon_state = "pustishka"
+	icon_state = "shell"
 	art_armor = list(energy = 30)
 	radiation = 2
 	level_s = 3
@@ -184,6 +184,7 @@
 	name = "mama's beads"
 	desc = "Much about this artifact remains a complete mystery to scientists. At the same time, it is known for certain that emissions produced by pulses in its thicker sections force blood in open wounds to clot quicker, forming a protective scab. One of the most noticeable effects of this artifact is the increased speed of wound healing. Emits radiation."
 	icon_state = "mamini_busi"
+	icon_state = "mamas_beads"
 	art_armor = list()
 	radiation = 5
 	level_s = 4
@@ -242,7 +243,7 @@
 									B = D
 									break
 
-						B.volume += 0.5
+						B.volume += 4
 	return 1
 
 /obj/item/artifact/firefly
@@ -261,7 +262,101 @@
 		mob.adjustBruteLoss(-0.5)
 	return 1
 
-	//ПОЯС
+/obj/item/artifact/thorn
+	name = "thorn"
+	desc = "The result of the interaction between the anomaly Burnt Fuzz and the body of a careless stalker. The Thorn artifact pokes the body of its owner, no matter what. But it also helps clean the body of radionucliodes. Quite widespread and cheap."
+	eng_desc = "The result of the interaction between the anomaly Burnt Fuzz and the body of a careless stalker. The Thorn artifact pokes the body of its owner, no matter what. But it also helps clean the body of radionucliodes. Quite widespread and cheap."
+	icon_state = "thorn"
+	radiation = -1
+	level_s = 1
+
+/obj/item/artifact/thorn/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon))
+		var/mob/living/carbon/mob = user
+		mob.bleed(1)
+	return 1
+
+/obj/item/artifact/urchin
+	name = "urchin"
+	desc = "The anomaly Burnt Fuzz very rarely gives rise to this artifact. Blood pressure rises, the body gets rid of a large amount of red blood cells. But along with them the stored radiation leaves the body as well. In his fundamental work titled \"Ionization and polarization of the components of rare artifacts\", Sakharov noted that the content of this formation has a critical stability, and it's not realistic to create such an artifact in lab conditions in the next ten years."
+	eng_desc = "The anomaly Burnt Fuzz very rarely gives rise to this artifact. Blood pressure rises, the body gets rid of a large amount of red blood cells. But along with them the stored radiation leaves the body as well. In his fundamental work titled \"Ionization and polarization of the components of rare artifacts\", Sakharov noted that the content of this formation has a critical stability, and it's not realistic to create such an artifact in lab conditions in the next ten years."
+	icon_state = "urchin"
+	radiation = -3
+	level_s = 4
+
+/obj/item/artifact/urchin/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon))
+		var/mob/living/carbon/mob = user
+		mob.bleed(1)
+	return 1
+
+/obj/item/artifact/slug
+	name = "slug"
+	desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
+	eng_desc = "Formed by the \"Fruit Punch\" anomaly. The negative qualities of this artifact are compensated by the fact that it heightens the coagulation quality of blood. It's not often that one runs into such an artifact, and they pay well for it too."
+	icon_state = "slug"
+	art_armor = list(laser = -10, bio = -10)
+	radiation = 0
+	level_s = 2
+
+/obj/item/artifact/slug/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		if(!H.bleedsuppress) //so you can't stack bleed suppression
+			H.suppress_bloodloss(0.20)
+
+			if(H.stat != DEAD && H.bodytemperature >= 170)
+
+				var/blood_volume = round(H.reagents.get_reagent_amount("blood"))
+				if(blood_volume < 560 && blood_volume)
+
+					var/datum/reagent/blood/B = locate() in H.reagents.reagent_list
+					if(B)
+						if(B.data["donor"] != src) //If it's not theirs, then we look for theirs
+							for(var/datum/reagent/blood/D in H.reagents.reagent_list)
+								if(D.data["donor"] == src)
+									B = D
+									break
+
+						B.volume += 2.6
+	return 1
+
+/obj/item/artifact/slime
+	name = "slime"
+	desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
+	eng_desc = "It is certain that this artifact is created by the anomaly called \"Fruit Punch\". When carried on the belt, the wounds bleed less, although the body of its owner becomes vulnerable to various burns."
+	icon_state = "slime"
+	art_armor = list(laser = -10, bio = -10)
+	radiation = 0
+	level_s = 1
+
+/obj/item/artifact/slime/Think(mob/user)
+	if(!..()) return 0
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		if(!H.bleedsuppress) //so you can't stack bleed suppression
+			H.suppress_bloodloss(0.20)
+
+			if(H.stat != DEAD && H.bodytemperature >= 170)
+
+				var/blood_volume = round(H.reagents.get_reagent_amount("blood"))
+				if(blood_volume < 560 && blood_volume)
+
+					var/datum/reagent/blood/B = locate() in H.reagents.reagent_list
+					if(B)
+						if(B.data["donor"] != src) //If it's not theirs, then we look for theirs
+							for(var/datum/reagent/blood/D in H.reagents.reagent_list)
+								if(D.data["donor"] == src)
+									B = D
+									break
+
+						B.volume += 2.6
+	return 1
+
+	//BELTS
 /obj/item/storage/belt/stalker
 	name = "artifact belt"
 	desc = "Special belt for artifacts."

@@ -153,7 +153,7 @@
 	rack_sound = 'stalker/sound/weapons/pump/spsa_pump.ogg'
 	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
 
-///////////////////////////// Винтовки //////////////////////////////////////////
+///////////////////////////// Bolt-actions //////////////////////////////////////////
 
 /obj/item/gun/ballistic/rifle/boltaction/enfield
 	name = "Lee Enfield"
@@ -180,7 +180,7 @@
 	name = "mosin-nagant"
 	desc = "A heavy and versatile rifle which has served the Soviet Union for over a century, chambered in 7.62×54mm cartridge."
 	icon_state = "mosin"
-	item_state = "rifle"
+	item_state = "mosin"
 	durability = 200
 	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
@@ -196,6 +196,25 @@
 	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
 	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
 	can_scope = 1
+
+obj/item/gun/ballistic/rifle/boltaction/mosinobrez
+	name = "mosin-nagant sawnoff"
+	desc = "Possibly one of the worst engineering ideas ever to stumble into someone's head. If you manage to kill someone with this (except yourself), then you're beyond robust."
+	icon_state = "mosin-obrez"
+	item_state = "mosin-obrez"
+	durability = 160
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
+	recoil = 3
+	w_class = 2
+	randomspread = 1.6
+	spread = 6
+	force = 15
+	damagelose = 0.3
+	weapon_weight = WEAPON_MEDIUM
+	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
+	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
+	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
+	can_scope = 0
 
 /obj/item/gun/ballistic/rifle/boltaction/arisaka
 	name = "arisaka"
@@ -289,19 +308,18 @@
 
 /obj/item/gun/ballistic/awm
 	name = "AWSM"
-	desc = "A heavy and versatile rifle, rechambered in the massive .338 Lapua cartridge. \
-	Both incredibly precise and hard hitting, the only drawback is the slow projectile travel time."
-	icon_state = "awp"//temp
-	item_state = "svd"//temp
+	desc = "A heavy and versatile rifle, rechambered in the massive .338 Lapua cartridge. One of the most formidable weapons in the zone."
+	icon_state = "awp"//temp??? shut cho bitchass up figass
+	item_state = "awp"
 	durability = 50//Heavily increases chance of jamming or explosion of round in chamber. Required due to power of rifle.
 	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/awp
 	recoil = 3
 	w_class = 4
-	randomspread = 0.2
-	spread = 0.2
+	randomspread = 0
+	spread = 0
 	force = 15
-	damagelose = 0.1
+	damagelose = 0
 	weapon_weight = WEAPON_HEAVY
 	bolt_type = BOLT_TYPE_LOCKING//Lets try this.
 	semi_auto = FALSE

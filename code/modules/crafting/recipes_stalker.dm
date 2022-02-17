@@ -90,6 +90,25 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/datum/crafting_recipe/mosinobrez
+	name = "saw-off mosin"
+	reqs = list(/obj/item/gun/ballistic/rifle/boltaction/mosin = 1,
+				)
+
+	result = /obj/item/gun/ballistic/rifle/boltaction/mosinobrez
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/sawoffbm16
+	name = "saw-off bm16"
+	reqs = list(/obj/item/gun/ballistic/shotgun/bm16 = 1,
+				)
+
+	result = /obj/item/gun/ballistic/shotgun/bm16/sawnoff
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+
 /// FOOD ///
 
 /// GOULASH & STEWS

@@ -4,7 +4,7 @@
 	ammo_type = /obj/item/ammo_casing/c9x18
 	caliber = "9x18mm"
 	max_ammo = 8
-	multiple_sprites = 1
+	multiple_sprites = 3
 
 /obj/item/ammo_box/magazine/stalker/m9x18aps
 	name = "aps pistol magazine (9x18mm)"

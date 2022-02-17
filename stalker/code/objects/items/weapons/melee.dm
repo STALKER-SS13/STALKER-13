@@ -152,7 +152,7 @@
 	item_state = "sickle"
 	slot_flags = ITEM_SLOT_BELT
 	force = 20
-	throwforce = 20
+	throwforce = 5
 	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
@@ -187,7 +187,7 @@
 	item_state = "knife_bowie"
 	slot_flags = ITEM_SLOT_BELT
 	force = 25
-	throwforce = 20
+	throwforce = 25
 	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
@@ -204,7 +204,7 @@
 	icon_state = "bolo"
 	item_state = "bolo"
 	slot_flags = ITEM_SLOT_BELT
-	force = 25
+	force = 33
 	throwforce = 20
 	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -216,14 +216,14 @@
 	//butcher_speed = 1.25
 
 /obj/item/kitchen/knife/kukri
-	name = "kukri knife"
-	desc = "A type of machete originating from the Indian subcontinent, and is traditionally associated with the Nepali-speaking Gurkhas and Kiratis of Nepal and India. The knife has a distinct recurve in its blade. It serves multiple purposes as a melee weapon and also as a regular cutting tool throughout most of South Asia. The blade has traditionally served the role of a basic utility knife for the Gurkhas."
+	name = "kukri"
+	desc = "A large curved blade lodged in an ornate handle. Most people would assume that it is of australian descent. Exceptionally effective when thrown."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "kukri"
 	item_state = "kukri"
 	slot_flags = ITEM_SLOT_BELT
-	force = 30
-	throwforce = 20
+	force = 33
+	throwforce = 50
 	w_class = WEIGHT_CLASS_NORMAL
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'

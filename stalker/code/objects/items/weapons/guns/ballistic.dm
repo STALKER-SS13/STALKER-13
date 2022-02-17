@@ -1,5 +1,5 @@
 
-///////////////////////////// Пистолеты //////////////////////////////////////////
+///////////////////////////// Pistols //////////////////////////////////////////
 /obj/item/gun/ballistic/automatic/pistol
 	modifications = list("barrel_pistol" = 0, "frame_pistol" = 0, "grip_pistol" = 0)
 
@@ -410,7 +410,7 @@
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 
-///////////////////////////// Автоматы, ПП //////////////////////////////////////////
+///////////////////////////// ARs,SMGs //////////////////////////////////////////
 
 /obj/item/gun/ballistic
 	var/image/mag_overlay 			= null
@@ -764,15 +764,15 @@
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
 
-/obj/item/gun/ballistic/automatic/sks // SKS
+/obj/item/gun/ballistic/rifle/semiautobolt/sks // SKS
 	name = "SKS"
 	desc = "The SKS is a Soviet semi-automatic carbine chambered for the 7.62x39mm round, designed in 1943 by Sergei Gavrilovich Simonov. The SKS-45 was manufactured at Tula Arsenal from 1949 to 1958 and at Izhevsk Arsenal in just 1953 and 1954, resulting in a total Soviet production of about 2.7 million carbines. In the early 1950s, the Soviets took the SKS carbine out of front-line service and replaced it with the AK-47; however, the SKS remained in second-line service for decades."
 	icon_state = "sks"
-	item_state = "rifle"
+	item_state = "sks"
 	fire_sound = 'stalker/sound/weapons/sks_shot.ogg'
 	durability = 200
 	slot_flags = SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/stalker/sks
+	mag_type = /obj/item/ammo_box/magazine/internal/semiautobolt/sks
 	can_suppress = 0
 	slowdown = 0.15
 	fire_delay = 1.2
@@ -1117,7 +1117,6 @@
 	recoil = 0.3
 	damagelose = 0.15
 	can_scope = 0
-	automatic = 0
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
@@ -1547,7 +1546,7 @@
    desc = "Petrovich's personal weapon. Huyarit is like a zalupa."
    mag_type = /obj/item/ammo_box/magazine/stalker/pkm/shottie
 
-///////////////////////////// Снайперские винтовки //////////////////////////////////////////
+///////////////////////////// Sniper Rifles //////////////////////////////////////////
 /obj/item/gun/ballistic/automatic/val  // Вал
 	name = "AS Val"
 	desc = "A modified version of the silent Vintorez sniper rifle, the assault rifle was designed as a special forces weapon. The rifle's primary purpose is effective fire against enemies employing modern personal protection equipment without disclosing the shooter's location. Thanks to its integrated silencer and 9x39mm caliber round with a heavy subsonic bullet, the weapon's noise and muzzle flash have been reduced to a minimum."
@@ -1569,7 +1568,7 @@
 	spread = 3
 	recoil = 0.3
 	damagelose = 0.1
-	can_scope = 1
+	can_scope = 0
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
@@ -1601,7 +1600,7 @@
 	spread = 0//For reason to use it over the SVD and Enfield.
 	recoil = 0.1//This too. Ten round mag, so it's not that big of a deal.
 	damagelose = 0
-	can_scope = 0
+	can_scope = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -1629,7 +1628,7 @@
 	spread = 1
 	recoil = 0.5
 	damagelose = 0
-	can_scope = 0
+	can_scope = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -1661,7 +1660,7 @@
 	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/groza_open.ogg'
 
-///////////////////////////// Прочие винтовки //////////////////////////////////////////
+///////////////////////////// ETC //////////////////////////////////////////
 
 /obj/item/gun/ballistic/semiauto/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"

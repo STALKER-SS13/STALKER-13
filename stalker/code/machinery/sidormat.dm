@@ -13,7 +13,7 @@ var/list/legend_sidormatitems = list()
 GLOBAL_LIST_INIT(global_sidormat_list, list(
 		///////////////////////////////  Оружие  /////////////////////////////////////////
 	"Handguns" = list(
-		///////////////////////////// **Пистолеты** /////////////////////////////////////
+		///////////////////////////// **Pistols, SMGs** /////////////////////////////////////
 		new /datum/data/stalker_equipment("PMm",			"PMm",				/obj/item/gun/ballistic/automatic/pistol/pm,				3000,	ROOKIE),
 		new /datum/data/stalker_equipment("TT",				"TT",				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE),
 		new /datum/data/stalker_equipment("Fort-12",		"Fort-12",			/obj/item/gun/ballistic/automatic/pistol/fort12,			6500,	ROOKIE),
@@ -26,6 +26,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Desert Eagle",	"Desert Eagle",		/obj/item/gun/ballistic/automatic/pistol/desert,			30000,	EXPERIENCED),
 		),
 
+
 	"Submachine Guns" = list(
 		new /datum/data/stalker_equipment("Beretta M38",	"Beretta M38",		/obj/item/gun/ballistic/automatic/berettam38,				10000,	ROOKIE),
 		new /datum/data/stalker_equipment("Kiparis",		"Kiparis",			/obj/item/gun/ballistic/automatic/kiparis,					12000,	ROOKIE),
@@ -35,8 +36,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("FN P90",			"FN P90",			/obj/item/gun/ballistic/automatic/p90,						38000,	ROOKIE,faction = "Mercenaries"),
 		),
 
+
 	"Automatic Weapons" = list(
-		///////////////////////////// **Автоматы, ПП** /////////////////////////////////////
+		///////////////////////////// **ARs** /////////////////////////////////////
 		new /datum/data/stalker_equipment("AK-74S",			"AK-74S",			/obj/item/gun/ballistic/automatic/aksu74 ,					24000,	ROOKIE),
 		new /datum/data/stalker_equipment("AK-74",			"AK-74",			/obj/item/gun/ballistic/automatic/ak74,						30000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("AS-96",			"AS-96",			/obj/item/gun/ballistic/automatic/abakan,					40000,	EXPERIENCED),
@@ -51,6 +53,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		//new /datum/data/stalker_equipment("PKM",			"PKM",				/obj/item/gun/ballistic/automatic/l6_saw/pkm,				600000,	EXPERT)
 		),
 
+
 	"Shotguns" = list(
 		/////////////////////////////// **Дробовики** /////////////////////////////////////
 		new /datum/data/stalker_equipment("Sawn off",		"Sawn off",			/obj/item/gun/ballistic/shotgun/bm16/sawnoff,				6000,	ROOKIE),
@@ -61,6 +64,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("SPAS-12",		"SPAS-12",			/obj/item/gun/ballistic/shotgun/spsa,						50000,	VETERAN)
 		),
 
+
 	"Rifles" = list(
 		/////////////////////////////// **Винтовки** /////////////////////////////////////
 		new /datum/data/stalker_equipment("Lee Enfield",	"Lee Enfield",		/obj/item/gun/ballistic/rifle/boltaction/enfield,			15000,	ROOKIE),
@@ -68,6 +72,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("SVD", 	    	"SVD",			    /obj/item/gun/ballistic/semiauto/svd,					    75000,	EXPERT),
 		new /datum/data/stalker_equipment("AWSM",			"AWSM",				/obj/item/gun/ballistic/awm,								80000,	ROOKIE,faction = "Mercenaries")
 		),
+
 
 	"Melee Weapons" = list(
 		/////////////////////////////// **Другое** /////////////////////////////////////
@@ -78,6 +83,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Hunting Knife",		"Hunting Knife",			/obj/item/weapon/kitchen/knife/hunting,									15000,	ROOKIE),
 		new /datum/data/stalker_equipment("M9 Bayonet",			"M9 Bayonet",				/obj/item/weapon/kitchen/knife/m9,										25000,	ROOKIE)
 		),
+
 
 	"Ammo Boxes" = list(
 		////////////////////////////////  Патроны  /////////////////////////////////////////
@@ -104,6 +110,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment(".338 Lapua Magnum Box",		".338 Lapua Magnum Box",					/obj/item/ammo_box/stalker/b338,						60000,	ROOKIE,			sale_price =700,faction = "Mercenaries"),
 		),
 
+
 	"Ammo Magazines and Clips" = list(
 		new /datum/data/stalker_equipment("PMm; PB1s Magazine",						"PMm; PB1s Magazine",			/obj/item/ammo_box/magazine/stalker/m9x18pm,			1000,	ROOKIE,		sale_price =500),
 		new /datum/data/stalker_equipment("TT Magazine",							"TT Magazine",					/obj/item/ammo_box/magazine/stalker/tt,					1000,	ROOKIE,		sale_price =500),
@@ -128,6 +135,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("PKM ammo belt box",						"PKM ammo belt box",			/obj/item/ammo_box/magazine/stalker/pkm,				40000,	EXPERIENCED,	sale_price =500),
 		new /datum/data/stalker_equipment("7.62x51 Clip",							"7.62x51 Clip",					/obj/item/ammo_box/stalker/cl762x51,					2000,	ROOKIE,		sale_price =500)
 		),
+
 
 	"Suits" = list(
 		new /datum/data/stalker_equipment("Leather Jacket",				"Leather Jacket",			/obj/item/clothing/suit/hooded/kozhanka,					5000,		ROOKIE),
@@ -175,6 +183,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new	/datum/data/stalker_equipment("Monolith Exoskeleton",		"Monolith Exoskeleton",		/obj/item/clothing/suit/hooded/sealed/exoskelet/monolith,	400000,		EXPERT,	faction = "Monolith")
 	),
 
+
 	// Headwear
 	"Masks and Helmets" = list(
 		new /datum/data/stalker_equipment("Respirator",					"Respirator",					/obj/item/clothing/mask/gas/stalker/respirator,					1500,	ROOKIE),
@@ -206,6 +215,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Epinephrine Pills",			"Epinephrine Pills",		/obj/item/storage/pill_bottle/epinephrine,							5000,	ROOKIE)
 		),
 
+
 	"Food" = list(
 		/////////////////////////////////	Еда	///////////////////////////////////////////
 		new /datum/data/stalker_equipment("Canned stew",				"Canned stew",				/obj/item/reagent_containers/food/snacks/stalker/konserva,				550,	ROOKIE),
@@ -218,18 +228,22 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("MRE",						"MRE",						/obj/item/storage/box/MRE,												2500,	EXPERIENCED)
 		),
 
+
 	"Backpacks" = list(
-		new /datum/data/stalker_equipment("Cheap satchel",					"Cheap satchel",			/obj/item/storage/backpack/satchel/stalker/civilian,				2500,	ROOKIE),
+		new /datum/data/stalker_equipment("Civvie satchel",					"Civvie satchel",			/obj/item/storage/backpack/satchel/stalker/civilian,				2500,	ROOKIE),
 		new /datum/data/stalker_equipment("Cheap backpack",					"Cheap backpack",			/obj/item/storage/backpack/stalker/civilian,						2500,	ROOKIE),
-		new /datum/data/stalker_equipment("Tourist backpack",				"Tourist backpack",			/obj/item/storage/backpack/stalker/tourist,							10000,	ROOKIE),
-		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					20000,	ROOKIE),
+		new /datum/data/stalker_equipment("Tourist bag",					"Tourist bag",				/obj/item/storage/backpack/stalker/tourist,							10000,	ROOKIE),
+		new /datum/data/stalker_equipment("Professional backpack",			"Professional backpack",	/obj/item/storage/backpack/stalker/professional,					20000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Rucksack",						"Ruckstack",				/obj/item/storage/backpack/stalker/rucksack,						35000,	VETERAN),
 		),
+
 
 	"Rigs" = list(
 		new /datum/data/stalker_equipment("Tactical belt",					"Tactical belt",			/obj/item/storage/belt/military/tactibelt	,						8000,	ROOKIE),
 		new /datum/data/stalker_equipment("Carry webbing",					"Carry webbing",			/obj/item/storage/belt/military/webbing,							14000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("Chestrig",						"Chestrig",					/obj/item/storage/belt/military/chestrig,							20000,	VETERAN),
 		),
+
 
 	"Misc" = list(
 		/////////////////////////////////	Другое	/////////////////////////////////////////////
@@ -267,6 +281,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Spray Cleaner",						"Spray Cleaner",										/obj/item/reagent_containers/spray/cleaner,							250,	ROOKIE,	sale_price = 150)
 		),
 
+
 	"Clothing" = list(
 		new /datum/data/stalker_equipment("Under",								"Under",												/obj/item/clothing/under/color/switer,						1000,	ROOKIE),
 		new /datum/data/stalker_equipment("Dark under",							"Dark under",											/obj/item/clothing/under/color/switer/dark,					1500,	ROOKIE),
@@ -278,12 +293,14 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Balaclava",							"Balaclava",											/obj/item/clothing/mask/balaclava,							700,	ROOKIE)
 		),
 
+
 	"Detectors" = list(
 		/////////////////////////////////	Детекторы	///////////////////////////////////////////
 		new /datum/data/stalker_equipment("Echo", 		"Echo",						/obj/item/detector/blink,				8000,	ROOKIE,	sale_price =7000),
 		new /datum/data/stalker_equipment("Bear",		"Bear",						/obj/item/detector/bear,				17000,	EXPERIENCED,	sale_price =10000),
 		new /datum/data/stalker_equipment("Veles",		"Veles",					/obj/item/detector/veles,				66000,	ROOKIE,	sale_price =50000, faction = "Ecologist"),
 		),
+
 
 	"Attachments" = list(
 		/////////////////////////////////	Аттачменты	///////////////////////////////////////////
@@ -294,6 +311,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Rifle/Shotgun scope",	"Rifle/Shotgun scope",						/obj/item/attachment/scope/rifle,			10000,	ROOKIE,			sale_price =4000)
 		///////////////////////////////////////////////////////////////////////////////////////////
 		),
+
 
 	"Unbuyable" = list(
 		new /datum/data/stalker_equipment("Canned soup",					"Canned soup",					/obj/item/reagent_containers/food/snacks/stalker/konserva/soup,				900,	ROOKIE),
@@ -310,19 +328,22 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Biscuits",						"Biscuits",						/obj/item/reagent_containers/food/snacks/stalker/konserva/galets,			400,	ROOKIE),
 		/////////////////////////////////	Лут с мутантов	///////////////////////////////////////////
 
-				new /datum/data/stalker_equipment("Dog Tail",					"Dog Tail",				/obj/item/stalker/loot/mutantparts/dog_tail,			1000,		ROOKIE, sale_price = 600),
+
+		new /datum/data/stalker_equipment("Dog Tail",					"Dog Tail",				/obj/item/stalker/loot/mutantparts/dog_tail,			1000,		ROOKIE, sale_price = 600),
 		new /datum/data/stalker_equipment("Flesh Eye",					"Flesh Eye",			/obj/item/stalker/loot/mutantparts/flesh_eye,			1800,		ROOKIE, sale_price = 1050),
 		new /datum/data/stalker_equipment("Boar Hoof",					"Boar Hoof",			/obj/item/stalker/loot/mutantparts/boar_leg,			6000,		ROOKIE, sale_price = 1800),
 		new /datum/data/stalker_equipment("Snork Leg",					"Snork Leg",			/obj/item/stalker/loot/mutantparts/snork_leg,			7000,		ROOKIE, sale_price = 3000),
 		new /datum/data/stalker_equipment("Bloodsucker Tendrils",		"Bloodsucker Tendrils",	/obj/item/stalker/loot/mutantparts/bloodsucker,			16000,		ROOKIE, sale_price = 8000),
 		new /datum/data/stalker_equipment("Pseudodog Tail",				"Pseudodog Tail",		/obj/item/stalker/loot/mutantparts/pseudo_tail,			8000,		ROOKIE, sale_price = 7000),
-		new /datum/data/stalker_equipment("Controller Brain",			"Controller Brain",	/obj/item/stalker/loot/mutantparts/controller_brain,	40000,		ROOKIE, sale_price = 20000),
-		new /datum/data/stalker_equipment("Poltergeist Skin",			"Poltergeist Skin",	/obj/item/stalker/loot/mutantparts/poltergeist_skin,	80000,		ROOKIE, sale_price = 40000),
-		/////////////////////////////////	Артефакты	///////////////////////////////////////////
+		new /datum/data/stalker_equipment("Controller Brain",			"Controller Brain",	/obj/item/stalker/loot/mutantparts/controller_brain,		40000,		ROOKIE, sale_price = 20000),
+		new /datum/data/stalker_equipment("Poltergeist Skin",			"Poltergeist Skin",	/obj/item/stalker/loot/mutantparts/poltergeist_skin,		80000,		ROOKIE, sale_price = 40000),
+
+
+		/////////////////////////////////	Artifacts	///////////////////////////////////////////
 		new /datum/data/stalker_equipment("Jellyfish",			"Jellyfish",						/obj/item/artifact/meduza,					5000,	ROOKIE,	sale_price = 2500),
 //		new /datum/data/stalker_equipment("Stone Flower",		"Stone Flower",						/obj/item/artifact/stoneflower,				10000,	ROOKIE,	sale_price = 3000),
 //		new /datum/data/stalker_equipment("Night Star",			"Night Star",						/obj/item/artifact/nightstar,				30000,	ROOKIE,	sale_price = 13000),
-		new /datum/data/stalker_equipment("Depleted Stone Flower",		"Depleted Stone Flower",						/obj/item/artifact/stoneflower_depleted,				5000,	ROOKIE,	sale_price = 1500),
+		new /datum/data/stalker_equipment("Depleted Stone Flower",			"Depleted Stone Flower",					/obj/item/artifact/stoneflower_depleted,			5000,	ROOKIE,	sale_price = 1500),
 		new /datum/data/stalker_equipment("Depleted Night Star",			"Depleted Night Star",						/obj/item/artifact/nightstar_depleted,				10000,	ROOKIE,	sale_price = 8000),
 		new /datum/data/stalker_equipment("Soul",				"Soul",								/obj/item/artifact/soul,					80000,	ROOKIE,	sale_price = 25000),
 		///////////////////////////////////////////////////////////////////////////////////////////
@@ -340,7 +361,9 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Bubble",				"Bubble",							/obj/item/artifact/bubble,					12000,	ROOKIE,	sale_price = 15000),
 		new /datum/data/stalker_equipment("Mica",				"Mica",								/obj/item/artifact/mica,					30000,	ROOKIE,	sale_price = 20000),
 		new /datum/data/stalker_equipment("Firefly",			"Firefly",							/obj/item/artifact/firefly,					90000,	ROOKIE,	sale_price = 40000),
-  	/////////////////////////////////	Мусор	//////////////////////////////////////////////
+
+
+  	/////////////////////////////////	Trash	//////////////////////////////////////////////
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva,						400,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/MREkonserva1,			200,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/MREkonserva2,			200,	ROOKIE),
@@ -350,96 +373,101 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/govyadina,				400,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/shproti,				600,	ROOKIE),
 		new /datum/data/stalker_equipment("Konserva",			"Консерва",							/obj/item/trash/konserva/soup,					500,	ROOKIE),
-		new /datum/data/stalker_equipment("Used Zipties",		"Used Zipties",					/obj/item/restraints/handcuffs/cable/zipties/used,	250,	ROOKIE),
+		new /datum/data/stalker_equipment("Used Zipties",		"Used Zipties",						/obj/item/restraints/handcuffs/cable/zipties/used,250,	ROOKIE),
 		///////////////////////////////////////////////////////////////////////////////////////////
 		new /datum/data/stalker_equipment("50 RU",				"50 RU",							/obj/item/stack/spacecash/c50,				50,		ROOKIE,	sale_price = 50),
 		new /datum/data/stalker_equipment("100 RU",				"100 RU",							/obj/item/stack/spacecash/c100,				100,	ROOKIE,	sale_price = 100),
 		new /datum/data/stalker_equipment("500 RU",				"500 RU",							/obj/item/stack/spacecash/c500,				500,	ROOKIE,	sale_price = 500),
 		new /datum/data/stalker_equipment("1000 RU",			"1000 RU",							/obj/item/stack/spacecash/c1000,			1000,	ROOKIE,	sale_price = 1000),
 		new /datum/data/stalker_equipment("5000 RU",			"5000 RU",							/obj/item/stack/spacecash/c5000,			5000,	ROOKIE,	sale_price = 5000),
+
+
 		/////////////////////////////////	Medkit components	//////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("Ointment",					"Ointment",						/obj/item/stack/medical/ointment,											25,		ROOKIE,	sale_price = 25),
-		new /datum/data/stalker_equipment("Bruise Pack",				"Bruise Pack",					/obj/item/stack/medical/bruise_pack,										25,		ROOKIE,	sale_price = 25),
+		new /datum/data/stalker_equipment("Ointment",					"Ointment",						/obj/item/stack/medical/ointment,									25,		ROOKIE,	sale_price = 25),
+		new /datum/data/stalker_equipment("Bruise Pack",				"Bruise Pack",					/obj/item/stack/medical/bruise_pack,								25,		ROOKIE,	sale_price = 25),
 		new /datum/data/stalker_equipment("Charcoal Pill",				"Charcoal Pill",				/obj/item/reagent_containers/pill/charcoal,							125,	ROOKIE,	sale_price = 125),
 		new /datum/data/stalker_equipment("Epipen",						"Epipen",						/obj/item/reagent_containers/pill/stalker/injector/epinephrine,		125,	ROOKIE,	sale_price = 125),
-		new /datum/data/stalker_equipment("Brute Patch",				"Brute Patch",					/obj/item/reagent_containers/pill/patch/styptic,						250,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Burn Patch",					"Burn Patch",					/obj/item/reagent_containers/pill/patch/silver_sulf,					250,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Brute Patch",				"Brute Patch",					/obj/item/reagent_containers/pill/patch/styptic,					250,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Burn Patch",					"Burn Patch",					/obj/item/reagent_containers/pill/patch/silver_sulf,				250,	ROOKIE,	sale_price = 250),
 		new /datum/data/stalker_equipment("Combat Patch",				"Combat Patch",					/obj/item/reagent_containers/pill/patch/synthflesh,					250,	ROOKIE,	sale_price = 250),
 		new /datum/data/stalker_equipment("Brute Injector",				"Brute Injector",				/obj/item/reagent_containers/pill/stalker/injector/brute,			250,	ROOKIE,	sale_price = 250),
-		new /datum/data/stalker_equipment("Burn Injector",				"Burn Injector",				/obj/item/reagent_containers/pill/stalker/injector/burn,				250,	ROOKIE,	sale_price = 250),
+		new /datum/data/stalker_equipment("Burn Injector",				"Burn Injector",				/obj/item/reagent_containers/pill/stalker/injector/burn,			250,	ROOKIE,	sale_price = 250),
 		new /datum/data/stalker_equipment("Blood Injector",				"Blood Injector",				/obj/item/reagent_containers/pill/stalker/injector/blood,			250,	ROOKIE,	sale_price = 150),
 		new /datum/data/stalker_equipment("Painkillers Injector",		"Painkillers Injector",			/obj/item/reagent_containers/pill/stalker/injector/painkiller,		250,	ROOKIE,	sale_price = 150),
 		new /datum/data/stalker_equipment("Antitoxin Injector",			"Antitoxin Injector",			/obj/item/reagent_containers/pill/stalker/injector/toxin,			250,	ROOKIE,	sale_price = 150),
 		new /datum/data/stalker_equipment("Oxygen Injector",			"Oxygen Injector",				/obj/item/reagent_containers/pill/stalker/injector/oxygen,			250,	ROOKIE,	sale_price = 150),
 		new /datum/data/stalker_equipment("Antirad Injector",			"Antirad Injector",				/obj/item/reagent_containers/pill/stalker/injector/antirad,			250,	ROOKIE,	sale_price = 150),
+
+
 		/////////////////////////////////Rare Firearms	//////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("Mosin-Nagant",			"Mosin-Nagant",				/obj/item/gun/ballistic/rifle/boltaction/mosin,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Arisaka",			"Arisaka",				/obj/item/gun/ballistic/rifle/boltaction/arisaka,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Karabiner",			"Karabiner",				/obj/item/gun/ballistic/rifle/boltaction/karabiner,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Springfield",			"Springfield",				/obj/item/gun/ballistic/rifle/boltaction/springfield,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Sten MK II",			"Sten MK II",				/obj/item/gun/ballistic/automatic/sten,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Sterling Submachine Gun",			"Sterling Submachine Gun",				/obj/item/gun/ballistic/automatic/sterling,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("M3A1 Grease Gun",			"M3A1 Grease Gun",				/obj/item/gun/ballistic/automatic/m3a1,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Reising Model 55",			"Reising Model 55",				/obj/item/gun/ballistic/automatic/reising,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("MP-40",			"MP-40",				/obj/item/gun/ballistic/automatic/mp40,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("MP 3008",			"MP 3008",				/obj/item/gun/ballistic/automatic/mp3008,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("PPS-43",			"PPS-43",				/obj/item/gun/ballistic/automatic/pps43,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("PP-19 Bizon",			"PP-19 Bizon",				/obj/item/gun/ballistic/automatic/bizon,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Smith & Wesson M76",			"Smith & Wesson M76",				/obj/item/gun/ballistic/automatic/m76,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Skorpion",			"Skorpion",				/obj/item/gun/ballistic/automatic/skorpion,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("SKS",			"SKS",				/obj/item/gun/ballistic/automatic/sks,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("FN FAL",			"FN FAL",				/obj/item/gun/ballistic/automatic/fnfal,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("FN FAL",			"FN FAL",				/obj/item/gun/ballistic/automatic/woodfnfal,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("FAMAS",			"FAMAS",				/obj/item/gun/ballistic/automatic/famas,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Steyr AUG",			"Steyr AUG",				/obj/item/gun/ballistic/automatic/aug,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("AKM",			"AKM",				/obj/item/gun/ballistic/automatic/akm,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("vz. 58",			"vz. 58",				/obj/item/gun/ballistic/automatic/vz58,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("M16A1",			"M16A1",				/obj/item/gun/ballistic/automatic/m16,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("M14 Carbine",			"M14 Carbine",				/obj/item/gun/ballistic/automatic/m14,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("M16A4",			"M16A4",				/obj/item/gun/ballistic/automatic/m16a4,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("M4 Carbine",			"M4 Carbine",				/obj/item/gun/ballistic/automatic/m4,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("ArmaLite AR-15",			"ArmaLite AR-15",				/obj/item/gun/ballistic/automatic/ar15,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("FN SCAR-H",			"FN SCAR-H",				/obj/item/gun/ballistic/automatic/scarh,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("AK74",			"AK74",				/obj/item/gun/ballistic/automatic/ak74/black,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("AK74",			"AK74",				/obj/item/gun/ballistic/automatic/ak74/camo,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("AK74",			"AK74",				/obj/item/gun/ballistic/automatic/ak74/blackout,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Luger P08",			"Luger P08",				/obj/item/gun/ballistic/automatic/pistol/luger,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Walther P38",			"Walther P38",				/obj/item/gun/ballistic/automatic/pistol/walther,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Stetchkin APS",			"Stetchkin APS",				/obj/item/gun/ballistic/automatic/pistol/aps,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("OTs- Pernach",			"OTs- Pernach",				/obj/item/gun/ballistic/automatic/pistol/pernach,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Mauser C96",			"Mauser C96",				/obj/item/gun/ballistic/automatic/pistol/mauser,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Glock 17",			"Glock 17",				/obj/item/gun/ballistic/automatic/pistol/glock,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("TT-30",			"TT-30",				/obj/item/gun/ballistic/automatic/pistol/tt30,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Five Seven",			"Five Seven",				/obj/item/gun/ballistic/automatic/pistol/fiveseven,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Walther PP",			"Walther PP",				/obj/item/gun/ballistic/automatic/pistol/waltherpp,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("CZ 83",			"CZ 83",				/obj/item/gun/ballistic/automatic/pistol/cz83,			7550,	ROOKIE,	sale_price = 50000),
-		new /datum/data/stalker_equipment("Silver Baretta",			"Silver Baretta",				/obj/item/gun/ballistic/automatic/pistol/silvermarta,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Mosin-Nagant",				"Mosin-Nagant",					/obj/item/gun/ballistic/rifle/boltaction/mosin,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Mosin-Nagant obrez",			"Mosin-Nagant obrez",			/obj/item/gun/ballistic/rifle/boltaction/mosinobrez,		7550,	ROOKIE,	sale_price = 49420),
+		new /datum/data/stalker_equipment("Arisaka",					"Arisaka",						/obj/item/gun/ballistic/rifle/boltaction/arisaka,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Karabiner",					"Karabiner",					/obj/item/gun/ballistic/rifle/boltaction/karabiner,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Springfield",				"Springfield",					/obj/item/gun/ballistic/rifle/boltaction/springfield,		7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Sten MK II",					"Sten MK II",					/obj/item/gun/ballistic/automatic/sten,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Sterling Submachine Gun",	"Sterling Submachine Gun",		/obj/item/gun/ballistic/automatic/sterling,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("M3A1 Grease Gun",			"M3A1 Grease Gun",				/obj/item/gun/ballistic/automatic/m3a1,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Reising Model 55",			"Reising Model 55",				/obj/item/gun/ballistic/automatic/reising,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("MP-40",						"MP-40",						/obj/item/gun/ballistic/automatic/mp40,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("MP 3008",					"MP 3008",						/obj/item/gun/ballistic/automatic/mp3008,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("PPS-43",						"PPS-43",						/obj/item/gun/ballistic/automatic/pps43,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("PP-19 Bizon",				"PP-19 Bizon",					/obj/item/gun/ballistic/automatic/bizon,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Smith & Wesson M76",			"Smith & Wesson M76",			/obj/item/gun/ballistic/automatic/m76,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Skorpion",					"Skorpion",						/obj/item/gun/ballistic/automatic/skorpion,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("SKS",						"SKS",							/obj/item/gun/ballistic/rifle/semiautobolt/sks,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("FN FAL",						"FN FAL",						/obj/item/gun/ballistic/automatic/fnfal,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("FN FAL",						"FN FAL",						/obj/item/gun/ballistic/automatic/woodfnfal,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("FAMAS",						"FAMAS",						/obj/item/gun/ballistic/automatic/famas,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Steyr AUG",					"Steyr AUG",					/obj/item/gun/ballistic/automatic/aug,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("AKM",						"AKM",							/obj/item/gun/ballistic/automatic/akm,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("vz. 58",						"vz. 58",						/obj/item/gun/ballistic/automatic/vz58,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("M16A1",						"M16A1",						/obj/item/gun/ballistic/automatic/m16,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("M14 Carbine",				"M14 Carbine",					/obj/item/gun/ballistic/automatic/m14,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("M16A4",						"M16A4",						/obj/item/gun/ballistic/automatic/m16a4,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("M4 Carbine",					"M4 Carbine",					/obj/item/gun/ballistic/automatic/m4,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("ArmaLite AR-15",				"ArmaLite AR-15",				/obj/item/gun/ballistic/automatic/ar15,						7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("FN SCAR-H",					"FN SCAR-H",					/obj/item/gun/ballistic/automatic/scarh,					7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("AK74",						"AK74",							/obj/item/gun/ballistic/automatic/ak74/black,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("AK74",						"AK74",							/obj/item/gun/ballistic/automatic/ak74/camo,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("AK74",						"AK74",							/obj/item/gun/ballistic/automatic/ak74/blackout,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Luger P08",					"Luger P08",					/obj/item/gun/ballistic/automatic/pistol/luger,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Walther P38",				"Walther P38",					/obj/item/gun/ballistic/automatic/pistol/walther,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Stetchkin APS",				"Stetchkin APS",				/obj/item/gun/ballistic/automatic/pistol/aps,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("OTs- Pernach",				"OTs- Pernach",					/obj/item/gun/ballistic/automatic/pistol/pernach,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Mauser C96",					"Mauser C96",					/obj/item/gun/ballistic/automatic/pistol/mauser,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Glock 17",					"Glock 17",						/obj/item/gun/ballistic/automatic/pistol/glock,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("TT-30",						"TT-30",						/obj/item/gun/ballistic/automatic/pistol/tt30,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Five Seven",					"Five Seven",					/obj/item/gun/ballistic/automatic/pistol/fiveseven,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Walther PP",					"Walther PP",					/obj/item/gun/ballistic/automatic/pistol/waltherpp,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("CZ 83",						"CZ 83",						/obj/item/gun/ballistic/automatic/pistol/cz83,				7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment("Silver Baretta",				"Silver Baretta",				/obj/item/gun/ballistic/automatic/pistol/silvermarta,		7550,	ROOKIE,	sale_price = 50000),
 		/////////////////////////////////Rare Firearm Ammo	//////////////////////////////////////////////////
-		new /datum/data/stalker_equipment("aps pistol magazine (9x18mm)",			"aps pistol magazine (9x18mm)",				/obj/item/ammo_box/magazine/stalker/m9x18aps,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("bizon magazine (9x18mm)",			"bizon magazine (9x18mm)",				/obj/item/ammo_box/magazine/stalker/m9x18bizon,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("luger pistol magazine (9x19mm)",			"luger pistol magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19luger,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("walther P38 pistol magazine (9x19mm)",			"walther P38 pistol magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19waltherp38,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("glock pistol magazine (9x19mm)",			"glock pistol magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19glock,			250,	ROOKIE,	sale_price = 150),
-		new /datum/data/stalker_equipment("five seven pistol magazine (5.7×28mm)",			"five seven pistol magazine (5.7×28mm)",				/obj/item/ammo_box/magazine/stalker/m57x28fiveseven,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("walther PP pistol magazine (9x19mm)",			"walther PP pistol magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19waltherpp,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("CZ 83 pistol magazine (9x18mm)",			"CZ 83 pistol magazine (9x18mm)",				/obj/item/ammo_box/magazine/stalker/m9x18cz83,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("reising magazine (.45)",			"reising magazine (.45)",				/obj/item/ammo_box/magazine/stalker/reising,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("mat 49 magazine (9x19mm)",			"mat 49 magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19mat49,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("M14 magazine (7.62x51)",			"M14 magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/m14,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("SCAR magazine (7.62x51)",			"SCAR magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/scarh,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("SKS magazine (7.62x51)",			"SKS magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/sks,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("AKM magazine (9x39)",			"AKM magazine (9x39)",				/obj/item/ammo_box/magazine/stalker/akm,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("vz. 58 magazine (7.62x51)",			"vz. 58 magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/vz58,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("FN FAL magazine (7.62x51)",			"FN FAL magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/fnfal,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("PPS43 magazine (7.62x25)",			"PPS43 magazine (7.62x25)",				/obj/item/ammo_box/magazine/stalker/pps43,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("MP-40 magazine (9x19mm)",			"MP-40 magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/mp40,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("sten MK II magazine (9x19mm)",			"sten MK II magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/sten,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("sterling magazine (9x19mm)",			"sterling magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/sterling,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("M3A1 grease gun magazine (9x19mm)",			"M3A1 grease gun magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m3a1,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("S&W M76 magazine (9x19mm)",			"S&W M76 magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19m76,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("skorpion magazine (9x19mm)",			"skorpion magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19skorpion,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("mauser pistol magazine (7.62x25mm)",			"mauser pistol magazine (7.62x25mm)",				/obj/item/ammo_box/magazine/stalker/mauser,			250,	ROOKIE,	sale_price = 500),
-		new /datum/data/stalker_equipment("extended mauser pistol magazine (7.62x25mm)",			"extended mauser pistol magazine (7.62x25mm)",				/obj/item/ammo_box/magazine/stalker/mauser/ext,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("aps pistol magazine (9x18mm)",				"aps pistol magazine (9x18mm)",			/obj/item/ammo_box/magazine/stalker/m9x18aps,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("bizon magazine (9x18mm)",					"bizon magazine (9x18mm)",				/obj/item/ammo_box/magazine/stalker/m9x18bizon,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("luger pistol magazine (9x19mm)",				"luger pistol magazine (9x19mm)",		/obj/item/ammo_box/magazine/stalker/m9x19luger,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("walther P38 pistol magazine (9x19mm)",		"walther P38 pistol magazine (9x19mm)",	/obj/item/ammo_box/magazine/stalker/m9x19waltherp38,	250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("glock pistol magazine (9x19mm)",				"glock pistol magazine (9x19mm)",		/obj/item/ammo_box/magazine/stalker/m9x19glock,			250,	ROOKIE,	sale_price = 150),
+		new /datum/data/stalker_equipment("five seven pistol magazine (5.7×28mm)",		"five seven pistol magazine (5.7×28mm)",/obj/item/ammo_box/magazine/stalker/m57x28fiveseven,	250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("walther PP pistol magazine (9x19mm)",		"walther PP pistol magazine (9x19mm)",	/obj/item/ammo_box/magazine/stalker/m9x19waltherpp,		250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("CZ 83 pistol magazine (9x18mm)",				"CZ 83 pistol magazine (9x18mm)",		/obj/item/ammo_box/magazine/stalker/m9x18cz83,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("reising magazine (.45)",						"reising magazine (.45)",				/obj/item/ammo_box/magazine/stalker/reising,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("mat 49 magazine (9x19mm)",					"mat 49 magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/m9x19mat49,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("M14 magazine (7.62x51)",						"M14 magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/m14,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("SCAR magazine (7.62x51)",					"SCAR magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/scarh,				250,	ROOKIE,	sale_price = 500),
+//		new /datum/data/stalker_equipment("SKS magazine (7.62x51)",						"SKS magazine (7.62x51)",				/obj/item/ammo_box/magazine/stalker/sks,				250,	ROOKIE,	sale_price = 500), //SKS IS INTERNAL MAG :megatroll:
+		new /datum/data/stalker_equipment("AKM magazine (9x39)",						"AKM magazine (9x39)",					/obj/item/ammo_box/magazine/stalker/akm,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("vz. 58 magazine (7.62x51)",					"vz. 58 magazine (7.62x51)",			/obj/item/ammo_box/magazine/stalker/vz58,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("FN FAL magazine (7.62x51)",					"FN FAL magazine (7.62x51)",			/obj/item/ammo_box/magazine/stalker/fnfal,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("PPS43 magazine (7.62x25)",					"PPS43 magazine (7.62x25)",				/obj/item/ammo_box/magazine/stalker/pps43,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("MP-40 magazine (9x19mm)",					"MP-40 magazine (9x19mm)",				/obj/item/ammo_box/magazine/stalker/mp40,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("sten MK II magazine (9x19mm)",				"sten MK II magazine (9x19mm)",			/obj/item/ammo_box/magazine/stalker/sten,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("sterling magazine (9x19mm)",					"sterling magazine (9x19mm)",			/obj/item/ammo_box/magazine/stalker/sterling,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("M3A1 grease gun magazine (9x19mm)",			"M3A1 grease gun magazine (9x19mm)",	/obj/item/ammo_box/magazine/stalker/m3a1,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("S&W M76 magazine (9x19mm)",					"S&W M76 magazine (9x19mm)",			/obj/item/ammo_box/magazine/stalker/m9x19m76,			250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("skorpion magazine (9x19mm)",					"skorpion magazine (9x19mm)",			/obj/item/ammo_box/magazine/stalker/m9x19skorpion,		250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("mauser pistol magazine (7.62x25mm)",			"mauser pistol magazine (7.62x25mm)",	/obj/item/ammo_box/magazine/stalker/mauser,				250,	ROOKIE,	sale_price = 500),
+		new /datum/data/stalker_equipment("extended mauser pistol magazine (7.62x25mm)","extended mauser pistol magazine (7.62x25mm)",/obj/item/ammo_box/magazine/stalker/mauser/ext,	250,	ROOKIE,	sale_price = 500),
 		)
 	))
 

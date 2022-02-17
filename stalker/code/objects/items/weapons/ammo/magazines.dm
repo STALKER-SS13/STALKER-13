@@ -4,7 +4,7 @@
 	ammo_type = /obj/item/ammo_casing/c9x18
 	caliber = "9x18mm"
 	max_ammo = 8
-	multiple_sprites = 1
+	multiple_sprites = 3
 
 /obj/item/ammo_box/magazine/stalker/m9x18aps
 	name = "aps pistol magazine (9x18mm)"
@@ -175,13 +175,13 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/stalker/sks
-	name = "SKS magazine (7.62x51)"
-	icon_state = "sks"
+/obj/item/ammo_box/magazine/internal/semiautobolt/sks
+	name = "SKS internal magazine"
+	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/sp9x39
 	caliber = "9x39mm"
 	max_ammo = 10
-	multiple_sprites = 2
+	multiload = 1
 
 /obj/item/ammo_box/magazine/stalker/akm
 	name = "AKM magazine (9x39)"

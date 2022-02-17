@@ -378,7 +378,7 @@
 
 /obj/effect/spawner/lootdrop/stalker/weapon/rarerifles
 	name = "stalker rare rifles"
-	loot = list(/obj/item/gun/ballistic/automatic/sks = 10,
+	loot = list(/obj/item/gun/ballistic/rifle/semiautobolt/sks = 10,
 				/obj/item/gun/ballistic/automatic/fnfal = 10,
 				/obj/item/gun/ballistic/automatic/woodfnfal = 10,
 				/obj/item/gun/ballistic/automatic/famas = 10,
@@ -1020,7 +1020,7 @@ obj/nothing/New()
 				/obj/item/gun/ballistic/automatic/mp3008 = 10,
 				/obj/item/gun/ballistic/automatic/pps43 = 10,
 				/obj/item/gun/ballistic/automatic/bizon = 10,
-				/obj/item/gun/ballistic/automatic/sks = 10,
+				/obj/item/gun/ballistic/rifle/semiautobolt/sks = 10,
 				/obj/item/gun/ballistic/automatic/fnfal = 10,
 				/obj/item/gun/ballistic/automatic/woodfnfal = 10,
 				/obj/item/gun/ballistic/automatic/famas = 10,

@@ -764,7 +764,7 @@
 	load_sound = 'stalker/sound/weapons/load/mp5_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/mp5_open.ogg'
 
-/obj/item/gun/ballistic/automatic/sks // SKS
+/obj/item/gun/ballistic/rifle/semiautobolt/sks // SKS
 	name = "SKS"
 	desc = "The SKS is a Soviet semi-automatic carbine chambered for the 7.62x39mm round, designed in 1943 by Sergei Gavrilovich Simonov. The SKS-45 was manufactured at Tula Arsenal from 1949 to 1958 and at Izhevsk Arsenal in just 1953 and 1954, resulting in a total Soviet production of about 2.7 million carbines. In the early 1950s, the Soviets took the SKS carbine out of front-line service and replaced it with the AK-47; however, the SKS remained in second-line service for decades."
 	icon_state = "sks"
@@ -772,7 +772,7 @@
 	fire_sound = 'stalker/sound/weapons/sks_shot.ogg'
 	durability = 200
 	slot_flags = SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/stalker/sks
+	mag_type = /obj/item/ammo_box/magazine/internal/semiautobolt/sks
 	can_suppress = 0
 	slowdown = 0.15
 	fire_delay = 1.2

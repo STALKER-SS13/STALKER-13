@@ -144,3 +144,19 @@
 	armour_penetration = 5
 	range = 50
 	spread = 5
+
+/obj/item/projectile/bullet/c500cal
+	name = ".500 bullet"
+	damage = 60
+	armour_penetration = 20
+	range = 50
+	spread = 1
+
+
+/obj/item/projectile/bullet/c500calbuck
+	name = ".500 pellet"
+	damage = 25
+	armour_penetration = 10
+	range = 30
+	spread = 4
+

@@ -204,11 +204,11 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	item_state = "mosin-obrez"
 	durability = 160
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mosin
-	recoil = 3
+	recoil = 6
 	w_class = 2
-	randomspread = 1.6
-	spread = 6
-	force = 15
+	randomspread = 3
+	spread = 10
+	force = 10
 	damagelose = 0.3
 	weapon_weight = WEAPON_MEDIUM
 	fire_sound = 'stalker/sound/weapons/enfield_shot.ogg'
@@ -329,5 +329,5 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	load_sound = 'stalker/sound/weapons/load/awp_reload.ogg'
 	draw_sound = 'stalker/sound/weapons/draw/shotgun_draw.ogg'
 	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 16
+	zoom_amt = 8
+	zoom_out_amt = 10

@@ -71,7 +71,7 @@
 
 	///////////////////////STALKER////////////////////////////////
 
-	var/can_scope = 0
+	var/can_scope = 0        //scopeable? (will still have to clarify which guns mod fit on in the scope's filepath)
 	var/draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
 	var/damagelose = 0		 //1 урона за 1 тайл = 0.33 ед
 	var/distro = 0			 //gap between shotgun shot

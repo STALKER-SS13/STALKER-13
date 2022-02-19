@@ -193,6 +193,26 @@
 	load_sound = 'stalker/sound/weapons/load/obrez_load.ogg'
 	eject_sound = 'stalker/sound/weapons/unload/obrez_open.ogg'
 
+/obj/item/gun/ballistic/revolver/c500revolver // .500 Bull
+	name = ".500 Bull"
+	desc = "Three bullets and enough recoil to move train tracks stapled to the ground, compacted snugly enough to fit on your belt. Will fetch a heavy price when sold."
+	icon_state = "c500revolver"
+	w_class = 3
+	fire_sound = 'stalker/sound/weapons/desert_shot.ogg'
+	fire_delay = 2
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/c500revolver
+	force = 10
+	can_suppress = 0
+	can_unsuppress = 0
+	spread = 6
+	recoil = 6
+	durability = 500
+	damagelose = 0
+	weapon_weight = WEAPON_MEDIUM
+	draw_sound = 'stalker/sound/weapons/draw/usp_draw.ogg'
+	load_sound = 'stalker/sound/weapons/load/obrez_load.ogg'
+	eject_sound = 'stalker/sound/weapons/unload/obrez_open.ogg'
+
 /obj/item/gun/ballistic/automatic/pistol/luger  // Luger P08 pistol
 	name = "luger P08 pistol"
 	desc = "Luger P08 pistols are a toggle-locked recoil-operated semi-automatic pistol. It was widely used in other countries as a military service pistol and by police forces since the turn of the 20th century."
@@ -1006,6 +1026,9 @@
 	spread = 3
 	recoil = 0.3
 	damagelose = 0.2
+	zoomable = TRUE
+	zoom_amt = 5
+	zoom_out_amt = 5
 	can_scope = 0
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
@@ -1389,7 +1412,7 @@
 	fire_sound = 'stalker/sound/weapons/il86_shoot.ogg'
 	can_suppress = 1
 	slowdown = 0.15
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 9
 	zoom_out_amt = 12
 	burst_size = 3
@@ -1442,7 +1465,7 @@
 	fire_sound = 'stalker/sound/weapons/il86_shoot.ogg'
 	can_suppress = 1
 	slowdown = 0.15
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
 	burst_size = 3
@@ -1499,7 +1522,7 @@
 	slowdown = 0.15
 	burst_size = 3
 	fire_delay = 1.4
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 12
 	zoom_out_amt = 15
 	pin = /obj/item/firing_pin
@@ -1568,7 +1591,7 @@
 	spread = 3
 	recoil = 0.3
 	damagelose = 0.1
-	can_scope = 0
+	can_scope = 1
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
@@ -1586,7 +1609,7 @@
 	can_suppress = 0
 	can_unsuppress = 0
 	slowdown = 0.15
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 7
 	zoom_out_amt = 10
 	burst_size = 3
@@ -1600,7 +1623,7 @@
 	spread = 0//For reason to use it over the SVD and Enfield.
 	recoil = 0.1//This too. Ten round mag, so it's not that big of a deal.
 	damagelose = 0
-	can_scope = 1
+	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -1616,7 +1639,7 @@
 	can_suppress = 0
 	can_unsuppress = 0
 	slowdown = 0.15
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 9
 	zoom_out_amt = 11
 	fire_delay = 35
@@ -1628,7 +1651,7 @@
 	spread = 1
 	recoil = 0.5
 	damagelose = 0
-	can_scope = 1
+	can_scope = 0
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/val_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/val_load.ogg'
@@ -1653,8 +1676,11 @@
 	spread = 5
 	recoil = 0.4
 	damagelose = 0.35
-	can_scope = 1
+	can_scope = 0
 	automatic = 1
+	zoomable = TRUE
+	zoom_amt = 4
+	zoom_out_amt = 4
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/groza_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/groza_load.ogg'
@@ -1664,7 +1690,7 @@
 
 /obj/item/gun/ballistic/semiauto/gaussrifle  // Gauss Rifle
 	name = "gauss rifle"
-	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured solely by the Combined Conciousness within the laboratories near the Zone's center, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
+	desc = "Item no. 62, better known as the Gauss Rifle, is an experimental, highly powerful hybrid energy weapon initially designed by members of the infamous Group that operated in the Zone prior to it's creation. Now manufactured by an unknown force, the weapon is made operational by pieces of a Flash artefact, and is by far the most deadly weapon at the disposal of the Monolith's servants."
 	icon_state = "gaussrifle"
 	item_state = "gaussrifle"
 	colored = 0//"normal"
@@ -1684,7 +1710,7 @@
 	randomspread = 0
 	damagelose = 0
 	distro = 15
-	zoomable = 1
+	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 10
 	weapon_weight = WEAPON_MEDIUM

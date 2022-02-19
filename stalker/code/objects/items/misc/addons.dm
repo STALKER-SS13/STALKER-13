@@ -76,6 +76,7 @@
 	desc = "A rifle scope designed some time around the advent of WWII."
 	icon_state = "rifle"
 	types = list(/obj/item/gun/ballistic/rifle/boltaction/enfield,
+				/obj/item/gun/ballistic/rifle/boltaction/mosin,
 				/obj/item/gun/ballistic/shotgun/bm16,
 				/obj/item/gun/ballistic/shotgun/bm16/toz34)
 	zoom_add = 6

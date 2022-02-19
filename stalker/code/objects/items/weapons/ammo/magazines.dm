@@ -4,7 +4,7 @@
 	ammo_type = /obj/item/ammo_casing/c9x18
 	caliber = "9x18mm"
 	max_ammo = 8
-	multiple_sprites = 3
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/m9x18aps
 	name = "aps pistol magazine (9x18mm)"
@@ -267,6 +267,12 @@
 	ammo_type = /obj/item/ammo_casing/mag44
 	caliber = ".44"
 	max_ammo = 6
+
+/obj/item/ammo_box/magazine/internal/cylinder/c500revolver
+	name = ".500 Bull internal magazine"
+	ammo_type = /obj/item/ammo_casing/c500cal
+	caliber = "c500cal"
+	max_ammo = 3
 
 /obj/item/ammo_box/magazine/stalker/pps43
 	name = "PPS43 magazine (7.62x25)"

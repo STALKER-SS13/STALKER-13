@@ -1,4 +1,4 @@
-//Note, the 7.62x54mmR, and the 9x39 SP-6 are currently not implimented.
+
 
 /obj/item/ammo_box/stalker
 	name = "ammo box (5.45x39mm)"
@@ -198,4 +198,20 @@
 	ammo_type = /obj/item/ammo_casing/c57x28
 	icon_state = "57×28"//temp
 	max_ammo = 150//3 reloads of a single mag.
+	multiple_sprites = 2
+
+/obj/item/ammo_box/stalker/c500cal
+	name = "ammo box (.500)"
+	desc = "A massive cartridge. Somehow the only weapon that uses this is an oversized revolver."
+	ammo_type = /obj/item/ammo_casing/c500cal
+	icon_state = "500cal"
+	max_ammo = 15 // 5 full reloads!
+	multiple_sprites = 2
+
+/obj/item/ammo_box/stalker/c500cal/buck
+	name = "ammo box (.500 buckshot)"
+	desc = "A massive cartridge. Somehow the only weapon that uses this is an oversized revolver. Is actually a buckshot shell."
+	ammo_type = /obj/item/ammo_casing/shotgun/c500cal/buck
+	icon_state = "500buck"
+	max_ammo = 12 // 4 full reloads!
 	multiple_sprites = 2

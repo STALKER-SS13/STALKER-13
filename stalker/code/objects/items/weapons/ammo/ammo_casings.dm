@@ -19,7 +19,7 @@
 /obj/item/ammo_casing/shotgun/c12x70
 	desc = "A 12x70mm bullet casing."
 	icon_state = "gshell"
-	pellets = 6
+	pellets = 6                                                     //pellets variable? this might come in useful for some unconventional ammo.
 	variance = 5
 	projectile_type = /obj/item/projectile/bullet/bullet12x70
 
@@ -106,3 +106,16 @@
 	desc = "A 5.7×28mm casing."
 	caliber = "5.7×28mm"
 	projectile_type = /obj/item/projectile/bullet/p90
+
+/obj/item/ammo_casing/c500cal
+	desc = "A .500 casing. Very large bullet."
+	caliber = "c500cal"
+	projectile_type = /obj/item/projectile/bullet/c500cal
+
+/obj/item/ammo_casing/shotgun/c500cal/buck
+	desc = "A .500 pellet shell. This ammo type is beyond unconventional, but may come in useful at rapidly dispatching foes."
+	caliber = "c500cal"
+	icon_state = "gshell"
+	pellets = 4
+	variance = 10
+	projectile_type = /obj/item/projectile/bullet/c500calbuck

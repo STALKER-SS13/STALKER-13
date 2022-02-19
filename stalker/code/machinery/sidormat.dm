@@ -439,6 +439,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Glock 17",					"Glock 17",						/obj/item/gun/ballistic/automatic/pistol/glock,				7550,	ROOKIE,	sale_price = 50000),
 		new /datum/data/stalker_equipment("TT-30",						"TT-30",						/obj/item/gun/ballistic/automatic/pistol/tt30,				7550,	ROOKIE,	sale_price = 50000),
 		new /datum/data/stalker_equipment("Five Seven",					"Five Seven",					/obj/item/gun/ballistic/automatic/pistol/fiveseven,			7550,	ROOKIE,	sale_price = 50000),
+		new /datum/data/stalker_equipment(".500 Bull",					".500 Bull",					/obj/item/gun/ballistic/revolver/c500revolver,				7550,	ROOKIE,	sale_price = 100000),
 		new /datum/data/stalker_equipment("Walther PP",					"Walther PP",					/obj/item/gun/ballistic/automatic/pistol/waltherpp,			7550,	ROOKIE,	sale_price = 50000),
 		new /datum/data/stalker_equipment("CZ 83",						"CZ 83",						/obj/item/gun/ballistic/automatic/pistol/cz83,				7550,	ROOKIE,	sale_price = 50000),
 		new /datum/data/stalker_equipment("Silver Baretta",				"Silver Baretta",				/obj/item/gun/ballistic/automatic/pistol/silvermarta,		7550,	ROOKIE,	sale_price = 50000),

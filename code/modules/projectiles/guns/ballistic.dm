@@ -105,7 +105,7 @@
 		playsound (src.loc, 'stalker/sound/weapons/detach_addon.ogg', 50, 1, 0)
 		azoom.Remove(usr)
 		usr.put_in_hands(S)
-		zoomable = 0
+		zoomable = FALSE
 		addons.Remove(S)
 		build_zooming()
 		return
@@ -331,7 +331,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 					return
 				to_chat(user, "<span class='notice'>You screwed [S] onto [src].</span>")
 				playsound (src.loc, 'stalker/sound/weapons/attach_addon.ogg', 50, 1, 0)
-				zoomable = 1
+				zoomable = TRUE
 				A.loc = src
 				update_icon()
 				addons += S

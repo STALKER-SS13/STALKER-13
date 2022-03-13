@@ -527,7 +527,7 @@
 	/obj/item/reagent_containers/hypospray/medipen/stalker/metamizole = 30,
 	/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 30,
 	/obj/item/reagent_containers/hypospray/medipen/stalker/axyltallisal = 5,
-				/obj/nothing = 25)
+	/obj/nothing = 25)
 
 /obj/effect/spawner/lootdrop/stalker/food
 	name = "stalker food"
@@ -535,7 +535,8 @@
 	loot = list(/obj/item/reagent_containers/food/snacks/stalker/baton = 50,
 				/obj/item/reagent_containers/food/snacks/stalker/kolbasa = 30,
 				/obj/item/reagent_containers/food/snacks/stalker/kolbasa/doctorsausage = 40,
-				/obj/item/reagent_containers/food/snacks/stalker/konserva = 20)
+				/obj/item/reagent_containers/food/snacks/stalker/konserva = 20,
+				/obj/nothing = 15)
 
 
 /obj/effect/spawner/lootdrop/stalker/stews
@@ -543,7 +544,8 @@
 	lootcount = 1
 	loot = list(/obj/item/reagent_containers/food/snacks/stalker/lowgradestew = 50,
 				/obj/item/reagent_containers/food/snacks/stalker/shroomstew = 25,
-				/obj/item/reagent_containers/food/snacks/stalker/meatstew = 25)
+				/obj/item/reagent_containers/food/snacks/stalker/meatstew = 25,
+				/obj/nothing = 15)
 
 
 /obj/effect/spawner/lootdrop/stalker/gravy
@@ -862,7 +864,7 @@ obj/nothing/New()
 					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikesg = 10,
 					/obj/item/storage/fancy/cigarettes/cigpack_luckystrikes = 10,
 					/obj/item/storage/fancy/cigarettes/cigpack_newports = 10,
-				/obj/nothing = 10)
+				/obj/nothing = 20)
 
 /obj/effect/spawner/lootdrop/stalker/vodka
 	name = "stalker vodka"
@@ -968,7 +970,8 @@ obj/nothing/New()
 				/obj/item/reagent_containers/food/condiment/soysauce = 5,
 				/obj/item/reagent_containers/food/condiment/mayonnaise = 10,
 				/obj/item/reagent_containers/food/condiment/pack/hotsauce = 10,
-				/obj/item/trash/fermentingjar
+				/obj/item/trash/fermentingjar = 1,
+				/obj/nothing = 15
 				)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/armor
@@ -997,16 +1000,17 @@ obj/nothing/New()
 /obj/effect/spawner/lootdrop/stalker/weapon/stockparts
 	name = "stalker stock parts"
 	loot = list(/obj/item/stock_parts/manipulator = 15,
-/obj/item/stock_parts/micro_laser = 15,
-/obj/item/stock_parts/matter_bin = 15,
-/obj/item/stock_parts/subspace/ansible = 15,
-/obj/item/stock_parts/subspace/filter = 15,
-/obj/item/stock_parts/subspace/amplifier = 15,
-/obj/item/stock_parts/subspace/analyzer = 15,
-/obj/item/stock_parts/rom1 = 15,
-/obj/item/stock_parts/hdd1 = 15,
-/obj/item/stock_parts/capacitor = 15,
-/obj/item/stock_parts/scanning_module = 15)
+				/obj/item/stock_parts/micro_laser = 15,
+				/obj/item/stock_parts/matter_bin = 15,
+				/obj/item/stock_parts/subspace/ansible = 15,
+				/obj/item/stock_parts/subspace/filter = 15,
+				/obj/item/stock_parts/subspace/amplifier = 15,
+				/obj/item/stock_parts/subspace/analyzer = 15,
+				/obj/item/stock_parts/rom1 = 15,
+				/obj/item/stock_parts/hdd1 = 15,
+				/obj/item/stock_parts/capacitor = 15,
+				/obj/item/stock_parts/scanning_module = 15,
+				/obj/nothing = 10)
 
 /obj/effect/spawner/lootdrop/stalker/rarefirearms
 	name = "stalker rare firearms"
@@ -1035,4 +1039,4 @@ obj/nothing/New()
 				/obj/item/gun/ballistic/automatic/ak74/blackout = 20,
 				/obj/item/gun/ballistic/automatic/ak74/black = 20,
 				/obj/item/gun/ballistic/automatic/ak74/camo = 20,
-				/obj/nothing = 10)
+				/obj/nothing = 80)

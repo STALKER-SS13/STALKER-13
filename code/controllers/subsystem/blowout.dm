@@ -173,6 +173,7 @@ SUBSYSTEM_DEF(blowout)
 
 		if(A.invisibility > 30)
 
+			qdel(A)
 			CHECK_TICK
 
 	for(var/obj/anomaly/An in GLOB.anomalies)
@@ -196,7 +197,8 @@ SUBSYSTEM_DEF(blowout)
 		CHECK_TICK
 
 	for(var/obj/structure/stalker/cacheable/C in world)
-
+		if(C.internal_cache)
+			qdel(C.internal_cache)
 		C.internal_cache = null
 		C.cache_chance = rand(3, 7)
 		C.RefreshContents()

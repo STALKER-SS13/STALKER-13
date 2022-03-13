@@ -154,12 +154,12 @@ SUBSYSTEM_DEF(blowout)
 		if(!H.inshelter)
 			H.apply_damage(200, PSY)
 		CHECK_TICK
-
+/*
 /datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
 	for(var/datum/controller/subsystem/zona/MS)
 		MS.SpawnMobs()
 		CHECK_TICK
-
+*/
 /datum/controller/subsystem/blowout/proc/StopBlowout()
 
 	if(blowoutphase == 2)
@@ -180,12 +180,12 @@ SUBSYSTEM_DEF(blowout)
 
 		An.SpawnArtifact()
 		CHECK_TICK
-
+/*
 	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
 
 		Ms.SpawnMobs()
 		CHECK_TICK
-
+*/
 	for(var/datum/job/J in SSjob.occupations)
 
 		J.total_positions = initial(J.total_positions)

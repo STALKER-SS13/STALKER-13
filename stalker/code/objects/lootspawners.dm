@@ -394,7 +394,7 @@
 				/obj/item/gun/ballistic/automatic/ak74/blackout = 20,
 				/obj/item/gun/ballistic/automatic/ak74/black = 20,
 				/obj/item/gun/ballistic/automatic/ak74/camo = 20,
-				/obj/nothing = 35)
+				/obj/nothing = 90)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/rarepistols
 	name = "stalker rare pistols"
@@ -409,7 +409,7 @@
 				/obj/item/gun/ballistic/automatic/pistol/waltherpp = 10,
 				/obj/item/gun/ballistic/automatic/pistol/cz83 = 10,
 				/obj/item/gun/ballistic/automatic/pistol/silvermarta = 10,
-				/obj/nothing = 35)
+				/obj/nothing = 90)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/raresmgs
 	name = "stalker rare smgs"
@@ -423,7 +423,7 @@
 				/obj/item/gun/ballistic/automatic/bizon = 10,
 				/obj/item/gun/ballistic/automatic/m76 = 10,
 				/obj/item/gun/ballistic/automatic/skorpion = 10,
-				/obj/nothing = 35)
+				/obj/nothing = 90)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/rareboltaction
 	name = "stalker rare boltactions"
@@ -431,7 +431,7 @@
 				/obj/item/gun/ballistic/rifle/boltaction/arisaka = 10,
 				/obj/item/gun/ballistic/rifle/boltaction/karabiner = 10,
 				/obj/item/gun/ballistic/rifle/boltaction/springfield = 10,
-				/obj/nothing = 35)
+				/obj/nothing = 90)
 
 /obj/effect/spawner/lootdrop/stalker/weapon/melee
 	name = "stalker melee"

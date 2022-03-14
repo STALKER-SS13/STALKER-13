@@ -127,6 +127,7 @@
 	icon_state = "hole"
 	max_mobs = 4
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/flesh)
@@ -138,6 +139,7 @@
 	icon_state = "hole"
 	max_mobs = 3
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/boar)
@@ -149,6 +151,7 @@
 	icon_state = "hole"
 	max_mobs = 3
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/snork)
@@ -160,6 +163,7 @@
 	icon_state = "hole"
 	max_mobs = 4
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/dog)
@@ -171,6 +175,7 @@
 	icon_state = "hole"
 	max_mobs = 2
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/pseudog)
@@ -182,6 +187,7 @@
 	icon_state = "hole"
 	max_mobs = 2
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/bloodsucker)
@@ -204,6 +210,7 @@
 	icon_state = "hole"
 	max_mobs = 5
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged)
@@ -215,6 +222,7 @@
 	icon_state = "hole"
 	max_mobs = 4
 	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker)

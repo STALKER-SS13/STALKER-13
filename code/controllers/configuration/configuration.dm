@@ -92,7 +92,7 @@
 	if(IsAdminAdvancedProcCall())
 		return
 
-	var/filename_to_test = world.system_type == UNIX ? lowertext(filename) : filename
+	var/filename_to_test = world.system_type == MS_WINDOWS ? lowertext(filename) : filename
 	if(filename_to_test in stack)
 		log_config("Warning: Config recursion detected ([english_list(stack)]), breaking!")
 		return

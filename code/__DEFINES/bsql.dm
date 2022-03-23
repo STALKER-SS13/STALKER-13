@@ -2,7 +2,7 @@
 #define BSQL_VERSION "v1.3.0.0"
 
 //types of connections
-#define BSQL_CONNECTION_TYPE_MARIADB "MariaDB"
+#define BSQL_CONNECTION_TYPE_MARIADB "MySql"
 #define BSQL_CONNECTION_TYPE_SQLSERVER "SqlServer"
 
 #define BSQL_DEFAULT_TIMEOUT 5

@@ -154,12 +154,12 @@ SUBSYSTEM_DEF(blowout)
 		if(!H.inshelter)
 			H.apply_damage(200, PSY)
 		CHECK_TICK
-
+/*
 /datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
 	for(var/datum/controller/subsystem/zona/MS)
 		MS.SpawnMobs()
 		CHECK_TICK
-
+*/
 /datum/controller/subsystem/blowout/proc/StopBlowout()
 
 	if(blowoutphase == 2)
@@ -173,18 +173,19 @@ SUBSYSTEM_DEF(blowout)
 
 		if(A.invisibility > 30)
 
+			qdel(A)
 			CHECK_TICK
 
 	for(var/obj/anomaly/An in GLOB.anomalies)
 
 		An.SpawnArtifact()
 		CHECK_TICK
-
+/*
 	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
 
 		Ms.SpawnMobs()
 		CHECK_TICK
-
+*/
 	for(var/datum/job/J in SSjob.occupations)
 
 		J.total_positions = initial(J.total_positions)
@@ -196,7 +197,8 @@ SUBSYSTEM_DEF(blowout)
 		CHECK_TICK
 
 	for(var/obj/structure/stalker/cacheable/C in world)
-
+		if(C.internal_cache)
+			qdel(C.internal_cache)
 		C.internal_cache = null
 		C.cache_chance = rand(3, 7)
 		C.RefreshContents()

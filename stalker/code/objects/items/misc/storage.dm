@@ -100,7 +100,6 @@
 	desc = "A small bag, used by messengers, lackeys and couriers. Very portable when compared to other bags."
 	icon_state = "satchel-civilian"
 	item_state = "satchel-civilian"
-	slowdown = -0.5
 
 /obj/item/storage/backpack/satchel/stalker/ComponentInitialize()
 	. = ..()

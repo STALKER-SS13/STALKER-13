@@ -2,8 +2,8 @@
 	name = "monster nest"
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "hole"
-	obj_integrity = 400
-	max_integrity = 400
+	//obj_integrity = 400
+	//max_integrity = 400
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
 	anchored = TRUE
 	density = TRUE
@@ -54,7 +54,7 @@
 	desc = "A pit full of bones, and some still seem to be moving..."
 	icon_state = "hole"
 	icon = 'icons/mob/nest.dmi'
-	max_integrity = 150
+	//max_integrity = 150
 	max_mobs = 15
 	spawn_time = 150
 	mob_types = list(/mob/living/simple_animal/hostile/skeleton)
@@ -65,7 +65,7 @@
 	name = "monster den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within most caves or mining asteroids."
 	icon_state = "hole"
-	max_integrity = 200
+	//max_integrity = 200
 	max_mobs = 3
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
@@ -98,12 +98,13 @@
 	mob_types = list(/mob/living/simple_animal/hostile/asteroid/fugu)
 
 // STALKER Variants
-
+/*
 /obj/structure/spawner/stalker/rat
 	name = "rat den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 6
+	max_mobs = 4
+	spawn_time = 900
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "scurries out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/rat)
@@ -113,17 +114,20 @@
 	name = "rat den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 10
+	max_mobs = 6
+	spawn_time = 900
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "scurries out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/rat)
 	faction = list("stalker_mutants1", "monolith_forces")
-
+*/
 /obj/structure/spawner/stalker/flesh
 	name = "flesh den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 8
+	max_mobs = 4
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/flesh)
@@ -134,6 +138,8 @@
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
 	max_mobs = 3
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/boar)
@@ -143,7 +149,9 @@
 	name = "snork den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 4
+	max_mobs = 3
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/snork)
@@ -153,7 +161,9 @@
 	name = "dog den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 6
+	max_mobs = 4
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/dog)
@@ -163,7 +173,9 @@
 	name = "pseudo den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 4
+	max_mobs = 2
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/pseudog)
@@ -173,7 +185,9 @@
 	name = "bloodsucker den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 4
+	max_mobs = 2
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/bloodsucker)
@@ -183,7 +197,8 @@
 	name = "controller den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 2
+	max_mobs = 1
+	spawn_time = 900
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/controller)
@@ -194,6 +209,8 @@
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
 	max_mobs = 5
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged)
@@ -203,7 +220,9 @@
 	name = "mutant den"
 	desc = "A hole dug into the ground, harboring all kinds of monsters found within the Zone."
 	icon_state = "hole"
-	max_mobs = 5
+	max_mobs = 4
+	spawn_time = 900
+	wander = 1
 	icon = 'icons/mob/nest.dmi'
 	spawn_text = "crawls out of"
 	mob_types = list(/mob/living/simple_animal/hostile/mutant/zombiesimp,/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged,/mob/living/simple_animal/hostile/mutant/rat,/mob/living/simple_animal/hostile/mutant/flesh,/mob/living/simple_animal/hostile/mutant/boar,/mob/living/simple_animal/hostile/mutant/snork,/mob/living/simple_animal/hostile/mutant/bloodsucker)

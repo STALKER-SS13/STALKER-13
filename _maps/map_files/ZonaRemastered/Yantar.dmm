@@ -3592,10 +3592,6 @@
 /obj/anomaly/karusel,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
-"Fd" = (
-/obj/structure/spawner/stalker/rat,
-/turf/open/stalker/floor/agroprom/gryaz,
-/area/stalker/blowout/outdoor)
 "Fe" = (
 /obj/structure/stalker/bunker{
 	icon_state = "26"
@@ -7889,7 +7885,7 @@ WT
 LI
 ad
 ad
-Fd
+ad
 XZ
 XZ
 NW

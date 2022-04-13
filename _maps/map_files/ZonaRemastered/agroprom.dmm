@@ -4216,6 +4216,13 @@
 	dir = 8
 	},
 /area/stalker/agroprom/tunnel)
+"rq" = (
+/mob/living/simple_animal/hostile/mutant/rat,
+/turf/open/stalker/floor/road{
+	icon_state = "road1";
+	tag = "icon-road1"
+	},
+/area/stalker/blowout/outdoor)
 "rz" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
@@ -5287,6 +5294,10 @@
 /obj/anomaly/electro,
 /turf/open/stalker/floor/road,
 /area/stalker/kordon/tunnel)
+"ys" = (
+/mob/living/simple_animal/hostile/mutant/rat,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "yv" = (
 /obj/structure/stalker/cacheable/junk_locker,
 /turf/open/stalker/floor/agroprom/beton,
@@ -7514,7 +7525,7 @@
 	},
 /area/stalker/agroprom/tunnel)
 "Ms" = (
-/obj/structure/spawner/stalker/rat,
+/mob/living/simple_animal/hostile/mutant/rat,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "Mt" = (
@@ -8051,6 +8062,10 @@
 /obj/item/trash/konserva/bobi,
 /turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/kordon/tunnel)
+"QH" = (
+/mob/living/simple_animal/hostile/mutant/rat,
+/turf/open/stalker/floor/road,
+/area/stalker/blowout/outdoor)
 "QL" = (
 /obj/anomaly/electro,
 /turf/open/stalker/floor/gryaz/gryaz2,
@@ -13902,7 +13917,7 @@ kE
 kE
 kE
 kE
-kE
+QH
 kE
 kE
 kE
@@ -16145,7 +16160,7 @@ ad
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -16658,48 +16673,48 @@ ad
 ad
 ad
 ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+hf
+hf
+hf
+hf
+hf
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
+aa
+ab
+ab
+ad
+ad
+ad
+ad
+ad
 Ms
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-hf
-hf
-hf
-hf
-hf
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ab
-ab
-ab
-aa
-aa
-aa
-aa
-aa
-aa
-ab
-ab
-ad
-ad
-ad
-ad
-ad
-ad
 ac
 ad
 ad
@@ -16955,7 +16970,7 @@ ad
 ad
 ad
 ad
-Ms
+ad
 ad
 ad
 ad
@@ -17249,7 +17264,7 @@ kE
 kE
 kE
 kE
-kE
+QH
 kE
 kM
 kE
@@ -17523,7 +17538,7 @@ kE
 kE
 kE
 kE
-kE
+QH
 kE
 kM
 kE
@@ -17998,7 +18013,7 @@ ad
 iG
 kE
 kE
-kM
+rq
 kM
 kE
 aq
@@ -21092,7 +21107,7 @@ kE
 kE
 kE
 kE
-kE
+QH
 kM
 jH
 kE
@@ -21366,7 +21381,7 @@ kE
 kE
 kE
 kM
-kM
+rq
 kE
 kM
 kE
@@ -25741,7 +25756,7 @@ kE
 kE
 kE
 kE
-kE
+QH
 kE
 kM
 kE
@@ -27710,7 +27725,7 @@ ad
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -28986,7 +29001,7 @@ ur
 ur
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -29302,7 +29317,7 @@ ac
 ad
 ad
 ad
-Ms
+ad
 ad
 ad
 ad
@@ -29500,7 +29515,7 @@ ad
 ad
 ad
 ad
-Ms
+ad
 ad
 dU
 ad
@@ -30307,7 +30322,7 @@ ad
 ad
 ad
 ad
-ae
+ys
 ad
 ad
 ad
@@ -30367,7 +30382,7 @@ hf
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -30576,7 +30591,7 @@ ad
 ad
 ad
 ad
-ae
+ys
 ad
 ad
 ad
@@ -32069,7 +32084,7 @@ kE
 eO
 kE
 kE
-kE
+QH
 kE
 kE
 kE
@@ -35878,7 +35893,7 @@ ab
 ad
 ad
 ad
-Ms
+ad
 ad
 ad
 ad
@@ -36189,7 +36204,7 @@ fl
 fl
 fl
 kE
-kE
+QH
 kE
 kE
 eO
@@ -37706,7 +37721,7 @@ bq
 bq
 kE
 kE
-kE
+QH
 kE
 kE
 ad
@@ -39340,7 +39355,7 @@ ad
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 az
@@ -40790,7 +40805,7 @@ au
 db
 kE
 kE
-kE
+QH
 kE
 ad
 ad
@@ -40816,7 +40831,7 @@ ad
 uQ
 bf
 bf
-kE
+QH
 kE
 kE
 kE
@@ -45159,7 +45174,7 @@ au
 db
 kE
 kE
-kE
+QH
 kE
 kE
 kE
@@ -46770,7 +46785,7 @@ ad
 ae
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -47505,7 +47520,7 @@ kE
 cg
 kE
 kE
-kE
+QH
 kE
 fM
 ga
@@ -48002,7 +48017,7 @@ kE
 eO
 kE
 kE
-kE
+QH
 kE
 kE
 kE
@@ -56984,7 +56999,7 @@ ad
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -58272,7 +58287,7 @@ ad
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -59531,7 +59546,7 @@ ae
 ad
 ad
 ad
-ad
+Ms
 ad
 ad
 ad
@@ -60286,7 +60301,7 @@ ae
 az
 ad
 ad
-ad
+Ms
 ad
 ad
 ad

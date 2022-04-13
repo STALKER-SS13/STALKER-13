@@ -3959,7 +3959,7 @@
 /turf/open/stalker/floor/plasteel/plita/orange,
 /area/stalker)
 "mu" = (
-/obj/structure/spawner/stalker/rat,
+/mob/living/simple_animal/hostile/mutant/rat,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "mv" = (
@@ -4681,6 +4681,10 @@
 /obj/structure/closet/crate/stalker/blue/stash/medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/kordon/tunnel)
+"sP" = (
+/obj/structure/spawner/stalker/zombiesimp,
+/turf/open/space/basic,
+/area/stalker)
 "sQ" = (
 /obj/structure/stalker/car/gryzovik2/south,
 /turf/open/stalker/floor/gryaz,
@@ -5073,6 +5077,11 @@
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"wI" = (
+/obj/structure/grille/indestructable,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/stalker/floor/agroprom/gryaz,
+/area/stalker)
 "wJ" = (
 /obj/structure/stalker/cacheable/bochka{
 	pixel_x = 12;
@@ -6140,9 +6149,9 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker)
 "HO" = (
-/obj/structure/spawner/stalker/rat,
+/mob/living/simple_animal/hostile/mutant/rat,
 /turf/open/stalker/floor/gryaz,
-/area/stalker)
+/area/stalker/kordon/buildings)
 "HT" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/meleetierrare,
 /turf/open/stalker/floor/gryaz,
@@ -6406,9 +6415,9 @@
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/kordon/buildings)
 "Kt" = (
-/obj/structure/spawner/stalker/rat,
-/turf/open/stalker/floor/asphalt,
-/area/stalker)
+/mob/living/simple_animal/hostile/mutant/rat,
+/turf/open/stalker/floor/wood/oldvert,
+/area/stalker/kordon/buildings)
 "Kv" = (
 /obj/structure/barricade/stalker/box,
 /obj/rad/rad_medium,
@@ -7026,6 +7035,10 @@
 /obj/item/cigbutt/roach,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"PX" = (
+/mob/living/simple_animal/hostile/mutant/rat,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "PY" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -7116,8 +7129,9 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker)
 "QG" = (
-/obj/structure/spawner/stalker/rat,
-/turf/open/stalker/floor/agroprom/gryaz,
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/stalker/floor/gryaz,
 /area/stalker)
 "QW" = (
 /obj/machinery/campfire,
@@ -7774,6 +7788,11 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"WZ" = (
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/stalker/floor/asphalt,
+/area/stalker)
 "Xd" = (
 /obj/structure/table/stalker/wood,
 /obj/machinery/reagentgrinder,
@@ -14329,7 +14348,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -14610,7 +14629,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 af
@@ -20567,7 +20586,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -22358,7 +22377,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -23390,7 +23409,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -24485,7 +24504,7 @@ mq
 af
 mq
 mq
-af
+PX
 mq
 mq
 mq
@@ -25095,7 +25114,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -25425,7 +25444,7 @@ bO
 mq
 mq
 bO
-mu
+mq
 mq
 mq
 mq
@@ -26179,7 +26198,7 @@ af
 af
 af
 mq
-mu
+mq
 mq
 mq
 dD
@@ -28365,7 +28384,7 @@ mq
 mq
 mq
 af
-mq
+mu
 mq
 mq
 ae
@@ -29460,7 +29479,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 af
 mq
 mq
@@ -29798,7 +29817,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -31549,7 +31568,7 @@ aJ
 aJ
 aJ
 mq
-mq
+mu
 mq
 mq
 mq
@@ -33998,7 +34017,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -44385,7 +44404,7 @@ ae
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -47603,7 +47622,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -47980,7 +47999,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -48567,7 +48586,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -48784,7 +48803,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -51815,7 +51834,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -53100,7 +53119,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -54684,7 +54703,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -54942,7 +54961,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -55069,7 +55088,7 @@ Be
 Wn
 rx
 MX
-JH
+MX
 pK
 OX
 pK
@@ -55079,7 +55098,7 @@ Wn
 Wn
 MX
 MX
-HO
+MX
 rx
 Wn
 Gd
@@ -55350,7 +55369,7 @@ Dz
 Wn
 Mg
 pK
-QG
+pK
 pK
 Wn
 Wn
@@ -55854,7 +55873,7 @@ Ag
 MX
 MX
 MX
-YK
+MX
 MX
 MX
 Ag
@@ -56357,7 +56376,7 @@ pK
 pK
 MX
 Ag
-HO
+MX
 rx
 MO
 pK
@@ -56634,7 +56653,7 @@ rx
 Ud
 MX
 pK
-Kt
+Wn
 Wn
 qr
 qr
@@ -56720,7 +56739,7 @@ mq
 mq
 mq
 mq
-mu
+mq
 mq
 mq
 mq
@@ -56886,7 +56905,7 @@ MX
 Wn
 Wn
 MX
-HO
+MX
 rx
 QF
 MX
@@ -57136,7 +57155,7 @@ pK
 pK
 Wn
 Wn
-rx
+WZ
 MX
 MX
 pK
@@ -57209,7 +57228,7 @@ mq
 af
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -57379,10 +57398,10 @@ rx
 MX
 MX
 MX
-HO
+MX
 rx
 Dz
-zF
+Wn
 Wn
 Ag
 BN
@@ -57393,7 +57412,7 @@ pK
 Wn
 Va
 Wn
-rx
+WZ
 MX
 DC
 NB
@@ -57885,8 +57904,8 @@ aa
 aa
 aa
 rx
-rx
-rx
+QG
+QG
 MX
 MX
 rx
@@ -57894,7 +57913,7 @@ MX
 LR
 Ag
 MX
-rx
+QG
 Wn
 pK
 pK
@@ -58119,7 +58138,7 @@ aE
 Wb
 aE
 aE
-aE
+Kt
 aE
 aE
 bX
@@ -58151,7 +58170,7 @@ MX
 LR
 MX
 MX
-rx
+QG
 Wn
 OX
 pK
@@ -58414,7 +58433,7 @@ OX
 pK
 MX
 MX
-rx
+WZ
 MX
 MX
 zh
@@ -58425,15 +58444,15 @@ rx
 rx
 rx
 rx
+WZ
+WZ
 rx
 rx
 rx
 rx
 rx
-rx
-rx
-rx
-rx
+WZ
+WZ
 rx
 rx
 Wn
@@ -58671,7 +58690,7 @@ OX
 Wn
 MX
 MX
-rx
+WZ
 MX
 MX
 MX
@@ -58687,7 +58706,7 @@ Wn
 Wn
 pK
 rx
-YK
+MX
 MX
 px
 MX
@@ -58928,7 +58947,7 @@ Wn
 Hz
 Va
 MX
-rx
+WZ
 wU
 MX
 MX
@@ -58941,7 +58960,7 @@ rP
 Gs
 Wn
 Wn
-Qm
+Wn
 pK
 rx
 MX
@@ -59185,7 +59204,7 @@ MX
 LR
 Wn
 Wn
-rx
+WZ
 Ud
 MX
 Ag
@@ -59448,7 +59467,7 @@ MX
 MX
 MX
 MX
-Kt
+Wn
 rx
 rR
 Wn
@@ -59943,7 +59962,7 @@ aa
 rx
 Mg
 pK
-QG
+pK
 pK
 Tc
 pK
@@ -59955,7 +59974,7 @@ MX
 MX
 Ag
 pK
-QG
+pK
 rx
 QF
 MX
@@ -60462,7 +60481,7 @@ Pq
 pK
 Zw
 Wn
-zF
+Wn
 MX
 MX
 MX
@@ -60977,10 +60996,10 @@ rx
 rx
 rx
 rx
-rx
-rx
-rx
-rx
+QG
+QG
+QG
+QG
 rx
 rx
 rx
@@ -61435,7 +61454,7 @@ fk
 mE
 mE
 ds
-bX
+HO
 mE
 mE
 RZ
@@ -61496,7 +61515,7 @@ pK
 wt
 MX
 nX
-JH
+MX
 MX
 MX
 Wn
@@ -61511,7 +61530,7 @@ MX
 MX
 pK
 Wn
-Kt
+Wn
 Wn
 rx
 Wn
@@ -61962,7 +61981,7 @@ iA
 iC
 iF
 bX
-bX
+HO
 hG
 ac
 mq
@@ -62018,7 +62037,7 @@ MX
 Wn
 pK
 pK
-JH
+MX
 rx
 MX
 MX
@@ -62261,8 +62280,8 @@ rx
 rx
 rx
 rx
-rx
-rx
+wI
+wI
 rx
 rx
 rx
@@ -62287,8 +62306,8 @@ rx
 rx
 rx
 rx
-rx
-rx
+WZ
+WZ
 rx
 rx
 rx
@@ -62806,7 +62825,7 @@ XY
 XY
 MX
 MX
-Kt
+Wn
 Wn
 rx
 aa
@@ -62901,7 +62920,7 @@ mq
 mq
 mq
 mq
-mq
+mu
 mq
 mq
 mq
@@ -63006,7 +63025,7 @@ bX
 NY
 aE
 aE
-bX
+HO
 aE
 cW
 mq
@@ -63032,7 +63051,7 @@ pK
 pK
 Wn
 Wn
-Kt
+Wn
 Va
 Wn
 MX
@@ -63564,7 +63583,7 @@ wU
 SF
 Wn
 qr
-rx
+WZ
 MX
 ZP
 ZP
@@ -63821,7 +63840,7 @@ wU
 kt
 Wn
 pL
-rx
+WZ
 Wn
 RX
 uo
@@ -64078,12 +64097,12 @@ Im
 JJ
 Wn
 Wk
-rx
+WZ
 Wn
 ZP
 uo
 MX
-HO
+MX
 MX
 MX
 MX
@@ -64837,7 +64856,7 @@ pK
 rx
 ve
 Wn
-HO
+MX
 MX
 MX
 MX
@@ -65359,8 +65378,8 @@ rx
 rx
 rx
 rx
-rx
-rx
+QG
+QG
 rx
 rx
 rx
@@ -65857,7 +65876,7 @@ pK
 pK
 MX
 MX
-YK
+MX
 MX
 rx
 pK
@@ -66144,7 +66163,7 @@ wt
 nX
 MX
 MX
-JH
+MX
 MX
 MX
 Wi
@@ -66373,7 +66392,7 @@ MX
 Oo
 Oo
 MX
-rx
+WZ
 MX
 pL
 zI
@@ -66383,7 +66402,7 @@ Dz
 Lx
 Wn
 Wn
-rx
+WZ
 XY
 XY
 XY
@@ -66394,7 +66413,7 @@ Wn
 TN
 rx
 Wn
-Kt
+Wn
 Dz
 Dz
 Wn
@@ -66630,7 +66649,7 @@ MX
 or
 Oo
 MX
-rx
+WZ
 MX
 zi
 qr
@@ -66640,7 +66659,7 @@ Dz
 Wn
 Wn
 Wn
-rx
+WZ
 vE
 MX
 MX
@@ -66909,8 +66928,8 @@ MX
 rx
 rx
 rx
-rx
-rx
+WZ
+WZ
 rx
 rx
 rx
@@ -67396,12 +67415,12 @@ aa
 rx
 DB
 Wn
-Kt
+Wn
 Wn
 qv
 Oo
 MX
-rx
+WZ
 MX
 qr
 qr
@@ -67411,7 +67430,7 @@ Wn
 zh
 Wn
 Wn
-rx
+WZ
 wU
 MX
 XY
@@ -67428,7 +67447,7 @@ Wn
 vr
 rx
 Wn
-Kt
+Wn
 Wn
 Wn
 Wn
@@ -67658,7 +67677,7 @@ Wn
 vr
 Qf
 MX
-rx
+WZ
 MX
 ZP
 qr
@@ -67668,7 +67687,7 @@ Wn
 Wn
 zh
 Wn
-rx
+WZ
 Vi
 MX
 MX
@@ -67680,7 +67699,7 @@ MX
 Wn
 Wn
 Wn
-zF
+Wn
 Wn
 pL
 rx
@@ -68429,7 +68448,7 @@ Wn
 pL
 Wk
 Wn
-rx
+WZ
 MX
 Oo
 Oo
@@ -68439,7 +68458,7 @@ Lx
 Dz
 Wn
 Wn
-rx
+WZ
 NV
 Wn
 XY
@@ -68686,7 +68705,7 @@ Wn
 pH
 pL
 Wn
-rx
+WZ
 MX
 Mr
 Fx
@@ -68696,7 +68715,7 @@ Dz
 LD
 Dz
 Wn
-rx
+WZ
 vf
 Wn
 MX
@@ -68705,7 +68724,7 @@ MX
 MX
 MX
 MX
-rx
+QG
 wU
 MX
 MX
@@ -68718,7 +68737,7 @@ xQ
 Xo
 xQ
 Wn
-Qm
+Wn
 rx
 aa
 aa
@@ -68962,7 +68981,7 @@ Va
 MX
 MX
 MX
-rx
+QG
 rA
 MX
 MX
@@ -69208,7 +69227,7 @@ MX
 MX
 MX
 Wn
-Kt
+Wn
 Wn
 rx
 qr
@@ -69217,7 +69236,7 @@ Wn
 Wn
 Wn
 Wn
-HO
+MX
 MX
 rx
 oO
@@ -69708,7 +69727,7 @@ aa
 aa
 rx
 Wn
-zF
+Wn
 Wn
 Wn
 pL
@@ -70241,17 +70260,17 @@ MX
 rx
 zI
 Wn
-Qm
+sP
 Wn
 Wn
 Wn
-HO
+MX
 MX
 rx
 MX
 Ag
 MX
-HO
+MX
 MX
 rx
 MX
@@ -70259,7 +70278,7 @@ PI
 MX
 MX
 Wn
-Kt
+Wn
 Wn
 rx
 aa
@@ -70512,7 +70531,7 @@ MX
 MX
 rx
 MX
-YK
+MX
 MX
 MX
 Wn
@@ -70746,7 +70765,7 @@ rx
 Wn
 Wn
 Wn
-Kt
+Wn
 MX
 MX
 TJ
@@ -71018,7 +71037,7 @@ Wn
 Wn
 Hz
 Wn
-rx
+WZ
 Wn
 Wn
 MX
@@ -71275,7 +71294,7 @@ MX
 Wn
 Wn
 Wn
-rx
+WZ
 Wn
 Wn
 MX
@@ -71532,7 +71551,7 @@ MX
 Wn
 Wn
 Wn
-rx
+WZ
 Wn
 Dz
 MX
@@ -71541,7 +71560,7 @@ MX
 rx
 MX
 MX
-JH
+MX
 nX
 wt
 nX
@@ -72291,7 +72310,7 @@ Wn
 Wn
 Wn
 Wn
-Kt
+Wn
 Wn
 MX
 rx
@@ -72315,7 +72334,7 @@ MX
 MX
 MX
 MX
-HO
+MX
 MX
 rx
 aa

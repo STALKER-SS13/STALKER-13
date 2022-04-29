@@ -72,8 +72,8 @@
 	var/obj/item/note //Any papers pinned to the airlock
 	var/detonated = FALSE
 	var/abandoned = FALSE
-	var/doorOpen = 'sound/machines/airlock.ogg'
-	var/doorClose = 'sound/machines/airlockclose.ogg'
+	var/doorOpen = 'stalker/sound/machines/door_open.ogg'
+	var/doorClose = 'stalker/sound/machines/door_close.ogg'
 	var/doorDeni = 'sound/machines/deniedbeep.ogg' // i'm thinkin' Deni's
 	var/boltUp = 'sound/machines/boltsup.ogg'
 	var/boltDown = 'sound/machines/boltsdown.ogg'

@@ -28,6 +28,7 @@
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kombez/mercenary
 	mask = /obj/item/clothing/mask/gas/stalker/mercenary
+	gloves = /obj/item/clothing/gloves/fingerless
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
 	belt = pick(
 		/obj/item/kitchen/knife/bayonet,
@@ -101,6 +102,7 @@
 	uniform = UNIFORMPICK
 	head = /obj/item/clothing/head/assaultmerc
 	suit = /obj/item/clothing/suit/assaultmerc
+	gloves = /obj/item/clothing/gloves/fingerless
 	suit_store = /obj/item/gun/ballistic/automatic/tpc301
 	backpack_contents = list(
 		/obj/item/storage/firstaid/stalker/military = 1,

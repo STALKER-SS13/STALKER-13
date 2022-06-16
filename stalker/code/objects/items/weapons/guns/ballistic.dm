@@ -1,4 +1,5 @@
 
+
 ///////////////////////////// Pistols //////////////////////////////////////////
 /obj/item/gun/ballistic/automatic/pistol
 	modifications = list("barrel_pistol" = 0, "frame_pistol" = 0, "grip_pistol" = 0)
@@ -791,13 +792,12 @@
 	item_state = "sks"
 	fire_sound = 'stalker/sound/weapons/sks_shot.ogg'
 	durability = 200
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/internal/semiautobolt/sks
 	can_suppress = 0
 	slowdown = 0.15
 	fire_delay = 1.2
 	durability = 150
-	slot_flags = SLOT_BACK
 	force = 15
 	recoil = 0.5
 	w_class = 4
@@ -814,7 +814,6 @@
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable."
 	icon_state = "ak74"
 	item_state = "ak74"
-	var/worn_icon = "icons/mob/back.dmi"
 	colored = 0//"normal"
 	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
 	force = 15
@@ -857,14 +856,14 @@
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one has camo paint."
 	icon_state = "ak74_camo"
 	item_state = "ak74_camo"
-	worn_icon = "icons/mob/back/ak74_camo.dmi"
+
 
 /obj/item/gun/ballistic/automatic/ak74/black
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The metal parts are black."
 	icon_state = "ak74_black"
 	item_state = "ak74_black"
-	worn_icon = "icons/mob/back.dmi"
+
 
 
 /obj/item/gun/ballistic/automatic/ak74/blackout
@@ -872,14 +871,14 @@
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The entire gun is black."
 	icon_state = "ak74_blackout"
 	item_state = "ak74_blackout"
-	worn_icon = "icons/mob/back.dmi"
+
 
 /obj/item/gun/ballistic/automatic/ak74/unfurnished
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. This one is stripped of its wooden furniture."
 	icon_state = "ak74_furnitureless"
 	item_state = "ak74_furnitureless"
-	worn_icon = "icons/mob/back.dmi"
+
 
 /obj/item/gun/ballistic/automatic/aksu74  // АКС74У
 	name = "AK 74S"
@@ -1041,10 +1040,10 @@
 	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
 	icon_state = "akm"
 	item_state = "akm"
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/akm
-	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	fire_sound = 'stalker/sound/weapons/akm_shot.ogg'
 	can_suppress = 0
 	burst_size = 3
 	fire_delay = 1.7
@@ -1058,21 +1057,21 @@
 	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
 /obj/item/gun/ballistic/automatic/vz58 // vz. 58
-	name = "AKM"
-	desc = "The AKM is a 7.62×39mm assault rifle designed by Mikhail Kalashnikov. It is a common modernised variant of the AK-47 rifle developed in the 1940s. Introduced into service with the Soviet Army in 1959, the AKM is the prevalent variant of the entire AK series of firearms and it has found widespread use with most member states of the former Warsaw Pact and its African and Asian allies as well as being widely exported and produced in many other countries."
-	icon_state = "akm"
-	item_state = "akm"
-	slot_flags = SLOT_BACK
+	name = "vz. 58"
+	desc = "The vz. 58 is a 7.62×39mm assault rifle designed and manufactured in Czechoslovakia and accepted into service in the late 1950s as the 7.62mm submachine gun model 1958."
+	icon_state = "vz58"
+	item_state = "vz58"
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
-	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
-	fire_sound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/stalker/vz58
+	fire_sound = 'stalker/sound/weapons/vz58_shot.ogg'
 	can_suppress = 0
 	burst_size = 3
-	fire_delay = 1.7
+	fire_delay = 1.5
 	durability = 150
 	w_class = 4
 	spread = 12
-	slowdown = 0.15
+	slowdown = 0.10
 	recoil = 0.9
 	damagelose = 0.25
 	can_scope = 0
@@ -1083,7 +1082,7 @@
 	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
 	icon_state = "m16"
 	item_state = "m16"
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
@@ -1106,7 +1105,7 @@
 	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
 	icon_state = "m16a4"
 	item_state = "m16a4"
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
@@ -1172,7 +1171,7 @@
 	desc = "The ArmaLite AR-15 was designed to be a lightweight rifle and to fire a new high-velocity, lightweight, small-caliber cartridge to allow infantrymen to carry more ammunition."
 	icon_state = "ar15"
 	item_state = "m16"
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
@@ -1488,7 +1487,7 @@
 	desc = "This futuristic-looking weapon with a bullpup layout is actually a mass produced modular system, comprising a rifle grenade complex with a computerized fire control system and a 40-mm grenade launcher. Despite its bulky appearance, the weapon is highly ergonomic, easy to use and benefits from good technical characteristics. This one lacks a built-in computerised scope, yet itself is very precise and powerful."
 	icon_state = "fnf2000"
 	item_state = "fnf2000"
-	slot_flags = SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/fnf2000_shoot.ogg'
@@ -1694,7 +1693,7 @@
 	icon_state = "gaussrifle"
 	item_state = "gaussrifle"
 	colored = 0//"normal"
-	slot_flags = SLOT_BACK//|SLOT_BELT
+	slot_flags = ITEM_SLOT_BACK//|SLOT_BELT
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/gaussbattery
 	fire_sound = 'stalker/sound/weapons/gauss_shoot.ogg'

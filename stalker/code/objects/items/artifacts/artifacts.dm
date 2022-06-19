@@ -2,26 +2,28 @@
 #define IPU238 	2
 #define	IPO210	4
 
-/isotope
+/datum/isotope
 	var/name
 	var/not_modified_ka = 0.0
 
-/isotope/u238
+/datum/isotope/u238
 	name = "Uranium 238"
 	not_modified_ka = 0.59596
 
-/isotope/pu238
+/datum/isotope/pu238
 	name = "Plutonium 238"
 	not_modified_ka = 0.27030
 
-/isotope/po210
+/datum/isotope/po210
 	name = "Polonium 210"
 	not_modified_ka = 0.44015
+
+GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact
 	icon = 'stalker/icons/artifacts.dmi'
 	desc = "Simple Artifact"
-	var/isotope/isotope_base = null
+	var/datum/isotope/isotope_base = null
 	var/capacity = 0
 	var/charge = 0
 	var/list/art_armor = list()
@@ -31,8 +33,17 @@
 	w_class = 2
 	var/obj/effect/fakeart/phantom = null
 
+/obj/item/artifact/Initialize()
+	. = ..()
+	GLOB.all_artifacts += src
+
+/obj/item/artifact/Destroy()
+	. = ..()
+	GLOB.all_artifacts -= src
+
 /obj/item/artifact/proc/Think(mob/user)
-	if(!charge) return 0
+	if(!charge) 
+		return 0
 	if(istype(user, /mob/living/carbon))
 		var/mob/living/carbon/mob = user
 		if(istype(loc, user))
@@ -44,21 +55,20 @@
 		return art_armor
 	return 0
 
-
 /obj/item/artifact/Initialize()
-	..()
-	isotope_base = pick(/isotope/u238,
-						/isotope/pu238,
-						/isotope/po210)
+	. = ..()
+	isotope_base = pick(/datum/isotope/u238,
+						/datum/isotope/pu238,
+						/datum/isotope/po210)
 	capacity = rand(1000, 10000)
 	charge = capacity
 
 /obj/item/artifact/pickup(mob/user)
-	..()
+	. = ..()
 	if(invisibility)
 		invisibility = 0
 
-	/////////////////////////////////////////Gravity artifacts/////////////////////////////////////////
+/////////////////////////////////////////Gravity artifacts/////////////////////////////////////////
 /obj/item/artifact/meduza
 	name = "jellyfish"
 	desc = "This gravitational artifact attracts and absorbs radioactive particles, reducing the effects of radiation on the body. Very common in the Zone and is unofficially used outside the Zone for treating acute radiation sickness in exceptional circumstances."

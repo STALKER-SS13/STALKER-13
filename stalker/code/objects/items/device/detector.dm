@@ -45,8 +45,8 @@
 	icon_state_null = "veles_null"
 	level_s = 4
 
-/obj/item/detector/New()
-	..()
+/obj/item/detector/Initialize()
+	. = ..()
 	arts = list()
 	fakearts = list()
 

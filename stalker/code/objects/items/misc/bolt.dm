@@ -1,3 +1,27 @@
+/obj/item/stalker/bolt
+	name = "bolt"
+	desc = "Old Soviet bolt affected by corrosion."
+	icon = 'stalker/icons/bolt.dmi'
+	icon_state = "bolt"
+	w_class = 6//from 1. >:(
+	throwforce = 1//:)
+	var/spawn_time = 0
+
+/obj/item/stalker/bolt/Initialize()
+	. = ..()
+	START_PROCESSING(SSobj, src)
+	spawn_time = world.time
+
+/obj/item/stalker/bolt/process()
+	. = ..()
+	if((world.time - spawn_time) >= 4 SECONDS)
+		qdel(src)
+		return PROCESS_KILL
+	
+/obj/item/stalker/bolt/Destroy()
+	. = ..()
+	STOP_PROCESSING(SSobj, src)
+
 /obj/item/stalker/bolts
 	name = "bolts"
 	desc = "A pile of bolts."
@@ -11,26 +35,6 @@
 			user << "<span class='notice'>You place a bolt in the pile.</span>"
 		else
 			user << "<span class='notice'>You put the bolt in a bunch.</span>"
-
-/obj/item/stalker/bolt
-	name = "bolt"
-	desc = "Old Soviet bolt affected by corrosion."
-	icon = 'stalker/icons/bolt.dmi'
-	icon_state = "bolt"
-	w_class = 6//from 1. >:(
-	throwforce = 1//:)
-	var/spawn_time = 0
-
-/obj/item/stalker/bolt/New()
-	spawn_time = world.time
-	SSobj.processing.Add(src)
-
-/obj/item/stalker/bolt/process()
-
-/obj/item/stalker/bolt/Destroy()
-	..()
-	SSobj.processing.Remove()
-	return
 
 /obj/item/stalker/bolts/MouseDrop(atom/over_object)
 	var/mob/M = usr

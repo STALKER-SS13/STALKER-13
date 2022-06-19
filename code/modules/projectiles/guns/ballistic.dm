@@ -160,7 +160,7 @@
 			if (capacity_number)
 				add_overlay("[icon_state]_mag_[capacity_number]")*/
 
-var/global/list/obj/item/ammo_casing/ACs = list()
+GLOBAL_LIST_EMPTY(ammo_casings)
 
 /obj/item/gun/ballistic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
 	if(!semi_auto && from_firing)
@@ -171,7 +171,7 @@ var/global/list/obj/item/ammo_casing/ACs = list()
 			AC.forceMove(drop_location()) //Eject casing onto ground.
 			AC.bounce_away(TRUE)
 			chambered = null
-			ACs += AC
+			GLOB.ammo_casings += AC
 		else if(empty_chamber)
 			chambered = null
 	if (chamber_next_round && (magazine.max_ammo > 1))

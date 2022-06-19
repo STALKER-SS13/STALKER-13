@@ -1,27 +1,3 @@
-GLOBAL_LIST_EMPTY(stalker_bolts)
-
-/obj/item/stalker/bolts
-	name = "bolts"
-	desc = "A pile of bolts."
-	icon = 'stalker/icons/bolt.dmi'
-	icon_state = "kucha"
-	w_class = 6//from 2. >:(
-
-/obj/item/stalker/bolts/Initialize()
-	. = ..()
-	GLOB.stalker_bolts += src
-
-/obj/item/stalker/bolts/Destroy()
-	. = ..()
-	GLOB.stalker_bolts -= src
-
-/obj/item/stalker/bolts/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/stalker/bolt))
-		if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
-			user << "<span class='notice'>You place a bolt in the pile.</span>"
-		else
-			user << "<span class='notice'>You put the bolt in a bunch.</span>"
-
 /obj/item/stalker/bolt
 	name = "bolt"
 	desc = "Old Soviet bolt affected by corrosion."
@@ -45,6 +21,20 @@ GLOBAL_LIST_EMPTY(stalker_bolts)
 /obj/item/stalker/bolt/Destroy()
 	. = ..()
 	STOP_PROCESSING(SSobj, src)
+
+/obj/item/stalker/bolts
+	name = "bolts"
+	desc = "A pile of bolts."
+	icon = 'stalker/icons/bolt.dmi'
+	icon_state = "kucha"
+	w_class = 6//from 2. >:(
+
+/obj/item/stalker/bolts/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/stalker/bolt))
+		if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
+			user << "<span class='notice'>You place a bolt in the pile.</span>"
+		else
+			user << "<span class='notice'>You put the bolt in a bunch.</span>"
 
 /obj/item/stalker/bolts/MouseDrop(atom/over_object)
 	var/mob/M = usr

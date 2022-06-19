@@ -1,9 +1,19 @@
+GLOBAL_LIST_EMPTY(stalker_bolts)
+
 /obj/item/stalker/bolts
 	name = "bolts"
 	desc = "A pile of bolts."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "kucha"
 	w_class = 6//from 2. >:(
+
+/obj/item/stalker/bolts/Initialize()
+	. = ..()
+	GLOB.stalker_bolts += src
+
+/obj/item/stalker/bolts/Destroy()
+	. = ..()
+	GLOB.stalker_bolts -= src
 
 /obj/item/stalker/bolts/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stalker/bolt))
@@ -21,16 +31,20 @@
 	throwforce = 1//:)
 	var/spawn_time = 0
 
-/obj/item/stalker/bolt/New()
+/obj/item/stalker/bolt/Initialize()
+	. = ..()
+	START_PROCESSING(SSobj, src)
 	spawn_time = world.time
-	SSobj.processing.Add(src)
 
 /obj/item/stalker/bolt/process()
-
+	. = ..()
+	if((world.time - spawn_time) >= 4 SECONDS)
+		qdel(src)
+		return PROCESS_KILL
+	
 /obj/item/stalker/bolt/Destroy()
-	..()
-	SSobj.processing.Remove()
-	return
+	. = ..()
+	STOP_PROCESSING(SSobj, src)
 
 /obj/item/stalker/bolts/MouseDrop(atom/over_object)
 	var/mob/M = usr

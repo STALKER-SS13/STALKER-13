@@ -5,22 +5,10 @@
 	icon_state = "bolt"
 	w_class = 6//from 1. >:(
 	throwforce = 1//:)
-	var/spawn_time = 0
 
 /obj/item/stalker/bolt/Initialize()
 	. = ..()
-	START_PROCESSING(SSobj, src)
-	spawn_time = world.time
-
-/obj/item/stalker/bolt/process()
-	. = ..()
-	if((world.time - spawn_time) >= 4 SECONDS)
-		qdel(src)
-		return PROCESS_KILL
-	
-/obj/item/stalker/bolt/Destroy()
-	. = ..()
-	STOP_PROCESSING(SSobj, src)
+	QDEL_IN(src, 5 SECONDS)
 
 /obj/item/stalker/bolts
 	name = "bolts"

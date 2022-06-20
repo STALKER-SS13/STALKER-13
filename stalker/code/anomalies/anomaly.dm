@@ -87,7 +87,6 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 					return
 
 		RandomMove(O)
-		GLOB.spawned_artifacts += O
 
 /obj/anomaly/proc/RandomMove(spawned)
 	if(!spawned || !istype(spawned, /obj))

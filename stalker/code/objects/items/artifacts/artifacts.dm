@@ -1,29 +1,12 @@
-#define IU238 	1
-#define IPU238 	2
-#define	IPO210	4
-
-/datum/isotope
-	var/name
-	var/not_modified_ka = 0.0
-
-/datum/isotope/u238
-	name = "Uranium 238"
-	not_modified_ka = 0.59596
-
-/datum/isotope/pu238
-	name = "Plutonium 238"
-	not_modified_ka = 0.27030
-
-/datum/isotope/po210
-	name = "Polonium 210"
-	not_modified_ka = 0.44015
+#define IU238 	(1<<0)
+#define IPU238 	(1<<1)
+#define	IPO210	(1<<2)
 
 GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact
 	icon = 'stalker/icons/artifacts.dmi'
 	desc = "Simple Artifact"
-	var/datum/isotope/isotope_base = null
 	var/capacity = 0
 	var/charge = 0
 	var/list/art_armor = list()
@@ -36,10 +19,15 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 /obj/item/artifact/Initialize()
 	. = ..()
 	GLOB.all_artifacts += src
+	capacity = rand(1000, 10000)
+	charge = capacity
 
 /obj/item/artifact/Destroy()
 	. = ..()
 	GLOB.all_artifacts -= src
+	if(phantom)
+		qdel(phantom)
+	phantom = null
 
 /obj/item/artifact/proc/Think(mob/user)
 	if(!charge) 
@@ -54,14 +42,6 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 		return art_armor
 	return 0
-
-/obj/item/artifact/Initialize()
-	. = ..()
-	isotope_base = pick(/datum/isotope/u238,
-						/datum/isotope/pu238,
-						/datum/isotope/po210)
-	capacity = rand(1000, 10000)
-	charge = capacity
 
 /obj/item/artifact/pickup(mob/user)
 	. = ..()

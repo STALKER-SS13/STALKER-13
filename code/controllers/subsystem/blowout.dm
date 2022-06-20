@@ -85,7 +85,7 @@ SUBSYSTEM_DEF(blowout)
 		return
 	
 	///////III STAGE OF BLOWOUT///////////////////////////////////////////////////////
-	if(BLOWOUT_DURATION_STAGE_III + starttime < world.time && cleaned)
+	if((BLOWOUT_DURATION_STAGE_III + starttime < world.time) && cleaned)
 		AfterBlowout()
 		return
 
@@ -114,9 +114,9 @@ SUBSYSTEM_DEF(blowout)
 		return
 
 /datum/controller/subsystem/blowout/proc/StartBlowout()
-	isblowout = 1
-	blowoutphase = 1
 	starttime = world.time
+	isblowout = TRUE
+	blowoutphase = 1
 
 	//SSnightcycle.updateLight("BLOWOUT")
 
@@ -244,7 +244,7 @@ SUBSYSTEM_DEF(blowout)
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)
-		for(var/mob/living/carbon/human/H)
+		for(var/mob/living/carbon/human/H in GLOB.carbon_list)
 			if(istype(get_area(H), /area/stalker/blowout))
 				switch(blowoutphase)
 					if(1)

@@ -101,7 +101,7 @@
 	if(min_dist == 0)
 		min_dist = 1
 
-	for (var/obj/item/artifact/a in arts)
+	for (var/obj/item/artifact/a as anything in arts)
 		if(a in range(1, user))
 			if(isnull(a.phantom) && a.invisibility != 0)
 				user.handle_artifact(a)
@@ -184,7 +184,7 @@
 	var/image/up
 	var/obj/item/artifact/my_target = null
 
-/obj/effect/fakeart/Initialize(obj/item/artifact/a)
+/obj/effect/fakeart/New(obj/item/artifact/a)
 	. = ..()
 	name = a.name
 	desc = a.desc

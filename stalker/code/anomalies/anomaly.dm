@@ -7,7 +7,6 @@
 #define DMG_TYPE_BIO 64
 #define DMG_TYPE_LASTER 128
 GLOBAL_LIST_EMPTY(anomalies)
-GLOBAL_LIST_EMPTY(spawned_artifacts)
 
 /obj/anomaly
 	name = "Anomaly"

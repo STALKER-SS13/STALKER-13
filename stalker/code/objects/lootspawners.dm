@@ -25,23 +25,23 @@
 				/obj/item/reagent_containers/food/snacks/stalker/stew = 18,
 				/obj/item/detector/blink = 4,
 				/obj/item/seeds/potato = 30,
-					/obj/item/seeds/cabbage = 30,
-					/obj/item/seeds/beet/white = 30,
-					/obj/item/seeds/carrot/parsnip = 30,
-					/obj/item/seeds/beet/red = 30,
-					/obj/item/seeds/kudzu = 1,
-					/obj/item/seeds/onion = 30,
-					/obj/item/seeds/potato/sweet = 20,
-					/obj/item/seeds/wheat = 20,
-					/obj/item/seeds/wheat/rice = 30,
-					/obj/item/seeds/carrot = 20,
-					/obj/item/seeds/tomato = 30,
-					/obj/item/seeds/chili/ghost = 1,
-					/obj/item/seeds/tobacco = 30,
-					/obj/item/seeds/cannabis = 10,
-					/obj/item/seeds/cannabis/violetriot = 5,
-					/obj/item/seeds/cannabis/neonpeon = 5,
-					/obj/item/seeds/tobacco/strong = 5,
+				/obj/item/seeds/cabbage = 30,
+				/obj/item/seeds/beet/white = 30,
+				/obj/item/seeds/carrot/parsnip = 30,
+				/obj/item/seeds/beet/red = 30,
+				/obj/item/seeds/kudzu = 1,
+				/obj/item/seeds/onion = 30,
+				/obj/item/seeds/potato/sweet = 20,
+				/obj/item/seeds/wheat = 20,
+				/obj/item/seeds/wheat/rice = 30,
+				/obj/item/seeds/carrot = 20,
+				/obj/item/seeds/tomato = 30,
+				/obj/item/seeds/chili/ghost = 1,
+				/obj/item/seeds/tobacco = 30,
+				/obj/item/seeds/cannabis = 10,
+				/obj/item/seeds/cannabis/violetriot = 5,
+				/obj/item/seeds/cannabis/neonpeon = 5,
+				/obj/item/seeds/tobacco/strong = 5,
 				/obj/item/trash/paintcan = 5,
 				/obj/item/trash/teapot = 5,
 				/obj/item/trash/pincers = 5,
@@ -583,6 +583,11 @@
 /obj/nothing
 	name = "nothing"
 	invisibility = 101
+
+/obj/nothing/Initialize()
+	. = ..()
+	return QDEL_HINT_QUEUE
+
 /*
 obj/nothing/New()
 	qdel(src)

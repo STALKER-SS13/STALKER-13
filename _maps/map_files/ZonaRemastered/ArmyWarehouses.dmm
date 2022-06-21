@@ -171,6 +171,10 @@
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/freedom)
+"dy" = (
+/obj/structure/sign/vendor,
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/buildings/freedom)
 "dA" = (
 /obj/anomaly/electro,
 /turf/open/stalker/floor/gryaz,
@@ -909,6 +913,14 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"qj" = (
+/obj/machinery/button/door{
+	id = "FreedomGate";
+	pixel_x = -6;
+	pixel_y = 26
+	},
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "ql" = (
 /obj/effect/landmark/mobspawner/bloodsucker_spawner,
 /turf/open/stalker/floor/wood/oldvert,
@@ -1069,6 +1081,9 @@
 /obj/item/reagent_containers/food/snacks/stalker/konserva/govyadina2,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings)
+"sZ" = (
+/turf/open/floor/plasteel/stairs/stalker,
+/area/stalker/blowout/outdoor)
 "tq" = (
 /obj/structure/stalker/cacheable/bochka{
 	density = 0;
@@ -1608,6 +1623,12 @@
 	icon_state = "1,2"
 	},
 /turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
+"EM" = (
+/obj/machinery/door/poddoor/gate{
+	id = "FreedomGate"
+	},
+/turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "ER" = (
 /obj/structure/stalker/blocks/vanish/pipe/pipe2{
@@ -47468,7 +47489,7 @@ Fd
 np
 pO
 pO
-pO
+dy
 jR
 pO
 pO
@@ -49229,7 +49250,7 @@ Ld
 Ld
 Ld
 Ld
-VY
+aF
 Ld
 Ld
 VY
@@ -49486,7 +49507,7 @@ Rd
 Rd
 Rd
 Rd
-Rd
+Bc
 Rd
 Rd
 Rd
@@ -49743,7 +49764,7 @@ Rd
 Rd
 Rd
 Rd
-jk
+EM
 Rd
 Rd
 Rd
@@ -50000,7 +50021,7 @@ Rd
 Rd
 Rd
 Rd
-vV
+Rd
 Rd
 Rd
 Rd
@@ -50257,7 +50278,7 @@ Rd
 Rd
 Rd
 Rd
-SX
+Rd
 Rd
 Rd
 Rd
@@ -50513,9 +50534,9 @@ Rd
 Rd
 Rd
 Rd
-Rd
-uV
-Rd
+Eo
+Bc
+qj
 Rd
 Rd
 Rd
@@ -50770,9 +50791,9 @@ Rd
 Rd
 Rd
 Rd
-Rd
-uV
-Rd
+qf
+Uj
+sZ
 Rd
 Rd
 fR
@@ -51027,7 +51048,7 @@ Ld
 Ld
 Ld
 Ld
-Ld
+rq
 Bc
 Bc
 DH

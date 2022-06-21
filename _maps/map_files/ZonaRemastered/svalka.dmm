@@ -810,8 +810,8 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "cy" = (
-/obj/structure/closet/stalker/shkaf,
-/turf/open/stalker/floor/agroprom/beton,
+/obj/structure/sign/poster/contraband/revolver,
+/turf/closed/wall/stalker/bricks_white,
 /area/stalker/buildings/bandit)
 "cz" = (
 /obj/rad/rad_medium,
@@ -852,10 +852,18 @@
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
 "cG" = (
-/obj/structure/bed/stalker/metal/matras{
-	dir = 4;
-	icon_state = "krovat";
-	tag = "icon-krovat (EAST)"
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
+/obj/structure/bed/stalker/matras{
+	dir = 1;
+	tag = "icon-matras (NORTH)"
+	},
+/obj/machinery/button/door{
+	id = "BanditR1";
+	pixel_y = 19
 	},
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
@@ -868,6 +876,8 @@
 "cI" = (
 /obj/structure/table/stalker/wood,
 /obj/item/clothing/mask/cigarette/pipe/cobpipe,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings/bandit)
 "cJ" = (
@@ -1275,6 +1285,7 @@
 "dJ" = (
 /obj/structure/closet/stalker/shkaf,
 /obj/effect/spawner/lootdrop/stalker/equipment,
+/obj/effect/spawner/lootdrop/stalker/equipment,
 /turf/open/stalker/floor/sidor,
 /area/stalker/buildings/mercenary)
 "dK" = (
@@ -1505,7 +1516,7 @@
 /area/stalker/blowout/svalka/buildings)
 "er" = (
 /obj/machinery/door/poddoor/shutters{
-	id = 422
+	id = "MercShutter"
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/svalka/cellar)
@@ -4456,6 +4467,12 @@
 	},
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
+"ms" = (
+/obj/machinery/door/poddoor/sidor{
+	id = "MercBase1"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/mercenary)
 "mu" = (
 /obj/structure/stalker/car/gryzovik2/south{
 	icon_state = "7";
@@ -4991,6 +5008,22 @@
 /obj/structure/stalker/radiation,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"oO" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
+/obj/structure/bed/stalker/matras{
+	dir = 1;
+	tag = "icon-matras (NORTH)"
+	},
+/obj/machinery/button/door{
+	id = "BanditR2";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "oU" = (
 /obj/structure/closet/crate/trashcart,
 /turf/open/floor/plating/dirt,
@@ -5120,6 +5153,12 @@
 /obj/structure/stalker/radiation,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"qa" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "BanditR5"
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "qb" = (
 /turf/closed/indestructible/riveted/boss{
 	name = "decrepid wall"
@@ -5442,6 +5481,13 @@
 /obj/machinery/vending/boozeomat/all_access,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/kordon/banditbar)
+"rS" = (
+/obj/machinery/button/door{
+	id = "MercBase2";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/svalka/cellar)
 "rV" = (
 /obj/structure/stalker/car/gryzovik/east{
 	icon_state = "6";
@@ -5525,7 +5571,7 @@
 /area/stalker)
 "su" = (
 /obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "sx" = (
@@ -5713,6 +5759,11 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"ua" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier3,
+/turf/open/stalker/floor/lattice,
+/area/stalker/svalka/cellar)
 "ub" = (
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /turf/open/floor/plating/dirt/dark,
@@ -5922,6 +5973,12 @@
 /obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"vF" = (
+/obj/machinery/door/poddoor/sidor{
+	id = "MercBase2"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/mercenary)
 "vG" = (
 /obj/rad/rad_medium,
 /obj/rad/rad_medium,
@@ -6123,6 +6180,11 @@
 /obj/item/ammo_casing/shotgun/c12x70D,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"xw" = (
+/obj/rad/rad_medium,
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier2,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/svalka/tunnel)
 "xx" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/rad/rad_medium,
@@ -6142,6 +6204,13 @@
 	},
 /turf/open/stalker/floor/sidor,
 /area/stalker/buildings/mercenary)
+"xC" = (
+/obj/machinery/button/door{
+	id = "MercBase3";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/svalka/cellar)
 "xF" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -6436,6 +6505,12 @@
 /obj/structure/reagent_dispensers/compostvat,
 /turf/open/stalker/floor/wood/grey,
 /area/stalker)
+"Aj" = (
+/obj/machinery/door/poddoor/sidor{
+	id = "MercBase3"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/svalka/cellar)
 "Al" = (
 /obj/rad/rad_low,
 /obj/rad/rad_low,
@@ -6738,6 +6813,7 @@
 /area/stalker)
 "CJ" = (
 /obj/machinery/light/small/broken,
+/obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/svalka/cellar)
 "CM" = (
@@ -6782,6 +6858,22 @@
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
+"CY" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (WEST)"
+	},
+/obj/structure/bed/stalker/matras{
+	dir = 1;
+	tag = "icon-matras (NORTH)"
+	},
+/obj/machinery/button/door{
+	id = "BanditR3";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "Da" = (
 /obj/effect/decal/cleanable/ash,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -6806,6 +6898,7 @@
 /area/stalker)
 "Dk" = (
 /obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/medicine,
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /obj/effect/spawner/lootdrop/stalker/medicine,
 /obj/effect/spawner/lootdrop/stalker/medicine,
@@ -6932,6 +7025,12 @@
 /area/stalker)
 "Ef" = (
 /obj/structure/table/reinforced,
+/obj/item/stalker/blue_box{
+	desc = "A blue box, locked with one of the best locks money can buy. A trader might pay good money for this.";
+	eng_desc = "A blue box, locked with one of the best locks money can buy. A trader might pay good money for this.";
+	name = "Secure Lockbox"
+	},
+/obj/item/stalker/usb,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/mercenary)
 "Eo" = (
@@ -7025,6 +7124,12 @@
 /obj/structure/closet/stalker/shkaf,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"EW" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "BanditR3"
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "EX" = (
 /obj/effect/turf_decal/stripes/full{
 	icon = 'stalker/icons/warning_stripes.dmi';
@@ -7092,7 +7197,7 @@
 /area/stalker)
 "Fs" = (
 /obj/machinery/button/door{
-	id = 422;
+	id = "MercShutter";
 	pixel_y = 19
 	},
 /turf/open/stalker/floor/lattice{
@@ -7302,7 +7407,8 @@
 /area/stalker/blowout/outdoor)
 "Hh" = (
 /obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/gambling,
+/obj/effect/spawner/lootdrop/stalker/vodka,
+/obj/effect/spawner/lootdrop/stalker/vodka,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "Hi" = (
@@ -7478,6 +7584,22 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker)
+"Iw" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/obj/structure/bed/stalker/matras{
+	dir = 1;
+	tag = "icon-matras (NORTH)"
+	},
+/obj/machinery/button/door{
+	id = "BanditR4";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "Iz" = (
 /obj/rad/rad_low,
 /obj/item/clothing/mask/cigarette/pipe,
@@ -7706,14 +7828,11 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/buildings/bandit)
 "Kw" = (
-/obj/structure/table/stalker/wood,
-/obj/item/stalker/blue_box{
-	desc = "A blue box, locked with one of the best locks money can buy. A trader might pay good money for this.";
-	eng_desc = "A blue box, locked with one of the best locks money can buy. A trader might pay good money for this.";
-	name = "Secure Lockbox"
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "BanditR1"
 	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/svalka/cellar)
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "Kx" = (
 /obj/structure/stalker/okno/window3,
 /turf/closed/wall/stalker/bricks_white,
@@ -8056,7 +8175,7 @@
 /area/stalker)
 "Nb" = (
 /obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/khabar_low,
+/obj/effect/spawner/lootdrop/stalker/weapon/pistolstier2,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Nc" = (
@@ -8083,6 +8202,11 @@
 /obj/machinery/microwave/potbelly,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/kordon/banditbar)
+"Nk" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/weapon/pistolstier2,
+/turf/open/stalker/floor/lattice,
+/area/stalker/svalka/cellar)
 "Nn" = (
 /obj/structure/stalker/cacheable/televizor/broken,
 /obj/machinery/light/floor,
@@ -8229,10 +8353,9 @@
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "Ok" = (
-/obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/stalker/food,
-/turf/open/stalker/floor/lattice,
-/area/stalker/svalka/cellar)
+/obj/effect/spawner/lootdrop/stalker/junk,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "Ol" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,3"
@@ -8456,6 +8579,7 @@
 	icon_state = "4,4"
 	},
 /obj/rad/rad_high,
+/obj/structure/closet/crate/stalker/blue/stash/low,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "PW" = (
@@ -8469,7 +8593,7 @@
 /area/stalker/blowout/outdoor)
 "PY" = (
 /obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/khabar_low,
+/obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotgunstier2,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
 "PZ" = (
@@ -8510,6 +8634,7 @@
 "Qg" = (
 /obj/rad/rad_low,
 /obj/rad/rad_medium,
+/mob/living/simple_animal/hostile/mutant/snork,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/svalka/tunnel)
 "Qm" = (
@@ -8686,7 +8811,7 @@
 /area/stalker/blowout/outdoor)
 "Rv" = (
 /obj/rad/rad_medium,
-/obj/structure/closet/crate/stalker/blue/stash/low,
+/obj/structure/closet/crate/stalker/blue/stash/medium,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Rw" = (
@@ -8816,6 +8941,11 @@
 /area/stalker/blowout/outdoor)
 "Sl" = (
 /obj/machinery/light/floor,
+/obj/machinery/button/door{
+	id = "MercBase1";
+	pixel_x = -26;
+	pixel_y = -4
+	},
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/mercenary)
 "Sn" = (
@@ -8928,6 +9058,12 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/stalker/blowout/svalka/buildings)
+"SV" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "BanditR2"
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "SX" = (
 /obj/structure/stalker/cacheable/musor_yashik/red/full,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -8956,6 +9092,9 @@
 /obj/rad/rad_low,
 /turf/open/floor/plating/dirt,
 /area/stalker)
+"Tc" = (
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker/buildings/mercenary)
 "Te" = (
 /obj/structure/stalker/car/mi24{
 	icon_state = "4,3"
@@ -8985,6 +9124,12 @@
 /obj/machinery/light,
 /turf/open/stalker/floor/lattice,
 /area/stalker/svalka/cellar)
+"Tx" = (
+/obj/structure/stalker/cacheable/apc/open2{
+	pixel_y = 32
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "Ty" = (
 /obj/rad/rad_low,
 /obj/rad/rad_medium,
@@ -9204,6 +9349,7 @@
 "UR" = (
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/junk,
+/obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/mercenary)
 "UU" = (
@@ -9300,6 +9446,11 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"VC" = (
+/obj/rad/rad_medium,
+/obj/item/detector/bear,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/svalka/tunnel)
 "VF" = (
 /obj/rad/rad_medium,
 /obj/anomaly/tramplin,
@@ -9387,6 +9538,13 @@
 /obj/item/trash/wire,
 /turf/open/stalker/floor/digable/grass/dump,
 /area/stalker/blowout/outdoor)
+"Wd" = (
+/obj/machinery/light{
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
+	},
+/turf/open/stalker/floor/lattice,
+/area/stalker/buildings/mercenary)
 "Wg" = (
 /obj/structure/table/stalker/wood,
 /obj/item/storage/fancy/rollingpapers,
@@ -9579,6 +9737,11 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"Xx" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/weapon/armor,
+/turf/open/stalker/floor/digable/grass/dump,
+/area/stalker/blowout/outdoor)
 "Xz" = (
 /obj/structure/stalker/tree/leafless,
 /obj/rad/rad_high,
@@ -9705,13 +9868,9 @@
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Yv" = (
-/obj/machinery/button/door{
-	id = 343;
-	pixel_x = -6;
-	pixel_y = 26
-	},
-/turf/open/stalker/floor/lattice,
-/area/stalker/svalka/cellar)
+/obj/item/storage/secure/safe,
+/turf/closed/wall/stalker/bricks_white,
+/area/stalker)
 "Yx" = (
 /obj/rad/rad_high,
 /turf/open/stalker/floor/digable/grass/dump,
@@ -9758,6 +9917,8 @@
 "YZ" = (
 /obj/structure/closet/stalker/shkaf,
 /obj/effect/spawner/lootdrop/stalker/food,
+/obj/effect/spawner/lootdrop/stalker/food,
+/obj/effect/spawner/lootdrop/stalker/food,
 /turf/open/stalker/floor/lattice,
 /area/stalker/buildings/mercenary)
 "Zb" = (
@@ -9776,6 +9937,22 @@
 /obj/rad/rad_medium,
 /turf/open/floor/wood/cold,
 /area/stalker)
+"Zh" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb";
+	tag = "icon-bulb1 (EAST)"
+	},
+/obj/structure/bed/stalker/matras{
+	dir = 1;
+	tag = "icon-matras (NORTH)"
+	},
+/obj/machinery/button/door{
+	id = "BanditR5";
+	pixel_y = 19
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 "Zi" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8
@@ -9871,6 +10048,12 @@
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"ZW" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "BanditR4"
+	},
+/turf/open/stalker/floor/agroprom/beton,
+/area/stalker/buildings/bandit)
 
 (1,1,1) = {"
 aa
@@ -30146,7 +30329,7 @@ lq
 bM
 PY
 Nb
-PY
+Xx
 UF
 cl
 af
@@ -31786,10 +31969,10 @@ aN
 MX
 mS
 mS
-bs
-bs
-bs
-bs
+pt
+pt
+pt
+pt
 pt
 pt
 pt
@@ -32043,14 +32226,14 @@ MX
 MX
 mS
 bs
-bs
-bs
-bs
-bs
-bs
-bs
-bs
 pt
+cG
+pt
+oO
+pt
+CY
+pt
+Tx
 cM
 uj
 cZ
@@ -32300,12 +32483,12 @@ MX
 mS
 mS
 bs
-bs
-bs
-bs
-bs
-bs
-bs
+pt
+Kw
+pt
+SV
+pt
+EW
 pt
 pt
 cR
@@ -32557,12 +32740,12 @@ mS
 mS
 bs
 bs
-bs
-bs
-bs
-bs
-bs
-bs
+pt
+cM
+cM
+cM
+cM
+cM
 pt
 cN
 cM
@@ -32814,12 +32997,12 @@ mS
 bs
 bs
 bs
-bs
-bs
-bs
-bs
-bs
-bs
+pt
+ZW
+pt
+qa
+pt
+cM
 pt
 cO
 cS
@@ -33071,12 +33254,12 @@ mS
 bs
 bs
 bs
-bs
-bs
-bs
 pt
+Iw
 pt
+Zh
 pt
+cM
 pt
 pt
 pt
@@ -33328,12 +33511,12 @@ bs
 bs
 bs
 bs
-bs
-bs
-bs
+YH
+YH
+YH
 pt
 cy
-cG
+cM
 cK
 cP
 pt
@@ -43480,7 +43663,7 @@ bs
 bs
 bs
 lr
-bu
+VC
 bu
 lu
 bu
@@ -43737,7 +43920,7 @@ bs
 bs
 bs
 jX
-bu
+xw
 kb
 bu
 bu
@@ -61928,7 +62111,7 @@ ad
 ad
 ad
 ad
-ad
+Ok
 ad
 ad
 ad
@@ -62703,7 +62886,7 @@ ad
 ad
 ad
 ad
-ad
+Ok
 dU
 dU
 dU
@@ -63986,7 +64169,7 @@ er
 Rj
 JW
 Rj
-Rj
+rL
 nV
 cw
 UR
@@ -64240,7 +64423,7 @@ nz
 ad
 Me
 er
-Rj
+rL
 Rj
 Rj
 Rj
@@ -64502,7 +64685,7 @@ HK
 Jg
 Fk
 Jg
-Er
+Tc
 SF
 SF
 SF
@@ -65017,7 +65200,7 @@ Rj
 Rj
 Ps
 cw
-Rj
+xC
 Rj
 Ps
 cw
@@ -65269,11 +65452,11 @@ ad
 cw
 cw
 cw
+rS
 Rj
 Rj
 Rj
-Rj
-ul
+Aj
 Rj
 Rj
 Rj
@@ -65523,9 +65706,9 @@ af
 ad
 nz
 ad
-Er
+ms
 Sl
-Er
+vF
 Rj
 Rj
 Rj
@@ -66301,9 +66484,9 @@ cw
 Rj
 Rj
 cw
-Yv
 Rj
-Ok
+Rj
+uD
 uD
 Tw
 cw
@@ -66561,7 +66744,7 @@ cw
 qX
 Rj
 jM
-zi
+Nk
 Rj
 cw
 aa
@@ -66813,11 +66996,11 @@ aa
 cw
 Gb
 Rj
-zi
+jM
 cw
 yA
 Rj
-Kw
+ua
 zi
 Rj
 cw
@@ -70928,7 +71111,7 @@ aa
 YH
 ra
 SF
-SF
+Wd
 SF
 zj
 YH
@@ -72212,7 +72395,7 @@ aa
 YH
 YH
 YH
-YH
+Yv
 YH
 YH
 YH

@@ -22,7 +22,7 @@
 	icon_state = "sidor"
 	requires_power = 1
 	environment = 5
-	safezone = 0
+	safezone = 1
 
 /area/stalker/blowout/buildings
 	name = "Buildings"
@@ -82,28 +82,28 @@
 /area/stalker/buildings/backwater/skadovsk
 	name = "Backwater - Skadovsk \[NB\]"
 	icon_state = "skadovsk"
-	safezone = 0
+	safezone = 1
 	environment = 0
 	//ambient_music = list()
 
 /area/stalker/buildings/backwater/skadovsk_respawn
 	name = "Backwater - Skadovsk (2nd floor) \[NB\]"
 	icon_state = "skadovsk"
-	safezone = 0
+	safezone = 1
 	environment = 0
 	//ambient_music = list()
 
 /area/stalker/blowout/buildings/backwater/skadovsk
 	name = "Backwater - Skadovsk"
 	icon_state = "skadovsk"
-	safezone = 0
+	safezone = 1
 	environment = 0
 	//ambient_music = list()
 
 /area/stalker/blowout/outdoor/backwater/skadovsk
 	name = "Backwater - Skadovsk \[O\]"
 	icon_state = "skadovsk"
-	safezone = 0
+	safezone = 1
 	environment = 19
 
 ////////////////////////////////////////////////////////////////
@@ -411,67 +411,67 @@
 	name = "Bar 100RENTGEN"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "realbar"
-	safezone = 0
+	safezone = 1
 
 /area/stalker/buildings/monolith
 	name = "Monolith Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "monolith"
-	monolithsafezone = 0
+	monolithsafezone = 1
 
 /area/stalker/buildings/duty
 	name = "Duty Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "duty"
-	dutysafezone = 0
+	dutysafezone = 1
 
 /area/stalker/buildings/freedom
 	name = "Freedom Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "freedom"
-	freedomsafezone = 0
+	freedomsafezone = 1
 
 /area/stalker/buildings/clearsky
 	name = "Clear Sky Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "clearsky"
-	cssafezone = 0
+	cssafezone = 1
 
 /area/stalker/buildings/bandit
 	name = "Bandit Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "bandit"
-	banditsafezone = 0
+	banditsafezone = 1
 
 /area/stalker/buildings/military
 	name = "Military Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "military"
-	militarysafezone = 0
+	militarysafezone = 1
 
 /area/stalker/buildings/renegade
 	name = "Renegade Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "renegades"
-	renegadesafezone = 0
+	renegadesafezone = 1
 
 /area/stalker/buildings/mercenary
 	name = "Mercenary Safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "mercenary"
-	mercenarysafezone = 0
+	mercenarysafezone = 1
 
 /area/stalker/buildings/ecologist
 	name = "ecologist safezone"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "ecologist"
-	ecosafezone = 0
+	ecosafezone = 1
 
 /area/stalker/buildings/ecologist_entrance
 	name = "ecologist"
 	icon = 'stalker/icons/areas.dmi'
 	icon_state = "ecologist entrance"
-	safezone = 0
+	safezone = 1
 
 //bar
 

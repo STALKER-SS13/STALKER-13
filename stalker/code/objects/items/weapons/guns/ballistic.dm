@@ -951,7 +951,7 @@
 	spread = 4
 	recoil = 1
 	damagelose = 0.25
-	can_scope = 0
+	can_scope = 1
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
@@ -977,7 +977,7 @@
 	spread = 4
 	recoil = 1
 	damagelose = 0.25
-	can_scope = 0
+	can_scope = 1
 	automatic = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/ak74_draw.ogg'
@@ -1334,8 +1334,10 @@
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/smg57
 	fire_delay = 0.8
+	can_suppress = 1
 	burst_size = 3
 	automatic = 1
+	can_scope = 1
 	tac_reloads = TRUE//tacticool
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'

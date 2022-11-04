@@ -25,6 +25,7 @@ GLOBAL_VAR(restart_counter)
 	SSdbcore.CheckSchemaVersion()
 	SSdbcore.SetRoundID()
 	SetupLogs()
+	send2chat("New round starting!", "new-round-alerts")
 
 #ifndef USE_CUSTOM_ERROR_HANDLER
 	world.log = file("[GLOB.log_directory]/dd.log")
@@ -230,7 +231,7 @@ GLOBAL_VAR(restart_counter)
 			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
 			TgsEndProcess()
-
+	send2chat("Round ending! Such is life in the zone...", "new-round-alerts")
 	log_world("World rebooted at [time_stamp()]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
 	..()

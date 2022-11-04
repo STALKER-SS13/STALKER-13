@@ -984,12 +984,12 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
-	hoodtype = /obj/item/clothing/head/winterhood/stalker/sealed/merc
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/merc
 	resistance_flags = FIRE_PROOF
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 0, "accessory_slot" = 0)
 
-/obj/item/clothing/head/winterhood/stalker/sealed/merc
+/obj/item/clothing/head/hooded/stalker/sealed/merc
 	name = "merc ace suit helmet"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	heat_protection = HEAD

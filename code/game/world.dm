@@ -212,6 +212,7 @@ GLOBAL_VAR(restart_counter)
 		return
 
 	if(TgsAvailable())
+		send2chat("Round ending! Such is life in the zone...", "new-round-alerts")
 		var/do_hard_reboot
 		// check the hard reboot counter
 		var/ruhr = CONFIG_GET(number/rounds_until_hard_restart)
@@ -231,7 +232,6 @@ GLOBAL_VAR(restart_counter)
 			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
 			TgsEndProcess()
-	send2chat("Round ending! Such is life in the zone...", "new-round-alerts")
 	log_world("World rebooted at [time_stamp()]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
 	..()

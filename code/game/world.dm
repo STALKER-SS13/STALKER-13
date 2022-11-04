@@ -25,7 +25,7 @@ GLOBAL_VAR(restart_counter)
 	SSdbcore.CheckSchemaVersion()
 	SSdbcore.SetRoundID()
 	SetupLogs()
-	send2chat("New round starting!", "new-round-ping")
+	send2chat("<@&1037846197433548930> New round starting!", "new-round-ping")
 
 #ifndef USE_CUSTOM_ERROR_HANDLER
 	world.log = file("[GLOB.log_directory]/dd.log")
@@ -212,7 +212,7 @@ GLOBAL_VAR(restart_counter)
 		return
 
 	if(TgsAvailable())
-		send2chat("Round ending! Such is life in the zone...", "new-round-ping")
+		send2chat("<@&1037846197433548930> Round ending! Such is life in the zone...", "new-round-ping")
 		var/do_hard_reboot
 		// check the hard reboot counter
 		var/ruhr = CONFIG_GET(number/rounds_until_hard_restart)

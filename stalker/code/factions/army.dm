@@ -17,10 +17,11 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/army
 	real_rank = "Army"
+	exp_requirements = 300
 
 /datum/job/army_spetsnaz
 	title = "Military Spetsnaz"
@@ -34,10 +35,12 @@ Assistant
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
 	supervisors = "Military Commander"
 	selection_color = "#2E8B57"
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/army_spetsnaz
 	real_rank = "Special"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/army_spetsnaz
 	name = "Military Spetsnaz"
@@ -98,8 +101,10 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/militarycommander
 	name = "Military Commander"

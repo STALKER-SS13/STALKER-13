@@ -1531,30 +1531,6 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		for(var/i in 1 to items_list[each_item])
 			new each_item(where_to)
 
-//sends a message to chat
-//config_setting should be one of the following
-//null - noop
-//empty string - use TgsTargetBroadcast with admin_only = FALSE
-//other string - use TgsChatBroadcast with the tag that matches config_setting, only works with TGS4, if using TGS3 the above method is used
-/proc/send2chat(message, channel_tag, admin_only = FALSE)
-	if(channel_tag == null || !world.TgsAvailable())
-		return
-
-	var/datum/tgs_version/version = world.TgsVersion()
-	if(channel_tag == "" || version.suite == 3)
-		world.TgsTargetedChatBroadcast(message, admin_only)
-		return
-
-	var/list/channels_to_use = list()
-	for(var/I in world.TgsChatChannelInfo())
-		var/datum/tgs_chat_channel/channel = I
-		var/list/applicable_tags = splittext(channel.custom_tag, ",")
-		if((!admin_only || channel.is_admin_channel) && (channel_tag in applicable_tags))
-			channels_to_use += channel
-
-	if(channels_to_use.len)
-		world.TgsChatBroadcast(message, channels_to_use)
-
 /proc/num2sign(numeric)
 	if(numeric > 0)
 		return 1

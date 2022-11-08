@@ -11,9 +11,11 @@
 	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/ecologist
 	real_rank = "Ecologist"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/ecologist
 	name = "Ecologist"
@@ -83,9 +85,11 @@
 	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/ecologistguard
 	real_rank = "Ecologist"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/ecologistguard
 	name = "Ecologist Guard"
@@ -148,10 +152,12 @@
 	spawn_positions = 1
 	limit_per_player = 1
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 1
 	outfit = /datum/outfit/job/chief_ecologist
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"

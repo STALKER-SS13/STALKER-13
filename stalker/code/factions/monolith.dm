@@ -12,10 +12,12 @@
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 2
 	outfit = /datum/outfit/job/monolith// /datum/outfit/job/duty
 	real_rank = "Monolith"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/monolith
 	name = "Monolith"
@@ -78,10 +80,12 @@
 	locked = 1
 	supervisors = "Monolith"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 1
 	outfit = /datum/outfit/job/monolith_hegumen
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/monolith_hegumen
 	name = "Monolith Preacher"

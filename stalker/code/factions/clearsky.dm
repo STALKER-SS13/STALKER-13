@@ -18,6 +18,8 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	outfit = /datum/outfit/clearsky
 	real_rank = "ClearSky"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/clearsky  // For select_equipment
 	name = "Clear Sky Soldier"
@@ -63,10 +65,12 @@ Assistant
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction or otherwise jeopordize the faction for an insignificant reason."
 	selection_color = "#64B2F7"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 2
 	outfit = /datum/outfit/job/clearsky_leader
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/clearsky_leader
 	name = "Clear Sky Leader"

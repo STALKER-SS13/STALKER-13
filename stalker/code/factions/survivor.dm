@@ -52,9 +52,11 @@ Assistant
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/oldstalker
 	real_rank = "Special"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /*/datum/job/assistant/get_access()
 	if((config.jobs_have_maint_access & ASSISTANTS_HAVE_MAINT_ACCESS) || !config.jobs_have_minimal_access) //Config has assistant maint access set
@@ -277,7 +279,7 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/trader
 
 /datum/outfit/job/trader
@@ -317,7 +319,7 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/barman
 	real_rank = "Bartender"
 

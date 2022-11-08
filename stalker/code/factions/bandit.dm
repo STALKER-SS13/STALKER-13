@@ -17,10 +17,12 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/bandit
 	real_rank = "Bandit"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/job/banditboss
 	title = "Bandit Boss"
@@ -37,9 +39,11 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access(
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/banditboss
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/job/bandit_barman
 	title = "Bandit Barman"
@@ -56,9 +60,11 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/bandit_barman
 	real_rank = "Bartender"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/bandit
 	name = "Bandit"

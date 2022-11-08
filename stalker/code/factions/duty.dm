@@ -18,6 +18,8 @@ Assistant
 	whitelist_only = 0
 	outfit = /datum/outfit/job/dutysoldier
 	real_rank = "Duty"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/dutysoldier  // For select_equipment
 	name = "Duty Soldier"
@@ -83,9 +85,11 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/barman2
 	real_rank = "Bartender"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/barman2
 	name = "Barman"
@@ -115,9 +119,11 @@ Assistant
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom, Renegades, or the Bandits, and jeopordize the faction for an insignificant reason."
 	supervisors = "Major"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/duty_lieutenant
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/duty_lieutenant
 	name = "Duty Lieutenant"

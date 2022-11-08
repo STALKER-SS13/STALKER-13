@@ -39,7 +39,7 @@
 	icon_state = "susat"
 	types = list(/obj/item/gun/ballistic/automatic/tpc301,
 				/obj/item/gun/ballistic/automatic/mp5,
-				/obj/item/gun/ballistic/automatic/sigsg550
+				/obj/item/gun/ballistic/automatic/sigsg550,
 				/obj/item/gun/ballistic/automatic/p90)
 	zoom_add = 4
 

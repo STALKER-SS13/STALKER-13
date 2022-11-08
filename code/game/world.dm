@@ -212,7 +212,7 @@ GLOBAL_VAR(restart_counter)
 		return
 
 	if(TgsAvailable())
-		send2chat("<@&1037846197433548930> Round ending! Such is life in the zone...", "new-round-ping")
+		send2chat("Round ending! Such is life in the zone...", "new-round-ping")
 		var/do_hard_reboot
 		// check the hard reboot counter
 		var/ruhr = CONFIG_GET(number/rounds_until_hard_restart)

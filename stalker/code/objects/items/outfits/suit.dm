@@ -759,6 +759,17 @@
 	name = "merc exoskeleton helmet"
 	icon_state = "exoskeletm_helmet"
 
+/obj/item/clothing/suit/hooded/sealed/exoskelet/bandit
+	name = "bandit exoskeleton"
+	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletm"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/merc
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/bandit
+	name = "bandit exoskeleton helmet"
+	icon_state = "exoskeletm_helmet"
+
 /obj/item/clothing/suit/hooded/sealed/exoskelet/monolith
 	name = "monolith exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."

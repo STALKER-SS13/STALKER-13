@@ -358,7 +358,7 @@
 	eject_sound = 'stalker/sound/weapons/unload/pm_open.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/fiveseven // Five Seven
-	name = "five seven"
+	name = "FN Five-Seven"
 	desc = "The Five Seven Pistol was designed by the FN company (Belgium) as a complimentary sidearm for the P90 submachine gun. The P90 and Five Seven share the same ammunition, the 5.7x28mm SS190 cartridge."
 	icon_state = "fiveseven"
 	fire_sound = 'stalker/sound/weapons/fort_shot.ogg'

@@ -21,7 +21,10 @@
 				/obj/item/gun/ballistic/automatic/abakan,
 				/obj/item/gun/ballistic/automatic/tpc301,
 				/obj/item/gun/ballistic/automatic/kiparis,
-				/obj/item/gun/ballistic/automatic/p90)
+				/obj/item/gun/ballistic/automatic/p90,
+				/obj/item/gun/ballistic/automatic/m16,
+				/obj/item/gun/ballistic/automatic/m16a4,
+				/obj/item/gun/ballistic/automatic/m4)
 	var/oldsound = null
 	var/initial_w_class = null
 
@@ -57,6 +60,7 @@
 	icon_state = "PSU1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				/obj/item/gun/ballistic/automatic/ak74,
+				/obj/item/gun/ballistic/automatic/akm,
 				/obj/item/gun/ballistic/automatic/abakan,
 				/obj/item/gun/ballistic/automatic/val,
 				/obj/item/gun/ballistic/automatic/groza)
@@ -68,6 +72,7 @@
 	icon_state = "PSO1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				 /obj/item/gun/ballistic/automatic/ak74,
+				 /obj/item/gun/ballistic/automatic/akm,
 				 /obj/item/gun/ballistic/automatic/abakan,
 				 /obj/item/gun/ballistic/automatic/val,
 				 /obj/item/gun/ballistic/automatic/groza)
@@ -82,7 +87,8 @@
 				/obj/item/gun/ballistic/shotgun/bm16,
 				/obj/item/gun/ballistic/shotgun/bm16/toz34,
 				/obj/item/gun/ballistic/automatic/fnfal,
-				/obj/item/gun/ballistic/automatic/woodfnfal)
+				/obj/item/gun/ballistic/automatic/woodfnfal,
+				/obj/item/gun/ballistic/automatic/m14)
 	zoom_add = 6
 
 /obj/item/attachment/scope/fnf2000

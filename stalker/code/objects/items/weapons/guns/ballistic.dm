@@ -1053,7 +1053,7 @@
 	slowdown = 0.15
 	recoil = 0.9
 	damagelose = 0.25
-	can_scope = 0
+	can_scope = 1
 	draw_sound = 'stalker/sound/weapons/draw/ak74u_draw.ogg'
 
 /obj/item/gun/ballistic/automatic/vz58 // vz. 58
@@ -1086,7 +1086,7 @@
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
-	can_suppress = 0
+	can_suppress = 1
 	burst_size = 3
 	fire_delay = 1.7
 	durability = 70
@@ -1101,7 +1101,7 @@
 	eject_sound = 'stalker/sound/weapons/unload/tpc301_open.ogg'
 
 /obj/item/gun/ballistic/automatic/m16a4 //M16A4
-	name = "M16A1"
+	name = "M16A4"
 	desc = "By the end of the 1960s, the M16 rifle was a full-fledged combat weapon with a number of significant advantages. Compared to the main opponent of the M16 on the world stage - the Kalashnikov assault rifle (AKM), the M16 had greater accuracy and accuracy of firing single shots, was more comfortable and easy to handle. On the other hand, the M16 required much more careful maintenance and better ammunition."
 	icon_state = "m16a4"
 	item_state = "m16a4"
@@ -1109,7 +1109,7 @@
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
 	fire_sound = 'stalker/sound/weapons/tpc301_shoot.ogg'
-	can_suppress = 0
+	can_suppress = 1
 	burst_size = 3
 	fire_delay = 1.7
 	durability = 70
@@ -1138,7 +1138,7 @@
 	slowdown = 0.15
 	recoil = 0.3
 	damagelose = 0.15
-	can_scope = 0
+	can_scope = 1
 	weapon_weight = WEAPON_MEDIUM
 	draw_sound = 'stalker/sound/weapons/draw/mp5_draw.ogg'
 	load_sound = 'stalker/sound/weapons/load/berettam38_load.ogg'
@@ -1151,7 +1151,7 @@
 	item_state = "m4"
 	fire_sound = 'stalker/sound/weapons/berettam38_shot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/stalker/m556x45
-	can_suppress = 0
+	can_suppress = 1
 	slot_flags = ITEM_SLOT_BACK
 	durability = 75
 	w_class = 4

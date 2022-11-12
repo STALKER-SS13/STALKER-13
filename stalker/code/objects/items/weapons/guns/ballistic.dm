@@ -1201,9 +1201,9 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/scarh
 	slowdown = 0.15
 	force = 15
-	can_suppress = 0
+	can_suppress = 1
 	burst_size = 3
-	fire_delay = 1.7
+	fire_delay = 2.2
 	durability = 70
 	slowdown = 0.15
 	w_class = 4

@@ -8,7 +8,7 @@
 	icon = 'stalker/icons/stalker.dmi'
 	var/deletable = 1 //Self-deletable dead bodies
 	speak_chance = 1.5
-	var/rating_add = 10
+	rating_add = 10
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
@@ -94,7 +94,7 @@
 	maxbodytemp = 1500
 	environment_smash = 0
 	layer = MOB_LAYER - 0.1
-	random_butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
 							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat = 1)
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
@@ -757,6 +757,8 @@
 	dodging = TRUE
 	rapid_melee = 2
 	do_footstep = TRUE
+	butcher_results = list(/obj/item/stack/spacecash/c100 = 1)
+	rating_add = 50
 
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/New()
@@ -1068,6 +1070,7 @@
 	ranged_cooldown_time = 40
 	casingtype = /obj/item/ammo_casing/c556x45
 	projectilesound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	rating_add = 100
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/merc/New()
 	..()
@@ -1139,6 +1142,7 @@
 	ranged_cooldown_time = 40
 	casingtype = /obj/item/ammo_casing/c545
 	projectilesound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	rating_add = 80
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/duty/New()
 	..()
@@ -1210,6 +1214,7 @@
 	ranged_cooldown_time = 40
 	casingtype = /obj/item/ammo_casing/c762x39
 	projectilesound = 'stalker/sound/weapons/akm_shot.ogg'
+	rating_add = 100
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/military/New()
 	..()

@@ -45,6 +45,10 @@
 			to_chat(user, "<span class='notice'>You begin to butcher [src]...</span>")
 			playsound(loc, butchering.butcher_sound, 50, TRUE, -1)
 			if(do_mob(user, src, butchering.speed) && Adjacent(I))
+				var/mob/living/carbon/human/H = user
+				var/datum/data/record/sk = find_record("sid", H.sid, GLOB.data_core.stalkers)
+				if(sk)
+					sk.fields["rating"] += rating_add
 				butchering.Butcher(user, src)
 			return 1
 		else if(I.is_sharp() && !butchering) //give sharp objects butchering functionality, for consistency

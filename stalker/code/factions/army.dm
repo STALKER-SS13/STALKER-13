@@ -70,7 +70,8 @@ Assistant
 	if(visualsOnly)
 		return
 
-	H.grant_all_languages(omnitongue=TRUE)
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/job/army
 	faction_s = "State Security Service"
@@ -134,6 +135,15 @@ Assistant
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
 	faction_s = "State Security Service"
+
+/datum/outfit/job/militarycommander/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/army  // For select_equipment
 	name = "Military Soldier"

@@ -52,6 +52,13 @@ Assistant
 		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches)
 
+/datum/outfit/clearsky/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
 
 /datum/job/clearsky_leader
 	title = "Clear Sky Leader"
@@ -102,3 +109,12 @@ Assistant
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/clearsky_leader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/english, body = FALSE)

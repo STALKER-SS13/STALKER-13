@@ -66,6 +66,14 @@
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2)
 	faction_s = "Freedom"
 
+/datum/outfit/freedomrookie/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+
 /datum/job/freedom_lieutenant
 	title = "Freedom Lieutenant"
 	faction_s = "Freedom"
@@ -118,3 +126,12 @@
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/freedom_lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)

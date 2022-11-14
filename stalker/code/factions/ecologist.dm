@@ -72,6 +72,15 @@
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
 
+/datum/outfit/ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
+
 /datum/job/ecologistguard
 	title = "Ecologist Guard"
 	faction_s = "Ecologist"
@@ -121,6 +130,15 @@
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch,
 				/obj/item/flashlight/flare)
+
+/datum/outfit/ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/ecologistguard  // For select_equipment
 	name = "Ecologist Guard"
@@ -186,6 +204,16 @@
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
+
+/datum/outfit/job/chief_ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
+
 
 /datum/outfit/job/chief_ecologist // For select_equipment
 	name = "Chief Ecologist"

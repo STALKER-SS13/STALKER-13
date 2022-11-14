@@ -36,6 +36,7 @@
 	icon = 'icons/obj/library.dmi'
 	icon_state = "book2"
 	var/charges = 1
+	var/language_name = "Codespeak"
 	var/language_to_add = /datum/language/codespeak
 
 /obj/item/codespeak_manual/attack_self(mob/living/user)
@@ -43,7 +44,7 @@
 		return
 
 	if(user.has_language(language_to_add))
-		to_chat(user, "<span class='boldannounce'>You start skimming through [src], but you already know [language_to_add].</span>")
+		to_chat(user, "<span class='boldannounce'>You start skimming through [src], but you already know [language_name].</span>")
 		return
 
 	to_chat(user, "<span class='boldannounce'>You start skimming through [src], and suddenly your mind is filled with euphemisms and relative knowledge.</span>")
@@ -67,22 +68,26 @@
 	name = "russian language book thing"
 	desc = "to be done"
 	icon_state = "book1"
+	language_name = "Russian"
 	language_to_add = /datum/language/russian
 
 /obj/item/codespeak_manual/ukrainian
 	name = "ukrainian language book thing"
 	desc = "to be done"
 	icon_state = "book1"
+	language_name = "Ukrainian"
 	language_to_add = /datum/language/ukrainian
 
 /obj/item/codespeak_manual/english
 	name = "english language book thing"
 	desc = "to be done"
 	icon_state = "book1"
+	language_name = "English"
 	language_to_add = /datum/language/english
 
 /obj/item/codespeak_manual/german
 	name = "german language book thing"
 	desc = "to be done"
 	icon_state = "book1"
+	language_name = "German"
 	language_to_add = /datum/language/german

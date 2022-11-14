@@ -52,9 +52,9 @@
 	new_spawn.fully_replace_character_name(null,random_unique_lizard_name(gender))
 	to_chat(new_spawn, "<b>Drag the corpses of men and beasts to your nest. It will absorb them to create more of your kind. Glory to the Necropolis!</b>")
 
-	new_spawn.grant_language(/datum/language/draconic)
+	new_spawn.grant_language(/datum/language/english)
 	var/datum/language_holder/holder = new_spawn.get_language_holder()
-	holder.selected_default_language = /datum/language/draconic
+	holder.selected_default_language = /datum/language/english
 
 	if(ishuman(new_spawn))
 		var/mob/living/carbon/human/H = new_spawn

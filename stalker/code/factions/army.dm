@@ -64,6 +64,14 @@ Assistant
 				/obj/item/storage/wallet/alt)
 	faction_s = "State Security Service"
 
+/datum/outfit/job/army_spetsnaz/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_all_languages(omnitongue=TRUE)
+
 /datum/outfit/job/army
 	faction_s = "State Security Service"
 

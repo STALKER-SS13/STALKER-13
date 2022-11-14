@@ -264,7 +264,7 @@
 
 	if(!new_mob)
 		return
-	new_mob.grant_language(/datum/language/common)
+	new_mob.grant_language(/datum/language/ukrainian)
 
 	// Some forms can still wear some items
 	for(var/obj/item/W in contents)

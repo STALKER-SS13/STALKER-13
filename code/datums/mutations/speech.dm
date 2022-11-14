@@ -215,9 +215,9 @@
 /datum/mutation/human/stoner/on_acquiring(mob/living/carbon/human/owner)
 	..()
 	owner.grant_language(/datum/language/beachbum)
-	owner.remove_language(/datum/language/common)
+	owner.remove_language(/datum/language/ukrainian)
 
 /datum/mutation/human/stoner/on_losing(mob/living/carbon/human/owner)
 	..()
-	owner.grant_language(/datum/language/common)
+	owner.grant_language(/datum/language/ukrainian)
 	owner.remove_language(/datum/language/beachbum)

@@ -174,6 +174,14 @@ Assistant
 				/obj/item/flashlight/flare/torch,
 				/obj/item/flashlight/flare)
 
+/datum/outfit/job/oldstalker/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+
 /datum/outfit/stalkervolk  // For select_equipment
 	name = "Old Stalker"
 	uniform = /obj/item/clothing/under/color/switer
@@ -250,6 +258,15 @@ Assistant
 		/obj/item/storage/bag/trash,
 		/obj/item/toy/eightball,
 		/obj/item/melee/flyswatter)
+
+/datum/outfit/job/tourist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/tourist  // For select_equipment
 	name = "Tourist"

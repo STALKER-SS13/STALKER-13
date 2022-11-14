@@ -621,7 +621,7 @@ SUBSYSTEM_DEF(ticker)
 		'sound/roundend/markedonewhatthehell.ogg',
 		'sound/roundend/strelok.ogg',
 		'sound/roundend/dickmeasuring.ogg',
-		'sound/roundend/themonolith.ogg'
+		'sound/roundend/themonolith.ogg',
 		'sound/roundend/Ashot20RU.ogg',
 		'sound/roundend/SlavesGTYABH.ogg',
 		'sound/roundend/yargun.ogg',\

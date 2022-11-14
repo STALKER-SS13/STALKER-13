@@ -178,9 +178,6 @@
 			return FALSE
 		if(get_item_for_held_index(hand_index) != null)
 			dropItemToGround(get_item_for_held_index(hand_index), force = TRUE)
-		if(I && istype(I, /obj/item/gun))
-			playsound(src.loc, 'stalker/sound/weapons/draw/generic_draw.ogg', 30, 1)
-			visible_message("<span class='danger'>[src] starts to take [I] out!</span>", "<span class='notice'>You start to take [I] out...</span>")
 		I.forceMove(src)
 		held_items[hand_index] = I
 		I.layer = ABOVE_HUD_LAYER

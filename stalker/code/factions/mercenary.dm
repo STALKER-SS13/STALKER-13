@@ -75,6 +75,14 @@
 	l_pocket = /obj/item/storage/wallet/stalker
 	faction_s = "Mercenaries"
 
+/datum/outfit/job/mercenary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/german, body = FALSE)
+
 /datum/job/mercenarycommander
 	title = "Mercenary Commander"
 	faction_s = "Mercenaries"
@@ -128,3 +136,12 @@
 	/obj/item/storage/fancy/cigarettes/cigpack_java,
 	/obj/item/lighter/greyscale,
 	/obj/item/toy/cards/deck)
+
+/datum/outfit/job/mercenarycommander/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/german, body = FALSE)
+	H.grant_language(/datum/language/english, body = FALSE)

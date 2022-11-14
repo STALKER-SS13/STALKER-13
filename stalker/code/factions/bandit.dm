@@ -123,6 +123,14 @@ Assistant
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
 
+/datum/outfit/job/banditboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+
 /datum/outfit/job/bandit_barman
 	name = "Bandit Barman"
 	faction_s = "Bandits"
@@ -153,6 +161,13 @@ Assistant
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/bluegoose,
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka)
 
+/datum/outfit/job/bandit_barman/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/outfit/bandit  // For select_equipment
 	name = "Bandit"

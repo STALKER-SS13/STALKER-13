@@ -70,6 +70,13 @@ Assistant
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
 
+/datum/outfit/job/dutysoldier/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/job/barman2
 	title = "Barman2"
@@ -158,3 +165,12 @@ Assistant
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/duty_lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)

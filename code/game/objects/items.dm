@@ -308,7 +308,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 			SEND_SIGNAL(loc, COMSIG_TRY_STORAGE_TAKE, src, user.loc, TRUE)
 			user.visible_message("<span class='danger'>[user] pulled out [G] from [S]!</span>", "<span class='notice'> You have pulled out [G] from [S].</span>")
 		else
-			user.visible_message(("<span class='danger'>[user] fails to pull out a [G] from [S]!</span>", "<span class='notice'> You have failed to pull out [G] from [S].</span>")
+			user.visible_message("<span class='danger'>[user] fails to pull out a [G] from [S]!</span>", "<span class='notice'> You have failed to pull out [G] from [S].</span>")
+			return FALSE
 
 	if(throwing)
 		throwing.finalize(FALSE)

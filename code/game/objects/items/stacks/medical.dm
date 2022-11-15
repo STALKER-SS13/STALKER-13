@@ -24,6 +24,9 @@
 	try_heal(M,user)
 
 /obj/item/stack/medical/proc/try_heal(mob/living/M, mob/user)
+
+	use(1)
+
 	if(!iscarbon(M) && !isanimal(M))
 		to_chat(user, "<span class='danger'>You don't know how to apply \the [src] to [M]!</span>")
 		return 1
@@ -83,10 +86,10 @@
 			to_chat(user, "<span class='warning'>[C] doesn't have \a [parse_zone(user.zone_selected)]!</span>")
 			return
 		if(affecting.get_damage() > max_threshold)
-			to_chat(user, "<span class='warning'>Limb is too damaged for [src] to have any effect.</span>")
+			to_chat(user, "<span class='warning'>Limb is too damaged for [src] to have any effect. It goes to waste.</span>")
 			return
 		if(affecting.get_damage() < min_threshold)
-			to_chat(user, "<span class='warning'>Limb is not damaged enough for [src] to have any effect.</span>")
+			to_chat(user, "<span class='warning'>Limb is not damaged enough for [src] to have any effect. It goes to waste.</span>")
 			return
 		if(ishuman(C))
 			var/mob/living/carbon/human/H = C
@@ -100,11 +103,8 @@
 			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
 		if(repeating && amount > 0)
 			try_heal(M,user)
-			amount -= 1
 	else
 		M.heal_bodypart_damage((src.heal_brute/2), (src.heal_burn/2))
-
-	use(1)
 
 /obj/item/stack/medical/bruise_pack
 	name = "bruise pack"

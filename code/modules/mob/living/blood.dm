@@ -18,7 +18,7 @@
 /mob/living/carbon/monkey/handle_blood()
 	if(bodytemperature >= TCRYO && !(has_trait(TRAIT_HUSK))) //cryosleep or husked people do not pump the blood.
 		if(blood_volume < BLOOD_VOLUME_OKAY)
-			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.1, 1))
+			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.05, 1))
 
 // Takes care blood loss and regeneration
 /mob/living/carbon/human/handle_blood()

@@ -87,6 +87,9 @@ GENE SCANNER
 	throw_speed = 3
 	throw_range = 7
 	materials = list(MAT_METAL=200)
+	var/chem_message = "You switch the health analyzer to scan chemical contents."
+	var/health_message = "You switch the health analyzer to check physical health."
+	var/scan_delay = 0
 	var/mode = 1
 	var/scanmode = 0
 	var/advanced = FALSE
@@ -97,10 +100,10 @@ GENE SCANNER
 
 /obj/item/healthanalyzer/attack_self(mob/user)
 	if(!scanmode)
-		to_chat(user, "<span class='notice'>You switch the health analyzer to scan chemical contents.</span>")
+		to_chat(user, "<span class='notice'>[chem_message]</span>")
 		scanmode = 1
 	else
-		to_chat(user, "<span class='notice'>You switch the health analyzer to check physical health.</span>")
+		to_chat(user, "<span class='notice'>[health_message]</span>")
 		scanmode = 0
 
 /obj/item/healthanalyzer/attack(mob/living/M, mob/living/carbon/human/user)

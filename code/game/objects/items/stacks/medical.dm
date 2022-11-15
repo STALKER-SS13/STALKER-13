@@ -11,7 +11,7 @@
 	resistance_flags = FLAMMABLE
 	max_integrity = 40
 	novariants = FALSE
-	var/min_threshold = 0
+	var/min_threshold = -220
 	var/max_threshold = 100
 	var/heal_brute = 0
 	var/heal_burn = 0

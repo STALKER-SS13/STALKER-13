@@ -38,11 +38,12 @@ obj/item/reagent_containers/pill/stalker/afterattack(obj/target, mob/user , prox
 /obj/item/reagent_containers/pill/stalker/injector/proc/Unwrap(mob/user)
 	icon_state = icon_state_opened
 	desc = desc_opened
-	user << "<span class='notice'>You open the package.</span>"
+	to_chat(user, "<span class='notice'>You open the package.</span>")
 	wrapped = 0
 
 /obj/item/reagent_containers/pill/stalker/injector/canconsume(mob/eater, mob/user)
 	if(wrapped == 1)
+		to_chat(user, "<span class='warning'>The package is closed! You should probably open it.</span>")
 		return 0
 	return 1 // Masks were stopping people from "eating" patches. Thanks, inheritance.
 

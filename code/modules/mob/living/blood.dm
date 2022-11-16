@@ -17,11 +17,8 @@
 
 /mob/living/carbon/monkey/handle_blood()
 	if(bodytemperature >= TCRYO && !(has_trait(TRAIT_HUSK))) //cryosleep or husked people do not pump the blood.
-		//Blood regeneration if there is some space
-		if(blood_volume < BLOOD_VOLUME_NORMAL)
-			blood_volume += 0.1 // regenerate blood VERY slowly
-			if(blood_volume < BLOOD_VOLUME_OKAY)
-				adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.02, 1))
+		if(blood_volume < BLOOD_VOLUME_OKAY)
+			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.05, 1))
 
 // Takes care blood loss and regeneration
 /mob/living/carbon/human/handle_blood()
@@ -82,8 +79,8 @@
 			listclearnulls(BP.embedded_objects)
 			temp_bleed += 0.5*BP.embedded_objects.len
 
-			if(brutedamage >= 20)
-				temp_bleed += (brutedamage * 0.013)
+			if(brutedamage >= 15)
+				temp_bleed += (brutedamage * 0.05)
 
 		bleed_rate = max(bleed_rate - 0.5, temp_bleed)//if no wounds, other bleed effects (heparin) naturally decreases
 

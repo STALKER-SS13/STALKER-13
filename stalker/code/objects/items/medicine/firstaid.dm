@@ -13,12 +13,20 @@
 	icon_state = "ifak"
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/storage/firstaid/ifak/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 10
+	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
+									/obj/item/reagent_containers/pill))
+
 /obj/item/storage/firstaid/ifak/PopulateContents()
 	if(empty)
 		return
 	var/static/items_inside = list(
 		/obj/item/stack/medical/gauze/bint = 1,
-		/obj/item/reagent_containers/pill/patch/synthflesh = 1,
+		/obj/item/reagent_containers/pill/patch/synthflesh = 2,
 		/obj/item/reagent_containers/pill/stalker/injector/brute = 1,
 		/obj/item/stack/medical/suture = 1,
 		/obj/item/stack/medical/mesh = 1,
@@ -34,6 +42,14 @@
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "aptechkar"
 	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/firstaid/ai2/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 10
+	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
+									/obj/item/reagent_containers/pill))
 
 /obj/item/storage/firstaid/ai2/PopulateContents()
 	if(empty)
@@ -127,6 +143,18 @@
 	w_class = WEIGHT_CLASS_BULKY
 	throw_speed = 1
 	throw_range = 4
+
+/obj/item/storage/firstaid/ai2/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 19
+	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
+									/obj/item/reagent_containers/pill,
+									/obj/item/healthanalyzer,
+									/obj/item/clothing/glasses/hud/health,
+									/obj/item/clothing/gloves/color/latex,
+									/obj/item/storage/pill_bottle))
 
 /obj/item/storage/firstaid/ecologists/PopulateContents()
 	if(empty)

@@ -113,7 +113,6 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	min_threshold = 30
 	max_threshold = 70
 	heal_brute = 25
 	self_delay = 20
@@ -171,7 +170,6 @@
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	heal_burn = 25
-	min_threshold = 30
 	max_threshold = 70
 	self_delay = 20
 	grind_results = list("silver_sulfadiazine" = 10)
@@ -188,7 +186,6 @@
 	amount = 14
 	max_amount = 14
 	repeating = 1
-	min_threshold = -100
 	max_threshold = 40
 	heal_brute = 10
 	self_delay = 5
@@ -204,7 +201,6 @@
 	amount = 14
 	max_amount = 14
 	repeating = 1
-	min_threshold = -100
 	max_threshold = 40
 	heal_burn = 10
 	self_delay = 5
@@ -212,28 +208,26 @@
 
 /obj/item/stack/medical/trauma_kit
 	name = "advanced trauma kit"
-	desc = "An assortment of various highly advanced styptic membranes meant to completely treat any sort of heavy wounds. Highly ineffective against anything less serious."
+	desc = "An assortment of various highly advanced styptic membranes meant to completely treat any sort of heavy wounds."
 	singular_name = "trauma kit"
 	icon_state = "traumakit"
 	lefthand_file = null
 	righthand_file = null
 	amount = 6
 	max_amount = 6
-	min_threshold = 65
 	heal_brute = 40
 	self_delay = 35
 	grind_results = null
 
 /obj/item/stack/medical/burn_kit
 	name = "advanced burn kit"
-	desc = "An assortment of various highly advanced aseptic membranes meant to completely treat any sort of heavy burns. Highly ineffective against anything less serious."
+	desc = "An assortment of various highly advanced aseptic membranes meant to completely treat any sort of heavy burns."
 	singular_name = "burn kit"
 	icon_state = "burnkit"
 	lefthand_file = null
 	righthand_file = null
 	amount = 6
 	max_amount = 6
-	min_threshold = 65
 	heal_burn = 40
 	self_delay = 35
 	grind_results = null

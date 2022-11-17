@@ -1,7 +1,7 @@
-#define PISTOL_AMOUNT 16
-#define SMG_AMOUNT 12
-#define RIFLE_AMOUNT 8
-#define SPECIALTY_AMOUNT 4
+#define PISTOL_AMOUNT 24
+#define SMG_AMOUNT 18
+#define RIFLE_AMOUNT 12
+#define SPECIALTY_AMOUNT 6
 
 GLOBAL_LIST_EMPTY(trash_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(low_tier_sidormatitems)

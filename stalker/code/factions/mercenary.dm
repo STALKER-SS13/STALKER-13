@@ -37,7 +37,7 @@
 		/obj/item/melee/classic_baton)
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
-		/obj/item/storage/firstaid/stalker/military = 1,
+		/obj/item/storage/firstaid/ifak = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/clothing/accessory/patch/mercenaries)
@@ -69,7 +69,7 @@
 	back = /obj/item/storage/backpack/stalker/civilian
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2,
-							/obj/item/storage/firstaid/stalker/military = 1,
+							/obj/item/storage/firstaid/ifak = 1,
 							/obj/item/gun/ballistic/automatic/pistol/sip = 1,
 							/obj/item/flashlight/seclite = 1)
 	l_pocket = /obj/item/storage/wallet/stalker
@@ -117,7 +117,7 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	suit_store = /obj/item/gun/ballistic/automatic/tpc301
 	backpack_contents = list(
-		/obj/item/storage/firstaid/stalker/military = 1,
+		/obj/item/storage/firstaid/ifak = 1,
 		/obj/item/ammo_box/magazine/stalker/m556x45 = 2,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/restraints/handcuffs/cable/zipties,

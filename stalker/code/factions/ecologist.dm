@@ -38,7 +38,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
@@ -65,7 +65,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
@@ -120,7 +120,7 @@
 				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
-	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+	backpack_contents = list(/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
@@ -154,7 +154,7 @@
 	l_pocket = /obj/item/storage/wallet
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
-	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+	backpack_contents = list(/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
@@ -198,7 +198,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
@@ -230,7 +230,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,

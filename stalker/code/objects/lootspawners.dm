@@ -6,7 +6,7 @@
 	lootcount = 5
 	loot = list(
 				/obj/item/reagent_containers/hypospray/medipen/stalker/antirad = 20,
-				/obj/item/storage/firstaid/stalker/civillian = 20,
+				/obj/item/storage/firstaid/ai2 = 20,
 				/obj/item/gun/ballistic/automatic/pistol/pm = 5,
 				/obj/item/gun/ballistic/automatic/pistol/fort12 = 5,
 				/obj/item/gun/ballistic/automatic/pistol/pb1s = 5,
@@ -494,19 +494,17 @@
 /obj/effect/spawner/lootdrop/stalker/medicine
 	name = "stalker medicine"
 	lootcount = 1
-	loot = list(/obj/item/storage/firstaid/stalker = 20,
-				/obj/item/storage/firstaid/stalker/civillian = 30,
-				/obj/item/storage/firstaid/stalker/military = 20,
-				/obj/item/storage/firstaid/stalker/scientific = 10,
+	loot = list(/obj/item/storage/firstaid/ai2 = 30,
+				/obj/item/storage/firstaid/ifak = 20,
+				/obj/item/storage/firstaid/ecologists = 2.5,
 				/obj/nothing = 40)
 
 /obj/effect/spawner/lootdrop/stalker/medicineguarentee
 	name = "stalker medicine"
 	lootcount = 1
-	loot = list(/obj/item/storage/firstaid/stalker = 20,
-				/obj/item/storage/firstaid/stalker/civillian = 50,
-				/obj/item/storage/firstaid/stalker/military = 30,
-				/obj/item/storage/firstaid/stalker/scientific = 20)
+	loot = list(/obj/item/storage/firstaid/ai2 = 50,
+				/obj/item/storage/firstaid/ifak = 30,
+				/obj/item/storage/firstaid/ecologists = 5)
 
 /obj/effect/spawner/lootdrop/stalker/medicine/pills
 	name = "stalker medicine"

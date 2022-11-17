@@ -1,7 +1,7 @@
-#define PISTOL_AMOUNT 16
-#define SMG_AMOUNT 12
-#define RIFLE_AMOUNT 8
-#define SPECIALTY_AMOUNT 4
+#define PISTOL_AMOUNT 24
+#define SMG_AMOUNT 18
+#define RIFLE_AMOUNT 12
+#define SPECIALTY_AMOUNT 6
 
 GLOBAL_LIST_EMPTY(trash_tier_sidormatitems)
 GLOBAL_LIST_EMPTY(low_tier_sidormatitems)
@@ -125,30 +125,30 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 
 	"Ammo Magazines and Clips" = list(
-		new /datum/data/stalker_equipment("PMm; PB1s Magazine",						"PMm; PB1s Magazine",			/obj/item/ammo_box/magazine/stalker/m9x18pm,			1000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("TT Magazine",							"TT Magazine",					/obj/item/ammo_box/magazine/stalker/tt,					1000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Fort-12 Magazine",						"Fort-12 Magazine",				/obj/item/ammo_box/magazine/stalker/m9x18fort,			2000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Kiparis Magazine",						"Kiparis Magazine",				/obj/item/ammo_box/magazine/stalker/kiparis,			2400,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("MP-5 Magazine",							"MP-5 Magazine",				/obj/item/ammo_box/magazine/stalker/m9x19mp5,			3000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("MAC10 Magazine",							"MAC10 Magazine",				/obj/item/ammo_box/magazine/stalker/mac10,				3500,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("PPSh Drum",								"PPSh Drum",					/obj/item/ammo_box/magazine/stalker/ppsh,				7000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("5.7×28mm Magazine",						"5.7×28mm Magazine",			/obj/item/ammo_box/magazine/smg57,						8000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =550),
-		new /datum/data/stalker_equipment("5.45x39mm Magazine",						"5.45x39mm Magazine",			/obj/item/ammo_box/magazine/stalker/m545,				5250,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("AKM magazine (7.62x39)",					"AKM magazine (7.62x39)",		/obj/item/ammo_box/magazine/stalker/akm,				5350,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price = 500),
-		new /datum/data/stalker_equipment("5.56x45mm Magazine",						"5.56x45mm Magazine",			/obj/item/ammo_box/magazine/stalker/m556x45,			6500,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("AS \"Val\" Magazine",					"AS \"Val\" Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39val,			6000,	VETERAN,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Tunder S14 Magazine",					"Tunder S14 Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39groza,		6500,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Vintorez Magazine",						"Vintorez Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39vint,			6000,	VETERAN,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("SVD Magazine",					     	"SVD Magazine",			        /obj/item/ammo_box/magazine/stalker/svd,			    7000,	VETERAN,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("FN FAL magazine (7.62x51)",				"FN FAL magazine (7.62x51)",	/obj/item/ammo_box/magazine/stalker/fnfal,				7200,	VETERAN,	initial_stock = PISTOL_AMOUNT,sale_price = 500),
-		new /datum/data/stalker_equipment("Colt M1911; SIG-Sauer P220 Magazine",	"Colt M1911; SIG-Sauer P220 Magazine",/obj/item/ammo_box/magazine/stalker/sc45,			3400,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Beretta 92FS Magazine",					"Beretta 92FS Magazine",		/obj/item/ammo_box/magazine/stalker/m9x19marta,			3500,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Beretta M38 Magazine",					"Beretta M38 Magazine",			/obj/item/ammo_box/magazine/stalker/berettam38,			3250,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("USP-match Magazine",						"USP-match Magazine",			/obj/item/ammo_box/magazine/stalker/usp45,				4500,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("Desert Eagle Magazine",					"Desert Eagle Magazine",		/obj/item/ammo_box/magazine/stalker/desert,				4000,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("MAC10 Ingram Magazine",					"MAC10 Ingram Magazine",		/obj/item/ammo_box/magazine/stalker/mac10,				4500,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("PKM ammo belt box",						"PKM ammo belt box",			/obj/item/ammo_box/magazine/stalker/pkm,				40000,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("7.62x51 Clip",							"7.62x51 Clip",					/obj/item/ammo_box/stalker/cl762x51,					2000,	ROOKIE,		initial_stock = PISTOL_AMOUNT,sale_price =500)
+		new /datum/data/stalker_equipment("PMm; PB1s Magazine",						"PMm; PB1s Magazine",			/obj/item/ammo_box/magazine/stalker/m9x18pm,			1000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("TT Magazine",							"TT Magazine",					/obj/item/ammo_box/magazine/stalker/tt,					1000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Fort-12 Magazine",						"Fort-12 Magazine",				/obj/item/ammo_box/magazine/stalker/m9x18fort,			2000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Kiparis Magazine",						"Kiparis Magazine",				/obj/item/ammo_box/magazine/stalker/kiparis,			2400,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("MP-5 Magazine",							"MP-5 Magazine",				/obj/item/ammo_box/magazine/stalker/m9x19mp5,			3000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("MAC10 Magazine",							"MAC10 Magazine",				/obj/item/ammo_box/magazine/stalker/mac10,				3500,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("PPSh Drum",								"PPSh Drum",					/obj/item/ammo_box/magazine/stalker/ppsh,				7000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("5.7×28mm Magazine",						"5.7×28mm Magazine",			/obj/item/ammo_box/magazine/smg57,						8000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =550),
+		new /datum/data/stalker_equipment("5.45x39mm Magazine",						"5.45x39mm Magazine",			/obj/item/ammo_box/magazine/stalker/m545,				5250,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("AKM magazine (7.62x39)",					"AKM magazine (7.62x39)",		/obj/item/ammo_box/magazine/stalker/akm,				5350,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price = 500),
+		new /datum/data/stalker_equipment("5.56x45mm Magazine",						"5.56x45mm Magazine",			/obj/item/ammo_box/magazine/stalker/m556x45,			6500,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("AS \"Val\" Magazine",					"AS \"Val\" Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39val,			6000,	VETERAN,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Tunder S14 Magazine",					"Tunder S14 Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39groza,		6500,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Vintorez Magazine",						"Vintorez Magazine",			/obj/item/ammo_box/magazine/stalker/sp9x39vint,			6000,	VETERAN,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("SVD Magazine",					     	"SVD Magazine",			        /obj/item/ammo_box/magazine/stalker/svd,			    7000,	VETERAN,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("FN FAL magazine (7.62x51)",				"FN FAL magazine (7.62x51)",	/obj/item/ammo_box/magazine/stalker/fnfal,				7200,	VETERAN,	initial_stock = PISTOL_AMOUNT*2,sale_price = 500),
+		new /datum/data/stalker_equipment("Colt M1911; SIG-Sauer P220 Magazine",	"Colt M1911; SIG-Sauer P220 Magazine",/obj/item/ammo_box/magazine/stalker/sc45,			3400,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Beretta 92FS Magazine",					"Beretta 92FS Magazine",		/obj/item/ammo_box/magazine/stalker/m9x19marta,			3500,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Beretta M38 Magazine",					"Beretta M38 Magazine",			/obj/item/ammo_box/magazine/stalker/berettam38,			3250,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("USP-match Magazine",						"USP-match Magazine",			/obj/item/ammo_box/magazine/stalker/usp45,				4500,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("Desert Eagle Magazine",					"Desert Eagle Magazine",		/obj/item/ammo_box/magazine/stalker/desert,				4000,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("MAC10 Ingram Magazine",					"MAC10 Ingram Magazine",		/obj/item/ammo_box/magazine/stalker/mac10,				4500,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("PKM ammo belt box",						"PKM ammo belt box",			/obj/item/ammo_box/magazine/stalker/pkm,				40000,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT*2,sale_price =500),
+		new /datum/data/stalker_equipment("7.62x51 Clip",							"7.62x51 Clip",					/obj/item/ammo_box/stalker/cl762x51,					2000,	ROOKIE,		initial_stock = PISTOL_AMOUNT*2,sale_price =500)
 		),
 
 
@@ -221,11 +221,11 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 	"Medicine" = list(
 		///////////////////////////////	Медикаменты	/////////////////////////////////////////
-		new /datum/data/stalker_equipment("Medkit",						"Medkit",					/obj/item/storage/firstaid/stalker/civillian,		1500,	ROOKIE, initial_stock = PISTOL_AMOUNT, sale_price = 50),
-		new /datum/data/stalker_equipment("Army medkit",				"Army medkit",				/obj/item/storage/firstaid/stalker/military,		3500,	EXPERIENCED,initial_stock = PISTOL_AMOUNT,sale_price = 125),
-		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit",		/obj/item/storage/firstaid/stalker/scientific,		6000,	VETERAN,initial_stock = PISTOL_AMOUNT,sale_price = 250),
+		new /datum/data/stalker_equipment("AI-2",						"AI-2",					/obj/item/storage/firstaid/ai2,		1500,	ROOKIE, initial_stock = PISTOL_AMOUNT, sale_price = 150),
+		new /datum/data/stalker_equipment("IFAK",						"IFAK",					/obj/item/storage/firstaid/ifak,		3500,	EXPERIENCED,initial_stock = PISTOL_AMOUNT,sale_price = 400),
+		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit",		/obj/item/storage/firstaid/ecologists,		6000,	EXPERIENCED,initial_stock = RIFLE_AMOUNT,faction = "Ecologist",sale_price = 1250),
 		new /datum/data/stalker_equipment("Bandage",					"Bandage",					/obj/item/stack/medical/gauze/bint,			750,	ROOKIE,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Anti-rad",					"Anti-rad",					/obj/item/reagent_containers/hypospray/medipen/stalker/antirad,		3500,	ROOKIE,initial_stock = PISTOL_AMOUNT,			sale_price = 1000),
+		new /datum/data/stalker_equipment("Anti-rad",					"Anti-rad",					/obj/item/reagent_containers/pill/stalker/injector/antirad,		1000,	ROOKIE,initial_stock = PISTOL_AMOUNT*2,			sale_price = 1000),
 		new /datum/data/stalker_equipment("LSD Pills",					"LSD Pills",				/obj/item/storage/pill_bottle/lsd,									10000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Happines Pills",				"Happines Pills",			/obj/item/storage/pill_bottle/happiness,							5000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Epinephrine Pills",			"Epinephrine Pills",		/obj/item/storage/pill_bottle/epinephrine,							5000,	ROOKIE,initial_stock = PISTOL_AMOUNT)
@@ -277,18 +277,18 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("Zippo lighter",						"Zippo lighter",										/obj/item/lighter,													5000,	ROOKIE,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Cigarettes \"Maxim\"",				"Cigarettes \"Maxim\"",									/obj/item/storage/fancy/cigarettes/cigpack/maxim,					2500,	ROOKIE,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Cigars",								"Cigars",												/obj/item/storage/fancy/cigarettes/cigars,							10000,	ROOKIE,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Weed Rollie",						"Weed Rollie",											/obj/item/clothing/mask/cigarette/rollie/trippy,					1000,	ROOKIE,	initial_stock = PISTOL_AMOUNT,faction = "Freedom"),
-		new /datum/data/stalker_equipment("100RUB",								"100Rub",												/obj/item/stack/spacecash/c100,										100,	ROOKIE, initial_stock = PISTOL_AMOUNT,sale_price =100),
-		new /datum/data/stalker_equipment("500RUB",								"500Rub",												/obj/item/stack/spacecash/c500,										500,	ROOKIE, initial_stock = PISTOL_AMOUNT,sale_price =500),
-		new /datum/data/stalker_equipment("1000RUB",							"1000Rub",												/obj/item/stack/spacecash/c1000,									1000,	ROOKIE, initial_stock = PISTOL_AMOUNT,sale_price =1000),
-		new /datum/data/stalker_equipment("5000RUB",							"5000Rub",												/obj/item/stack/spacecash/c5000,									5000,	ROOKIE, initial_stock = PISTOL_AMOUNT,sale_price =5000),
+		new /datum/data/stalker_equipment("Weed Rollie",						"Weed Rollie",											/obj/item/clothing/mask/cigarette/rollie/trippy,					1000,	ROOKIE,	initial_stock = PISTOL_AMOUNT*4,faction = "Freedom"),
+		new /datum/data/stalker_equipment("100RUB",								"100Rub",												/obj/item/stack/spacecash/c100,										100,	ROOKIE, initial_stock = PISTOL_AMOUNT*5,sale_price =100),
+		new /datum/data/stalker_equipment("500RUB",								"500Rub",												/obj/item/stack/spacecash/c500,										500,	ROOKIE, initial_stock = PISTOL_AMOUNT*5,sale_price =500),
+		new /datum/data/stalker_equipment("1000RUB",							"1000Rub",												/obj/item/stack/spacecash/c1000,									1000,	ROOKIE, initial_stock = PISTOL_AMOUNT*5,sale_price =1000),
+		new /datum/data/stalker_equipment("5000RUB",							"5000Rub",												/obj/item/stack/spacecash/c5000,									5000,	ROOKIE, initial_stock = PISTOL_AMOUNT*5,sale_price =5000),
 //		new /datum/data/stalker_equipment("Bolts",								"Bolts",												/obj/item/stalker/bolts,											300,	ROOKIE),
 		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, initial_stock = PISTOL_AMOUNT,faction = "Bandits"),
 		new /datum/data/stalker_equipment("HandCuffs",							"HandCuffs",											/obj/item/restraints/handcuffs/cable/zipties,						500,	ROOKIE, initial_stock = PISTOL_AMOUNT,faction = "Renegades"),
 		new /datum/data/stalker_equipment("Binoculars",							"Binoculars",											/obj/item/twohanded/binoculars,										2500,	EXPERIENCED,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Frag Grenade",						"Frag Grenade",											/obj/item/grenade/syndieminibomb/concussion/stalker/frag,			8500,	ROOKIE,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Smoke Grenade",						"Smoke Grenade",										/obj/item/grenade/smokebomb/rgd,									1500,	ROOKIE,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Flash Grenade",						"Flash Grenade",										/obj/item/grenade/flashbang,										10000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT,faction = "Mercenaries"),
+		new /datum/data/stalker_equipment("Frag Grenade",						"Frag Grenade",											/obj/item/grenade/syndieminibomb/concussion/stalker/frag,			8500,	ROOKIE,initial_stock = PISTOL_AMOUNT*4),
+		new /datum/data/stalker_equipment("Smoke Grenade",						"Smoke Grenade",										/obj/item/grenade/smokebomb/rgd,									1500,	ROOKIE,initial_stock = PISTOL_AMOUNT*4),
+		new /datum/data/stalker_equipment("Flash Grenade",						"Flash Grenade",										/obj/item/grenade/flashbang,										10000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT*4,faction = "Mercenaries"),
 		new /datum/data/stalker_equipment("Wallet",								"Wallet",												/obj/item/storage/wallet,											500,	ROOKIE,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Flare",								"Flare",												/obj/item/flashlight/flare,											2000,	ROOKIE,	initial_stock = PISTOL_AMOUNT,sale_price = 250),
 		new /datum/data/stalker_equipment("Glowstick",							"Glowstick",											/obj/item/flashlight/glowstick,										2000,	ROOKIE,	initial_stock = PISTOL_AMOUNT,sale_price = 250),

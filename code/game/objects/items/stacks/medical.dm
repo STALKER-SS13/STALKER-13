@@ -113,9 +113,8 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	min_threshold = 30
 	max_threshold = 70
-	heal_brute = 40
+	heal_brute = 25
 	self_delay = 20
 	grind_results = list("styptic_powder" = 10)
 
@@ -170,8 +169,7 @@
 	icon_state = "ointment"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_burn = 40
-	min_threshold = 30
+	heal_burn = 25
 	max_threshold = 70
 	self_delay = 20
 	grind_results = list("silver_sulfadiazine" = 10)
@@ -185,10 +183,9 @@
 	singular_name = "suture"
 	desc = "A surgical needle with a length of a sterile thread designed to treat and stitch surface blunt-force trauma for further treatment."
 	icon_state = "suture"
-	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	amount = 14
+	max_amount = 14
 	repeating = 1
-	min_threshold = 0
 	max_threshold = 40
 	heal_brute = 10
 	self_delay = 5
@@ -198,14 +195,39 @@
 	name = "sterile mesh pack"
 	singular_name = "sterile mesh"
 	desc = "A bandage-like material meant to be wrapped around first-to-second degree burns for further treatment."
-	gender = PLURAL
-	singular_name = "ointment"
-	icon_state = "ointment"
+	icon_state = "mesh"
 	lefthand_file = null
 	righthand_file = null
+	amount = 14
+	max_amount = 14
 	repeating = 1
-	min_threshold = 0
 	max_threshold = 40
 	heal_burn = 10
 	self_delay = 5
+	grind_results = null
+
+/obj/item/stack/medical/trauma_kit
+	name = "advanced trauma kit"
+	desc = "An assortment of various highly advanced styptic membranes meant to completely treat any sort of heavy wounds."
+	singular_name = "trauma kit"
+	icon_state = "traumakit"
+	lefthand_file = null
+	righthand_file = null
+	amount = 6
+	max_amount = 6
+	heal_brute = 40
+	self_delay = 35
+	grind_results = null
+
+/obj/item/stack/medical/burn_kit
+	name = "advanced burn kit"
+	desc = "An assortment of various highly advanced aseptic membranes meant to completely treat any sort of heavy burns."
+	singular_name = "burn kit"
+	icon_state = "burnkit"
+	lefthand_file = null
+	righthand_file = null
+	amount = 6
+	max_amount = 6
+	heal_burn = 40
+	self_delay = 35
 	grind_results = null

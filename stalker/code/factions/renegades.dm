@@ -36,7 +36,7 @@
 //		/obj/item/crowbar/large)
 //	gloves = /obj/item/clothing/gloves/fingerless
 //	shoes = /obj/item/clothing/shoes/jackboots/warm
-//	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/renegades)
+//	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/ai2,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/renegades)
 //	r_pocket = pick(
 //		/obj/item/gun/ballistic/automatic/pistol/pm,
 //		/obj/item/gun/ballistic/automatic/pistol/pb1s)

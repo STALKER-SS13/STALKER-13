@@ -67,7 +67,7 @@
 	..()
 	uniform = UNIFORMPICK
 	ears = null
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian)
+	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2)
 	r_pocket = pick(/obj/item/flashlight/lantern,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,

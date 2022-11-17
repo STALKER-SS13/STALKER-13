@@ -99,7 +99,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/civilian)
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/loner)
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
@@ -191,7 +191,7 @@ Assistant
 	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1,/obj/item/storage/firstaid/stalker/civillian)
+	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/ai2 = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1,/obj/item/storage/firstaid/ai2)
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva

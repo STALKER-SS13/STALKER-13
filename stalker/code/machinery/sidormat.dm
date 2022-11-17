@@ -221,11 +221,11 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 
 	"Medicine" = list(
 		///////////////////////////////	Медикаменты	/////////////////////////////////////////
-		new /datum/data/stalker_equipment("Medkit",						"Medkit",					/obj/item/storage/firstaid/stalker/civillian,		1500,	ROOKIE, initial_stock = PISTOL_AMOUNT, sale_price = 50),
-		new /datum/data/stalker_equipment("Army medkit",				"Army medkit",				/obj/item/storage/firstaid/stalker/military,		3500,	EXPERIENCED,initial_stock = PISTOL_AMOUNT,sale_price = 125),
-		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit",		/obj/item/storage/firstaid/stalker/scientific,		6000,	VETERAN,initial_stock = PISTOL_AMOUNT,sale_price = 250),
+		new /datum/data/stalker_equipment("AI-2",						"AI-2",					/obj/item/storage/firstaid/ai2,		1500,	ROOKIE, initial_stock = PISTOL_AMOUNT, sale_price = 150),
+		new /datum/data/stalker_equipment("IFAK",						"IFAK",					/obj/item/storage/firstaid/ifak,		3500,	EXPERIENCED,initial_stock = PISTOL_AMOUNT,sale_price = 400),
+		new /datum/data/stalker_equipment("Scientific medkit",			"Scientific medkit",		/obj/item/storage/firstaid/ecologists,		6000,	EXPERIENCED,initial_stock = RIFLE_AMOUNT,faction = "Ecologist",sale_price = 1250),
 		new /datum/data/stalker_equipment("Bandage",					"Bandage",					/obj/item/stack/medical/gauze/bint,			750,	ROOKIE,initial_stock = PISTOL_AMOUNT),
-		new /datum/data/stalker_equipment("Anti-rad",					"Anti-rad",					/obj/item/reagent_containers/hypospray/medipen/stalker/antirad,		3500,	ROOKIE,initial_stock = PISTOL_AMOUNT,			sale_price = 1000),
+		new /datum/data/stalker_equipment("Anti-rad",					"Anti-rad",					/obj/item/reagent_containers/pill/stalker/injector/antirad,		1000,	ROOKIE,initial_stock = PISTOL_AMOUNT*2,			sale_price = 1000),
 		new /datum/data/stalker_equipment("LSD Pills",					"LSD Pills",				/obj/item/storage/pill_bottle/lsd,									10000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Happines Pills",				"Happines Pills",			/obj/item/storage/pill_bottle/happiness,							5000,	EXPERIENCED,initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Epinephrine Pills",			"Epinephrine Pills",		/obj/item/storage/pill_bottle/epinephrine,							5000,	ROOKIE,initial_stock = PISTOL_AMOUNT)

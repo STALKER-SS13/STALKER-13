@@ -52,7 +52,7 @@
 	obj_integrity = 30
 	max_integrity = 30
 	lootcount = 2
-	loot = list(/obj/item/storage/firstaid/stalker/civillian = 30,
+	loot = list(/obj/item/storage/firstaid/ai2 = 30,
 					/obj/item/artifact/meduza = 1,
 					/obj/item/reagent_containers/food/snacks/stalker/konserva = 55,
 					/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti = 40,

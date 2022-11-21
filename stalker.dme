@@ -12,6 +12,8 @@
 #include "_maps\map_files\ZonaRemastered\ArmyWarehouses.dmm"
 #include "_maps\map_files\ZonaRemastered\backwater.dmm"
 #include "_maps\map_files\ZonaRemastered\bar.dmm"
+#include "_maps\map_files\ZonaRemastered\DarkDolina.dmm"
+#include "_maps\map_files\ZonaRemastered\DeadCity.dmm"
 #include "_maps\map_files\ZonaRemastered\greatswamps.dmm"
 #include "_maps\map_files\ZonaRemastered\kordon.dmm"
 #include "_maps\map_files\ZonaRemastered\radar.dmm"

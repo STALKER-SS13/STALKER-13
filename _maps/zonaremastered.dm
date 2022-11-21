@@ -10,6 +10,8 @@
 #include "map_files/ZonaRemastered/yantar.dmm"
 #include "map_files/ZonaRemastered/ArmyWarehouses.dmm"
 #include "map_files/ZonaRemastered/greatswamps.dmm"
+#include "map_files/ZonaRemastered/DeadCity.dmm"
+#include "map_files/ZonaRemastered/DarkDolina.dmm"
 //#include "map_files/ZonaRemastered/zona.dmm"
 
 #define FORCE_MAP "_maps/zonaremastered.json"

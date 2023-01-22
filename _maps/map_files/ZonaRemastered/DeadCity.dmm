@@ -768,7 +768,7 @@
 "gH" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 3;
+	teleport_x = 001;
 	teleport_y = 171;
 	teleport_z = 9
 	},
@@ -948,6 +948,15 @@
 	tag = "icon-matras (NORTH)"
 	},
 /turf/open/stalker/floor/agroprom/beton,
+/area/stalker/blowout/outdoor)
+"io" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	teleport_x = 001;
+	teleport_y = 168;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "it" = (
 /obj/structure/stalker/cacheable/junk_micro,
@@ -1342,8 +1351,8 @@
 "lI" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 69;
-	teleport_y = 170;
+	teleport_x = 001;
+	teleport_y = 169;
 	teleport_z = 9
 	},
 /turf/open/stalker/floor/road,
@@ -2371,8 +2380,8 @@
 "uz" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 3;
-	teleport_y = 169;
+	teleport_x = 001;
+	teleport_y = 170;
 	teleport_z = 9
 	},
 /turf/open/stalker/floor/road,
@@ -81988,8 +81997,8 @@ fC
 eI
 eI
 eI
-QA
 eI
+QA
 eI
 eI
 Mm
@@ -82290,7 +82299,7 @@ Fm
 gH
 uz
 lI
-Fm
+io
 Fm
 Fm
 Fm

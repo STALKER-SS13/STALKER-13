@@ -1369,7 +1369,10 @@
 /area/stalker/blowout/outdoor)
 "pY" = (
 /obj/effect/step_trigger/teleporter{
-	dir = 8
+	dir = 8;
+	teleport_x = 249;
+	teleport_y = 213;
+	teleport_z = 6
 	},
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
@@ -4566,9 +4569,9 @@ HF
 HF
 HF
 HF
-HV
-HV
-HV
+HF
+HF
+HF
 HF
 HF
 HF
@@ -4968,9 +4971,9 @@ HF
 HF
 HF
 HF
-HV
-HV
-HV
+HF
+HF
+HF
 HF
 HF
 HF
@@ -5370,9 +5373,9 @@ HF
 HF
 HF
 HF
-HV
-HV
-HV
+HF
+HF
+HF
 HF
 HF
 HF
@@ -5772,9 +5775,9 @@ HF
 HF
 HF
 HF
-HV
-HV
-HV
+HF
+HF
+HF
 HF
 HF
 HF
@@ -6174,9 +6177,9 @@ HF
 HF
 HF
 HF
-jn
-pY
-BK
+HF
+HF
+HF
 HF
 HF
 HF
@@ -6576,9 +6579,9 @@ HF
 HF
 HF
 HF
-HV
-HV
-HV
+HF
+HF
+HF
 HF
 HF
 HF

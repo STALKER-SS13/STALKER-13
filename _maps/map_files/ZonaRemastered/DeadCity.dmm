@@ -166,10 +166,6 @@
 /obj/anomaly/jarka,
 /turf/open/stalker/floor/digable/gryaz_rocky,
 /area/stalker/blowout/outdoor)
-"bO" = (
-/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "bP" = (
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/plasteel/plita/orange,
@@ -597,7 +593,7 @@
 	dir = 4;
 	teleport_x = 129;
 	teleport_y = 201;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -768,7 +764,7 @@
 "gH" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 3;
+	teleport_x = 001;
 	teleport_y = 171;
 	teleport_z = 9
 	},
@@ -948,6 +944,15 @@
 	tag = "icon-matras (NORTH)"
 	},
 /turf/open/stalker/floor/agroprom/beton,
+/area/stalker/blowout/outdoor)
+"io" = (
+/obj/effect/step_trigger/teleporter{
+	dir = 4;
+	teleport_x = 001;
+	teleport_y = 168;
+	teleport_z = 9
+	},
+/turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
 "it" = (
 /obj/structure/stalker/cacheable/junk_micro,
@@ -1342,8 +1347,8 @@
 "lI" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 69;
-	teleport_y = 170;
+	teleport_x = 001;
+	teleport_y = 169;
 	teleport_z = 9
 	},
 /turf/open/stalker/floor/road,
@@ -1525,7 +1530,7 @@
 	dir = 4;
 	teleport_x = 129;
 	teleport_y = 202;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -1597,8 +1602,6 @@
 /area/stalker/buildings)
 "oe" = (
 /obj/structure/closet/stalker/shkaf,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarepistols,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarepistols,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/mercenary)
 "oh" = (
@@ -1621,11 +1624,6 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
-"oo" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "op" = (
 /obj/machinery/light,
 /turf/open/stalker/floor/agroprom/beton,
@@ -1720,11 +1718,6 @@
 /obj/structure/stalker/cacheable/polka,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/buildings)
-"pe" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/effect/spawner/lootdrop/stalker/weapon/raresmgs,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/mercenary)
 "pf" = (
 /obj/structure/stalker/cacheable/oldcovertatteredtwo,
 /turf/open/stalker/floor/wood/oldgor,
@@ -2371,8 +2364,8 @@
 "uz" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
-	teleport_x = 3;
-	teleport_y = 169;
+	teleport_x = 001;
+	teleport_y = 170;
 	teleport_z = 9
 	},
 /turf/open/stalker/floor/road,
@@ -2492,11 +2485,6 @@
 /obj/rad/rad_medium,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"vq" = (
-/obj/structure/table/stalker/wood/bar,
-/obj/effect/spawner/lootdrop/stalker/weapon/raresmgs,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "vr" = (
 /obj/item/trash/fueltank/large,
 /turf/open/floor/plasteel/stairs/left/stalker{
@@ -2997,7 +2985,7 @@
 	dir = 4;
 	teleport_x = 194;
 	teleport_y = 299;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -3578,12 +3566,6 @@
 	layer = 1.8
 	},
 /area/stalker/blowout/outdoor)
-"Fb" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarepistols,
-/turf/open/stalker/floor/wood/oldgor,
-/area/stalker/buildings/mercenary)
 "Fd" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/tree/jungle,
@@ -4041,11 +4023,6 @@
 	layer = 1.8
 	},
 /area/stalker/blowout/outdoor)
-"IR" = (
-/obj/structure/table/stalker/wood/bar,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "IT" = (
 /obj/item/trash/metalparts/metalplate,
 /turf/open/stalker/floor/agroprom/beton,
@@ -4897,10 +4874,6 @@
 /obj/structure/chair/stalker/divan,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/mercenary)
-"Qu" = (
-/obj/structure/closet/crate/stalker/blue/stash/medium,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "Qv" = (
 /obj/structure/stalker/bigyashik{
 	icon_state = "bigyashik 0,0";
@@ -4950,11 +4923,6 @@
 /obj/structure/stalker/cacheable/clock,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings)
-"QI" = (
-/obj/structure/table/stalker/wood/bar,
-/obj/effect/spawner/lootdrop/stalker/weapon/rareboltaction,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "QL" = (
 /obj/item/trash/binding_material/steelwire1,
 /turf/open/stalker/floor/gryaz{
@@ -5207,7 +5175,7 @@
 	dir = 4;
 	teleport_x = 194;
 	teleport_y = 299;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -5448,7 +5416,6 @@
 	dir = 1
 	},
 /obj/structure/closet/stalker/shkaf,
-/obj/effect/spawner/lootdrop/stalker/weapon/rarerifles,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/mercenary)
 "UN" = (
@@ -5860,11 +5827,6 @@
 	},
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
-"Ys" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
 "Yt" = (
 /obj/structure/stalker/tree,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -15124,7 +15086,7 @@ Bt
 (31,1,1) = {"
 Hz
 rf
-Fb
+oe
 ia
 ia
 ia
@@ -15426,7 +15388,7 @@ Bt
 (32,1,1) = {"
 Hz
 rf
-oi
+oe
 ia
 ia
 ia
@@ -15728,7 +15690,7 @@ Bt
 (33,1,1) = {"
 Hz
 rf
-Xs
+oe
 ia
 ia
 ia
@@ -16030,7 +15992,7 @@ Bt
 (34,1,1) = {"
 Hz
 rf
-pe
+oe
 ia
 ia
 ia
@@ -16936,7 +16898,7 @@ Bt
 (37,1,1) = {"
 Hz
 rf
-pe
+oe
 ia
 kx
 ia
@@ -17540,7 +17502,7 @@ Bt
 (39,1,1) = {"
 Hz
 rf
-Xs
+oe
 ia
 ia
 ia
@@ -29711,8 +29673,8 @@ Xd
 bl
 cc
 cc
-Ys
-Ys
+cc
+cc
 cc
 Xd
 bl
@@ -30919,9 +30881,9 @@ bl
 bl
 cc
 cc
-cc
-cc
-cc
+bl
+bl
+bl
 cc
 cc
 cc
@@ -31226,7 +31188,7 @@ sG
 bl
 sG
 bl
-cc
+bl
 bl
 bl
 bl
@@ -31514,21 +31476,21 @@ qd
 qd
 qd
 MU
-cc
-bl
-bl
-bl
-bl
-cc
-bl
-bl
-bl
 bl
 bl
 bl
 bl
 bl
 cc
+bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
 bl
 Qr
 bl
@@ -31816,7 +31778,7 @@ qd
 qd
 qd
 MU
-cc
+bl
 bl
 bl
 bl
@@ -31830,7 +31792,7 @@ sG
 bl
 sG
 bl
-cc
+bl
 bl
 Pb
 bl
@@ -32118,12 +32080,6 @@ qd
 qd
 qd
 MU
-cc
-bl
-bl
-bl
-bl
-cc
 bl
 bl
 bl
@@ -32132,7 +32088,13 @@ bl
 bl
 bl
 bl
-cc
+bl
+bl
+bl
+bl
+bl
+bl
+bl
 bl
 bl
 bl
@@ -32425,7 +32387,7 @@ bl
 bl
 bl
 bl
-cc
+bl
 bl
 bl
 sG
@@ -32727,7 +32689,7 @@ bl
 bl
 bl
 bl
-cc
+bl
 bl
 bl
 bl
@@ -33029,19 +32991,19 @@ bl
 bl
 bl
 bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
+bl
 cc
 bl
 bl
-bl
-bl
-bl
-bl
-bl
-bl
-cc
-cc
-cc
-cc
 cc
 cc
 cc
@@ -33341,7 +33303,7 @@ bl
 bl
 bl
 bl
-cc
+bl
 JR
 gL
 gL
@@ -33643,7 +33605,7 @@ bl
 wV
 uR
 bl
-cc
+bl
 cx
 bl
 bl
@@ -33943,7 +33905,7 @@ zF
 bl
 bl
 wV
-vq
+Gt
 bl
 cc
 cx
@@ -34849,9 +34811,9 @@ bl
 bl
 bl
 wV
-QI
+Gt
 bl
-cc
+bl
 Pb
 bl
 Sk
@@ -36057,9 +36019,9 @@ bl
 bl
 bl
 wV
-IR
+Gt
 bl
-cc
+bl
 bl
 bl
 bl
@@ -36361,7 +36323,7 @@ bl
 bl
 bl
 bl
-oo
+bl
 bl
 bl
 bl
@@ -36663,8 +36625,8 @@ bl
 bl
 bl
 bl
-cc
-bO
+bl
+bl
 bl
 bl
 bl
@@ -38474,9 +38436,9 @@ bl
 bl
 cc
 cc
-cc
-cc
-cc
+bl
+bl
+bl
 bl
 bl
 bl
@@ -38769,10 +38731,10 @@ bl
 bl
 cc
 cc
-cc
 bl
-cc
-cc
+bl
+bl
+bl
 cc
 cc
 bl
@@ -39071,10 +39033,10 @@ bl
 cc
 cc
 cc
-cc
 bl
-cc
-cc
+bl
+bl
+bl
 cc
 gZ
 bl
@@ -40881,11 +40843,11 @@ bl
 qf
 bl
 cc
-Qu
 bl
-Qu
 bl
-Qu
+bl
+bl
+bl
 bl
 cc
 gZ
@@ -81988,8 +81950,8 @@ fC
 eI
 eI
 eI
-QA
 eI
+QA
 eI
 eI
 Mm
@@ -82290,7 +82252,7 @@ Fm
 gH
 uz
 lI
-Fm
+io
 Fm
 Fm
 Fm

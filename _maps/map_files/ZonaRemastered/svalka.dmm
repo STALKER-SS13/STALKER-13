@@ -5,10 +5,10 @@
 "ag" = (/turf/closed/mineral,/area/stalker/blowout/outdoor)
 "ah" = (/obj/structure/grille/stalker/beton{icon_state = "|"; tag = "icon-|"},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "ai" = (/turf/open/stalker/floor/digable/grass,/area/stalker)
-"aj" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 233; teleport_y = 2; teleport_z = 4},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"aj" = (/obj/structure/grille/stalker/beton{density = 0; icon_state = "-|2"; layer = 5; tag = "icon--|2"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "ak" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 234; teleport_y = 2; teleport_z = 4},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "al" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 235; teleport_y = 2; teleport_z = 4},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
-"am" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 236; teleport_y = 2; teleport_z = 4},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"am" = (/obj/structure/grille/stalker/beton{icon_state = "-|3"; tag = "icon--|3"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "an" = (/turf/closed/wall/stalker/bricks_yellow,/area/stalker/svalka/buildings)
 "ao" = (/turf/closed/wall/stalker/bricks_yellow,/area/stalker/blowout/outdoor)
 "ap" = (/obj/structure/closet/stalker/shkaf,/turf/open/stalker/floor/wood/oldgor,/area/stalker/svalka/buildings)
@@ -650,10 +650,12 @@
 "ob" = (/obj/structure/stalker/cacheable/battery{dir = 4; icon_state = "gazovaya_truba"; tag = "icon-gazovaya_truba (EAST)"},/obj/effect/landmark/latejoin/bandit,/turf/open/stalker/floor/agroprom/beton,/area/stalker/buildings/bandit)
 "og" = (/obj/structure/stalker/car/gryzovik/east{desc = "Go to Amerika."; eng_desc = null; icon_state = "5"; tag = "icon-5"},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "oh" = (/obj/structure/window{dir = 4; icon_state = "clear"; name = ""; obj_integrity = 1e+006; tag = "icon-window (EAST)"},/obj/structure/window{dir = 8; icon_state = "clear"; name = ""; obj_integrity = 1e+006; tag = "icon-window (WEST)"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/svalka/buildings)
+"oi" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 233; teleport_y = 2; teleport_z = 4},/obj/structure/grille/stalker/beton{icon_state = "l4"; tag = "icon-l4"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "oj" = (/obj/anomaly/karusel,/turf/open/stalker/floor/gryaz{layer = 1.8},/area/stalker/blowout/outdoor)
 "ok" = (/obj/structure/stalker/car/mi24{icon_state = "1,2"},/obj/rad/rad_low,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 "op" = (/obj/machinery/light,/turf/open/stalker/floor/sidor,/area/stalker/buildings/mercenary)
 "or" = (/obj/structure/stalker/bigyashik{icon_state = "bigyashik 0,0"; tag = "icon-bigyashik 0,0"},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"ot" = (/obj/structure/grille/stalker/beton,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "ov" = (/obj/structure/barricade/stalker/box,/turf/open/stalker/floor/gryaz{layer = 1.8},/area/stalker/blowout/outdoor)
 "ow" = (/obj/rad,/obj/rad/rad_medium,/obj/rad/rad_medium,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "oy" = (/obj/rad/rad_low,/obj/rad/rad_low,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/wood/cold,/area/stalker)
@@ -908,6 +910,7 @@
 "AO" = (/obj/structure/stalker/cacheable/bochka{pixel_x = 13},/turf/open/stalker/floor/gryaz{layer = 1.8},/area/stalker/blowout/outdoor)
 "AT" = (/obj/structure/table/stalker/wood,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
 "AU" = (/obj/structure/stalker/doski/doski_alt3,/turf/open/stalker/floor/wood/grey,/area/stalker)
+"AV" = (/obj/structure/grille/stalker/beton,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
 "AX" = (/obj/machinery/light{dir = 1; tag = "icon-tube1 (EAST)"},/obj/structure/safe,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/mercenary)
 "Bd" = (/obj/structure/stalker/doski/doski_alt4,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "Be" = (/obj/effect/step_trigger/teleporter{dir = 4; opacity = 1; teleport_x = 002; teleport_y = 121; teleport_z = 21},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
@@ -957,6 +960,7 @@
 "Da" = (/obj/effect/decal/cleanable/ash,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Dc" = (/obj/structure/stalker/cacheable/vendmachine6,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Df" = (/obj/structure/stalker/cacheable/bochka{layer = 2; pixel_x = -8; pixel_y = -10},/obj/rad,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"Dg" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 236; teleport_y = 2; teleport_z = 4},/obj/structure/grille/stalker/beton{icon_state = "|"; tag = "icon-|"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "Dj" = (/obj/effect/decal/cleanable/blood/footprints,/obj/rad/rad_low,/turf/open/floor/plating/dirt,/area/stalker)
 "Dk" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/medicine,/obj/effect/spawner/lootdrop/stalker/medicine,/obj/effect/spawner/lootdrop/stalker/medicine,/turf/open/stalker/floor/lattice,/area/stalker/svalka/cellar)
 "Dm" = (/obj/structure/stalker/car/gryzovik2/south,/turf/open/stalker/floor/wood/oldvert,/area/stalker/blowout/outdoor)
@@ -1476,8 +1480,8 @@
 "ZV" = (/obj/structure/stalker/car/mi24{icon_state = "1,4"},/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbacajakalamaePJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDKHqadadadadhfhfhfagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbAVajototamaDPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDKHqoiakalDghfhfhfagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagPbPJadadadadPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbPbPJadadadadPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbPbPJadadadadbBPJagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

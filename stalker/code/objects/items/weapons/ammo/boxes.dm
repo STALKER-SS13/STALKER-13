@@ -23,6 +23,22 @@
 	max_ammo = 90
 	multiple_sprites = 2
 
+/obj/item/ammo_box/stalker/b762x39
+	name = "ammo box (7.62x39mm)"
+	desc = "Standard issue intermediate cartridge of Warsaw Pact countries, Full Metal Jacket, (7.62x39mm 57-N-231). "
+	ammo_type = /obj/item/ammo_casing/c762x39
+	icon_state = "762x39"
+	max_ammo = 60
+	multiple_sprites = 2
+
+/obj/item/ammo_box/stalker/b762x39ap
+	name = "ammo box (7.62x39mm)"
+	desc = "Standard Armor-piercing cartridge for intermediate cartridge firearms of the former Warsaw Pact countries (7.62x39mm 7N23). "
+	ammo_type = /obj/item/ammo_casing/c762x39/AP
+	icon_state = "762x39ap"
+	max_ammo = 60
+	multiple_sprites = 2
+
 /obj/item/ammo_box/stalker/b9x18
 	name = "ammo box (9x18mm)"
 	desc = "Full Metal Jacket handgun cartridge of the Warsaw Pact, It has a good stopping effect, but is ineffective against armored targets (9x18mm)."

@@ -11,9 +11,11 @@
 	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/ecologist
 	real_rank = "Ecologist"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/ecologist
 	name = "Ecologist"
@@ -36,7 +38,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
@@ -63,12 +65,21 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
+
+/datum/outfit/ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/job/ecologistguard
 	title = "Ecologist Guard"
@@ -83,9 +94,11 @@
 	forbids = "Engage in hostilities outside of self defense, break standard nation laws, undermine security for sake of research, and bum around without doing any work."
 	supervisors = "Chief Ecologist"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/ecologistguard
 	real_rank = "Ecologist"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/ecologistguard
 	name = "Ecologist Guard"
@@ -107,7 +120,7 @@
 				/obj/item/storage/wallet/alt)
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
-	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+	backpack_contents = list(/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
@@ -117,6 +130,15 @@
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch,
 				/obj/item/flashlight/flare)
+
+/datum/outfit/ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/ecologistguard  // For select_equipment
 	name = "Ecologist Guard"
@@ -132,7 +154,7 @@
 	l_pocket = /obj/item/storage/wallet
 	r_pocket = /obj/item/radio/off
 	suit_store = /obj/item/gun/ballistic/automatic/mp5
-	backpack_contents = list(/obj/item/storage/firstaid/stalker/scientific = 1,
+	backpack_contents = list(/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
@@ -148,10 +170,12 @@
 	spawn_positions = 1
 	limit_per_player = 1
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 1
 	outfit = /datum/outfit/job/chief_ecologist
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/job/chief_ecologist
 	title = "Chief Ecologist"
@@ -174,12 +198,22 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,
 							/obj/item/clothing/accessory/patch/ecologists = 1)
 	faction_s = "Ecologist"
+
+/datum/outfit/job/chief_ecologist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
+
 
 /datum/outfit/job/chief_ecologist // For select_equipment
 	name = "Chief Ecologist"
@@ -196,7 +230,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/detector/blink = 1,
 							/obj/item/geiger_counter = 1,
-							/obj/item/storage/firstaid/stalker/scientific = 1,
+							/obj/item/storage/firstaid/ecologists = 1,
 							/obj/item/weapon/kitchen/knife/hunting = 1,
 							/obj/item/gun/ballistic/automatic/pistol/fort12 = 1,
 							/obj/item/ammo_box/magazine/stalker/m9x18fort = 2,

@@ -64,7 +64,7 @@ Bonus
 				H.SetSpecialVoice(H.dna.species.random_name(H.gender))
 				if(scramble_language)
 					H.remove_language(current_language)
-					current_language = pick(subtypesof(/datum/language) - /datum/language/common)
+					current_language = pick(subtypesof(/datum/language) - /datum/language/ukrainian)
 					H.grant_language(current_language)
 					var/datum/language_holder/mob_language = H.get_language_holder()
 					mob_language.only_speaks_language = current_language

@@ -45,8 +45,8 @@
 	icon_state_null = "veles_null"
 	level_s = 4
 
-/obj/item/detector/New()
-	..()
+/obj/item/detector/Initialize()
+	. = ..()
 	arts = list()
 	fakearts = list()
 
@@ -101,7 +101,7 @@
 	if(min_dist == 0)
 		min_dist = 1
 
-	for (var/obj/item/artifact/a in arts)
+	for (var/obj/item/artifact/a as anything in arts)
 		if(a in range(1, user))
 			if(isnull(a.phantom) && a.invisibility != 0)
 				user.handle_artifact(a)
@@ -184,8 +184,8 @@
 	var/image/up
 	var/obj/item/artifact/my_target = null
 
-/obj/effect/fakeart/New(var/obj/item/artifact/a)
-	..()
+/obj/effect/fakeart/New(obj/item/artifact/a)
+	. = ..()
 	name = a.name
 	desc = a.desc
 	loc = a.loc
@@ -209,19 +209,16 @@
 
 	if(!istype(user, /mob/living/carbon/human))
 		qdel(src)
-		GLOB.spawned_artifacts.Remove(my_target)
 		return
 
 	var/mob/living/carbon/human/H = user
 
 	if(!H.wear_id)
 		qdel(src)
-		GLOB.spawned_artifacts.Remove(my_target)
 		return
 
 	if(!istype(H.wear_id, /obj/item/stalker_pda))
 		qdel(src)
-		GLOB.spawned_artifacts.Remove(my_target)
 		return
 
 	var/datum/data/record/sk = find_record("sid", H.sid, GLOB.data_core.stalkers)
@@ -229,11 +226,9 @@
 
 	if(!sk)
 		qdel(src)
-		GLOB.spawned_artifacts.Remove(my_target)
 		return
 
 	sk.fields["rating"] += (2 ** my_target.level_s) * 50
 
 	qdel(src)
-	GLOB.spawned_artifacts.Remove(my_target)
 	return

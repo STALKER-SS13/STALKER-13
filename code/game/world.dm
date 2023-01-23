@@ -25,6 +25,7 @@ GLOBAL_VAR(restart_counter)
 	SSdbcore.CheckSchemaVersion()
 	SSdbcore.SetRoundID()
 	SetupLogs()
+	send2chat("<@&1037846197433548930> New round starting!", "new-round-ping")
 
 #ifndef USE_CUSTOM_ERROR_HANDLER
 	world.log = file("[GLOB.log_directory]/dd.log")
@@ -199,9 +200,9 @@ GLOBAL_VAR(restart_counter)
 		if (usr)
 			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")
 			message_admins("[key_name_admin(usr)] Has requested an immediate world restart via client side debugging tools")
-		to_chat(world, "<span class='boldannounce'>СПОКУХА, СЕЙЧАС ПОЧИНЮСЬ! ТЯЯЯК~...</span>")
+		to_chat(world, "<span class='boldannounce'>Another day in the zone...</span>")
 	else
-		to_chat(world, "<span class='boldannounce'>Честно...</span>")
+		to_chat(world, "<span class='boldannounce'>Such is life in the zone...</span>")
 		Master.Shutdown()	//run SS shutdowns
 
 	TgsReboot()
@@ -211,6 +212,7 @@ GLOBAL_VAR(restart_counter)
 		return
 
 	if(TgsAvailable())
+		send2chat("Round ending! Such is life in the zone...", "new-round-ping")
 		var/do_hard_reboot
 		// check the hard reboot counter
 		var/ruhr = CONFIG_GET(number/rounds_until_hard_restart)
@@ -230,7 +232,6 @@ GLOBAL_VAR(restart_counter)
 			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
 			TgsEndProcess()
-
 	log_world("World rebooted at [time_stamp()]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
 	..()
@@ -238,7 +239,7 @@ GLOBAL_VAR(restart_counter)
 /world/proc/update_status()
 	var/s = ""
 
-	s += "<center><a href=\"https://discord.gg/wrn6ND4EGw\"><big><b>S.T.A.L.K.E.R.: 13</b></big><br>" //[config.server_name]
+	s += "<center><a href=\"https://discord.gg/ujfFgjKZbk\"><big><b>S.T.A.L.K.E.R.: 13</b></big><br>" //[config.server_name]
 	s += "<img src=\"https://frosty.space/styles/stalbanhub.png\"></a></center>"
 	s += "Map: <b>Zona (255x1000)</b><br>"
 	if(GLOB.master_mode)

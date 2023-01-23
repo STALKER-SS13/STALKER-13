@@ -83,6 +83,7 @@
 		new /datum/data/turntable_soundtrack ("Ariya",				"Potyeraniy Ray",					'stalker/sound/turntable/ariya_poteryaniy_ray.ogg',					3530),
 		new /datum/data/turntable_soundtrack ("Ariya",				"Ya Svoboden",						'stalker/sound/turntable/ariya_ya_svoboden.ogg',					3540),
 		new /datum/data/turntable_soundtrack ("Bandits",			"Cheeki Breeki",					'stalker/sound/turntable/bandit_radio.ogg',							1110),
+		new /datum/data/turntable_soundtrack ("Hoot",				"Pre-Release Moment",				'stalker/sound/turntable/hoot.ogg',									2110),
 		new /datum/data/turntable_soundtrack ("Basta",				"Mama",								'stalker/sound/turntable/basta_mama.ogg',							2360),
 		new /datum/data/turntable_soundtrack ("Bi2",				"Polkovnik",						'stalker/sound/turntable/bi2_polkovnik.ogg',						2900),
 		new /datum/data/turntable_soundtrack ("Bi2",				"Serebro",							'stalker/sound/turntable/bi2_serebro.ogg',							2770),

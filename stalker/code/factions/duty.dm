@@ -18,6 +18,8 @@ Assistant
 	whitelist_only = 0
 	outfit = /datum/outfit/job/dutysoldier
 	real_rank = "Duty"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/dutysoldier  // For select_equipment
 	name = "Duty Soldier"
@@ -54,7 +56,7 @@ Assistant
 	back = /obj/item/storage/backpack/duty
 	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/duty)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -68,6 +70,13 @@ Assistant
 		/obj/item/storage/box/matches,
 		/obj/item/restraints/handcuffs)
 
+/datum/outfit/job/dutysoldier/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/job/barman2
 	title = "Barman2"
@@ -83,9 +92,11 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/barman2
 	real_rank = "Bartender"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/barman2
 	name = "Barman"
@@ -115,9 +126,11 @@ Assistant
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom, Renegades, or the Bandits, and jeopordize the faction for an insignificant reason."
 	supervisors = "Major"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/duty_lieutenant
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/duty_lieutenant
 	name = "Duty Lieutenant"
@@ -138,7 +151,7 @@ Assistant
 	back = /obj/item/storage/backpack/duty
 	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/clothing/accessory/patch/duty)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/clothing/accessory/patch/duty)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -152,3 +165,12 @@ Assistant
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/duty_lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)

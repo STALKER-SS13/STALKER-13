@@ -2,7 +2,7 @@
 	var/inshelter = 0
 	var/inprivatezone = 0
 
-/area/stalker/blowout/Entered(var/atom/movable/A)
+/area/stalker/blowout/Entered(atom/movable/A)
 	if(istype(A, /mob/living/carbon))
 		var/mob/living/carbon/C = A
 		CheckControl(C)
@@ -14,7 +14,7 @@
 			C.overlay_fullscreen("blowjob", /obj/screen/fullscreen/color_vision/blowjob)
 		C.inshelter = 0
 
-/area/stalker/Entered(var/atom/movable/A)
+/area/stalker/Entered(atom/movable/A)
 	if(istype(A, /mob/living/carbon))
 		var/mob/living/carbon/C = A
 		CheckControl(C)
@@ -26,7 +26,7 @@
 			C.clear_fullscreen("blowjob")
 		C.inshelter = 1
 
-/area/proc/CheckControl(var/mob/living/carbon/C)
+/area/proc/CheckControl(mob/living/carbon/C)
 	if(!C.inprivatezone && controlled_by)
 		if(C.client && (C.client.prefs.chat_toggles & CHAT_LANGUAGE))
 			to_chat(C, "<big><span class='warning'>You enter the zone controlled by [controlled_by]. [controlled_by] can kill you on sight if you are not allied.</warning></big>")
@@ -81,40 +81,42 @@ SUBSYSTEM_DEF(blowout)
 		StartBlowout()
 		return
 
-	if(starttime)
-///////III STAGE OF BLOWOUT///////////////////////////////////////////////////////
-		if(BLOWOUT_DURATION_STAGE_III + starttime < world.time && cleaned)
-			AfterBlowout()
-			return
+	if(!starttime)
+		return
+	
+	///////III STAGE OF BLOWOUT///////////////////////////////////////////////////////
+	if((BLOWOUT_DURATION_STAGE_III + starttime < world.time) && cleaned)
+		AfterBlowout()
+		return
 
-		ProcessBlowout()
+	ProcessBlowout()
 
-///////II STAGE OF BLOWOUT////////////////////////////////////////////////////////
-		if((BLOWOUT_DURATION_STAGE_II + starttime) < world.time)
-			if(blowoutphase == 2)
-				StopBlowout()
-				BlowoutDealDamage()
-			if(MC_TICK_CHECK)
-				return
-			BlowoutGib()
-			if(MC_TICK_CHECK)
-				return
-			BlowoutClean()
-			if(MC_TICK_CHECK)
-				return
-			if(!(locate(/mob/living) in GLOB.dead_mob_list)) //!ACs.len &&
-				cleaned = 1
+	///////II STAGE OF BLOWOUT////////////////////////////////////////////////////////
+	if((BLOWOUT_DURATION_STAGE_II + starttime) < world.time)
+		if(blowoutphase == 2)
+			StopBlowout()
+			BlowoutDealDamage()
+		if(MC_TICK_CHECK)
 			return
-///////I STAGE OF BLOWOUT/////////////////////////////////////////////////////////
-		if((BLOWOUT_DURATION_STAGE_I + starttime) < world.time)
-			if(blowoutphase == 1)
-				PreStopBlowout()
+		BlowoutGib()
+		if(MC_TICK_CHECK)
 			return
+		BlowoutClean()
+		if(MC_TICK_CHECK)
+			return
+		if(!(locate(/mob/living) in GLOB.dead_mob_list)) //!ACs.len &&
+			cleaned = 1
+		return
+	///////I STAGE OF BLOWOUT/////////////////////////////////////////////////////////
+	if((BLOWOUT_DURATION_STAGE_I + starttime) < world.time)
+		if(blowoutphase == 1)
+			PreStopBlowout()
+		return
 
 /datum/controller/subsystem/blowout/proc/StartBlowout()
-	isblowout = 1
-	blowoutphase = 1
 	starttime = world.time
+	isblowout = TRUE
+	blowoutphase = 1
 
 	//SSnightcycle.updateLight("BLOWOUT")
 
@@ -135,8 +137,8 @@ SUBSYSTEM_DEF(blowout)
 	world << sound('stalker/sound/blowout/blowout_particle_wave.ogg', wait = 0, channel = 201, volume = 70)
 
 /datum/controller/subsystem/blowout/proc/BlowoutClean()
-	for(var/obj/item/ammo_casing/AC in ACs)
-		ACs -= AC
+	for(var/obj/item/ammo_casing/AC as anything in GLOB.ammo_casings)
+		GLOB.ammo_casings -= AC
 		qdel(AC)
 		if(MC_TICK_CHECK)
 			return
@@ -146,64 +148,60 @@ SUBSYSTEM_DEF(blowout)
 		L.gib()
 		if(MC_TICK_CHECK)
 			return
-		CHECK_TICK
 
 /datum/controller/subsystem/blowout/proc/BlowoutDealDamage()
-	for(var/mob/living/carbon/human/H)
+	for(var/mob/living/carbon/human/H in GLOB.carbon_list)
 		H.clear_fullscreen("blowjob")
 		if(!H.inshelter)
 			H.apply_damage(200, PSY)
-		CHECK_TICK
+		if(MC_TICK_CHECK)
+			return
 
+/*
 /datum/controller/subsystem/blowout/proc/BlowoutMobSpawns()
 	for(var/datum/controller/subsystem/zona/MS)
 		MS.SpawnMobs()
 		CHECK_TICK
-
+*/
 /datum/controller/subsystem/blowout/proc/StopBlowout()
-
 	if(blowoutphase == 2)
-
 		world << sound('stalker/sound/blowout/blowout_impact_02.ogg', wait = 0, channel = 201, volume = 70)
 		world << sound('stalker/sound/blowout/blowout_outro.ogg', wait = 0, channel = 202, volume = 70)
 
 	blowoutphase = 3
 
-	for(var/obj/item/artifact/A)
-
+	for(var/obj/item/artifact/A as anything in GLOB.all_artifacts)
 		if(A.invisibility > 30)
+			qdel(A)
+		CHECK_TICK
 
-			CHECK_TICK
-
-	for(var/obj/anomaly/An in GLOB.anomalies)
-
+	for(var/obj/anomaly/An as anything in GLOB.anomalies)
 		An.SpawnArtifact()
 		CHECK_TICK
 
+	/*
 	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
-
 		Ms.SpawnMobs()
 		CHECK_TICK
+	*/
 
-	for(var/datum/job/J in SSjob.occupations)
-
+	for(var/datum/job/J as anything in SSjob.occupations)
 		J.total_positions = initial(J.total_positions)
 		CHECK_TICK
 
-	for(var/obj/machinery/stalker/sidorpoint/SP in GLOB.cps)
-
+	for(var/obj/machinery/stalker/sidorpoint/SP as anything in GLOB.cps)
 		SP.SendJobTotalPositions()
 		CHECK_TICK
 
-	for(var/obj/structure/stalker/cacheable/C in world)
-
+	for(var/obj/structure/stalker/cacheable/C as anything in GLOB.stalker_caches)
+		if(C.internal_cache)
+			qdel(C.internal_cache)
 		C.internal_cache = null
 		C.cache_chance = rand(3, 7)
 		C.RefreshContents()
 		CHECK_TICK
 
 /datum/controller/subsystem/blowout/proc/AfterBlowout()
-
 	cooldownreal = rand(average_cooldown * 0.7, average_cooldown * 1.3)
 	isblowout = 0
 	lasttime = world.time
@@ -227,7 +225,7 @@ SUBSYSTEM_DEF(blowout)
 	/////////////////////////////////////
 
 	//Очистка ленты
-	global_lentahtml = ""
+	GLOB.global_lentahtml = ""
 	for(var/obj/item/stalker_pda/KPK in GLOB.KPKs)
 		KPK.lentahtml = ""
 
@@ -246,7 +244,7 @@ SUBSYSTEM_DEF(blowout)
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)
-		for(var/mob/living/carbon/human/H)
+		for(var/mob/living/carbon/human/H in GLOB.carbon_list)
 			if(istype(get_area(H), /area/stalker/blowout))
 				switch(blowoutphase)
 					if(1)
@@ -257,25 +255,25 @@ SUBSYSTEM_DEF(blowout)
 						shake_camera(H, 10, 1)
 
 	if(prob(20))
-		var/a = pick(SSblowout.ambient)
+		var/a = pick(src.ambient)
 		world << sound(a, wait = 1, channel = 19, volume = 70)
 
 	if(prob(30))
-		var/a = pick(SSblowout.wave)
+		var/a = pick(src.wave)
 		world << sound(a, wait = 1, channel = 20, volume = 70)
 
 	if(prob(20))
-		var/a = pick(SSblowout.wind)
+		var/a = pick(src.wind)
 		world << sound(a, wait = 1, channel = 21, volume = 70)
 
 	if(prob(30))
-		var/a = pick(SSblowout.rumble)
+		var/a = pick(src.rumble)
 		world << sound(a, wait = 1, channel = 22, volume = 70)
 
 	if(prob(50))
-		var/a = pick(SSblowout.boom)
+		var/a = pick(src.boom)
 		world << sound(a, wait = 1, channel = 23, volume = 70)
 
 	if(prob(50))
-		var/a = pick(SSblowout.lightning)
+		var/a = pick(src.lightning)
 		world << sound(a, wait = 1, channel = 24, volume = 70)

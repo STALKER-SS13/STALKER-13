@@ -1,5 +1,5 @@
 /datum/language_holder
-	var/list/languages = list(/datum/language/common)
+	var/list/languages = list(/datum/language/ukrainian)
 	var/list/shadow_languages = list()
 	var/only_speaks_language = null
 	var/selected_default_language = null
@@ -111,21 +111,21 @@
 	languages = list(/datum/language/swarmer)
 
 /datum/language_holder/clockmob
-	languages = list(/datum/language/common, /datum/language/ratvar)
+	languages = list(/datum/language/ukrainian, /datum/language/ratvar)
 	only_speaks_language = /datum/language/ratvar
 
 /datum/language_holder/construct
-	languages = list(/datum/language/common, /datum/language/narsie)
+	languages = list(/datum/language/ukrainian, /datum/language/narsie)
 
 /datum/language_holder/drone
-	languages = list(/datum/language/common, /datum/language/drone, /datum/language/machine)
+	languages = list(/datum/language/ukrainian, /datum/language/drone, /datum/language/machine)
 	only_speaks_language = /datum/language/drone
 
 /datum/language_holder/drone/syndicate
 	only_speaks_language = null
 
 /datum/language_holder/slime
-	languages = list(/datum/language/common, /datum/language/slime)
+	languages = list(/datum/language/ukrainian, /datum/language/slime)
 	only_speaks_language = /datum/language/slime
 
 /datum/language_holder/lightbringer
@@ -133,8 +133,8 @@
 	languages = list(/datum/language/slime)
 
 /datum/language_holder/synthetic
-	languages = list(/datum/language/common)
-	shadow_languages = list(/datum/language/common, /datum/language/machine, /datum/language/draconic)
+	languages = list(/datum/language/ukrainian)
+	shadow_languages = list(/datum/language/ukrainian, /datum/language/machine, /datum/language/english)
 
 /datum/language_holder/empty
 	languages = list()

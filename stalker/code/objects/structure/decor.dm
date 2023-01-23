@@ -1359,6 +1359,8 @@
 
 //////////////////////////////New caches////////////////////////////////
 
+GLOBAL_LIST_EMPTY(stalker_caches)
+
 /obj/structure/stalker/cacheable
 	name = "cache"
 	desc = "Generates a stash with a certain chance at the start of the round. Tell a developer if you see this."
@@ -1368,12 +1370,16 @@
 	var/cache_size = 0		//from 0 to 3
 	var/datum/component/storage/concrete/pockets/stalker/internal_cache
 
-/obj/structure/stalker/cacheable/New()
-	..()
+/obj/structure/stalker/cacheable/Initialize()
+	. = ..()
+	GLOB.stalker_caches += src
 	RefreshContents()
 
+/obj/structure/stalker/cacheable/Destroy()
+	. = ..()
+	GLOB.stalker_caches -= src
+	
 /obj/structure/stalker/cacheable/proc/RefreshContents()
-
 	if(ispath(internal_cache))
 		LoadComponent(internal_cache)
 
@@ -1423,8 +1429,7 @@
 	internal_cache.CreateContents(src)
 
 /obj/structure/stalker/cacheable/attack_hand(mob/user)
-	..()
-
+	. = ..()
 	user.visible_message("<span class='notice'>[user] begins to inspect [src]...</span>", "<span class='notice'>You start to inspect [src]...</span>")
 	if(!do_after(user, 30, 1, src))
 		return

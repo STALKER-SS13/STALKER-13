@@ -1,3 +1,4 @@
+/*
 GLOBAL_LIST_EMPTY(mobspawner)
 GLOBAL_LIST_EMPTY(mobspawner_monolith)
 
@@ -65,7 +66,7 @@ SUBSYSTEM_DEF(zona)
 	return total_mobs
 
 /datum/controller/subsystem/zona/proc/SpawnMobs()
-	for (var/obj/effect/landmark/mobspawner/S in GLOB.mobspawner)
+	for (var/obj/structure/spawner/stalker in GLOB.mobspawner)
 		switch (S.name)
 			if ("flesh")
 				new /mob/living/simple_animal/hostile/mutant/flesh(S.loc)
@@ -91,9 +92,11 @@ SUBSYSTEM_DEF(zona)
 				var/mob/M = new /mob/living/simple_animal/hostile/mutant/controller(S.loc)
 				M.faction = list("monolith_forces")
 
+
 #undef L_RELAX
 #undef L_NORMAL
 #undef L_HARD
 #undef L_INSANE
 #undef L_EXTREME
 #undef L_ABSURD
+*/

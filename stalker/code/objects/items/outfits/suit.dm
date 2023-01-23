@@ -759,6 +759,17 @@
 	name = "merc exoskeleton helmet"
 	icon_state = "exoskeletm_helmet"
 
+/obj/item/clothing/suit/hooded/sealed/exoskelet/bandit
+	name = "bandit exoskeleton"
+	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
+	icon_state = "exoskeletm"
+	item_state = "syndicate-black"
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/bandit
+
+/obj/item/clothing/head/hooded/stalker/sealed/exoskelet/bandit
+	name = "bandit exoskeleton helmet"
+	icon_state = "exoskeletm_helmet"
+
 /obj/item/clothing/suit/hooded/sealed/exoskelet/monolith
 	name = "monolith exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
@@ -984,12 +995,12 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
-	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/monolith
+	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/merc
 	resistance_flags = FIRE_PROOF
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 0, "accessory_slot" = 0)
 
-/obj/item/clothing/head/winterhood/stalker/sealed/merc
+/obj/item/clothing/head/hooded/stalker/sealed/merc
 	name = "merc ace suit helmet"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	heat_protection = HEAD

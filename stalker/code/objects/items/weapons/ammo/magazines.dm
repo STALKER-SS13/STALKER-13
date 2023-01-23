@@ -178,24 +178,24 @@
 /obj/item/ammo_box/magazine/internal/semiautobolt/sks
 	name = "SKS internal magazine"
 	desc = "Oh god, this shouldn't be here"
-	ammo_type = /obj/item/ammo_casing/sp9x39
-	caliber = "9x39mm"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39"
 	max_ammo = 10
 	multiload = 1
 
 /obj/item/ammo_box/magazine/stalker/akm
-	name = "AKM magazine (9x39)"
-	icon_state = "556x45"
-	ammo_type = /obj/item/ammo_casing/sp9x39
-	caliber = "9x39mm"
+	name = "AKM magazine (7.62x39)"
+	icon_state = "akm"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39"
 	max_ammo = 30
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/vz58
-	name = "vz. 58 magazine (7.62x51)"
-	icon_state = "556x45"
-	ammo_type = /obj/item/ammo_casing/c762x51
-	caliber = "7.62x51mm"
+	name = "vz. 58 magazine (7.62x39)"
+	icon_state = "vz58"
+	ammo_type = /obj/item/ammo_casing/c762x39
+	caliber = "7.62x39"
 	max_ammo = 30
 	multiple_sprites = 2
 

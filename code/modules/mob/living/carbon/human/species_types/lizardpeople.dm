@@ -25,7 +25,7 @@
 	deathsound = 'sound/voice/lizard/deathsound.ogg'
 
 /datum/species/lizard/after_equip_job(datum/job/J, mob/living/carbon/human/H)
-	H.grant_language(/datum/language/draconic)
+	H.grant_language(/datum/language/english)
 
 /datum/species/lizard/random_name(gender,unique,lastname)
 	if(unique)

@@ -17,10 +17,12 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/bandit
 	real_rank = "Bandit"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/job/banditboss
 	title = "Bandit Boss"
@@ -37,9 +39,11 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access(
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/banditboss
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/job/bandit_barman
 	title = "Bandit Barman"
@@ -56,9 +60,11 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/bandit_barman
 	real_rank = "Bartender"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/bandit
 	name = "Bandit"
@@ -83,7 +89,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/ai2,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
@@ -111,11 +117,19 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/ai2,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
+
+/datum/outfit/job/banditboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/outfit/job/bandit_barman
 	name = "Bandit Barman"
@@ -134,7 +148,7 @@ Assistant
 	backpack_contents = list(/obj/item/stack/spacecash/c5000 = 40,
 						/obj/item/ammo_box/stalker/b12x70 = 2,
 						/obj/item/flashlight/seclite = 1,
-						/obj/item/storage/firstaid/stalker/civillian,
+						/obj/item/storage/firstaid/ai2,
 						/obj/item/clothing/accessory/patch/bandits)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
@@ -147,6 +161,13 @@ Assistant
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/bluegoose,
 				/obj/item/reagent_containers/food/drinks/bottle/vodka/stalkervodka)
 
+/datum/outfit/job/bandit_barman/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/outfit/bandit  // For select_equipment
 	name = "Bandit"

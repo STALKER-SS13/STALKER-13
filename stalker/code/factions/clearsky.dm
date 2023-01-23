@@ -18,6 +18,8 @@ Assistant
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	outfit = /datum/outfit/clearsky
 	real_rank = "ClearSky"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/clearsky  // For select_equipment
 	name = "Clear Sky Soldier"
@@ -36,7 +38,7 @@ Assistant
 	belt = /obj/item/kitchen/knife/bayonet
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/kiparis
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/kiparis = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/kiparis = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -50,6 +52,13 @@ Assistant
 		/obj/item/clothing/mask/cigarette/marlboro,
 		/obj/item/storage/box/matches)
 
+/datum/outfit/clearsky/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
 
 /datum/job/clearsky_leader
 	title = "Clear Sky Leader"
@@ -63,10 +72,12 @@ Assistant
 	enforces = "Exploration and research of the zone. Shooting Renegades on sight."
 	forbids = "Antagonizing stalkers by harming or stealing from them, working with the Bandits, and starting fights with any neutral faction or otherwise jeopordize the faction for an insignificant reason."
 	selection_color = "#64B2F7"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 2
 	outfit = /datum/outfit/job/clearsky_leader
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/clearsky_leader
 	name = "Clear Sky Leader"
@@ -84,7 +95,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	back = /obj/item/storage/backpack/stalker/tourist
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/clearsky)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m9x19mp5 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/clearsky)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -98,3 +109,12 @@ Assistant
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/clearsky_leader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/english, body = FALSE)

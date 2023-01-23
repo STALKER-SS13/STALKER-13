@@ -17,10 +17,11 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/army
 	real_rank = "Army"
+	exp_requirements = 300
 
 /datum/job/army_spetsnaz
 	title = "Military Spetsnaz"
@@ -34,10 +35,12 @@ Assistant
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
 	supervisors = "Military Commander"
 	selection_color = "#2E8B57"
-	whitelist_only = 1
+	whitelist_only = 0
 	locked = 1
 	outfit = /datum/outfit/job/army_spetsnaz
 	real_rank = "Special"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
 
 /datum/outfit/job/army_spetsnaz
 	name = "Military Spetsnaz"
@@ -54,12 +57,21 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/ifak,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
 	faction_s = "State Security Service"
+
+/datum/outfit/job/army_spetsnaz/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/job/army
 	faction_s = "State Security Service"
@@ -75,7 +87,7 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/ifak,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
@@ -98,8 +110,10 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/militarycommander
 	name = "Military Commander"
@@ -115,12 +129,21 @@ Assistant
 	id = /obj/item/stalker_pda
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/desert
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/stalker/military,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/desert = 2,/obj/item/reagent_containers/food/snacks/stalker/konserva/fish,/obj/item/storage/firstaid/ifak,/obj/item/flashlight/seclite,/obj/item/clothing/accessory/patch/military)
 	r_pocket = /obj/item/radio
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
 	faction_s = "State Security Service"
+
+/datum/outfit/job/militarycommander/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
 
 /datum/outfit/army  // For select_equipment
 	name = "Military Soldier"
@@ -136,7 +159,7 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1,
 							/obj/item/ammo_box/magazine/stalker/m545 = 2,
-							/obj/item/storage/firstaid/stalker/military = 1)
+							/obj/item/storage/firstaid/ifak = 1)
 	l_pocket = /obj/item/storage/wallet/stalker
 	r_pocket = /obj/item/radio
 	faction_s = "State Security Service"
@@ -166,7 +189,7 @@ Assistant
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	backpack_contents = list(/obj/item/ammo_box/stalker/b545ap = 1,
 							/obj/item/ammo_box/magazine/stalker/m545 = 2,
-							/obj/item/storage/firstaid/stalker/military = 1,
+							/obj/item/storage/firstaid/ifak = 1,
 							/obj/item/reagent_containers/food/drinks/bottle/vodka/kazaki = 1)
 	r_pocket = /obj/item/radio
 	l_pocket = /obj/item/storage/wallet/stalker

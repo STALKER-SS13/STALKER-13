@@ -15,6 +15,8 @@
 	whitelist_only = 0
 	outfit = /datum/outfit/freedomrookie
 	real_rank = "Freedom"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/freedomrookie
 	name = "Freedom Soldier"
@@ -37,7 +39,7 @@
 	back = /obj/item/storage/backpack/stalker/civilian
 	suit_store = /obj/item/gun/ballistic/automatic/aksu74
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/m545 = 2,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -64,6 +66,14 @@
 	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/sc45 = 2)
 	faction_s = "Freedom"
 
+/datum/outfit/freedomrookie/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+
 /datum/job/freedom_lieutenant
 	title = "Freedom Lieutenant"
 	faction_s = "Freedom"
@@ -77,9 +87,11 @@
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without a good reason, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
 	supervisors = "Lieutenant"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/freedom_lieutenant
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/freedom_lieutenant
 	name = "Freedom Lieutenant"
@@ -101,7 +113,7 @@
 	back = /obj/item/storage/backpack/stalker/civilian
 	suit_store = /obj/item/gun/ballistic/revolver/anaconda
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2,/obj/item/ammo_box/stalker/bmag44  = 1,/obj/item/restraints/handcuffs/cable/zipties,/obj/item/toy/figure/botanist,/obj/item/clothing/accessory/patch/freedom)
 	l_pocket = pick(/obj/item/storage/wallet,
 				/obj/item/storage/wallet/brown,
 				/obj/item/storage/wallet/alt)
@@ -114,3 +126,12 @@
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
 				/obj/item/flashlight/flare/torch)
+
+/datum/outfit/job/freedom_lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)

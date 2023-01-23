@@ -8,7 +8,7 @@
 	icon = 'stalker/icons/stalker.dmi'
 	var/deletable = 1 //Self-deletable dead bodies
 	speak_chance = 1.5
-	var/rating_add = 10
+	rating_add = 10
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
@@ -94,7 +94,7 @@
 	maxbodytemp = 1500
 	environment_smash = 0
 	layer = MOB_LAYER - 0.1
-	random_butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
+	butcher_results = list(/obj/item/stalker/loot/mutantparts/dog_tail = 1,
 							/obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat = 1)
 	attack_type = "bite"
 	move_to_delay = 1.2 //Real speed of a mob
@@ -757,6 +757,8 @@
 	dodging = TRUE
 	rapid_melee = 2
 	do_footstep = TRUE
+	butcher_results = list(/obj/item/stack/spacecash/c100 = 1)
+	rating_add = 50
 
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/New()
@@ -912,7 +914,7 @@
 	ranged_cooldown = 1
 	ranged_cooldown_time = 2
 	casingtype = /obj/item/ammo_casing/c45
-	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+	projectilesound = 'stalker/sound/weapons/colt1911_shot.ogg'
 
 /mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/New()
 	..()
@@ -1005,3 +1007,218 @@
 		icon_living = "zombiesimp22"
 		icon_dead = "zombiesimp22_dead"
 
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/merc
+	name = "Mercenary zombie"
+	desc = "A shambling hollow corpse of a mercenary who is forever lost to the Zone."
+	icon_state = "zombiesimp"
+	icon_living = "zombiesimp"
+	icon_dead = "zombiesimp_dead"
+	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
+	speak_chance = 80
+	turns_per_move = 5
+	ranged = 1
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 0
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	maxHealth = 250
+	health = 250
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 15
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idle_sounds =	list('stalker/sound/mobs/mutants/idle/zombie_idle_1.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_2.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_3.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_4.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_5.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_6.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_7.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_8.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_9.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_10.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_11.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_12.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_13.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_14.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_15.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_16.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_17.ogg'
+						)
+	deathsound = list('stalker/sound/mobs/mutants/death/zombie_die_0.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_1.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_2.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_3.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_4.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_5.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_6.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_7.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_8.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_9.ogg'
+						)
+	a_intent = INTENT_HARM
+	faction = list("stalker_mutants1", "monolith_forces")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	dodging = TRUE
+	rapid_melee = 2
+	do_footstep = TRUE
+	ranged_cooldown = 1
+	ranged_cooldown_time = 40
+	casingtype = /obj/item/ammo_casing/c556x45
+	projectilesound = 'stalker/sound/weapons/tpc301_shoot.ogg'
+	rating_add = 100
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/merc/New()
+	..()
+	if(prob(100))
+		icon_state = "zombiesimp15"
+		icon_living = "zombiesimp15"
+		icon_dead = "zombiesimp15_dead"
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/duty
+	name = "Duty zombie"
+	desc = "A shambling hollow duty corpse who is forever lost to the Zone."
+	icon_state = "zombiesimp"
+	icon_living = "zombiesimp"
+	icon_dead = "zombiesimp_dead"
+	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
+	speak_chance = 80
+	turns_per_move = 5
+	ranged = 1
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 0
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	maxHealth = 175
+	health = 175
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 15
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idle_sounds =	list('stalker/sound/mobs/mutants/idle/zombie_idle_1.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_2.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_3.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_4.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_5.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_6.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_7.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_8.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_9.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_10.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_11.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_12.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_13.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_14.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_15.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_16.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_17.ogg'
+						)
+	deathsound = list('stalker/sound/mobs/mutants/death/zombie_die_0.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_1.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_2.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_3.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_4.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_5.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_6.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_7.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_8.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_9.ogg'
+						)
+	a_intent = INTENT_HARM
+	faction = list("stalker_mutants1", "monolith_forces")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	dodging = TRUE
+	rapid_melee = 2
+	do_footstep = TRUE
+	ranged_cooldown = 1
+	ranged_cooldown_time = 40
+	casingtype = /obj/item/ammo_casing/c545
+	projectilesound = 'stalker/sound/weapons/ak74u_shot.ogg'
+	rating_add = 80
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/duty/New()
+	..()
+	if(prob(100))
+		icon_state = "zombiesimp14"
+		icon_living = "zombiesimp14"
+		icon_dead = "zombiesimp14_dead"
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/military
+	name = "military zombie"
+	desc = "A shambling hollow corpse of a military soldier who is forever lost to the Zone."
+	icon_state = "zombiesimp"
+	icon_living = "zombiesimp"
+	icon_dead = "zombiesimp_dead"
+	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
+	speak_chance = 80
+	turns_per_move = 5
+	ranged = 1
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 0
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	maxHealth = 225
+	health = 225
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 15
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idle_sounds =	list('stalker/sound/mobs/mutants/idle/zombie_idle_1.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_2.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_3.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_4.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_5.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_6.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_7.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_8.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_9.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_10.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_11.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_12.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_13.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_14.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_15.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_16.ogg',
+						'stalker/sound/mobs/mutants/idle/zombie_idle_17.ogg'
+						)
+	deathsound = list('stalker/sound/mobs/mutants/death/zombie_die_0.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_1.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_2.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_3.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_4.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_5.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_6.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_7.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_8.ogg',
+						'stalker/sound/mobs/mutants/death/zombie_die_9.ogg'
+						)
+	a_intent = INTENT_HARM
+	faction = list("stalker_mutants1", "monolith_forces")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	dodging = TRUE
+	rapid_melee = 2
+	do_footstep = TRUE
+	ranged_cooldown = 1
+	ranged_cooldown_time = 40
+	casingtype = /obj/item/ammo_casing/c762x39
+	projectilesound = 'stalker/sound/weapons/akm_shot.ogg'
+	rating_add = 100
+
+/mob/living/simple_animal/hostile/mutant/zombiesimp/ranged/military/New()
+	..()
+	if(prob(100))
+		icon_state = "zombiesimp3"
+		icon_living = "zombiesimp3"
+		icon_dead = "zombiesimp3_dead"

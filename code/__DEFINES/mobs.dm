@@ -15,10 +15,10 @@
 #define BLOOD_VOLUME_MAXIMUM		2000
 #define BLOOD_VOLUME_SLIME_SPLIT	1120
 #define BLOOD_VOLUME_NORMAL			560
-#define BLOOD_VOLUME_SAFE			475
-#define BLOOD_VOLUME_OKAY			336
-#define BLOOD_VOLUME_BAD			224
-#define BLOOD_VOLUME_SURVIVE		122
+#define BLOOD_VOLUME_SAFE			440
+#define BLOOD_VOLUME_OKAY			360
+#define BLOOD_VOLUME_BAD			300
+#define BLOOD_VOLUME_SURVIVE		200
 
 //Sizes of mobs, used by mob/living/var/mob_size
 #define MOB_SIZE_TINY 0
@@ -261,7 +261,7 @@
 #define AGE_MAX				85	//oldest a character can be
 #define WIZARD_AGE_MIN		30	//youngest a wizard can be
 #define APPRENTICE_AGE_MIN	29	//youngest an apprentice can be
-#define SHOES_SLOWDOWN		-0.005	//How much shoes slow you down by default. Negative values speed you up
+#define SHOES_SLOWDOWN		0	//How much shoes slow you down by default. Negative values speed you up
 #define POCKET_STRIP_DELAY			40	//time taken (in deciseconds) to search somebody's pockets
 #define DOOR_CRUSH_DAMAGE	15	//the amount of damage that airlocks deal when they crush you
 

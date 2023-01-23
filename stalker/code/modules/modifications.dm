@@ -749,9 +749,13 @@ var/id_ = 0
 	if(href_list["eject"])
 		if(!modificated)
 			return
-		modificated.loc = src.loc
+		var/turf/T = get_turf(src)
+		for(var/atom/movable/A in contents)
+			A.forceMove(T)
 		modificated = null
 		usr.unset_machine()
 		popup.close()
+		new /obj/structure/stalker/modification_table(src.loc)
+		qdel(src)
 
 	updateUsrDialog()

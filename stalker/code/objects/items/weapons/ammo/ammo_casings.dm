@@ -16,6 +16,15 @@
 	desc = "A 5.45x39mm AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/bullet545AP
 
+/obj/item/ammo_casing/c762x39
+	desc = "A 7.62x39mm bullet casing."
+	caliber = "7.62x39"
+	projectile_type = /obj/item/projectile/bullet/bullet762x39
+
+/obj/item/ammo_casing/c762x39/AP
+	desc = "A 7.62x39mm AP bullet casing."
+	projectile_type = /obj/item/projectile/bullet/bullet762x39AP
+
 /obj/item/ammo_casing/shotgun/c12x70
 	desc = "A 12x70mm bullet casing."
 	icon_state = "gshell"

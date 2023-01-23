@@ -12,10 +12,12 @@
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 2
 	outfit = /datum/outfit/job/monolith// /datum/outfit/job/duty
 	real_rank = "Monolith"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 300
 
 /datum/outfit/job/monolith
 	name = "Monolith"
@@ -41,6 +43,9 @@
 /datum/outfit/job/monolith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	H.add_trait(TRAIT_BLOWOUT_IMMUNE, TRAIT_GENERIC)
+	H.grant_language(/datum/language/german, body = FALSE)
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/russian, body = FALSE)
 
 /datum/outfit/monolith  // For select_equipment
 	name = "Monolith Soldier"
@@ -62,7 +67,7 @@
 	..()
 	uniform = UNIFORMPICK
 	ears = null
-	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/stalker/civillian)
+	l_pocket = pick(/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/reagent_containers/food/snacks/stalker/baton,/obj/item/storage/firstaid/ai2)
 	r_pocket = pick(/obj/item/flashlight/lantern,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight,
@@ -78,10 +83,12 @@
 	locked = 1
 	supervisors = "Monolith"
 	selection_color = "#601919"
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 1
 	outfit = /datum/outfit/job/monolith_hegumen
 	real_rank = "Lieutenant"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /datum/outfit/job/monolith_hegumen
 	name = "Monolith Preacher"
@@ -107,3 +114,6 @@
 /datum/outfit/job/monolith_hegumen/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	H.add_trait(TRAIT_BLOWOUT_IMMUNE, ROUNDSTART_TRAIT)
+	H.grant_language(/datum/language/german, body = FALSE)
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/russian, body = FALSE)

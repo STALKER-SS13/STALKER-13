@@ -1,5 +1,5 @@
 GLOBAL_LIST_EMPTY(KPKs)
-var/global/global_lentahtml = ""
+GLOBAL_VAR_INIT(global_lentahtml, "")
 
 /obj/item/stalker_pda
 	name = "PDA"
@@ -602,7 +602,7 @@ var/global/global_lentahtml = ""
 				registered_name = H.real_name
 				owner = H
 				sid = H.sid
-				lentahtml = global_lentahtml
+				lentahtml = GLOB.global_lentahtml
 
 				//var/image = GLOB.data_core.fields["photo_front"]
 				//var/obj/item/photo/owner_photo_front = new()
@@ -639,7 +639,7 @@ var/global/global_lentahtml = ""
 				owner = H
 				sid = H.sid
 				if(!lentahtml)
-					lentahtml = global_lentahtml
+					lentahtml = GLOB.global_lentahtml
 
 				//var/image = GLOB.data_core.get_id_photo(H)
 
@@ -1052,7 +1052,7 @@ var/global/global_lentahtml = ""
 		</tr>\
 		</table>"
 
-	global_lentahtml = t + global_lentahtml
+	GLOB.global_lentahtml = t + GLOB.global_lentahtml
 	for(var/obj/item/stalker_pda/KPK in GLOB.KPKs)
 		KPK.lentahtml = t + KPK.lentahtml
 		show_lenta_message(KPK_owner, KPK, sid_owner, name_owner, faction_owner, msg)

@@ -7,7 +7,6 @@
 #define DMG_TYPE_BIO 64
 #define DMG_TYPE_LASTER 128
 GLOBAL_LIST_EMPTY(anomalies)
-GLOBAL_LIST_EMPTY(spawned_artifacts)
 
 /obj/anomaly
 	name = "Anomaly"
@@ -87,7 +86,6 @@ GLOBAL_LIST_EMPTY(spawned_artifacts)
 					return
 
 		RandomMove(O)
-		GLOB.spawned_artifacts += O
 
 /obj/anomaly/proc/RandomMove(spawned)
 	if(!spawned || !istype(spawned, /obj))

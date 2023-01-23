@@ -9,8 +9,10 @@
 	var/say_mod = null
 	var/taste_sensitivity = 15 // lower is more sensitive.
 	var/static/list/languages_possible_base = typecacheof(list(
-		/datum/language/common,
-		/datum/language/draconic,
+		/datum/language/ukrainian,
+		/datum/language/russian,
+		/datum/language/german,
+		/datum/language/english,
 		/datum/language/codespeak,
 		/datum/language/monkey,
 		/datum/language/narsie,
@@ -154,8 +156,8 @@
 	taste_sensitivity = 10 // LIZARDS ARE ALIENS CONFIRMED
 	var/static/list/languages_possible_alien = typecacheof(list(
 		/datum/language/xenocommon,
-		/datum/language/common,
-		/datum/language/draconic,
+		/datum/language/ukrainian,
+		/datum/language/english,
 		/datum/language/ratvar,
 		/datum/language/monkey))
 

@@ -27,7 +27,7 @@
 	var/my_message
 	if(!message)
 		return
-	user.whisper("O bidai nabora se[pick("'","`")]sma!", language = /datum/language/common)
+	user.whisper("O bidai nabora se[pick("'","`")]sma!", language = /datum/language/ukrainian)
 	user.whisper(html_decode(message))
 	var/title = "Acolyte"
 	var/span = "cult italic"
@@ -196,15 +196,15 @@
 /datum/action/innate/cult/master/finalreck/proc/chant(chant_number)
 	switch(chant_number)
 		if(1)
-			owner.say("C'arta forbici!", language = /datum/language/common, forced = "cult invocation")
+			owner.say("C'arta forbici!", language = /datum/language/ukrainian, forced = "cult invocation")
 		if(2)
-			owner.say("Pleggh e'ntrath!", language = /datum/language/common, forced = "cult invocation")
+			owner.say("Pleggh e'ntrath!", language = /datum/language/ukrainian, forced = "cult invocation")
 			playsound(get_turf(owner),'sound/magic/clockwork/narsie_attack.ogg', 50, 1)
 		if(3)
-			owner.say("Barhah hra zar'garis!", language = /datum/language/common, forced = "cult invocation")
+			owner.say("Barhah hra zar'garis!", language = /datum/language/ukrainian, forced = "cult invocation")
 			playsound(get_turf(owner),'sound/magic/clockwork/narsie_attack.ogg', 75, 1)
 		if(4)
-			owner.say("N'ath reth sh'yro eth d'rekkathnor!!!", language = /datum/language/common, forced = "cult invocation")
+			owner.say("N'ath reth sh'yro eth d'rekkathnor!!!", language = /datum/language/ukrainian, forced = "cult invocation")
 			playsound(get_turf(owner),'sound/magic/clockwork/narsie_attack.ogg', 100, 1)
 
 /datum/action/innate/cult/master/cultmark

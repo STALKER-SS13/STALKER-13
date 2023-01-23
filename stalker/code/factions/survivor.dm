@@ -52,9 +52,11 @@ Assistant
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/oldstalker
 	real_rank = "Special"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 900
 
 /*/datum/job/assistant/get_access()
 	if((config.jobs_have_maint_access & ASSISTANTS_HAVE_MAINT_ACCESS) || !config.jobs_have_minimal_access) //Config has assistant maint access set
@@ -97,7 +99,7 @@ Assistant
 		/obj/item/storage/backpack/explorer,
 		/obj/item/storage/backpack/satchel/explorer,
 		/obj/item/storage/backpack/stalker/civilian)
-	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/storage/firstaid/stalker/civillian,/obj/item/clothing/accessory/patch/loner)
+	backpack_contents = list(/obj/item/ammo_box/magazine/stalker/tt,/obj/item/ammo_box/magazine/stalker/tt,/obj/item/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/storage/firstaid/ai2,/obj/item/clothing/accessory/patch/loner)
 	r_pocket = pick(
 		/obj/item/kitchen/knife/tourist,
 		/obj/item/hatchet)
@@ -172,6 +174,14 @@ Assistant
 				/obj/item/flashlight/flare/torch,
 				/obj/item/flashlight/flare)
 
+/datum/outfit/job/oldstalker/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/russian, body = FALSE)
+
 /datum/outfit/stalkervolk  // For select_equipment
 	name = "Old Stalker"
 	uniform = /obj/item/clothing/under/color/switer
@@ -181,7 +191,7 @@ Assistant
 	belt = /obj/item/weapon/kitchen/knife/hunting
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/stalker/civillian = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1,/obj/item/storage/firstaid/stalker/civillian)
+	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/ammo_box/magazine/stalker/m545 = 2, /obj/item/storage/firstaid/ai2 = 1, /obj/item/stack/spacecash/c5000 = 1, /obj/item/flashlight/seclite = 1,/obj/item/storage/firstaid/ai2)
 	suit_store = /obj/item/gun/ballistic/automatic/ak74
 	back = /obj/item/storage/backpack/stalker/tourist
 	r_pocket = /obj/item/reagent_containers/food/snacks/stalker/konserva
@@ -249,6 +259,15 @@ Assistant
 		/obj/item/toy/eightball,
 		/obj/item/melee/flyswatter)
 
+/datum/outfit/job/tourist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_language(/datum/language/english, body = FALSE)
+	H.grant_language(/datum/language/german, body = FALSE)
+
 /datum/outfit/tourist  // For select_equipment
 	name = "Tourist"
 	uniform = /obj/item/clothing/under/color/switer/tourist/suspenders
@@ -277,7 +296,7 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/trader
 
 /datum/outfit/job/trader
@@ -317,7 +336,7 @@ Assistant
 	selection_color = "#601919"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 1
+	whitelist_only = 0
 	outfit = /datum/outfit/job/barman
 	real_rank = "Bartender"
 

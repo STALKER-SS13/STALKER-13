@@ -2713,7 +2713,7 @@
 	dir = 4;
 	teleport_x = 53;
 	teleport_y = 279;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -3023,7 +3023,7 @@
 	dir = 4;
 	teleport_x = 53;
 	teleport_y = 278;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -4582,7 +4582,7 @@
 	dir = 8;
 	teleport_x = 53;
 	teleport_y = 283;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/stalker/floor/plasteel/plita/orange,
 /area/stalker/buildings/mercenary)

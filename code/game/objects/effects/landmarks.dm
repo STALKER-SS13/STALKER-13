@@ -522,7 +522,7 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 		spawned_mob = new mob_type(pick(possible_tiles))
 		spawned_mob.faction = faction.Copy()
 		spawned_mobs += spawned_mob
-		RegisterSignal(spawned, COMSIG_PARENT_QDELETED, .proc/remove_mob_from_list)
+		RegisterSignal(spawned_mob, COMSIG_PARENT_QDELETED, .proc/remove_mob_from_list)
 
 /obj/effect/landmark/blowout_spawner/proc/heal_mobs()
 	for(var/mob/living/our_mob as anything in spawned_mobs)

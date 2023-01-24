@@ -92,12 +92,12 @@ GLOBAL_VAR_INIT(global_lentahtml, "")
 		"cursor_busy.ani"		= 'stalker/html/cursors/busy.ani'
 	)
 
-/obj/item/stalker_pda/New()
-	..()
-	return
+/obj/item/stalker_pda/Initialize()
+	. = ..()
+	GLOB.KPKs += src
 
 /obj/item/stalker_pda/Destroy()
-	..()
+	. = ..()
 	if(src in GLOB.KPKs)
 		GLOB.KPKs -= src
 	return

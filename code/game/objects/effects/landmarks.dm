@@ -516,10 +516,12 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 		possible_tiles -= closed_turf
 	possible_tiles |= get_turf(src)
 	var/current_mob_amount = length(spawned_mobs)
+	var/picked_tile
 	var/mob_type
 	var/mob/living/spawned_mob
 	for(var/i in 1 to (max_mobs - current_mob_amount))
-		spawned_mob = new mob_type(pick(possible_tiles))
+		picked_tile = pick(possible_tiles)
+		spawned_mob = new mob_type(picked_tile)
 		spawned_mob.faction = faction.Copy()
 		spawned_mobs += spawned_mob
 		RegisterSignal(spawned_mob, COMSIG_PARENT_QDELETED, .proc/remove_mob_from_list)

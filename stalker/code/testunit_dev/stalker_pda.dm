@@ -967,11 +967,6 @@ GLOBAL_VAR_INIT(global_lentahtml, "")
 		if(last_invite + LEADER_INVITE_COOLDOWN > world.time)
 			return
 
-		var/datum/data/record/sk_invited = find_record("sid", sid_, GLOB.data_core.stalkers)
-
-		if(!sk_invited)
-			return
-
 		last_invite = world.time
 		for(var/obj/item/stalker_pda/KPK_invited in GLOB.KPKs)
 			if(KPK_invited.sid == sid_)
@@ -984,7 +979,6 @@ GLOBAL_VAR_INIT(global_lentahtml, "")
 		var/datum/job/J = SSjob.GetJob(get_job_title(eng_faction_s))
 
 		var/datum/data/record/sk_removed = find_record("sid", sid_, GLOB.data_core.stalkers)
-
 		if(!sk_removed)
 			return
 

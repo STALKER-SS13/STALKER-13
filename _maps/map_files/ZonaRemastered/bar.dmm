@@ -838,7 +838,7 @@
 "zY" = (/obj/structure/simple_extractor,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/bar/rentgen)
 "Ag" = (/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/bar/rentgen)
 "Al" = (/obj/structure/grille/stalker/beton{icon_state = "|"; tag = "icon-|"},/obj/structure/stalker/trubas{dir = 4; tag = "icon-trubas (EAST)"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
-"Au" = (/obj/structure/spawner/stalker/dog,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"Au" = (/obj/effect/landmark/blowout_spawner/dog,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "Az" = (/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/gryaz,/area/stalker/buildings)
 "BK" = (/obj/structure/chair/wood/normal{dir = 4; tag = "icon-wooden_chair (EAST)"},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/bar/rentgen)
 "BY" = (/obj/structure/stalker/cacheable/yashik/yaskik_a/big,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/bar/rentgen)
@@ -936,7 +936,7 @@
 "Ze" = (/obj/structure/stalker/cacheable/yashik/yaskik_a,/obj/item/trash/cigs_trash2{pixel_y = -16},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "Zp" = (/obj/structure/chair/wood/normal,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/bar/rentgen)
 "Zu" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/three_course_meal,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/bar/rentgen)
-"ZL" = (/obj/structure/spawner/stalker/zombiesimp,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
+"ZL" = (/obj/effect/landmark/blowout_spawner/zombiesimp,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
 "ZP" = (/obj/structure/stalker/blocks/vanish/pipe/pipe2{dir = 4; tag = "icon-truba2 (EAST)"},/turf/open/floor/plating/dirt,/area/stalker/buildings)
 
 (1,1,1) = {"

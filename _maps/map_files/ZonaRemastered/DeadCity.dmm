@@ -1502,7 +1502,7 @@
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "ni" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /obj/rad/rad_low,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -2609,7 +2609,7 @@
 /area/stalker/buildings)
 "wC" = (
 /obj/rad/rad_low,
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "wI" = (
@@ -3384,7 +3384,7 @@
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "Dy" = (
-/obj/structure/spawner/stalker/allmutants,
+/obj/effect/landmark/blowout_spawner/allmutants,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "DB" = (
@@ -3471,7 +3471,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/mercenary)
 "Ep" = (
-/obj/structure/spawner/stalker/allmutants,
+/obj/effect/landmark/blowout_spawner/allmutants,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "Eq" = (
@@ -3534,7 +3534,7 @@
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "EQ" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "ER" = (
@@ -4332,7 +4332,7 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings)
 "Me" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
 "Mg" = (
@@ -4432,7 +4432,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/mercenary)
 "MR" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "MU" = (
@@ -4652,7 +4652,7 @@
 /turf/open/stalker/floor/plasteel/plitka,
 /area/stalker/blowout/outdoor)
 "Ow" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings)
 "Ox" = (
@@ -4850,7 +4850,7 @@
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor)
 "PZ" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/gryaz,
 /area/stalker/blowout/outdoor)
 "Qe" = (
@@ -5929,7 +5929,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings)
 "Zs" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings)
 "Zt" = (

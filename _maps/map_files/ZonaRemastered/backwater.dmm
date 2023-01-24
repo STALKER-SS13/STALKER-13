@@ -1711,7 +1711,7 @@
 "Za" = (/obj/structure/stalker/cacheable/bochka,/turf/open/stalker/floor/asphalt,/area/stalker/buildings/backwater/sawmill)
 "Zb" = (/obj/effect/step_trigger/teleporter{dir = 4; teleport_x = 61; teleport_y = 249; teleport_z = 1},/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "Zc" = (/obj/machinery/campfire/barrel,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
-"Zu" = (/obj/structure/spawner/stalker/zombiesimp,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
+"Zu" = (/obj/effect/landmark/blowout_spawner/zombiesimp,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
 "ZB" = (/obj/machinery/door/poddoor/shutters/preopen,/turf/open/stalker/floor/asphalt,/area/stalker/buildings/backwater/sawmill)
 "ZI" = (/obj/structure/mineral_door/wood,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "ZK" = (/obj/item/cigbutt,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)

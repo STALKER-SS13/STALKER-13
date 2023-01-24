@@ -511,7 +511,7 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 	GLOB.blowout_spawners -= src
 
 /obj/effect/landmark/blowout_spawner/proc/spawn_mobs()
-	var/list/possible_tiles = range(spawn_range)
+	var/list/possible_tiles = range(spawn_range, src)
 	for(var/turf/closed/closed_turf as anything in possible_tiles)
 		possible_tiles -= closed_turf
 	possible_tiles |= get_turf(src)

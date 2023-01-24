@@ -3,6 +3,7 @@
 	var/inprivatezone = 0
 
 /area/stalker/blowout/Entered(atom/movable/A)
+	. = ..()
 	if(istype(A, /mob/living/carbon))
 		var/mob/living/carbon/C = A
 		CheckControl(C)
@@ -15,6 +16,7 @@
 		C.inshelter = 0
 
 /area/stalker/Entered(atom/movable/A)
+	. = ..()
 	if(istype(A, /mob/living/carbon))
 		var/mob/living/carbon/C = A
 		CheckControl(C)

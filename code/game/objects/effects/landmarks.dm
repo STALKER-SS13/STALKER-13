@@ -521,6 +521,7 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 	var/mob/living/spawned_mob
 	for(var/i in 1 to (max_mobs - current_mob_amount))
 		picked_tile = pick(possible_tiles)
+		mob_type = pick(mob_types)
 		spawned_mob = new mob_type(picked_tile)
 		spawned_mob.faction = faction.Copy()
 		spawned_mobs += spawned_mob

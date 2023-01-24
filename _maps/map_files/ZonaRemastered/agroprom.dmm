@@ -619,7 +619,7 @@
 "rV" = (/obj/machinery/light/small{dir = 4; tag = "icon-bulb1 (EAST)"},/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/agroprom/buildings)
 "rW" = (/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/lattice,/area/stalker/kordon/tunnel)
 "sf" = (/obj/structure/stalker/panel,/obj/machinery/light/small,/turf/open/stalker/floor/gryaz,/area/stalker/agroprom/buildings)
-"sn" = (/obj/structure/spawner/stalker/pseudo,/turf/open/stalker/floor/plasteel/plita,/area/stalker/agroprom/buildings)
+"sn" = (/obj/effect/landmark/blowout_spawner/pseudo,/turf/open/stalker/floor/plasteel/plita,/area/stalker/agroprom/buildings)
 "sv" = (/obj/structure/stalker/bigyashik{icon_state = "bigyashik 1,0"; tag = "icon-bigyashik 1,0"},/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
 "sw" = (/obj/structure/closet/crate/stalker/blue/stash/medium,/turf/open/stalker/floor/lattice,/area/stalker/kordon/tunnel)
 "sx" = (/obj/structure/stalker/cacheable/bochka{pixel_x = 6; pixel_y = 7},/turf/open/stalker/floor/plasteel/plita,/area/stalker/agroprom/buildings)

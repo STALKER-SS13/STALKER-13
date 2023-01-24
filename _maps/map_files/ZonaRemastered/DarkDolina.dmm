@@ -241,7 +241,7 @@
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
 "cD" = (
-/obj/structure/spawner/stalker/zombiesimp,
+/obj/effect/landmark/blowout_spawner/zombiesimp,
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
 "cG" = (

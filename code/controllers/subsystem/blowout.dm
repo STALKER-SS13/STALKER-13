@@ -178,12 +178,11 @@ SUBSYSTEM_DEF(blowout)
 	for(var/obj/anomaly/An as anything in GLOB.anomalies)
 		An.SpawnArtifact()
 		CHECK_TICK
-
-	/*
-	for(var/datum/controller/subsystem/zona/Ms in GLOB.mobspawner)
-		Ms.SpawnMobs()
+	
+	for(var/obj/effect/landmark/blowout_spawner/spawner as anything in GLOB.blowout_spawners)
+		spawner.heal_mobs()
+		spawner.spawn_mobs()
 		CHECK_TICK
-	*/
 
 	for(var/datum/job/J as anything in SSjob.occupations)
 		J.total_positions = initial(J.total_positions)

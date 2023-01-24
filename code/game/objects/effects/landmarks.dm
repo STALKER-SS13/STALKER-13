@@ -503,12 +503,12 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 
 /obj/effect/landmark/blowout_spawner/Initialize()
 	. = ..()
-	blowout_spawners += src
+	GLOB.blowout_spawners += src
 	spawn_mobs()
 
 /obj/effect/landmark/blowout_spawner/Destroy()
 	. = ..()
-	blowout_spawners -= src
+	GLOB.blowout_spawners -= src
 
 /obj/effect/landmark/blowout_spawner/proc/spawn_mobs()
 	var/list/possible_tiles = range(spawn_range)

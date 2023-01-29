@@ -116,6 +116,7 @@
 	ammo_type = /obj/item/ammo_casing/c545
 	caliber = "5.45x39"
 	max_ammo = 30
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/stalker/m9x18fort
 	name = "pistol magazine (9x18mm)"

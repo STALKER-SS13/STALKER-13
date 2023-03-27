@@ -1,5 +1,4 @@
 //#define LOWMEMORYMODE
-//#include "map_files/generic/CentCom.dmm"
 #include "map_files/ZonaRemastered/backwater.dmm"
 #include "map_files/ZonaRemastered/under.dmm"
 #include "map_files/ZonaRemastered/kordon.dmm"
@@ -10,8 +9,7 @@
 #include "map_files/ZonaRemastered/yantar.dmm"
 #include "map_files/ZonaRemastered/ArmyWarehouses.dmm"
 #include "map_files/ZonaRemastered/greatswamps.dmm"
-#include "map_files/ZonaRemastered/DarkDolina.dmm"
 #include "map_files/ZonaRemastered/DeadCity.dmm"
-//#include "map_files/ZonaRemastered/zona.dmm"
+#include "map_files/ZonaRemastered/DarkDolina.dmm"
 
 #define FORCE_MAP "_maps/zonaremastered.json"

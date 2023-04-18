@@ -198,13 +198,17 @@
 /obj/rad/rad_high,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/buildings)
+"cm" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "cp" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
 	opacity = 1;
 	teleport_x = 180;
 	teleport_y = 29;
-	teleport_z = 9
+	teleport_z = 21
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/stalker{
@@ -615,6 +619,10 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"ho" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/turf/open/floor/plating/dirt/dark,
+/area/stalker/blowout/outdoor)
 "hp" = (
 /obj/structure/fence{
 	dir = 4
@@ -718,7 +726,7 @@
 	opacity = 1;
 	teleport_x = 382;
 	teleport_y = 025;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -894,6 +902,13 @@
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
+"kL" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/obj/structure/sign/warning/radiation/rad_area,
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "kQ" = (
 /obj/structure/bed/stalker/mattress_bloodstain,
 /turf/open/stalker/floor/gryaz/gryaz3,
@@ -1063,6 +1078,13 @@
 /obj/structure/stalker/cacheable/musor_yashik/green/full,
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
+"mJ" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 4;
+	icon_state = "centers"
+	},
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "mS" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -1099,6 +1121,13 @@
 /obj/structure/stalker/cacheable/brokenmachine4,
 /obj/rad/rad_low,
 /turf/open/stalker/floor/plasteel/plitka,
+/area/stalker/blowout/outdoor)
+"nr" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	icon_state = "corners";
+	dir = 5
+	},
+/turf/open/stalker/floor/plasteel,
 /area/stalker/blowout/outdoor)
 "nw" = (
 /obj/structure/barricade/stalker/box,
@@ -1370,7 +1399,7 @@
 "pY" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 249;
+	teleport_x = 248;
 	teleport_y = 213;
 	teleport_z = 6
 	},
@@ -1439,7 +1468,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_y = 040;
 	teleport_x = 387;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/buildings)
@@ -1659,6 +1688,10 @@
 /obj/structure/stalker/cacheable/battery,
 /turf/closed/wall/stalker/bricks_white,
 /area/stalker/buildings/bandit)
+"tw" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "tz" = (
 /obj/rad/rad_high,
 /obj/rad/rad_high,
@@ -1785,6 +1818,15 @@
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings)
+"vs" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 4;
+	icon_state = "centers";
+	pixel_y = 1;
+	pixel_x = -3
+	},
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "vu" = (
 /obj/structure/stalker/cacheable/yashik,
 /turf/open/floor/plating/dirt/dark,
@@ -2068,6 +2110,12 @@
 /obj/structure/flora/stalker/bush,
 /obj/anomaly/holodec,
 /turf/open/stalker/floor/gryaz/gryaz3,
+/area/stalker/blowout/outdoor)
+"yK" = (
+/mob/living/simple_animal/hostile/mutant/bloodsucker{
+	name = "Dark Snitch"
+	},
+/turf/open/stalker/floor/gryaz/gryaz2,
 /area/stalker/blowout/outdoor)
 "yQ" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
@@ -2501,7 +2549,7 @@
 	opacity = 1;
 	teleport_x = 164;
 	teleport_y = 313;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4;
@@ -2647,6 +2695,15 @@
 /obj/effect/spawner/lootdrop/stalker/weapon/meleetwohand,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings)
+"GO" = (
+/obj/structure/stalker/blocks/vanish/sandbags{
+	dir = 9;
+	icon_state = "corners";
+	tag = "icon-corners (NORTHWEST)";
+	pixel_x = 14
+	},
+/turf/open/stalker/floor/plasteel,
+/area/stalker/blowout/outdoor)
 "GR" = (
 /obj/effect/step_trigger/teleporter,
 /turf/open/floor/plasteel/stairs/old,
@@ -2975,7 +3032,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 168;
 	teleport_y = 330;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 1;
@@ -3059,7 +3116,7 @@
 	dir = 4;
 	teleport_x = 365;
 	teleport_y = 047;
-	teleport_z = 7
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -3100,6 +3157,10 @@
 /obj/structure/flora/junglebush/large,
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
+"Mv" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "My" = (
 /obj/structure/table/stalker/wood,
 /obj/effect/spawner/lootdrop/stalker/weapon/rifles_and_shotguns,
@@ -3132,6 +3193,10 @@
 	dir = 4
 	},
 /turf/open/stalker/floor/gryaz/gryaz3,
+/area/stalker/blowout/outdoor)
+"MX" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/plating/dirt/dark,
 /area/stalker/blowout/outdoor)
 "MZ" = (
 /obj/structure/stalker/car/gryzovik/south{
@@ -3330,6 +3395,10 @@
 /area/stalker/blowout/outdoor)
 "Pp" = (
 /obj/structure/barricade/stalker/box,
+/turf/open/stalker/floor/gryaz/gryaz3,
+/area/stalker/blowout/outdoor)
+"Pq" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
 "Px" = (
@@ -3838,7 +3907,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 146;
 	teleport_y = 335;
-	teleport_z = 9
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/blowout/outdoor)
@@ -4145,7 +4214,7 @@
 	opacity = 1;
 	teleport_x = 490;
 	teleport_y = 045;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -40395,7 +40464,7 @@ HV
 HV
 HV
 HV
-zm
+yK
 zm
 zm
 HV
@@ -49254,7 +49323,7 @@ zm
 zm
 HV
 UW
-HV
+Pq
 HV
 zm
 HV
@@ -50457,7 +50526,7 @@ zm
 HV
 HV
 HV
-HV
+Pq
 HV
 HV
 HV
@@ -50864,7 +50933,7 @@ HV
 HV
 HV
 HV
-HV
+Pq
 HV
 HV
 xX
@@ -51257,7 +51326,7 @@ HV
 HV
 HV
 HV
-HV
+Pq
 HV
 HV
 HV
@@ -54470,7 +54539,7 @@ HV
 HV
 HV
 HV
-zm
+Mv
 HV
 HV
 HV
@@ -55684,7 +55753,7 @@ zm
 HV
 HV
 zm
-HV
+Pq
 zm
 HV
 HV
@@ -59300,7 +59369,7 @@ HV
 HV
 HV
 HV
-HV
+Pq
 HV
 HV
 HV
@@ -60509,14 +60578,14 @@ xr
 xr
 aO
 aO
-aO
+ho
 xr
 xr
 xr
 xr
 xr
 xr
-tY
+kL
 xr
 xr
 "}
@@ -60916,8 +60985,8 @@ xr
 xr
 xr
 xr
-xr
-xr
+GO
+vs
 Xy
 xr
 xr
@@ -61314,12 +61383,12 @@ xr
 xr
 xr
 xr
-xr
-aO
-xr
-aO
-aO
-xr
+cm
+MX
+cm
+MX
+Js
+tw
 SC
 xr
 xr
@@ -61720,7 +61789,7 @@ xr
 xr
 xr
 xr
-xr
+ri
 xr
 SC
 xr
@@ -62122,7 +62191,7 @@ xr
 xr
 xr
 xr
-xr
+BN
 xr
 SC
 xr
@@ -62524,7 +62593,7 @@ aO
 aO
 aO
 xr
-xr
+ri
 xr
 SC
 xr
@@ -62926,8 +62995,8 @@ xr
 xr
 xr
 xr
-xr
-xr
+nr
+mJ
 yy
 xr
 xr
@@ -63330,7 +63399,7 @@ xr
 xr
 xr
 xr
-tY
+kL
 xr
 xr
 "}

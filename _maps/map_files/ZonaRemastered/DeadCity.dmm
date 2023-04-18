@@ -848,7 +848,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 180;
 	teleport_y = 107;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/left/stalker,
 /area/stalker/buildings)
@@ -1443,6 +1443,10 @@
 /obj/structure/chair/stalker/divan,
 /turf/open/stalker/floor/plasteel/plita,
 /area/stalker/buildings)
+"my" = (
+/obj/structure/stalker/radiation,
+/turf/open/stalker/floor/digable/grass,
+/area/stalker/blowout/outdoor)
 "mB" = (
 /obj/structure/stalker/car/gryzovik/east,
 /turf/open/stalker/floor/agroprom/gryaz,
@@ -2067,7 +2071,7 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	teleport_x = 180;
-	teleport_z = 10;
+	teleport_z = 20;
 	teleport_y = 130
 	},
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -3056,7 +3060,7 @@
 	dir = 1;
 	teleport_x = 235;
 	teleport_y = 43;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -3523,7 +3527,7 @@
 	dir = 8;
 	teleport_x = 69;
 	teleport_y = 82;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -4307,6 +4311,10 @@
 /obj/structure/mineral_door/wood,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings)
+"LT" = (
+/obj/structure/stalker/radiation,
+/turf/open/stalker/floor/asphalt,
+/area/stalker/blowout/outdoor)
 "LU" = (
 /obj/machinery/campfire/barrel,
 /turf/open/stalker/floor/agroprom/beton,
@@ -4729,6 +4737,10 @@
 /obj/structure/chair/stalker/divan/divan2,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings/mercenary)
+"Pd" = (
+/obj/structure/stalker/radiation,
+/turf/open/stalker/floor/gryaz,
+/area/stalker/blowout/outdoor)
 "Pf" = (
 /obj/structure/chair/sofa/right,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -5132,7 +5144,7 @@
 	dir = 4;
 	teleport_y = 294;
 	teleport_x = 102;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /obj/rad/rad_low,
 /obj/rad/rad_low,
@@ -5315,7 +5327,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 235;
 	teleport_y = 20;
-	teleport_z = 10
+	teleport_z = 20
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -36436,7 +36448,7 @@ Mm
 Mm
 Mm
 Mm
-Mm
+Pd
 FU
 pP
 FU
@@ -37915,7 +37927,7 @@ FU
 FU
 FU
 Mm
-Mm
+Pd
 eI
 eI
 eI
@@ -42156,7 +42168,7 @@ WG
 Ma
 Ma
 Mm
-Mm
+Pd
 QE
 Mm
 Mm
@@ -53307,20 +53319,20 @@ FU
 FU
 FU
 FU
+LT
 FU
 FU
 FU
 FU
 FU
 FU
+LT
 FU
 FU
 FU
 FU
 FU
-FU
-FU
-FU
+LT
 FU
 FU
 FU
@@ -53942,7 +53954,7 @@ FU
 FU
 FU
 FU
-FU
+LT
 FU
 FU
 FU
@@ -54809,7 +54821,7 @@ FU
 VJ
 Ma
 Ma
-Ma
+my
 Ma
 VN
 Cv
@@ -58731,7 +58743,7 @@ FU
 FU
 FU
 FU
-FU
+LT
 FU
 Ma
 Ma
@@ -62660,7 +62672,7 @@ FU
 FU
 FU
 Ma
-Ma
+my
 Ma
 Cv
 Ma
@@ -63608,7 +63620,7 @@ Ma
 Ma
 Ma
 Ma
-Ma
+my
 Ma
 Ma
 Ma
@@ -65096,7 +65108,7 @@ FU
 FU
 FU
 FU
-FU
+LT
 FU
 FU
 FU

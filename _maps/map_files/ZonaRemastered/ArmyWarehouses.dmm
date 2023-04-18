@@ -597,7 +597,7 @@
 "zQ" = (/obj/structure/closet/crate/stalker/blue/stash/medium,/obj/rad/rad_medium,/turf/open/stalker/floor/digable/gryaz_rocky,/area/stalker)
 "zR" = (/obj/structure/stalker/cacheable/bochka{density = 0; pixel_x = 6; pixel_y = 8},/obj/structure/stalker/cacheable/bochka/red{pixel_y = -15},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "zU" = (/obj/structure/stalker/bigyashik{icon_state = "bigyashik 1,0"; tag = "icon-bigyashik 1,0"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
-"Aa" = (/obj/effect/step_trigger/teleporter{dir = 8; teleport_x = 253; teleport_y = 176; teleport_z = 20},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
+"Aa" = (/obj/effect/step_trigger/teleporter{dir = 8; teleport_x = 252; teleport_y = 176; teleport_z = 20},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "Ab" = (/obj/structure/stalker/cacheable/yashik/yaskik_a,/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
 "Ac" = (/mob/living/simple_animal/hostile/mutant/bloodsucker,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings)
 "Af" = (/obj/rad/rad_low,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)

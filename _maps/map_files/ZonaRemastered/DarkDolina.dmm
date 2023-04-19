@@ -206,8 +206,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
 	opacity = 1;
-	teleport_x = 180;
-	teleport_y = 29;
+	teleport_x = 170;
+	teleport_y = 335;
 	teleport_z = 21
 	},
 /obj/rad/rad_low,
@@ -306,7 +306,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 19;
 	teleport_y = 393;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/buildings)
@@ -803,7 +803,9 @@
 "jd" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 281
+	teleport_x = 281;
+	teleport_z = 21;
+	teleport_y = 155
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/buildings)
@@ -1259,9 +1261,9 @@
 /area/stalker/blowout/outdoor)
 "oN" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 13;
-	teleport_y = 347;
-	teleport_z = 1
+	teleport_x = 022;
+	teleport_y = 396;
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/buildings)
@@ -1446,7 +1448,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	teleport_x = 19;
-	teleport_y = 373
+	teleport_y = 373;
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/buildings)
@@ -3588,7 +3591,7 @@
 	opacity = 1;
 	teleport_x = 254;
 	teleport_y = 155;
-	teleport_z = 1
+	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/buildings)
@@ -4212,8 +4215,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
 	opacity = 1;
-	teleport_x = 490;
-	teleport_y = 045;
+	teleport_x = 390;
+	teleport_y = 047;
 	teleport_z = 21
 	},
 /turf/open/floor/plasteel/stairs/stalker{
@@ -113122,7 +113125,7 @@ eq
 rF
 rF
 rF
-eq
+hD
 qk
 Yn
 CJ
@@ -113523,7 +113526,7 @@ eq
 eq
 eq
 eq
-eq
+hD
 eq
 is
 GR
@@ -157852,7 +157855,7 @@ bn
 EI
 bn
 bn
-bn
+uu
 uu
 uu
 WU
@@ -158253,8 +158256,8 @@ uu
 bn
 bn
 bn
-bn
-bn
+uu
+uu
 uu
 uu
 uu
@@ -158654,9 +158657,9 @@ bn
 uu
 bn
 bn
-bn
-bn
-bn
+uu
+uu
+uu
 uu
 uu
 uu

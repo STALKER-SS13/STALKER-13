@@ -95,24 +95,21 @@ SUBSYSTEM_DEF(blowout)
 
 	///////II STAGE OF BLOWOUT////////////////////////////////////////////////////////
 	if((BLOWOUT_DURATION_STAGE_II + starttime) < world.time)
-		if(blowoutphase == 2)
-			StopBlowout()
-			BlowoutDealDamage()
+		if(blowoutphase != 2)
+			return
+		StopBlowout()
 		if(MC_TICK_CHECK)
 			return
-		BlowoutGib()
+		BlowoutZombify()
 		if(MC_TICK_CHECK)
 			return
 		BlowoutClean()
-		if(MC_TICK_CHECK)
-			return
-		if(!(locate(/mob/living) in GLOB.dead_mob_list)) //!ACs.len &&
-			cleaned = 1
 		return
 	///////I STAGE OF BLOWOUT/////////////////////////////////////////////////////////
 	if((BLOWOUT_DURATION_STAGE_I + starttime) < world.time)
-		if(blowoutphase == 1)
-			PreStopBlowout()
+		if(blowoutphase != 1)
+			return
+		PreStopBlowout()
 		return
 
 /datum/controller/subsystem/blowout/proc/StartBlowout()
@@ -139,23 +136,26 @@ SUBSYSTEM_DEF(blowout)
 	world << sound('stalker/sound/blowout/blowout_particle_wave.ogg', wait = 0, channel = 201, volume = 70)
 
 /datum/controller/subsystem/blowout/proc/BlowoutClean()
-	for(var/obj/item/ammo_casing/AC as anything in GLOB.ammo_casings)
-		GLOB.ammo_casings -= AC
-		qdel(AC)
+	for(var/obj/item/ammo_casing/ammo_casing as anything in GLOB.ammo_casings)
+		GLOB.ammo_casings -= ammo_casing
+		qdel(ammo_casing)
 		if(MC_TICK_CHECK)
 			return
 
-/datum/controller/subsystem/blowout/proc/BlowoutGib()
-	for(var/mob/living/L in GLOB.dead_mob_list)
-		L.gib()
-		if(MC_TICK_CHECK)
-			return
-
-/datum/controller/subsystem/blowout/proc/BlowoutDealDamage()
-	for(var/mob/living/carbon/human/H in GLOB.carbon_list)
-		H.clear_fullscreen("blowjob")
-		if(!H.inshelter)
-			H.apply_damage(200, PSY)
+/datum/controller/subsystem/blowout/proc/BlowoutZombify()
+	for(var/mob/living/carbon/human/zomboid in GLOB.carbon_list)
+		zomboid.clear_fullscreen("blowjob")
+		/* Psy damage literally does not work
+		if(!zomboid.inshelter)
+			zomboid.apply_damage(200, PSY)
+		*/
+		if(zomboid.has_trait(TRAIT_BLOWOUT_IMMUNE))
+			continue
+		to_chat(zomboid, "<big><span class='warning'>You have succumbed to the zone!</big></span>")
+		new /mob/living/simple_animal/hostile/mutant/zombiesimp(zomboid.loc)
+		zomboid.ghostize(FALSE)
+		zomboid.unequip_everything()
+		qdel(zomboid)
 		if(MC_TICK_CHECK)
 			return
 
@@ -172,13 +172,13 @@ SUBSYSTEM_DEF(blowout)
 
 	blowoutphase = 3
 
-	for(var/obj/item/artifact/A as anything in GLOB.all_artifacts)
-		if(A.invisibility > 30)
-			qdel(A)
+	for(var/obj/item/artifact/artifact as anything in GLOB.all_artifacts)
+		if(artifact.invisibility > 30)
+			qdel(artifact)
 		CHECK_TICK
 
-	for(var/obj/anomaly/An as anything in GLOB.anomalies)
-		An.SpawnArtifact()
+	for(var/obj/anomaly/anomaly as anything in GLOB.anomalies)
+		anomaly.SpawnArtifact()
 		CHECK_TICK
 	
 	for(var/obj/effect/landmark/blowout_spawner/spawner as anything in GLOB.blowout_spawners)
@@ -186,20 +186,20 @@ SUBSYSTEM_DEF(blowout)
 		spawner.spawn_mobs()
 		CHECK_TICK
 
-	for(var/datum/job/J as anything in SSjob.occupations)
-		J.total_positions = initial(J.total_positions)
+	for(var/datum/job/job as anything in SSjob.occupations)
+		job.total_positions = initial(job.total_positions)
 		CHECK_TICK
 
-	for(var/obj/machinery/stalker/sidorpoint/SP as anything in GLOB.cps)
-		SP.SendJobTotalPositions()
+	for(var/obj/machinery/stalker/sidorpoint/sidorpoint as anything in GLOB.cps)
+		sidorpoint.SendJobTotalPositions()
 		CHECK_TICK
 
-	for(var/obj/structure/stalker/cacheable/C as anything in GLOB.stalker_caches)
-		if(C.internal_cache)
-			qdel(C.internal_cache)
-		C.internal_cache = null
-		C.cache_chance = rand(3, 7)
-		C.RefreshContents()
+	for(var/obj/structure/stalker/cacheable/cache as anything in GLOB.stalker_caches)
+		if(cache.internal_cache)
+			qdel(cache.internal_cache)
+		cache.internal_cache = null
+		cache.cache_chance = rand(3, 7)
+		cache.RefreshContents()
 		CHECK_TICK
 
 /datum/controller/subsystem/blowout/proc/AfterBlowout()
@@ -245,8 +245,8 @@ SUBSYSTEM_DEF(blowout)
 
 /datum/controller/subsystem/blowout/proc/ProcessBlowout()
 	if(isblowout)
-		for(var/mob/living/carbon/human/H in GLOB.carbon_list)
-			if(istype(get_area(H), /area/stalker/blowout))
+		for(var/mob/living/carbon/human/human in GLOB.carbon_list)
+			if(istype(get_area(human), /area/stalker/blowout))
 				switch(blowoutphase)
 					if(1)
 						shake_camera(H, 1, 1)

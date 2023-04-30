@@ -4,15 +4,15 @@
 	stat_attack = 2
 	stat_exclusive = 0
 	fearless = 0
-	var/gib_targets = 1 //Гибать
 	icon = 'stalker/icons/stalker.dmi'
-	var/deletable = 1 //Self-deletable dead bodies
 	speak_chance = 1.5
 	rating_add = 10
 	loot = list()
 	robust_searching = 1
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
 	var/random_butcher_results
+	var/deletable = TRUE //Self-deletable dead bodies
+	var/gib_targets = TRUE //Гибать
 /*
 /mob/living/simple_animal/hostile/mutant/death(gibbed)
 	..()

@@ -144,7 +144,7 @@
 "cS" = (/obj/structure/stalker/blocks/vanish/sandbags{dir = 8; icon_state = "e-w-connected-to-s"; tag = "icon-e-w-connected-to-s (WEST)"},/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
 "cT" = (/turf/closed/wall/stalker/bricks_white,/area/stalker/buildings/bar/rentgen)
 "cU" = (/obj/effect/decal/cleanable/blood/old,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
-"cV" = (/obj/structure/stalker/bar_plitka,/obj/effect/step_trigger/teleporter{teleport_x = 195; teleport_y = 165; teleport_z = 6; dir = 8},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"cV" = (/obj/structure/stalker/bar_plitka,/obj/effect/step_trigger/teleporter{teleport_x = 195; teleport_y = 165; teleport_z = 23; dir = 8},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "cW" = (/obj/structure/stalker/blocks/vanish/sandbags{dir = 10; icon_state = "corners"; tag = "icon-corners (SOUTHWEST)"},/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
 "cX" = (/obj/structure/stalker/blocks/vanish/sandbags{dir = 4; icon_state = "ends-s-n"; tag = "icon-ends-s-n (EAST)"},/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
 "cY" = (/obj/machinery/light{dir = 1; tag = "icon-tube1 (EAST)"},/obj/structure/closet/crate/stalker/blue/stash,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/bar/rentgen)

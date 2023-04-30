@@ -510,11 +510,16 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 	. = ..()
 	GLOB.blowout_spawners -= src
 
+/obj/effect/landmark/blowout_spawner/proc/heal_mobs()
+	for(var/mob/living/our_mob as anything in spawned_mobs)
+		our_mob.revive(TRUE)
+
 /obj/effect/landmark/blowout_spawner/proc/spawn_mobs()
 	var/list/possible_tiles = view(spawn_range, src)
 	for(var/turf/closed/closed_turf as anything in possible_tiles)
 		possible_tiles -= closed_turf
-	possible_tiles |= get_turf(src)
+	if(!length(possible_tiles))
+		possible_tiles |= get_turf(src)
 	var/current_mob_amount = length(spawned_mobs)
 	var/picked_tile
 	var/mob_type
@@ -526,10 +531,6 @@ GLOBAL_LIST_EMPTY(blowout_spawners)
 		spawned_mob.faction = faction.Copy()
 		spawned_mobs += spawned_mob
 		RegisterSignal(spawned_mob, COMSIG_PARENT_QDELETED, .proc/remove_mob_from_list)
-
-/obj/effect/landmark/blowout_spawner/proc/heal_mobs()
-	for(var/mob/living/our_mob as anything in spawned_mobs)
-		our_mob.revive(TRUE)
 
 /obj/effect/landmark/blowout_spawner/proc/remove_mob_from_list(mob/source)
 	spawned_mobs -= source

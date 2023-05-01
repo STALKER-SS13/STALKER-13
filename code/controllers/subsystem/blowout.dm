@@ -86,15 +86,15 @@ SUBSYSTEM_DEF(blowout)
 	if(!starttime)
 		return
 	
+	ProcessBlowout()
+
 	///////III STAGE OF BLOWOUT///////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_III + starttime < world.time) && cleaned)
+	if(starttime + BLOWOUT_DURATION_STAGE_III < world.time)
 		AfterBlowout()
 		return
 
-	ProcessBlowout()
-
 	///////II STAGE OF BLOWOUT////////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_II + starttime) < world.time)
+	if(starttime + BLOWOUT_DURATION_STAGE_II < world.time)
 		if(blowoutphase != 2)
 			return
 		StopBlowout()
@@ -106,7 +106,7 @@ SUBSYSTEM_DEF(blowout)
 		BlowoutClean()
 		return
 	///////I STAGE OF BLOWOUT/////////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_I + starttime) < world.time)
+	if(starttime + BLOWOUT_DURATION_STAGE_I < world.time)
 		if(blowoutphase != 1)
 			return
 		PreStopBlowout()

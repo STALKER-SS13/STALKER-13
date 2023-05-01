@@ -51,7 +51,6 @@ SUBSYSTEM_DEF(blowout)
 	var/cooldownreal = 10000
 	var/lasttime = 0
 	var/starttime = 0
-	var/cleaned = 0
 	var/list/ambient = list('stalker/sound/blowout/blowout_amb_01.ogg', 'stalker/sound/blowout/blowout_amb_02.ogg',
 						'stalker/sound/blowout/blowout_amb_03.ogg', 'stalker/sound/blowout/blowout_amb_04.ogg',
 						'stalker/sound/blowout/blowout_amb_05.ogg', 'stalker/sound/blowout/blowout_amb_06.ogg',
@@ -86,15 +85,15 @@ SUBSYSTEM_DEF(blowout)
 	if(!starttime)
 		return
 	
+	ProcessBlowout()
+
 	///////III STAGE OF BLOWOUT///////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_III + starttime < world.time) && cleaned)
+	if(starttime + BLOWOUT_DURATION_STAGE_III < world.time)
 		AfterBlowout()
 		return
 
-	ProcessBlowout()
-
 	///////II STAGE OF BLOWOUT////////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_II + starttime) < world.time)
+	if(starttime + BLOWOUT_DURATION_STAGE_II < world.time)
 		if(blowoutphase != 2)
 			return
 		StopBlowout()
@@ -106,7 +105,7 @@ SUBSYSTEM_DEF(blowout)
 		BlowoutClean()
 		return
 	///////I STAGE OF BLOWOUT/////////////////////////////////////////////////////////
-	if((BLOWOUT_DURATION_STAGE_I + starttime) < world.time)
+	if(starttime + BLOWOUT_DURATION_STAGE_I < world.time)
 		if(blowoutphase != 1)
 			return
 		PreStopBlowout()
@@ -207,7 +206,6 @@ SUBSYSTEM_DEF(blowout)
 	isblowout = 0
 	lasttime = world.time
 	starttime = 0
-	cleaned = 0
 
 	//SSnightcycle.updateLight("DAYTIME")
 

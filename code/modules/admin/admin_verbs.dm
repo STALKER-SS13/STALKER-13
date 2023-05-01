@@ -934,7 +934,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	if(alert("Are you sure you want to stop the blowout?", "S.T.A.L.K.E.R.", "Yes", "No") == "No")
 		return
 
-	SSblowout.cleaned = 1
 	SSblowout.starttime = world.time - BLOWOUT_DURATION_STAGE_III + 1
 
 	log_admin("[key_name(usr)] stoped the blowout.")

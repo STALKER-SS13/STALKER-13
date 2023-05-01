@@ -51,7 +51,6 @@ SUBSYSTEM_DEF(blowout)
 	var/cooldownreal = 10000
 	var/lasttime = 0
 	var/starttime = 0
-	var/cleaned = 0
 	var/list/ambient = list('stalker/sound/blowout/blowout_amb_01.ogg', 'stalker/sound/blowout/blowout_amb_02.ogg',
 						'stalker/sound/blowout/blowout_amb_03.ogg', 'stalker/sound/blowout/blowout_amb_04.ogg',
 						'stalker/sound/blowout/blowout_amb_05.ogg', 'stalker/sound/blowout/blowout_amb_06.ogg',
@@ -207,7 +206,6 @@ SUBSYSTEM_DEF(blowout)
 	isblowout = 0
 	lasttime = world.time
 	starttime = 0
-	cleaned = 0
 
 	//SSnightcycle.updateLight("DAYTIME")
 

@@ -15,14 +15,13 @@ Ask ninjanomnom if they're around
 #define RAD_TOX_COEFFICIENT 0.08					// Toxin damage per tick coefficient
 #define RAD_OVERDOSE_REDUCTION 0.000001				// Coefficient to the reduction in applied rads once the thing, usualy mob, has too much radiation
 													// WARNING: This number is highly sensitive to change, graph is first for best results
+#define RAD_BURN_THRESHOLD 10						// Applied radiation must be over this to burn
 
 #define RAD_MOB_SAFE 5000							// How much stored radiation in a mob with no ill effects
 
 #define RAD_MOB_HAIRLOSS 8000						// How much stored radiation to check for hair loss
 
-#define RAD_BURN_THRESHOLD 10000					// Applied radiation must be over this to burn
-
-#define RAD_MOB_MUTATE 12500						// How much stored radiation to check for mutation
+#define RAD_MOB_MUTATE 12500							// How much stored radiation to check for mutation
 
 #define RAD_MOB_VOMIT 20000							// The amount of radiation to check for vomitting
 #define RAD_MOB_VOMIT_PROB 1						// Chance per tick of vomitting

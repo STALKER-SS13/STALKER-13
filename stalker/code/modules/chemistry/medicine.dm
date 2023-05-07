@@ -237,3 +237,246 @@
 	M.adjust_fire_stacks(2)
 	M.IgniteMob()
 	..()
+
+// Medical Rework
+
+// COMBAT STIMULANT is now it's own specific chemical isntead of working off miner salve. This is for the sanity of other devs
+// It has seen a buff, due to becoming scarcer and cheaper alternatives being created!
+
+
+/datum/reagent/medicine/combatstimulant
+	name = "Combat-Stimulant"
+	id = "combat_stim"
+	description = "Powerful and fast-acting. Combat stimulants are considered a grey-area in terms of user safety within the zone."
+	reagent_state = LIQUID
+	color = "#4f0000"
+	metabolization_rate = 0.2 * REAGENTS_METABOLISM
+
+/datum/reagent/medicine/mine_salve/on_mob_life(mob/living/carbon/C)
+	C.ignore_slowdown(id)
+	C.hal_screwyhud = SCREWYHUD_HEALTHY
+//	C.adjustBruteLoss(-0.25*REM, 0)
+//	C.adjustFireLoss(-0.25*REM, 0)
+	..()
+	return TRUE
+
+/datum/reagent/medicine/combatstimulant/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+	if(iscarbon(M) && M.stat != DEAD)
+		if(method in list(INGEST, VAPOR, INJECT))
+			M.adjust_nutrition(-10) // HUNGER!
+			if(show_message)
+				to_chat(M, "<span class='warning'>You feel quite sick for a moment..</span>")
+		else
+			var/mob/living/carbon/C = M
+			for(var/s in C.surgeries)
+				var/datum/surgery/S = s
+				S.success_multiplier = max(0.1, S.success_multiplier)
+				// +10% success propability on each step, useful while operating in less-than-perfect conditions
+
+			if(show_message)
+				to_chat(M, "<span class='danger'>YOU FEEL FUCKING INVINCIBLE!</span>" )
+	..()
+
+/datum/reagent/medicine/combatstimulant/on_mob_delete(mob/living/M)
+	M.unignore_slowdown(id)
+	if(iscarbon(M))
+		var/mob/living/carbon/N = M
+		N.hal_screwyhud = SCREWYHUD_NONE
+	..()
+
+// MEDICAL KIT MEDICATIONS | Cheap, effective and heals over time. Cures and prevents damage!
+
+// AI-2 'Civilian Grade' | Lowest Grade Medical Kit
+
+// AI-2 Injector Medication | BRUTE + BURN HEALING | 30 point heal
+
+/datum/reagent/medicine/promedolsolution
+	name = "Promedol solution"
+	id = "promedolsolution"
+	description = "A simple solution of low-grade opiods that promotes healing. It works extremely slowly and can be overdosed!"
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 20
+
+/datum/reagent/medicine/promedolsolution/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-1*REM, 0)
+	M.adjustFireLoss(-1*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/promedolsolution/overdose_process(mob/living/M)
+	M.adjustToxLoss(1.5*REM, 0)
+	..()
+	. = 1
+
+// AI-2 Rasberry Bottle | Radioprotectant | Lasts about 30 seconds.
+
+/datum/reagent/medicine/ai2radioprotectant
+	name = "Low-Grade Radioprotectant"
+	id = "ai2rp"
+	description = "A weak radioprotectant that protects the user from accumulating additional radiation during exposure."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+
+/datum/reagent/medicine/ai2radioprotectant/on_mob_add(mob/living/L)
+	..()
+	L.add_trait(TRAIT_RADIMMUNE, id)
+
+/datum/reagent/medicine/ai2radioprotectant/on_mob_delete(mob/living/L)
+	L.remove_trait(TRAIT_RADIMMUNE, id)
+	..()
+
+// AI-2 Strawberry Bottle | Anti-Rad | Does the job poorly
+
+/datum/reagent/medicine/ai2antirad
+	name = "Low-Grade Antiradiation"
+	id = "ai2ar"
+	description = "Ineffectively treats radiation sickness."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+
+/datum/reagent/medicine/ai2antirad/on_mob_life(mob/living/carbon/M)
+	if(M.radiation > 0)
+		M.radiation -= min(M.radiation, 3)
+	..()
+
+// ARMY MEDICAL KIT | BRUTE + BURN HEALING + BLEED (Via Coag) | 60 point heal
+
+/datum/reagent/medicine/armysolution
+	name = "Army Medical Solution"
+	id = "armysolution"
+	description = "Potent and reliable medicine containing clotting agents."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 20
+
+/datum/reagent/medicine/armysolution/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-2*REM, 0)
+	M.adjustFireLoss(-2*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/armysolution/overdose_process(mob/living/M)
+	M.adjustToxLoss(3*REM, 0)
+	..()
+	. = 1
+
+// SCIENTIFIC MEDICAL KIT | BRUTE, BURN, TOXIN, ANTIRADIATION | 120 point heal
+
+/datum/reagent/medicine/scisolution
+	name = "Advanced Solution"
+	id = "scisolution"
+	description = "An extremely potent and powerful mixture of chemicals!"
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 20
+
+/datum/reagent/medicine/scisolution/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-3*REM, 0)
+	M.adjustFireLoss(-3*REM, 0)
+	M.adjustToxLoss(-2*REM, 0)
+	if(M.radiation > 0)
+		M.radiation -= min(M.radiation, 5)
+	..()
+	. = 1
+
+/datum/reagent/medicine/scisolution/overdose_process(mob/living/M)
+	M.adjustToxLoss(3*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/sciradsolution
+	name = "Advanced Rad Solution"
+	id = "sciradsolution"
+	description = "An extremely potent and powerful mixture of chemicals!"
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 20
+
+/datum/reagent/medicine/sciradsolution/on_mob_life(mob/living/carbon/M)
+	if(M.radiation > 0)
+		M.radiation -= min(M.radiation, 5)
+	..()
+	. = 1
+
+/datum/reagent/medicine/sciradsolution/overdose_process(mob/living/M)
+	M.adjustToxLoss(3*REM, 0)
+	..()
+	. = 1
+
+// STIMPACKS
+// INCREDIBLE healing potential and rapidly: At a premium!
+
+// Improvised Stimm | 25 Health | Rapid
+/datum/reagent/medicine/stim/improvisedstim
+	name = "Improvised Stim"
+	id = "impstim"
+	description = "You're pretty sure this shit will kill you."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 2 * REAGENTS_METABOLISM
+	overdose_threshold = 6
+
+/datum/reagent/medicine/stim/improvisedstimulant/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-5*REM, 0)
+	M.adjustFireLoss(-5*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/stim/overdose_process(mob/living/M)
+	M.adjustToxLoss(5*REM, 0)
+	..()
+	. = 1
+
+// Army Stimm | 50 Health | Rapid
+/datum/reagent/medicine/stim/armystim
+	name = "Army Stim"
+	id = "stimarmypack"
+	description = "Promotes rapid healing in soft-tissues."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 2 * REAGENTS_METABOLISM
+	overdose_threshold = 6
+
+/datum/reagent/medicine/stim/armystim/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-10*REM, 0)
+	M.adjustFireLoss(-10*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/stim/overdose_process(mob/living/M)
+	M.adjustToxLoss(5*REM, 0)
+	..()
+	. = 1
+
+// Army Stimm | 100 Health | Rapid
+/datum/reagent/medicine/stim/scistim
+	name = "Scientific Stim"
+	id = "scistim"
+	description = "An unknown concoction of medical fluids. It apparently tastes like cherries."
+	reagent_state = LIQUID
+	color = "#e6eaff"
+	metabolization_rate = 2 * REAGENTS_METABOLISM
+	overdose_threshold = 6
+
+/datum/reagent/medicine/stim/scistim/on_mob_life(mob/living/carbon/M)
+	M.adjustBruteLoss(-20*REM, 0)
+	M.adjustFireLoss(-20*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/stim/overdose_process(mob/living/M)
+	M.adjustToxLoss(5*REM, 0)
+	..()
+	. = 1
+
+/*
+WHAT TO FIX:
+- No known bugs during playtests
+*/

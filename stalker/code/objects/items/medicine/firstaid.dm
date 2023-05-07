@@ -8,7 +8,7 @@
 
 /obj/item/storage/firstaid/ifak
 	name = "infantry first-aid kit"
-	desc = "A first aid kit with the ability to heal most common types of combat-related injuries. "
+	desc = "An infantry first-aid kit containing all a STALKER needs to stabilize their wounds!"
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "ifak"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -17,7 +17,7 @@
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
-	STR.max_items = 10
+	STR.max_items = 16
 	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
 									/obj/item/reagent_containers/pill))
 
@@ -25,46 +25,13 @@
 	if(empty)
 		return
 	var/static/items_inside = list(
-		/obj/item/stack/medical/gauze/bint = 1,
-		/obj/item/reagent_containers/pill/patch/synthflesh = 2,
-		/obj/item/reagent_containers/pill/stalker/injector/brute = 1,
-		/obj/item/stack/medical/suture = 1,
-		/obj/item/stack/medical/mesh = 1,
-		/obj/item/reagent_containers/pill/stalker/injector/blood = 1,
-		/obj/item/reagent_containers/pill/stalker/injector/painkiller = 1,
-		/obj/item/reagent_containers/pill/stalker/injector/oxygen = 1,
-		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 1)
-	generate_items_inside(items_inside,src)
-
-/obj/item/storage/firstaid/ai2
-	name = "civilian first-aid kit"
-	desc = "A first aid kit with the ability to heal most common types damage. Poorly."
-	icon = 'stalker/icons/items.dmi'
-	icon_state = "aptechkar"
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/storage/firstaid/ai2/ComponentInitialize()
-	. = ..()
-	GET_COMPONENT(STR, /datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_SMALL
-	STR.max_items = 10
-	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
-									/obj/item/reagent_containers/pill))
-
-/obj/item/storage/firstaid/ai2/PopulateContents()
-	if(empty)
-		return
-	var/static/items_inside = list(
-		/obj/item/stack/medical/gauze/bint = 1,
-		/obj/item/stack/medical/suture = 1,
-		/obj/item/stack/medical/mesh = 1,
-		/obj/item/stack/medical/bruise_pack = 1,
-		/obj/item/stack/medical/ointment = 1,
-		/obj/item/reagent_containers/pill/iron = 1,
-		/obj/item/reagent_containers/pill/painkiller = 1,
-		/obj/item/reagent_containers/pill/charcoal = 1,
-		/obj/item/reagent_containers/pill/salbutamol = 1,
-		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 1)
+		/obj/item/stack/medical/gauze/bint = 4,
+		/obj/item/stack/medical/suture = 2,
+		/obj/item/stack/medical/mesh = 2,
+		/obj/item/reagent_containers/pill/stalker/injector/blood = 2,
+		/obj/item/reagent_containers/pill/stalker/injector/painkiller = 2,
+		/obj/item/reagent_containers/pill/stalker/injector/oxygen = 2,
+		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 2)
 	generate_items_inside(items_inside,src)
 
 /obj/item/reagent_containers/pill/iron
@@ -137,7 +104,7 @@
 
 /obj/item/storage/firstaid/ecologists
 	name = "scientific medical kit"
-	desc = "An advanced doctor's bag filled to the brim with various advanced medical equipment and supplies to perform full treatment. This thing is huge!"
+	desc = "An advanced doctor's bag filled to the brim with everything a STALKER would every need, want or desire with in the Zone!"
 	icon = 'stalker/icons/items.dmi'
 	icon_state = "scikit"
 	w_class = WEIGHT_CLASS_BULKY
@@ -148,28 +115,18 @@
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
-	STR.max_items = 19
+	STR.max_items = 12
 	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
 									/obj/item/reagent_containers/pill,
-									/obj/item/healthanalyzer,
-									/obj/item/clothing/glasses/hud/health,
-									/obj/item/clothing/gloves/color/latex,
+									/obj/item/reagent_containers/pill/stalker/injector,
 									/obj/item/storage/pill_bottle))
 
 /obj/item/storage/firstaid/ecologists/PopulateContents()
 	if(empty)
 		return
 	var/static/items_inside = list(
-		/obj/item/healthanalyzer = 1,
-		/obj/item/clothing/glasses/hud/health = 1,
-		/obj/item/clothing/gloves/color/latex = 1,
-		/obj/item/stack/medical/gauze/bint = 2,
-		/obj/item/stack/medical/suture = 1,
-		/obj/item/stack/medical/mesh = 1,
-		/obj/item/stack/medical/bruise_pack = 1,
-		/obj/item/stack/medical/ointment = 1,
-		/obj/item/stack/medical/trauma_kit = 1,
-		/obj/item/stack/medical/burn_kit = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/scimedicalinjector = 2,
+		/obj/item/reagent_containers/pill/stalker/injector/blood = 2,
 		/obj/item/storage/pill_bottle/bicaridine = 1,
 		/obj/item/storage/pill_bottle/kelotane = 1,
 		/obj/item/storage/pill_bottle/salbutamol = 1,
@@ -178,4 +135,83 @@
 		/obj/item/storage/pill_bottle/charcoal = 1,
 		/obj/item/storage/pill_bottle/epinephrine = 1,
 		/obj/item/storage/pill_bottle/penacid = 1)
+	generate_items_inside(items_inside,src)
+
+// MEDICAL REWORK
+
+// AI-2
+/obj/item/storage/firstaid/ai2
+	name = "AI-2 Medkit"
+	desc = "A first aid kit designed originally for radiological disaster. A common and affordable medical staple in the Zone!"
+	icon = 'stalker/icons/items.dmi'
+	icon_state = "aptechkar"
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/firstaid/ai2/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 3
+	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/pill/stalker/injector,
+									/obj/item/reagent_containers/pill/stalker/pillbottle))
+
+/obj/item/storage/firstaid/ai2/PopulateContents()
+	if(empty)
+		return
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/pill/stalker/injector/ai2 = 1,
+		/obj/item/reagent_containers/pill/stalker/pillbottle/radprotectorai2 = 1,
+		/obj/item/reagent_containers/pill/stalker/pillbottle/antiradai2 = 1)
+	generate_items_inside(items_inside,src)
+
+// ARMY-MEDKIT
+
+/obj/item/storage/firstaid/armymedkit
+	name = "Army Medkit"
+	desc = "A first aid kit designed for combat situations. It contains superior relief to the AI-2, but contains no radiological medication."
+	icon = 'stalker/icons/items.dmi'
+	icon_state = "aptechkab"
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/firstaid/armymedkit/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 3
+	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/pill/stalker/injector,
+									/obj/item/reagent_containers/pill/stalker/pillbottle))
+
+/obj/item/storage/firstaid/armymedkit/PopulateContents()
+	if(empty)
+		return
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/pill/stalker/injector/blood = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/armymedicalinjector = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/painkiller = 1)
+	generate_items_inside(items_inside,src)
+
+// SCIENTIFIC MEDKIT
+
+/obj/item/storage/firstaid/sciencemedkit
+	name = "Scientific Medkit"
+	desc = "A first aid kit designed by a company intandem with the Ecologists. This state of the art kit contains everything to save a Stalkers Life!"
+	icon = 'stalker/icons/items.dmi'
+	icon_state = "aptechkay"
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/firstaid/sciencemedkit/ComponentInitialize()
+	. = ..()
+	GET_COMPONENT(STR, /datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 3
+	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/pill/stalker/injector,
+									/obj/item/reagent_containers/pill/stalker/pillbottle))
+
+/obj/item/storage/firstaid/sciencemedkit/PopulateContents()
+	if(empty)
+		return
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/pill/stalker/injector/scimedicalinjector = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/sciradinjector = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/oxygen = 1)
 	generate_items_inside(items_inside,src)

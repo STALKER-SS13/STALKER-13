@@ -513,7 +513,7 @@
 "AF" = (/obj/structure/stalker/cacheable/polka,/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"},/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings)
 "AG" = (/obj/structure/stalker/car/mi24{icon_state = "3,4"},/obj/effect/spawner/lootdrop/stalker/junk,/obj/effect/decal/cleanable/ash/large,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "AH" = (/obj/structure/stalker/car/moskvich/south{icon_state = "5"; tag = "icon-5"},/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor)
-"AI" = (/obj/structure/stalker/cacheable/truba/vert,/obj/structure/stalker/bar_plitka,/obj/effect/step_trigger/teleporter{dir = 4; opacity = 1; teleport_x = 18; teleport_y = 127; teleport_z = 4},/turf/open/stalker/floor/gryaz,/area/stalker/buildings)
+"AI" = (/obj/structure/stalker/cacheable/truba/vert,/obj/structure/stalker/bar_plitka,/obj/effect/step_trigger/teleporter{dir = 4; opacity = 1; teleport_x = 137; teleport_y = 127; teleport_z = 4},/turf/open/stalker/floor/gryaz,/area/stalker/buildings)
 "AM" = (/obj/structure/stalker/rails{icon_state = "spl1"; tag = "icon-spl1"},/obj/machinery/door/poddoor/shutters,/turf/open/stalker/floor/digable/gryaz_rocky,/area/stalker/blowout/outdoor)
 "AN" = (/obj/structure/stalker/bigyashik{dir = 8; icon_state = "bigyashik 1,0"; tag = "icon-bigyashik 1,0 (WEST)"},/obj/structure/grille/stalker/beton{icon_state = "|"; tag = "icon-|"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "AO" = (/turf/open/stalker/floor/agroprom/beton,/area/stalker/buildings)

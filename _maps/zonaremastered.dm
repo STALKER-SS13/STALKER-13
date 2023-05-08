@@ -6,7 +6,7 @@
 #include "map_files/ZonaRemastered/agroprom.dmm"
 #include "map_files/ZonaRemastered/svalka.dmm"
 #include "map_files/ZonaRemastered/radar.dmm"
-#include "map_files/ZonaRemastered/yantar.dmm"
+#include "map_files/ZonaRemastered/Yantar.dmm"
 #include "map_files/ZonaRemastered/ArmyWarehouses.dmm"
 #include "map_files/ZonaRemastered/greatswamps.dmm"
 #include "map_files/ZonaRemastered/DeadCity.dmm"

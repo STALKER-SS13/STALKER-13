@@ -84,11 +84,12 @@ require only minor tweaks.
     DECLARE_LEVEL("agroprom", ZTRAITS_STATION), \
     DECLARE_LEVEL("svalka", ZTRAITS_STATION), \
     DECLARE_LEVEL("radar", ZTRAITS_STATION), \
-    DECLARE_LEVEL("yantar", ZTRAITS_STATION), \
+    DECLARE_LEVEL("Yantar", ZTRAITS_STATION), \
     DECLARE_LEVEL("ArmyWarehouses", ZTRAITS_STATION), \
     DECLARE_LEVEL("greatswamps", ZTRAITS_STATION), \
     DECLARE_LEVEL("DeadCity", ZTRAITS_STATION), \
     DECLARE_LEVEL("DarkDolina", ZTRAITS_STATION), \
+    DECLARE_LEVEL("WildTerritory", ZTRAITS_STATION), \
 )
 
 // Camera lock flags

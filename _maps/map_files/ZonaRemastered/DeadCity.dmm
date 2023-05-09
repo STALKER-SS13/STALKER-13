@@ -380,25 +380,6 @@
 /obj/structure/filingcabinet/employment,
 /turf/open/stalker/floor/plasteel/plita/orange,
 /area/stalker/buildings/mercenary)
-"dP" = (
-/obj/structure/stalker/cacheable/polka,
-/obj/structure/stalker/cacheable/polka{
-	icon_state = "drinks"
-	},
-/obj/structure/stalker/cacheable/polka{
-	icon_state = "army"
-	},
-/obj/structure/stalker/cacheable/polka{
-	icon_state = "firstaid"
-	},
-/obj/structure/stalker/cacheable/polka{
-	icon_state = "food"
-	},
-/obj/structure/stalker/cacheable/polka{
-	icon_state = "med"
-	},
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/skadovsk)
 "dQ" = (
 /obj/structure/stalker/bigyashik{
 	dir = 8;
@@ -498,10 +479,12 @@
 /turf/open/stalker/floor/agroprom/gryaz,
 /area/stalker/blowout/outdoor)
 "eO" = (
-/obj/machinery/door/poddoor/sidor{
-	id = 665
+/obj/structure/grille/stalker{
+	density = 0;
+	icon_state = "fence3";
+	pixel_x = -16
 	},
-/turf/open/stalker/floor/plasteel/plitochka,
+/turf/closed/wall/stalker/beton_agro,
 /area/stalker/buildings/backwater/skadovsk)
 "eQ" = (
 /obj/effect/spawner/lootdrop/stalker/junk,
@@ -826,13 +809,6 @@
 	layer = 1.8
 	},
 /area/stalker/blowout/outdoor)
-"hk" = (
-/obj/machinery/light{
-	dir = 1;
-	tag = "icon-tube1 (EAST)"
-	},
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/skadovsk)
 "hm" = (
 /obj/rad/rad_high,
 /obj/structure/stalker/car/mi24{
@@ -1455,12 +1431,6 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/mercenary)
-"mH" = (
-/obj/structure/fence/corner{
-	dir = 3
-	},
-/turf/open/stalker/floor/digable/gryaz_rocky,
-/area/stalker/blowout/outdoor)
 "mI" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1565,6 +1535,7 @@
 /turf/closed/wall/rust,
 /area/stalker/buildings)
 "nF" = (
+/obj/structure/fence,
 /obj/structure/fence/corner{
 	dir = 1
 	},
@@ -2143,10 +2114,6 @@
 /obj/structure/stalker/cacheable/cover,
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings)
-"sE" = (
-/obj/structure/stalker/cacheable/yashik/yaskik_a/big,
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/skadovsk)
 "sG" = (
 /obj/structure/bed/stalker/metal/matras{
 	dir = 4;
@@ -3074,8 +3041,7 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/blowout/outdoor)
 "AM" = (
-/obj/structure/fence,
-/turf/open/stalker/floor/digable/gryaz_rocky,
+/turf/closed/mineral/ash_rock,
 /area/stalker/blowout/outdoor)
 "AN" = (
 /obj/structure/stalker/cacheable/porog/porog2,
@@ -3525,9 +3491,9 @@
 "EK" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 8;
-	teleport_x = 69;
-	teleport_y = 82;
-	teleport_z = 20
+	teleport_x = 122;
+	teleport_y = 3;
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -4387,9 +4353,10 @@
 /turf/open/stalker/floor/wood/oldgor,
 /area/stalker/blowout/outdoor)
 "Mw" = (
-/obj/structure/stalker/cacheable/body,
-/obj/structure/fence{
-	dir = 4
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 68;
+	teleport_y = 215;
+	teleport_z = 8
 	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
@@ -4850,14 +4817,6 @@
 /obj/item/trash/binding_material/wire,
 /turf/open/stalker/floor/agroprom/beton,
 /area/stalker/buildings)
-"PX" = (
-/obj/structure/table/stalker/wood/bar100rentgen{
-	icon = 'icons/obj/smooth_structures/reinforced_table.dmi';
-	icon_state = "r_table";
-	name = "reinforced table"
-	},
-/turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/backwater/skadovsk)
 "PY" = (
 /turf/open/stalker/floor/tropa,
 /area/stalker/blowout/outdoor)
@@ -5779,7 +5738,11 @@
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/buildings)
 "XJ" = (
-/obj/effect/step_trigger/teleporter,
+/obj/effect/step_trigger/teleporter{
+	teleport_y = 216;
+	teleport_z = 8;
+	teleport_x = 68
+	},
 /turf/open/stalker/floor/asphalt,
 /area/stalker/blowout/outdoor)
 "XL" = (
@@ -30896,9 +30859,9 @@ cc
 bl
 bl
 bl
-cc
-cc
-cc
+bl
+bl
+bl
 bl
 cc
 cc
@@ -36307,18 +36270,18 @@ GU
 GU
 GU
 MU
-dP
-dP
-dP
-dP
-dP
 GU
 GU
-dP
-dP
-dP
-dP
-dP
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
 MU
 TC
 bl
@@ -36920,9 +36883,9 @@ GU
 GU
 GU
 GU
-sE
-sE
-sE
+GU
+GU
+GU
 MU
 KW
 bl
@@ -37221,7 +37184,7 @@ GU
 GU
 GU
 GU
-sE
+GU
 GU
 GU
 GU
@@ -37515,14 +37478,14 @@ GU
 GU
 Ds
 MU
-hk
-dP
-GU
-dP
 GU
 GU
 GU
-sE
+GU
+GU
+GU
+GU
+GU
 GU
 GU
 GU
@@ -37816,19 +37779,19 @@ GU
 GU
 GU
 GU
-eO
-GU
-dP
-GU
-dP
+tZ
 GU
 GU
 GU
-PX
 GU
 GU
 GU
-Ds
+GU
+GU
+GU
+GU
+GU
+GU
 MU
 MP
 bl
@@ -38119,14 +38082,14 @@ GU
 GU
 Ds
 MU
-hk
-dP
-GU
-dP
 GU
 GU
 GU
-PX
+GU
+GU
+GU
+GU
+GU
 GU
 GU
 GU
@@ -38422,17 +38385,17 @@ GU
 GU
 MU
 GU
-dP
-GU
-dP
 GU
 GU
 GU
-sE
 GU
 GU
 GU
-Ds
+GU
+GU
+GU
+GU
+GU
 MU
 MP
 bl
@@ -38731,7 +38694,7 @@ GU
 GU
 GU
 GU
-sE
+GU
 GU
 GU
 GU
@@ -39034,9 +38997,9 @@ GU
 GU
 GU
 GU
-sE
-sE
-sE
+GU
+GU
+GU
 MU
 bl
 bl
@@ -39629,18 +39592,18 @@ GU
 GU
 cI
 MU
-dP
-dP
-dP
-dP
-dP
 GU
 GU
-dP
-dP
-dP
-dP
-dP
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
+GU
 MU
 bl
 bl
@@ -39927,7 +39890,7 @@ qd
 qd
 MU
 tZ
-uh
+eO
 tZ
 tZ
 MU
@@ -41666,9 +41629,9 @@ uc
 uc
 DU
 uc
+uc
 nF
-AM
-AM
+Tg
 Bt
 "}
 (119,1,1) = {"
@@ -41968,10 +41931,10 @@ FU
 jK
 FU
 FU
+FU
 VJ
-FU
-FU
-XJ
+AM
+Bt
 "}
 (120,1,1) = {"
 Hz
@@ -42270,10 +42233,10 @@ FU
 FU
 FU
 FU
+FU
 VJ
-FU
-FU
-XJ
+AM
+Bt
 "}
 (121,1,1) = {"
 Hz
@@ -42572,10 +42535,10 @@ FU
 FU
 FU
 FU
+FU
 VJ
-FU
-FU
-XJ
+AM
+Bt
 "}
 (122,1,1) = {"
 Hz
@@ -42874,10 +42837,10 @@ FU
 FU
 FU
 FU
+jK
+FU
+FU
 Mw
-FU
-FU
-XJ
 "}
 (123,1,1) = {"
 Hz
@@ -43176,7 +43139,7 @@ FU
 FU
 FU
 FU
-VJ
+FU
 FU
 FU
 XJ
@@ -43478,10 +43441,10 @@ jK
 FU
 FU
 FU
+FU
 VJ
 FU
-FU
-XJ
+Bt
 "}
 (125,1,1) = {"
 Hz
@@ -43780,10 +43743,10 @@ FU
 FU
 FU
 FU
+FU
 VJ
-FU
-FU
-XJ
+AM
+Bt
 "}
 (126,1,1) = {"
 Hz
@@ -44082,7 +44045,7 @@ uc
 uc
 rm
 PY
-mH
+uc
 AM
 AM
 Bt
@@ -44685,7 +44648,7 @@ Mm
 PY
 PY
 PY
-PY
+Mm
 Mm
 Mm
 Mm

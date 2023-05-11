@@ -2957,7 +2957,7 @@
 	dir = 4;
 	teleport_x = 194;
 	teleport_y = 299;
-	teleport_z = d
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -17189,7 +17189,7 @@ OQ
 ia
 ia
 ia
-fR
+ia
 ia
 OQ
 ia

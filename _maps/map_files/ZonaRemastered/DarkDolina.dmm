@@ -196,7 +196,7 @@
 	opacity = 1;
 	teleport_x = 170;
 	teleport_y = 335;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/stalker{
@@ -286,7 +286,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 19;
 	teleport_y = 393;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
@@ -698,8 +698,8 @@
 	dir = 4;
 	opacity = 1;
 	teleport_x = 382;
-	teleport_y = 025;
-	teleport_z = 21
+	teleport_y = 25;
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -777,7 +777,7 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	teleport_x = 281;
-	teleport_z = 21;
+	teleport_z = 12;
 	teleport_y = 155
 	},
 /turf/open/floor/plasteel/stairs/old,
@@ -1234,9 +1234,9 @@
 /area/stalker/blowout/outdoor)
 "oN" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_x = 022;
+	teleport_x = 22;
 	teleport_y = 396;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
@@ -1424,7 +1424,7 @@
 	dir = 1;
 	teleport_x = 19;
 	teleport_y = 373;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
@@ -1444,9 +1444,9 @@
 /area/stalker/blowout/buildings)
 "qG" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_y = 040;
+	teleport_y = 40;
 	teleport_x = 387;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/blowout/buildings)
@@ -1669,6 +1669,14 @@
 /obj/rad/rad_high,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"tA" = (
+/obj/structure/table/stalker/wood,
+/obj/structure/table/stalker/wood{
+	pixel_x = -2;
+	pixel_y = -3
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "tC" = (
 /obj/structure/fence/end,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -2498,7 +2506,7 @@
 	opacity = 1;
 	teleport_x = 164;
 	teleport_y = 313;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 4;
@@ -2976,7 +2984,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 168;
 	teleport_y = 330;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 1;
@@ -3049,8 +3057,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 4;
 	teleport_x = 365;
-	teleport_y = 047;
-	teleport_z = 21
+	teleport_y = 47;
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -3427,6 +3435,16 @@
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/digable/grass,
 /area/stalker/blowout/outdoor)
+"RE" = (
+/obj/structure/table/stalker/wood{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/structure/table/stalker/wood{
+	pixel_y = 18
+	},
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "RJ" = (
 /obj/effect/spawner/lootdrop/stalker/weapon/pistols,
 /turf/open/stalker/floor/wood/oldvert,
@@ -3507,7 +3525,7 @@
 	opacity = 1;
 	teleport_x = 254;
 	teleport_y = 155;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
@@ -3822,7 +3840,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 146;
 	teleport_y = 335;
-	teleport_z = 21
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker,
 /area/stalker/blowout/buildings)
@@ -4125,8 +4143,8 @@
 	dir = 4;
 	opacity = 1;
 	teleport_x = 390;
-	teleport_y = 047;
-	teleport_z = 21
+	teleport_y = 47;
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker{
 	dir = 8;
@@ -117040,7 +117058,7 @@ bn
 bn
 mg
 VC
-nZ
+tA
 nZ
 nZ
 nZ
@@ -117442,7 +117460,7 @@ bn
 bn
 bn
 bn
-nZ
+RE
 nZ
 nZ
 nZ

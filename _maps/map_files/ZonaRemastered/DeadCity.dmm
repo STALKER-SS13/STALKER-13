@@ -576,7 +576,7 @@
 	dir = 4;
 	teleport_x = 129;
 	teleport_y = 201;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -824,7 +824,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 180;
 	teleport_y = 107;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/left/stalker,
 /area/stalker/blowout/buildings)
@@ -1501,7 +1501,7 @@
 	dir = 4;
 	teleport_x = 129;
 	teleport_y = 202;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -2039,7 +2039,7 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	teleport_x = 180;
-	teleport_z = 20;
+	teleport_z = 11;
 	teleport_y = 130
 	},
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -2681,7 +2681,7 @@
 	dir = 4;
 	teleport_x = 53;
 	teleport_y = 279;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -2957,7 +2957,7 @@
 	dir = 4;
 	teleport_x = 194;
 	teleport_y = 299;
-	teleport_z = 20
+	teleport_z = d
 	},
 /turf/open/floor/plasteel/stairs/left/stalker{
 	dir = 8
@@ -2995,7 +2995,7 @@
 	dir = 4;
 	teleport_x = 53;
 	teleport_y = 278;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -3028,7 +3028,7 @@
 	dir = 1;
 	teleport_x = 235;
 	teleport_y = 43;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -4562,7 +4562,7 @@
 	dir = 8;
 	teleport_x = 53;
 	teleport_y = 283;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/stalker/floor/plasteel/plita/orange,
 /area/stalker/buildings/mercenary)
@@ -5108,7 +5108,7 @@
 	dir = 4;
 	teleport_y = 294;
 	teleport_x = 102;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /obj/rad/rad_low,
 /obj/rad/rad_low,
@@ -5151,7 +5151,7 @@
 	dir = 4;
 	teleport_x = 194;
 	teleport_y = 299;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /turf/open/floor/plasteel/stairs/right/stalker{
 	dir = 8
@@ -5291,7 +5291,7 @@
 /obj/effect/step_trigger/teleporter{
 	teleport_x = 235;
 	teleport_y = 20;
-	teleport_z = 20
+	teleport_z = 11
 	},
 /obj/rad/rad_low,
 /turf/open/floor/plasteel/stairs/left/stalker,
@@ -5699,11 +5699,6 @@
 	dir = 8
 	},
 /turf/open/stalker/floor/plasteel/plitochka,
-/area/stalker/buildings/mercenary)
-"Xs" = (
-/obj/structure/closet/stalker/shkaf,
-/obj/effect/spawner/lootdrop/stalker/rarefirearms,
-/turf/open/stalker/floor/wood/oldgor,
 /area/stalker/buildings/mercenary)
 "Xt" = (
 /obj/structure/stalker/cacheable/cover,
@@ -9654,7 +9649,7 @@ ia
 ia
 ia
 ia
-Xs
+oe
 Ni
 bl
 bl
@@ -10559,7 +10554,7 @@ ia
 ia
 ia
 ia
-oi
+oe
 mD
 Ni
 bl
@@ -12971,10 +12966,10 @@ ia
 OQ
 ia
 ia
-ia
+pJ
 wk
 ix
-ia
+pJ
 ix
 ww
 rf
@@ -14179,10 +14174,10 @@ ia
 ia
 ia
 ia
-ia
+pJ
 wk
 ix
-ia
+pJ
 ix
 wk
 rf

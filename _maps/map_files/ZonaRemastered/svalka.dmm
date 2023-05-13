@@ -910,7 +910,7 @@
 "AV" = (/obj/structure/grille/stalker/beton,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
 "AX" = (/obj/machinery/light{dir = 1; tag = "icon-tube1 (EAST)"},/obj/structure/safe,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/mercenary)
 "Bd" = (/obj/structure/stalker/doski/doski_alt4,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
-"Be" = (/obj/effect/step_trigger/teleporter{dir = 4; opacity = 1; teleport_x = 003; teleport_y = 121; teleport_z = 21},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"Be" = (/obj/effect/step_trigger/teleporter{dir = 4; opacity = 1; teleport_x = 3; teleport_y = 121; teleport_z = 12},/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Bi" = (/obj/anomaly/jarka,/obj/rad/rad_medium,/turf/open/floor/plating/dirt,/area/stalker)
 "Bm" = (/obj/structure/stalker/car/mi24{icon_state = "1,4"},/obj/rad/rad_medium,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 "Bo" = (/turf/closed/wall/stalker/bricks_yellow,/area/stalker)

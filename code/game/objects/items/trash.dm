@@ -236,11 +236,11 @@
 
 /obj/item/trash/brokedevice/bearbroken/one
 	name = "broken bear detector"
-	icon_state = "bearbrokenone"
+	icon_state = "bearbrokeone"
 
 /obj/item/trash/brokedevice/bearbroken/two
 	name = "broken bear detector"
-	icon_state = "bearbrokentwo"
+	icon_state = "bearbroketwo"
 
 /obj/item/trash/brokedevice/velesbroke/one
 	name = "broken veles detector"

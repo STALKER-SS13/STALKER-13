@@ -17,7 +17,7 @@
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
-	STR.max_items = 16
+	STR.max_items = 7
 	STR.can_hold = typecacheof(list(/obj/item/stack/medical,
 									/obj/item/reagent_containers/pill))
 
@@ -25,13 +25,13 @@
 	if(empty)
 		return
 	var/static/items_inside = list(
-		/obj/item/stack/medical/gauze/bint = 4,
-		/obj/item/stack/medical/suture = 2,
-		/obj/item/stack/medical/mesh = 2,
-		/obj/item/reagent_containers/pill/stalker/injector/blood = 2,
-		/obj/item/reagent_containers/pill/stalker/injector/painkiller = 2,
-		/obj/item/reagent_containers/pill/stalker/injector/oxygen = 2,
-		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 2)
+		/obj/item/stack/medical/gauze/bint = 1,
+		/obj/item/stack/medical/suture = 1,
+		/obj/item/stack/medical/mesh = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/blood = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/painkiller = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/oxygen = 1,
+		/obj/item/reagent_containers/pill/stalker/injector/epinephrine = 1)
 	generate_items_inside(items_inside,src)
 
 /obj/item/reagent_containers/pill/iron

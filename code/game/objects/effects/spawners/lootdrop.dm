@@ -361,6 +361,7 @@ obj/effect/spawner/lootdrop/minor/pirate_or_bandana
 */
 /obj/effect/spawner/lootdrop/bustedcigs
 	name = "busted cig spawner"
+	icon_state = "vendor_loot"
 	loot = list(
 				/obj/machinery/vending/cigarette/busted,
 				/obj/machinery/vending/cigarette/bustedtwo,
@@ -370,6 +371,7 @@ obj/effect/spawner/lootdrop/minor/pirate_or_bandana
 
 /obj/effect/spawner/lootdrop/bustedsovietsoda
 	name = "busted soviet soda spawner"
+	icon_state = "vendor_loot"
 	loot = list(
 				/obj/machinery/vending/sovietsoda/busted,
 				/obj/machinery/vending/sovietsoda/bustedtwo,

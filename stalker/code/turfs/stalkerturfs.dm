@@ -645,7 +645,7 @@ var/global/list/WaterEdgeCache
 	icon_state = "woodd1"
 
 /turf/open/stalker/floor/wood/oldvert/New()
-	icon_state = "woodd[rand(1, 70)]"
+	icon_state = "woodd[rand(1, 25)]"
 
 /turf/open/stalker/floor/agroprom/beton
 	name = "floor"

@@ -21,6 +21,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		///////////////////////////// **Pistols, SMGs** /////////////////////////////////////
 		new /datum/data/stalker_equipment("PMm",			"PMm",				/obj/item/gun/ballistic/automatic/pistol/pm,				3000,	ROOKIE, initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("TT",				"TT",				/obj/item/gun/ballistic/automatic/pistol/tt,				3000,	ROOKIE, initial_stock = PISTOL_AMOUNT),
+		new /datum/data/stalker_equipment("Nagant m1895",	"Nagant m1895",		/obj/item/gun/ballistic/revolver/nagant,					3000,	ROOKIE, initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("Fort-12",		"Fort-12",			/obj/item/gun/ballistic/automatic/pistol/fort12,			6500,	ROOKIE, initial_stock = SMG_AMOUNT),
 		new /datum/data/stalker_equipment("PB1s",			"PB1s",				/obj/item/gun/ballistic/automatic/pistol/pb1s,				4500,	ROOKIE, initial_stock = PISTOL_AMOUNT),
 		new /datum/data/stalker_equipment("SIG-Sauer P220",	"SIG-Sauer P220",	/obj/item/gun/ballistic/automatic/pistol/sip,				12500,	EXPERIENCED, initial_stock = SMG_AMOUNT),
@@ -117,6 +118,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 		new /datum/data/stalker_equipment("7.62x39mm AP Box",			"7.62x39mm AP Box",							/obj/item/ammo_box/stalker/b762x39ap,					15000,	VETERAN,		initial_stock = PISTOL_AMOUNT,sale_price =700),
 		new /datum/data/stalker_equipment("5.56x45mm Box",				"5.56x45mm Box",							/obj/item/ammo_box/stalker/b55645,						12000,	ROOKIE,			initial_stock = PISTOL_AMOUNT,sale_price =680),
 		new /datum/data/stalker_equipment("5.56x45mm AP Box",			"5.56x45mm AP Box",							/obj/item/ammo_box/stalker/b55645ap,					20000,	VETERAN,		initial_stock = PISTOL_AMOUNT,sale_price =720),
+		new /datum/data/stalker_equipment("7.62x38mmR Box",				"7.62x38mmR Box",							/obj/item/ammo_box/n762,								3000,	ROOKIE,			initial_stock = PISTOL_AMOUNT,sale_price =480),
 		new /datum/data/stalker_equipment("7.62x51 Box",				"7.62x51 Box",								/obj/item/ammo_box/stalker/b762x51,						10000,	ROOKIE,			initial_stock = PISTOL_AMOUNT,sale_price =480),
 		new /datum/data/stalker_equipment("7.62x54mmR Box",				"7.62x54mmR Box",							/obj/item/ammo_box/stalker/b762x54r,					12000,	ROOKIE,			initial_stock = PISTOL_AMOUNT,sale_price =480),
 		new /datum/data/stalker_equipment("9x39 PAB-9 Box",				"9x39 PAB-9 Box",							/obj/item/ammo_box/stalker/b939,						30000,	EXPERIENCED,	initial_stock = PISTOL_AMOUNT,sale_price =700),
@@ -527,7 +529,7 @@ GLOBAL_LIST_INIT(global_sidormat_list, list(
 	var/sale_price = 0
 	var/assortment_level = 0
 
-/datum/data/stalker_equipment/New(name, name_ru, path, cost, rating, faction = "Everyone", amount = 5, initial_stock = 5, restock_amount = 1, restock_time = 10 MINUTES, min_restock_time = 15 MINUTES, max_restock_time = 30 MINUTES, sale_price = 0, assortment_level = 0)
+/datum/data/stalker_equipment/New(name, name_ru, path, cost, rating, faction = "Everyone", amount = 5, initial_stock = 10, restock_amount = 1, restock_time = 10 MINUTES, min_restock_time = 15 MINUTES, max_restock_time = 30 MINUTES, sale_price = 0, assortment_level = 0)
 	src.name = name
 	src.name_ru = name_ru
 	src.equipment_path = path

@@ -25,7 +25,7 @@
 /obj/item/stalker/loot/mutantparts/boar_leg
 	name = "boar hoof"
 	desc = "The hoof of a wild boar is used by scientists for manufacturing of some medicines, the most widespread of which are anti radiation drugs."
-	icon_state = "boar"
+	icon_state = "kaban"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 
 /obj/item/stalker/loot/mutantparts/snork_leg

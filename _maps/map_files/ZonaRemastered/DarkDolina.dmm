@@ -776,9 +776,9 @@
 "jd" = (
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
-	teleport_x = 281;
-	teleport_z = 12;
-	teleport_y = 155
+	teleport_x = 254;
+	teleport_y = 155;
+	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
@@ -1099,8 +1099,8 @@
 /area/stalker/blowout/buildings)
 "nr" = (
 /obj/structure/stalker/blocks/vanish/sandbags{
-	icon_state = "corners";
-	dir = 5
+	dir = 5;
+	icon_state = "corners"
 	},
 /turf/open/stalker/floor/plasteel,
 /area/stalker/blowout/outdoor)
@@ -1444,8 +1444,8 @@
 /area/stalker/blowout/buildings)
 "qG" = (
 /obj/effect/step_trigger/teleporter{
-	teleport_y = 40;
 	teleport_x = 387;
+	teleport_y = 40;
 	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/stalker,
@@ -1766,6 +1766,11 @@
 /obj/structure/stalker/cacheable/yashik/yaskik_a/big,
 /turf/open/stalker/floor/road,
 /area/stalker/blowout/outdoor)
+"uS" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/medicineguarentee,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "ve" = (
 /obj/structure/grille/stalker/beton{
 	dir = 5
@@ -1798,8 +1803,8 @@
 /obj/structure/stalker/blocks/vanish/sandbags{
 	dir = 4;
 	icon_state = "centers";
-	pixel_y = 1;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 1
 	},
 /turf/open/stalker/floor/plasteel,
 /area/stalker/blowout/outdoor)
@@ -1812,6 +1817,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/spawner/lootdrop/stalker/junk,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/blowout/buildings)
 "vE" = (
@@ -1914,6 +1920,11 @@
 /obj/rad/rad_low,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/blowout/buildings)
+"wz" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/effect/spawner/lootdrop/glowstick,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "wC" = (
 /obj/structure/table/stalker/wood/bar100rentgen,
 /obj/machinery/party/turntable{
@@ -1956,6 +1967,11 @@
 	},
 /turf/open/stalker/floor/plasteel,
 /area/stalker/blowout/outdoor)
+"xe" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/effect/spawner/lootdrop/stalker/pornmag,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "xh" = (
 /obj/structure/barricade/stalker/box,
 /turf/open/stalker/floor/plasteel/plita,
@@ -2110,6 +2126,11 @@
 /obj/structure/table/stalker/wood,
 /turf/open/stalker/floor/wood/oldvert,
 /area/stalker/buildings/kordon/banditbar)
+"zg" = (
+/obj/structure/closet/stalker/shkaf,
+/obj/effect/spawner/lootdrop/stalker/brokedevice,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "zh" = (
 /obj/structure/stalker/list,
 /turf/open/stalker/floor/plasteel/plitochka,
@@ -2651,13 +2672,17 @@
 /obj/structure/stalker/blocks/vanish/sandbags{
 	dir = 9;
 	icon_state = "corners";
-	tag = "icon-corners (NORTHWEST)";
-	pixel_x = 14
+	pixel_x = 14;
+	tag = "icon-corners (NORTHWEST)"
 	},
 /turf/open/stalker/floor/plasteel,
 /area/stalker/blowout/outdoor)
 "GR" = (
-/obj/effect/step_trigger/teleporter,
+/obj/effect/step_trigger/teleporter{
+	teleport_x = 13;
+	teleport_y = 347;
+	teleport_z = 12
+	},
 /turf/open/floor/plasteel/stairs/old,
 /area/stalker/blowout/buildings)
 "GU" = (
@@ -3079,6 +3104,11 @@
 	},
 /turf/open/stalker/floor/gryaz/gryaz3,
 /area/stalker/blowout/outdoor)
+"LZ" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/flasks,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
 "Mm" = (
 /obj/structure/stalker/car/gryzovik/west{
 	icon_state = "3";
@@ -3523,8 +3553,8 @@
 /obj/effect/step_trigger/teleporter{
 	dir = 1;
 	opacity = 1;
-	teleport_x = 254;
-	teleport_y = 155;
+	teleport_x = 272;
+	teleport_y = 127;
 	teleport_z = 12
 	},
 /turf/open/floor/plasteel/stairs/old,
@@ -4218,7 +4248,12 @@
 /area/stalker/blowout/outdoor)
 "ZI" = (
 /obj/structure/table/stalker/wood,
-/obj/effect/spawner/lootdrop/khabar_low,
+/obj/effect/spawner/lootdrop/stalker/equipment,
+/turf/open/stalker/floor/plasteel/plitochka,
+/area/stalker/blowout/buildings)
+"ZM" = (
+/obj/structure/table/stalker/wood,
+/obj/effect/spawner/lootdrop/stalker/books,
 /turf/open/stalker/floor/plasteel/plitochka,
 /area/stalker/blowout/buildings)
 "ZO" = (
@@ -9478,7 +9513,7 @@ HF
 bn
 nZ
 nZ
-UG
+LZ
 nZ
 nZ
 UG
@@ -9883,7 +9918,7 @@ nZ
 UG
 nZ
 nZ
-UG
+uS
 nZ
 nZ
 bn
@@ -10272,7 +10307,7 @@ HF
 (16,1,1) = {"
 HF
 bn
-gv
+wz
 nZ
 nZ
 nZ
@@ -11076,7 +11111,7 @@ HF
 (18,1,1) = {"
 HF
 bn
-ga
+xe
 nZ
 nZ
 uq
@@ -11478,7 +11513,7 @@ HF
 (19,1,1) = {"
 HF
 bn
-gv
+zg
 nZ
 nZ
 qb
@@ -13905,7 +13940,7 @@ nZ
 nZ
 UG
 UG
-UG
+ZM
 ac
 UG
 nZ
@@ -113052,7 +113087,7 @@ Ro
 rF
 rF
 rF
-hD
+Ro
 qk
 Yn
 bn
@@ -113452,7 +113487,7 @@ bI
 Ro
 Ro
 Ro
-Ro
+hD
 hD
 Ro
 is

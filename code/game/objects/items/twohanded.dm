@@ -16,9 +16,6 @@
 //This rewrite means we don't have two variables for EVERY item which are used only by a few weapons.
 //It also tidies stuff up elsewhere.
 
-
-
-
 /*
  * Twohanded
  */

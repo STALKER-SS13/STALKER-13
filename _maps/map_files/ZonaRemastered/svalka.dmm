@@ -900,6 +900,7 @@
 "Ar" = (/obj/rad/rad_medium,/obj/anomaly/tramplin,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 "Au" = (/obj/structure/barricade/stalker/box,/turf/open/stalker/floor/wood/oldvert,/area/stalker/blowout/outdoor)
 "Av" = (/turf/open/stalker/floor/water,/area/stalker/kordon/tunnel)
+"Aw" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/medicine,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "AB" = (/obj/anomaly/holodec,/turf/open/stalker/floor/water,/area/stalker/kordon/tunnel)
 "AC" = (/obj/structure/sign/map/right{desc = "A drawing of the known areas of the Zone."; pixel_y = 30},/obj/structure/filingcabinet/employment,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/mercenary)
 "AD" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "6"; tag = "icon-6"},/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
@@ -1038,7 +1039,7 @@
 "GY" = (/obj/structure/stalker/cacheable/musor_yashik/red/full,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "Ha" = (/obj/structure/stalker/luk,/obj/rad/rad_medium,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 "Hd" = (/obj/rad/rad_low,/mob/living/simple_animal/chicken,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
-"Hh" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/gambling,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"Hh" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/flasks,/obj/effect/spawner/lootdrop/stalker/food,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Hi" = (/turf/open/floor/plasteel/showroomfloor{name = "floor"},/area/stalker/buildings/mercenary)
 "Hk" = (/obj/structure/window{dir = 8; icon_state = "clear"; name = ""; obj_integrity = 1e+006; tag = "icon-window (WEST)"},/obj/structure/window{dir = 4; icon_state = "clear"; name = ""; obj_integrity = 1e+006; tag = "icon-window (EAST)"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
 "Hl" = (/obj/structure/chair/brevno/log2,/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor)
@@ -1165,7 +1166,7 @@
 "MV" = (/turf/open/stalker/floor/sidor,/area/stalker/buildings/mercenary)
 "MX" = (/obj/rad,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Na" = (/obj/structure/table/stalker/wood,/obj/item/reagent_containers/food/drinks/flask/cylinder,/turf/open/floor/plating/dirt,/area/stalker)
-"Nb" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/khabar_low,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
+"Nb" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/weapon/ak74,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "Nc" = (/obj/structure/stalker/doski/doski3,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "Nd" = (/obj/effect/decal/cleanable/blood/footprints{dir = 8},/obj/rad/rad_low,/turf/open/floor/plating/dirt,/area/stalker)
 "Nh" = (/obj/effect/turf_decal/stripes/full{icon = 'stalker/icons/warning_stripes.dmi'; icon_state = "poddon"; tag = "icon-poddon"},/obj/machinery/light{dir = 1; tag = "icon-tube1 (EAST)"},/obj/machinery/microwave/potbelly,/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/kordon/banditbar)
@@ -1233,7 +1234,7 @@
 "PT" = (/obj/effect/decal/cleanable/shreds,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "PV" = (/obj/structure/stalker/car/mi24{icon_state = "4,4"},/obj/rad/rad_high,/turf/open/stalker/floor/agroprom/gryaz,/area/stalker/blowout/outdoor)
 "PW" = (/obj/structure/grille/stalker{icon_state = "fence3"},/obj/structure/grille/stalker{icon_state = "fence0"},/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor)
-"PY" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/khabar_low,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"PY" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/vodka,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "PZ" = (/obj/rad/rad_medium,/obj/rad/rad_medium,/obj/anomaly/tramplin,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "Qa" = (/obj/rad/rad_medium,/turf/open/floor/plating/dirt,/area/stalker)
 "Qb" = (/obj/effect/decal/cleanable/shreds,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
@@ -1350,7 +1351,7 @@
 "UB" = (/obj/structure/stalker/sign2,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "UC" = (/obj/structure/stalker/car/gryzovik/east{icon_state = "6"; tag = "icon-6"},/turf/open/stalker/floor/gryaz{layer = 1.8},/area/stalker/blowout/outdoor)
 "UE" = (/obj/anomaly/karusel,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
-"UF" = (/obj/structure/table/stalker/wood,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
+"UF" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/seeds,/turf/open/stalker/floor/digable/grass/dump,/area/stalker/blowout/outdoor)
 "UG" = (/obj/structure/stalker/car/gryzovik2/south{icon_state = "7"; tag = "icon-7"},/turf/open/stalker/floor/wood/oldvert,/area/stalker/blowout/outdoor)
 "UI" = (/obj/effect/decal/cleanable/blood/footprints{dir = 8},/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/plating/dirt,/area/stalker)
 "UJ" = (/obj/structure/sign/map/left{desc = "A drawing of the known areas of the Zone."; pixel_y = 30},/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/mercenary)
@@ -1704,7 +1705,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagPJPJPJPJIPEBPJPJPJcjcmUtMvDsUGnkWiUtHOXdWiTONpPzXddDnlnmxTUtMvrAYelEUtUtagagnnnonpnqdDdDdDdDdDbHUtPJPJPJPJbzPJPJPJPJPJPJPJVgadadadadadadcaadadadadadadadadadadadadadaTPJPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagPJEBPJIPIPPJPJPJPJPJbzPYUtMvMvWiWiVpbHXdHGXIqdYrXdHmUtxTUtMvRMMvlHlIUtUtUtkHnrnsntnubHbHbHlqUtUtUtPJPJPJqcmTPJPJPJPJbBPJPJPJPJadadadadadadadadadadadadadadadadadadadPJPJPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagPJPJPJPJIPPJPJPJPJPJbzNblqMvKUZLWidDbHXdrJUlSnKZywbHUtUtUtUtUtUtlLGiSTUtUtNcQqsflqUtUtUtPJPJPJPJPJcjclclclcmPJPJPJPJPJPJPJPJdAPJPJPJPJPJPJdAPJPJPJIPIPIPIPadadadadaddAPJPJPJPJagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagEBPJPJPJPJPJPJPJbzPYUtMvUtlqWiZnbHVpXdArEKywywbHlqUtUtUtPJPJPJTvTvUtUtUtUtUtUtUtUtPJbBcjLfclclcmPJPJPJPJPJPJPJdAIPPJPJPJPJPJbBPJPJPJPJPJPJPJIPIPUfvdIPadadadadadPJPJPJdAPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagEBPJPJPJPJPJPJPJbzAwUtMvUtlqWiZnbHVpXdArEKywywbHlqUtUtUtPJPJPJTvTvUtUtUtUtUtUtUtUtPJbBcjLfclclcmPJPJPJPJPJPJPJdAIPPJPJPJPJPJbBPJPJPJPJPJPJPJIPIPUfvdIPadadadadadPJPJPJdAPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagPJPJPJPJEBPJbzUFHhsucelqlqUtlqbHbHbHbHbHHmbHUtUtPJPJqcPJPJPJPJUtUtUtUtPJPJcjckckSbcmPJPJPJPJEBPJPJPJPJIPIPPJPJPJagagagagdAPJPJdAPJPJPJPJIPUfvdkdIPPJadadadadadPJPJPJPJPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagEBPJPJPJPJcjclclclcmbBPJceUtbBbBlqEybBUtUtPJPJPJPJPJPJPJcjclclclclclclclcmPJPJPJEBPJPJPJPJPJPJPJPJPJPJPJPJPJagagaaaaagagagPJPJPJPJPJPJkdvdIPIPPJPJadmomCadadPJPJPJIPPJagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagPJPJPJPJPJPJPJPJcjclclclcmPJPJebkHPJbBcjclclclclclclclcmPJPJEBPJPJPJPJPJPJPJPJPJPJPJPJEBPJPJPJPJdAPJPJPJagagaaaaWQMNWQagagPJPJPJbBIPIPIPkdPJPJPJPJmDndadadaddAPJIPIPPJagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

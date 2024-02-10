@@ -56,10 +56,9 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 	art_armor = list()
 	radiation = -2
 	level_s = 1
-/*
 /obj/item/artifact/stoneflower
 	name = "stone flower"
-	desc = "Born in gravitional anomalies. This artifact is found in only a few areas of the Zone. The bits of metallic compounds create a beautiful light play."
+	desc = "Born in gravitional anomalies. Relatively uncommon in the zone. Gives user slight radiation over time and lightly enhances bullet protection."
 	icon_state = "stoneflower"
 	art_armor = list(bullet = 10)
 	radiation = 2
@@ -67,15 +66,14 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/nightstar
 	name = "night star"
-	desc = "This wonderful artifact is formed by gravitional anomalies anomaly. The use of the artifact demands the neutralization of deadly radiation. Expensive and rare."
+	desc = "This wonderful artifact is formed by gravitional anomalies anomaly. It quickly accumulates radiation yet gives user light-medium bullet protection boost, and requires user to wear a anti-radiation countermeasure. Expensive and rare in the zone."
 	icon_state = "nightstar"
 	art_armor = list(bullet = 20)
 	radiation = 3
 	level_s = 3
-*/
 /obj/item/artifact/stoneflower_depleted
 	name = "depleted stone flower"
-	desc = "Born in gravitional anomalies. This artifact is found in only a few areas of the Zone. The bits of metallic compounds create a beautiful light play."
+	desc = "A depeleted Stone Flower artifact. Still useful for trades, but not as valuable. When equipped, accumulates radiation quickly, but has no beneficial effect on user."
 	icon_state = "stoneflower"
 	art_armor = list()
 	radiation = 2
@@ -83,7 +81,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/nightstar_depleted
 	name = "depleted night star"
-	desc = "This wonderful artifact is formed by gravitional anomalies anomaly. The use of the artifact demands the neutralization of deadly radiation. Expensive and rare."
+	desc = "A depeleted Night Star Artifact. Still useful for trades, but not as valuable. When equipped, accumulates radiation quickly, but has no beneficial effect on user."
 	icon_state = "nightstar"
 	art_armor = list()
 	radiation = 3
@@ -91,7 +89,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/soul
 	name = "soul"
-	desc = "A unique organic artifact with properties just as unique. Somehow it increases the body's overall recovery rate from damage of any kind, without accelerating the accumulation of toxins. Thanks to its effects and attractive appearance, this artifact is a valuable collector's item. Emits radiation."
+	desc = "A unique organic artifact with properties just as unique. Somehow it increases the body's overall recovery rate from damage of any kind, without accelerating the accumulation of toxins. Thanks to its effects and attractive appearance, this artifact is a valuable collector's item. Emits medium radiation."
 	icon_state = "soul"
 	art_armor = list()
 	radiation = 2
@@ -108,7 +106,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/flash
 	name = "flash"
-	desc = "This electrostatic artifact is a powerful absorbent of electricity, which it later discharges. Flash is capable of protecting its bearer from electric shocks of up to 5,000 volts. Emits radiation."
+	desc = "This electrostatic artifact is a powerful absorbent of electricity, which it later discharges. Flash is capable of protecting its bearer from electric shocks of up to 5,000 volts. Emits very light radiation."
 	icon_state = "flash"
 	art_armor = list(energy = 10)
 	radiation = 1
@@ -116,7 +114,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/moonlight
 	name = "moonlight"
-	desc = "Degenerate case of the activity of the Electro anomaly. It seems that such a wonderful round form is created when the anomaly is subjected to thermal influences. Expensive artifact."
+	desc = "Degenerate case of the activity of the Electro anomaly. It seems that such a wonderful round form is created when the anomaly is subjected to thermal influences. Expensive artifact. Emits medium radiation"
 	icon_state = "moonlight"
 	art_armor = list(energy = 20)
 	radiation = 2
@@ -124,7 +122,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/pustishka
 	name = "shell"
-	desc = "Degenerate case of the Electra anomaly activity. Apparently, such a remarkable rounded shape can be obtained by subjecting the anomaly to thermal action. Expensive artifact."
+	desc = "Degenerate case of the Electra anomaly activity. Apparently, such a remarkable rounded shape can be obtained by subjecting the anomaly to thermal action. Expensive artifact.Emits medium radiation"
 	icon_state = "pustishka"
 	art_armor = list(energy = 30)
 	radiation = 2
@@ -132,7 +130,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/battery
 	name = "battery"
-	desc = "The composition of this artifact includes electrostatic elements, but scientists have yet to identify the exact physical conditions required for its formation. The artifact is popular in the Zone and valued by its residents and visitors for its energizing properties, although it can tire the body out through prolonged use. Doesn't emit radiation."
+	desc = "The composition of this artifact includes electrostatic elements, but scientists have yet to identify the exact physical conditions required for its formation. The artifact is popular in the Zone and valued by its residents and visitors for its energizing properties, although it can tire the body out through prolonged use. Doesn't emit any radiation."
 	icon_state = "battery"
 	art_armor = list(energy = 30)
 	level_s = 4
@@ -141,7 +139,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/droplet
 	name = "droplet"
-	desc = "Formed in the fireer anomaly at high temperatures. From the exterior looks like a tear-like shade compound with a glossy surface, covered in cracks."
+	desc = "Formed in the fireer anomaly at high temperatures. From the exterior looks like a tear-like shade compound with a glossy surface, covered in cracks. Lightly reduces radiation in the body of the user."
 	icon_state = "droplet"
 	art_armor = list(rad = 10)
 	radiation = -1
@@ -156,7 +154,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 */
 /obj/item/artifact/fireball
 	name = "fireball"
-	desc = "Crystallizes in the anomaly fireer. Fights well with radioactivity, though the heightened rate of energy exchange wears out the muscles of the moving apparatus. Won't be able to run for long. Artifact emits heat."
+	desc = "Crystallizes in the anomaly fireer. Provides medium reduction of radiation in the body, though the heightened rate of energy exchange wears out the muscles of the moving apparatus. Won't be able to run for long. Artifact emits heat."
 	icon_state = "fireball"
 	art_armor = list(rad = 15)
 	radiation = -2
@@ -164,7 +162,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/crystal
 	name = "crystal"
-	desc = "Is created when heavy metals fall into the fireer anomaly. This artifact eliminates radiation wonderfully. It is highly valued by stalkers and hard to find."
+	desc = "Is created when heavy metals fall into the fireer anomaly. Has a very strong radiation neutralization properties. It is highly valued by stalkers and hard to find."
 	icon_state = "crystal"
 	art_armor = list()
 	radiation = -5
@@ -172,7 +170,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/maminibusi
 	name = "mama's beads"
-	desc = "Much about this artifact remains a complete mystery to scientists. At the same time, it is known for certain that emissions produced by pulses in its thicker sections force blood in open wounds to clot quicker, forming a protective scab. One of the most noticeable effects of this artifact is the increased speed of wound healing. Emits radiation."
+	desc = "Much about this artifact remains a complete mystery to scientists. At the same time, it is known for certain that emissions produced by pulses in its thicker sections force blood in open wounds to clot quicker, forming a protective scab. Has ability to help speed up wound healing. Emits very strong radiation."
 	icon_state = "mamini_busi"
 	art_armor = list()
 	radiation = 5
@@ -190,7 +188,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/stone_blood
 	name = "stone blood"
-	desc = "A reddish formation of compressed and fossilized plants, soil and animal debris. Can partially neutralize chemical poisons. Emits radiation."
+	desc = "A reddish formation of compressed and fossilized plants, soil and animal debris. Can partially neutralize chemical poisons. Emits light radiation."
 	icon_state = "stone_blood"
 	art_armor = list(bio = 10)
 	radiation = 1
@@ -198,7 +196,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/bubble
 	name = "bubble"
-	desc = "A compound of several hollow organic formations, this artifact emits a gaseous substance that can neutralize radioactive particles inside the body without harming it. Because of its effectiveness, this artifact is in great demand."
+	desc = "A compound of several hollow organic formations, this artifact contains gaseous substance that is capable of having high radiation reduction. Because of its effectiveness, this artifact is in great demand."
 	icon_state = "bubble"
 	art_armor = list()
 	radiation = -3
@@ -206,7 +204,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/mica
 	name = "mica"
-	desc = "Anomaly \"Fruit Punch\" is able to create such an artifact at the rarest, most extreme collection of physical conditions. The result is a semi-transparent, hard object. A rare and expensive artifact."
+	desc = "Anomaly \"Fruit Punch\" is able to create such an artifact at the rarest, most extreme collection of physical conditions. The result is a semi-transparent, hard object. A rare and expensive artifact.Emits strong radiation."
 	icon_state = "mica"
 	art_armor = list(laser = 10, bio = 10)
 	radiation = 3
@@ -237,7 +235,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/artifact/firefly
 	name = "firefly"
-	desc = "Firefly interacts with fields unknown to science, considerably speeding up regeneration of tissue and organs in living beings, as well as normalizing metabolic processes. This artifact can literally get a badly wounded stalker back on his feet in seconds. Unfortunately, Firefly is extremely rare. Emits radiation."
+	desc = "Firefly interacts with fields unknown to science, considerably speeding up regeneration of tissue and organs in living beings, as well as normalizing metabolic processes. This artifact can literally get a badly wounded stalker back on his feet in seconds. Unfortunately, Firefly is extremely rare. Emits intense and lethal dose of radiation."
 	icon_state = "firefly"
 	art_armor = list()
 	radiation = 5
@@ -254,7 +252,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 	//ПОЯС
 /obj/item/storage/belt/stalker
 	name = "artifact belt"
-	desc = "Special belt for artifacts."
+	desc = "Specialised belt that can only house artifacts from the zone. The belt applies the effects on the user directly. Works only if its equipped on the belt."
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "artifactbelt"
 	item_state = "utility"
@@ -270,7 +268,7 @@ GLOBAL_LIST_EMPTY(all_artifacts)
 
 /obj/item/storage/belt/stalker/artifact_belt/small
 	name = "small artifact belt"
-	desc = "Special belt for artifacts."
+	desc = "Specialised belt that can only house artifacts from the zone, a more compact version of the regular artifact belt. The belt applies the effects on the user directly. Works only if its equipped on the belt."
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "artifactbeltsmall"
 	item_state = "artifacts"

@@ -112,7 +112,7 @@ obj/machinery/campfire/process()
 				usr.visible_message("[usr] lit a fire.", "<span class='notice'>You lit a fire.</span>")
 				update_icon()
 				soundloop.start()
-				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
+				desc = "That's a campfire, a good servant, but terrible boss. Sit on a log close to the campfire to heal your wounds slowly."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)
@@ -130,7 +130,7 @@ obj/machinery/campfire/process()
 				usr.visible_message("[usr] lit a fire.", "<span class='notice'>You lit a fire.</span>")
 				update_icon()
 				soundloop.start()
-				desc = "Campfires emit warmth and calmness. You can heal by sitting in it's range."
+				desc = "That's a campfire, a good servant, but terrible boss. Sit on a log close to the campfire to heal your wounds slowly."
 				set_light(4, 1, firecolor)
 				spawn(10)
 					set_light(0, 1, firecolor)

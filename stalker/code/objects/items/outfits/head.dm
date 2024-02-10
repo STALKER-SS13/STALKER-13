@@ -119,7 +119,7 @@
 
 /obj/item/clothing/head/assaultmerc
 	name = "Mercenary helmet"
-	desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City."
+	desc = "Schutzhelm 04 made in Switzerland used by the Mercenaries of the Dead City. A high quality model worn mostly by mercenaries. Provides a dependable protection."
 	icon_state = "assaultmerc"
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
@@ -181,7 +181,7 @@
 
 /obj/item/clothing/head/petrovichhelmet
 	name = "SKOT-M777"
-	desc = "An aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. "
+	desc = "An aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. You feel losing a bit of your sanity by just thinking about wearing this for a minute. "
 	icon_state = "helmet_skot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 50)
@@ -192,7 +192,7 @@
 
 /obj/item/clothing/head/beret_ua
 	name = "military beret"
-	desc = "Worth more than a conscript's monthly salary."
+	desc = "A beret made from hard fabric with rubber band on the opening side. It's clean and rigid. Fits well on your skull."
 	icon_state = "beret_ua"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 0)
 	strip_delay = 80
@@ -232,7 +232,7 @@
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
 	resistance_flags = UNACIDABLE|FIRE_PROOF
 	durability = 400
-	//МОДИФИКАЦИИ//
+	//GAS MASK MODIFICATION//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
 /obj/item/clothing/mask/gas/stalker/gp4
@@ -247,7 +247,7 @@
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
 	resistance_flags = UNACIDABLE|FIRE_PROOF
 	durability = 400
-	//МОДИФИКАЦИИ//
+	//GP-4 MODIFICATIONS//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
 /obj/item/clothing/mask/gas/stalker/gp5
@@ -262,12 +262,12 @@
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 30, "energy" = 30, "bomb" = 0, "bio" = 20, "rad" = 100, "fire" = 30, "acid" = 0, "psy" = 0)
 	resistance_flags = UNACIDABLE|FIRE_PROOF
 	durability = 400
-	//МОДИФИКАЦИИ//
+	//GP-5 MODIFICATIONS//
 	modifications = list("padding_head" = 0, "material_head" = 0, "visor_head" = 0)
 
 /obj/item/clothing/mask/gas/stalker/mercenary
 	name = "gas mask"
-	desc = "A western plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. Widely used by mercenaries. Does not provide any physical protection."
+	desc = "A western plastic and rubber gas mask, filters out air from radioactive particles and poisonous substances. Used by mercenaries by standard. Does not provide any physical protection whatsoever."
 	icon_state = "mercenary_gasmask"
 	item_state = "mercenary_gasmask"
 	gas_transfer_coefficient = 0.01
@@ -281,7 +281,7 @@
 
 /obj/item/clothing/mask/gas/stalker/respirator
 	name = "respirator"
-	desc = "An old respirator. Doesn't protect from much."
+	desc = "A very old and outdated respiration that still functions somehow. Can provide basic protection, but wont do wonders. Its better than nothing"
 	icon_state = "respirator"
 	item_state = "respirator"
 	gas_transfer_coefficient = 0.01
@@ -306,7 +306,7 @@
 
 /obj/item/clothing/mask/gas/stalker/renegademask
 	name = "renegade ballistic mask"
-	desc = "A mask of lightweight but durable material that gives you a chance to survive a stray bullet to the face. It has two non-bullet holes."
+	desc = "A mask of lightweight but durable material that gives you a chance to survive a stray bullet to the face. It has two non-bullet holes. The mask looks intimidating, and very solid."
 	icon_state = "renegade_mask"
 	item_state = "renegade_mask"
 	gas_transfer_coefficient = 0.01

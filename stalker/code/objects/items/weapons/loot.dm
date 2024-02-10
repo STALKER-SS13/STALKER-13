@@ -5,37 +5,37 @@
 	name = "mutant parts"
 
 /obj/item/stalker/loot/mutantparts/dog_tail
-	name = "dog tail"
-	desc = "The resistance of the mutant dog's skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab experimentation."
+	name = "Dog tail"
+	desc = "The resistance of the mutant dog's skin to electricity and chemical agents has long been the subject of scientific attention. It can be sold for small amount. Ecololgists may be interest in this."
 	icon_state = "pes"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
 
 /obj/item/stalker/loot/mutantparts/rat_tail
-	name = "rat tail"
-	desc = "This is a rat tail... whether or not it will be any use will be up to the scientist to find out."
+	name = "Rat tail"
+	desc = "This is a rat tail... whether or not it will be any use will be up to the scientist to find out. It can be sold for small amount. Ecololgists may be interest in this."
 	icon_state = "rattail"
 	grind_results = list("carbon" = 5, "unknownsubstance" = 2.5, "nutriment" = 5, "blood" = 5)
 
 /obj/item/stalker/loot/mutantparts/flesh_eye
-	name = "flesh eye"
+	name = "Flesh eye"
 	desc = "The mutated, swollen eye of the Flesh acquired a number of strange characteristics, the most useful of which is the ability to regenerate the lens. The specifics of the process are unknown, although such discovery would most certainly revolutionize modern medicine. You can play your part in scientific development by selling Flesh eyes to scientists for their experiments."
 	icon_state = "plot"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 
 /obj/item/stalker/loot/mutantparts/boar_leg
-	name = "boar hoof"
+	name = "Boar hoof"
 	desc = "The hoof of a wild boar is used by scientists for manufacturing of some medicines, the most widespread of which are anti radiation drugs."
 	icon_state = "kaban"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 
 /obj/item/stalker/loot/mutantparts/snork_leg
-	name = "snork leg"
+	name = "Snork leg"
 	desc = "Snork feet contain a huge number of highly elastic tendons. This explains the beast's ability to make those unbelievably long jumps."
 	icon_state = "snork_leg"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 5, "nutriment" = 10, "blood" = 10)
 
 /obj/item/stalker/loot/mutantparts/pseudo_tail
-	name = "pseudodog tail"
+	name = "Pseudodog tail"
 	desc = "The resistance of the skin of mutated dogs to chemical and electrical effects has long attracted the attention of scientists. Due to the lack of fat deposits, the tails of dogs are most suitable for laboratory research."
 	icon_state = "psevdopes"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
@@ -62,7 +62,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat
 	name = "mutant meat"
-	desc = "Stringy, gamey meat from a mutant."
+	desc = "Stringy, gamey meat from a mutant. It can be cooked on a campfire for more edibility."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant
@@ -75,7 +75,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/dog_meat
 	name = "dog meat"
-	desc = "Stringy, gamey meat from a mutant dog."
+	desc = "Stringy, gamey meat from a mutant dog. It can be cooked on a campfire for more edibility."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/dog
@@ -86,7 +86,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/rat_meat
 	name = "rat meat"
-	desc = "This is rat meat... It does not appear to be too appetizing as it is."
+	desc = "This is rat meat. Whilst it doesnt look to appetizing, it can be cooked and eaten for some nutrition value."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstance" = 2.5, "nutriment" = 5, "blood" = 5)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/rat
@@ -96,8 +96,8 @@
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/flesh_meat
-	name = "flesh meat"
-	desc = "Meat from a flesh; it has a strong rotten and putrescent odor."
+	name = "Flesh meat"
+	desc = "Meat from a flesh; it has a strong rotten and putrescent odor. It can still be cooked and eaten."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/flesh
@@ -107,8 +107,8 @@
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/boar_meat
-	name = "boar meat"
-	desc = "The meat of a wild mutated boar; it seems thick and hard to bend."
+	name = "Boar meat"
+	desc = "The meat of a wild mutated boar; it seems thick and hard to bend. It can be cooked and eaten."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 5, "unknownsubstancetwo" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/boar
@@ -118,8 +118,8 @@
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/snork_meat
-	name = "snork meat"
-	desc = "Snork meat, it is extremely lean and tough."
+	name = "Snork meat"
+	desc = "Snork meat, it is extremely lean and tough, but it can be cooked and eaten for small nutrition gain."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/snork
@@ -130,7 +130,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/pseudo_meat
 	name = "pseudodog meat"
-	desc = "Stringy, gamey meat from a pseudodog."
+	desc = "Stringy, gamey meat from a pseudodog. An odd resource, but can be cooked for food purposes."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstance" = 5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/pseudo
@@ -141,7 +141,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/bloodsucker_meat
 	name = "bloodsucker meat"
-	desc = "Bloodsucker meat, it smells putrescent and seems to twitch every once and a while."
+	desc = "Bloodsucker meat, it smells putrescent and seems to twitch every once and a while. Can be cooked and eaten for surpisingly good nutrition value."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 7.5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/bloodsucker
@@ -152,7 +152,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/mutantmeat/controller_meat
 	name = "controller meat"
-	desc = "Mutant meat from a controller. You can feel pulsating coming from this sticky slab of flesh."
+	desc = "Mutant meat from a controller. You can feel pulsating coming from this sticky slab of flesh. Can be cooked and eaten for surpisingly good nutrition value."
 	icon_state = "mutantmeat"
 	grind_results = list("carbon" = 10, "unknownsubstancefour" = 7.5, "nutriment" = 10, "blood" = 10)
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/mutant/controller
@@ -164,39 +164,39 @@
 	/// Cooked Meat ///
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant
-	name = "cooked mutant meat"
+	name = "Cooked mutant meat"
 	desc = "Stringy, gamey meat from a mutant."
 	icon_state = "mutantmeatcooked"
 	trash = null
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/dog
-	name = "cooked dog meat"
+	name = "Cooked dog meat"
 	desc = "Stringy, gamey meat from a mutant dog."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/rat
-	name = "cooked rat meat"
+	name = "Cooked rat meat"
 	desc = "This is rat meat... It does not appear to be too appetizing as it is."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/flesh
-	name = "cooked flesh meat"
+	name = "Cooked flesh meat"
 	desc = "Meat from a flesh; it has a strong rotten and putrescent odor."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/boar
-	name = "cooked boar meat"
+	name = "Cooked boar meat"
 	desc = "The meat of a wild mutated boar; it seems thick and hard to bend."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/snork
-	name = "cooked snork meat"
+	name = "Cooked snork meat"
 	desc = "Snork meat, it is extremely lean and tough."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/pseudo
-	name = "cooked pseudodog meat"
+	name = "Cooked pseudodog meat"
 	desc = "Stringy, gamey meat from a pseudodog."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/bloodsucker
-	name = "cooked bloodsucker meat"
+	name = "Cooked bloodsucker meat"
 	desc = "Bloodsucker meat, it smells putrescent and seems to twitch every once and a while."
 
 /obj/item/reagent_containers/food/snacks/meat/steak/mutant/controller
-	name = "cooked controller meat"
+	name = "Cooked controller meat"
 	desc = "Mutant meat from a controller. You can feel pulsating coming from this sticky slab of flesh."

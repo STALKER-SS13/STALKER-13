@@ -15,7 +15,7 @@
 
 /obj/item/storage/backpack/stalker
 	name = "backpack"
-	desc = "You wear this on your back and put items into it."
+	desc = "A regular tourist backpack that will provide you with inventory. Can hold 21 items."
 	icon_state = "backpack-tourist"
 	item_state = "backpack-tourist"
 	w_class = WEIGHT_CLASS_HUGE
@@ -31,7 +31,7 @@
 
 /obj/item/storage/backpack/stalker/civilian
 	name = "civilian backpack"
-	desc = "A regular camping backpack popular among those who just arrived in the Zone."
+	desc = "A regular camping backpack popular among those who just arrived in the Zone. Can hold small amounts of items."
 	icon_state = "backpack-civilian"
 	item_state = "backpack-civilian"
 
@@ -43,7 +43,7 @@
 
 /obj/item/storage/backpack/stalker/tourist
 	name = "tourist bag"
-	desc = "A tourist-targeted duffel bag with enough space to hold a few days of supplies."
+	desc = "A tourist-targeted duffel bag with enough space to hold a few days of supplies.Can hold a bit more than civlian backpack."
 	icon_state = "backpack-tourist"
 	item_state = "backpack-tourist"
 
@@ -55,9 +55,10 @@
 
 /obj/item/storage/backpack/stalker/professional
 	name = "professional backpack"
-	desc = "A heavy-duty military surplus backpack. You can carry a small supply-room in this."
+	desc = "A heavy-duty military surplus backpack. You can carry a small supply-room in this. Holds a serious amounts of items. Due to its bulkiness, slows the user down a bit."
 	icon_state = "backpack-professional"
 	item_state = "backpack-professional"
+	slowdown = 0.1
 
 /obj/item/storage/backpack/stalker/professional/ComponentInitialize()
 	. = ..()
@@ -67,16 +68,16 @@
 
 /obj/item/storage/backpack/stalker/rucksack
 	name = "rucksack"
-	desc = "A practical bag for military use in harsh conditions. Due to no defined contours this bag is very useful for carrying just about anything."
+	desc = "A practical bag for military use in harsh conditions. Due to no defined contours this bag is very useful for carrying just about anything. Can carry the largest volume out of all backpacks, but comes with slowing down the user substantially."
 	icon_state = "backpack-rucksack"
 	item_state = "backpack-rucksack"
-	slowdown = 0.5
+	slowdown = 0.3
 
 /obj/item/storage/backpack/stalker/rucksack/ComponentInitialize()
 	. = ..()
 	GET_COMPONENT(STR, /datum/component/storage)
 	STR.max_combined_w_class = 60
-	STR.max_items = 24
+	STR.max_items = 30
 	STR.max_w_class = WEIGHT_CLASS_BULKY
 
 

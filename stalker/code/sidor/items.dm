@@ -4,7 +4,7 @@
 	var/cost = 0
 	var/list/words = list()
 
-//Автоматы
+//Assault Rifles
 
 /sidoritem/ak74
     name = "Akm74/2"
@@ -30,7 +30,7 @@
     cost = 32000
     words = list("thunder" = 5, "thunderstorm" = 5, "thunderstorm" = 5, "Thunder" = 5, "thunder" = 5, "C14" = 5, "C14" = 10)
 
-//Снайперские винтовки
+//Sniper Rifles
 
 /sidoritem/vintorez
     name = "Vintar VS"
@@ -44,7 +44,7 @@
     cost = 23000
     words = list("shaft" = 5, "spetsavtomat shaft" = 5, "vla" = 5, "spetsavtomat vla" = 5, "specgun vla" = 5, "vla" = 5, "Shaft" = 5, "Vla" = 10)
 
-//Дробовики
+//Shotguns
 
 /sidoritem/bm16
     name = "Doublebarrel"
@@ -64,7 +64,7 @@
     cost = 20000
     words = list("Chaser" = 5, "chaser" = 5, "13" = 10)
 
-//Пистолеты
+//Firearms
 
 /sidoritem/pm
     name = "PM"
@@ -108,7 +108,7 @@
 	cost = 9000
 	words = list("Usp" = 5, "yusp" = 5, "Yusip" = 5, "yusip" = 10)
 
-//Шлемы
+//Helmets
 
 /sidoritem/gasmask
 	name = "Gasmask"
@@ -219,7 +219,7 @@
 	cost = 80000
 	words = list("PSZ" = 5, "9MD" = 5, "PSZ9MD" = 5, "PSZ" = 5, "9md" = 5, "PSZ9MD" = 5, "Seva" = 5, "Seva" = 5, "Debt" = 5, "debt" = 5)
 
-//Медикаменты
+//Medicines
 
 /sidoritem/firstaid/stalker
 	name = "Firstaid"
@@ -251,7 +251,7 @@
 	cost = 700
 	words = list("Antirad" = 5, "antirad" = 5)
 
-//Еда
+//Meal
 
 /sidoritem/dogtail
 	name = "Dog tail"
@@ -315,7 +315,7 @@
 	cost = 200
 	words = list("Energetik" = 5, "energetik" = 5, "Energy" = 5, "NonStop" = 5, "nonstop" = 5)
 
-//Оружие ближнего бо&#255;
+//Melee Weapons
 
 /sidoritem/knife
 	name = "Knife"
@@ -323,7 +323,7 @@
 	cost = 600
 	words = list("Knife" = 5, "Knife" = 10)
 
-//Амуници&#255;
+//Ammo
 
 /sidoritem/b545
 	name = "b545"
@@ -435,7 +435,7 @@
 
 
 
-//Артефакты
+//Artifacts
 
 /sidoritem/meduza
 	name = "Meduza"
@@ -492,7 +492,7 @@
 	itemtype = /obj/item/weapon/artifact/crystal
 	cost = 40000
 
-//Разное
+//Miscellaneous
 
 /sidoritem/guitar
 	name = "Guitar"
@@ -500,11 +500,12 @@
 	cost = 3000
 	words = list("Guitar" = 5, "guitar" = 5, "Guitar" = 5, "guitar" = 5)
 
-/sidoritem/geiger
+/*/sidoritem/geiger
 	name = "Geiger Counter"
 	itemtype = /obj/item/device/geiger_counter
 	cost = 500
 	words = list("Counter" = 5, "counter" = 5, "Geiger" = 5, "Geiger" = 5)
+	*/
 
 /sidoritem/shovel
 	name = "Shovel"

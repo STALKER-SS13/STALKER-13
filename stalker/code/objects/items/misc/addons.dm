@@ -5,7 +5,7 @@
 
 /obj/item/attachment/suppressor
 	name = "suppressor"
-	desc = "A universal suppressor."
+	desc = "A universal suppressor.Can be attached to most pistols, submachine guns, and assault rifles. Is'nt compatible with rifles."
 	icon = 'icons/obj/guns/projectile.dmi'
 	icon_state = "suppressor"
 	types = list(/obj/item/gun/ballistic/automatic/pistol/pm,
@@ -56,7 +56,7 @@
 
 /obj/item/attachment/scope/PS/U1
 	name = "PSU-1"
-	desc = "Fixed magnification optical sight (2.7 diopters). Optimized for mid-range combat as well as urban use. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used."
+	desc = "Fixed magnification optical sight (2.7 diopters). Optimized for mid-range combat as well as urban use. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used. Can be attached to Assault Rifles."
 	icon_state = "PSU1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				/obj/item/gun/ballistic/automatic/ak74,
@@ -68,7 +68,7 @@
 
 /obj/item/attachment/scope/PS/O1
 	name = "PSO-1"
-	desc = "A widespread Soviet-made fixed-magnification optical sight (5). Equipped with a scale for determining the range to the target. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used."
+	desc = "A widespread Soviet-made fixed-magnification optical sight (5). Equipped with a scale for determining the range to the target. For installation on the weapon, the dovetail mount, standard in the Warsaw Pact countries, is used.Can be attached to Assault Rifles."
 	icon_state = "PSO1"
 	types = list(/obj/item/gun/ballistic/automatic/aksu74,
 				 /obj/item/gun/ballistic/automatic/ak74,
@@ -80,7 +80,7 @@
 
 /obj/item/attachment/scope/rifle
 	name = "rifle scope"
-	desc = "A rifle scope designed some time around the advent of WWII."
+	desc = "A rifle scope designed some time around the advent of WWII. Fits on some bolt action rifles, a BM16, TOZ, FN FAL and M14. Wont fit on other platforms."
 	icon_state = "rifle"
 	types = list(/obj/item/gun/ballistic/rifle/boltaction/enfield,
 				/obj/item/gun/ballistic/rifle/boltaction/mosin,

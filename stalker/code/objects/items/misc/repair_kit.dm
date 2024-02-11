@@ -22,7 +22,7 @@
 			return 0
 
 		if((src.durability/initial(durability)*100) < RK.min_durability)
-			user << "<span class='warning'>[src] duranility is too low. You can't repair it with kit of this type.</span>"
+			user << "<span class='warning'>[src] durability is too low. You can't repair it with kit of this type.</span>"
 			return 0
 
 		playsound(user.loc, 'stalker/sound/inv_repair_spray_oil.ogg', 50, 1)
@@ -32,7 +32,7 @@
 
 		durability = (((durability / initial(durability) * 100) + RK.add_durability) / 100) * initial(durability)
 		RK.uses -=1
-		user.visible_message("<span class='notice'>[user] repairs [src].</span>", "<span class='notice'>You repair [src].")
+		user.visible_message("<span class='notice'>[user] has finished repairing [src].</span>", "<span class='notice'>You repair [src].")
 
 		if(RK.uses <= 0)
 			qdel(RK)

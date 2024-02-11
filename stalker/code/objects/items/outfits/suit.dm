@@ -224,7 +224,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/kozhanka/banditka
-	name = "bandit jacket"
+	name = "Bandit jacket"
 	desc = "Traditional bandit clothing - a leather jacket with armor pieces sewed in. The protection it provides is completely inadequate for the harsh conditions of the Zone."
 	icon_state = "banditka"
 	item_state = "ro_suit"
@@ -238,22 +238,22 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/kozhanka/banditka/unique
-	name = "chain-mail jacket"
+	name = "Chain-mail jacket"
 	desc = "The usual weak bandit body armor, but chain mail is sewn into the lining. Almost anyone can do this, but not everyone will have enough patience."
 	//icon_state = "banditka_unique"
 	armor = list("melee" = 15, "bullet" = 28, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	unique = 1
 
 /obj/item/clothing/suit/hooded/kozhanka/unique
-	name = "anomaly jacket"
+	name = "Anomaly jacket"
 	desc = "This jacket was removed from the corpse of one of the stalkers who died in the 'jelly' anomaly. After lying in an anomaly for a long time, the jacket has acquired the ability to speed up the wearer's metabolism."
 	icon_state = "kozhanka_unique"
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 30, "fire" = 10, "psy" = 0)
 	unique = 0
 
 /obj/item/clothing/suit/hooded/kozhanka/renegadecoat
-	name = "renegade coat"
-	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it."
+	name = "Renegade coat"
+	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it. Apart of looking cool, it provides light protection against bullets and melee attacks. Has a very minor anti-radiation & Biological protection. Better than nothing."
 	icon_state = "renegadecoat"
 	item_state = "renegadecoat_t"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
@@ -266,8 +266,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/kozhanka/tancoat
-	name = "tan coat"
-	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it."
+	name = "Tan coat"
+	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it. Apart of looking cool, it provides light protection against bullets and melee attacks. Has a very minor anti-radiation & Biological protection. Better than nothing."
 	icon_state = "tancoat"
 	item_state = "tancoat_t"
 	blood_overlay_type = "armor"
@@ -302,26 +302,26 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/suit/kozhanka/tourist/jacket
-	name = "leather jacket"
-	desc = "Common attire of the newly arrived. It won't save you from bullets or anomalies, but its still better than nothing. This one is some thick leather jacket."
+	name = "Leather Jacket"
+	desc = "A bare leather jacket from outside of the zone. Has no beneficial properties whatsoever apart of protection from basic elements."
 	icon_state = "tourist1"
 	item_state = "det_suit"
 
 /obj/item/clothing/suit/kozhanka/tourist/coat
-	name = "green winter coat"
-	desc = "Common attire of the newly arrived. It won't save you from bullets or anomalies, but its still better than nothing. This one is some thick winter coat."
+	name = "Green Winter Coat"
+	desc = "Thick winter coat from outside of the zone. Does'nt have any properties usable in the zone."
 	icon_state = "tourist2"
 	item_state = "det_suit"
 
 /obj/item/clothing/suit/kozhanka/tourist/gorka
-	name = "gorka jacket"
-	desc = "Common attire of the newly arrived. It won't save you from bullets or anomalies, but its still better than nothing. This one is some thick winter coat."
+	name = "Gorka Jacket"
+	desc = "A gorka jacket in good condition. Apart of protecting you from the elements of nature, it does not hold any beneficial properties from the zone at all."
 	icon_state = "tourist3"
 	item_state = "det_suit"
 
 /obj/item/clothing/suit/hooded/kombez
-	name = "sunrise"
-	desc = "This DIY stalker bodysuit is a combination of a bodysuit of twin-layered rubberized cloth with plexiglass lining and built-in body armor. Despite the fact that the body armor is incapable of protecting the wearer from even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential. Comes with built-in artifact containers."
+	name = "Sunrise"
+	desc = "A gold standard suit of every Loner. Most common medium-grade suit of every Loner. Provides solid protection from what zone has to offer including bullets and melee. A decent choice for a zone dweller. "
 	icon_state = "kombez"
 	item_state = "syndicate-green"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -346,8 +346,8 @@
 
 //strelok
 /obj/item/clothing/suit/hooded/strelok
-	name = "modified sunrise suit"
-	desc = "A heavily modified sunrise suit, offering all around great protection, better durability and a padded hood."
+	name = "Upgraded Sunrise Suit"
+	desc = "An advanced step forward from a standard sunrise suit. Provides substantially better protection across all attributes. Very good all around choice for the wandering in the zone."
 	icon_state = "kombez"
 	item_state = "syndicate-green"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -371,8 +371,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/kozhanka/cs_hood
-	name = "clear sky coat"
-	desc = "A trenchcoat sporting clear sky camoflauge with light armor plates and shoulder pads strapped on it."
+	name = "Clear sky coat"
+	desc = "A coat sporting clear sky camoflauge with light armor plates and shoulder pads strapped on it. Provides minimal, almost negligible protection from bullets, lacerations and the dangers of zone. Not optimal for expeditions."
 	icon_state = "cs_hood"
 	item_state = "cs_hood_t"
 	blood_overlay_type = "armor"
@@ -393,7 +393,7 @@
 
 /obj/item/clothing/suit/hooded/cs_medium
 	name = "CS-3a body armor"
-	desc = "This body armor was designed for conducting search operations in areas of low anomalous activity. It's higher quality materials result in greater durability."
+	desc = "An armor worn exclusively by the Clear Sky faction, designed for conducting search operations in areas of low anomalous activity. It's higher quality materials result in greater durability. Provides protection comparable to sunrise suit, but with significantly higher protection from anomalous elements."
 	icon_state = "cs_medium"
 	item_state = "syndicate-green"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -418,7 +418,7 @@
 
 /obj/item/clothing/suit/cs_heavy
 	name = "CS-1 Body Armor"
-	desc = "Standard equipment used by Clear Sky assault squads. This body armor is able to stop a pistol bullet."
+	desc = "Standard equipment used by Clear Sky assault squads. This body armor is able to stop a pistol bullet. Provides a solid all round protection comparable to sunrise suit with stronger adjustements."
 	icon_state = "cs_heavy"
 	item_state = "syndicate-green"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -440,8 +440,8 @@
 
 
 /obj/item/clothing/suit/jacket/sidor
-	name = "old vest"
-	desc = "A kosher vest made of chimera leather. "
+	name = "Old vest"
+	desc = "A kosher vest made of chimera leather. Provides absolutely no protection from the zone. "
 	icon_state = "sidor_vest"
 	item_state = "det_suit"
 	resistance_flags = FIRE_PROOF
@@ -450,7 +450,7 @@
 
 /obj/item/clothing/suit/hooded/kozhanka/banditka/coat
 	name = "trenchcoat"
-	desc = "A regular black leather trench coat. Has no special purpose other than to keep the wearer warm at night or protect from a blind dog bite. Although the trench coat is not particularly comfortable, it is often used by Bandits in the Zone - either because it allows them to hide in the dark or simply due to its \"cool\" appearance."
+	desc = "A regular black leather trench coat. Has no special purpose other than to keep the wearer warm at night or protect from a blind dog bite. Although the trench coat is not particularly comfortable, it is often used by Bandits in the Zone - either because it allows them to hide in the dark or simply due to its \"cool\" appearance. Provides an okay all round protection."
 	icon_state = "banditcoat"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -466,7 +466,7 @@
 
 /obj/item/clothing/suit/hooded/kozhanka/banditka/coat/brown
 	icon_state = "banditcoatbrown"
-	desc = "A regular brown leather trench coat. Has no special purpose other than to keep the wearer warm at night or protect from a blind dog bite. Although the trench coat is not particularly comfortable, it is often used by Bandits in the Zone - either because it allows them to hide in the dark or simply due to its \"cool\" appearance."
+	desc = "A regular brown leather trench coat. Does not protect wearer against any dangers in the zone, but it happens to look aesthetically superior."
 	hoodtype = /obj/item/clothing/head/hooded/stalker/banditbrown
 
 /obj/item/clothing/head/hooded/stalker/banditbrown
@@ -530,7 +530,7 @@
 
 /obj/item/clothing/suit/hooded/sealed/ecolog
 	name = "SSP-99"
-	desc = "A SSP-99 chemical protection suit specially designed for the Zone conditions. It is used by scientific expeditions and the eco-stalkers who cooperate with them. It has an integrated air-filtering and air-conditioning system. It is heat and electricity resistant, provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments. It is not designed for combat, so it provides neither bullet, nor splinter protection."
+	desc = "A SSP-99 chemical protection suit specially designed for the Zone conditions. It is used by scientific expeditions and the eco-stalkers who cooperate with them. It has an integrated air-filtering and air-conditioning system. It is heat and electricity resistant, provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments. It is not designed for combat, but it provides very minimal bullet and melee protections."
 	icon_state = "ecolog"
 	item_state = "syndicate-orange"
 	blood_overlay_type = "armor"
@@ -561,7 +561,7 @@
 
 /obj/item/clothing/suit/hooded/sealed/ecologm
 	name = "SSP-99M"
-	desc = "High quality modified SSP-99 suit. It provides increased body protection from bullet and splinter damage. It is designed for the guards working with scientific expeditions. It provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments and other effects dangerous to the body."
+	desc = "High quality modified SSP-99 suit. It provides increased body protection from bullet and splinter damage. It is designed for the guards working with scientific expeditions. It provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments and other effects dangerous to the body. This variant provides a decent protection from firearms & melee damage."
 	icon_state = "ecologg"
 	item_state = "syndicate-green"
 	blood_overlay_type = "armor"
@@ -593,7 +593,7 @@
 
 /obj/item/clothing/suit/hooded/sealed/seva
 	name = "SEVA"
-	desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. It comes with a built-in artifact transportation container."
+	desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. It provides a very fair protection from bullets and lacerations. It comes with a built-in artifact transportation container."
 	icon_state = "seva"
 	item_state = "syndicate-black"
 	blood_overlay_type = "armor"
@@ -664,8 +664,8 @@
 	..()
 
 /obj/item/clothing/suit/hooded/sealed/sin
-	name = "sinner suit"
-	desc = "A strange sealed suit worn by Sin members."
+	name = "Sinner suit"
+	desc = "A strange sealed suit worn by Sin members. It provides fair all round protection from the zone."
 	icon_state = "sin"
 	item_state = "syndicate-black-red"
 	blood_overlay_type = "armor"
@@ -682,7 +682,7 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "visor_suit" = 1, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/sealed/sin
-	name = "sinner suit Mask"
+	name = "Sinner suit Mask"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 65, "bomb" = 50, "bio" = 50, "rad" = 70, "fire" = 65, "psy" = 20)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -697,7 +697,7 @@
 	..()
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet
-	name = "exoskeleton"
+	name = "Exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskelet"
 	item_state = "syndicate-black"
@@ -713,7 +713,7 @@
 	resistance_flags = UNACIDABLE | FIRE_PROOF
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
-	name = "exoskeleton helmet"
+	name = "Exoskeleton helmet"
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 50, "psy" = 30)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -727,51 +727,51 @@
 	//nvg = new /obj/item/nightvision(src)
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet/duty
-	name = "duty exoskeleton"
+	name = "Duty exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskeletd"
 	item_state = "syndicate-black"
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/duty
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/duty
-	name = "duty exoskeleton helmet"
+	name = "Duty exoskeleton helmet"
 	icon_state = "exoskeletd_helmet"
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet/freedom
-	name = "freedom exoskeleton"
+	name = "Freedom exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskeletf"
 	item_state = "syndicate-black"
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/freedom
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/freedom
-	name = "freedom exoskeleton helmet"
+	name = "Freedom Exoskeleton Helmet"
 	icon_state = "exoskeletf_helmet"
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet/merc
-	name = "merc exoskeleton"
+	name = "Mercenary Exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskeletm"
 	item_state = "syndicate-black"
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/merc
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/merc
-	name = "merc exoskeleton helmet"
+	name = "Mecenary Exoskeleton Helmet"
 	icon_state = "exoskeletm_helmet"
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet/bandit
-	name = "bandit exoskeleton"
+	name = "Bandit exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskeletm"
 	item_state = "syndicate-black"
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/bandit
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet/bandit
-	name = "bandit exoskeleton helmet"
+	name = "Bandit exoskeleton helmet"
 	icon_state = "exoskeletm_helmet"
 
 /obj/item/clothing/suit/hooded/sealed/exoskelet/monolith
-	name = "monolith exoskeleton"
+	name = "Monolith exoskeleton"
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskeletmo"
 	item_state = "syndicate-black"
@@ -782,7 +782,7 @@
 	icon_state = "exoskeletmo_helmet"
 
 /obj/item/clothing/suit/army
-	name = "army armor"
+	name = "Army Body Armor"
 	desc = "Standard army body armor issued to all military personnel guarding the perimeter of the Zone. Provides good protection against bullets and melee weapons, absolutely unsuitable for forays deep into the Zone, since it has almost no protection against the effects of anomalous fields."
 	icon_state = "army_armor1"
 	item_state = "armor"
@@ -845,7 +845,7 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/suit/toggle/flight
-	name = "flight vest"
+	name = "Flight vest"
 	desc = "A regional flight jacket. features an added button-in/out liner for extra warmth, along with a cotton-fiber stretch coif. You'd have to wonder how exactly it got here into the zone other than previous disaster."
 	icon_state = "flightvest"
 	item_state = "flightvest"
@@ -1111,7 +1111,7 @@
 	icon_state = "winterhood_eco_merc"
 
 /obj/item/clothing/suit/hooded/kombez/veter
-	name = "sentinel of freedom"
+	name = "Sentinel of Freedom"
 	desc = "This lightweight stalker bodysuit is made by Freedom craftsmen. The suit's fabric is treated with Horizon, a special solution developed by the faction by trial and error to increase resistance to anomalies. Like the Sunrise suit, the Wind of Freedom comes with built-in body armor and artifact containers."
 	icon_state = "veter"
 	item_state = "syndicate-green"
@@ -1132,7 +1132,7 @@
 	icon_state = "winterhood_strazh"
 
 /obj/item/clothing/suit/hooded/strazh
-	name = "wind of freedom"
+	name = "Wind of Freedom"
 	desc = "This stalker bodysuit with reinforced body armor made by Freedom craftsmen represents a good compromise between combat and anomaly protection. The built-in body armor comprises armor plating and ten Kevlar layers, capable of stopping a pistol bullet. The suit uses the relatively expensive Sovereign compound for anomaly protection. Comes with an artifact container."
 	icon_state = "wind_of_freedom"
 	item_state = "syndicate-green"
@@ -1156,7 +1156,7 @@
 	icon_state = "winterhood_wind_of_freedom"
 
 /obj/item/clothing/suit/assaultmerc
-	name = "mercenary heavy armor"
+	name = "Mercenary Heavy Armor"
 	desc = "Heavy armor used by mercenaries, which includes a multi-layered ballistic vest with collar and forearm protectors, as well as a pair of neoprene-plastic bracers and greaves to protect against local bites. You are not sure if such a suit will protect well against anomalies, but for the conditions of the zone, it is difficult to find better combat armor. "
 	icon_state = "assaultmerc"
 	item_state = "syndicate-black"
@@ -1173,7 +1173,7 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/suit/hooded/kombez/kombez_bandit
-	name = "bandit armor"
+	name = "Bandit Armor"
 	desc = "Stalker suit worn by the Bandits. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits."
 	icon_state = "combez_bandit"
 	item_state = "syndicate-orange"
@@ -1194,7 +1194,7 @@
 	icon_state = "winterhood_combez_bandit"
 
 /obj/item/clothing/suit/hooded/kombez/kombez_renegade
-	name = "renegade armor"
+	name = "Renegade Armor"
 	desc = "Stalker suit worn by the Renegades. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits."
 	icon_state = "combez_renegade"
 	item_state = "syndicate-orange"
@@ -1216,7 +1216,7 @@
 
 
 /obj/item/clothing/suit/hooded/kombez/mercenary/leader
-	name = "mercenary leader armor"
+	name = "Mercenary Leader Armor"
 	desc = "The usual armor of a mercenary with a cloak thrown over it, in a very shabby condition. You wonder why no one else thought of wearing a cloak over light armor before... is there really something hindering this?"
 	icon_state = "mercleader"
 	item_state = "syndicate-black"
@@ -1230,7 +1230,7 @@
 	durability = 150
 
 /obj/item/clothing/suit/hooded/kozhanka/ghillie
-	name = "ghillie suit"
+	name = "Ghillie Suit"
 	desc = "A ghillie suit is a type of camouflage clothing designed to resemble the background environment such as foliage, snow or sand. Such suits rarely come into use in the Zone due to their general bulkiness and incredible uncomfortability, yet they're especially valued by sniper due to their ability to hide you among the grass."
 	icon_state = "ghillie"
 	item_state = "ghillie"
@@ -1252,7 +1252,7 @@
 	icon_state = "ghillie"
 
 /obj/item/clothing/suit/hooded/kombez/kombezrenegadewornd2
-	name = "renegade vest"
+	name = "Renegade Vest"
 	desc = "A revised version of the old suit. Nevertheless, it does not give any guarantees."
 	icon_state = "combez_renegade_worn_d2"
 	item_state = "combez_renegade_worn_d2"

@@ -16,7 +16,7 @@
 	dug = 1
 
 /obj/structure/grille/stalker
-	desc = "Strong iron fence."
+	desc = "A tough and rigid iron fence. I cant climb over this."
 	name = "fence"
 	icon = 'stalker/icons/structure.dmi'
 	icon_state = "fence1"
@@ -56,7 +56,7 @@
 	return
 
 /obj/structure/grille/stalker/wood
-	desc = "Old wooden fence."
+	desc = "Old wooden fence with some substantial damage."
 	icon_state = "zabor_horizontal1"
 	density = 1
 	opacity = 1

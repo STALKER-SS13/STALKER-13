@@ -12,7 +12,7 @@
 
 /obj/item/stalker/bolts
 	name = "bolts"
-	desc = "A pile of bolts."
+	desc = "A pile of bolts. Throw them into anomalies to see where the anomalies are."
 	icon = 'stalker/icons/bolt.dmi'
 	icon_state = "kucha"
 	w_class = 6//from 2. >:(

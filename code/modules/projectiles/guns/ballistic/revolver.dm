@@ -149,7 +149,6 @@
 	can_suppress = FALSE
 	spread = 30
 	recoil = 3
-	recoil = 1
 	w_class = 2
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 

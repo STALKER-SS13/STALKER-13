@@ -15,7 +15,7 @@
 	can_suppress = 1
 	can_unsuppress = 1
 	durability = 60
-	spread = 10
+	spread = 30
 	recoil = 0.2
 	damagelose = 0.2
 	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
@@ -34,7 +34,7 @@
 	can_unsuppress = 0
 	fire_delay = 0.5
 	durability = 50
-	spread = 8
+	spread = 24
 	recoil = 0.15
 	damagelose = 0.1
 	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
@@ -52,7 +52,7 @@
 	can_suppress = 1
 	can_unsuppress = 1
 	durability = 85
-	spread = 6
+	spread = 18
 	recoil = 0.4
 	damagelose = 0.2
 	draw_sound = 'stalker/sound/weapons/draw/sig220_draw.ogg'
@@ -69,7 +69,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 8
+	spread = 24
 	recoil = 0.5
 	durability = 100
 	damagelose = 0.15
@@ -88,7 +88,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 7
+	spread = 21
 	recoil = 0.25
 	damagelose = 0.2
 	durability = 75
@@ -106,7 +106,7 @@
 	force = 10
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 8
+	spread = 24
 	recoil = 0.25
 	durability = 50
 	damagelose = 0.2
@@ -130,7 +130,7 @@
 	suppressed = 1
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 10
+	spread = 30
 	recoil = 0.25
 	durability = 50
 	damagelose = 0.2
@@ -147,7 +147,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 8
+	spread = 24
 	recoil = 0.35
 	durability = 60
 	damagelose = 0.25
@@ -165,7 +165,7 @@
 	force = 10
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 8
+	spread = 24
 	recoil = 0.65
 	durability = 50
 	damagelose = 0.15
@@ -185,7 +185,7 @@
 	force = 10
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 6
+	spread = 18
 	recoil = 1
 	durability = 500
 	damagelose = 0.1
@@ -205,7 +205,7 @@
 	force = 10
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 6
+	spread = 18
 	recoil = 6
 	durability = 500
 	damagelose = 0
@@ -225,7 +225,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 7
+	spread = 21
 	recoil = 0.25
 	damagelose = 0.2
 	durability = 75
@@ -244,7 +244,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 7
+	spread = 21
 	recoil = 0.25
 	damagelose = 0.2
 	durability = 75
@@ -266,7 +266,7 @@
 	fire_delay = 1.7
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 12
+	spread = 36
 	recoil = 5
 	damagelose = 0.2
 	durability = 75
@@ -288,7 +288,7 @@
 	fire_delay = 1.5
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 4
+	spread = 16
 	recoil = 3.5
 	damagelose = 0.2
 	durability = 75
@@ -310,7 +310,7 @@
 	can_unsuppress = 1
 	burst_size = 3
 	fire_delay = 1
-	spread = 10
+	spread = 30
 	recoil = 3
 	damagelose = 0.2
 	durability = 75
@@ -330,7 +330,7 @@
 	can_suppress = 1
 	can_unsuppress = 1
 	durability = 85
-	spread = 6
+	spread = 18
 	recoil = 0.4
 	damagelose = 0.2
 	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
@@ -350,7 +350,7 @@
 	can_unsuppress = 0
 	fire_delay = 0.5
 	durability = 50
-	spread = 8
+	spread = 24
 	recoil = 0.15
 	damagelose = 0.1
 	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
@@ -367,7 +367,7 @@
 	force = 10
 	can_suppress = 0
 	can_unsuppress = 0
-	spread = 7
+	spread = 21
 	recoil = 0.50
 	durability = 100
 	damagelose = 0.2
@@ -386,7 +386,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 7
+	spread = 21
 	recoil = 0.25
 	damagelose = 0.2
 	durability = 75
@@ -404,7 +404,7 @@
 	mag_type = /obj/item/ammo_box/magazine/stalker/m9x18cz83
 	force = 10
 	durability = 85
-	spread = 3
+	spread = 18
 	recoil = 0.4
 	damagelose = 0.2
 	draw_sound = 'stalker/sound/weapons/draw/pm_draw.ogg'
@@ -422,7 +422,7 @@
 	force = 10
 	can_suppress = 1
 	can_unsuppress = 1
-	spread = 7
+	spread = 21
 	recoil = 0.25
 	damagelose = 0.2
 	durability = 75
@@ -511,7 +511,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 80
 	w_class = 3
-	spread = 10
+	spread = 30
 	recoil = 1.4
 	damagelose = 0.05
 	can_scope = 0
@@ -534,7 +534,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 80
 	w_class = 3
-	spread = 8
+	spread = 24
 	recoil = 1.7
 	damagelose = 0.05
 	can_scope = 0
@@ -558,7 +558,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -583,7 +583,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -608,7 +608,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -633,7 +633,7 @@
 	pin = /obj/item/firing_pin
 	durability = 80
 	w_class = 4
-	spread = 6.5
+	spread = 19
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -658,7 +658,7 @@
 	pin = /obj/item/firing_pin
 	durability = 80
 	w_class = 4
-	spread = 8.5
+	spread = 25
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -682,7 +682,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 50
 	w_class = 4
-	spread = 4
+	spread = 21
 	recoil = 0.35
 	damagelose = 0.25
 	can_scope = 0
@@ -706,7 +706,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 50
 	w_class = 4
-	spread = 4
+	spread = 18
 	recoil = 0.35
 	damagelose = 0.25
 	can_scope = 0
@@ -729,7 +729,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 80
 	w_class = 3
-	spread = 7
+	spread = 21
 	recoil = 0.15
 	damagelose = 0.25
 	can_scope = 0
@@ -753,7 +753,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 4
+	spread = 14
 	recoil = 1
 	damagelose = 0.2
 	can_scope = 0
@@ -776,7 +776,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 80
 	w_class = 3
-	spread = 25
+	spread = 50
 	recoil = 0.8
 	damagelose = 0.25
 	can_scope = 0
@@ -803,7 +803,7 @@
 	w_class = 4
 	burst_size = 1
 	randomspread = 0
-	spread = 2
+	spread = 6
 	damagelose = 0.1
 	can_scope = 1
 	load_sound = 'stalker/sound/weapons/load/bolt_load.ogg'
@@ -827,7 +827,7 @@
 	pin = /obj/item/firing_pin
 	durability = 120
 	w_class = 4
-	spread = 6
+	spread = 18
 	recoil = 0.5
 	damagelose = 0.25
 	can_scope = 1
@@ -896,7 +896,7 @@
 	pin = /obj/item/firing_pin
 	durability = 100
 	w_class = 4
-	spread = 9
+	spread = 27
 	recoil = 0.7
 	damagelose = 0.5
 	can_scope = 1
@@ -921,7 +921,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 9
+	spread = 27
 	recoil = 0.3
 	damagelose = 0.5
 	can_scope = 1
@@ -948,7 +948,7 @@
 	pin = /obj/item/firing_pin
 	durability = 120
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 1
 	damagelose = 0.25
 	can_scope = 1
@@ -974,7 +974,7 @@
 	pin = /obj/item/firing_pin
 	durability = 120
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 1
 	damagelose = 0.25
 	can_scope = 1
@@ -998,7 +998,7 @@
 	pin = /obj/item/firing_pin
 	durability = 75
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 0.4
 	damagelose = 0.1
 	can_scope = 0
@@ -1022,7 +1022,7 @@
 	burst_size = 4
 	fire_delay = 1.3
 	w_class = 4
-	spread = 3
+	spread = 9
 	recoil = 0.3
 	damagelose = 0.2
 	zoomable = TRUE
@@ -1049,7 +1049,7 @@
 	fire_delay = 1.7
 	durability = 150
 	w_class = 4
-	spread = 12
+	spread = 36
 	slowdown = 0.15
 	recoil = 0.9
 	damagelose = 0.25
@@ -1070,7 +1070,7 @@
 	fire_delay = 1.5
 	durability = 150
 	w_class = 4
-	spread = 12
+	spread = 36
 	slowdown = 0.10
 	recoil = 0.9
 	damagelose = 0.25
@@ -1092,7 +1092,7 @@
 	durability = 70
 	slowdown = 0.15
 	w_class = 4
-	spread = 5
+	spread = 15
 	recoil = 0.6
 	damagelose = 0.2
 	can_scope = 0
@@ -1115,7 +1115,7 @@
 	durability = 70
 	slowdown = 0.15
 	w_class = 4
-	spread = 5
+	spread = 15
 	recoil = 0.6
 	damagelose = 0.2
 	can_scope = 0
@@ -1134,7 +1134,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 75
 	w_class = 4
-	spread = 2
+	spread = 6
 	slowdown = 0.15
 	recoil = 0.3
 	damagelose = 0.15
@@ -1155,7 +1155,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	durability = 75
 	w_class = 4
-	spread = 2
+	spread = 6
 	recoil = 0.3
 	slowdown = 0.15
 	damagelose = 0.15
@@ -1181,7 +1181,7 @@
 	durability = 70
 	slowdown = 0.15
 	w_class = 4
-	spread = 5
+	spread = 15
 	recoil = 0.6
 	damagelose = 0.2
 	can_scope = 0
@@ -1207,7 +1207,7 @@
 	durability = 70
 	slowdown = 0.15
 	w_class = 4
-	spread = 5
+	spread = 15
 	recoil = 0.6
 	damagelose = 0.2
 	can_scope = 0
@@ -1228,7 +1228,7 @@
 	pin = /obj/item/firing_pin
 	durability = 40
 	w_class = 4
-	spread = 18
+	spread = 54
 	recoil = 3
 	randomspread = 6
 	damagelose = 0.25
@@ -1249,7 +1249,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 100
 	w_class = 3
-	spread = 7
+	spread = 21
 	recoil = 0.2
 	damagelose = 0.4
 	can_scope = 1
@@ -1272,7 +1272,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 80
 	w_class = 3
-	spread = 8
+	spread = 24
 	recoil = 0.15
 	damagelose = 0.25
 	can_scope = 0
@@ -1294,7 +1294,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 50
 	w_class = 4
-	spread = 9
+	spread = 24
 	recoil = 0.25
 	damagelose = 0.5
 	can_scope = 0
@@ -1317,7 +1317,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	durability = 75
 	w_class = 4
-	spread = 6
+	spread = 18
 	recoil = 0.3
 	damagelose = 0.45
 	can_scope = 0
@@ -1336,6 +1336,8 @@
 	fire_delay = 0.8
 	can_suppress = 1
 	burst_size = 3
+	spread = 15
+	recoil = 0.2
 	automatic = 1
 	can_scope = 1
 	tac_reloads = TRUE//tacticool
@@ -1366,7 +1368,7 @@
 	pin = /obj/item/firing_pin
 	durability = 80
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 0.4
 	damagelose = 0.2
 	can_scope = 1
@@ -1392,7 +1394,7 @@
 	pin = /obj/item/firing_pin
 	durability = 200
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 0.4
 	damagelose = 0.2
 	can_scope = 1
@@ -1421,7 +1423,7 @@
 	pin = /obj/item/firing_pin
 	durability = 75
 	w_class = 4
-	spread = 4
+	spread = 12
 	recoil = 0.4
 	damagelose = 0.1
 	can_scope = 0
@@ -1445,7 +1447,7 @@
 	burst_size = 3
 	fire_delay = 1.3
 	w_class = 4
-	spread = 3
+	spread = 9
 	recoil = 0.3
 	damagelose = 0.2
 	can_scope = 0
@@ -1474,7 +1476,7 @@
 	pin = /obj/item/firing_pin
 	durability = 150
 	w_class = 4
-	spread = 3
+	spread = 9
 	recoil = 0.35
 	damagelose = 0.1
 	can_scope = 0
@@ -1500,7 +1502,7 @@
 	pin = /obj/item/firing_pin
 	durability = 250
 	w_class = 4
-	spread = 3
+	spread = 9
 	recoil = 0.35
 	damagelose = 0.15
 	can_scope = 0
@@ -1529,7 +1531,7 @@
 	pin = /obj/item/firing_pin
 	durability = 250
 	w_class = 4
-	spread = 1
+	spread = 4
 	recoil = 0.35
 	damagelose = 0.15
 	can_scope = 0
@@ -1556,7 +1558,7 @@
 	automatic = 1
 	burst_size = 5
 	fire_delay = 1.8
-	spread = 6
+	spread = 18
 	recoil = 1
 	damagelose = 0.25
 	pin = /obj/item/firing_pin
@@ -1589,7 +1591,7 @@
 	fire_delay = 1.2
 	pin = /obj/item/firing_pin
 	w_class = 4
-	spread = 3
+	spread = 9
 	recoil = 0.3
 	damagelose = 0.1
 	can_scope = 1
@@ -1649,7 +1651,7 @@
 	force = 15
 	pin = /obj/item/firing_pin
 	w_class = 4
-	spread = 1
+	spread = 3
 	recoil = 0.5
 	damagelose = 0
 	can_scope = 0
@@ -1674,7 +1676,7 @@
 	burst_size = 3
 	pin = /obj/item/firing_pin
 	w_class = 4
-	spread = 5
+	spread = 15
 	recoil = 0.4
 	damagelose = 0.35
 	can_scope = 0

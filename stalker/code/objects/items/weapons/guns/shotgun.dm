@@ -15,7 +15,7 @@
 	durability = 150
 	sawn_desc = "Much more compact and lighter than the new double-barreled gun, but effective only in close combat."
 	randomspread = 0
-	spread = 12
+	spread = 24
 	damagelose = 0.3
 	distro = 25
 	can_scope = 1
@@ -57,7 +57,7 @@
 	recoil = 0.6
 	force = 15
 	durability = 150
-	spread = 6
+	spread = 12
 	slowdown = 0.15
 	damagelose = 0.15
 	distro = 10
@@ -79,7 +79,7 @@
 	w_class = 4
 	slowdown = 0.15
 	randomspread = 0
-	spread = 12
+	spread = 24
 	force = 15
 	damagelose = 0.3
 	distro = 25
@@ -102,7 +102,7 @@
 	w_class = 4
 	slowdown = 0.15
 	randomspread = 0
-	spread = 10
+	spread = 20
 	force = 15
 	damagelose = 0.3
 	distro = 16
@@ -122,7 +122,7 @@
 	w_class = 3
 	durability = 75
 	force = 15
-	spread = 20
+	spread = 40
 	recoil = 2.5
 	damagelose = 0.45
 	distro = 35
@@ -143,7 +143,7 @@
 	w_class = 4
 	slowdown = 0.15
 	randomspread = 0
-	spread = 8
+	spread = 16
 	force = 15
 	damagelose = 0.35
 	distro = 12
@@ -167,7 +167,7 @@
 	w_class = 4
 	slowdown = 0.15
 	randomspread = 1
-	spread = 3
+	spread = 5
 	force = 15
 	damagelose = 0.1
 	weapon_weight = WEAPON_MEDIUM
@@ -188,7 +188,7 @@
 	w_class = 4
 	slowdown = 0.15
 	randomspread = 1
-	spread = 4
+	spread = 7
 	force = 15
 	damagelose = 0.1
 	weapon_weight = WEAPON_MEDIUM
@@ -207,7 +207,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 6
 	w_class = 2
 	randomspread = 3
-	spread = 10
+	spread = 30
 	force = 10
 	damagelose = 0.3
 	weapon_weight = WEAPON_MEDIUM
@@ -227,7 +227,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 1
 	w_class = 4
 	randomspread = 1
-	spread = 4
+	spread = 8
 	slowdown = 0.15
 	force = 15
 	damagelose = 0.1
@@ -248,7 +248,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 1
 	w_class = 4
 	randomspread = 1
-	spread = 4
+	spread = 8
 	slowdown = 0.15
 	force = 15
 	damagelose = 0.1
@@ -269,7 +269,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 1
 	w_class = 4
 	randomspread = 1
-	spread = 4
+	spread = 8
 	slowdown = 0.15
 	force = 15
 	damagelose = 0.1
@@ -290,7 +290,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 3
 	w_class = 4
 	randomspread = 6
-	spread = 9
+	spread = 18
 	slowdown = 0.15
 	force = 15
 	damagelose = 0.1
@@ -317,7 +317,7 @@ obj/item/gun/ballistic/rifle/boltaction/mosinobrez
 	recoil = 3
 	w_class = 4
 	randomspread = 0
-	spread = 0
+	spread = 4
 	force = 15
 	damagelose = 0
 	weapon_weight = WEAPON_HEAVY

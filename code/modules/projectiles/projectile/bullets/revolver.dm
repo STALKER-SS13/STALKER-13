@@ -3,7 +3,7 @@
 /obj/item/projectile/bullet/n762
 	name = "7.62x38mmR bullet"
 	damage = 20
-
+	spread = 4
 // .50AE (Desert Eagle)
 
 /obj/item/projectile/bullet/a50AE

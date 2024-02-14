@@ -8,6 +8,12 @@
 	hitsound = 'sound/effects/fleshhit.ogg'
 	hitsound_wall = "ricochet"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
-
-
-
+	hitscan = TRUE
+	tracer_type = /obj/effect/projectile/tracer/bullet
+	muzzle_type = /obj/effect/projectile/muzzle/bullet
+	hitscan_light_intensity = 0.75
+	hitscan_light_range = 0.5
+	muzzle_flash_intensity = 0.75
+	muzzle_flash_range = 0.5
+	impact_light_intensity = 0
+	impact_light_range = 0

@@ -86,6 +86,7 @@
 	///obj/structure/stalker/okno/redbrick/double2)
 	)
 	smooth = SMOOTH_TRUE
+	flags_1 = CHECK_RICOCHET_1
 
 /turf/closed/wall/stalker/Initialize()
 	..()
@@ -144,6 +145,7 @@
 	icon = 'icons/turf/shuttle.dmi'
 	icon_state = "wall1"
 	smooth = SMOOTH_FALSE
+	flags_1 = CHECK_RICOCHET_1
 
 /turf/closed/wall/stalker/ship
 	name = "hull"

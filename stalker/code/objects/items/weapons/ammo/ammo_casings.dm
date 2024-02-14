@@ -3,6 +3,9 @@
 	caliber = "9x18mm"
 	projectile_type = /obj/item/projectile/bullet/bullet9x18
 
+/obj/item/ammo_casing/c9x18/zombie
+	projectile_type = /obj/item/projectile/bullet/bullet9x18/zombie
+
 /obj/item/ammo_casing/c9x18/P
 	desc = "A 9x18mm +P+ bullet casing."
 	projectile_type = /obj/item/projectile/bullet/bullet9x18P
@@ -21,6 +24,9 @@
 	caliber = "7.62x39"
 	projectile_type = /obj/item/projectile/bullet/bullet762x39
 
+/obj/item/ammo_casing/c762x39/zombie
+	projectile_type = /obj/item/projectile/bullet/bullet762x39/zombie
+
 /obj/item/ammo_casing/c762x39/AP
 	desc = "A 7.62x39mm AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/bullet762x39AP
@@ -31,6 +37,9 @@
 	pellets = 6                                                     //pellets variable? this might come in useful for some unconventional ammo.
 	variance = 5
 	projectile_type = /obj/item/projectile/bullet/bullet12x70
+
+/obj/item/ammo_casing/shotgun/c12x70/zombie
+	projectile_type = /obj/item/projectile/bullet/bullet12x70/zombie
 
 /obj/item/ammo_casing/shotgun/c12x70P
 	desc = "A 12x70mm slug bullet casing."
@@ -76,6 +85,9 @@
 	desc = "A 5.55x45mm bullet."
 	caliber = "5.56x45"
 	projectile_type = /obj/item/projectile/bullet/bullet556x45
+
+/obj/item/ammo_casing/c556x45/zombie
+	projectile_type = /obj/item/projectile/bullet/bullet556x45/zombie
 
 /obj/item/ammo_casing/c556x45/AP
 	desc = "A 5.55x45mm AP bullet."

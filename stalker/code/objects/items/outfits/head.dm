@@ -13,6 +13,7 @@
 	desc = "A desperately outdated steel army helmet without any additions. Provides no protection against anomalies or radiation, but can deflect bullets. This helmet was never particularly popular in the Zone, except for use in brief armed conflicts between factions."
 	icon_state = "steelhelmet"
 	item_state = "steelhelmet"
+	slowdown = 0.15
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
@@ -25,6 +26,7 @@
 	desc = "The SSh-68 replaced the general-army SSh-60 helmet. It differs from its predecessor in greater durability, a large inclination of the front part and short side boards."
 	icon_state = "ssh-68"
 	item_state = "ssh-68"
+	slowdown = 0.025
 	armor = list("melee" = 25, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
@@ -39,6 +41,7 @@
 	item_state = "TSH-4M"
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
+	slowdown = 0.025
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 0, "energy" = 15, "bomb" = 5, "bio" = 5, "rad" = 10, "fire" = 30, "acid" = 0, "psy" = 5)
 	flags_inv = HIDEHAIR
 	resistance_flags = UNACIDABLE|FIRE_PROOF
@@ -69,6 +72,7 @@
 	item_color = "tactical"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.15
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -87,6 +91,7 @@
 	item_color = "lighttactical"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.1
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 5)
 	brightness_on = 3 //luminosity when on
 	flags_cover = HEADCOVERSEYES
@@ -106,6 +111,7 @@
 	item_color = "gof"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.1
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 10)
 	brightness_on = 3 //luminosity when on
 	flags_cover = HEADCOVERSEYES
@@ -124,6 +130,7 @@
 	item_state = "assaultmerc"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.25
 	armor = list("melee" = 50, "bullet" = 75, "laser" = 25, "energy" = 50, "bomb" = 50, "bio" = 0, "rad" = 20, "fire" = 50, "acid" = 0, "psy" = 10)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -150,6 +157,7 @@
 	icon_state = "sphera"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.2
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 0, "energy" = 35, "bomb" = 0, "bio" = 30, "rad" = 60, "fire" = 35, "acid" = 0, "psy" = 20)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -168,6 +176,7 @@
 	icon_state = "helmet_skat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.225
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 10)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -184,6 +193,7 @@
 	desc = "An aluminum-cardboard helmet made with sprats with pockets for change and armor. Usually comes with vodka. Not popular enough in the Zone due to Petrovich's conspiracy. You feel losing a bit of your sanity by just thinking about wearing this for a minute. "
 	icon_state = "helmet_skot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	slowdown = 0.225
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 60, "energy" = 70, "bomb" = 70, "bio" = 50, "rad" = 80, "fire" = 70, "acid" = 0, "psy" = 50)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -214,6 +224,7 @@
 	item_state = "maska_1"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
+	slowdown = 0.12
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 20, "acid" = 0, "psy" = 12)
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = UNACIDABLE
@@ -314,6 +325,7 @@
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	flags_inv = HIDEEARS
 	dynamic_hair_suffix = ""
+	slowdown = 0.1
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 0, "energy" = 20, "bomb" = 15, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0, "psy" = 1)
 	resistance_flags = UNACIDABLE
 	durability = 300

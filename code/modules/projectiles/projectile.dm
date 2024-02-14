@@ -44,7 +44,7 @@
 	animate_movement = 0	//Use SLIDE_STEPS in conjunction with legacy
 	var/ricochets = 0
 	var/ricochets_max = 2
-	var/ricochet_chance = 30
+	var/ricochet_chance = 5
 
 	//Hitscan
 	var/hitscan = FALSE		//Whether this is hitscan. If it is, speed is basically ignored.
@@ -220,7 +220,7 @@
 /obj/item/projectile/Bump(atom/A)
 	var/datum/point/pcache = trajectory.copy_to()
 	var/turf/T = get_turf(A)
-	if(check_ricochet(A) && check_ricochet_flag(A) && ricochets < ricochets_max)
+	if(check_ricochet(A) && ricochets < ricochets_max)
 		ricochets++
 		if(A.handle_ricochet(src))
 			on_ricochet(A)
@@ -303,11 +303,6 @@
 
 /obj/item/projectile/proc/check_ricochet()
 	if(prob(ricochet_chance))
-		return TRUE
-	return FALSE
-
-/obj/item/projectile/proc/check_ricochet_flag(atom/A)
-	if(A.flags_1 & CHECK_RICOCHET_1)
 		return TRUE
 	return FALSE
 

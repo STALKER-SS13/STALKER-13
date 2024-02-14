@@ -181,6 +181,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.05
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
@@ -200,7 +201,8 @@
 
 /obj/item/clothing/head/hooded/stalker/kozhanka
 	icon_state = "winterhood_kozhanka"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/kozhanka/white
@@ -209,7 +211,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kozhanka_wh
 
 /obj/item/clothing/head/hooded/stalker/kozhanka_wh
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	icon_state = "winterhood_kozhanka_wh"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -219,7 +222,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kozhanka_dolg
 
 /obj/item/clothing/head/hooded/stalker/kozhanka_dolg
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	icon_state = "winterhood_dolg"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -228,12 +232,14 @@
 	desc = "Traditional bandit clothing - a leather jacket with armor pieces sewed in. The protection it provides is completely inadequate for the harsh conditions of the Zone."
 	icon_state = "banditka"
 	item_state = "ro_suit"
+	slowdown = 0.075
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/banditka
 	durability = 75
 
 /obj/item/clothing/head/hooded/stalker/banditka
-	armor = list("melee" = 15, "bullet" = 0, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	slowdown = 0.075
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	icon_state = "winterhood_banditka"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -241,6 +247,7 @@
 	name = "Chain-mail jacket"
 	desc = "The usual weak bandit body armor, but chain mail is sewn into the lining. Almost anyone can do this, but not everyone will have enough patience."
 	//icon_state = "banditka_unique"
+	slowdown = 0.15
 	armor = list("melee" = 15, "bullet" = 28, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	unique = 1
 
@@ -248,6 +255,7 @@
 	name = "Anomaly jacket"
 	desc = "This jacket was removed from the corpse of one of the stalkers who died in the 'jelly' anomaly. After lying in an anomaly for a long time, the jacket has acquired the ability to speed up the wearer's metabolism."
 	icon_state = "kozhanka_unique"
+	slowdown = 0.05
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 30, "fire" = 10, "psy" = 0)
 	unique = 0
 
@@ -256,12 +264,14 @@
 	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it. Apart of looking cool, it provides light protection against bullets and melee attacks. Has a very minor anti-radiation & Biological protection. Better than nothing."
 	icon_state = "renegadecoat"
 	item_state = "renegadecoat_t"
+	slowdown = 0.075
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/renegade
 	durability = 75
 
 /obj/item/clothing/head/hooded/stalker/renegade
-	armor = list("melee" = 15, "bullet" = 0, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	slowdown = 0.075
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
 	icon_state = "winterhood_renegade"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -274,6 +284,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.1
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 15, "energy" = 30, "bomb" = 0, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
@@ -284,7 +295,8 @@
 
 /obj/item/clothing/head/hooded/stalker/tancoat
 	icon_state = "winterhood_tancoat"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.1
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/kozhanka
@@ -296,6 +308,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.05
 	armor = list(melee = 10, bullet = 10, laser = 10,burn = 10, bomb = 10, bio = 10, rad = 10, electro = 10, psy = 0)
 	durability = 75
 	//�����������//
@@ -332,13 +345,15 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.125
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/kombez
-	armor = list("melee" = 35, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	slowdown = 0.125
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_kombez"
@@ -358,13 +373,15 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 120
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.125
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/strelok
 	durability = 400
 	unique = 1
 
 /obj/item/clothing/head/hooded/stalker/strelok
-	armor = list("melee" = 65, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	slowdown = 0.125
+	armor = list("melee" = 65, "bullet" = 	35, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_kombez"
@@ -379,6 +396,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.05
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	resistance_flags = UNACIDABLE
@@ -388,7 +406,8 @@
 
 /obj/item/clothing/head/hooded/stalker/cs_hood
 	icon_state = "winterhood_cs"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/suit/hooded/cs_medium
@@ -404,13 +423,15 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.125
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/cs_medium
 	durability = 250
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/cs_medium
-	armor = list("melee" = 35, "bullet" = 	0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
+	slowdown = 0.125
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_cs_medium"
@@ -429,6 +450,7 @@
 	resistance_flags = UNACIDABLE
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.175
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 50, "rad" = 50, "fire" = 50, "psy" = 0)
 	durability = 200
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
@@ -455,12 +477,14 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	slowdown = 0.075
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 30, "bomb" = 0, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/bandit
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/bandit
-	armor = list("melee" = 15, "bullet" = 0, "laser" = 15, "energy" = 30, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
+	slowdown = 0.075
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 30, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
 	icon_state = "winterhood_banditcoat"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -470,7 +494,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/stalker/banditbrown
 
 /obj/item/clothing/head/hooded/stalker/banditbrown
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 15, "energy" = 30, "bomb" = 0, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
+	slowdown = 0.075
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 30, "bomb" = 0, "bio" = 10, "rad" = 30, "fire" = 30, "psy" = 0)
 	icon_state = "winterhood_banditcoatbrown"
 	flags_inv = HIDEEARS|HIDEHAIR
 
@@ -539,6 +564,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.3
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 90, "energy" = 90, "bomb" = 40, "bio" = 90, "rad" = 95, "fire" = 90, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/ecolog
 	resistance_flags = FIRE_PROOF
@@ -547,6 +573,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/ecolog
 	name = "SSP-99 helmet"
+	slowdown = 0.075
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 90, "energy" = 90, "bomb" = 40, "bio" = 90, "rad" = 95, "fire" = 90, "psy" = 20)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -570,6 +597,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.15
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 90, "energy" = 90, "bomb" = 60, "bio" = 90, "rad" = 90, "fire" = 90, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/ecologm
 	resistance_flags = FIRE_PROOF
@@ -578,6 +606,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/ecologm
 	name = "SSP-99M helmet"
+	slowdown = 0.075
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 90, "energy" = 90, "bomb" = 60, "bio" = 90, "rad" = 90, "fire" = 90, "psy" = 25)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -602,6 +631,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.3
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 80, "energy" = 80, "bomb" = 50, "bio" = 70, "rad" = 80, "fire" = 80, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/seva
 	resistance_flags = FIRE_PROOF
@@ -610,6 +640,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/seva
 	name = "SEVA helmet"
+	slowdown = 0.1
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 80, "energy" = 80, "bomb" = 50, "bio" = 70, "rad" = 80, "fire" = 80, "psy" = 15)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -642,6 +673,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.25
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 75, "bomb" = 50, "bio" = 50, "rad" = 75, "fire" = 75, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/psz9md
 	resistance_flags = FIRE_PROOF
@@ -650,6 +682,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/psz9md
 	name = "PSZ-9MD helmet"
+	slowdown = 0.1
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 65, "bomb" = 50, "bio" = 50, "rad" = 70, "fire" = 65, "psy" = 20)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -675,6 +708,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.25
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 75, "bomb" = 50, "bio" = 50, "rad" = 75, "fire" = 75, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/sin
 	resistance_flags = FIRE_PROOF
@@ -683,6 +717,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/sin
 	name = "Sinner suit Mask"
+	slowdown = 0.1
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80, "energy" = 65, "bomb" = 50, "bio" = 50, "rad" = 70, "fire" = 65, "psy" = 20)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -701,7 +736,7 @@
 	desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container."
 	icon_state = "exoskelet"
 	item_state = "syndicate-black"
-	slowdown = 0.15
+	slowdown = 0.4
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -714,6 +749,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/exoskelet
 	name = "Exoskeleton helmet"
+	slowdown = 0.1
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 50, "energy" = 30, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 50, "psy" = 30)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -793,6 +829,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
 	resistance_flags = UNACIDABLE
+	slowdown = 0.2
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 10, "energy" = 25, "bomb" = 10, "bio" = 0, "rad" = 20, "fire" = 25, "psy" = 0)
 
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
@@ -812,7 +849,8 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = UNACIDABLE
-	armor = list(melee = 30, bullet = 40, laser = 10,burn = 25, bomb = 10, bio = 0, rad = 15, electro = 25, psy = 0)
+	slowdown = 0.2
+	armor = list("melee" = 30, "bullet" = 40, "laser" = 10, "energy" = 25, "bomb" = 10, "bio" = 0, "rad" = 20, "fire" = 25, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 125
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
@@ -827,6 +865,7 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.225
 	armor = list(melee = 20, bullet = 45, laser = 10,burn = 15, bomb = 10, bio = 0, rad = 10, electro = 15, psy = 0)
 	durability = 150
 
@@ -840,6 +879,7 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.15
 	armor = list(melee = 20, bullet = 30, laser = 10,burn = 10, bomb = 35, bio = 0, rad = 0, electro = 0, psy = 0)
 	durability = 150
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
@@ -855,6 +895,7 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.15
 	armor = list(melee = 45, bullet = 30, laser = 10,burn = 10, bomb = 20, bio = 0, rad = 0, electro = 0, psy = 0)
 	durability = 150
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
@@ -870,6 +911,7 @@
 	heat_protection = CHEST|GROIN
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = UNACIDABLE
+	slowdown = 0.275
 	armor = list("melee" = 50, "bullet" = 55, "laser" = 45, "energy" = 30, "bomb" = 60, "bio" = 20, "rad" = 20, "fire" = 20, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 190
@@ -886,6 +928,7 @@
 	heat_protection = CHEST|GROIN
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = UNACIDABLE
+	slowdown = 0.4
 	armor = list("melee" = 85, "bullet" = 80, "laser" = 45, "energy" = 60, "bomb" = 80, "bio" = 30, "rad" = 30, "fire" = 20, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 150
@@ -912,6 +955,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.3
 	armor = list("melee" = 40, "bullet" = 60, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 30, "rad" = 30, "fire" = 30, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 150
@@ -929,6 +973,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.3
 	armor = list("melee" = 40, "bullet" = 60, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 35, "rad" = 40, "fire" = 35, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 150
@@ -946,12 +991,14 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.175
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 30, "bomb" = 40, "bio" = 30, "rad" = 30, "fire" = 30, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/monolith
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/monolith
-	armor = list("melee" = 35, "bullet" = 0, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 30, "fire" = 50, "psy" = 0)
+	slowdown = 0.025
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 50, "rad" = 30, "fire" = 50, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_monolit"
@@ -967,6 +1014,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.25
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/monolith
 	resistance_flags = FIRE_PROOF
@@ -975,6 +1023,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/monolith
 	name = "monolith scientific suit helmet"
+	slowdown = 0.5
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -994,6 +1043,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.25
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/sealed/merc
 	resistance_flags = FIRE_PROOF
@@ -1002,6 +1052,7 @@
 
 /obj/item/clothing/head/hooded/stalker/sealed/merc
 	name = "merc ace suit helmet"
+	slowdown = 0.5
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 65, "rad" = 75, "fire" = 60, "psy" = 0)
 	heat_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -1024,6 +1075,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
 	resistance_flags = UNACIDABLE
+	slowdown = 0.35
 	armor = list("melee" = 60, "bullet" = 70, "laser" = 60, "energy" = 50, "bomb" = 70, "bio" = 35, "rad" = 35, "fire" = 50, "psy" = 0)
 	durability = 200
 	//МОДИФИКАЦИИ//
@@ -1040,6 +1092,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.175
 	armor = list("melee" = 30, "bullet" = 35, "laser" = 50, "energy" = 35, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 35, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/ps5m
 	durability = 200
@@ -1063,6 +1116,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
 	resistance_flags = UNACIDABLE
+	slowdown = 0.325
 	armor = list("melee" = 75, "bullet" = 65, "laser" = 50, "energy" = 40, "bomb" = 80, "bio" = 35, "rad" = 45, "fire" = 40, "psy" = 0)
 	durability = 200
 	//МОДИФИКАЦИИ//
@@ -1079,12 +1133,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.225
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/mercenary
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/mercenary
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_mercenary"
@@ -1100,12 +1156,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.225
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/eco_mercenary
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/eco_mercenary
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_eco_merc"
@@ -1121,12 +1179,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.125
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 50, "energy" = 65, "bomb" = 30, "bio" = 50, "rad" = 40, "fire" = 65, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/veter
 	durability = 200
 
 /obj/item/clothing/head/hooded/stalker/veter
-	armor = list("melee" = 25, "bullet" = 0, "laser" = 50, "energy" = 45, "bomb" = 0, "bio" = 20, "rad" = 40, "fire" = 45, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 50, "energy" = 45, "bomb" = 0, "bio" = 20, "rad" = 40, "fire" = 45, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_strazh"
@@ -1142,6 +1202,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.25
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 50, "bomb" = 40, "bio" = 50, "rad" = 40, "fire" = 50, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/strazh
@@ -1150,7 +1211,8 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/strazh
-	armor = list("melee" = 25, "bullet" = 0, "laser" = 50, "energy" = 45, "bomb" = 0, "bio" = 20, "rad" = 40, "fire" = 45, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 50, "energy" = 45, "bomb" = 0, "bio" = 20, "rad" = 40, "fire" = 45, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_wind_of_freedom"
@@ -1166,6 +1228,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.325
 	armor = list("melee" = 50, "bullet" = 65, "laser" = 40, "energy" = 20, "bomb" = 80, "bio" = 20, "rad" = 25, "fire" = 20, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 	durability = 250
@@ -1183,12 +1246,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.225
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez_bandit
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/kombez_bandit
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_combez_bandit"
@@ -1204,12 +1269,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.175
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/kombez_renegade
 	durability = 150
 
 /obj/item/clothing/head/hooded/stalker/kombez_renegade
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
+	slowdown = 0.125
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	icon_state = "winterhood_combez_renegade"
@@ -1226,6 +1293,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.225
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	durability = 150
 
@@ -1237,6 +1305,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	slowdown = 0.05
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
 
@@ -1247,7 +1316,8 @@
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
 /obj/item/clothing/head/hooded/stalker/ghillie
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
+	slowdown = 0.05
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	icon_state = "ghillie"
 
@@ -1262,6 +1332,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	flags_inv = HIDEJUMPSUIT
+	slowdown = 0.225
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 10, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 15, "psy" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/stalker/banditbrown
 	durability = 150

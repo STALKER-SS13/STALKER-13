@@ -1368,6 +1368,7 @@ GLOBAL_LIST_EMPTY(stalker_caches)
 	var/cache_chance = 0	//percent
 	var/cache_quality = -1	//from 0 to 3, -1 for random
 	var/cache_size = 0		//from 0 to 3
+	var/resistance_flags = INDESTRUCTIBLE
 	var/datum/component/storage/concrete/pockets/stalker/internal_cache
 
 /obj/structure/stalker/cacheable/Initialize()

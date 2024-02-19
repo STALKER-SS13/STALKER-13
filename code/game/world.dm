@@ -239,9 +239,10 @@ GLOBAL_VAR(restart_counter)
 /world/proc/update_status()
 	var/s = ""
 
-	s += "<center><a href=\"https://discord.gg/ujfFgjKZbk\"><big><b>S.T.A.L.K.E.R.: 13</b></big><br>" //[config.server_name]
+	s += "<center><a href=\"https://discord.gg/ujfFgjKZbk\"><big><b>S.T.A.L.K.E.R. 13</b></big><br>" //[config.server_name]
 	s += "<img src=\"https://frosty.space/styles/stalbanhub.png\"></a></center>"
-	s += "Map: <b>Zona (255x1000)</b><br>"
+	s += "In Development! Report bugs on Discord, and we try to fix them!</b><br>"
+	s += "Map: <b>The Zone</b><br>"
 	if(GLOB.master_mode)
 		s += "Mode: <b>[GLOB.master_mode]</b><br>"
 	else

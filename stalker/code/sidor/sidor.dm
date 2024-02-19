@@ -214,7 +214,7 @@
 			return I.cost
 	return 0
 
-var/list/sidorRooms = list()
+/*var/list/sidorRooms = list()
 //var/obj/sidor_enter/sidorEnter = null
 
 /obj/sidor_enter
@@ -257,7 +257,7 @@ var/list/sidorRooms = list()
 	if(istype(A, /mob/living/carbon/human))
 		A.loc = A.previous_teleport_dest
 		occupant = null
-
+*/
 var/global/sidoritems = list(
 		new /sidoritem/ak74,
         new /sidoritem/aksu74,

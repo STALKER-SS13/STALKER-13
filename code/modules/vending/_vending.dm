@@ -46,6 +46,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	payment_department = ACCOUNT_SRV
 	var/active = 1 //No sales pitches if off!
 	var/vend_ready = 1 //Are we ready to vend?? Is it time??
+	var/resistance_flags = INDESTRUCTIBLE
 
 	// To be filled out at compile time
 	var/list/products = list() //For each, use the following pattern:

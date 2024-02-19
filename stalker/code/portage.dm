@@ -86,6 +86,7 @@
 	///obj/structure/stalker/okno/redbrick/double2)
 	)
 	smooth = SMOOTH_TRUE
+	var/resistance_flags = INDESTRUCTIBLE
 
 /turf/closed/wall/stalker/Initialize()
 	..()
@@ -284,7 +285,7 @@
 	icon = 'stalker/icons/floor.dmi'
 	icon_state = "ladder_right"
 
-
+/*
 var/list/sidorRooms = list()
 
 /obj/sidor_enter
@@ -329,3 +330,4 @@ var/list/sidorRooms = list()
 	if(istype(A, /mob/living/carbon/human))
 		A.loc = A.previous_teleport_dest
 		occupant = null
+*/

@@ -22,7 +22,7 @@
 	max_integrity = 200
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0)
 	var/state = 0
-	var/list/allowed_books = list(/obj/item/book, /obj/item/spellbook, /obj/item/storage/book) //Things allowed in the bookcase
+	var/list/allowed_books = list(/obj/item/book, /obj/item/storage/book) //Things allowed in the bookcase
 
 /obj/structure/bookcase/examine(mob/user)
 	..()
@@ -160,13 +160,15 @@
 
 /obj/structure/bookcase/manuals/engineering/Initialize()
 	. = ..()
-	new /obj/item/book/manual/wiki/engineering_construction(src)
-	new /obj/item/book/manual/wiki/engineering_hacking(src)
-	new /obj/item/book/manual/wiki/engineering_guide(src)
-	new /obj/item/book/manual/wiki/engineering_singulo_tesla(src)
-	new /obj/item/book/manual/wiki/robotics_cyborgs(src)
+	new /obj/item/book/manual/theprophetdeath(src)
+	new /obj/item/book/manual/theprophetfriendship(src)
+	new /obj/item/book/manual/theprophetpain(src)
+	new /obj/item/book/manual/solaris(src)
+	new /obj/item/book/manual/roadsidepicnic(src)
+	new /obj/item/book/manual/metro2033(src)
+	new /obj/item/book/manual/crimeandpunishment(src)
+	new /obj/item/book/manual/allquietonthewesternfront(src)
 	update_icon()
-
 
 /obj/structure/bookcase/manuals/research_and_development
 	name = "\improper R&D manuals bookcase"

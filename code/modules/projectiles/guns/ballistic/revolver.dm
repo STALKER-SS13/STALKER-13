@@ -146,7 +146,9 @@
 	name = "nagant m1895"
 	desc = "An old model of revolver that originated in Russia. Able to be suppressed. Uses 7.62x38mmR ammo."
 	icon_state = "nagant"
-	can_suppress = TRUE
+	can_suppress = FALSE
+	spread = 30
+	recoil = 3
 	w_class = 2
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 

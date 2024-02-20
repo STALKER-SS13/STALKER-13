@@ -11,8 +11,6 @@
 	resistance_flags = FLAMMABLE
 	max_integrity = 40
 	novariants = FALSE
-	var/min_threshold = -220
-	var/max_threshold = 100
 	var/heal_brute = 0
 	var/heal_burn = 0
 	var/stop_bleeding = 0
@@ -85,12 +83,6 @@
 		if(!affecting) //Missing limb?
 			to_chat(user, "<span class='warning'>[C] doesn't have \a [parse_zone(user.zone_selected)]!</span>")
 			return
-		if(affecting.get_damage() > max_threshold)
-			to_chat(user, "<span class='warning'>Limb is too damaged for [src] to have any effect. It goes to waste.</span>")
-			return
-		if(affecting.get_damage() < min_threshold)
-			to_chat(user, "<span class='warning'>Limb is not damaged enough for [src] to have any effect. It goes to waste.</span>")
-			return
 		if(ishuman(C))
 			var/mob/living/carbon/human/H = C
 			if(stop_bleeding)
@@ -113,8 +105,7 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	max_threshold = 70
-	heal_brute = 25
+	heal_brute = 30
 	self_delay = 20
 	grind_results = list("styptic_powder" = 10)
 
@@ -169,8 +160,7 @@
 	icon_state = "ointment"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_burn = 25
-	max_threshold = 70
+	heal_burn = 30
 	self_delay = 20
 	grind_results = list("silver_sulfadiazine" = 10)
 
@@ -186,9 +176,8 @@
 	amount = 14
 	max_amount = 14
 	repeating = 1
-	max_threshold = 40
 	heal_brute = 10
-	self_delay = 5
+	self_delay = 10
 	grind_results = null
 
 /obj/item/stack/medical/mesh
@@ -201,9 +190,8 @@
 	amount = 14
 	max_amount = 14
 	repeating = 1
-	max_threshold = 40
 	heal_burn = 10
-	self_delay = 5
+	self_delay = 10
 	grind_results = null
 
 /obj/item/stack/medical/trauma_kit
@@ -215,7 +203,7 @@
 	righthand_file = null
 	amount = 6
 	max_amount = 6
-	heal_brute = 40
+	heal_brute = 45
 	self_delay = 35
 	grind_results = null
 
@@ -228,6 +216,6 @@
 	righthand_file = null
 	amount = 6
 	max_amount = 6
-	heal_burn = 40
+	heal_burn = 45
 	self_delay = 35
 	grind_results = null

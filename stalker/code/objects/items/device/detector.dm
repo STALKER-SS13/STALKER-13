@@ -45,6 +45,17 @@
 	icon_state_null = "veles_null"
 	level_s = 4
 
+/*/obj/item/detector/svarog
+	name = "svarog"
+	desc = "A prototype of an expanded functionality anomalous frequency scanner. This device comes with a program used to identify static areas of anomalous activity stored in its database, while retaining the ability to locate artifacts. The position of anomalous areas and artifacts is displayed on a special screen. The artifact search mode, which can be activated by opening the front LED display, has been modified to detect anomalous formations currently unknown to science."
+	icon_state = "veles_off"
+	icon_state_inactive = "veles_off"
+	icon_state_active = "veles_on"
+	icon_state_null = "veles_null"
+	level_s = 4
+	*/
+	// NOTE : Placeholder code for svarog. Needs sprites to be implemented! - Sechs
+
 /obj/item/detector/Initialize()
 	. = ..()
 	arts = list()

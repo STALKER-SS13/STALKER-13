@@ -9,9 +9,9 @@
 		CheckControl(C)
 		if(SSblowout.isblowout && C.inshelter)
 			if(C.client && (C.client.prefs.chat_toggles & CHAT_LANGUAGE))
-				to_chat(C, "<big><span class='warning'>You leave the shelter.</span></big>")
+				to_chat(C, "<big><span class='warning'>You have left a sheltered area from the emission.</span></big>")
 			else
-				to_chat(C, "<big><span class='warning'>You leave the shelter.</span></big>")
+				to_chat(C, "<big><span class='warning'>You have left a sheltered area from the emission.</span></big>")
 			C.overlay_fullscreen("blowjob", /obj/screen/fullscreen/color_vision/blowjob)
 		C.inshelter = 0
 
@@ -22,9 +22,9 @@
 		CheckControl(C)
 		if(SSblowout.isblowout && !C.inshelter)
 			if(C.client && (C.client.prefs.chat_toggles & CHAT_LANGUAGE))
-				to_chat(C, "<big><span class='notice'>You enter the shelter.</span></big>")
+				to_chat(C, "<big><span class='notice'>You have entered a sheltered area from the emission.</span></big>")
 			else
-				to_chat(C, "<big><span class='notice'>You enter the shelter.</span></big>")
+				to_chat(C, "<big><span class='notice'>You have entered a sheltered area from the emission.</span></big>")
 			C.clear_fullscreen("blowjob")
 		C.inshelter = 1
 
@@ -124,10 +124,10 @@ SUBSYSTEM_DEF(blowout)
 
 	for(var/mob/living/carbon/C in GLOB.player_list)
 		if(!C.inshelter)
-			to_chat(C, "<big><span class='warning'>You urgently need to look for shelter, the emission will begin soon!</span></big>")
+			to_chat(C, "<big><span class='warning'>You urgently need to look for sheltered area from the emmision, the emission will begin soon!</span></big>")
 			C.overlay_fullscreen("blowjob", /obj/screen/fullscreen/color_vision/blowjob)
 		else
-			to_chat(C, "<big><span class='notice'>You are in cover, you should stay in here until the emission is over.</span></big>")
+			to_chat(C, "<big><span class='notice'>You are in sheltered area from emission, you should stay in here until the emission is over.</span></big>")
 			C.clear_fullscreen("blowjob")
 
 /datum/controller/subsystem/blowout/proc/PreStopBlowout()

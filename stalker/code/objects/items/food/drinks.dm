@@ -37,7 +37,7 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/terragon
 	name = "Terragon Soda"
-	desc = "Refreshing and slightly sweet Terragon soda!"
+	desc = "Refreshing and slightly sweet Terragon soda"
 	icon = 'stalker/icons/food.dmi'
 	icon_state = "terragon"
 	list_reagents = list("energetic" = 3, "terragonsoda" = 37)

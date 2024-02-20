@@ -87,6 +87,7 @@
 	)
 	smooth = SMOOTH_TRUE
 	var/resistance_flags = INDESTRUCTIBLE
+	flags_1 = CHECK_RICOCHET_1
 
 /turf/closed/wall/stalker/Initialize()
 	..()
@@ -145,6 +146,7 @@
 	icon = 'icons/turf/shuttle.dmi'
 	icon_state = "wall1"
 	smooth = SMOOTH_FALSE
+	flags_1 = CHECK_RICOCHET_1
 
 /turf/closed/wall/stalker/ship
 	name = "hull"

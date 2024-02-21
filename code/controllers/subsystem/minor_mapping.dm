@@ -5,7 +5,7 @@ SUBSYSTEM_DEF(minor_mapping)
 
 /datum/controller/subsystem/minor_mapping/Initialize(timeofday)
 	trigger_migration(CONFIG_GET(number/mice_roundstart))
-	place_satchels()
+	//place_satchels()
 	return ..()
 
 /datum/controller/subsystem/minor_mapping/proc/trigger_migration(num_mice=10)
@@ -23,7 +23,7 @@ SUBSYSTEM_DEF(minor_mapping)
 		if(M.environment_is_safe())
 			num_mice -= 1
 			M = null
-
+/*
 /datum/controller/subsystem/minor_mapping/proc/place_satchels(amount=10)
 	var/list/turfs = find_satchel_suitable_turfs()
 
@@ -32,7 +32,7 @@ SUBSYSTEM_DEF(minor_mapping)
 		var/obj/item/storage/backpack/satchel/flat/S = new(T)
 		S.hide(intact=TRUE)
 		amount--
-
+*/ // 
 
 /proc/find_exposed_wires()
 	var/list/exposed_wires = list()

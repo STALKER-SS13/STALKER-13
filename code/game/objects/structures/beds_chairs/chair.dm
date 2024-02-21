@@ -258,7 +258,7 @@
 
 /obj/structure/chair/stool/narsie_act()
 	return
-
+/*
 /obj/structure/chair/MouseDrop(over_object, src_location, over_location)
 	. = ..()
 	if(over_object == usr && Adjacent(usr))
@@ -270,7 +270,7 @@
 		var/C = new item_chair(loc)
 		TransferComponents(C)
 		usr.put_in_hands(C)
-		qdel(src)
+		qdel(src)*/
 
 /obj/structure/chair/stool/bar
 	name = "bar stool"

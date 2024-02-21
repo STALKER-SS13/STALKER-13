@@ -865,7 +865,6 @@
 	item_state = "ak74_black"
 
 
-
 /obj/item/gun/ballistic/automatic/ak74/blackout
 	name = "AK 74"
 	desc = "This weapon, designed in 1974, signaled the adoption of small caliber and low impulse rounds by Warsaw Pact countries. A descendant of the most popular assault rifle in the world, the AK-74 has an even bigger muzzle brake, resulting in a reduction of what was already manageable recoil. This facilitates better accuracy and groupings, especially when fired in fast single shots or bursts. As before, the rifle is very simple and reliable. The entire gun is black."

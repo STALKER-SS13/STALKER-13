@@ -36,15 +36,15 @@
 "aK" = (/obj/machinery/door/poddoor/shutters,/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aL" = (/obj/structure/grille/stalker,/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aM" = (/obj/machinery/light/small,/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk_respawn)
-"aN" = (/obj/machinery/button/door{id = "SychExit2"},/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk_respawn)
+"aN" = (/turf/closed/indestructible/hull{icon_state = "hull5"},/area/stalker)
 "aO" = (/obj/structure/flora/stalker/bush,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aP" = (/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aQ" = (/turf/open/stalker/floor/asphalt,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aR" = (/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aS" = (/obj/structure/flora/stalker/bush,/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aT" = (/obj/structure/stalker/cacheable/komod,/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk_respawn)
-"aU" = (/obj/sidor_enter,/turf/open/floor/plasteel/stairs/stalker{dir = 8},/area/stalker/buildings/backwater/skadovsk_respawn)
-"aV" = (/turf/open/floor/plasteel/stairs/stalker{dir = 8},/area/stalker/buildings/backwater/skadovsk_respawn)
+"aU" = (/obj/effect/step_trigger/teleporter{dir = 4; icon_state = "up"; teleport_x = 169; teleport_y = 246; teleport_z = 1},/turf/open/floor/plasteel/stairs/stalker{dir = 8; icon_state = "ladder_right"; tag = "icon-ladder (EAST)"},/area/stalker/buildings/backwater/skadovsk_respawn)
+"aV" = (/turf/open/floor/plasteel/stairs/stalker{dir = 8; icon_state = "ladder_right"; tag = "icon-ladder (EAST)"},/area/stalker/buildings/backwater/skadovsk_respawn)
 "aW" = (/obj/structure/sign/skadovsk_bar{pixel_y = 36},/obj/structure/sign/vendor{pixel_y = 26},/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/skadovsk_respawn)
 "aX" = (/turf/open/floor/plasteel/stairs/left/stalker{dir = 8},/area/stalker/buildings/backwater/skadovsk_respawn)
 "aY" = (/obj/effect/step_trigger/teleporter{dir = 8; icon_state = "up"; teleport_x = 113; teleport_y = 124; teleport_z = 1},/turf/open/floor/plasteel/stairs/left/stalker{dir = 8},/area/stalker/buildings/backwater/skadovsk_respawn)
@@ -77,7 +77,7 @@
 "bB" = (/obj/structure/stalker/cacheable/shkaf64,/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/backwater/sawmill)
 "bC" = (/obj/structure/bed/stalker/matras,/obj/structure/stalker/cacheable/clocks{pixel_y = 32},/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/backwater/sawmill)
 "bD" = (/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/backwater/sawmill)
-"bE" = (/obj/structure/stalker/cacheable/battery{pixel_y = 28},/turf/open/stalker/floor/wood/oldvert,/area/stalker/buildings/backwater/sawmill)
+"bE" = (/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/gloves,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "bF" = (/obj/structure/grille/stalker{icon_state = "fence3"},/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "bG" = (/obj/structure/stalker/tree,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
 "bH" = (/obj/structure/stalker/cacheable/televizor/broken,/turf/open/stalker/floor/gryaz,/area/stalker/blowout/outdoor/backwater)
@@ -108,13 +108,11 @@
 "cg" = (/obj/structure/stalker/doski,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor/backwater/sawmill)
 "ch" = (/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
 "ci" = (/obj/structure/stalker/cacheable/truba,/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
-"cj" = (/obj/structure/stalker/doski/doski4,/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
+"cj" = (/obj/structure/stalker/doski/doski4,/obj/structure/stalker/cacheable/oldcovertatteredtwo,/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
 "ck" = (/obj/structure/stalker/cacheable/porog{dir = 4},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
-"cl" = (/obj/structure/stalker/cacheable/cover{pixel_y = 32},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cm" = (/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cn" = (/obj/structure/stalker/cacheable/pech{pixel_y = 28},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "co" = (/obj/machinery/light/small{dir = 1},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
-"cp" = (/obj/structure/stalker/cacheable/shkaf64,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cq" = (/obj/structure/stalker/cacheable/battery{pixel_y = 28},/obj/structure/stalker/cacheable/clocks{pixel_x = 32},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cr" = (/obj/structure/grille/stalker,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor/backwater/sawmill)
 "cs" = (/turf/open/stalker/floor/tropa,/area/stalker/blowout/outdoor/backwater/sawmill)
@@ -123,7 +121,7 @@
 "cv" = (/obj/machinery/light/small{dir = 8},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cw" = (/obj/structure/stalker/blocks/vanish/block2/l,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater/sawmill)
 "cx" = (/obj/machinery/power/emitter/energycannon{dir = 4; projectile_sound = null},/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
-"cy" = (/obj/effect/step_trigger/teleporter{teleport_x = 64; teleport_y = 254; teleport_z = 2},/turf/open/floor/plasteel/stairs{dir = 4},/area/stalker/buildings/backwater/sawmill)
+"cy" = (/obj/effect/step_trigger/teleporter{dir = 8; teleport_x = 64; teleport_y = 254; teleport_z = 2},/turf/open/floor/plasteel/stairs/medium/stalker{dir = 8; icon_state = "ladder_middle"},/area/stalker/buildings/backwater/sawmill)
 "cz" = (/obj/structure/stalker/blocks/vanish/block2/r,/turf/open/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "cA" = (/obj/structure/stalker/cacheable/porog,/obj/structure/mineral_door/wood,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cB" = (/obj/item/cigbutt,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
@@ -142,7 +140,7 @@
 "cO" = (/turf/closed/wall/stalker/beton_agro,/area/stalker/blowout/outdoor/backwater/sawmill)
 "cP" = (/obj/structure/stalker/doski/doski2,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cQ" = (/obj/structure/table/stalker/wood,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
-"cR" = (/obj/machinery/light/small,/obj/structure/table/stalker/wood,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
+"cR" = (/obj/machinery/light/small,/obj/structure/table/stalker/wood,/obj/effect/spawner/lootdrop/stalker/flasks,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "cS" = (/obj/structure/stalker/blocks/vanish/block2/r,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater/sawmill)
 "cT" = (/obj/structure/grille/stalker,/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/sawmill)
 "cU" = (/obj/structure/stalker/tree/leafless,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater/sawmill)
@@ -1436,6 +1434,7 @@
 "Da" = (/obj/structure/chair/sofa,/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/sawmill)
 "Dl" = (/obj/machinery/door/poddoor/shutters/preopen,/obj/structure/stalker/cacheable/yashik/yaskik_a/big{pixel_x = -2},/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "Ds" = (/obj/effect/step_trigger/teleporter{icon_state = "up"; teleport_x = 17; teleport_y = 229; teleport_z = 1},/turf/open/floor/plasteel/stairs,/area/stalker/buildings/backwater/sawmill)
+"Du" = (/turf/closed/indestructible/hull{icon_state = "hull2"},/area/stalker)
 "DI" = (/mob/living/simple_animal/hostile/mutant/controller,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker)
 "DJ" = (/obj/effect/step_trigger/teleporter{dir = 8; teleport_x = 98; teleport_y = 253; teleport_z = 1},/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "DK" = (/obj/effect/step_trigger/teleporter{dir = 8; icon_state = "up"; teleport_x = 44; teleport_y = 48; teleport_z = 3},/turf/open/stalker/floor/gryaz,/area/stalker/kordon/tunnel)
@@ -1460,6 +1459,7 @@
 "Fg" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/backwater/krug)
 "Fy" = (/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor/backwater/ironforest)
 "FB" = (/obj/effect/landmark/latejoin/renegade,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
+"FG" = (/obj/machinery/light/small{dir = 4},/turf/open/stalker/floor/lattice,/area/stalker)
 "FM" = (/obj/structure/stalker/modification_table,/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/sawmill)
 "FQ" = (/obj/structure/stalker/bar_plitka,/obj/structure/chair/stool,/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
 "FV" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/medicine,/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/backwater/krug)
@@ -1519,6 +1519,7 @@
 "JT" = (/obj/structure/stalker/cacheable/brokenmachine5,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/blowout/outdoor/backwater/sawmill)
 "JU" = (/obj/rad/rad_low,/obj/effect/step_trigger/teleporter{dir = 1; icon_state = "up"; teleport_x = 77; teleport_y = 3; teleport_z = 3},/turf/open/stalker/floor/water,/area/stalker)
 "JV" = (/obj/machinery/stalker/sidormat{pixel_y = 10},/obj/structure/table/stalker/wood,/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/sawmill)
+"JY" = (/obj/structure/closet/crate/stalker/blue,/turf/open/stalker/floor/lattice,/area/stalker)
 "JZ" = (/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater/shevchenko)
 "Kb" = (/obj/structure/stalker/car/btrgrimy{icon_state = "5"},/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
 "Kd" = (/obj/effect/step_trigger/teleporter{dir = 4; icon_state = "up"; teleport_x = 4; teleport_y = 247; teleport_z = 1},/turf/open/floor/plasteel/stairs/right/stalker{dir = 8},/area/stalker/buildings/backwater/sawmill)
@@ -1544,6 +1545,7 @@
 "Lq" = (/obj/effect/step_trigger/teleporter{dir = 4; icon_state = "up"; teleport_x = 4; teleport_y = 246; teleport_z = 1},/turf/open/floor/plasteel/stairs/right/stalker{dir = 8},/area/stalker/buildings/backwater/sawmill)
 "Lr" = (/obj/structure/bed/stalker/mattress_bloodblots,/obj/effect/landmark/latejoin/renegade,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "Ls" = (/obj/machinery/button/door{id = "rengeast"; pixel_x = 25},/turf/open/stalker/floor/asphalt,/area/stalker/buildings/renegade)
+"Lu" = (/obj/machinery/light/small,/turf/open/stalker/floor/lattice,/area/stalker)
 "Lw" = (/obj/machinery/power/emitter/energycannon{dir = 8; projectile_sound = null},/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "Lx" = (/obj/structure/stalker/cacheable/body,/turf/open/stalker/floor/gryaz,/area/stalker)
 "Ly" = (/obj/structure/stalker/cacheable/painting/gorbachev{desc = "A true Renegade"; eng_desc = null; name = "Vladimir Putin"},/turf/closed/wall/stalker/bricks,/area/stalker/buildings/backwater/sawmill)
@@ -1570,6 +1572,7 @@
 "Nu" = (/obj/machinery/light/small{dir = 4; tag = "icon-bulb1 (EAST)"},/turf/open/stalker/floor/gryaz,/area/stalker/buildings/backwater/sawmill)
 "Nz" = (/obj/structure/stalker/car/gryzovik_army/south{icon_state = "8"},/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
 "NF" = (/obj/machinery/door/poddoor/shutters{id = "rengsouth"},/turf/open/stalker/floor/asphalt,/area/stalker/buildings/renegade)
+"NH" = (/obj/structure/stalker/modification_table,/turf/open/stalker/floor/lattice,/area/stalker)
 "NJ" = (/obj/effect/turf_decal/stripes/full{density = 1; icon = 'stalker/icons/warning_stripes.dmi'; icon_state = "border4"; tag = "icon-border4"},/turf/open/stalker/floor/gryaz,/area/stalker/kordon/tunnel)
 "NU" = (/obj/structure/grille/stalker,/turf/open/stalker/floor/digable/grass,/area/stalker/buildings/renegade)
 "NX" = (/obj/structure/stalker/cacheable/shina3,/turf/open/stalker/floor/agroprom/beton,/area/stalker/buildings/clearsky)
@@ -1615,6 +1618,7 @@
 "QQ" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/kitchencondiments,/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/backwater/krug)
 "QT" = (/obj/structure/chair/sofa/right,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "Rg" = (/obj/structure/closet/stalker/shkaf{pixel_y = 16},/obj/effect/spawner/lootdrop/stalker/cigarettes,/turf/open/stalker/floor/plasteel/plitochka,/area/stalker/buildings/backwater/krug)
+"Rh" = (/obj/machinery/door/poddoor/sidor/skadovsk,/turf/open/stalker/floor/lattice,/area/stalker)
 "Rk" = (/obj/item/throwing_star/ninja,/obj/item/throwing_star/ninja,/turf/open/stalker/floor/gryaz,/area/stalker)
 "Rp" = (/obj/structure/stalker/car/btrgrimy{icon_state = "6"},/turf/open/stalker/floor/asphalt,/area/stalker/buildings/backwater/sawmill)
 "Ru" = (/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
@@ -1628,7 +1632,9 @@
 "RN" = (/turf/closed/wall/stalker/bricks,/area/stalker/buildings/backwater/sawmill)
 "RP" = (/obj/effect/step_trigger/teleporter{dir = 1; teleport_x = 2; teleport_y = 245; teleport_z = 1},/turf/open/floor/plasteel/stairs,/area/stalker/buildings/renegade)
 "RQ" = (/obj/machinery/door/poddoor/shutters{id = "rengeast"},/turf/open/stalker/floor/tropa,/area/stalker/buildings/backwater/sawmill)
+"RX" = (/obj/effect/step_trigger/teleporter{dir = 8; icon_state = "up"; teleport_x = 189; teleport_y = 247; teleport_z = 1},/turf/open/floor/plasteel/stairs/stalker{dir = 4; icon_state = "ladder_left"; tag = "icon-ladder (EAST)"},/area/stalker)
 "RY" = (/obj/anomaly/electro,/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
+"RZ" = (/obj/structure/table/stalker/wood,/obj/machinery/stalker/sidormat{pixel_y = 10},/turf/open/stalker/floor/lattice,/area/stalker)
 "Sf" = (/obj/item/throwing_star/ninja,/obj/item/throwing_star/ninja,/turf/open/stalker/floor/wood/oldgor,/area/stalker)
 "Sm" = (/mob/living/simple_animal/hostile/mutant/poltergeist,/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "Sp" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/medicine/pills,/turf/open/stalker/floor/lattice,/area/stalker/buildings/backwater)
@@ -1689,6 +1695,7 @@
 "Xc" = (/turf/open/stalker/floor/wood/oldgor,/area/stalker)
 "Xd" = (/obj/item/throwing_star/ninja,/obj/item/throwing_star/ninja,/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "Xe" = (/obj/structure/stalker/radiation/stop{desc = "Danger way to Renegade base."},/turf/open/stalker/floor/gryaz,/area/stalker)
+"Xh" = (/obj/structure/table/stalker/wood,/turf/open/stalker/floor/lattice,/area/stalker)
 "Xi" = (/obj/structure/stalker/car/gryzovik_army/south{icon_state = "2"},/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
 "Xj" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/medicine/hypospray,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/clearsky)
 "Xr" = (/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker/buildings/backwater/sawmill)
@@ -1707,14 +1714,18 @@
 "YE" = (/turf/open/floor/plasteel/stairs,/area/stalker/buildings/renegade)
 "YI" = (/obj/structure/stalker/okno/window1,/turf/closed/wall/stalker/beton_agro,/area/stalker)
 "YP" = (/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
+"YX" = (/turf/open/stalker/floor/lattice,/area/stalker)
 "Za" = (/obj/structure/stalker/cacheable/bochka,/turf/open/stalker/floor/asphalt,/area/stalker/buildings/backwater/sawmill)
 "Zb" = (/obj/effect/step_trigger/teleporter{dir = 4; teleport_x = 61; teleport_y = 249; teleport_z = 1},/turf/open/floor/plating/asteroid/basalt/lava,/area/stalker)
 "Zc" = (/obj/machinery/campfire/barrel,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
+"Zn" = (/obj/structure/closet/stalker/shkaf,/turf/open/stalker/floor/lattice,/area/stalker)
 "Zu" = (/obj/effect/landmark/blowout_spawner/zombiesimp,/turf/open/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
 "ZB" = (/obj/machinery/door/poddoor/shutters/preopen,/turf/open/stalker/floor/asphalt,/area/stalker/buildings/backwater/sawmill)
+"ZD" = (/turf/open/floor/plasteel/stairs/stalker{dir = 4; icon_state = "ladder_left"; tag = "icon-ladder (EAST)"},/area/stalker)
 "ZI" = (/obj/structure/mineral_door/wood,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/backwater/sawmill)
 "ZK" = (/obj/item/cigbutt,/turf/open/stalker/floor/lattice{icon_state = "lattice_new2"},/area/stalker/buildings/backwater/sawmill)
 "ZO" = (/obj/effect/spawner/lootdrop/stalker/junk,/turf/open/stalker/floor/road,/area/stalker/blowout/outdoor/backwater/substation)
+"ZT" = (/obj/machinery/button/door{id = "SychExit2"; pixel_y = -8},/turf/closed/indestructible/hull{icon_state = "hull5"},/area/stalker/buildings/backwater/skadovsk_respawn)
 "ZU" = (/obj/structure/stalker/cacheable/polka,/obj/effect/spawner/lootdrop/stalker/kitchencondiments,/turf/open/stalker/floor/wood/oldgor,/area/stalker/buildings/clearsky)
 "ZV" = (/turf/open/stalker/floor/gryaz,/area/stalker/blowout/kordon/tunnel)
 "ZX" = (/turf/open/stalker/floor/water,/area/stalker/kordon/tunnel)
@@ -1723,21 +1734,21 @@
 aaeFeFaaeFaaeFeFeFeFaaaaaaabacadadadadacabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababablMlMlMablMlMlMlMlMlMlMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeafaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 eFeFcQeGcQFMeFOCOCOCcCaaaaabacadadadadbkabaacxeCfaEdMfMfMfEdTrEdMfMfEdTrEdMfMfMfMfEdEdYwEdEdEdEdEdQtEdaaEdHQEdEdEhEdEdEdEdEdHbEdEdEhEdEdVJEdEdEdEdEhEdRYEdEdEdfadbLwaaaafafaaaaaaaaaaaEdEdEdEdEdDMEdQuaaDJEdEdaaaaLhEhEdEdUcaaababacbkadadadlMOfYsYsZXZXXzThVuNJDKlMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDTJUaaaaaaaaaaaaaaaaaaaaaaahaeaeaeaeaiajaiaiaiakalaiamaiaialananaiaoalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 eFKdcmcmcmNuRNcTcWcZcCeFaaabbkadadadadbkabaaaaaaaaEdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEdEdEdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEdaaaaaaaaTHEdfaaaLoEdfafaEdTrTrTrEdEdEdaaaaaaDMEdRKaaaaaaaaaaaaaaababacacbkbkadadZVZVYsYsZXXzThVuNJHBlMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaaapaiaqaiaiaiaiaiaiaiaiaraiasataualananaiavalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-eFLqcmcmSLSLSLcmcmdfcCeFaaabacadadadadbkabaaaaaaVNEdaaaaaaaaaaaaaaaaSLSLSLSLSLVcaaSsaaaaaaaaJADIYIDLaaaaaaMfEdEdaaPpaaaaaaaaEdEdMlaaJREdaaSISmOqGoGWSfHXaaaaEdEdEdFZaaaaEdfaaaaaEdfaEdEdTrLYTrEdaaaaaaaaaaaaaaaaaaababababababacacacbkacacacacawawlMlMablMlMablMlMlMabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaeaeaiaiaiaiaiaiaeaeaeaeaeaiasaiaiaeaeaeaxanalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-eFeFeEJVKLFMeFcTdgencCeFaaabacadadadadayabaaaaaaaaaaaaaaaaaaaaSLSLSLSLaaaaaaaaaaaaXrIoXrINaaTRYIDLMfIvMfMfMfaaMcaaEhaaaaTaaaEdaaaaaaaaEdVrEhXdLRRxJgSIXcHXaaaaaaaaaaaafaEdaaaaaaEdEdEdaaaaaaaaaaaaabababababababababawawawawawawawawawawacawawawawawawawawawawawawacacacacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDXOaaaaaaaaaaaaaaaaaaalaiaiaiaiaiaiazalavaAavalaBaCaiaiaiaiaDaiaialaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaeFeFeFeFaaeFcCSLcCcCaaaaabbkadadadadayabaaaaaaaaaaaaaaSLSLSLSLaaaaaaaaXNaaSLSLWTGDaaaaaaaaaaDLMfIvYITRaaaaaaaaaaDMaadKEdEdEdaaaaaaaaaaaaSfPYPYXOSIEhSIEdEdSIEdWJaaaafaEdGIaaaaaaaaaaaaababababababawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacbkaEabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWlMDXOaaaaaaaaaaaaaaaaaaalaiaiaiaiaFaiaiaraiaiaiaraiaiaiatalaialaGaHalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaeFeFSLeFaaaaaIaIaJaKaKaKaKaLaIaIaaaaaaaaaaSLSLaaaaaaaaSLSLSLSLaaSLaaaaXXaaGEEhMfDLMfMfYIDIJAJrfaEdZbaaJraaaaOsaaaaaajzEdEdaaaaMZDVSfRkXOSIEdSIEdSIEdaaaaaaaaaaaaaaababababababawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDXOaaaaaaaaaaaaaaaaaaaeaeaearaeaearaeaeaiaMaNalaiaeaeaeaeaiaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-eFcmcmSLeRaaaaaaSLaaaaaaaIaOaPaQaQaQaQaRaSaIaaaaaaSLSLSLaaaaPBSLSLSLaaaaaaaaQJaaaaRwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaXeaaaaaaEhaaaaGhUIGhDQHXIFSmaaaaaaaaaaabababababababawawawawawawawawawawawawawawawawawawawawawawawawawawacacbkacacacbkawawawawawawawawawawawawawawacacbkbkbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaalavaiaialaTaiaiaeaeaeaeaeaialaUaVaWaiaXaYalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-eFcmSLSLeVeFaaSLSLaaaaaaaIaOaPaQaQaQaQaRaSaIaIaaaaVeaaaaaaaaaaaaaaaaaaaaaaaIaIaIaIbdaIaIaIaIaIaIaIaIaIaIaIabababababababaaaaXOXOLxaaXOaaaaaaaaaaaaaaaaaaaaabababababbkbkacacacawawawawawawawawawawawawawawawawawawawawawawawawawacacacbkbkbkbkacacawawawawawawawawawawawawawawawacacbkbkbkbkbkababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaalavaiaialaZaoaibaaiaiaialaiaiataiaMaibbbcalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaSLSLeFaaaaSLSLaaaaaaabaIaOaPaQaQaQaQaRaRaSaIaIaaaaaaaaaaaaaIaIaIaIaIaIaIaIbdbdbdbdbdbdbdbdbebdbdbdbebdbfbhbhskskayacabababacabXOXOXOaaaaaaaaabababababababbibjbkbkbkacawawawawawawawawawacbkawawawawawawawawawawawawawawawawawbkbkacacacbkacacawawawawawawawawawawawawawawawawawacacacacbkbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaeaeaearaeblaiaialaiaiaiaibmaeaeaeaeaiaeaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aafbDseFaaaaSLaaaaaaaaabbfaPaPaQaQaQaQaRaPaRaSaIaIaIaIaIaIaIaIaSaSaSbdbebebebebebdbnbnbnbobnbnbobnbnbnDPbpeSRuRuaybracbkacacacabababababababababacacacacacbkbkbkbkbkacawawawawawawawawawacbiacacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacbkbkbkbkababaaaaaaaaaaaaaaaaaaaaaaXOMDMDaaaaaaaaaaaaaaaaaaaaalaiaiaiaeaeaeaealaxaeaeaeaeaeaHbsalaialbtbubvaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaeFeFaaaaaaSLaaMWaaaaabbfaPaQaQaQaQaQaRaPbwaPaSaSaSaSaSaSaSaSaPaPaPaPbebebxbebeaPbnbybzbAbBbCbDbEbybnaPbFRuRubGRuskbkbkacacacacawawawawawawawawawawawawawacacacacacawawawawawawawawawawacbHbkacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacacawawawawawacacbkbkbkbkbkababaaaaaaaaaaaaaaaaaaaaXOMDMDaaaaaaaaaaaaaaaaaaaaahahaiaiaialaiaiaraiaiaDaibIbJaiaiaDaiaDananbvaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eFLqcmcmSLSLSLcmcmdfcCeFaaabacadadadadbkabaaaaaaVNEdaaaaaaaaaaaaaaaaSLSLSLSLSLVcaaSsaaaaaaaaJADIYIDLaaaaaaMfEdEdaaPpaaaaaaaaEdEdMlaaJREdaaSISmOqGoGWSfHXaaaaEdEdEdFZaaaaEdfaaaaaEdfaEdEdTrLYTrEdaaaaaaaaaaaaaaaaaaababababababacacacbkacacacacawawlMlMablMlMablMlMlMabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaNaNaNaNaNaaaaaeaeaiaiaiaiaiaiaeaeaeZTaeaiasaiaiaeaeaeaxanalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eFeFeEJVKLFMeFcTdgencCeFaaabacadadadadayabaaaaaaaaaaaaaaaaaaaaSLSLSLSLaaaaaaaaaaaaXrIoXrINaaTRYIDLMfIvMfMfMfaaMcaaEhaaaaTaaaEdaaaaaaaaEdVrEhXdLRRxJgSIXcHXaaaaaaaaaaaafaEdaaaaaaEdEdEdaaaaaaaaaaaaabababababababababawawawawawawawawawawacawawawawawawawawawawawawacacacacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDXOaaaaDuXhRZXhDuaaaaalaiaiaiaiaiaiazalavaAavalaBaCaiaiaiaiaDaiaialaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaeFeFeFeFaaeFcCSLcCcCaaaaabbkadadadadayabaaaaaaaaaaaaaaSLSLSLSLaaaaaaaaXNaaSLSLWTGDaaaaaaaaaaDLMfIvYITRaaaaaaaaaaDMaadKEdEdEdaaaaaaaaaaaaSfPYPYXOSIEhSIEdEdSIEdWJaaaafaEdGIaaaaaaaaaaaaababababababawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacbkaEabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWlMDXOaaaaDuYXYXFGDuaaaaalaiaiaiaiaFaiaiaraiaiaiaraiaiaiatalaialaGaHalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaeFeFSLeFaaaaaIaIaJaKaKaKaKaLaIaIaaaaaaaaaaSLSLaaaaaaaaSLSLSLSLaaSLaaaaXXaaGEEhMfDLMfMfYIDIJAJrfaEdZbaaJraaaaOsaaaaaajzEdEdaaaaMZDVSfRkXOSIEdSIEdSIEdaaaaaaaaaaaaaaababababababawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDXOaaaaDuZnYXJYDuaaaaaeaeaearaeaearaeaeaiaMaialaiaeaeaeaeaiaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eFcmcmSLeRaaaaaaSLaaaaaaaIaOaPaQaQaQaQaRaSaIaaaaaaSLSLSLaaaaPBSLSLSLaaaaaaaaQJaaaaRwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaXeaaaaaaEhaaaaGhUIGhDQHXIFSmaaaaaaaaaaabababababababawawawawawawawawawawawawawawawawawawawawawawawawawawacacbkacacacbkawawawawawawawawawawawawawawacacbkbkbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaaNaNYXaNaNaNaaalavaiaialaTaiaiaeaeaeaeaeaialaUaVaWaiaXaYalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eFcmSLSLeVeFaaSLSLaaaaaaaIaOaPaQaQaQaQaRaSaIaIaaaaVeaaaaaaaaaaaaaaaaaaaaaaaIaIaIaIbdaIaIaIaIaIaIaIaIaIaIaIabababababababaaaaXOXOLxaaXOaaaaaaaaaaaaaaaaaaaaabababababbkbkacacacawawawawawawawawawawawawawawawawawawawawawawawawawacacacbkbkbkbkacacawawawawawawawawawawawawawawawacacbkbkbkbkbkababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaDuNHYXZDRXDuaaalavaiaialaZaoaibaaiaiaialaiaiataiaMaibbbcalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaSLSLeFaaaaSLSLaaaaaaabaIaOaPaQaQaQaQaRaRaSaIaIaaaaaaaaaaaaaIaIaIaIaIaIaIaIbdbdbdbdbdbdbdbdbebdbdbdbebdbfbhbhskskayacabababacabXOXOXOaaaaaaaaabababababababbibjbkbkbkacawawawawawawawawawacbkawawawawawawawawawawawawawawawawawbkbkacacacbkacacawawawawawawawawawawawawawawawawawacacacacbkbkbkabababaaaaaaaaaaaaaaaaaaaaaaaaaaMDMDaaaaaaRhYXLuYXYXRhaaaeaeaearaeblaiaialaiaiaiaibmaeaeaeaeaiaeaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aafbDseFaaaaSLaaaaaaaaabbfaPaPaQaQaQaQaRaPaRaSaIaIaIaIaIaIaIaIaSaSaSbdbebebebebebdbnbnbnbobnbnbobnbnbnDPbpeSRuRuaybracbkacacacabababababababababacacacacacbkbkbkbkbkacawawawawawawawawawacbiacacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacbkbkbkbkababaaaaaaaaaaaaaaaaaaaaaaXOMDMDaaaaaaaNaNaNaNRhaNaaalaiaiaiaeaeaeaealaxaeaeaeaeaeaHbsalaialbtbubvaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaeFeFaaaaaaSLaaMWaaaaabbfaPaQaQaQaQaQaRaPbwaPaSaSaSaSaSaSaSaSaPaPaPaPbebebxbebeaPbnbybzbAbBbCbDbBbybnaPbFRuRubGRuskbkbkacacacacawawawawawawawawawawawawawacacacacacawawawawawawawawawawacbHbkacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacacawawawawawacacbkbkbkbkbkababaaaaaaaaaaaaaaaaaaaaXOMDMDaaaaaaaaaaaaaaaaaaaaahahaiaiaialaiaiaraiaiaDaibIbJaiaiaDaiaDananbvaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaSLSLSLaaababbKaPaQaQaQaQaQaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPbobDbLbDbDbDbDbDbybnaRbFRubMRubNbhbkbkacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawbkacacRuRuacawawawawawacacacbkbkbkbkababaaaaaaaaaaaaaaaaaaXOMDMDaaaaaaaaaaaaaaaaaaaaaaapaiaiaialaiaialananalbOananananalaialananbPaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaSLSLaaaaaaabSAbKeraQaQaQaQaPaPaPaPaPaPaPaPaPaPaPbwbeaPaPaPaPaPaPaPaPaPbQbnbybRbAbDbAbDbSbDbnaRbpRuRuRuRuskbkbkawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacawawawawawawawawawawawawawawawawawawawawawawawawawawawbkacRubTacawawawawawawacacacbkbkbkababaaaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaaahaeaeaeaeaiaialbUbValbWanbWanbWalaialbXbYbUaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababbhbhbhskbhbhbhbhskbhbhababababaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaSLSLaafaWOayaybpaPaQaQaQaQbZcaaPcbcbaPaPaPaPaPaPaPaPaPaPaPaPbnbnbnbnbnbnbncccccccccccdccccbnbwbpRubNRubNskbkacawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawbkacacskskskskacacacbkbkacbkbkacbkbkacacbkacbkawawawawawawawawawawawawbkacceacbkawawawawawawacacbkbkbkbkababaaaaaaaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaearaeaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababskbhbhawawawawawawawawawawawskbhbhabababaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaSLaaaaaaabgcbpaPaQaQaQaQcfcgcbcbcbcbcbaPaPaPaPaPaPaPaPaSaRaRaRchchcicjckclcmcccncocmcpcqbnaPbpRuRuRuRubhbkawawawawawawawawacacacacawawawawawawawawawawawawawawawawawawbkacacacacbkbkacacskskskRuRuRuRuskskskRuskskskskskskskskskskskskskacawawawawawawawawawawawbkacacacbkawawawawawawacacacbkbkbkabababaaaaaaaaaaaaMDWlaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababbhbhskawawawawawawawawawawawawawawawawawskbhababaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaSLSLaaaaabacbpaPaQaQaQaQaQaQaQaQcbcbcbaPaPaPaPaPaPaPaRaPaPcsaRctcscscucccvcmckcmcmcmcmcmbocwbpRubNRubNskacawawawawawawacacacbkbkbkawawawawawawawawawawawawawawawbkacacRuskskskskRuRuskskRuRuRuRuRuRuRuadadadadadadadadadadadadadRuRuRuskskskacacawawawawawawawawawbkacacacbkawawawawawawacacacbkbkbkbkababaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababbhbhawawawawawawawawawawawawawawawawawawawawawawbhababaaaaaaaaaaaaaaaa
-aaaaaaaaaaSLSLSLaaaaabacbpaPaQaQaQaQaQaQaQaQaQcbcbcbaPaPaPaPaPaRbdcsaPbnbnbnbnbnbnbncmcmcccmcccycccmbnczbFRuRuRuRuskacawawawawawacacbkbkbkawawawawawawawawawawawawawawawbkacskskRuRuRuRuRuRuRuRuRuRuadadadadadadadadadadadadadadadadadadadadadadadRuRuskskskbhbkbkawawawawawawawawbkacacawawawawawawawacbkbkbkbkbkbkababaaaaaaaaMDMDXOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbhbhawawawawawawawawskbhbhskbhbhskbhbhskbhbhawawawawawbhababaaaaaaaaaaaaaa
+aaaaaaaaaaaaSLaaaaaaabgcbpaPaQaQaQaQcfcgcbcbcbcbcbaPaPaPaPaPaPaPaPaSaRaRaRchchcicjckcmcmcccncocmcmcqbnaPbpRuRuRuRubhbkawawawawawawawawacacacacawawawawawawawawawawawawawawawawawawbkacacacacbkbkacacskskskRuRuRuRuskskskRuskskskskskskskskskskskskskacawawawawawawawawawawawbkacacacbkawawawawawawacacacbkbkbkabababaaaaaaaaaaaaMDWlaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababbhbhskawawawawawawawawawawawawawawawawawskbhababaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaSLSLaaaaabacbpaPaQaQaQaQaQaQaQaQcbcbcbaPaPaPaPaPaPaPaRaPaPcsaRctcscscucccvcmckcmcccccmcQbocwbpRubNRubNskacawawawawawawacacacbkbkbkawawawawawawawawawawawawawawawbkacacRuskskskskRuRuskskRuRuRuRuRuRuRuadadadadadadadadadadadadadRuRuRuskskskacacawawawawawawawawawbkacacacbkawawawawawawacacacbkbkbkbkababaaaaaaaaaaMDMDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababbhbhawawawawawawawawawawawawawawawawawawawawawawbhababaaaaaaaaaaaaaaaa
+aaaaaaaaaaSLSLSLaaaaabacbpaPaQaQaQaQaQaQaQaQaQcbcbcbaPaPaPaPaPaRbdcsaPbnbnbnbnbnbnbncmcmcccmcccycmbEbnczbFRuRuRuRuskacawawawawawacacbkbkbkawawawawawawawawawawawawawawawbkacskskRuRuRuRuRuRuRuRuRuRuadadadadadadadadadadadadadadadadadadadadadadadRuRuskskskbhbkbkawawawawawawawawbkacacawawawawawawawacbkbkbkbkbkbkababaaaaaaaaMDMDXOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbhbhawawawawawawawawskbhbhskbhbhskbhbhskbhbhawawawawawbhababaaaaaaaaaaaaaa
 aaaaaaaaaaaaSLSLEpaaabacbKaPaQaQaQaQaQaQaQaQaQcbcOcOcOcOcOaPaRaSaRaSaRaPaPaRaRaRaRbnbncccccAccccccccbnaPbpRuRuRuRuRubkacawawawbkacbkbkawawawawawawawawawawawawawawawawbkskskskRuRuRuRuRuRuRuadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadRuRuskskskbkacacawawawawawawawawawawawawawawawawawacacbkbkbkbkabaaaaaaaaMDMDXOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababskawawawawawawawskbhbhskRubhbhRubhbhskRuRuRuskbhbhawawawawbhabaaaaaaaaaaaaaa
 aaaaaaaaaaaaSLaaaaaaabgcbKaPaQaQaQcVcVcBcVcVcrcrcOGsJTGscOaPaSaRaRcsaPaRaPcsaRaPaRaSbncDcmcmcmcEcQcGbncwbpRuRuRuRuRubkacawawawacbkbkawawawawawawawawawawawawawawawacacskskRuRuRuRuRuRuadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadRuRuskskacacacawawawawawawawawawawawawawawawawacbkbkbkbkababaaaaXOMDMDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbhawawawawawskbhbhskRuRuRucHRuRuRuRubhskcHcIRuRuRuRubhbhawawbhabaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaababacbKaPaQaQaQcVLAcmcBcVcJcJcOKyKyKycOaPaPaSaRaPaRaRbecscsaPaPaSbocKcmcmcmcmcmcmbocLbpRubGRuRuRuskbkawawawawbkbkawawawawawawawawawbkacacacbhbhskskRuRuRuRuRuRuadadadadadadadadadadadadadadadadRuRuRuRuRuRuRuRuRuRuRuRuRuadadadadadadadadadadadRuRubkacacawawawawawawawawawawawawawawawawawacbkbkbkbkababaaXOMDMDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbhawawawawskbhbhbhbhRucMRuskababRuRuRuskRuRuabskRuRuRuRubhbhskbhabaaaaaaaaaaaaaa

@@ -35,6 +35,7 @@
 	var/anchorable = TRUE
 	var/icon_welded = "welded"
 	anchored = TRUE //now safezone is SAFE zone
+	var/resistance_flags = INDESTRUCTIBLE
 
 
 /obj/structure/closet/Initialize(mapload)
